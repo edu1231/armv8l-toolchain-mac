@@ -11,7 +11,7 @@
 
 #include <boost/smart_ptr/detail/yield_k.hpp>
 
-#if defined(__ARM_ARCH_7__) || defined(__ARM_ARCH_7A__) || defined(__ARM_ARCH_7R__) || defined(__ARM_ARCH_7M__) || defined(__ARM_ARCH_7EM__) || defined(__ARM_ARCH_7S__)
+#if defined(__ARM_ARCH_7__) || defined(__ARM_ARCH_7A__) || defined(__ARM_ARCH_7R__) || defined(__ARM_ARCH_7M__) || defined(__ARM_ARCH_7EM__) || defined(__ARM_ARCH_7S__) || defined(__ARM_ARCH_8A__)
 
 # define BOOST_SP_ARM_BARRIER "dmb"
 # define BOOST_SP_ARM_HAS_LDREX
