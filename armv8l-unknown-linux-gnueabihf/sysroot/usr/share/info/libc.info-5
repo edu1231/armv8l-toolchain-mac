@@ -457,7 +457,9 @@ START-INFO-DIR-ENTRY
 * __ppc_mdoom: (libc)PowerPC.
 * __ppc_set_ppr_low: (libc)PowerPC.
 * __ppc_set_ppr_med: (libc)PowerPC.
+* __ppc_set_ppr_med_high: (libc)PowerPC.
 * __ppc_set_ppr_med_low: (libc)PowerPC.
+* __ppc_set_ppr_very_low: (libc)PowerPC.
 * __ppc_yield: (libc)PowerPC.
 * __va_copy: (libc)Argument Macros.
 * _exit: (libc)Termination Internals.
@@ -548,14 +550,14 @@ START-INFO-DIR-ENTRY
 * basename: (libc)Finding Tokens in a String.
 * basename: (libc)Finding Tokens in a String.
 * bcmp: (libc)String/Array Comparison.
-* bcopy: (libc)Copying and Concatenation.
+* bcopy: (libc)Copying Strings and Arrays.
 * bind: (libc)Setting Address.
 * bind_textdomain_codeset: (libc)Charset conversion in gettext.
 * bindtextdomain: (libc)Locating gettext catalog.
 * brk: (libc)Resizing the Data Segment.
 * bsearch: (libc)Array Search Function.
 * btowc: (libc)Converting a Character.
-* bzero: (libc)Copying and Concatenation.
+* bzero: (libc)Copying Strings and Arrays.
 * cabs: (libc)Absolute Value.
 * cabsf: (libc)Absolute Value.
 * cabsl: (libc)Absolute Value.
@@ -1159,16 +1161,16 @@ START-INFO-DIR-ENTRY
 * mbtowc: (libc)Non-reentrant Character Conversion.
 * mcheck: (libc)Heap Consistency Checking.
 * memalign: (libc)Aligned Memory Blocks.
-* memccpy: (libc)Copying and Concatenation.
+* memccpy: (libc)Copying Strings and Arrays.
 * memchr: (libc)Search Functions.
 * memcmp: (libc)String/Array Comparison.
-* memcpy: (libc)Copying and Concatenation.
+* memcpy: (libc)Copying Strings and Arrays.
 * memfrob: (libc)Trivial Encryption.
 * memmem: (libc)Search Functions.
-* memmove: (libc)Copying and Concatenation.
-* mempcpy: (libc)Copying and Concatenation.
+* memmove: (libc)Copying Strings and Arrays.
+* mempcpy: (libc)Copying Strings and Arrays.
 * memrchr: (libc)Search Functions.
-* memset: (libc)Copying and Concatenation.
+* memset: (libc)Copying Strings and Arrays.
 * mkdir: (libc)Creating Directories.
 * mkdtemp: (libc)Temporary Files.
 * mkfifo: (libc)FIFO Special Files.
@@ -1483,19 +1485,19 @@ START-INFO-DIR-ENTRY
 * stat64: (libc)Reading Attributes.
 * stat: (libc)Reading Attributes.
 * stime: (libc)Simple Calendar Time.
-* stpcpy: (libc)Copying and Concatenation.
-* stpncpy: (libc)Copying and Concatenation.
+* stpcpy: (libc)Copying Strings and Arrays.
+* stpncpy: (libc)Truncating Strings.
 * strcasecmp: (libc)String/Array Comparison.
 * strcasestr: (libc)Search Functions.
-* strcat: (libc)Copying and Concatenation.
+* strcat: (libc)Concatenating Strings.
 * strchr: (libc)Search Functions.
 * strchrnul: (libc)Search Functions.
 * strcmp: (libc)String/Array Comparison.
 * strcoll: (libc)Collation Functions.
-* strcpy: (libc)Copying and Concatenation.
+* strcpy: (libc)Copying Strings and Arrays.
 * strcspn: (libc)Search Functions.
-* strdup: (libc)Copying and Concatenation.
-* strdupa: (libc)Copying and Concatenation.
+* strdup: (libc)Copying Strings and Arrays.
+* strdupa: (libc)Copying Strings and Arrays.
 * strerror: (libc)Error Messages.
 * strerror_r: (libc)Error Messages.
 * strfmon: (libc)Formatting Numbers.
@@ -1503,11 +1505,11 @@ START-INFO-DIR-ENTRY
 * strftime: (libc)Formatting Calendar Time.
 * strlen: (libc)String Length.
 * strncasecmp: (libc)String/Array Comparison.
-* strncat: (libc)Copying and Concatenation.
+* strncat: (libc)Truncating Strings.
 * strncmp: (libc)String/Array Comparison.
-* strncpy: (libc)Copying and Concatenation.
-* strndup: (libc)Copying and Concatenation.
-* strndupa: (libc)Copying and Concatenation.
+* strncpy: (libc)Truncating Strings.
+* strndup: (libc)Truncating Strings.
+* strndupa: (libc)Truncating Strings.
 * strnlen: (libc)String Length.
 * strpbrk: (libc)Search Functions.
 * strptime: (libc)Low-Level Time String Parsing.
@@ -1641,24 +1643,24 @@ START-INFO-DIR-ENTRY
 * waitpid: (libc)Process Completion.
 * warn: (libc)Error Messages.
 * warnx: (libc)Error Messages.
-* wcpcpy: (libc)Copying and Concatenation.
-* wcpncpy: (libc)Copying and Concatenation.
+* wcpcpy: (libc)Copying Strings and Arrays.
+* wcpncpy: (libc)Truncating Strings.
 * wcrtomb: (libc)Converting a Character.
 * wcscasecmp: (libc)String/Array Comparison.
-* wcscat: (libc)Copying and Concatenation.
+* wcscat: (libc)Concatenating Strings.
 * wcschr: (libc)Search Functions.
 * wcschrnul: (libc)Search Functions.
 * wcscmp: (libc)String/Array Comparison.
 * wcscoll: (libc)Collation Functions.
-* wcscpy: (libc)Copying and Concatenation.
+* wcscpy: (libc)Copying Strings and Arrays.
 * wcscspn: (libc)Search Functions.
-* wcsdup: (libc)Copying and Concatenation.
+* wcsdup: (libc)Copying Strings and Arrays.
 * wcsftime: (libc)Formatting Calendar Time.
 * wcslen: (libc)String Length.
 * wcsncasecmp: (libc)String/Array Comparison.
-* wcsncat: (libc)Copying and Concatenation.
+* wcsncat: (libc)Truncating Strings.
 * wcsncmp: (libc)String/Array Comparison.
-* wcsncpy: (libc)Copying and Concatenation.
+* wcsncpy: (libc)Truncating Strings.
 * wcsnlen: (libc)String Length.
 * wcsnrtombs: (libc)Converting Strings.
 * wcspbrk: (libc)Search Functions.
@@ -1687,10 +1689,10 @@ START-INFO-DIR-ENTRY
 * wctype: (libc)Classification of Wide Characters.
 * wmemchr: (libc)Search Functions.
 * wmemcmp: (libc)String/Array Comparison.
-* wmemcpy: (libc)Copying and Concatenation.
-* wmemmove: (libc)Copying and Concatenation.
-* wmempcpy: (libc)Copying and Concatenation.
-* wmemset: (libc)Copying and Concatenation.
+* wmemcpy: (libc)Copying Strings and Arrays.
+* wmemmove: (libc)Copying Strings and Arrays.
+* wmempcpy: (libc)Copying Strings and Arrays.
+* wmemset: (libc)Copying Strings and Arrays.
 * wordexp: (libc)Calling Wordexp.
 * wordfree: (libc)Calling Wordexp.
 * wprintf: (libc)Formatted Output Functions.
@@ -1710,10 +1712,10 @@ END-INFO-DIR-ENTRY
 
    This file documents the GNU C Library.
 
-   This is `The GNU C Library Reference Manual', for version 2.22
-(crosstool-NG crosstool-ng-1.22.0).
+   This is `The GNU C Library Reference Manual', for version 2.23
+(crosstool-NG crosstool-ng-1.22.0-148-g7300eb1).
 
-   Copyright (C) 1993-2015 Free Software Foundation, Inc.
+   Copyright (C) 1993-2016 Free Software Foundation, Inc.
 
    Permission is granted to copy, distribute and/or modify this document
 under the terms of the GNU Free Documentation License, Version
@@ -3889,6 +3891,9 @@ writes to memory-mapped regions created with `mmap' can still result in
           modifies the underlying file in the to-be-allocated area.
           Non-null bytes could be overwritten with null bytes.
 
+        * If FD has been opened with the `O_WRONLY' flag, the function
+          will fail with an `errno' value of `EBADF'.
+
         * If FD has been opened with the `O_APPEND' flag, the function
           will fail with an `errno' value of `EBADF'.
 
@@ -3907,8 +3912,8 @@ writes to memory-mapped regions created with `mmap' can still result in
      to the caller.
 
 
- -- Function: int posix_fallocate64 (int FD, off64_t LENGTH, off64_t
-          OFFSET)
+ -- Function: int posix_fallocate64 (int FD, off64_t OFFSET, off64_t
+          LENGTH)
      Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
      Concepts::.
 

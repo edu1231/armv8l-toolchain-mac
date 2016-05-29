@@ -457,7 +457,9 @@ START-INFO-DIR-ENTRY
 * __ppc_mdoom: (libc)PowerPC.
 * __ppc_set_ppr_low: (libc)PowerPC.
 * __ppc_set_ppr_med: (libc)PowerPC.
+* __ppc_set_ppr_med_high: (libc)PowerPC.
 * __ppc_set_ppr_med_low: (libc)PowerPC.
+* __ppc_set_ppr_very_low: (libc)PowerPC.
 * __ppc_yield: (libc)PowerPC.
 * __va_copy: (libc)Argument Macros.
 * _exit: (libc)Termination Internals.
@@ -548,14 +550,14 @@ START-INFO-DIR-ENTRY
 * basename: (libc)Finding Tokens in a String.
 * basename: (libc)Finding Tokens in a String.
 * bcmp: (libc)String/Array Comparison.
-* bcopy: (libc)Copying and Concatenation.
+* bcopy: (libc)Copying Strings and Arrays.
 * bind: (libc)Setting Address.
 * bind_textdomain_codeset: (libc)Charset conversion in gettext.
 * bindtextdomain: (libc)Locating gettext catalog.
 * brk: (libc)Resizing the Data Segment.
 * bsearch: (libc)Array Search Function.
 * btowc: (libc)Converting a Character.
-* bzero: (libc)Copying and Concatenation.
+* bzero: (libc)Copying Strings and Arrays.
 * cabs: (libc)Absolute Value.
 * cabsf: (libc)Absolute Value.
 * cabsl: (libc)Absolute Value.
@@ -1159,16 +1161,16 @@ START-INFO-DIR-ENTRY
 * mbtowc: (libc)Non-reentrant Character Conversion.
 * mcheck: (libc)Heap Consistency Checking.
 * memalign: (libc)Aligned Memory Blocks.
-* memccpy: (libc)Copying and Concatenation.
+* memccpy: (libc)Copying Strings and Arrays.
 * memchr: (libc)Search Functions.
 * memcmp: (libc)String/Array Comparison.
-* memcpy: (libc)Copying and Concatenation.
+* memcpy: (libc)Copying Strings and Arrays.
 * memfrob: (libc)Trivial Encryption.
 * memmem: (libc)Search Functions.
-* memmove: (libc)Copying and Concatenation.
-* mempcpy: (libc)Copying and Concatenation.
+* memmove: (libc)Copying Strings and Arrays.
+* mempcpy: (libc)Copying Strings and Arrays.
 * memrchr: (libc)Search Functions.
-* memset: (libc)Copying and Concatenation.
+* memset: (libc)Copying Strings and Arrays.
 * mkdir: (libc)Creating Directories.
 * mkdtemp: (libc)Temporary Files.
 * mkfifo: (libc)FIFO Special Files.
@@ -1483,19 +1485,19 @@ START-INFO-DIR-ENTRY
 * stat64: (libc)Reading Attributes.
 * stat: (libc)Reading Attributes.
 * stime: (libc)Simple Calendar Time.
-* stpcpy: (libc)Copying and Concatenation.
-* stpncpy: (libc)Copying and Concatenation.
+* stpcpy: (libc)Copying Strings and Arrays.
+* stpncpy: (libc)Truncating Strings.
 * strcasecmp: (libc)String/Array Comparison.
 * strcasestr: (libc)Search Functions.
-* strcat: (libc)Copying and Concatenation.
+* strcat: (libc)Concatenating Strings.
 * strchr: (libc)Search Functions.
 * strchrnul: (libc)Search Functions.
 * strcmp: (libc)String/Array Comparison.
 * strcoll: (libc)Collation Functions.
-* strcpy: (libc)Copying and Concatenation.
+* strcpy: (libc)Copying Strings and Arrays.
 * strcspn: (libc)Search Functions.
-* strdup: (libc)Copying and Concatenation.
-* strdupa: (libc)Copying and Concatenation.
+* strdup: (libc)Copying Strings and Arrays.
+* strdupa: (libc)Copying Strings and Arrays.
 * strerror: (libc)Error Messages.
 * strerror_r: (libc)Error Messages.
 * strfmon: (libc)Formatting Numbers.
@@ -1503,11 +1505,11 @@ START-INFO-DIR-ENTRY
 * strftime: (libc)Formatting Calendar Time.
 * strlen: (libc)String Length.
 * strncasecmp: (libc)String/Array Comparison.
-* strncat: (libc)Copying and Concatenation.
+* strncat: (libc)Truncating Strings.
 * strncmp: (libc)String/Array Comparison.
-* strncpy: (libc)Copying and Concatenation.
-* strndup: (libc)Copying and Concatenation.
-* strndupa: (libc)Copying and Concatenation.
+* strncpy: (libc)Truncating Strings.
+* strndup: (libc)Truncating Strings.
+* strndupa: (libc)Truncating Strings.
 * strnlen: (libc)String Length.
 * strpbrk: (libc)Search Functions.
 * strptime: (libc)Low-Level Time String Parsing.
@@ -1641,24 +1643,24 @@ START-INFO-DIR-ENTRY
 * waitpid: (libc)Process Completion.
 * warn: (libc)Error Messages.
 * warnx: (libc)Error Messages.
-* wcpcpy: (libc)Copying and Concatenation.
-* wcpncpy: (libc)Copying and Concatenation.
+* wcpcpy: (libc)Copying Strings and Arrays.
+* wcpncpy: (libc)Truncating Strings.
 * wcrtomb: (libc)Converting a Character.
 * wcscasecmp: (libc)String/Array Comparison.
-* wcscat: (libc)Copying and Concatenation.
+* wcscat: (libc)Concatenating Strings.
 * wcschr: (libc)Search Functions.
 * wcschrnul: (libc)Search Functions.
 * wcscmp: (libc)String/Array Comparison.
 * wcscoll: (libc)Collation Functions.
-* wcscpy: (libc)Copying and Concatenation.
+* wcscpy: (libc)Copying Strings and Arrays.
 * wcscspn: (libc)Search Functions.
-* wcsdup: (libc)Copying and Concatenation.
+* wcsdup: (libc)Copying Strings and Arrays.
 * wcsftime: (libc)Formatting Calendar Time.
 * wcslen: (libc)String Length.
 * wcsncasecmp: (libc)String/Array Comparison.
-* wcsncat: (libc)Copying and Concatenation.
+* wcsncat: (libc)Truncating Strings.
 * wcsncmp: (libc)String/Array Comparison.
-* wcsncpy: (libc)Copying and Concatenation.
+* wcsncpy: (libc)Truncating Strings.
 * wcsnlen: (libc)String Length.
 * wcsnrtombs: (libc)Converting Strings.
 * wcspbrk: (libc)Search Functions.
@@ -1687,10 +1689,10 @@ START-INFO-DIR-ENTRY
 * wctype: (libc)Classification of Wide Characters.
 * wmemchr: (libc)Search Functions.
 * wmemcmp: (libc)String/Array Comparison.
-* wmemcpy: (libc)Copying and Concatenation.
-* wmemmove: (libc)Copying and Concatenation.
-* wmempcpy: (libc)Copying and Concatenation.
-* wmemset: (libc)Copying and Concatenation.
+* wmemcpy: (libc)Copying Strings and Arrays.
+* wmemmove: (libc)Copying Strings and Arrays.
+* wmempcpy: (libc)Copying Strings and Arrays.
+* wmemset: (libc)Copying Strings and Arrays.
 * wordexp: (libc)Calling Wordexp.
 * wordfree: (libc)Calling Wordexp.
 * wprintf: (libc)Formatted Output Functions.
@@ -1710,10 +1712,10 @@ END-INFO-DIR-ENTRY
 
    This file documents the GNU C Library.
 
-   This is `The GNU C Library Reference Manual', for version 2.22
-(crosstool-NG crosstool-ng-1.22.0).
+   This is `The GNU C Library Reference Manual', for version 2.23
+(crosstool-NG crosstool-ng-1.22.0-148-g7300eb1).
 
-   Copyright (C) 1993-2015 Free Software Foundation, Inc.
+   Copyright (C) 1993-2016 Free Software Foundation, Inc.
 
    Permission is granted to copy, distribute and/or modify this document
 under the terms of the GNU Free Documentation License, Version
@@ -2164,7 +2166,7 @@ it.
      `string.h' (BSD):  *Note String/Array Comparison::.
 
 `void bcopy (const void *FROM, void *TO, size_t SIZE)'
-     `string.h' (BSD):  *Note Copying and Concatenation::.
+     `string.h' (BSD):  *Note Copying Strings and Arrays::.
 
 `int BC_SCALE_MAX'
      `limits.h' (POSIX.2):  *Note Utility Limits::.
@@ -2209,7 +2211,7 @@ it.
      `stdio.h' (ISO):  *Note Controlling Buffering::.
 
 `void bzero (void *BLOCK, size_t SIZE)'
-     `string.h' (BSD):  *Note Copying and Concatenation::.
+     `string.h' (BSD):  *Note Copying Strings and Arrays::.
 
 `double cabs (complex double Z)'
      `complex.h' (ISO):  *Note Absolute Value::.
@@ -5334,7 +5336,7 @@ it.
      `malloc.h' (GNU):  *Note Hooks for Malloc::.
 
 `void * memccpy (void *restrict TO, const void *restrict FROM, int C, size_t SIZE)'
-     `string.h' (SVID):  *Note Copying and Concatenation::.
+     `string.h' (SVID):  *Note Copying Strings and Arrays::.
 
 `void * memchr (const void *BLOCK, int C, size_t SIZE)'
      `string.h' (ISO):  *Note Search Functions::.
@@ -5343,7 +5345,7 @@ it.
      `string.h' (ISO):  *Note String/Array Comparison::.
 
 `void * memcpy (void *restrict TO, const void *restrict FROM, size_t SIZE)'
-     `string.h' (ISO):  *Note Copying and Concatenation::.
+     `string.h' (ISO):  *Note Copying Strings and Arrays::.
 
 `void * memfrob (void *MEM, size_t LENGTH)'
      `string.h' (GNU):  *Note Trivial Encryption::.
@@ -5353,16 +5355,16 @@ it.
      `string.h' (GNU):  *Note Search Functions::.
 
 `void * memmove (void *TO, const void *FROM, size_t SIZE)'
-     `string.h' (ISO):  *Note Copying and Concatenation::.
+     `string.h' (ISO):  *Note Copying Strings and Arrays::.
 
 `void * mempcpy (void *restrict TO, const void *restrict FROM, size_t SIZE)'
-     `string.h' (GNU):  *Note Copying and Concatenation::.
+     `string.h' (GNU):  *Note Copying Strings and Arrays::.
 
 `void * memrchr (const void *BLOCK, int C, size_t SIZE)'
      `string.h' (GNU):  *Note Search Functions::.
 
 `void * memset (void *BLOCK, int C, size_t SIZE)'
-     `string.h' (ISO):  *Note Copying and Concatenation::.
+     `string.h' (ISO):  *Note Copying Strings and Arrays::.
 
 `int mkdir (const char *FILENAME, mode_t MODE)'
      `sys/stat.h' (POSIX.1):  *Note Creating Directories::.
@@ -7568,10 +7570,10 @@ it.
      `time.h' (SVID, XPG):  *Note Simple Calendar Time::.
 
 `char * stpcpy (char *restrict TO, const char *restrict FROM)'
-     `string.h' (Unknown origin):  *Note Copying and Concatenation::.
+     `string.h' (Unknown origin):  *Note Copying Strings and Arrays::.
 
 `char * stpncpy (char *restrict TO, const char *restrict FROM, size_t SIZE)'
-     `string.h' (GNU):  *Note Copying and Concatenation::.
+     `string.h' (GNU):  *Note Truncating Strings::.
 
 `int strcasecmp (const char *S1, const char *S2)'
      `string.h' (BSD):  *Note String/Array Comparison::.
@@ -7580,7 +7582,7 @@ it.
      `string.h' (GNU):  *Note Search Functions::.
 
 `char * strcat (char *restrict TO, const char *restrict FROM)'
-     `string.h' (ISO):  *Note Copying and Concatenation::.
+     `string.h' (ISO):  *Note Concatenating Strings::.
 
 `char * strchr (const char *STRING, int C)'
      `string.h' (ISO):  *Note Search Functions::.
@@ -7595,16 +7597,13 @@ it.
      `string.h' (ISO):  *Note Collation Functions::.
 
 `char * strcpy (char *restrict TO, const char *restrict FROM)'
-     `string.h' (ISO):  *Note Copying and Concatenation::.
+     `string.h' (ISO):  *Note Copying Strings and Arrays::.
 
 `size_t strcspn (const char *STRING, const char *STOPSET)'
      `string.h' (ISO):  *Note Search Functions::.
 
-`char * strdup (const char *S)'
-     `string.h' (SVID):  *Note Copying and Concatenation::.
-
 `char * strdupa (const char *S)'
-     `string.h' (GNU):  *Note Copying and Concatenation::.
+     `string.h' (GNU):  *Note Copying Strings and Arrays::.
 
 `int STREAM_MAX'
      `limits.h' (POSIX.1):  *Note General Limits::.
@@ -7628,19 +7627,19 @@ it.
      `string.h' (BSD):  *Note String/Array Comparison::.
 
 `char * strncat (char *restrict TO, const char *restrict FROM, size_t SIZE)'
-     `string.h' (ISO):  *Note Copying and Concatenation::.
+     `string.h' (ISO):  *Note Truncating Strings::.
 
 `int strncmp (const char *S1, const char *S2, size_t SIZE)'
      `string.h' (ISO):  *Note String/Array Comparison::.
 
 `char * strncpy (char *restrict TO, const char *restrict FROM, size_t SIZE)'
-     `string.h' (ISO):  *Note Copying and Concatenation::.
+     `string.h' (string.h):  *Note Truncating Strings::.
 
 `char * strndup (const char *S, size_t SIZE)'
-     `string.h' (GNU):  *Note Copying and Concatenation::.
+     `string.h' (GNU):  *Note Truncating Strings::.
 
 `char * strndupa (const char *S, size_t SIZE)'
-     `string.h' (GNU):  *Note Copying and Concatenation::.
+     `string.h' (GNU):  *Note Truncating Strings::.
 
 `size_t strnlen (const char *S, size_t MAXLEN)'
      `string.h' (GNU):  *Note String Length::.
@@ -8372,10 +8371,10 @@ it.
      `sys/wait.h' (BSD):  *Note Process Completion Status::.
 
 `wchar_t * wcpcpy (wchar_t *restrict WTO, const wchar_t *restrict WFROM)'
-     `wchar.h' (GNU):  *Note Copying and Concatenation::.
+     `wchar.h' (GNU):  *Note Copying Strings and Arrays::.
 
 `wchar_t * wcpncpy (wchar_t *restrict WTO, const wchar_t *restrict WFROM, size_t SIZE)'
-     `wchar.h' (GNU):  *Note Copying and Concatenation::.
+     `wchar.h' (GNU):  *Note Truncating Strings::.
 
 `size_t wcrtomb (char *restrict S, wchar_t WC, mbstate_t *restrict PS)'
      `wchar.h' (ISO):  *Note Converting a Character::.
@@ -8384,7 +8383,7 @@ it.
      `wchar.h' (GNU):  *Note String/Array Comparison::.
 
 `wchar_t * wcscat (wchar_t *restrict WTO, const wchar_t *restrict WFROM)'
-     `wchar.h' (ISO):  *Note Copying and Concatenation::.
+     `wchar.h' (ISO):  *Note Concatenating Strings::.
 
 `wchar_t * wcschr (const wchar_t *WSTRING, int WC)'
      `wchar.h' (ISO):  *Note Search Functions::.
@@ -8399,13 +8398,13 @@ it.
      `wchar.h' (ISO):  *Note Collation Functions::.
 
 `wchar_t * wcscpy (wchar_t *restrict WTO, const wchar_t *restrict WFROM)'
-     `wchar.h' (ISO):  *Note Copying and Concatenation::.
+     `wchar.h' (ISO):  *Note Copying Strings and Arrays::.
 
 `size_t wcscspn (const wchar_t *WSTRING, const wchar_t *STOPSET)'
      `wchar.h' (ISO):  *Note Search Functions::.
 
 `wchar_t * wcsdup (const wchar_t *WS)'
-     `wchar.h' (GNU):  *Note Copying and Concatenation::.
+     `wchar.h' (GNU):  *Note Copying Strings and Arrays::.
 
 `size_t wcsftime (wchar_t *S, size_t SIZE, const wchar_t *TEMPLATE, const struct tm *BROKENTIME)'
      `time.h' (ISO/Amend1):  *Note Formatting Calendar Time::.
@@ -8417,13 +8416,13 @@ it.
      `wchar.h' (GNU):  *Note String/Array Comparison::.
 
 `wchar_t * wcsncat (wchar_t *restrict WTO, const wchar_t *restrict WFROM, size_t SIZE)'
-     `wchar.h' (ISO):  *Note Copying and Concatenation::.
+     `wchar.h' (ISO):  *Note Truncating Strings::.
 
 `int wcsncmp (const wchar_t *WS1, const wchar_t *WS2, size_t SIZE)'
      `wchar.h' (ISO):  *Note String/Array Comparison::.
 
 `wchar_t * wcsncpy (wchar_t *restrict WTO, const wchar_t *restrict WFROM, size_t SIZE)'
-     `wchar.h' (ISO):  *Note Copying and Concatenation::.
+     `wchar.h' (ISO):  *Note Truncating Strings::.
 
 `size_t wcsnlen (const wchar_t *WS, size_t MAXLEN)'
      `wchar.h' (GNU):  *Note String Length::.
@@ -8537,16 +8536,16 @@ it.
      `wchar.h' (ISO):  *Note String/Array Comparison::.
 
 `wchar_t * wmemcpy (wchar_t *restrict WTO, const wchar_t *restrict WFROM, size_t SIZE)'
-     `wchar.h' (ISO):  *Note Copying and Concatenation::.
+     `wchar.h' (ISO):  *Note Copying Strings and Arrays::.
 
 `wchar_t * wmemmove (wchar_t *WTO, const wchar_t *WFROM, size_t SIZE)'
-     `wchar.h' (ISO):  *Note Copying and Concatenation::.
+     `wchar.h' (ISO):  *Note Copying Strings and Arrays::.
 
 `wchar_t * wmempcpy (wchar_t *restrict WTO, const wchar_t *restrict WFROM, size_t SIZE)'
-     `wchar.h' (GNU):  *Note Copying and Concatenation::.
+     `wchar.h' (GNU):  *Note Copying Strings and Arrays::.
 
 `wchar_t * wmemset (wchar_t *BLOCK, wchar_t WC, size_t SIZE)'
-     `wchar.h' (ISO):  *Note Copying and Concatenation::.
+     `wchar.h' (ISO):  *Note Copying Strings and Arrays::.
 
 `int W_OK'
      `unistd.h' (POSIX.1):  *Note Testing File Access::.
@@ -8793,6 +8792,17 @@ will be used, and CFLAGS sets optimization options for the compiler.
      library.  This option hardcodes the newly built C library path in
      dynamic tests so that they can be invoked directly.
 
+`--disable-timezone-tools'
+     By default, timezone related utilities (`zic', `zdump', and
+     `tzselect') are installed with the GNU C Library.  If you are
+     building these independently (e.g. by using the `tzcode' package),
+     then this option will allow disabling the install of these.
+
+     Note that you need to make sure the external tools are kept in
+     sync with the versions that the GNU C Library expects as the data
+     formats may change over time.  Consult the `timezone' subdirectory
+     for more details.
+
 `--enable-lock-elision=yes'
      Enable lock elision for pthread mutexes by default.
 
@@ -9018,12 +9028,12 @@ build the GNU C Library:
      recommend GNU `make' version 3.79.  All earlier versions have
      severe bugs or lack features.
 
-   * GCC 4.6 or newer
+   * GCC 4.7 or newer
 
-     GCC 4.6 or higher is required.  In general it is recommended to use
+     GCC 4.7 or higher is required.  In general it is recommended to use
      the newest version of the compiler that is known to work for
      building the GNU C Library, as newer compilers usually produce
-     better code.  As of release time, GCC 4.9.2 is the newest compiler
+     better code.  As of release time, GCC 5.3 is the newest compiler
      verified to work to build the GNU C Library.
 
      You can use whatever compiler you like to compile programs that use
@@ -9045,14 +9055,16 @@ build the GNU C Library:
      need this version of the `texinfo' package.  Earlier versions do
      not understand all the tags used in the document, and the
      installation mechanism for the info files is not present or works
-     differently.  As of release time, `texinfo' 5.2 is the newest
+     differently.  As of release time, `texinfo' 6.0 is the newest
      verified to work to build the GNU C Library.
 
    * GNU `awk' 3.1.2, or higher
 
      `awk' is used in several places to generate files.  Some `gawk'
      extensions are used, including the `asorti' function, which was
-     introduced in version 3.1.2 of `gawk'.
+     introduced in version 3.1.2 of `gawk'.  As of release time, `gawk'
+     version 4.1.3 is the newest verified to work to build the GNU C
+     Library.
 
    * Perl 5
 
@@ -9062,11 +9074,8 @@ build the GNU C Library:
    * GNU `sed' 3.02 or newer
 
      `Sed' is used in several places to generate files.  Most scripts
-     work with any version of `sed'.  The known exception is the script
-     `po2test.sed' in the `intl' subdirectory which is used to generate
-     `msgs.h' for the test suite.  This script works correctly only
-     with GNU `sed' 3.02.  If you like to run the test suite, you
-     should definitely upgrade `sed'.
+     work with any version of `sed'.  As of release time, `sed' version
+     4.2.2 is the newest verified to work to build the GNU C Library.
 
 
 If you change any of the `configure.ac' files you will also need
@@ -9774,6 +9783,27 @@ to be used by other processors.  More information is available in
      Concepts::.
 
      Set the Program Priority Register to medium low value.
+
+   Power ISA 2.07 extends the priorities that can be set to the Program
+Priority Register (PPR).  The following functions implement the new
+priority levels: very low and medium high.
+
+ -- Function: void __ppc_set_ppr_very_low (void)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     Set the Program Priority Register to very low value.
+
+ -- Function: void __ppc_set_ppr_med_high (void)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     Set the Program Priority Register to medium high value.  The
+     medium high priority is privileged and may only be set during
+     certain time intervals by problem-state programs.  If the program
+     priority is medium high when the time interval expires or if an
+     attempt is made to set the priority to medium high when it is not
+     allowed, the priority is set to medium.
 
 
 File: libc.info,  Node: Contributors,  Next: Free Manuals,  Prev: Platform,  Up: Top

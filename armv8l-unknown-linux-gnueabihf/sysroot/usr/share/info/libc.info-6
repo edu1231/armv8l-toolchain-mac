@@ -457,7 +457,9 @@ START-INFO-DIR-ENTRY
 * __ppc_mdoom: (libc)PowerPC.
 * __ppc_set_ppr_low: (libc)PowerPC.
 * __ppc_set_ppr_med: (libc)PowerPC.
+* __ppc_set_ppr_med_high: (libc)PowerPC.
 * __ppc_set_ppr_med_low: (libc)PowerPC.
+* __ppc_set_ppr_very_low: (libc)PowerPC.
 * __ppc_yield: (libc)PowerPC.
 * __va_copy: (libc)Argument Macros.
 * _exit: (libc)Termination Internals.
@@ -548,14 +550,14 @@ START-INFO-DIR-ENTRY
 * basename: (libc)Finding Tokens in a String.
 * basename: (libc)Finding Tokens in a String.
 * bcmp: (libc)String/Array Comparison.
-* bcopy: (libc)Copying and Concatenation.
+* bcopy: (libc)Copying Strings and Arrays.
 * bind: (libc)Setting Address.
 * bind_textdomain_codeset: (libc)Charset conversion in gettext.
 * bindtextdomain: (libc)Locating gettext catalog.
 * brk: (libc)Resizing the Data Segment.
 * bsearch: (libc)Array Search Function.
 * btowc: (libc)Converting a Character.
-* bzero: (libc)Copying and Concatenation.
+* bzero: (libc)Copying Strings and Arrays.
 * cabs: (libc)Absolute Value.
 * cabsf: (libc)Absolute Value.
 * cabsl: (libc)Absolute Value.
@@ -1159,16 +1161,16 @@ START-INFO-DIR-ENTRY
 * mbtowc: (libc)Non-reentrant Character Conversion.
 * mcheck: (libc)Heap Consistency Checking.
 * memalign: (libc)Aligned Memory Blocks.
-* memccpy: (libc)Copying and Concatenation.
+* memccpy: (libc)Copying Strings and Arrays.
 * memchr: (libc)Search Functions.
 * memcmp: (libc)String/Array Comparison.
-* memcpy: (libc)Copying and Concatenation.
+* memcpy: (libc)Copying Strings and Arrays.
 * memfrob: (libc)Trivial Encryption.
 * memmem: (libc)Search Functions.
-* memmove: (libc)Copying and Concatenation.
-* mempcpy: (libc)Copying and Concatenation.
+* memmove: (libc)Copying Strings and Arrays.
+* mempcpy: (libc)Copying Strings and Arrays.
 * memrchr: (libc)Search Functions.
-* memset: (libc)Copying and Concatenation.
+* memset: (libc)Copying Strings and Arrays.
 * mkdir: (libc)Creating Directories.
 * mkdtemp: (libc)Temporary Files.
 * mkfifo: (libc)FIFO Special Files.
@@ -1483,19 +1485,19 @@ START-INFO-DIR-ENTRY
 * stat64: (libc)Reading Attributes.
 * stat: (libc)Reading Attributes.
 * stime: (libc)Simple Calendar Time.
-* stpcpy: (libc)Copying and Concatenation.
-* stpncpy: (libc)Copying and Concatenation.
+* stpcpy: (libc)Copying Strings and Arrays.
+* stpncpy: (libc)Truncating Strings.
 * strcasecmp: (libc)String/Array Comparison.
 * strcasestr: (libc)Search Functions.
-* strcat: (libc)Copying and Concatenation.
+* strcat: (libc)Concatenating Strings.
 * strchr: (libc)Search Functions.
 * strchrnul: (libc)Search Functions.
 * strcmp: (libc)String/Array Comparison.
 * strcoll: (libc)Collation Functions.
-* strcpy: (libc)Copying and Concatenation.
+* strcpy: (libc)Copying Strings and Arrays.
 * strcspn: (libc)Search Functions.
-* strdup: (libc)Copying and Concatenation.
-* strdupa: (libc)Copying and Concatenation.
+* strdup: (libc)Copying Strings and Arrays.
+* strdupa: (libc)Copying Strings and Arrays.
 * strerror: (libc)Error Messages.
 * strerror_r: (libc)Error Messages.
 * strfmon: (libc)Formatting Numbers.
@@ -1503,11 +1505,11 @@ START-INFO-DIR-ENTRY
 * strftime: (libc)Formatting Calendar Time.
 * strlen: (libc)String Length.
 * strncasecmp: (libc)String/Array Comparison.
-* strncat: (libc)Copying and Concatenation.
+* strncat: (libc)Truncating Strings.
 * strncmp: (libc)String/Array Comparison.
-* strncpy: (libc)Copying and Concatenation.
-* strndup: (libc)Copying and Concatenation.
-* strndupa: (libc)Copying and Concatenation.
+* strncpy: (libc)Truncating Strings.
+* strndup: (libc)Truncating Strings.
+* strndupa: (libc)Truncating Strings.
 * strnlen: (libc)String Length.
 * strpbrk: (libc)Search Functions.
 * strptime: (libc)Low-Level Time String Parsing.
@@ -1641,24 +1643,24 @@ START-INFO-DIR-ENTRY
 * waitpid: (libc)Process Completion.
 * warn: (libc)Error Messages.
 * warnx: (libc)Error Messages.
-* wcpcpy: (libc)Copying and Concatenation.
-* wcpncpy: (libc)Copying and Concatenation.
+* wcpcpy: (libc)Copying Strings and Arrays.
+* wcpncpy: (libc)Truncating Strings.
 * wcrtomb: (libc)Converting a Character.
 * wcscasecmp: (libc)String/Array Comparison.
-* wcscat: (libc)Copying and Concatenation.
+* wcscat: (libc)Concatenating Strings.
 * wcschr: (libc)Search Functions.
 * wcschrnul: (libc)Search Functions.
 * wcscmp: (libc)String/Array Comparison.
 * wcscoll: (libc)Collation Functions.
-* wcscpy: (libc)Copying and Concatenation.
+* wcscpy: (libc)Copying Strings and Arrays.
 * wcscspn: (libc)Search Functions.
-* wcsdup: (libc)Copying and Concatenation.
+* wcsdup: (libc)Copying Strings and Arrays.
 * wcsftime: (libc)Formatting Calendar Time.
 * wcslen: (libc)String Length.
 * wcsncasecmp: (libc)String/Array Comparison.
-* wcsncat: (libc)Copying and Concatenation.
+* wcsncat: (libc)Truncating Strings.
 * wcsncmp: (libc)String/Array Comparison.
-* wcsncpy: (libc)Copying and Concatenation.
+* wcsncpy: (libc)Truncating Strings.
 * wcsnlen: (libc)String Length.
 * wcsnrtombs: (libc)Converting Strings.
 * wcspbrk: (libc)Search Functions.
@@ -1687,10 +1689,10 @@ START-INFO-DIR-ENTRY
 * wctype: (libc)Classification of Wide Characters.
 * wmemchr: (libc)Search Functions.
 * wmemcmp: (libc)String/Array Comparison.
-* wmemcpy: (libc)Copying and Concatenation.
-* wmemmove: (libc)Copying and Concatenation.
-* wmempcpy: (libc)Copying and Concatenation.
-* wmemset: (libc)Copying and Concatenation.
+* wmemcpy: (libc)Copying Strings and Arrays.
+* wmemmove: (libc)Copying Strings and Arrays.
+* wmempcpy: (libc)Copying Strings and Arrays.
+* wmemset: (libc)Copying Strings and Arrays.
 * wordexp: (libc)Calling Wordexp.
 * wordfree: (libc)Calling Wordexp.
 * wprintf: (libc)Formatted Output Functions.
@@ -1710,10 +1712,10 @@ END-INFO-DIR-ENTRY
 
    This file documents the GNU C Library.
 
-   This is `The GNU C Library Reference Manual', for version 2.22
-(crosstool-NG crosstool-ng-1.22.0).
+   This is `The GNU C Library Reference Manual', for version 2.23
+(crosstool-NG crosstool-ng-1.22.0-148-g7300eb1).
 
-   Copyright (C) 1993-2015 Free Software Foundation, Inc.
+   Copyright (C) 1993-2016 Free Software Foundation, Inc.
 
    Permission is granted to copy, distribute and/or modify this document
 under the terms of the GNU Free Documentation License, Version
@@ -3837,28 +3839,28 @@ hardware support is different.
 Function      aarch64         Alpha           ARM             Generic         hppa/fpu
 acosf         1               1               1               -               -
 acos          -               -               -               -               -
-acosl         -               -               -               -               -
+acosl         1               1               -               -               -
 acoshf        2               2               2               -               1
-acosh         1               1               1               -               1
-acoshl        1               1               -               -               -
+acosh         2               2               2               -               1
+acoshl        2               2               -               -               -
 asinf         1               1               1               -               -
 asin          -               -               -               -               -
 asinl         1               1               -               -               -
 asinhf        1               1               1               -               1
 asinh         1               1               1               -               1
-asinhl        1               1               -               -               -
+asinhl        3               3               -               -               -
 atanf         1               1               1               -               -
 atan          1               -               -               -               -
 atanl         1               1               -               -               -
 atanhf        2               2               2               -               1
-atanh         1               1               1               -               1
-atanhl        2               2               -               -               -
+atanh         2               2               2               -               1
+atanhl        3               3               -               -               -
 atan2f        1               1               1               -               1
 atan2         -               -               -               -               -
 atan2l        1               1               -               -               -
 cabsf         -               -               -               -               -
 cabs          1               1               1               -               -
-cabsl         -               -               -               -               -
+cabsl         1               1               -               -               -
 cacosf        2 + i 2         2 + i 2         2 + i 2         -               2 + i 2
 cacos         1 + i 1         1 + i 1         1 + i 1         -               1 + i 1
 cacosl        2 + i 2         2 + i 2         -               -               -
@@ -3866,8 +3868,8 @@ cacoshf       2 + i 2         2 + i 2         2 + i 2         -               2 
 cacosh        1 + i 1         1 + i 1         1 + i 1         -               1 + i 1
 cacoshl       2 + i 2         2 + i 2         -               -               -
 cargf         1               1               1               -               -
-carg          -               -               -               -               -
-cargl         1               1               -               -               -
+carg          1               -               -               -               -
+cargl         2               2               -               -               -
 casinf        1 + i 2         1 + i 2         1 + i 2         -               1 + i 2
 casin         1 + i 1         1 + i 1         1 + i 1         -               1 + i 1
 casinl        2 + i 2         2 + i 2         -               -               1 + i 0
@@ -3898,12 +3900,12 @@ cexpl         1 + i 1         1 + i 1         -               -               -
 cimagf        -               -               -               -               -
 cimag         -               -               -               -               -
 cimagl        -               -               -               -               -
-clogf         3 + i 1         2 + i 1         2 + i 1         -               1 + i 1
+clogf         3 + i 1         3 + i 1         3 + i 1         -               1 + i 1
 clog          3 + i 1         3 + i 0         3 + i 0         -               1 + i 0
-clogl         4 + i 1         4 + i 1         -               -               -
-clog10f       3 + i 2         3 + i 2         3 + i 2         -               2 + i 1
+clogl         2 + i 1         2 + i 1         -               -               -
+clog10f       4 + i 2         4 + i 2         4 + i 2         -               2 + i 1
 clog10        3 + i 1         3 + i 2         3 + i 2         -               2 + i 1
-clog10l       4 + i 2         4 + i 2         -               -               0 + i 1
+clog10l       2 + i 2         2 + i 2         -               -               0 + i 1
 conjf         -               -               -               -               -
 conj          -               -               -               -               -
 conjl         -               -               -               -               -
@@ -3933,7 +3935,7 @@ csinh         0 + i 1         0 + i 1         0 + i 1         -               0 
 csinhl        1 + i 1         1 + i 1         -               -               0 + i 1
 csqrtf        2 + i 2         2 + i 2         2 + i 2         -               1 + i 1
 csqrt         2 + i 2         2 + i 2         2 + i 2         -               1 + i 1
-csqrtl        1 + i 1         1 + i 1         -               -               -
+csqrtl        2 + i 2         2 + i 2         -               -               -
 ctanf         1 + i 1         1 + i 1         1 + i 1         -               1 + i 1
 ctan          1 + i 2         1 + i 2         1 + i 2         -               1 + i 2
 ctanl         3 + i 3         3 + i 3         -               -               0 + i 1
@@ -3944,15 +3946,15 @@ erff          1               1               1               -               -
 erf           1               1               1               -               1
 erfl          1               1               -               -               1
 erfcf         2               2               2               -               1
-erfc          2               2               2               -               1
+erfc          2               3               3               -               1
 erfcl         2               2               -               -               1
-expf          -               -               -               -               -
+expf          1               1               1               -               -
 exp           -               -               -               -               -
-expl          -               -               -               -               -
+expl          1               1               -               -               -
 exp10f        -               -               -               -               2
 exp10         2               2               2               -               6
-exp10l        1               1               -               -               6
-exp2f         -               1               1               -               -
+exp10l        2               2               -               -               6
+exp2f         1               1               1               -               -
 exp2          1               1               1               -               -
 exp2l         1               1               -               -               -
 expm1f        1               1               1               -               1
@@ -3982,9 +3984,9 @@ fmodl         -               -               -               -               -
 frexpf        -               -               -               -               -
 frexp         -               -               -               -               -
 frexpl        -               -               -               -               -
-gammaf        1               2               2               -               2
-gamma         1               2               2               -               1
-gammal        1               1               -               -               -
+gammaf        4               4               4               -               2
+gamma         3               4               4               -               1
+gammal        5               5               -               -               -
 hypotf        -               -               -               -               1
 hypot         1               1               1               -               1
 hypotl        1               1               -               -               -
@@ -4000,9 +4002,9 @@ j1l           4               4               -               -               1
 jnf           4               4               4               -               5
 jn            4               4               4               -               4
 jnl           7               7               -               -               4
-lgammaf       1               2               2               -               2
-lgamma        1               2               2               -               1
-lgammal       1               1               -               -               1
+lgammaf       4               4               4               -               2
+lgamma        3               4               4               -               1
+lgammal       5               5               -               -               1
 lrintf        -               -               -               -               -
 lrint         -               -               -               -               -
 lrintl        -               -               -               -               -
@@ -4017,10 +4019,10 @@ log10         2               2               2               -               1
 log10l        1               1               -               -               1
 log1pf        1               1               1               -               1
 log1p         1               1               1               -               -
-log1pl        1               1               -               -               -
+log1pl        2               2               -               -               -
 log2f         1               1               1               -               -
 log2          1               2               2               -               -
-log2l         1               1               -               -               -
+log2l         2               2               -               -               -
 logbf         -               -               -               -               -
 logb          -               -               -               -               -
 logbl         -               -               -               -               -
@@ -4042,9 +4044,9 @@ nextafterl    -               -               -               -               -
 nexttowardf   -               -               -               -               -
 nexttoward    -               -               -               -               -
 nexttowardl   -               -               -               -               -
-powf          1               3               3               -               1
+powf          1               1               1               -               1
 pow           -               -               -               -               -
-powl          1               1               -               -               -
+powl          2               2               -               -               -
 remainderf    -               -               -               -               -
 remainder     -               -               -               -               -
 remainderl    -               -               -               -               -
@@ -4074,18 +4076,18 @@ sincos        -               -               -               -               1
 sincosl       1               1               -               -               1
 sinhf         2               2               2               -               -
 sinh          2               2               2               -               -
-sinhl         1               1               -               -               -
+sinhl         2               2               -               -               -
 sqrtf         -               -               -               -               -
 sqrt          -               -               -               -               -
 sqrtl         -               -               -               -               -
 tanf          1               1               1               -               -
 tan           -               -               -               -               1
-tanl          -               -               -               -               1
+tanl          1               1               -               -               1
 tanhf         2               2               2               -               -
 tanh          2               2               2               -               -
-tanhl         1               1               -               -               -
-tgammaf       3               5               5               -               3
-tgamma        3               7               3               -               4
+tanhl         2               2               -               -               -
+tgammaf       4               4               4               -               3
+tgamma        5               5               5               -               4
 tgammal       4               4               -               -               1
 truncf        -               -               -               -               -
 trunc         -               -               -               -               -
@@ -4100,130 +4102,130 @@ ynf           2               2               2               -               2
 yn            3               3               3               -               3
 ynl           5               5               -               -               3
 
-Function      ix86            IA64            m68k/coldfire/fpum68k/m680x0/fpu microblaze
+Function      ix86            i386/i686/fpu/multiarchIA64            m68k/coldfire/fpum68k/m680x0/fpu
 acosf         -               -               -               -               -
-acos          -               -               -               -               -
-acosl         1               -               -               -               -
-acoshf        -               -               -               1               -
-acosh         -               -               -               1               1
-acoshl        2               -               -               1               -
+acos          1               1               -               -               -
+acosl         1               1               -               -               -
+acoshf        -               -               -               -               1
+acosh         1               1               -               -               1
+acoshl        2               2               -               -               1
 asinf         -               -               -               -               -
-asin          -               -               -               -               -
-asinl         1               -               -               -               -
-asinhf        -               -               -               1               1
-asinh         -               -               -               1               1
-asinhl        2               -               -               1               -
+asin          1               1               -               -               -
+asinl         1               1               -               -               -
+asinhf        -               -               -               -               1
+asinh         1               1               -               -               1
+asinhl        3               3               -               -               1
 atanf         -               -               -               -               -
-atan          -               -               -               -               -
-atanl         1               -               -               -               -
-atanhf        -               -               1               -               1
-atanh         -               -               -               -               -
-atanhl        3               -               -               -               -
-atan2f        -               -               1               1               1
-atan2         -               -               -               -               -
-atan2l        1               -               -               1               -
+atan          1               1               -               -               -
+atanl         1               1               -               -               -
+atanhf        -               -               -               1               -
+atanh         1               1               -               -               -
+atanhl        3               3               -               -               -
+atan2f        -               -               -               1               1
+atan2         1               1               -               -               -
+atan2l        1               1               -               -               1
 cabsf         -               -               -               -               -
-cabs          -               -               -               1               -
-cabsl         1               -               -               1               -
-cacosf        1 + i 1         2 + i 2         -               2 + i 1         2 + i 2
-cacos         1 + i 1         1 + i 1         -               1 + i 1         1 + i 1
-cacosl        1 + i 2         1 + i 2         -               1 + i 2         -
-cacoshf       1 + i 1         2 + i 2         0 + i 1         1 + i 2         2 + i 2
-cacosh        1 + i 1         1 + i 1         -               1 + i 1         1 + i 1
-cacoshl       2 + i 1         2 + i 1         -               2 + i 1         -
-cargf         -               -               -               1               -
-carg          -               -               -               -               -
-cargl         1               -               -               1               -
-casinf        1 + i 1         1 + i 2         1 + i 0         1 + i 1         1 + i 2
-casin         1 + i 1         1 + i 1         1 + i 0         1 + i 1         1 + i 1
-casinl        1 + i 2         1 + i 2         -               1 + i 2         -
-casinhf       1 + i 1         2 + i 1         1 + i 6         1 + i 1         2 + i 1
-casinh        1 + i 1         1 + i 1         5 + i 3         1 + i 1         1 + i 1
-casinhl       2 + i 1         2 + i 1         -               2 + i 1         -
-catanf        0 + i 1         0 + i 1         0 + i 1         0 + i 1         1 + i 1
+cabs          1               1               -               -               1
+cabsl         1               1               -               -               1
+cacosf        1 + i 1         1 + i 1         2 + i 2         -               2 + i 1
+cacos         1 + i 1         1 + i 1         1 + i 1         -               1 + i 1
+cacosl        1 + i 2         1 + i 2         1 + i 2         -               1 + i 2
+cacoshf       1 + i 1         1 + i 1         2 + i 2         0 + i 1         1 + i 2
+cacosh        1 + i 1         1 + i 1         1 + i 1         -               1 + i 1
+cacoshl       2 + i 1         2 + i 1         2 + i 1         -               2 + i 1
+cargf         -               -               -               -               1
+carg          1               1               -               -               -
+cargl         1               1               -               -               1
+casinf        1 + i 1         1 + i 1         1 + i 2         1 + i 0         1 + i 1
+casin         1 + i 1         1 + i 1         1 + i 1         1 + i 0         1 + i 1
+casinl        1 + i 2         1 + i 2         1 + i 2         -               1 + i 2
+casinhf       1 + i 1         1 + i 1         2 + i 1         1 + i 6         1 + i 1
+casinh        1 + i 1         1 + i 1         1 + i 1         5 + i 3         1 + i 1
+casinhl       2 + i 1         2 + i 1         2 + i 1         -               2 + i 1
+catanf        0 + i 1         0 + i 1         0 + i 1         0 + i 1         0 + i 1
 catan         0 + i 1         0 + i 1         0 + i 1         0 + i 1         0 + i 1
-catanl        0 + i 1         0 + i 1         -               1 + i 1         -
-catanhf       1 + i 0         1 + i 0         -               1 + i 0         1 + i 1
-catanh        1 + i 0         1 + i 0         4 + i 0         1 + i 0         1 + i 0
-catanhl       1 + i 0         1 + i 0         -               1 + i 1         -
-cbrtf         -               -               -               1               1
-cbrt          1               -               1               1               1
-cbrtl         1               -               -               1               -
-ccosf         1 + i 1         0 + i 1         1 + i 1         -               1 + i 1
-ccos          1 + i 1         1 + i 1         1 + i 0         -               1 + i 1
-ccosl         1 + i 1         1 + i 1         -               1 + i 1         -
-ccoshf        1 + i 1         1 + i 1         1 + i 1         -               1 + i 1
-ccosh         1 + i 1         1 + i 1         1 + i 0         -               1 + i 1
-ccoshl        1 + i 1         0 + i 1         -               0 + i 1         -
+catanl        0 + i 1         0 + i 1         0 + i 1         -               1 + i 1
+catanhf       1 + i 0         1 + i 0         1 + i 0         -               1 + i 0
+catanh        1 + i 0         1 + i 0         1 + i 0         4 + i 0         1 + i 0
+catanhl       1 + i 0         1 + i 0         1 + i 0         -               1 + i 1
+cbrtf         1               1               -               -               1
+cbrt          1               1               -               1               1
+cbrtl         3               3               -               -               1
+ccosf         1 + i 1         1 + i 1         0 + i 1         1 + i 1         -
+ccos          1 + i 1         1 + i 1         1 + i 1         1 + i 0         -
+ccosl         1 + i 1         1 + i 1         1 + i 1         -               1 + i 1
+ccoshf        1 + i 1         1 + i 1         1 + i 1         1 + i 1         -
+ccosh         1 + i 1         1 + i 1         1 + i 1         1 + i 0         -
+ccoshl        1 + i 1         1 + i 1         0 + i 1         -               0 + i 1
 ceilf         -               -               -               -               -
 ceil          -               -               -               -               -
 ceill         -               -               -               -               -
-cexpf         1 + i 1         1 + i 2         1 + i 1         -               1 + i 2
-cexp          1 + i 1         2 + i 1         -               -               2 + i 1
-cexpl         1 + i 1         1 + i 1         -               1 + i 1         -
+cexpf         1 + i 2         1 + i 2         1 + i 2         1 + i 1         -
+cexp          2 + i 1         2 + i 1         2 + i 1         -               -
+cexpl         1 + i 1         1 + i 1         1 + i 1         -               1 + i 1
 cimagf        -               -               -               -               -
 cimag         -               -               -               -               -
 cimagl        -               -               -               -               -
-clogf         2 + i 0         1 + i 0         1 + i 0         2 + i 1         1 + i 1
-clog          3 + i 1         1 + i 1         -               3 + i 1         1 + i 0
-clogl         4 + i 1         1 + i 1         -               3 + i 1         -
-clog10f       2 + i 0         2 + i 1         1 + i 1         2 + i 1         2 + i 1
-clog10        2 + i 1         2 + i 1         0 + i 1         2 + i 1         2 + i 1
-clog10l       4 + i 2         1 + i 1         -               3 + i 2         -
+clogf         1 + i 0         1 + i 0         1 + i 0         1 + i 0         2 + i 1
+clog          2 + i 1         2 + i 1         1 + i 1         -               3 + i 1
+clogl         3 + i 1         3 + i 1         1 + i 1         -               3 + i 1
+clog10f       2 + i 0         2 + i 0         2 + i 1         1 + i 1         2 + i 1
+clog10        2 + i 1         2 + i 1         2 + i 1         0 + i 1         2 + i 1
+clog10l       4 + i 2         4 + i 2         1 + i 1         -               3 + i 2
 conjf         -               -               -               -               -
 conj          -               -               -               -               -
 conjl         -               -               -               -               -
 copysignf     -               -               -               -               -
 copysign      -               -               -               -               -
 copysignl     -               -               -               -               -
-cosf          -               -               1               -               1
-cos           -               1               2               1               -
-cosl          1               -               -               -               -
-coshf         -               -               -               -               1
-cosh          -               -               -               -               1
-coshl         2               -               -               -               -
-cpowf         5 + i 1         5 + i 2         4 + i 2         3 + i 5         4 + i 2
-cpow          2 + i 1         2 + i 0         2 + i 2         1 + i 0         2 + i 0
-cpowl         3 + i 4         3 + i 4         -               3 + i 1         -
+cosf          1               -               -               1               -
+cos           -               -               1               2               1
+cosl          1               1               -               -               -
+coshf         1               1               -               -               -
+cosh          1               1               -               -               -
+coshl         2               2               -               -               -
+cpowf         5 + i 2         5 + i 2         5 + i 2         4 + i 2         3 + i 5
+cpow          2 + i 0         2 + i 1         2 + i 0         2 + i 2         1 + i 0
+cpowl         3 + i 4         3 + i 4         3 + i 4         -               3 + i 1
 cprojf        -               -               -               -               -
 cproj         -               -               -               -               -
 cprojl        -               -               -               -               -
 crealf        -               -               -               -               -
 creal         -               -               -               -               -
 creall        -               -               -               -               -
-csinf         1 + i 1         1 + i 1         -               -               1 + i 0
-csin          1 + i 1         1 + i 0         -               -               1 + i 0
-csinl         1 + i 0         1 + i 0         -               1 + i 0         -
-csinhf        1 + i 1         1 + i 1         1 + i 1         -               1 + i 1
-csinh         1 + i 1         1 + i 1         0 + i 1         -               0 + i 1
-csinhl        1 + i 1         1 + i 0         -               1 + i 0         -
-csqrtf        -               1 + i 1         1 + i 0         1 + i 1         1 + i 1
-csqrt         1 + i 1         1 + i 1         -               1 + i 1         1 + i 1
-csqrtl        2 + i 2         1 + i 1         -               2 + i 2         -
-ctanf         1 + i 1         1 + i 1         -               1 + i 1         1 + i 1
-ctan          1 + i 1         1 + i 2         0 + i 1         1 + i 1         1 + i 2
-ctanl         2 + i 1         2 + i 2         -               2 + i 2         -
-ctanhf        1 + i 1         1 + i 1         2 + i 1         1 + i 2         1 + i 2
-ctanh         1 + i 1         2 + i 2         1 + i 0         1 + i 1         2 + i 2
-ctanhl        1 + i 2         1 + i 2         -               2 + i 2         -
-erff          1               -               -               1               -
-erf           1               -               1               -               1
-erfl          1               -               -               1               -
-erfcf         1               -               -               1               1
-erfc          1               -               1               -               1
-erfcl         2               -               -               2               -
+csinf         1 + i 1         1 + i 1         1 + i 1         -               -
+csin          1 + i 0         1 + i 1         1 + i 0         -               -
+csinl         1 + i 0         1 + i 0         1 + i 0         -               1 + i 0
+csinhf        0 + i 1         1 + i 1         1 + i 1         1 + i 1         -
+csinh         0 + i 1         1 + i 1         1 + i 1         0 + i 1         -
+csinhl        1 + i 1         1 + i 1         1 + i 0         -               1 + i 0
+csqrtf        0 + i 1         0 + i 1         1 + i 1         1 + i 0         1 + i 1
+csqrt         1 + i 1         1 + i 1         1 + i 1         -               1 + i 1
+csqrtl        2 + i 2         2 + i 2         1 + i 1         -               2 + i 2
+ctanf         1 + i 1         1 + i 1         1 + i 1         -               1 + i 1
+ctan          1 + i 1         1 + i 1         1 + i 2         0 + i 1         1 + i 1
+ctanl         2 + i 1         2 + i 1         2 + i 2         -               2 + i 2
+ctanhf        1 + i 1         1 + i 1         1 + i 1         2 + i 1         1 + i 2
+ctanh         1 + i 1         1 + i 1         2 + i 2         1 + i 0         1 + i 1
+ctanhl        1 + i 2         1 + i 2         1 + i 2         -               2 + i 2
+erff          1               1               -               -               1
+erf           1               1               -               1               -
+erfl          1               1               -               -               1
+erfcf         1               1               -               -               1
+erfc          1               1               -               1               -
+erfcl         3               3               -               -               2
 expf          -               -               -               -               -
-exp           -               -               -               -               -
-expl          1               -               -               -               -
-exp10f        -               -               2               -               -
-exp10         -               -               6               -               1
-exp10l        1               -               -               -               -
+exp           1               1               -               -               -
+expl          1               1               -               -               -
+exp10f        -               -               -               2               -
+exp10         1               1               -               6               -
+exp10l        1               1               -               -               -
 exp2f         -               -               -               -               -
-exp2          1               -               -               1               -
-exp2l         1               -               -               -               -
-expm1f        -               -               1               -               1
-expm1         -               -               1               -               1
-expm1l        2               1               -               -               -
+exp2          1               1               -               -               1
+exp2l         1               1               -               -               -
+expm1f        -               -               -               1               -
+expm1         1               1               -               1               -
+expm1l        2               2               1               -               -
 fabsf         -               -               -               -               -
 fabs          -               -               -               -               -
 fabsl         -               -               -               -               -
@@ -4248,45 +4250,45 @@ fmodl         -               -               -               -               -
 frexpf        -               -               -               -               -
 frexp         -               -               -               -               -
 frexpl        -               -               -               -               -
-gammaf        1               -               -               1               1
-gamma         1               -               -               -               1
-gammal        2               -               -               2               -
-hypotf        -               -               1               -               -
-hypot         -               -               -               1               1
-hypotl        1               -               -               1               -
+gammaf        2               3               -               -               1
+gamma         3               3               -               -               -
+gammal        4               4               -               -               2
+hypotf        -               -               -               1               -
+hypot         1               1               -               -               1
+hypotl        1               1               -               -               1
 ilogbf        -               -               -               -               -
 ilogb         -               -               -               -               -
 ilogbl        -               -               -               -               -
-j0f           1               2               2               2               2
-j0            1               2               2               1               2
-j0l           2               2               -               2               -
-j1f           1               2               2               2               2
-j1            2               1               1               -               1
-j1l           1               1               -               1               -
-jnf           3               4               4               2               4
-jn            2               4               4               2               4
-jnl           4               4               -               4               -
-lgammaf       1               -               2               1               1
-lgamma        1               -               1               -               1
-lgammal       2               -               -               2               -
+j0f           1               1               2               2               2
+j0            1               1               2               2               1
+j0l           2               2               2               -               2
+j1f           1               1               2               2               2
+j1            2               2               1               1               -
+j1l           1               1               1               -               1
+jnf           3               3               4               4               2
+jn            2               2               4               4               2
+jnl           4               4               4               -               4
+lgammaf       2               3               -               2               1
+lgamma        3               3               -               1               -
+lgammal       4               4               -               -               2
 lrintf        -               -               -               -               -
 lrint         -               -               -               -               -
 lrintl        -               -               -               -               -
 llrintf       -               -               -               -               -
 llrint        -               -               -               -               -
 llrintl       -               -               -               -               -
-logf          -               -               -               -               1
-log           -               -               -               -               -
-logl          1               -               -               -               -
-log10f        -               -               2               -               2
-log10         -               -               1               -               1
-log10l        1               -               -               -               -
-log1pf        -               -               1               -               1
-log1p         -               -               -               -               -
-log1pl        2               -               -               -               -
+logf          -               -               -               -               -
+log           1               1               -               -               -
+logl          1               1               -               -               -
+log10f        -               -               -               2               -
+log10         1               1               -               1               -
+log10l        1               1               -               -               -
+log1pf        -               -               -               1               -
+log1p         1               1               -               -               -
+log1pl        2               2               -               -               -
 log2f         -               -               -               -               -
-log2          -               -               -               -               -
-log2l         1               -               -               -               -
+log2          1               1               -               -               -
+log2l         1               1               -               -               -
 logbf         -               -               -               -               -
 logb          -               -               -               -               -
 logbl         -               -               -               -               -
@@ -4308,9 +4310,9 @@ nextafterl    -               -               -               -               -
 nexttowardf   -               -               -               -               -
 nexttoward    -               -               -               -               -
 nexttowardl   -               -               -               -               -
-powf          -               -               -               7               1
-pow           -               -               -               1               -
-powl          1               -               -               9               -
+powf          -               -               -               -               7
+pow           1               1               -               -               1
+powl          1               1               -               -               9
 remainderf    -               -               -               -               -
 remainder     -               -               -               -               -
 remainderl    -               -               -               -               -
@@ -4332,110 +4334,110 @@ scalbnl       -               -               -               -               -
 scalblnf      -               -               -               -               -
 scalbln       -               -               -               -               -
 scalblnl      -               -               -               -               -
-sinf          -               -               -               -               1
-sin           -               1               -               1               -
-sinl          1               -               -               -               -
-sincosf       -               -               1               -               1
-sincos        -               1               1               -               -
-sincosl       1               -               -               -               -
+sinf          1               -               -               -               -
+sin           -               -               1               -               1
+sinl          1               1               -               -               -
+sincosf       1               -               -               1               -
+sincos        -               -               1               1               -
+sincosl       1               1               -               -               -
 sinhf         -               -               -               -               -
-sinh          -               -               -               -               -
-sinhl         2               -               -               -               -
+sinh          1               1               -               -               -
+sinhl         2               2               -               -               -
 sqrtf         -               -               -               -               -
 sqrt          -               -               -               -               -
 sqrtl         -               -               -               -               -
-tanf          1               -               -               -               -
-tan           -               -               1               -               -
-tanl          1               -               -               -               -
+tanf          1               1               -               -               -
+tan           -               -               -               1               -
+tanl          2               2               -               -               -
 tanhf         -               -               -               -               -
-tanh          -               -               -               -               -
-tanhl         2               -               -               -               -
-tgammaf       3               -               1               4               3
-tgamma        2               -               1               1               4
-tgammal       3               1               -               9               -
+tanh          1               1               -               -               -
+tanhl         3               3               -               -               -
+tgammaf       3               3               -               1               4
+tgamma        3               3               -               1               1
+tgammal       5               5               1               -               9
 truncf        -               -               -               -               -
 trunc         -               -               -               -               -
 truncl        -               -               -               -               -
 y0f           1               1               1               1               1
-y0            1               2               2               1               2
-y0l           1               1               -               1               -
-y1f           2               2               2               3               2
-y1            2               3               3               1               3
-y1l           2               2               -               2               -
-ynf           3               3               2               3               2
-yn            2               3               3               2               3
-ynl           4               2               -               4               -
+y0            1               1               2               2               1
+y0l           1               1               1               -               1
+y1f           2               2               2               2               3
+y1            2               2               3               3               1
+y1l           2               2               2               -               2
+ynf           3               3               3               2               3
+yn            2               2               3               3               2
+ynl           4               4               2               -               4
 
-Function      mips/mips32     mips/mips64     nios2           PowerPC         powerpc/nofpu
-acosf         1               1               1               1               1
+Function      microblaze      mips/mips32     mips/mips64     nios2           PowerPC
+acosf         -               1               1               1               1
 acos          -               -               -               -               -
-acosl         -               -               -               1               1
-acoshf        2               2               2               2               2
-acosh         1               1               1               1               1
-acoshl        -               1               -               1               1
-asinf         1               1               1               1               1
+acosl         -               -               1               -               1
+acoshf        -               2               2               2               2
+acosh         1               2               2               2               2
+acoshl        -               -               2               -               1
+asinf         -               1               1               1               1
 asin          -               -               -               -               -
-asinl         -               1               -               2               2
+asinl         -               -               1               -               2
 asinhf        1               1               1               1               1
 asinh         1               1               1               1               1
-asinhl        -               1               -               2               2
-atanf         1               1               1               1               1
-atan          -               -               -               1               -
-atanl         -               1               -               1               1
-atanhf        2               2               2               2               2
-atanh         1               1               1               1               1
-atanhl        -               2               -               2               2
+asinhl        -               -               3               -               2
+atanf         -               1               1               1               1
+atan          -               -               -               -               1
+atanl         -               -               1               -               1
+atanhf        1               2               2               2               2
+atanh         -               2               2               2               2
+atanhl        -               -               3               -               2
 atan2f        1               1               1               1               1
 atan2         -               -               -               -               -
-atan2l        -               1               -               2               2
+atan2l        -               -               1               -               2
 cabsf         -               -               -               -               -
-cabs          1               1               1               1               1
-cabsl         -               -               -               1               1
+cabs          -               1               1               1               1
+cabsl         -               -               1               -               1
 cacosf        2 + i 2         2 + i 2         2 + i 2         2 + i 2         2 + i 2
 cacos         1 + i 1         1 + i 1         1 + i 1         1 + i 1         1 + i 1
-cacosl        -               2 + i 2         -               1 + i 2         2 + i 1
+cacosl        -               -               2 + i 2         -               1 + i 2
 cacoshf       2 + i 2         2 + i 2         2 + i 2         2 + i 2         2 + i 2
 cacosh        1 + i 1         1 + i 1         1 + i 1         1 + i 1         1 + i 1
-cacoshl       -               2 + i 2         -               2 + i 1         1 + i 2
-cargf         1               1               1               1               1
-carg          -               -               -               -               -
-cargl         -               1               -               1               1
+cacoshl       -               -               2 + i 2         -               2 + i 1
+cargf         -               1               1               1               1
+carg          -               -               -               -               1
+cargl         -               -               2               -               2
 casinf        1 + i 2         1 + i 2         1 + i 2         1 + i 2         1 + i 2
 casin         1 + i 1         1 + i 1         1 + i 1         1 + i 1         1 + i 1
-casinl        -               2 + i 2         -               1 + i 2         2 + i 1
+casinl        -               -               2 + i 2         -               1 + i 2
 casinhf       2 + i 1         2 + i 1         2 + i 1         2 + i 1         2 + i 1
 casinh        1 + i 1         1 + i 1         1 + i 1         1 + i 1         1 + i 1
-casinhl       -               2 + i 2         -               2 + i 1         1 + i 2
+casinhl       -               -               2 + i 2         -               2 + i 1
 catanf        1 + i 1         1 + i 1         1 + i 1         1 + i 1         1 + i 1
 catan         0 + i 1         0 + i 1         0 + i 1         0 + i 1         0 + i 1
-catanl        -               1 + i 1         -               1 + i 1         1 + i 1
+catanl        -               -               1 + i 1         -               1 + i 1
 catanhf       1 + i 1         1 + i 1         1 + i 1         1 + i 1         1 + i 1
 catanh        1 + i 0         1 + i 0         1 + i 0         1 + i 0         1 + i 0
-catanhl       -               1 + i 1         -               1 + i 1         1 + i 1
+catanhl       -               -               1 + i 1         -               1 + i 1
 cbrtf         1               1               1               1               1
-cbrt          3               3               3               3               3
-cbrtl         -               1               -               1               1
+cbrt          1               3               3               3               3
+cbrtl         -               -               1               -               1
 ccosf         1 + i 1         1 + i 1         1 + i 1         1 + i 1         1 + i 1
 ccos          1 + i 1         1 + i 1         1 + i 1         1 + i 1         1 + i 1
-ccosl         -               1 + i 1         -               1 + i 1         1 + i 2
+ccosl         -               -               1 + i 1         -               1 + i 1
 ccoshf        1 + i 1         1 + i 1         1 + i 1         1 + i 1         1 + i 1
 ccosh         1 + i 1         1 + i 1         1 + i 1         1 + i 1         1 + i 1
-ccoshl        -               1 + i 1         -               1 + i 2         1 + i 2
+ccoshl        -               -               1 + i 1         -               1 + i 2
 ceilf         -               -               -               -               -
 ceil          -               -               -               -               -
 ceill         -               -               -               -               -
 cexpf         1 + i 2         1 + i 2         1 + i 2         1 + i 2         1 + i 2
 cexp          2 + i 1         2 + i 1         2 + i 1         2 + i 1         2 + i 1
-cexpl         -               1 + i 1         -               2 + i 2         1 + i 1
+cexpl         -               -               1 + i 1         -               2 + i 2
 cimagf        -               -               -               -               -
 cimag         -               -               -               -               -
 cimagl        -               -               -               -               -
-clogf         2 + i 1         2 + i 1         2 + i 1         3 + i 1         2 + i 1
-clog          3 + i 0         3 + i 0         3 + i 0         3 + i 1         3 + i 0
-clogl         -               4 + i 1         -               5 + i 2         5 + i 2
-clog10f       3 + i 2         3 + i 2         3 + i 2         3 + i 2         3 + i 2
-clog10        3 + i 2         3 + i 2         3 + i 2         3 + i 1         3 + i 2
-clog10l       -               4 + i 2         -               3 + i 2         3 + i 2
+clogf         1 + i 1         3 + i 1         3 + i 1         3 + i 1         3 + i 1
+clog          1 + i 0         3 + i 0         3 + i 0         3 + i 0         3 + i 1
+clogl         -               -               2 + i 1         -               5 + i 2
+clog10f       2 + i 1         4 + i 2         4 + i 2         4 + i 2         4 + i 2
+clog10        2 + i 1         3 + i 2         3 + i 2         3 + i 2         3 + i 1
+clog10l       -               -               2 + i 2         -               3 + i 2
 conjf         -               -               -               -               -
 conj          -               -               -               -               -
 conjl         -               -               -               -               -
@@ -4444,13 +4446,13 @@ copysign      -               -               -               -               -
 copysignl     -               -               -               -               -
 cosf          1               1               1               1               1
 cos           -               -               -               -               -
-cosl          -               1               -               4               4
+cosl          -               -               1               -               4
 coshf         1               1               1               1               1
 cosh          1               1               1               1               1
-coshl         -               1               -               3               3
-cpowf         4 + i 2         4 + i 2         4 + i 2         5 + i 2         4 + i 2
+coshl         -               -               1               -               3
+cpowf         4 + i 2         4 + i 2         4 + i 2         4 + i 2         5 + i 2
 cpow          2 + i 0         2 + i 0         2 + i 0         2 + i 0         2 + i 0
-cpowl         -               4 + i 1         -               4 + i 2         4 + i 1
+cpowl         -               -               4 + i 1         -               4 + i 2
 cprojf        -               -               -               -               -
 cproj         -               -               -               -               -
 cprojl        -               -               -               -               -
@@ -4459,37 +4461,37 @@ creal         -               -               -               -               -
 creall        -               -               -               -               -
 csinf         1 + i 0         1 + i 0         1 + i 0         1 + i 0         1 + i 0
 csin          1 + i 0         1 + i 0         1 + i 0         1 + i 0         1 + i 0
-csinl         -               1 + i 1         -               1 + i 1         2 + i 1
+csinl         -               -               1 + i 1         -               1 + i 1
 csinhf        1 + i 1         1 + i 1         1 + i 1         1 + i 1         1 + i 1
 csinh         0 + i 1         0 + i 1         0 + i 1         0 + i 1         0 + i 1
-csinhl        -               1 + i 1         -               1 + i 1         1 + i 2
-csqrtf        2 + i 2         2 + i 2         2 + i 2         2 + i 2         2 + i 2
-csqrt         2 + i 2         2 + i 2         2 + i 2         2 + i 2         2 + i 2
-csqrtl        -               1 + i 1         -               1 + i 1         1 + i 1
+csinhl        -               -               1 + i 1         -               1 + i 1
+csqrtf        1 + i 1         2 + i 2         2 + i 2         2 + i 2         2 + i 2
+csqrt         1 + i 1         2 + i 2         2 + i 2         2 + i 2         2 + i 2
+csqrtl        -               -               2 + i 2         -               1 + i 1
 ctanf         1 + i 1         1 + i 1         1 + i 1         1 + i 1         1 + i 1
 ctan          1 + i 2         1 + i 2         1 + i 2         1 + i 2         1 + i 2
-ctanl         -               3 + i 3         -               2 + i 2         3 + i 2
-ctanhf        1 + i 2         1 + i 2         1 + i 2         2 + i 1         1 + i 2
+ctanl         -               -               3 + i 3         -               2 + i 2
+ctanhf        1 + i 2         1 + i 2         1 + i 2         1 + i 2         2 + i 1
 ctanh         2 + i 2         2 + i 2         2 + i 2         2 + i 2         2 + i 2
-ctanhl        -               3 + i 3         -               3 + i 2         2 + i 3
-erff          1               1               1               1               1
+ctanhl        -               -               3 + i 3         -               3 + i 2
+erff          -               1               1               1               1
 erf           1               1               1               1               1
-erfl          -               1               -               1               1
-erfcf         2               2               2               2               2
-erfc          2               2               2               2               2
-erfcl         -               2               -               2               3
-expf          -               -               -               -               -
-exp           -               -               -               -               -
-expl          -               -               -               1               1
+erfl          -               -               1               -               1
+erfcf         1               2               2               2               2
+erfc          1               3               3               3               2
+erfcl         -               -               2               -               2
+expf          -               1               1               1               1
+exp           -               -               -               -               1
+expl          -               -               1               -               1
 exp10f        -               -               -               -               -
-exp10         2               2               2               2               2
-exp10l        -               1               -               1               1
-exp2f         1               1               1               -               1
-exp2          1               1               1               1               1
-exp2l         -               1               -               1               1
+exp10         1               2               2               2               2
+exp10l        -               -               2               -               1
+exp2f         -               1               1               1               1
+exp2          -               1               1               1               1
+exp2l         -               -               1               -               2
 expm1f        1               1               1               1               1
 expm1         1               1               1               1               1
-expm1l        -               1               -               1               1
+expm1l        -               -               1               -               1
 fabsf         -               -               -               -               -
 fabs          -               -               -               -               -
 fabsl         -               -               -               -               -
@@ -4501,7 +4503,7 @@ floor         -               -               -               -               -
 floorl        -               -               -               -               -
 fmaf          -               -               -               -               -
 fma           -               -               -               -               -
-fmal          -               -               -               1               1
+fmal          -               -               -               -               1
 fmaxf         -               -               -               -               -
 fmax          -               -               -               -               -
 fmaxl         -               -               -               -               -
@@ -4510,31 +4512,31 @@ fmin          -               -               -               -               -
 fminl         -               -               -               -               -
 fmodf         -               -               -               -               -
 fmod          -               -               -               -               -
-fmodl         -               -               -               -               -
+fmodl         -               -               -               -               1
 frexpf        -               -               -               -               -
 frexp         -               -               -               -               -
 frexpl        -               -               -               -               -
-gammaf        2               2               2               1               2
-gamma         2               2               2               1               2
-gammal        -               1               -               1               1
+gammaf        1               4               4               4               4
+gamma         1               4               4               4               3
+gammal        -               -               5               -               3
 hypotf        -               -               -               -               -
 hypot         1               1               1               1               1
-hypotl        -               1               -               1               1
+hypotl        -               -               1               -               1
 ilogbf        -               -               -               -               -
 ilogb         -               -               -               -               -
 ilogbl        -               -               -               -               -
 j0f           2               2               2               2               2
 j0            2               2               2               2               2
-j0l           -               2               -               2               2
+j0l           -               -               2               -               2
 j1f           2               2               2               2               2
 j1            1               1               1               1               1
-j1l           -               4               -               1               1
+j1l           -               -               4               -               1
 jnf           4               4               4               4               4
 jn            4               4               4               4               4
-jnl           -               7               -               4               4
-lgammaf       2               2               2               1               2
-lgamma        2               2               2               1               2
-lgammal       -               1               -               1               1
+jnl           -               -               7               -               4
+lgammaf       1               4               4               4               4
+lgamma        1               4               4               4               3
+lgammal       -               -               5               -               3
 lrintf        -               -               -               -               -
 lrint         -               -               -               -               -
 lrintl        -               -               -               -               -
@@ -4543,16 +4545,16 @@ llrint        -               -               -               -               -
 llrintl       -               -               -               -               -
 logf          1               1               1               1               1
 log           -               -               -               -               -
-logl          -               1               -               1               1
+logl          -               -               1               -               1
 log10f        2               2               2               2               2
-log10         2               2               2               2               2
-log10l        -               1               -               1               1
+log10         1               2               2               2               2
+log10l        -               -               1               -               1
 log1pf        1               1               1               1               1
-log1p         1               1               1               1               1
-log1pl        -               1               -               1               1
-log2f         1               1               1               1               1
-log2          2               2               2               1               2
-log2l         -               1               -               1               1
+log1p         -               1               1               1               1
+log1pl        -               -               2               -               2
+log2f         -               1               1               1               1
+log2          -               2               2               2               1
+log2l         -               -               2               -               1
 logbf         -               -               -               -               -
 logb          -               -               -               -               -
 logbl         -               -               -               -               -
@@ -4574,9 +4576,9 @@ nextafterl    -               -               -               -               -
 nexttowardf   -               -               -               -               -
 nexttoward    -               -               -               -               -
 nexttowardl   -               -               -               -               -
-powf          3               3               3               1               3
+powf          1               1               1               3               1
 pow           -               -               -               -               -
-powl          -               1               -               1               1
+powl          -               -               2               -               1
 remainderf    -               -               -               -               -
 remainder     -               -               -               -               -
 remainderl    -               -               -               -               -
@@ -4600,123 +4602,123 @@ scalbln       -               -               -               -               -
 scalblnl      -               -               -               -               -
 sinf          1               1               1               1               1
 sin           -               -               -               -               -
-sinl          -               1               -               1               1
+sinl          -               -               1               -               1
 sincosf       1               1               1               1               1
 sincos        -               -               -               -               -
-sincosl       -               1               -               1               1
-sinhf         2               2               2               2               2
-sinh          2               2               2               2               2
-sinhl         -               1               -               2               2
+sincosl       -               -               1               -               1
+sinhf         -               2               2               2               2
+sinh          -               2               2               2               2
+sinhl         -               -               2               -               3
 sqrtf         -               -               -               -               -
 sqrt          -               -               -               -               -
-sqrtl         -               -               -               1               1
-tanf          1               1               1               1               1
+sqrtl         -               -               -               -               1
+tanf          -               1               1               1               1
 tan           -               -               -               -               -
-tanl          -               -               -               2               2
-tanhf         2               2               2               2               2
-tanh          2               2               2               2               2
-tanhl         -               1               -               1               1
-tgammaf       5               5               5               3               5
-tgamma        3               3               4               3               3
-tgammal       -               4               -               5               3
+tanl          -               -               1               -               2
+tanhf         -               2               2               2               2
+tanh          -               2               2               2               2
+tanhl         -               -               2               -               1
+tgammaf       3               4               4               5               4
+tgamma        4               5               5               5               5
+tgammal       -               -               4               -               5
 truncf        -               -               -               -               -
 trunc         -               -               -               -               -
 truncl        -               -               -               -               -
 y0f           1               1               1               1               1
 y0            2               2               2               2               2
-y0l           -               3               -               1               1
+y0l           -               -               3               -               1
 y1f           2               2               2               2               2
 y1            3               3               3               3               3
-y1l           -               2               -               2               2
+y1l           -               -               2               -               2
 ynf           2               2               2               2               2
 yn            3               3               3               3               3
-ynl           -               5               -               2               2
+ynl           -               -               5               -               2
 
-Function      S/390           sh              sparc/fpu       tile            x86_64/fpu
-acosf         1               -               1               1               1
+Function      powerpc/nofpu   S/390           sh              sparc/fpu       tile
+acosf         1               1               -               1               1
 acos          -               -               -               -               -
-acosl         -               -               -               -               1
-acoshf        2               -               2               2               2
-acosh         1               1               1               1               1
-acoshl        1               -               1               -               2
-asinf         1               -               1               1               1
+acosl         1               1               -               1               -
+acoshf        2               2               -               2               2
+acosh         2               2               1               2               2
+acoshl        1               2               -               2               -
+asinf         1               1               -               1               1
 asin          -               -               -               -               -
-asinl         1               -               1               -               1
+asinl         2               1               -               1               -
 asinhf        1               1               1               1               1
 asinh         1               1               1               1               1
-asinhl        1               -               1               -               2
-atanf         1               -               1               1               1
-atan          1               -               -               -               -
-atanl         1               -               1               -               1
-atanhf        2               1               2               2               2
-atanh         1               -               1               1               1
-atanhl        2               -               2               -               3
+asinhl        2               3               -               3               -
+atanf         1               1               -               1               1
+atan          -               1               -               -               -
+atanl         1               1               -               1               -
+atanhf        2               2               1               2               2
+atanh         2               2               -               2               2
+atanhl        2               3               -               3               -
 atan2f        1               1               1               1               1
 atan2         -               -               -               -               -
-atan2l        1               -               1               -               1
+atan2l        2               1               -               1               -
 cabsf         -               -               -               -               -
-cabs          1               -               1               1               1
-cabsl         -               -               -               -               1
+cabs          1               1               -               1               1
+cabsl         1               1               -               1               -
 cacosf        2 + i 2         2 + i 2         2 + i 2         2 + i 2         2 + i 2
 cacos         1 + i 1         1 + i 1         1 + i 1         1 + i 1         1 + i 1
-cacosl        2 + i 2         -               2 + i 2         -               1 + i 2
+cacosl        2 + i 1         2 + i 2         -               2 + i 2         -
 cacoshf       2 + i 2         2 + i 2         2 + i 2         2 + i 2         2 + i 2
 cacosh        1 + i 1         1 + i 1         1 + i 1         1 + i 1         1 + i 1
-cacoshl       2 + i 2         -               2 + i 2         -               2 + i 1
-cargf         1               -               1               1               1
-carg          -               -               -               -               -
-cargl         1               -               1               -               1
+cacoshl       1 + i 2         2 + i 2         -               2 + i 2         -
+cargf         1               1               -               1               1
+carg          -               1               -               -               -
+cargl         2               2               -               2               -
 casinf        1 + i 2         1 + i 2         1 + i 2         1 + i 2         1 + i 2
 casin         1 + i 1         1 + i 1         1 + i 1         1 + i 1         1 + i 1
-casinl        2 + i 2         -               2 + i 2         -               1 + i 2
+casinl        2 + i 1         2 + i 2         -               2 + i 2         -
 casinhf       2 + i 1         2 + i 1         2 + i 1         2 + i 1         2 + i 1
 casinh        1 + i 1         1 + i 1         1 + i 1         1 + i 1         1 + i 1
-casinhl       2 + i 2         -               2 + i 2         -               2 + i 1
+casinhl       1 + i 2         2 + i 2         -               2 + i 2         -
 catanf        1 + i 1         1 + i 1         1 + i 1         1 + i 1         1 + i 1
 catan         0 + i 1         0 + i 1         0 + i 1         0 + i 1         0 + i 1
-catanl        1 + i 1         -               1 + i 1         -               0 + i 1
+catanl        1 + i 1         1 + i 1         -               1 + i 1         -
 catanhf       1 + i 1         1 + i 1         1 + i 1         1 + i 1         1 + i 1
 catanh        1 + i 0         1 + i 0         1 + i 0         1 + i 0         1 + i 0
-catanhl       1 + i 1         -               1 + i 1         -               1 + i 0
+catanhl       1 + i 1         1 + i 1         -               1 + i 1         -
 cbrtf         1               1               1               1               1
-cbrt          3               1               3               3               3
-cbrtl         1               -               1               -               1
+cbrt          3               3               1               3               3
+cbrtl         1               1               -               1               -
 ccosf         1 + i 1         1 + i 1         1 + i 1         1 + i 1         1 + i 1
 ccos          1 + i 1         1 + i 1         1 + i 1         1 + i 1         1 + i 1
-ccosl         1 + i 1         -               1 + i 1         -               1 + i 1
+ccosl         1 + i 2         1 + i 1         -               1 + i 1         -
 ccoshf        1 + i 1         1 + i 1         1 + i 1         1 + i 1         1 + i 1
 ccosh         1 + i 1         1 + i 1         1 + i 1         1 + i 1         1 + i 1
-ccoshl        1 + i 1         -               1 + i 1         -               1 + i 1
+ccoshl        1 + i 2         1 + i 1         -               1 + i 1         -
 ceilf         -               -               -               -               -
 ceil          -               -               -               -               -
 ceill         -               -               -               -               -
 cexpf         1 + i 2         1 + i 2         1 + i 2         1 + i 2         1 + i 2
 cexp          2 + i 1         2 + i 1         2 + i 1         2 + i 1         2 + i 1
-cexpl         1 + i 1         -               1 + i 1         -               1 + i 1
+cexpl         1 + i 1         1 + i 1         -               1 + i 1         -
 cimagf        -               -               -               -               -
 cimag         -               -               -               -               -
 cimagl        -               -               -               -               -
-clogf         3 + i 1         1 + i 1         2 + i 1         2 + i 1         2 + i 1
-clog          3 + i 1         1 + i 0         3 + i 0         3 + i 0         3 + i 0
-clogl         4 + i 1         -               4 + i 1         -               4 + i 1
-clog10f       3 + i 2         2 + i 1         3 + i 2         3 + i 2         3 + i 2
-clog10        3 + i 1         2 + i 1         3 + i 2         3 + i 2         3 + i 2
-clog10l       4 + i 2         -               4 + i 2         -               4 + i 2
+clogf         3 + i 1         3 + i 1         1 + i 1         3 + i 1         3 + i 1
+clog          3 + i 0         3 + i 1         1 + i 0         3 + i 0         3 + i 0
+clogl         2 + i 2         2 + i 1         -               4 + i 1         -
+clog10f       4 + i 2         4 + i 2         2 + i 1         4 + i 2         4 + i 2
+clog10        3 + i 2         3 + i 1         2 + i 1         3 + i 2         3 + i 2
+clog10l       3 + i 2         2 + i 2         -               4 + i 2         -
 conjf         -               -               -               -               -
 conj          -               -               -               -               -
 conjl         -               -               -               -               -
 copysignf     -               -               -               -               -
 copysign      -               -               -               -               -
 copysignl     -               -               -               -               -
-cosf          1               1               1               1               -
+cosf          1               1               1               1               1
 cos           -               -               -               -               -
-cosl          1               -               1               -               1
+cosl          4               1               -               1               -
 coshf         1               1               1               1               1
 cosh          1               1               1               1               1
-coshl         1               -               1               -               2
-cpowf         5 + i 2         4 + i 2         4 + i 2         4 + i 2         5 + i 2
+coshl         3               1               -               1               -
+cpowf         4 + i 2         5 + i 2         4 + i 2         4 + i 2         4 + i 2
 cpow          2 + i 0         2 + i 0         2 + i 0         2 + i 0         2 + i 0
-cpowl         4 + i 1         -               4 + i 1         -               3 + i 4
+cpowl         4 + i 1         4 + i 1         -               4 + i 1         -
 cprojf        -               -               -               -               -
 cproj         -               -               -               -               -
 cprojl        -               -               -               -               -
@@ -4725,37 +4727,37 @@ creal         -               -               -               -               -
 creall        -               -               -               -               -
 csinf         1 + i 0         1 + i 0         1 + i 0         1 + i 0         1 + i 0
 csin          1 + i 0         1 + i 0         1 + i 0         1 + i 0         1 + i 0
-csinl         1 + i 1         -               1 + i 1         -               1 + i 0
+csinl         2 + i 1         1 + i 1         -               1 + i 1         -
 csinhf        1 + i 1         1 + i 1         1 + i 1         1 + i 1         1 + i 1
 csinh         0 + i 1         0 + i 1         0 + i 1         0 + i 1         0 + i 1
-csinhl        1 + i 1         -               1 + i 1         -               1 + i 1
-csqrtf        2 + i 2         1 + i 1         2 + i 2         2 + i 2         2 + i 2
-csqrt         2 + i 2         1 + i 1         2 + i 2         2 + i 2         2 + i 2
-csqrtl        1 + i 1         -               1 + i 1         -               2 + i 2
-ctanf         1 + i 1         1 + i 1         1 + i 1         1 + i 1         1 + i 2
+csinhl        1 + i 2         1 + i 1         -               1 + i 1         -
+csqrtf        2 + i 2         2 + i 2         1 + i 1         2 + i 2         2 + i 2
+csqrt         2 + i 2         2 + i 2         1 + i 1         2 + i 2         2 + i 2
+csqrtl        1 + i 1         2 + i 2         -               2 + i 2         -
+ctanf         1 + i 1         1 + i 1         1 + i 1         1 + i 1         1 + i 1
 ctan          1 + i 2         1 + i 2         1 + i 2         1 + i 2         1 + i 2
-ctanl         3 + i 3         -               3 + i 3         -               2 + i 1
-ctanhf        2 + i 1         1 + i 2         1 + i 2         1 + i 2         2 + i 2
+ctanl         3 + i 2         3 + i 3         -               3 + i 3         -
+ctanhf        1 + i 2         2 + i 1         1 + i 2         1 + i 2         1 + i 2
 ctanh         2 + i 2         2 + i 2         2 + i 2         2 + i 2         2 + i 2
-ctanhl        3 + i 3         -               3 + i 3         -               1 + i 2
-erff          1               -               1               1               1
+ctanhl        2 + i 3         3 + i 3         -               3 + i 3         -
+erff          1               1               -               1               1
 erf           1               1               1               1               1
-erfl          1               -               1               -               1
-erfcf         2               1               2               2               2
-erfc          2               1               2               2               2
-erfcl         2               -               2               -               2
-expf          -               -               -               -               -
+erfl          1               1               -               1               -
+erfcf         2               2               1               2               2
+erfc          3               2               1               3               3
+erfcl         3               2               -               2               -
+expf          1               1               -               1               1
 exp           -               -               -               -               -
-expl          -               -               -               -               1
+expl          1               1               -               1               -
 exp10f        -               -               -               -               -
-exp10         2               1               2               2               2
-exp10l        1               -               1               -               1
-exp2f         -               -               1               1               1
-exp2          1               -               1               1               1
-exp2l         1               -               1               -               1
+exp10         2               2               1               2               2
+exp10l        1               2               -               2               -
+exp2f         1               1               -               1               1
+exp2          1               1               -               1               1
+exp2l         1               1               -               1               -
 expm1f        1               1               1               1               1
 expm1         1               1               1               1               1
-expm1l        1               -               1               -               2
+expm1l        1               1               -               1               -
 fabsf         -               -               -               -               -
 fabs          -               -               -               -               -
 fabsl         -               -               -               -               -
@@ -4767,7 +4769,7 @@ floor         -               -               -               -               -
 floorl        -               -               -               -               -
 fmaf          -               -               -               -               -
 fma           -               -               -               -               -
-fmal          -               -               -               -               -
+fmal          1               -               -               -               -
 fmaxf         -               -               -               -               -
 fmax          -               -               -               -               -
 fmaxl         -               -               -               -               -
@@ -4776,31 +4778,31 @@ fmin          -               -               -               -               -
 fminl         -               -               -               -               -
 fmodf         -               -               -               -               -
 fmod          -               -               -               -               -
-fmodl         -               -               -               -               -
+fmodl         1               -               -               -               -
 frexpf        -               -               -               -               -
 frexp         -               -               -               -               -
 frexpl        -               -               -               -               -
-gammaf        1               1               2               2               2
-gamma         1               1               2               2               2
-gammal        1               -               1               -               2
+gammaf        4               4               1               4               4
+gamma         4               3               1               4               4
+gammal        3               5               -               5               -
 hypotf        -               -               -               -               -
 hypot         1               1               1               1               1
-hypotl        1               -               1               -               1
+hypotl        1               1               -               1               -
 ilogbf        -               -               -               -               -
 ilogb         -               -               -               -               -
 ilogbl        -               -               -               -               -
 j0f           2               2               2               2               2
 j0            2               2               2               2               2
-j0l           2               -               2               -               2
+j0l           2               2               -               2               -
 j1f           2               2               2               2               2
 j1            1               1               1               1               1
-j1l           4               -               4               -               1
+j1l           1               4               -               4               -
 jnf           4               4               4               4               4
 jn            4               4               4               4               4
-jnl           7               -               7               -               4
-lgammaf       1               1               2               2               2
-lgamma        1               1               2               2               2
-lgammal       1               -               1               -               2
+jnl           4               7               -               7               -
+lgammaf       4               4               1               4               4
+lgamma        4               3               1               4               4
+lgammal       3               5               -               5               -
 lrintf        -               -               -               -               -
 lrint         -               -               -               -               -
 lrintl        -               -               -               -               -
@@ -4809,16 +4811,16 @@ llrint        -               -               -               -               -
 llrintl       -               -               -               -               -
 logf          1               1               1               1               1
 log           -               -               -               -               -
-logl          1               -               1               -               1
+logl          1               1               -               1               -
 log10f        2               2               2               2               2
-log10         2               1               2               2               2
-log10l        1               -               1               -               1
+log10         2               2               1               2               2
+log10l        1               1               -               1               -
 log1pf        1               1               1               1               1
-log1p         1               -               1               1               1
-log1pl        1               -               1               -               2
-log2f         1               -               1               1               1
-log2          1               -               2               2               2
-log2l         1               -               1               -               1
+log1p         1               1               -               1               1
+log1pl        2               2               -               2               -
+log2f         1               1               -               1               1
+log2          2               1               -               2               2
+log2l         1               2               -               2               -
 logbf         -               -               -               -               -
 logb          -               -               -               -               -
 logbl         -               -               -               -               -
@@ -4840,9 +4842,9 @@ nextafterl    -               -               -               -               -
 nexttowardf   -               -               -               -               -
 nexttoward    -               -               -               -               -
 nexttowardl   -               -               -               -               -
-powf          1               1               3               3               3
+powf          1               1               1               3               3
 pow           -               -               -               -               -
-powl          1               -               1               -               1
+powl          1               2               -               2               -
 remainderf    -               -               -               -               -
 remainder     -               -               -               -               -
 remainderl    -               -               -               -               -
@@ -4864,39 +4866,39 @@ scalbnl       -               -               -               -               -
 scalblnf      -               -               -               -               -
 scalbln       -               -               -               -               -
 scalblnl      -               -               -               -               -
-sinf          1               1               1               1               -
+sinf          1               1               1               1               1
 sin           -               -               -               -               -
-sinl          1               -               1               -               1
-sincosf       1               1               1               1               -
+sinl          1               1               -               1               -
+sincosf       1               1               1               1               1
 sincos        -               -               -               -               -
-sincosl       1               -               1               -               1
-sinhf         2               -               2               2               2
-sinh          2               -               2               2               2
-sinhl         1               -               1               -               2
+sincosl       1               1               -               1               -
+sinhf         2               2               -               2               2
+sinh          2               2               -               2               2
+sinhl         3               2               -               2               -
 sqrtf         -               -               -               -               -
 sqrt          -               -               -               -               -
-sqrtl         -               -               -               -               -
-tanf          1               -               1               1               1
+sqrtl         1               -               -               -               -
+tanf          1               1               -               1               1
 tan           -               -               -               -               -
-tanl          -               -               -               -               1
-tanhf         2               -               2               2               2
-tanh          2               -               2               2               2
-tanhl         1               -               1               -               2
-tgammaf       3               3               5               5               5
-tgamma        3               4               4               3               4
-tgammal       4               -               4               -               3
+tanl          2               1               -               1               -
+tanhf         2               2               -               2               2
+tanh          2               2               -               2               2
+tanhl         1               2               -               2               -
+tgammaf       4               4               3               5               5
+tgamma        5               5               4               5               5
+tgammal       3               4               -               4               -
 truncf        -               -               -               -               -
 trunc         -               -               -               -               -
 truncl        -               -               -               -               -
 y0f           1               1               1               1               1
 y0            2               2               2               2               2
-y0l           3               -               3               -               1
+y0l           1               3               -               3               -
 y1f           2               2               2               2               2
 y1            3               3               3               3               3
-y1l           2               -               2               -               2
-ynf           2               2               2               2               3
+y1l           2               2               -               2               -
+ynf           2               2               2               2               2
 yn            3               3               3               3               3
-ynl           5               -               5               -               4
+ynl           2               5               -               5               -
 
 
 File: libc.info,  Node: Pseudo-Random Numbers,  Next: FP Function Optimizations,  Prev: Errors in Math Functions,  Up: Mathematics
@@ -7964,8 +7966,7 @@ this.  It works even on some peculiar operating systems where the
         Return 1 if the difference is negative, otherwise 0. */
 
      int
-     timeval_subtract (result, x, y)
-          struct timeval *result, *x, *y;
+     timeval_subtract (struct timeval *result, struct timeval *x, struct timeval *y)
      {
        /* Perform the carry for the later subtraction by updating Y. */
        if (x->tv_usec < y->tv_usec) {

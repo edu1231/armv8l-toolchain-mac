@@ -457,7 +457,9 @@ START-INFO-DIR-ENTRY
 * __ppc_mdoom: (libc)PowerPC.
 * __ppc_set_ppr_low: (libc)PowerPC.
 * __ppc_set_ppr_med: (libc)PowerPC.
+* __ppc_set_ppr_med_high: (libc)PowerPC.
 * __ppc_set_ppr_med_low: (libc)PowerPC.
+* __ppc_set_ppr_very_low: (libc)PowerPC.
 * __ppc_yield: (libc)PowerPC.
 * __va_copy: (libc)Argument Macros.
 * _exit: (libc)Termination Internals.
@@ -548,14 +550,14 @@ START-INFO-DIR-ENTRY
 * basename: (libc)Finding Tokens in a String.
 * basename: (libc)Finding Tokens in a String.
 * bcmp: (libc)String/Array Comparison.
-* bcopy: (libc)Copying and Concatenation.
+* bcopy: (libc)Copying Strings and Arrays.
 * bind: (libc)Setting Address.
 * bind_textdomain_codeset: (libc)Charset conversion in gettext.
 * bindtextdomain: (libc)Locating gettext catalog.
 * brk: (libc)Resizing the Data Segment.
 * bsearch: (libc)Array Search Function.
 * btowc: (libc)Converting a Character.
-* bzero: (libc)Copying and Concatenation.
+* bzero: (libc)Copying Strings and Arrays.
 * cabs: (libc)Absolute Value.
 * cabsf: (libc)Absolute Value.
 * cabsl: (libc)Absolute Value.
@@ -1159,16 +1161,16 @@ START-INFO-DIR-ENTRY
 * mbtowc: (libc)Non-reentrant Character Conversion.
 * mcheck: (libc)Heap Consistency Checking.
 * memalign: (libc)Aligned Memory Blocks.
-* memccpy: (libc)Copying and Concatenation.
+* memccpy: (libc)Copying Strings and Arrays.
 * memchr: (libc)Search Functions.
 * memcmp: (libc)String/Array Comparison.
-* memcpy: (libc)Copying and Concatenation.
+* memcpy: (libc)Copying Strings and Arrays.
 * memfrob: (libc)Trivial Encryption.
 * memmem: (libc)Search Functions.
-* memmove: (libc)Copying and Concatenation.
-* mempcpy: (libc)Copying and Concatenation.
+* memmove: (libc)Copying Strings and Arrays.
+* mempcpy: (libc)Copying Strings and Arrays.
 * memrchr: (libc)Search Functions.
-* memset: (libc)Copying and Concatenation.
+* memset: (libc)Copying Strings and Arrays.
 * mkdir: (libc)Creating Directories.
 * mkdtemp: (libc)Temporary Files.
 * mkfifo: (libc)FIFO Special Files.
@@ -1483,19 +1485,19 @@ START-INFO-DIR-ENTRY
 * stat64: (libc)Reading Attributes.
 * stat: (libc)Reading Attributes.
 * stime: (libc)Simple Calendar Time.
-* stpcpy: (libc)Copying and Concatenation.
-* stpncpy: (libc)Copying and Concatenation.
+* stpcpy: (libc)Copying Strings and Arrays.
+* stpncpy: (libc)Truncating Strings.
 * strcasecmp: (libc)String/Array Comparison.
 * strcasestr: (libc)Search Functions.
-* strcat: (libc)Copying and Concatenation.
+* strcat: (libc)Concatenating Strings.
 * strchr: (libc)Search Functions.
 * strchrnul: (libc)Search Functions.
 * strcmp: (libc)String/Array Comparison.
 * strcoll: (libc)Collation Functions.
-* strcpy: (libc)Copying and Concatenation.
+* strcpy: (libc)Copying Strings and Arrays.
 * strcspn: (libc)Search Functions.
-* strdup: (libc)Copying and Concatenation.
-* strdupa: (libc)Copying and Concatenation.
+* strdup: (libc)Copying Strings and Arrays.
+* strdupa: (libc)Copying Strings and Arrays.
 * strerror: (libc)Error Messages.
 * strerror_r: (libc)Error Messages.
 * strfmon: (libc)Formatting Numbers.
@@ -1503,11 +1505,11 @@ START-INFO-DIR-ENTRY
 * strftime: (libc)Formatting Calendar Time.
 * strlen: (libc)String Length.
 * strncasecmp: (libc)String/Array Comparison.
-* strncat: (libc)Copying and Concatenation.
+* strncat: (libc)Truncating Strings.
 * strncmp: (libc)String/Array Comparison.
-* strncpy: (libc)Copying and Concatenation.
-* strndup: (libc)Copying and Concatenation.
-* strndupa: (libc)Copying and Concatenation.
+* strncpy: (libc)Truncating Strings.
+* strndup: (libc)Truncating Strings.
+* strndupa: (libc)Truncating Strings.
 * strnlen: (libc)String Length.
 * strpbrk: (libc)Search Functions.
 * strptime: (libc)Low-Level Time String Parsing.
@@ -1641,24 +1643,24 @@ START-INFO-DIR-ENTRY
 * waitpid: (libc)Process Completion.
 * warn: (libc)Error Messages.
 * warnx: (libc)Error Messages.
-* wcpcpy: (libc)Copying and Concatenation.
-* wcpncpy: (libc)Copying and Concatenation.
+* wcpcpy: (libc)Copying Strings and Arrays.
+* wcpncpy: (libc)Truncating Strings.
 * wcrtomb: (libc)Converting a Character.
 * wcscasecmp: (libc)String/Array Comparison.
-* wcscat: (libc)Copying and Concatenation.
+* wcscat: (libc)Concatenating Strings.
 * wcschr: (libc)Search Functions.
 * wcschrnul: (libc)Search Functions.
 * wcscmp: (libc)String/Array Comparison.
 * wcscoll: (libc)Collation Functions.
-* wcscpy: (libc)Copying and Concatenation.
+* wcscpy: (libc)Copying Strings and Arrays.
 * wcscspn: (libc)Search Functions.
-* wcsdup: (libc)Copying and Concatenation.
+* wcsdup: (libc)Copying Strings and Arrays.
 * wcsftime: (libc)Formatting Calendar Time.
 * wcslen: (libc)String Length.
 * wcsncasecmp: (libc)String/Array Comparison.
-* wcsncat: (libc)Copying and Concatenation.
+* wcsncat: (libc)Truncating Strings.
 * wcsncmp: (libc)String/Array Comparison.
-* wcsncpy: (libc)Copying and Concatenation.
+* wcsncpy: (libc)Truncating Strings.
 * wcsnlen: (libc)String Length.
 * wcsnrtombs: (libc)Converting Strings.
 * wcspbrk: (libc)Search Functions.
@@ -1687,10 +1689,10 @@ START-INFO-DIR-ENTRY
 * wctype: (libc)Classification of Wide Characters.
 * wmemchr: (libc)Search Functions.
 * wmemcmp: (libc)String/Array Comparison.
-* wmemcpy: (libc)Copying and Concatenation.
-* wmemmove: (libc)Copying and Concatenation.
-* wmempcpy: (libc)Copying and Concatenation.
-* wmemset: (libc)Copying and Concatenation.
+* wmemcpy: (libc)Copying Strings and Arrays.
+* wmemmove: (libc)Copying Strings and Arrays.
+* wmempcpy: (libc)Copying Strings and Arrays.
+* wmemset: (libc)Copying Strings and Arrays.
 * wordexp: (libc)Calling Wordexp.
 * wordfree: (libc)Calling Wordexp.
 * wprintf: (libc)Formatted Output Functions.
@@ -1710,10 +1712,10 @@ END-INFO-DIR-ENTRY
 
    This file documents the GNU C Library.
 
-   This is `The GNU C Library Reference Manual', for version 2.22
-(crosstool-NG crosstool-ng-1.22.0).
+   This is `The GNU C Library Reference Manual', for version 2.23
+(crosstool-NG crosstool-ng-1.22.0-148-g7300eb1).
 
-   Copyright (C) 1993-2015 Free Software Foundation, Inc.
+   Copyright (C) 1993-2016 Free Software Foundation, Inc.
 
    Permission is granted to copy, distribute and/or modify this document
 under the terms of the GNU Free Documentation License, Version
@@ -1816,12 +1818,13 @@ File: libc.info,  Node: String and Array Utilities,  Next: Character Set Handlin
 5 String and Array Utilities
 ****************************
 
-Operations on strings (or arrays of characters) are an important part of
-many programs.  The GNU C Library provides an extensive set of string
-utility functions, including functions for copying, concatenating,
-comparing, and searching strings.  Many of these functions can also
-operate on arbitrary regions of storage; for example, the `memcpy'
-function can be used to copy the contents of any kind of array.
+Operations on strings (null-terminated byte sequences) are an important
+part of many programs.  The GNU C Library provides an extensive set of
+string utility functions, including functions for copying,
+concatenating, comparing, and searching strings.  Many of these
+functions can also operate on arbitrary regions of storage; for
+example, the `memcpy' function can be used to copy the contents of any
+kind of array.
 
    It's fairly common for beginning C programmers to "reinvent the
 wheel" by duplicating this functionality in their own code, but it pays
@@ -1839,8 +1842,9 @@ typically highly optimized, your program may run faster too.
 * String/Array Conventions::    Whether to use a string function or an
 				 arbitrary array function.
 * String Length::               Determining the length of a string.
-* Copying and Concatenation::   Functions to copy the contents of strings
-				 and arrays.
+* Copying Strings and Arrays::  Functions to copy strings and arrays.
+* Concatenating Strings::       Functions to concatenate strings while copying.
+* Truncating Strings::          Functions to truncate strings while copying.
 * String/Array Comparison::     Functions for byte-wise and character-wise
 				 comparison.
 * Collation Functions::         Functions for collating strings.
@@ -1859,69 +1863,73 @@ File: libc.info,  Node: Representation of Strings,  Next: String/Array Conventio
 =============================
 
 This section is a quick summary of string concepts for beginning C
-programmers.  It describes how character strings are represented in C
-and some common pitfalls.  If you are already familiar with this
-material, you can skip this section.
+programmers.  It describes how strings are represented in C and some
+common pitfalls.  If you are already familiar with this material, you
+can skip this section.
 
-   A "string" is an array of `char' objects.  But string-valued
-variables are usually declared to be pointers of type `char *'.  Such
-variables do not include space for the text of a string; that has to be
-stored somewhere else--in an array variable, a string constant, or
-dynamically allocated memory (*note Memory Allocation::).  It's up to
-you to store the address of the chosen memory space into the pointer
-variable.  Alternatively you can store a "null pointer" in the pointer
-variable.  The null pointer does not point anywhere, so attempting to
-reference the string it points to gets an error.
+   A "string" is a null-terminated array of bytes of type `char',
+including the terminating null byte.  String-valued variables are
+usually declared to be pointers of type `char *'.  Such variables do
+not include space for the text of a string; that has to be stored
+somewhere else--in an array variable, a string constant, or dynamically
+allocated memory (*note Memory Allocation::).  It's up to you to store
+the address of the chosen memory space into the pointer variable.
+Alternatively you can store a "null pointer" in the pointer variable.
+The null pointer does not point anywhere, so attempting to reference
+the string it points to gets an error.
 
-   "string" normally refers to multibyte character strings as opposed to
-wide character strings.  Wide character strings are arrays of type
-`wchar_t' and as for multibyte character strings usually pointers of
-type `wchar_t *' are used.
+   A "multibyte character" is a sequence of one or more bytes that
+represents a single character using the locale's encoding scheme; a
+null byte always represents the null character.  A "multibyte string"
+is a string that consists entirely of multibyte characters.  In
+contrast, a "wide string" is a null-terminated sequence of `wchar_t'
+objects.  A wide-string variable is usually declared to be a pointer of
+type `wchar_t *', by analogy with string variables and `char *'.  *Note
+Extended Char Intro::.
 
-   By convention, a "null character", `'\0'', marks the end of a
-multibyte character string and the "null wide character", `L'\0'',
-marks the end of a wide character string.  For example, in testing to
-see whether the `char *' variable P points to a null character marking
-the end of a string, you can write `!*P' or `*P == '\0''.
+   By convention, the "null byte", `'\0'', marks the end of a string
+and the "null wide character", `L'\0'', marks the end of a wide string.
+For example, in testing to see whether the `char *' variable P points
+to a null byte marking the end of a string, you can write `!*P' or `*P
+== '\0''.
 
-   A null character is quite different conceptually from a null pointer,
-although both are represented by the integer `0'.
+   A null byte is quite different conceptually from a null pointer,
+although both are represented by the integer constant `0'.
 
-   "String literals" appear in C program source as strings of
-characters between double-quote characters (`"') where the initial
-double-quote character is immediately preceded by a capital `L' (ell)
-character (as in `L"foo"').  In ISO C, string literals can also be
-formed by "string concatenation": `"a" "b"' is the same as `"ab"'.  For
-wide character strings one can either use `L"a" L"b"' or `L"a" "b"'.
+   A "string literal" appears in C program source as a multibyte string
+between double-quote characters (`"').  If the initial double-quote
+character is immediately preceded by a capital `L' (ell) character (as
+in `L"foo"'), it is a wide string literal.  String literals can also
+contribute to "string concatenation": `"a" "b"' is the same as `"ab"'.
+For wide strings one can use either `L"a" L"b"' or `L"a" "b"'.
 Modification of string literals is not allowed by the GNU C compiler,
 because literals are placed in read-only storage.
 
-   Character arrays that are declared `const' cannot be modified
-either.  It's generally good style to declare non-modifiable string
-pointers to be of type `const char *', since this often allows the C
-compiler to detect accidental modifications as well as providing some
-amount of documentation about what your program intends to do with the
-string.
+   Arrays that are declared `const' cannot be modified either.  It's
+generally good style to declare non-modifiable string pointers to be of
+type `const char *', since this often allows the C compiler to detect
+accidental modifications as well as providing some amount of
+documentation about what your program intends to do with the string.
 
-   The amount of memory allocated for the character array may extend
-past the null character that normally marks the end of the string.  In
+   The amount of memory allocated for a byte array may extend past the
+null byte that marks the end of the string that the array contains.  In
 this document, the term "allocated size" is always used to refer to the
-total amount of memory allocated for the string, while the term
-"length" refers to the number of characters up to (but not including)
-the terminating null character.  
+total amount of memory allocated for an array, while the term "length"
+refers to the number of bytes up to (but not including) the terminating
+null byte.  Wide strings are similar, except their sizes and lengths
+count wide characters, not bytes.  
 
-   A notorious source of program bugs is trying to put more characters
-in a string than fit in its allocated size.  When writing code that
-extends strings or moves characters into a pre-allocated array, you
-should be very careful to keep track of the length of the text and make
-explicit checks for overflowing the array.  Many of the library
-functions _do not_ do this for you!  Remember also that you need to
-allocate an extra byte to hold the null character that marks the end of
-the string.
+   A notorious source of program bugs is trying to put more bytes into a
+string than fit in its allocated size.  When writing code that extends
+strings or moves bytes into a pre-allocated array, you should be very
+careful to keep track of the length of the text and make explicit
+checks for overflowing the array.  Many of the library functions _do
+not_ do this for you!  Remember also that you need to allocate an extra
+byte to hold the null byte that marks the end of the string.
 
    Originally strings were sequences of bytes where each byte
-represents a single character.  This is still true today if the strings
-are encoded using a single-byte character encoding.  Things are
+represented a single character.  This is still true today if the
+strings are encoded using a single-byte character encoding.  Things are
 different if the strings are encoded using a multibyte encoding (for
 more information on encodings see *Note Extended Char Intro::).  There
 is no difference in the programming interface for these two kind of
@@ -1931,7 +1939,7 @@ sequences accordingly.
    But since there is no separate interface taking care of these
 differences the byte-based string functions are sometimes hard to use.
 Since the count parameters of these functions specify bytes a call to
-`strncpy' could cut a multibyte character in the middle and put an
+`memcpy' could cut a multibyte character in the middle and put an
 incomplete (and therefore unusable) byte sequence in the target buffer.
 
    To avoid these problems later versions of the ISO C standard
@@ -1939,21 +1947,20 @@ introduce a second set of functions which are operating on "wide
 characters" (*note Extended Char Intro::).  These functions don't have
 the problems the single-byte versions have since every wide character is
 a legal, interpretable value.  This does not mean that cutting wide
-character strings at arbitrary points is without problems.  It normally
-is for alphabet-based languages (except for non-normalized text) but
-languages based on syllables still have the problem that more than one
-wide character is necessary to complete a logical unit.  This is a
-higher level problem which the C library functions are not designed to
-solve.  But it is at least good that no invalid byte sequences can be
-created.  Also, the higher level functions can also much easier operate
-on wide character than on multibyte characters so that a general advise
+strings at arbitrary points is without problems.  It normally is for
+alphabet-based languages (except for non-normalized text) but languages
+based on syllables still have the problem that more than one wide
+character is necessary to complete a logical unit.  This is a higher
+level problem which the C library functions are not designed to solve.
+But it is at least good that no invalid byte sequences can be created.
+Also, the higher level functions can also much more easily operate on
+wide characters than on multibyte characters so that a common strategy
 is to use wide characters internally whenever text is more than simply
 copied.
 
    The remaining of this chapter will discuss the functions for handling
-wide character strings in parallel with the discussion of the multibyte
-character strings since there is almost always an exact equivalent
-available.
+wide strings in parallel with the discussion of strings since there is
+almost always an exact equivalent available.
 
 
 File: libc.info,  Node: String/Array Conventions,  Next: String Length,  Prev: Representation of Strings,  Up: String and Array Utilities
@@ -1962,8 +1969,8 @@ File: libc.info,  Node: String/Array Conventions,  Next: String Length,  Prev: R
 ================================
 
 This chapter describes both functions that work on arbitrary arrays or
-blocks of memory, and functions that are specific to null-terminated
-arrays of characters and wide characters.
+blocks of memory, and functions that are specific to strings and wide
+strings.
 
    Functions that operate on arbitrary blocks of memory have names
 beginning with `mem' and `wmem' (such as `memcpy' and `wmemcpy') and
@@ -1978,37 +1985,37 @@ functions must be of type `wchar_t *'.  These functions are not really
 usable with anything but arrays of this type.
 
    In contrast, functions that operate specifically on strings and wide
-character strings have names beginning with `str' and `wcs'
-respectively (such as `strcpy' and `wcscpy') and look for a null
-character to terminate the string instead of requiring an explicit size
-argument to be passed.  (Some of these functions accept a specified
-maximum length, but they also check for premature termination with a
-null character.)  The array arguments and return values for these
-functions have type `char *' and `wchar_t *' respectively, and the
-array elements are referred to as "characters" and "wide characters".
+strings have names beginning with `str' and `wcs' respectively (such as
+`strcpy' and `wcscpy') and look for a terminating null byte or null
+wide character instead of requiring an explicit size argument to be
+passed.  (Some of these functions accept a specified maximum length,
+but they also check for premature termination.)  The array arguments
+and return values for these functions have type `char *' and `wchar_t
+*' respectively, and the array elements are referred to as "bytes" and
+"wide characters".
 
    In many cases, there are both `mem' and `str'/`wcs' versions of a
 function.  The one that is more appropriate to use depends on the exact
 situation.  When your program is manipulating arbitrary arrays or
 blocks of storage, then you should always use the `mem' functions.  On
-the other hand, when you are manipulating null-terminated strings it is
-usually more convenient to use the `str'/`wcs' functions, unless you
-already know the length of the string in advance.  The `wmem' functions
-should be used for wide character arrays with known size.
+the other hand, when you are manipulating strings it is usually more
+convenient to use the `str'/`wcs' functions, unless you already know
+the length of the string in advance.  The `wmem' functions should be
+used for wide character arrays with known size.
 
    Some of the memory and string functions take single characters as
 arguments.  Since a value of type `char' is automatically promoted into
 a value of type `int' when used as a parameter, the functions are
 declared with `int' as the type of the parameter in question.  In case
-of the wide character function the situation is similarly: the
-parameter type for a single wide character is `wint_t' and not
-`wchar_t'.  This would for many implementations not be necessary since
-the `wchar_t' is large enough to not be automatically promoted, but
-since the ISO C standard does not require such a choice of types the
-`wint_t' type is used.
+of the wide character functions the situation is similar: the parameter
+type for a single wide character is `wint_t' and not `wchar_t'.  This
+would for many implementations not be necessary since `wchar_t' is
+large enough to not be automatically promoted, but since the ISO C
+standard does not require such a choice of types the `wint_t' type is
+used.
 
 
-File: libc.info,  Node: String Length,  Next: Copying and Concatenation,  Prev: String/Array Conventions,  Up: String and Array Utilities
+File: libc.info,  Node: String Length,  Next: Copying Strings and Arrays,  Prev: String/Array Conventions,  Up: String and Array Utilities
 
 5.3 String Length
 =================
@@ -2020,18 +2027,18 @@ function is declared in the header file `string.h'.
      Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
      Concepts::.
 
-     The `strlen' function returns the length of the null-terminated
-     string S in bytes.  (In other words, it returns the offset of the
-     terminating null character within the array.)
+     The `strlen' function returns the length of the string S in bytes.
+     (In other words, it returns the offset of the terminating null
+     byte within the array.)
 
      For example,
           strlen ("hello, world")
               => 12
 
-     When applied to a character array, the `strlen' function returns
-     the length of the string stored there, not its allocated size.
-     You can get the allocated size of the character array that holds a
-     string using the `sizeof' operator:
+     When applied to an array, the `strlen' function returns the length
+     of the string stored there, not its allocated size.  You can get
+     the allocated size of the array that holds a string using the
+     `sizeof' operator:
 
           char string[32] = "hello, world";
           sizeof (string)
@@ -2039,8 +2046,8 @@ function is declared in the header file `string.h'.
           strlen (string)
               => 12
 
-     But beware, this will not work unless STRING is the character
-     array itself, not a pointer to it.  For example:
+     But beware, this will not work unless STRING is the array itself,
+     not a pointer to it.  For example:
 
           char string[32] = "hello, world";
           char *ptr = string;
@@ -2082,12 +2089,12 @@ function is declared in the header file `string.h'.
 
      The `wcslen' function is the wide character equivalent to
      `strlen'.  The return value is the number of wide characters in the
-     wide character string pointed to by WS (this is also the offset of
-     the terminating null wide character of WS).
+     wide string pointed to by WS (this is also the offset of the
+     terminating null wide character of WS).
 
      Since there are no multi wide character sequences making up one
-     character the return value is not only the offset in the array, it
-     is also the number of wide characters.
+     wide character the return value is not only the offset in the
+     array, it is also the number of wide characters.
 
      This function was introduced in Amendment 1 to ISO C90.
 
@@ -2095,11 +2102,12 @@ function is declared in the header file `string.h'.
      Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
      Concepts::.
 
-     The `strnlen' function returns the length of the string S in bytes
-     if this length is smaller than MAXLEN bytes.  Otherwise it returns
-     MAXLEN.  Therefore this function is equivalent to `(strlen (S) <
-     MAXLEN ? strlen (S) : MAXLEN)' but it is more efficient and works
-     even if the string S is not null-terminated.
+     If the array S of size MAXLEN contains a null byte, the `strnlen'
+     function returns the length of the string S in bytes.  Otherwise it
+     returns MAXLEN.  Therefore this function is equivalent to `(strlen
+     (S) < MAXLEN ? strlen (S) : MAXLEN)' but it is more efficient and
+     works even if S is not null-terminated so long as MAXLEN does not
+     exceed the size of S's array.
 
           char string[32] = "hello, world";
           strnlen (string, 32)
@@ -2119,31 +2127,31 @@ function is declared in the header file `string.h'.
      This function is a GNU extension and is declared in `wchar.h'.
 
 
-File: libc.info,  Node: Copying and Concatenation,  Next: String/Array Comparison,  Prev: String Length,  Up: String and Array Utilities
+File: libc.info,  Node: Copying Strings and Arrays,  Next: Concatenating Strings,  Prev: String Length,  Up: String and Array Utilities
 
-5.4 Copying and Concatenation
-=============================
+5.4 Copying Strings and Arrays
+==============================
 
 You can use the functions described in this section to copy the contents
-of strings and arrays, or to append the contents of one string to
-another.  The `str' and `mem' functions are declared in the header file
-`string.h' while the `wstr' and `wmem' functions are declared in the
-file `wchar.h'.  
+of strings, wide strings, and arrays.  The `str' and `mem' functions
+are declared in `string.h' while the `w' functions are declared in
+`wchar.h'.  
 
    A helpful way to remember the ordering of the arguments to the
 functions in this section is that it corresponds to an assignment
 expression, with the destination array specified to the left of the
-source array.  All of these functions return the address of the
-destination array.
+source array.  Most of these functions return the address of the
+destination array; a few return the address of the destination's
+terminating null, or of just past the destination.
 
    Most of these functions do not work properly if the source and
 destination arrays overlap.  For example, if the beginning of the
 destination array overlaps the end of the source array, the original
 contents of that part of the source array may get overwritten before it
 is copied.  Even worse, in the case of the string functions, the null
-character marking the end of the string may be lost, and the copy
-function might get stuck in a loop trashing all the memory allocated to
-your program.
+byte marking the end of the string may be lost, and the copy function
+might get stuck in a loop trashing all the memory allocated to your
+program.
 
    All functions that have problems copying between overlapping arrays
 are explicitly identified in this manual.  In addition to functions in
@@ -2317,113 +2325,42 @@ Output Functions::) and `scanf' (*note Formatted Input Functions::).
      Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
      Concepts::.
 
-     This copies characters from the string FROM (up to and including
-     the terminating null character) into the string TO.  Like
-     `memcpy', this function has undefined results if the strings
-     overlap.  The return value is the value of TO.
+     This copies bytes from the string FROM (up to and including the
+     terminating null byte) into the string TO.  Like `memcpy', this
+     function has undefined results if the strings overlap.  The return
+     value is the value of TO.
 
  -- Function: wchar_t * wcscpy (wchar_t *restrict WTO, const wchar_t
           *restrict WFROM)
      Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
      Concepts::.
 
-     This copies wide characters from the string WFROM (up to and
+     This copies wide characters from the wide string WFROM (up to and
      including the terminating null wide character) into the string
      WTO.  Like `wmemcpy', this function has undefined results if the
      strings overlap.  The return value is the value of WTO.
-
- -- Function: char * strncpy (char *restrict TO, const char *restrict
-          FROM, size_t SIZE)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     This function is similar to `strcpy' but always copies exactly
-     SIZE characters into TO.
-
-     If the length of FROM is more than SIZE, then `strncpy' copies
-     just the first SIZE characters.  Note that in this case there is
-     no null terminator written into TO.
-
-     If the length of FROM is less than SIZE, then `strncpy' copies all
-     of FROM, followed by enough null characters to add up to SIZE
-     characters in all.  This behavior is rarely useful, but it is
-     specified by the ISO C standard.
-
-     The behavior of `strncpy' is undefined if the strings overlap.
-
-     Using `strncpy' as opposed to `strcpy' is a way to avoid bugs
-     relating to writing past the end of the allocated space for TO.
-     However, it can also make your program much slower in one common
-     case: copying a string which is probably small into a potentially
-     large buffer.  In this case, SIZE may be large, and when it is,
-     `strncpy' will waste a considerable amount of time copying null
-     characters.
-
- -- Function: wchar_t * wcsncpy (wchar_t *restrict WTO, const wchar_t
-          *restrict WFROM, size_t SIZE)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     This function is similar to `wcscpy' but always copies exactly
-     SIZE wide characters into WTO.
-
-     If the length of WFROM is more than SIZE, then `wcsncpy' copies
-     just the first SIZE wide characters.  Note that in this case there
-     is no null terminator written into WTO.
-
-     If the length of WFROM is less than SIZE, then `wcsncpy' copies
-     all of WFROM, followed by enough null wide characters to add up to
-     SIZE wide characters in all.  This behavior is rarely useful, but
-     it is specified by the ISO C standard.
-
-     The behavior of `wcsncpy' is undefined if the strings overlap.
-
-     Using `wcsncpy' as opposed to `wcscpy' is a way to avoid bugs
-     relating to writing past the end of the allocated space for WTO.
-     However, it can also make your program much slower in one common
-     case: copying a string which is probably small into a potentially
-     large buffer.  In this case, SIZE may be large, and when it is,
-     `wcsncpy' will waste a considerable amount of time copying null
-     wide characters.
 
  -- Function: char * strdup (const char *S)
      Preliminary: | MT-Safe | AS-Unsafe heap | AC-Unsafe mem | *Note
      POSIX Safety Concepts::.
 
-     This function copies the null-terminated string S into a newly
-     allocated string.  The string is allocated using `malloc'; see
-     *Note Unconstrained Allocation::.  If `malloc' cannot allocate
-     space for the new string, `strdup' returns a null pointer.
-     Otherwise it returns a pointer to the new string.
+     This function copies the string S into a newly allocated string.
+     The string is allocated using `malloc'; see *Note Unconstrained
+     Allocation::.  If `malloc' cannot allocate space for the new
+     string, `strdup' returns a null pointer.  Otherwise it returns a
+     pointer to the new string.
 
  -- Function: wchar_t * wcsdup (const wchar_t *WS)
      Preliminary: | MT-Safe | AS-Unsafe heap | AC-Unsafe mem | *Note
      POSIX Safety Concepts::.
 
-     This function copies the null-terminated wide character string WS
-     into a newly allocated string.  The string is allocated using
-     `malloc'; see *Note Unconstrained Allocation::.  If `malloc'
-     cannot allocate space for the new string, `wcsdup' returns a null
-     pointer.  Otherwise it returns a pointer to the new wide character
-     string.
+     This function copies the wide string WS into a newly allocated
+     string.  The string is allocated using `malloc'; see *Note
+     Unconstrained Allocation::.  If `malloc' cannot allocate space for
+     the new string, `wcsdup' returns a null pointer.  Otherwise it
+     returns a pointer to the new wide string.
 
      This function is a GNU extension.
-
- -- Function: char * strndup (const char *S, size_t SIZE)
-     Preliminary: | MT-Safe | AS-Unsafe heap | AC-Unsafe mem | *Note
-     POSIX Safety Concepts::.
-
-     This function is similar to `strdup' but always copies at most
-     SIZE characters into the newly allocated string.
-
-     If the length of S is more than SIZE, then `strndup' copies just
-     the first SIZE characters and adds a closing null terminator.
-     Otherwise all characters are copied and the string is terminated.
-
-     This function is different to `strncpy' in that it always
-     terminates the destination string.
-
-     `strndup' is a GNU extension.
 
  -- Function: char * stpcpy (char *restrict TO, const char *restrict
           FROM)
@@ -2432,7 +2369,7 @@ Output Functions::) and `scanf' (*note Formatted Input Functions::).
 
      This function is like `strcpy', except that it returns a pointer to
      the end of the string TO (that is, the address of the terminating
-     null character `to + strlen (from)') rather than the beginning.
+     null byte `to + strlen (from)') rather than the beginning.
 
      For example, this program uses `stpcpy' to concatenate `foo' and
      `bar' to produce `foobar', which it then prints.
@@ -2466,7 +2403,8 @@ Output Functions::) and `scanf' (*note Formatted Input Functions::).
 
      This function is like `wcscpy', except that it returns a pointer to
      the end of the string WTO (that is, the address of the terminating
-     null character `wto + strlen (wfrom)') rather than the beginning.
+     null wide character `wto + wcslen (wfrom)') rather than the
+     beginning.
 
      This function is not part of ISO or POSIX but was found useful
      while developing the GNU C Library itself.
@@ -2474,60 +2412,6 @@ Output Functions::) and `scanf' (*note Formatted Input Functions::).
      The behavior of `wcpcpy' is undefined if the strings overlap.
 
      `wcpcpy' is a GNU extension and is declared in `wchar.h'.
-
- -- Function: char * stpncpy (char *restrict TO, const char *restrict
-          FROM, size_t SIZE)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     This function is similar to `stpcpy' but copies always exactly
-     SIZE characters into TO.
-
-     If the length of FROM is more than SIZE, then `stpncpy' copies
-     just the first SIZE characters and returns a pointer to the
-     character directly following the one which was copied last.  Note
-     that in this case there is no null terminator written into TO.
-
-     If the length of FROM is less than SIZE, then `stpncpy' copies all
-     of FROM, followed by enough null characters to add up to SIZE
-     characters in all.  This behavior is rarely useful, but it is
-     implemented to be useful in contexts where this behavior of the
-     `strncpy' is used.  `stpncpy' returns a pointer to the _first_
-     written null character.
-
-     This function is not part of ISO or POSIX but was found useful
-     while developing the GNU C Library itself.
-
-     Its behavior is undefined if the strings overlap.  The function is
-     declared in `string.h'.
-
- -- Function: wchar_t * wcpncpy (wchar_t *restrict WTO, const wchar_t
-          *restrict WFROM, size_t SIZE)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     This function is similar to `wcpcpy' but copies always exactly
-     WSIZE characters into WTO.
-
-     If the length of WFROM is more than SIZE, then `wcpncpy' copies
-     just the first SIZE wide characters and returns a pointer to the
-     wide character directly following the last non-null wide character
-     which was copied last.  Note that in this case there is no null
-     terminator written into WTO.
-
-     If the length of WFROM is less than SIZE, then `wcpncpy' copies
-     all of WFROM, followed by enough null characters to add up to SIZE
-     characters in all.  This behavior is rarely useful, but it is
-     implemented to be useful in contexts where this behavior of the
-     `wcsncpy' is used.  `wcpncpy' returns a pointer to the _first_
-     written null character.
-
-     This function is not part of ISO or POSIX but was found useful
-     while developing the GNU C Library itself.
-
-     Its behavior is undefined if the strings overlap.
-
-     `wcpncpy' is a GNU extension and is declared in `wchar.h'.
 
  -- Macro: char * strdupa (const char *S)
      Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
@@ -2571,20 +2455,34 @@ Output Functions::) and `scanf' (*note Formatted Input Functions::).
 
      This function is only available if GNU CC is used.
 
- -- Macro: char * strndupa (const char *S, size_t SIZE)
+ -- Function: void bcopy (const void *FROM, void *TO, size_t SIZE)
      Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
      Concepts::.
 
-     This function is similar to `strndup' but like `strdupa' it
-     allocates the new string using `alloca' *note Variable Size
-     Automatic::.  The same advantages and limitations of `strdupa' are
-     valid for `strndupa', too.
+     This is a partially obsolete alternative for `memmove', derived
+     from BSD.  Note that it is not quite equivalent to `memmove',
+     because the arguments are not in the same order and there is no
+     return value.
 
-     This function is implemented only as a macro, just like `strdupa'.
-     Just as `strdupa' this macro also must not be used inside the
-     parameter list in a function call.
+ -- Function: void bzero (void *BLOCK, size_t SIZE)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
 
-     `strndupa' is only available if GNU CC is used.
+     This is a partially obsolete alternative for `memset', derived from
+     BSD.  Note that it is not as general as `memset', because the only
+     value it can store is zero.
+
+
+File: libc.info,  Node: Concatenating Strings,  Next: Truncating Strings,  Prev: Copying Strings and Arrays,  Up: String and Array Utilities
+
+5.5 Concatenating Strings
+=========================
+
+The functions described in this section concatenate the contents of a
+string or wide string to another.  They follow the string-copying
+functions in their conventions.  *Note Copying Strings and Arrays::.
+`strcat' is declared in the header file `string.h' while `wcscat' is
+declared in `wchar.h'.
 
  -- Function: char * strcat (char *restrict TO, const char *restrict
           FROM)
@@ -2592,9 +2490,9 @@ Output Functions::) and `scanf' (*note Formatted Input Functions::).
      Concepts::.
 
      The `strcat' function is similar to `strcpy', except that the
-     characters from FROM are concatenated or appended to the end of
-     TO, instead of overwriting it.  That is, the first character from
-     FROM overwrites the null character marking the end of TO.
+     bytes from FROM are concatenated or appended to the end of TO,
+     instead of overwriting it.  That is, the first byte from FROM
+     overwrites the null byte marking the end of TO.
 
      An equivalent definition for `strcat' would be:
 
@@ -2607,15 +2505,18 @@ Output Functions::) and `scanf' (*note Formatted Input Functions::).
 
      This function has undefined results if the strings overlap.
 
+     As noted below, this function has significant performance issues.
+
  -- Function: wchar_t * wcscat (wchar_t *restrict WTO, const wchar_t
           *restrict WFROM)
      Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
      Concepts::.
 
-     The `wcscat' function is similar to `wcscpy', except that the
+     The `wcscat' function is similar to `wcscpy', except that the wide
      characters from WFROM are concatenated or appended to the end of
-     WTO, instead of overwriting it.  That is, the first character from
-     WFROM overwrites the null character marking the end of WTO.
+     WTO, instead of overwriting it.  That is, the first wide character
+     from WFROM overwrites the null wide character marking the end of
+     WTO.
 
      An equivalent definition for `wcscat' would be:
 
@@ -2628,16 +2529,18 @@ Output Functions::) and `scanf' (*note Formatted Input Functions::).
 
      This function has undefined results if the strings overlap.
 
+     As noted below, this function has significant performance issues.
+
    Programmers using the `strcat' or `wcscat' function (or the
-following `strncat' or `wcsncar' functions for that matter) can easily
-be recognized as lazy and reckless.  In almost all situations the
-lengths of the participating strings are known (it better should be
-since how can one otherwise ensure the allocated size of the buffer is
-sufficient?)  Or at least, one could know them if one keeps track of the
-results of the various function calls.  But then it is very inefficient
-to use `strcat'/`wcscat'.  A lot of time is wasted finding the end of
-the destination string so that the actual copying can start.  This is a
-common example:
+`strncat' or `wcsncat' functions defined in a later section, for that
+matter) can easily be recognized as lazy and reckless.  In almost all
+situations the lengths of the participating strings are known (it
+better should be since how can one otherwise ensure the allocated size
+of the buffer is sufficient?)  Or at least, one could know them if one
+keeps track of the results of the various function calls.  But then it
+is very inefficient to use `strcat'/`wcscat'.  A lot of time is wasted
+finding the end of the destination string so that the actual copying
+can start.  This is a common example:
 
      /* This function concatenates arbitrarily many strings.  The last
         parameter must be `NULL'.  */
@@ -2749,39 +2652,203 @@ should think twice and look through the program whether the code cannot
 be rewritten to take advantage of already calculated results.  Again: it
 is almost always unnecessary to use `strcat'.
 
+
+File: libc.info,  Node: Truncating Strings,  Next: String/Array Comparison,  Prev: Concatenating Strings,  Up: String and Array Utilities
+
+5.6 Truncating Strings while Copying
+====================================
+
+The functions described in this section copy or concatenate the
+possibly-truncated contents of a string or array to another, and
+similarly for wide strings.  They follow the string-copying functions
+in their header conventions.  *Note Copying Strings and Arrays::.  The
+`str' functions are declared in the header file `string.h' and the `wc'
+functions are declared in the file `wchar.h'.
+
+ -- Function: char * strncpy (char *restrict TO, const char *restrict
+          FROM, size_t SIZE)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This function is similar to `strcpy' but always copies exactly
+     SIZE bytes into TO.
+
+     If FROM does not contain a null byte in its first SIZE bytes,
+     `strncpy' copies just the first SIZE bytes.  In this case no null
+     terminator is written into TO.
+
+     Otherwise FROM must be a string with length less than SIZE.  In
+     this case `strncpy' copies all of FROM, followed by enough null
+     bytes to add up to SIZE bytes in all.
+
+     The behavior of `strncpy' is undefined if the strings overlap.
+
+     This function was designed for now-rarely-used arrays consisting of
+     non-null bytes followed by zero or more null bytes.  It needs to
+     set all SIZE bytes of the destination, even when SIZE is much
+     greater than the length of FROM.  As noted below, this function is
+     generally a poor choice for processing text.
+
+ -- Function: wchar_t * wcsncpy (wchar_t *restrict WTO, const wchar_t
+          *restrict WFROM, size_t SIZE)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This function is similar to `wcscpy' but always copies exactly
+     SIZE wide characters into WTO.
+
+     If WFROM does not contain a null wide character in its first SIZE
+     wide characters, then `wcsncpy' copies just the first SIZE wide
+     characters.  In this case no null terminator is written into WTO.
+
+     Otherwise WFROM must be a wide string with length less than SIZE.
+     In this case `wcsncpy' copies all of WFROM, followed by enough
+     null wide characters to add up to SIZE wide characters in all.
+
+     The behavior of `wcsncpy' is undefined if the strings overlap.
+
+     This function is the wide-character counterpart of `strncpy' and
+     suffers from most of the problems that `strncpy' does.  For
+     example, as noted below, this function is generally a poor choice
+     for processing text.
+
+ -- Function: char * strndup (const char *S, size_t SIZE)
+     Preliminary: | MT-Safe | AS-Unsafe heap | AC-Unsafe mem | *Note
+     POSIX Safety Concepts::.
+
+     This function is similar to `strdup' but always copies at most
+     SIZE bytes into the newly allocated string.
+
+     If the length of S is more than SIZE, then `strndup' copies just
+     the first SIZE bytes and adds a closing null byte.  Otherwise all
+     bytes are copied and the string is terminated.
+
+     This function differs from `strncpy' in that it always terminates
+     the destination string.
+
+     As noted below, this function is generally a poor choice for
+     processing text.
+
+     `strndup' is a GNU extension.
+
+ -- Macro: char * strndupa (const char *S, size_t SIZE)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This function is similar to `strndup' but like `strdupa' it
+     allocates the new string using `alloca' *note Variable Size
+     Automatic::.  The same advantages and limitations of `strdupa' are
+     valid for `strndupa', too.
+
+     This function is implemented only as a macro, just like `strdupa'.
+     Just as `strdupa' this macro also must not be used inside the
+     parameter list in a function call.
+
+     As noted below, this function is generally a poor choice for
+     processing text.
+
+     `strndupa' is only available if GNU CC is used.
+
+ -- Function: char * stpncpy (char *restrict TO, const char *restrict
+          FROM, size_t SIZE)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This function is similar to `stpcpy' but copies always exactly
+     SIZE bytes into TO.
+
+     If the length of FROM is more than SIZE, then `stpncpy' copies
+     just the first SIZE bytes and returns a pointer to the byte
+     directly following the one which was copied last.  Note that in
+     this case there is no null terminator written into TO.
+
+     If the length of FROM is less than SIZE, then `stpncpy' copies all
+     of FROM, followed by enough null bytes to add up to SIZE bytes in
+     all.  This behavior is rarely useful, but it is implemented to be
+     useful in contexts where this behavior of the `strncpy' is used.
+     `stpncpy' returns a pointer to the _first_ written null byte.
+
+     This function is not part of ISO or POSIX but was found useful
+     while developing the GNU C Library itself.
+
+     Its behavior is undefined if the strings overlap.  The function is
+     declared in `string.h'.
+
+     As noted below, this function is generally a poor choice for
+     processing text.
+
+ -- Function: wchar_t * wcpncpy (wchar_t *restrict WTO, const wchar_t
+          *restrict WFROM, size_t SIZE)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This function is similar to `wcpcpy' but copies always exactly
+     WSIZE wide characters into WTO.
+
+     If the length of WFROM is more than SIZE, then `wcpncpy' copies
+     just the first SIZE wide characters and returns a pointer to the
+     wide character directly following the last non-null wide character
+     which was copied last.  Note that in this case there is no null
+     terminator written into WTO.
+
+     If the length of WFROM is less than SIZE, then `wcpncpy' copies
+     all of WFROM, followed by enough null wide characters to add up to
+     SIZE wide characters in all.  This behavior is rarely useful, but
+     it is implemented to be useful in contexts where this behavior of
+     the `wcsncpy' is used.  `wcpncpy' returns a pointer to the _first_
+     written null wide character.
+
+     This function is not part of ISO or POSIX but was found useful
+     while developing the GNU C Library itself.
+
+     Its behavior is undefined if the strings overlap.
+
+     As noted below, this function is generally a poor choice for
+     processing text.
+
+     `wcpncpy' is a GNU extension.
+
  -- Function: char * strncat (char *restrict TO, const char *restrict
           FROM, size_t SIZE)
      Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
      Concepts::.
 
      This function is like `strcat' except that not more than SIZE
-     characters from FROM are appended to the end of TO.  A single null
-     character is also always appended to TO, so the total allocated
-     size of TO must be at least `SIZE + 1' bytes longer than its
-     initial length.
+     bytes from FROM are appended to the end of TO, and FROM need not
+     be null-terminated.  A single null byte is also always appended to
+     TO, so the total allocated size of TO must be at least `SIZE + 1'
+     bytes longer than its initial length.
 
      The `strncat' function could be implemented like this:
 
           char *
           strncat (char *to, const char *from, size_t size)
           {
-            memcpy (to + strlen (to), from, strnlen (from, size));
-            to[strlen (to) + strnlen (from, size)] = '\0';
+            size_t len = strlen (to);
+            memcpy (to + len, from, strnlen (from, size));
+            to[len + strnlen (from, size)] = '\0';
             return to;
           }
 
      The behavior of `strncat' is undefined if the strings overlap.
+
+     As a companion to `strncpy', `strncat' was designed for
+     now-rarely-used arrays consisting of non-null bytes followed by
+     zero or more null bytes.  As noted below, this function is
+     generally a poor choice for processing text.  Also, this function
+     has significant performance issues.  *Note Concatenating Strings::.
 
  -- Function: wchar_t * wcsncat (wchar_t *restrict WTO, const wchar_t
           *restrict WFROM, size_t SIZE)
      Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
      Concepts::.
 
-     This function is like `wcscat' except that not more than SIZE
-     characters from FROM are appended to the end of TO.  A single null
-     character is also always appended to TO, so the total allocated
-     size of TO must be at least `SIZE + 1' bytes longer than its
-     initial length.
+     This function is like `wcscat' except that not more than SIZE wide
+     characters from FROM are appended to the end of TO, and FROM need
+     not be null-terminated.  A single null wide character is also
+     always appended to TO, so the total allocated size of TO must be
+     at least `wcsnlen (WFROM, SIZE) + 1' wide characters longer than
+     its initial length.
 
      The `wcsncat' function could be implemented like this:
 
@@ -2789,61 +2856,50 @@ is almost always unnecessary to use `strcat'.
           wcsncat (wchar_t *restrict wto, const wchar_t *restrict wfrom,
                    size_t size)
           {
-            memcpy (wto + wcslen (wto), wfrom, wcsnlen (wfrom, size) * sizeof (wchar_t));
-            wto[wcslen (to) + wcsnlen (wfrom, size)] = '\0';
+            size_t len = wcslen (wto);
+            memcpy (wto + len, wfrom, wcsnlen (wfrom, size) * sizeof (wchar_t));
+            wto[len + wcsnlen (wfrom, size)] = L'\0';
             return wto;
           }
 
      The behavior of `wcsncat' is undefined if the strings overlap.
 
-   Here is an example showing the use of `strncpy' and `strncat' (the
-wide character version is equivalent).  Notice how, in the call to
-`strncat', the SIZE parameter is computed to avoid overflowing the
-character array `buffer'.
+     As noted below, this function is generally a poor choice for
+     processing text.  Also, this function has significant performance
+     issues.  *Note Concatenating Strings::.
 
+   Because these functions can abruptly truncate strings or wide
+strings, they are generally poor choices for processing text.  When
+coping or concatening multibyte strings, they can truncate within a
+multibyte character so that the result is not a valid multibyte string.
+When combining or concatenating multibyte or wide strings, they may
+truncate the output after a combining character, resulting in a
+corrupted grapheme.  They can cause bugs even when processing
+single-byte strings: for example, when calculating an ASCII-only user
+name, a truncated name can identify the wrong user.
 
-     #include <string.h>
-     #include <stdio.h>
+   Although some buffer overruns can be prevented by manually replacing
+calls to copying functions with calls to truncation functions, there
+are often easier and safer automatic techniques that cause buffer
+overruns to reliably terminate a program, such as GCC's
+`-fcheck-pointer-bounds' and `-fsanitize=address' options.  *Note
+Options for Debugging Your Program or GCC: (gcc.info)Debugging Options.
+Because truncation functions can mask application bugs that would
+otherwise be caught by the automatic techniques, these functions should
+be used only when the application's underlying logic requires
+truncation.
 
-     #define SIZE 10
-
-     static char buffer[SIZE];
-
-     int
-     main (void)
-     {
-       strncpy (buffer, "hello", SIZE);
-       puts (buffer);
-       strncat (buffer, ", world", SIZE - strlen (buffer) - 1);
-       puts (buffer);
-     }
-
-The output produced by this program looks like:
-
-     hello
-     hello, wo
-
- -- Function: void bcopy (const void *FROM, void *TO, size_t SIZE)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     This is a partially obsolete alternative for `memmove', derived
-     from BSD.  Note that it is not quite equivalent to `memmove',
-     because the arguments are not in the same order and there is no
-     return value.
-
- -- Function: void bzero (void *BLOCK, size_t SIZE)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     This is a partially obsolete alternative for `memset', derived from
-     BSD.  Note that it is not as general as `memset', because the only
-     value it can store is zero.
+   *Note_* GNU programs should not truncate strings or wide strings to
+fit arbitrary size limits.  *Note Writing Robust Programs:
+(standards)Semantics.  Instead of string-truncation functions, it is
+usually better to use dynamic memory allocation (*note Unconstrained
+Allocation::) and functions such as `strdup' or `asprintf' to construct
+strings.
 
 
-File: libc.info,  Node: String/Array Comparison,  Next: Collation Functions,  Prev: Copying and Concatenation,  Up: String and Array Utilities
+File: libc.info,  Node: String/Array Comparison,  Next: Collation Functions,  Prev: Truncating Strings,  Up: String and Array Utilities
 
-5.5 String/Array Comparison
+5.7 String/Array Comparison
 ===========================
 
 You can use the functions in this section to perform comparisons on the
@@ -2854,10 +2910,10 @@ operations.  *Note Searching and Sorting::, for an example of this.
    Unlike most comparison operations in C, the string comparison
 functions return a nonzero value if the strings are _not_ equivalent
 rather than if they are.  The sign of the value indicates the relative
-ordering of the first characters in the strings that are not
-equivalent:  a negative value indicates that the first string is "less"
-than the second, while a positive value indicates that the first string
-is "greater".
+ordering of the first part of the strings that are not equivalent:  a
+negative value indicates that the first string is "less" than the
+second, while a positive value indicates that the first string is
+"greater".
 
    The most common use of these functions is to check only for equality.
 This is canonically done with an expression like `! strcmp (s1, s2)'.
@@ -2885,7 +2941,7 @@ This is canonically done with an expression like `! strcmp (s1, s2)'.
      at A1 against the SIZE wide characters beginning at A2.  The value
      returned is smaller than or larger than zero depending on whether
      the first differing wide character is A1 is smaller or larger than
-     the corresponding character in A2.
+     the corresponding wide character in A2.
 
      If the contents of the two blocks are equal, `wmemcmp' returns `0'.
 
@@ -2903,7 +2959,7 @@ number of bytes is system dependent.
    You should also be careful about using `memcmp' to compare objects
 that can contain "holes", such as the padding inserted into structure
 objects to enforce alignment requirements, extra space at the end of
-unions, and extra characters at the ends of strings whose length is less
+unions, and extra bytes at the ends of strings whose length is less
 than their allocated size.  The contents of these "holes" are
 indeterminate and may cause strange behavior when performing byte-wise
 comparisons.  For more predictable results, perform an explicit
@@ -2931,8 +2987,8 @@ you are better off writing a specialized comparison function to compare
 
      The `strcmp' function compares the string S1 against S2, returning
      a value that has the same sign as the difference between the first
-     differing pair of characters (interpreted as `unsigned char'
-     objects, then promoted to `int').
+     differing pair of bytes (interpreted as `unsigned char' objects,
+     then promoted to `int').
 
      If the two strings are equal, `strcmp' returns `0'.
 
@@ -2948,10 +3004,10 @@ you are better off writing a specialized comparison function to compare
      Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
      Concepts::.
 
-     The `wcscmp' function compares the wide character string WS1
-     against WS2.  The value returned is smaller than or larger than
-     zero depending on whether the first differing wide character is
-     WS1 is smaller or larger than the corresponding character in WS2.
+     The `wcscmp' function compares the wide string WS1 against WS2.
+     The value returned is smaller than or larger than zero depending
+     on whether the first differing wide character is WS1 is smaller or
+     larger than the corresponding wide character in WS2.
 
      If the two strings are equal, `wcscmp' returns `0'.
 
@@ -2968,10 +3024,11 @@ you are better off writing a specialized comparison function to compare
      Safety Concepts::.
 
      This function is like `strcmp', except that differences in case are
-     ignored.  How uppercase and lowercase characters are related is
-     determined by the currently selected locale.  In the standard `"C"'
-     locale the characters A" and a" do not match but in a locale which
-     regards these characters as parts of the alphabet they do match.
+     ignored, and its arguments must be multibyte strings.  How
+     uppercase and lowercase characters are related is determined by
+     the currently selected locale.  In the standard `"C"' locale the
+     characters A" and a" do not match but in a locale which regards
+     these characters as parts of the alphabet they do match.
 
      `strcasecmp' is derived from BSD.
 
@@ -2992,9 +3049,8 @@ you are better off writing a specialized comparison function to compare
      Concepts::.
 
      This function is the similar to `strcmp', except that no more than
-     SIZE characters are compared.  In other words, if the two strings
-     are the same in their first SIZE characters, the return value is
-     zero.
+     SIZE bytes are compared.  In other words, if the two strings are
+     the same in their first SIZE bytes, the return value is zero.
 
  -- Function: int wcsncmp (const wchar_t *WS1, const wchar_t *WS2,
           size_t SIZE)
@@ -3011,8 +3067,10 @@ you are better off writing a specialized comparison function to compare
      Safety Concepts::.
 
      This function is like `strncmp', except that differences in case
-     are ignored.  Like `strcasecmp', it is locale dependent how
-     uppercase and lowercase characters are related.
+     are ignored, and the compared parts of the arguments should
+     consist of valid multibyte characters.  Like `strcasecmp', it is
+     locale dependent how uppercase and lowercase characters are
+     related.
 
      `strncasecmp' is a GNU extension.
 
@@ -3039,13 +3097,13 @@ values and ordering may differ.)
      strcmp ("hello", "Hello")
          => 32   /* Comparisons are case-sensitive. */
      strcmp ("hello", "world")
-         => -15  /* The character `'h'' comes before `'w''. */
+         => -15  /* The byte `'h'' comes before `'w''. */
      strcmp ("hello", "hello, world")
-         => -44  /* Comparing a null character against a comma. */
+         => -44  /* Comparing a null byte against a comma. */
      strncmp ("hello", "hello, world", 5)
-         => 0    /* The initial 5 characters are the same. */
+         => 0    /* The initial 5 bytes are the same. */
      strncmp ("hello, world", "hello, stupid world!!!", 5)
-         => 0    /* The initial 5 characters are the same. */
+         => 0    /* The initial 5 bytes are the same. */
 
  -- Function: int strverscmp (const char *S1, const char *S2)
      Preliminary: | MT-Safe locale | AS-Safe | AC-Safe | *Note POSIX
@@ -3057,14 +3115,13 @@ values and ordering may differ.)
      function.  In fact, if S1 and S2 contain no digits, `strverscmp'
      behaves like `strcmp'.
 
-     Basically, we compare strings normally (character by character),
-     until we find a digit in each string - then we enter a special
-     comparison mode, where each sequence of digits is taken as a
-     whole.  If we reach the end of these two parts without noticing a
-     difference, we return to the standard comparison mode.  There are
-     two types of numeric parts: "integral" and "fractional" (those
-     begin with a '0').  The types of the numeric parts affect the way
-     we sort them:
+     Basically, we compare strings normally (byte by byte), until we
+     find a digit in each string - then we enter a special comparison
+     mode, where each sequence of digits is taken as a whole.  If we
+     reach the end of these two parts without noticing a difference, we
+     return to the standard comparison mode.  There are two types of
+     numeric parts: "integral" and "fractional" (those  begin with a
+     '0').  The types of the numeric parts affect the way we sort them:
 
         * integral/integral: we compare values as you would expect.
 
@@ -3101,7 +3158,7 @@ values and ordering may differ.)
 
 File: libc.info,  Node: Collation Functions,  Next: Search Functions,  Prev: String/Array Comparison,  Up: String and Array Utilities
 
-5.6 Collation Functions
+5.8 Collation Functions
 =======================
 
 In some locales, the conventions for lexicographic ordering differ from
@@ -3123,10 +3180,11 @@ the same as that for `strcmp'.  Similarly, `wcscoll' and `wcscmp' are
 the same in this situation.
 
    Effectively, the way these functions work is by applying a mapping to
-transform the characters in a string to a byte sequence that represents
-the string's position in the collating sequence of the current locale.
-Comparing two such byte sequences in a simple fashion is equivalent to
-comparing the strings with the locale's collating sequence.
+transform the characters in a multibyte string to a byte sequence that
+represents the string's position in the collating sequence of the
+current locale.  Comparing two such byte sequences in a simple fashion
+is equivalent to comparing the strings with the locale's collating
+sequence.
 
    The functions `strcoll' and `wcscoll' perform this translation
 implicitly, in order to do one comparison.  By contrast, `strxfrm' and
@@ -3142,7 +3200,7 @@ with `strcmp' or `wcscmp'.
 
      The `strcoll' function is similar to `strcmp' but uses the
      collating sequence of the current locale for collation (the
-     `LC_COLLATE' locale).
+     `LC_COLLATE' locale).  The arguments are multibyte strings.
 
  -- Function: int wcscoll (const wchar_t *WS1, const wchar_t *WS2)
      Preliminary: | MT-Safe locale | AS-Unsafe heap | AC-Unsafe mem |
@@ -3186,14 +3244,14 @@ efficiently using `strxfrm'.)
      Preliminary: | MT-Safe locale | AS-Unsafe heap | AC-Unsafe mem |
      *Note POSIX Safety Concepts::.
 
-     The function `strxfrm' transforms the string FROM using the
-     collation transformation determined by the locale currently
+     The function `strxfrm' transforms the multibyte string FROM using
+     the collation transformation determined by the locale currently
      selected for collation, and stores the transformed string in the
-     array TO.  Up to SIZE characters (including a terminating null
-     character) are stored.
+     array TO.  Up to SIZE bytes (including a terminating null byte) are
+     stored.
 
      The behavior is undefined if the strings TO and FROM overlap; see
-     *Note Copying and Concatenation::.
+     *Note Copying Strings and Arrays::.
 
      The return value is the length of the entire transformed string.
      This value is not affected by the value of SIZE, but if it is
@@ -3206,41 +3264,40 @@ efficiently using `strxfrm'.)
      The transformed string may be longer than the original string, and
      it may also be shorter.
 
-     If SIZE is zero, no characters are stored in TO.  In this case,
-     `strxfrm' simply returns the number of characters that would be
-     the length of the transformed string.  This is useful for
-     determining what size the allocated array should be.  It does not
-     matter what TO is if SIZE is zero; TO may even be a null pointer.
+     If SIZE is zero, no bytes are stored in TO.  In this case,
+     `strxfrm' simply returns the number of bytes that would be the
+     length of the transformed string.  This is useful for determining
+     what size the allocated array should be.  It does not matter what
+     TO is if SIZE is zero; TO may even be a null pointer.
 
  -- Function: size_t wcsxfrm (wchar_t *restrict WTO, const wchar_t
           *WFROM, size_t SIZE)
      Preliminary: | MT-Safe locale | AS-Unsafe heap | AC-Unsafe mem |
      *Note POSIX Safety Concepts::.
 
-     The function `wcsxfrm' transforms wide character string WFROM
-     using the collation transformation determined by the locale
-     currently selected for collation, and stores the transformed
-     string in the array WTO.  Up to SIZE wide characters (including a
-     terminating null character) are stored.
+     The function `wcsxfrm' transforms wide string WFROM using the
+     collation transformation determined by the locale currently
+     selected for collation, and stores the transformed string in the
+     array WTO.  Up to SIZE wide characters (including a terminating
+     null wide character) are stored.
 
      The behavior is undefined if the strings WTO and WFROM overlap;
-     see *Note Copying and Concatenation::.
+     see *Note Copying Strings and Arrays::.
 
      The return value is the length of the entire transformed wide
-     character string.  This value is not affected by the value of
-     SIZE, but if it is greater or equal than SIZE, it means that the
-     transformed wide character string did not entirely fit in the
-     array WTO.  In this case, only as much of the wide character
-     string as actually fits was stored.  To get the whole transformed
-     wide character string, call `wcsxfrm' again with a bigger output
-     array.
+     string.  This value is not affected by the value of SIZE, but if
+     it is greater or equal than SIZE, it means that the transformed
+     wide string did not entirely fit in the array WTO.  In this case,
+     only as much of the wide string as actually fits was stored.  To
+     get the whole transformed wide string, call `wcsxfrm' again with a
+     bigger output array.
 
-     The transformed wide character string may be longer than the
-     original wide character string, and it may also be shorter.
+     The transformed wide string may be longer than the original wide
+     string, and it may also be shorter.
 
-     If SIZE is zero, no characters are stored in TO.  In this case,
-     `wcsxfrm' simply returns the number of wide characters that would
-     be the length of the transformed wide character string.  This is
+     If SIZE is zero, no wide characters are stored in TO.  In this
+     case, `wcsxfrm' simply returns the number of wide characters that
+     would be the length of the transformed wide string.  This is
      useful for determining what size the allocated array should be
      (remember to multiply with `sizeof (wchar_t)').  It does not
      matter what WTO is if SIZE is zero; WTO may even be a null pointer.
@@ -3296,7 +3353,7 @@ when there are many strings.
            if (transformed_length >= length)
              {
                /* Allocate the needed space. +1 for terminating
-                  `NUL' character.  */
+                  `'\0'' byte.  */
                transformed = (char *) xrealloc (transformed,
                                                 transformed_length + 1);
 
@@ -3338,7 +3395,7 @@ would look like this:
            if (transformed_length >= length)
              {
                /* Allocate the needed space. +1 for terminating
-                  `NUL' character.  */
+                  `L'\0'' wide character.  */
                transformed = (wchar_t *) xrealloc (transformed,
                                                    (transformed_length + 1)
                                                    * sizeof (wchar_t));
@@ -3360,7 +3417,7 @@ wide character versions were introduced in Amendment 1 to ISO C90.
 
 File: libc.info,  Node: Search Functions,  Next: Finding Tokens in a String,  Prev: Collation Functions,  Up: String and Array Utilities
 
-5.7 Search Functions
+5.9 Search Functions
 ====================
 
 This section describes library functions which perform various kinds of
@@ -3428,10 +3485,10 @@ declared in the header file `string.h'.
      Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
      Concepts::.
 
-     The `strchr' function finds the first occurrence of the character
-     C (converted to a `char') in the null-terminated string beginning
-     at STRING.  The return value is a pointer to the located
-     character, or a null pointer if no match was found.
+     The `strchr' function finds the first occurrence of the byte C
+     (converted to a `char') in the string beginning at STRING.  The
+     return value is a pointer to the located byte, or a null pointer
+     if no match was found.
 
      For example,
           strchr ("hello, world", 'l')
@@ -3439,14 +3496,13 @@ declared in the header file `string.h'.
           strchr ("hello, world", '?')
               => NULL
 
-     The terminating null character is considered to be part of the
-     string, so you can use this function get a pointer to the end of a
-     string by specifying a null character as the value of the C
-     argument.
+     The terminating null byte is considered to be part of the string,
+     so you can use this function get a pointer to the end of a string
+     by specifying zero as the value of the C argument.
 
      When `strchr' returns a null pointer, it does not let you know the
-     position of the terminating null character it has found.  If you
-     need that information, it is better (but less portable) to use
+     position of the terminating null byte it has found.  If you need
+     that information, it is better (but less portable) to use
      `strchrnul' than to search for it a second time.
 
  -- Function: wchar_t * wcschr (const wchar_t *WSTRING, int WC)
@@ -3454,23 +3510,23 @@ declared in the header file `string.h'.
      Concepts::.
 
      The `wcschr' function finds the first occurrence of the wide
-     character WC in the null-terminated wide character string
-     beginning at WSTRING.  The return value is a pointer to the
-     located wide character, or a null pointer if no match was found.
+     character WC in the wide string beginning at WSTRING.  The return
+     value is a pointer to the located wide character, or a null
+     pointer if no match was found.
 
-     The terminating null character is considered to be part of the wide
-     character string, so you can use this function get a pointer to
-     the end of a wide character string by specifying a null wude
-     character as the value of the WC argument.  It would be better
-     (but less portable) to use `wcschrnul' in this case, though.
+     The terminating null wide character is considered to be part of
+     the wide string, so you can use this function get a pointer to the
+     end of a wide string by specifying a null wide character as the
+     value of the WC argument.  It would be better (but less portable)
+     to use `wcschrnul' in this case, though.
 
  -- Function: char * strchrnul (const char *STRING, int C)
      Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
      Concepts::.
 
      `strchrnul' is the same as `strchr' except that if it does not
-     find the character, it returns a pointer to string's terminating
-     null character rather than a null pointer.
+     find the byte, it returns a pointer to string's terminating null
+     byte rather than a null pointer.
 
      This function is a GNU extension.
 
@@ -3479,14 +3535,13 @@ declared in the header file `string.h'.
      Concepts::.
 
      `wcschrnul' is the same as `wcschr' except that if it does not
-     find the wide character, it returns a pointer to wide character
-     string's terminating null wide character rather than a null
-     pointer.
+     find the wide character, it returns a pointer to the wide string's
+     terminating null wide character rather than a null pointer.
 
      This function is a GNU extension.
 
    One useful, but unusual, use of the `strchr' function is when one
-wants to have a pointer pointing to the NUL byte terminating a string.
+wants to have a pointer pointing to the null byte terminating a string.
 This is often written in this way:
 
        s += strlen (s);
@@ -3498,11 +3553,11 @@ this:
        s = strchr (s, '\0');
 
    There is no restriction on the second parameter of `strchr' so it
-could very well also be the NUL character.  Those readers thinking very
-hard about this might now point out that the `strchr' function is more
-expensive than the `strlen' function since we have two abort criteria.
-This is right.  But in the GNU C Library the implementation of `strchr'
-is optimized in a special way so that `strchr' actually is faster.
+could very well also be zero.  Those readers thinking very hard about
+this might now point out that the `strchr' function is more expensive
+than the `strlen' function since we have two abort criteria.  This is
+right.  But in the GNU C Library the implementation of `strchr' is
+optimized in a special way so that `strchr' actually is faster.
 
  -- Function: char * strrchr (const char *STRING, int C)
      Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
@@ -3529,10 +3584,10 @@ is optimized in a special way so that `strchr' actually is faster.
      Concepts::.
 
      This is like `strchr', except that it searches HAYSTACK for a
-     substring NEEDLE rather than just a single character.  It returns
-     a pointer into the string HAYSTACK that is the first character of
-     the substring, or a null pointer if no match was found.  If NEEDLE
-     is an empty string, the function returns HAYSTACK.
+     substring NEEDLE rather than just a single byte.  It returns a
+     pointer into the string HAYSTACK that is the first byte of the
+     substring, or a null pointer if no match was found.  If NEEDLE is
+     an empty string, the function returns HAYSTACK.
 
      For example,
           strstr ("hello, world", "l")
@@ -3568,7 +3623,8 @@ is optimized in a special way so that `strchr' actually is faster.
 
      This is like `strstr', except that it ignores case in searching for
      the substring.   Like `strcasecmp', it is locale dependent how
-     uppercase and lowercase characters are related.
+     uppercase and lowercase characters are related, and arguments are
+     multibyte strings.
 
      For example,
           strcasestr ("hello, world", "L")
@@ -3582,8 +3638,8 @@ is optimized in a special way so that `strchr' actually is faster.
      Concepts::.
 
      This is like `strstr', but NEEDLE and HAYSTACK are byte arrays
-     rather than null-terminated strings.  NEEDLE-LEN is the length of
-     NEEDLE and HAYSTACK-LEN is the length of HAYSTACK.
+     rather than strings.  NEEDLE-LEN is the length of NEEDLE and
+     HAYSTACK-LEN is the length of HAYSTACK.
 
      This function is a GNU extension.
 
@@ -3592,19 +3648,17 @@ is optimized in a special way so that `strchr' actually is faster.
      Concepts::.
 
      The `strspn' ("string span") function returns the length of the
-     initial substring of STRING that consists entirely of characters
-     that are members of the set specified by the string SKIPSET.  The
-     order of the characters in SKIPSET is not important.
+     initial substring of STRING that consists entirely of bytes that
+     are members of the set specified by the string SKIPSET.  The order
+     of the bytes in SKIPSET is not important.
 
      For example,
           strspn ("hello, world", "abcdefghijklmnopqrstuvwxyz")
               => 5
 
-     Note that "character" is here used in the sense of byte.  In a
-     string using a multibyte character encoding (abstract) character
-     consisting of more than one byte are not treated as an entity.
-     Each byte is treated separately.  The function is not
-     locale-dependent.
+     In a multibyte string, characters consisting of more than one byte
+     are not treated as single entities.  Each byte is treated
+     separately.  The function is not locale-dependent.
 
  -- Function: size_t wcsspn (const wchar_t *WSTRING, const wchar_t
           *SKIPSET)
@@ -3623,19 +3677,17 @@ is optimized in a special way so that `strchr' actually is faster.
 
      The `strcspn' ("string complement span") function returns the
      length of the initial substring of STRING that consists entirely
-     of characters that are _not_ members of the set specified by the
-     string STOPSET.  (In other words, it returns the offset of the
-     first character in STRING that is a member of the set STOPSET.)
+     of bytes that are _not_ members of the set specified by the string
+     STOPSET.  (In other words, it returns the offset of the first byte
+     in STRING that is a member of the set STOPSET.)
 
      For example,
           strcspn ("hello, world", " \t\n,.;!?")
               => 5
 
-     Note that "character" is here used in the sense of byte.  In a
-     string using a multibyte character encoding (abstract) character
-     consisting of more than one byte are not treated as an entity.
-     Each byte is treated separately.  The function is not
-     locale-dependent.
+     In a multibyte string, characters consisting of more than one byte
+     are not treated as a single entities.  Each byte is treated
+     separately.  The function is not locale-dependent.
 
  -- Function: size_t wcscspn (const wchar_t *WSTRING, const wchar_t
           *STOPSET)
@@ -3646,29 +3698,27 @@ is optimized in a special way so that `strchr' actually is faster.
      returns the length of the initial substring of WSTRING that
      consists entirely of wide characters that are _not_ members of the
      set specified by the string STOPSET.  (In other words, it returns
-     the offset of the first character in STRING that is a member of
-     the set STOPSET.)
+     the offset of the first wide character in STRING that is a member
+     of the set STOPSET.)
 
  -- Function: char * strpbrk (const char *STRING, const char *STOPSET)
      Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
      Concepts::.
 
      The `strpbrk' ("string pointer break") function is related to
-     `strcspn', except that it returns a pointer to the first character
-     in STRING that is a member of the set STOPSET instead of the
-     length of the initial substring.  It returns a null pointer if no
-     such character from STOPSET is found.
+     `strcspn', except that it returns a pointer to the first byte in
+     STRING that is a member of the set STOPSET instead of the length
+     of the initial substring.  It returns a null pointer if no such
+     byte from STOPSET is found.
 
      For example,
 
           strpbrk ("hello, world", " \t\n,.;!?")
               => ", world"
 
-     Note that "character" is here used in the sense of byte.  In a
-     string using a multibyte character encoding (abstract) character
-     consisting of more than one byte are not treated as an entity.
-     Each byte is treated separately.  The function is not
-     locale-dependent.
+     In a multibyte string, characters consisting of more than one byte
+     are not treated as single entities.  Each byte is treated
+     separately.  The function is not locale-dependent.
 
  -- Function: wchar_t * wcspbrk (const wchar_t *WSTRING, const wchar_t
           *STOPSET)
@@ -3679,9 +3729,9 @@ is optimized in a special way so that `strchr' actually is faster.
      related to `wcscspn', except that it returns a pointer to the first
      wide character in WSTRING that is a member of the set STOPSET
      instead of the length of the initial substring.  It returns a null
-     pointer if no such character from STOPSET is found.
+     pointer if no such wide character from STOPSET is found.
 
-5.7.1 Compatibility String Search Functions
+5.9.1 Compatibility String Search Functions
 -------------------------------------------
 
  -- Function: char * index (const char *STRING, int C)
@@ -3705,8 +3755,8 @@ is optimized in a special way so that `strchr' actually is faster.
 
 File: libc.info,  Node: Finding Tokens in a String,  Next: strfry,  Prev: Search Functions,  Up: String and Array Utilities
 
-5.8 Finding Tokens in a String
-==============================
+5.10 Finding Tokens in a String
+===============================
 
 It's fairly common for programs to have a need to do some simple kinds
 of lexical analysis and parsing, such as splitting a command string up
@@ -3733,28 +3783,26 @@ the header file `string.h'.
 
      The DELIMITERS argument is a string that specifies a set of
      delimiters that may surround the token being extracted.  All the
-     initial characters that are members of this set are discarded.
-     The first character that is _not_ a member of this set of
-     delimiters marks the beginning of the next token.  The end of the
-     token is found by looking for the next character that is a member
-     of the delimiter set.  This character in the original string
-     NEWSTRING is overwritten by a null character, and the pointer to
-     the beginning of the token in NEWSTRING is returned.
+     initial bytes that are members of this set are discarded.  The
+     first byte that is _not_ a member of this set of delimiters marks
+     the beginning of the next token.  The end of the token is found by
+     looking for the next byte that is a member of the delimiter set.
+     This byte in the original string NEWSTRING is overwritten by a
+     null byte, and the pointer to the beginning of the token in
+     NEWSTRING is returned.
 
      On the next call to `strtok', the searching begins at the next
-     character beyond the one that marked the end of the previous token.
+     byte beyond the one that marked the end of the previous token.
      Note that the set of delimiters DELIMITERS do not have to be the
      same on every call in a series of calls to `strtok'.
 
      If the end of the string NEWSTRING is reached, or if the remainder
-     of string consists only of delimiter characters, `strtok' returns
-     a null pointer.
+     of string consists only of delimiter bytes, `strtok' returns a
+     null pointer.
 
-     Note that "character" is here used in the sense of byte.  In a
-     string using a multibyte character encoding (abstract) character
-     consisting of more than one byte are not treated as an entity.
-     Each byte is treated separately.  The function is not
-     locale-dependent.
+     In a multibyte string, characters consisting of more than one byte
+     are not treated as single entities.  Each byte is treated
+     separately.  The function is not locale-dependent.
 
  -- Function: wchar_t * wcstok (wchar_t *NEWSTRING, const wchar_t
           *DELIMITERS, wchar_t **SAVE_PTR)
@@ -3767,35 +3815,34 @@ the header file `string.h'.
      The string to be split up is passed as the NEWSTRING argument on
      the first call only.  The `wcstok' function uses this to set up
      some internal state information.  Subsequent calls to get
-     additional tokens from the same wide character string are
-     indicated by passing a null pointer as the NEWSTRING argument,
-     which causes the pointer previously stored in SAVE_PTR to be used
-     instead.
+     additional tokens from the same wide string are indicated by
+     passing a null pointer as the NEWSTRING argument, which causes the
+     pointer previously stored in SAVE_PTR to be used instead.
 
-     The DELIMITERS argument is a wide character string that specifies
-     a set of delimiters that may surround the token being extracted.
-     All the initial wide characters that are members of this set are
-     discarded.  The first wide character that is _not_ a member of
-     this set of delimiters marks the beginning of the next token.  The
-     end of the token is found by looking for the next wide character
-     that is a member of the delimiter set.  This wide character in the
-     original wide character string NEWSTRING is overwritten by a null
-     wide character, the pointer past the overwritten wide character is
-     saved in SAVE_PTR, and the pointer to the beginning of the token
-     in NEWSTRING is returned.
+     The DELIMITERS argument is a wide string that specifies a set of
+     delimiters that may surround the token being extracted.  All the
+     initial wide characters that are members of this set are discarded.
+     The first wide character that is _not_ a member of this set of
+     delimiters marks the beginning of the next token.  The end of the
+     token is found by looking for the next wide character that is a
+     member of the delimiter set.  This wide character in the original
+     wide string NEWSTRING is overwritten by a null wide character, the
+     pointer past the overwritten wide character is saved in SAVE_PTR,
+     and the pointer to the beginning of the token in NEWSTRING is
+     returned.
 
      On the next call to `wcstok', the searching begins at the next
      wide character beyond the one that marked the end of the previous
      token.  Note that the set of delimiters DELIMITERS do not have to
      be the same on every call in a series of calls to `wcstok'.
 
-     If the end of the wide character string NEWSTRING is reached, or
-     if the remainder of string consists only of delimiter wide
-     characters, `wcstok' returns a null pointer.
+     If the end of the wide string NEWSTRING is reached, or if the
+     remainder of string consists only of delimiter wide characters,
+     `wcstok' returns a null pointer.
 
    *Warning:* Since `strtok' and `wcstok' alter the string they is
 parsing, you should always copy the string to a temporary buffer before
-parsing it with `strtok'/`wcstok' (*note Copying and Concatenation::).
+parsing it with `strtok'/`wcstok' (*note Copying Strings and Arrays::).
 If you allow `strtok' or `wcstok' to modify a string that came from
 another part of your program, you are asking for trouble; that string
 might be used for other purposes after `strtok' or `wcstok' has
@@ -3840,8 +3887,8 @@ important.
      token = strtok (NULL, delimiters);    /* token => NULL */
 
    The GNU C Library contains two more functions for tokenizing a string
-which overcome the limitation of non-reentrancy.  They are only
-available for multibyte character strings.
+which overcome the limitation of non-reentrancy.  They are not
+available available for wide strings.
 
  -- Function: char * strtok_r (char *NEWSTRING, const char *DELIMITERS,
           char **SAVE_PTR)
@@ -3873,10 +3920,10 @@ available for multibyte character strings.
      token.
 
      One difference between `strsep' and `strtok_r' is that if the
-     input string contains more than one character from DELIMITER in a
-     row `strsep' returns an empty string for each pair of characters
-     from DELIMITER.  This means that a program normally should test
-     for `strsep' returning an empty string before processing it.
+     input string contains more than one byte from DELIMITER in a row
+     `strsep' returns an empty string for each pair of bytes from
+     DELIMITER.  This means that a program normally should test for
+     `strsep' returning an empty string before processing it.
 
      This function was introduced in 4.3BSD and therefore is widely
      available.
@@ -3948,10 +3995,10 @@ available for multibyte character strings.
 
      This is the standard XPG defined `basename'.  It is similar in
      spirit to the GNU version, but may modify the PATH by removing
-     trailing '/' characters.  If the PATH is made up entirely of '/'
-     characters, then "/" will be returned.  Also, if PATH is `NULL' or
-     an empty string, then "." is returned.  The prototype for the XPG
-     version can be found in `libgen.h'.
+     trailing '/' bytes.  If the PATH is made up entirely of '/' bytes,
+     then "/" will be returned.  Also, if PATH is `NULL' or an empty
+     string, then "." is returned.  The prototype for the XPG version
+     can be found in `libgen.h'.
 
      Example of using XPG `basename':
 
@@ -3982,14 +4029,14 @@ available for multibyte character strings.
      The `dirname' function is the compliment to the XPG version of
      `basename'.  It returns the parent directory of the file specified
      by PATH.  If PATH is `NULL', an empty string, or contains no '/'
-     characters, then "." is returned.  The prototype for this function
-     can be found in `libgen.h'.
+     bytes, then "." is returned.  The prototype for this function can
+     be found in `libgen.h'.
 
 
 File: libc.info,  Node: strfry,  Next: Trivial Encryption,  Prev: Finding Tokens in a String,  Up: String and Array Utilities
 
-5.9 strfry
-==========
+5.11 strfry
+===========
 
 The function below addresses the perennial programming quandary: "How do
 I take good data in string form and painlessly turn it into garbage?"
@@ -4017,7 +4064,7 @@ string data.
 
 File: libc.info,  Node: Trivial Encryption,  Next: Encode Binary Data,  Prev: strfry,  Up: String and Array Utilities
 
-5.10 Trivial Encryption
+5.12 Trivial Encryption
 =======================
 
 The `memfrob' function converts an array of data to something
@@ -4055,25 +4102,24 @@ Unlike Rot13, `memfrob' works on arbitrary binary data, not just text.
 
 File: libc.info,  Node: Encode Binary Data,  Next: Argz and Envz Vectors,  Prev: Trivial Encryption,  Up: String and Array Utilities
 
-5.11 Encode Binary Data
+5.13 Encode Binary Data
 =======================
 
 To store or transfer binary data in environments which only support text
-one has to encode the binary data by mapping the input bytes to
-characters in the range allowed for storing or transferring.  SVID
-systems (and nowadays XPG compliant systems) provide minimal support for
-this task.
+one has to encode the binary data by mapping the input bytes to bytes
+in the range allowed for storing or transferring.  SVID systems (and
+nowadays XPG compliant systems) provide minimal support for this task.
 
  -- Function: char * l64a (long int N)
      Preliminary: | MT-Unsafe race:l64a | AS-Unsafe | AC-Safe | *Note
      POSIX Safety Concepts::.
 
-     This function encodes a 32-bit input value using characters from
-     the basic character set.  It returns a pointer to a 7 character
-     buffer which contains an encoded version of N.  To encode a series
-     of bytes the user must copy the returned string to a destination
-     buffer.  It returns the empty string if N is zero, which is
-     somewhat bizarre but mandated by the standard.
+     This function encodes a 32-bit input value using bytes from the
+     basic character set.  It returns a pointer to a 7 byte buffer which
+     contains an encoded version of N.  To encode a series of bytes the
+     user must copy the returned string to a destination buffer.  It
+     returns the empty string if N is zero, which is somewhat bizarre
+     but mandated by the standard.
      *Warning:* Since a static buffer is used this function should not
      be used in multi-threaded programs.  There is no thread-safe
      alternative to this function in the C library.
@@ -4142,18 +4188,17 @@ used.
      Concepts::.
 
      The parameter STRING should contain a string which was produced by
-     a call to `l64a'.  The function processes at least 6 characters of
-     this string, and decodes the characters it finds according to the
-     table below.  It stops decoding when it finds a character not in
-     the table, rather like `atoi'; if you have a buffer which has been
-     broken into lines, you must be careful to skip over the
-     end-of-line characters.
+     a call to `l64a'.  The function processes at least 6 bytes of this
+     string, and decodes the bytes it finds according to the table
+     below.  It stops decoding when it finds a byte not in the table,
+     rather like `atoi'; if you have a buffer which has been broken into
+     lines, you must be careful to skip over the end-of-line bytes.
 
      The decoded number is returned as a `long int' value.
 
    The `l64a' and `a64l' functions use a base 64 encoding, in which
-each character of an encoded string represents six bits of an input
-word.  These symbols are used for the base 64 digits:
+each byte of an encoded string represents six bits of an input word.
+These symbols are used for the base 64 digits:
 
         0     1     2     3     4     5     6     7
 0       `.'   `/'   `0'   `1'   `2'   `3'   `4'   `5'
@@ -4172,14 +4217,14 @@ Generally, it is better to use one of these encodings.
 
 File: libc.info,  Node: Argz and Envz Vectors,  Prev: Encode Binary Data,  Up: String and Array Utilities
 
-5.12 Argz and Envz Vectors
+5.14 Argz and Envz Vectors
 ==========================
 
 "argz vectors" are vectors of strings in a contiguous block of memory,
-each element separated from its neighbors by null-characters (`'\0'').
+each element separated from its neighbors by null bytes (`'\0'').
 
    "Envz vectors" are an extension of argz vectors where each element
-is a name-value pair, separated by a `'='' character (as in a Unix
+is a name-value pair, separated by a `'='' byte (as in a Unix
 environment).
 
 * Menu:
@@ -4190,7 +4235,7 @@ environment).
 
 File: libc.info,  Node: Argz Functions,  Next: Envz Functions,  Up: Argz and Envz Vectors
 
-5.12.1 Argz Functions
+5.14.1 Argz Functions
 ---------------------
 
 Each argz vector is represented by a pointer to the first element, of
@@ -4228,10 +4273,9 @@ error occurs.
      Preliminary: | MT-Safe | AS-Unsafe heap | AC-Unsafe mem | *Note
      POSIX Safety Concepts::.
 
-     The `argz_create_sep' function converts the null-terminated string
-     STRING into an argz vector (returned in ARGZ and ARGZ_LEN) by
-     splitting it into elements at every occurrence of the character
-     SEP.
+     The `argz_create_sep' function converts the string STRING into an
+     argz vector (returned in ARGZ and ARGZ_LEN) by splitting it into
+     elements at every occurrence of the byte SEP.
 
  -- Function: size_t argz_count (const char *ARGZ, size_t ARG_LEN)
      Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
@@ -4262,7 +4306,7 @@ error occurs.
      Concepts::.
 
      The `argz_stringify' converts ARGZ into a normal string with the
-     elements separated by the character SEP, by replacing each `'\0''
+     elements separated by the byte SEP, by replacing each `'\0''
      inside ARGZ (except the last one, which terminates the string)
      with SEP.  This is handy for printing ARGZ in a readable manner.
 
@@ -4281,7 +4325,7 @@ error occurs.
 
      The `argz_add_sep' function is similar to `argz_add', but STR is
      split into separate elements in the result at occurrences of the
-     character DELIM.  This is useful, for instance, for adding the
+     byte DELIM.  This is useful, for instance, for adding the
      components of a Unix search path to an argz vector, by using a
      value of `':'' for DELIM.
 
@@ -4363,7 +4407,7 @@ error occurs.
 
 File: libc.info,  Node: Envz Functions,  Prev: Argz Functions,  Up: Argz and Envz Vectors
 
-5.12.2 Envz Functions
+5.14.2 Envz Functions
 ---------------------
 
 Envz vectors are just argz vectors with additional constraints on the
@@ -4371,11 +4415,11 @@ form of each element; as such, argz functions can also be used on them,
 where it makes sense.
 
    Each element in an envz vector is a name-value pair, separated by a
-`'='' character; if multiple `'='' characters are present in an
-element, those after the first are considered part of the value, and
-treated like all other non-`'\0'' characters.
+`'='' byte; if multiple `'='' bytes are present in an element, those
+after the first are considered part of the value, and treated like all
+other non-`'\0'' bytes.
 
-   If _no_ `'='' characters are present in an element, that element is
+   If _no_ `'='' bytes are present in an element, that element is
 considered the name of a "null" entry, as distinct from an entry with an
 empty value: `envz_get' will return `0' if given the name of null
 entry, whereas an entry with an empty value would result in a value of
@@ -4395,8 +4439,8 @@ thus fail) have a return type of `error_t', and return either `0' or
 
      The `envz_entry' function finds the entry in ENVZ with the name
      NAME, and returns a pointer to the whole entry--that is, the argz
-     element which begins with NAME followed by a `'='' character.  If
-     there is no entry with that name, `0' is returned.
+     element which begins with NAME followed by a `'='' byte.  If there
+     is no entry with that name, `0' is returned.
 
  -- Function: char * envz_get (const char *ENVZ, size_t ENVZ_LEN, const
           char *NAME)
@@ -7477,10 +7521,10 @@ general use or for a specific category.
      currently selected for category CATEGORY.
 
      The string returned by `setlocale' can be overwritten by subsequent
-     calls, so you should make a copy of the string (*note Copying and
-     Concatenation::) if you want to save it past any further calls to
-     `setlocale'.  (The standard library is guaranteed never to call
-     `setlocale' itself.)
+     calls, so you should make a copy of the string (*note Copying
+     Strings and Arrays::) if you want to save it past any further
+     calls to `setlocale'.  (The standard library is guaranteed never
+     to call `setlocale' itself.)
 
      You should not modify the string returned by `setlocale'.  It might
      be the same string that was passed as an argument in a previous
@@ -8563,52 +8607,4 @@ This function would normally be used like this:
 
    Note that the loop continues until a read error is detected or until
 a definitive (positive or negative) answer is read.
-
-
-File: libc.info,  Node: Message Translation,  Next: Searching and Sorting,  Prev: Locales,  Up: Top
-
-8 Message Translation
-*********************
-
-The program's interface with the user should be designed to ease the
-user's task.  One way to ease the user's task is to use messages in
-whatever language the user prefers.
-
-   Printing messages in different languages can be implemented in
-different ways.  One could add all the different languages in the
-source code and choose among the variants every time a message has to
-be printed.  This is certainly not a good solution since extending the
-set of languages is cumbersome (the code must be changed) and the code
-itself can become really big with dozens of message sets.
-
-   A better solution is to keep the message sets for each language in
-separate files which are loaded at runtime depending on the language
-selection of the user.
-
-   The GNU C Library provides two different sets of functions to support
-message translation.  The problem is that neither of the interfaces is
-officially defined by the POSIX standard.  The `catgets' family of
-functions is defined in the X/Open standard but this is derived from
-industry decisions and therefore not necessarily based on reasonable
-decisions.
-
-   As mentioned above the message catalog handling provides easy
-extendibility by using external data files which contain the message
-translations.  I.e., these files contain for each of the messages used
-in the program a translation for the appropriate language.  So the tasks
-of the message handling functions are
-
-   * locate the external data file with the appropriate translations
-
-   * load the data and make it possible to address the messages
-
-   * map a given key to the translated message
-
-   The two approaches mainly differ in the implementation of this last
-step.  Decisions made in the last step influence the rest of the design.
-
-* Menu:
-
-* Message catalogs a la X/Open::  The `catgets' family of functions.
-* The Uniforum approach::         The `gettext' family of functions.
 

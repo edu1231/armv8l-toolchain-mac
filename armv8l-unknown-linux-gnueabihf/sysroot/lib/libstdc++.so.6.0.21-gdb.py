@@ -19,7 +19,7 @@ import gdb
 import os
 import os.path
 
-pythondir = '/usr/local/armv8l-unknown-linux-gnueabihf/share/gcc-5.2.0/python'
+pythondir = '/usr/local/armv8l-unknown-linux-gnueabihf/share/gcc-5.3.0/python'
 libdir = '/usr/local/armv8l-unknown-linux-gnueabihf/armv8l-unknown-linux-gnueabihf/lib'
 
 # This file might be loaded when there is no current objfile.  This
@@ -55,4 +55,7 @@ if gdb.current_objfile () is not None:
     if not dir_ in sys.path:
         sys.path.insert(0, dir_)
 
-import libstdcxx.v6
+# Call a function as a plain import would not execute body of the included file
+# on repeated reloads of this object file.
+from libstdcxx.v6 import register_libstdcxx_printers
+register_libstdcxx_printers(gdb.current_objfile())

@@ -457,7 +457,9 @@ START-INFO-DIR-ENTRY
 * __ppc_mdoom: (libc)PowerPC.
 * __ppc_set_ppr_low: (libc)PowerPC.
 * __ppc_set_ppr_med: (libc)PowerPC.
+* __ppc_set_ppr_med_high: (libc)PowerPC.
 * __ppc_set_ppr_med_low: (libc)PowerPC.
+* __ppc_set_ppr_very_low: (libc)PowerPC.
 * __ppc_yield: (libc)PowerPC.
 * __va_copy: (libc)Argument Macros.
 * _exit: (libc)Termination Internals.
@@ -548,14 +550,14 @@ START-INFO-DIR-ENTRY
 * basename: (libc)Finding Tokens in a String.
 * basename: (libc)Finding Tokens in a String.
 * bcmp: (libc)String/Array Comparison.
-* bcopy: (libc)Copying and Concatenation.
+* bcopy: (libc)Copying Strings and Arrays.
 * bind: (libc)Setting Address.
 * bind_textdomain_codeset: (libc)Charset conversion in gettext.
 * bindtextdomain: (libc)Locating gettext catalog.
 * brk: (libc)Resizing the Data Segment.
 * bsearch: (libc)Array Search Function.
 * btowc: (libc)Converting a Character.
-* bzero: (libc)Copying and Concatenation.
+* bzero: (libc)Copying Strings and Arrays.
 * cabs: (libc)Absolute Value.
 * cabsf: (libc)Absolute Value.
 * cabsl: (libc)Absolute Value.
@@ -1159,16 +1161,16 @@ START-INFO-DIR-ENTRY
 * mbtowc: (libc)Non-reentrant Character Conversion.
 * mcheck: (libc)Heap Consistency Checking.
 * memalign: (libc)Aligned Memory Blocks.
-* memccpy: (libc)Copying and Concatenation.
+* memccpy: (libc)Copying Strings and Arrays.
 * memchr: (libc)Search Functions.
 * memcmp: (libc)String/Array Comparison.
-* memcpy: (libc)Copying and Concatenation.
+* memcpy: (libc)Copying Strings and Arrays.
 * memfrob: (libc)Trivial Encryption.
 * memmem: (libc)Search Functions.
-* memmove: (libc)Copying and Concatenation.
-* mempcpy: (libc)Copying and Concatenation.
+* memmove: (libc)Copying Strings and Arrays.
+* mempcpy: (libc)Copying Strings and Arrays.
 * memrchr: (libc)Search Functions.
-* memset: (libc)Copying and Concatenation.
+* memset: (libc)Copying Strings and Arrays.
 * mkdir: (libc)Creating Directories.
 * mkdtemp: (libc)Temporary Files.
 * mkfifo: (libc)FIFO Special Files.
@@ -1483,19 +1485,19 @@ START-INFO-DIR-ENTRY
 * stat64: (libc)Reading Attributes.
 * stat: (libc)Reading Attributes.
 * stime: (libc)Simple Calendar Time.
-* stpcpy: (libc)Copying and Concatenation.
-* stpncpy: (libc)Copying and Concatenation.
+* stpcpy: (libc)Copying Strings and Arrays.
+* stpncpy: (libc)Truncating Strings.
 * strcasecmp: (libc)String/Array Comparison.
 * strcasestr: (libc)Search Functions.
-* strcat: (libc)Copying and Concatenation.
+* strcat: (libc)Concatenating Strings.
 * strchr: (libc)Search Functions.
 * strchrnul: (libc)Search Functions.
 * strcmp: (libc)String/Array Comparison.
 * strcoll: (libc)Collation Functions.
-* strcpy: (libc)Copying and Concatenation.
+* strcpy: (libc)Copying Strings and Arrays.
 * strcspn: (libc)Search Functions.
-* strdup: (libc)Copying and Concatenation.
-* strdupa: (libc)Copying and Concatenation.
+* strdup: (libc)Copying Strings and Arrays.
+* strdupa: (libc)Copying Strings and Arrays.
 * strerror: (libc)Error Messages.
 * strerror_r: (libc)Error Messages.
 * strfmon: (libc)Formatting Numbers.
@@ -1503,11 +1505,11 @@ START-INFO-DIR-ENTRY
 * strftime: (libc)Formatting Calendar Time.
 * strlen: (libc)String Length.
 * strncasecmp: (libc)String/Array Comparison.
-* strncat: (libc)Copying and Concatenation.
+* strncat: (libc)Truncating Strings.
 * strncmp: (libc)String/Array Comparison.
-* strncpy: (libc)Copying and Concatenation.
-* strndup: (libc)Copying and Concatenation.
-* strndupa: (libc)Copying and Concatenation.
+* strncpy: (libc)Truncating Strings.
+* strndup: (libc)Truncating Strings.
+* strndupa: (libc)Truncating Strings.
 * strnlen: (libc)String Length.
 * strpbrk: (libc)Search Functions.
 * strptime: (libc)Low-Level Time String Parsing.
@@ -1641,24 +1643,24 @@ START-INFO-DIR-ENTRY
 * waitpid: (libc)Process Completion.
 * warn: (libc)Error Messages.
 * warnx: (libc)Error Messages.
-* wcpcpy: (libc)Copying and Concatenation.
-* wcpncpy: (libc)Copying and Concatenation.
+* wcpcpy: (libc)Copying Strings and Arrays.
+* wcpncpy: (libc)Truncating Strings.
 * wcrtomb: (libc)Converting a Character.
 * wcscasecmp: (libc)String/Array Comparison.
-* wcscat: (libc)Copying and Concatenation.
+* wcscat: (libc)Concatenating Strings.
 * wcschr: (libc)Search Functions.
 * wcschrnul: (libc)Search Functions.
 * wcscmp: (libc)String/Array Comparison.
 * wcscoll: (libc)Collation Functions.
-* wcscpy: (libc)Copying and Concatenation.
+* wcscpy: (libc)Copying Strings and Arrays.
 * wcscspn: (libc)Search Functions.
-* wcsdup: (libc)Copying and Concatenation.
+* wcsdup: (libc)Copying Strings and Arrays.
 * wcsftime: (libc)Formatting Calendar Time.
 * wcslen: (libc)String Length.
 * wcsncasecmp: (libc)String/Array Comparison.
-* wcsncat: (libc)Copying and Concatenation.
+* wcsncat: (libc)Truncating Strings.
 * wcsncmp: (libc)String/Array Comparison.
-* wcsncpy: (libc)Copying and Concatenation.
+* wcsncpy: (libc)Truncating Strings.
 * wcsnlen: (libc)String Length.
 * wcsnrtombs: (libc)Converting Strings.
 * wcspbrk: (libc)Search Functions.
@@ -1687,10 +1689,10 @@ START-INFO-DIR-ENTRY
 * wctype: (libc)Classification of Wide Characters.
 * wmemchr: (libc)Search Functions.
 * wmemcmp: (libc)String/Array Comparison.
-* wmemcpy: (libc)Copying and Concatenation.
-* wmemmove: (libc)Copying and Concatenation.
-* wmempcpy: (libc)Copying and Concatenation.
-* wmemset: (libc)Copying and Concatenation.
+* wmemcpy: (libc)Copying Strings and Arrays.
+* wmemmove: (libc)Copying Strings and Arrays.
+* wmempcpy: (libc)Copying Strings and Arrays.
+* wmemset: (libc)Copying Strings and Arrays.
 * wordexp: (libc)Calling Wordexp.
 * wordfree: (libc)Calling Wordexp.
 * wprintf: (libc)Formatted Output Functions.
@@ -1710,10 +1712,10 @@ END-INFO-DIR-ENTRY
 
    This file documents the GNU C Library.
 
-   This is `The GNU C Library Reference Manual', for version 2.22
-(crosstool-NG crosstool-ng-1.22.0).
+   This is `The GNU C Library Reference Manual', for version 2.23
+(crosstool-NG crosstool-ng-1.22.0-148-g7300eb1).
 
-   Copyright (C) 1993-2015 Free Software Foundation, Inc.
+   Copyright (C) 1993-2016 Free Software Foundation, Inc.
 
    Permission is granted to copy, distribute and/or modify this document
 under the terms of the GNU Free Documentation License, Version
@@ -1760,17 +1762,19 @@ Function and Macro Index
 * __ppc_mdoom:                           PowerPC.             (line  61)
 * __ppc_set_ppr_low:                     PowerPC.             (line  86)
 * __ppc_set_ppr_med:                     PowerPC.             (line  70)
+* __ppc_set_ppr_med_high:                PowerPC.             (line 108)
 * __ppc_set_ppr_med_low:                 PowerPC.             (line  92)
+* __ppc_set_ppr_very_low:                PowerPC.             (line 102)
 * __ppc_yield:                           PowerPC.             (line  44)
 * __va_copy:                             Argument Macros.     (line  56)
-* _Exit:                                 Termination Internals.
-                                                              (line  18)
 * _exit:                                 Termination Internals.
                                                               (line  10)
+* _Exit:                                 Termination Internals.
+                                                              (line  18)
 * _flushlbf:                             Flushing Buffers.    (line  53)
 * _tolower:                              Case Conversion.     (line  48)
 * _toupper:                              Case Conversion.     (line  55)
-* a64l:                                  Encode Binary Data.  (line  86)
+* a64l:                                  Encode Binary Data.  (line  85)
 * abort:                                 Aborting a Program.  (line  10)
 * abs:                                   Absolute Value.      (line  18)
 * accept:                                Accepting Connections.
@@ -1844,18 +1848,18 @@ Function and Macro Index
                                                               (line  50)
 * argp_usage:                            Argp Helper Functions.
                                                               (line  12)
-* argz_add:                              Argz Functions.      (line  81)
-* argz_add_sep:                          Argz Functions.      (line  89)
-* argz_append:                           Argz Functions.      (line 100)
-* argz_count:                            Argz Functions.      (line  47)
+* argz_add:                              Argz Functions.      (line  80)
+* argz_add_sep:                          Argz Functions.      (line  88)
+* argz_append:                           Argz Functions.      (line  99)
+* argz_count:                            Argz Functions.      (line  46)
 * argz_create:                           Argz Functions.      (line  28)
 * argz_create_sep:                       Argz Functions.      (line  38)
-* argz_delete:                           Argz Functions.      (line 109)
-* argz_extract:                          Argz Functions.      (line  55)
-* argz_insert:                           Argz Functions.      (line 121)
-* argz_next:                             Argz Functions.      (line 134)
-* argz_replace:                          Argz Functions.      (line 165)
-* argz_stringify:                        Argz Functions.      (line  71)
+* argz_delete:                           Argz Functions.      (line 108)
+* argz_extract:                          Argz Functions.      (line  54)
+* argz_insert:                           Argz Functions.      (line 120)
+* argz_next:                             Argz Functions.      (line 133)
+* argz_replace:                          Argz Functions.      (line 164)
+* argz_stringify:                        Argz Functions.      (line  70)
 * asctime:                               Formatting Calendar Time.
                                                               (line  10)
 * asctime_r:                             Formatting Calendar Time.
@@ -1904,11 +1908,11 @@ Function and Macro Index
 * backtrace_symbols:                     Backtraces.          (line  38)
 * backtrace_symbols_fd:                  Backtraces.          (line  71)
 * basename:                              Finding Tokens in a String.
-                                                              (line 208)
+                                                              (line 238)
 * bcmp:                                  String/Array Comparison.
-                                                              (line 253)
-* bcopy:                                 Copying and Concatenation.
-                                                              (line 706)
+                                                              (line 254)
+* bcopy:                                 Copying Strings and Arrays.
+                                                              (line 330)
 * bind:                                  Setting Address.     (line  13)
 * bind_textdomain_codeset:               Charset conversion in gettext.
                                                               (line  28)
@@ -1920,8 +1924,8 @@ Function and Macro Index
                                                               (line  55)
 * btowc:                                 Converting a Character.
                                                               (line  16)
-* bzero:                                 Copying and Concatenation.
-                                                              (line 715)
+* bzero:                                 Copying Strings and Arrays.
+                                                              (line 339)
 * cabs:                                  Absolute Value.      (line  45)
 * cabsf:                                 Absolute Value.      (line  46)
 * cabsl:                                 Absolute Value.      (line  47)
@@ -2010,7 +2014,7 @@ Function and Macro Index
 * cfsetospeed:                           Line Speed.          (line  47)
 * cfsetspeed:                            Line Speed.          (line  63)
 * chdir:                                 Working Directory.   (line 107)
-* chmod:                                 Setting Permissions. (line  25)
+* chmod:                                 Setting Permissions. (line  74)
 * chown:                                 File Owner.          (line  34)
 * cimag:                                 Operations on Complex.
                                                               (line  20)
@@ -2129,7 +2133,7 @@ Function and Macro Index
 * difftime:                              Elapsed Time.        (line  11)
 * dirfd:                                 Opening a Directory. (line  98)
 * dirname:                               Finding Tokens in a String.
-                                                              (line 274)
+                                                              (line 271)
 * div:                                   Integer Division.    (line  30)
 * dngettext:                             Advanced gettext functions.
                                                               (line  94)
@@ -2505,9 +2509,9 @@ Function and Macro Index
                                                               (line 133)
 * gmtime:                                Broken-down Time.    (line 125)
 * gmtime_r:                              Broken-down Time.    (line 140)
-* grantpt <1>:                           Allocation.          (line  26)
-* grantpt:                               Configuring and compiling.
-                                                              (line 119)
+* grantpt <1>:                           Configuring and compiling.
+                                                              (line 130)
+* grantpt:                               Allocation.          (line  26)
 * gsignal:                               Signaling Yourself.  (line  19)
 * gtty:                                  BSD Terminal Modes.  (line  35)
 * hasmntopt:                             mtab.                (line 213)
@@ -2550,7 +2554,7 @@ Function and Macro Index
                                                               (line  92)
 * imaxabs:                               Absolute Value.      (line  21)
 * imaxdiv:                               Integer Division.    (line 110)
-* index:                                 Search Functions.    (line 328)
+* index:                                 Search Functions.    (line 321)
 * inet_addr:                             Host Address Functions.
                                                               (line  22)
 * inet_aton:                             Host Address Functions.
@@ -2610,7 +2614,7 @@ Function and Macro Index
 * islower:                               Classification of Characters.
                                                               (line  28)
 * isnan:                                 Floating Point Classes.
-                                                              (line  70)
+                                                              (line 102)
 * isnanf:                                Floating Point Classes.
                                                               (line 103)
 * isnanl:                                Floating Point Classes.
@@ -2672,7 +2676,7 @@ Function and Macro Index
                                                               (line  27)
 * killpg:                                Signaling Another Process.
                                                               (line  82)
-* l64a:                                  Encode Binary Data.  (line  13)
+* l64a:                                  Encode Binary Data.  (line  12)
 * labs:                                  Absolute Value.      (line  19)
 * lcong48:                               SVID Random.         (line 153)
 * lcong48_r:                             SVID Random.         (line 333)
@@ -2787,21 +2791,21 @@ Function and Macro Index
                                                               (line  11)
 * memalign:                              Aligned Memory Blocks.
                                                               (line  36)
-* memccpy:                               Copying and Concatenation.
+* memccpy:                               Copying Strings and Arrays.
                                                               (line 168)
 * memchr:                                Search Functions.    (line  11)
 * memcmp:                                String/Array Comparison.
                                                               (line  25)
-* memcpy:                                Copying and Concatenation.
+* memcpy:                                Copying Strings and Arrays.
                                                               (line  34)
 * memfrob:                               Trivial Encryption.  (line  18)
-* memmem:                                Search Functions.    (line 221)
-* memmove:                               Copying and Concatenation.
+* memmem:                                Search Functions.    (line 220)
+* memmove:                               Copying Strings and Arrays.
                                                               (line 130)
-* mempcpy:                               Copying and Concatenation.
+* mempcpy:                               Copying Strings and Arrays.
                                                               (line  78)
 * memrchr:                               Search Functions.    (line  58)
-* memset:                                Copying and Concatenation.
+* memset:                                Copying Strings and Arrays.
                                                               (line 178)
 * mkdir:                                 Creating Directories.
                                                               (line  10)
@@ -2893,15 +2897,15 @@ Function and Macro Index
 * obstack_int_grow_fast:                 Extra Fast Growing.  (line  52)
 * obstack_next_free:                     Status of an Obstack.
                                                               (line  25)
-* obstack_object_size <1>:               Growing Objects.     (line  99)
-* obstack_object_size:                   Status of an Obstack.
+* obstack_object_size <1>:               Status of an Obstack.
                                                               (line  34)
+* obstack_object_size:                   Growing Objects.     (line  99)
 * obstack_printf:                        Dynamic Output.      (line  40)
 * obstack_ptr_grow:                      Growing Objects.     (line  63)
 * obstack_ptr_grow_fast:                 Extra Fast Growing.  (line  43)
 * obstack_room:                          Extra Fast Growing.  (line  23)
 * obstack_vprintf:                       Variable Arguments Output.
-                                                              (line 122)
+                                                              (line 119)
 * offsetof:                              Structure Measurement.
                                                               (line  10)
 * on_exit:                               Cleanups on Exit.    (line  27)
@@ -2925,7 +2929,7 @@ Function and Macro Index
 * popen:                                 Pipe to a Subprocess.
                                                               (line  18)
 * posix_fallocate:                       Storage Allocation.  (line  28)
-* posix_fallocate64:                     Storage Allocation.  (line  75)
+* posix_fallocate64:                     Storage Allocation.  (line  78)
 * posix_memalign:                        Aligned Memory Blocks.
                                                               (line  61)
 * pow:                                   Exponents and Logarithms.
@@ -3027,7 +3031,7 @@ Function and Macro Index
 * rewind:                                File Positioning.    (line 152)
 * rewinddir:                             Random Access Directory.
                                                               (line  11)
-* rindex:                                Search Functions.    (line 337)
+* rindex:                                Search Functions.    (line 330)
 * rint:                                  Rounding Functions.  (line  48)
 * rintf:                                 Rounding Functions.  (line  49)
 * rintl:                                 Rounding Functions.  (line  50)
@@ -3235,27 +3239,26 @@ Function and Macro Index
 * stat64:                                Reading Attributes.  (line  36)
 * stime:                                 Simple Calendar Time.
                                                               (line  43)
-* stpcpy:                                Copying and Concatenation.
-                                                              (line 309)
-* stpncpy:                               Copying and Concatenation.
-                                                              (line 359)
+* stpcpy:                                Copying Strings and Arrays.
+                                                              (line 238)
+* stpncpy:                               Truncating Strings.  (line  99)
 * strcasecmp:                            String/Array Comparison.
                                                               (line 124)
-* strcasestr:                            Search Functions.    (line 206)
-* strcat:                                Copying and Concatenation.
-                                                              (line 470)
+* strcasestr:                            Search Functions.    (line 204)
+* strcat:                                Concatenating Strings.
+                                                              (line  14)
 * strchr:                                Search Functions.    (line  68)
-* strchrnul:                             Search Functions.    (line 108)
+* strchrnul:                             Search Functions.    (line 107)
 * strcmp:                                String/Array Comparison.
                                                               (line  86)
-* strcoll:                               Collation Functions. (line  39)
-* strcpy:                                Copying and Concatenation.
+* strcoll:                               Collation Functions. (line  40)
+* strcpy:                                Copying Strings and Arrays.
                                                               (line 196)
-* strcspn:                               Search Functions.    (line 261)
-* strdup:                                Copying and Concatenation.
-                                                              (line 269)
-* strdupa:                               Copying and Concatenation.
-                                                              (line 412)
+* strcspn:                               Search Functions.    (line 258)
+* strdup:                                Copying Strings and Arrays.
+                                                              (line 215)
+* strdupa:                               Copying Strings and Arrays.
+                                                              (line 288)
 * strerror:                              Error Messages.      (line  14)
 * strerror_r:                            Error Messages.      (line  31)
 * strfmon:                               Formatting Numbers.  (line  17)
@@ -3265,33 +3268,29 @@ Function and Macro Index
 * strlen:                                String Length.       (line  10)
 * strncasecmp:                           String/Array Comparison.
                                                               (line 167)
-* strncat:                               Copying and Concatenation.
-                                                              (line 633)
+* strncat:                               Truncating Strings.  (line 158)
 * strncmp:                               String/Array Comparison.
-                                                              (line 148)
-* strncpy:                               Copying and Concatenation.
-                                                              (line 216)
-* strndup:                               Copying and Concatenation.
-                                                              (line 292)
-* strndupa:                              Copying and Concatenation.
-                                                              (line 454)
+                                                              (line 149)
+* strncpy:                               Truncating Strings.  (line  15)
+* strndup:                               Truncating Strings.  (line  61)
+* strndupa:                              Truncating Strings.  (line  80)
 * strnlen:                               String Length.       (line  85)
-* strpbrk:                               Search Functions.    (line 293)
+* strpbrk:                               Search Functions.    (line 288)
 * strptime:                              Low-Level Time String Parsing.
                                                               (line  13)
-* strrchr:                               Search Functions.    (line 148)
+* strrchr:                               Search Functions.    (line 146)
 * strsep:                                Finding Tokens in a String.
-                                                              (line 159)
+                                                              (line 156)
 * strsignal:                             Signal Messages.     (line  15)
-* strspn:                                Search Functions.    (line 231)
-* strstr:                                Search Functions.    (line 168)
+* strspn:                                Search Functions.    (line 230)
+* strstr:                                Search Functions.    (line 166)
 * strtod:                                Parsing of Floats.   (line  14)
 * strtof:                                Parsing of Floats.   (line  84)
 * strtoimax:                             Parsing of Integers. (line 191)
 * strtok:                                Finding Tokens in a String.
                                                               (line  13)
 * strtok_r:                              Finding Tokens in a String.
-                                                              (line 143)
+                                                              (line 140)
 * strtol:                                Parsing of Integers. (line  14)
 * strtold:                               Parsing of Floats.   (line  85)
 * strtoll:                               Parsing of Integers. (line 110)
@@ -3301,8 +3300,8 @@ Function and Macro Index
 * strtoumax:                             Parsing of Integers. (line 218)
 * strtouq:                               Parsing of Integers. (line 174)
 * strverscmp:                            String/Array Comparison.
-                                                              (line 208)
-* strxfrm:                               Collation Functions. (line  85)
+                                                              (line 210)
+* strxfrm:                               Collation Functions. (line  86)
 * stty:                                  BSD Terminal Modes.  (line  44)
 * success:                               Actions in the NSS configuration.
                                                               (line  21)
@@ -3419,7 +3418,7 @@ Function and Macro Index
 * valloc:                                Aligned Memory Blocks.
                                                               (line  88)
 * vasprintf:                             Variable Arguments Output.
-                                                              (line 114)
+                                                              (line 111)
 * verr:                                  Error Messages.      (line 331)
 * verrx:                                 Error Messages.      (line 349)
 * versionsort:                           Scanning Directory Content.
@@ -3428,26 +3427,26 @@ Function and Macro Index
                                                               (line 103)
 * vfork:                                 Creating a Process.  (line  62)
 * vfprintf:                              Variable Arguments Output.
-                                                              (line  75)
+                                                              (line  72)
 * vfscanf:                               Variable Arguments Input.
                                                               (line  34)
 * vfwprintf:                             Variable Arguments Output.
-                                                              (line  83)
+                                                              (line  80)
 * vfwscanf:                              Variable Arguments Input.
                                                               (line  42)
 * vlimit:                                Limits on Resources. (line 230)
 * vprintf:                               Variable Arguments Output.
-                                                              (line  58)
+                                                              (line  55)
 * vscanf:                                Variable Arguments Input.
                                                               (line  17)
 * vsnprintf:                             Variable Arguments Output.
-                                                              (line 106)
+                                                              (line 103)
 * vsprintf:                              Variable Arguments Output.
-                                                              (line  90)
+                                                              (line  87)
 * vsscanf:                               Variable Arguments Input.
                                                               (line  50)
 * vswprintf:                             Variable Arguments Output.
-                                                              (line  98)
+                                                              (line  95)
 * vswscanf:                              Variable Arguments Input.
                                                               (line  58)
 * vsyslog:                               syslog; vsyslog.     (line 152)
@@ -3455,7 +3454,7 @@ Function and Macro Index
 * vwarn:                                 Error Messages.      (line 296)
 * vwarnx:                                Error Messages.      (line 314)
 * vwprintf:                              Variable Arguments Output.
-                                                              (line  66)
+                                                              (line  63)
 * vwscanf:                               Variable Arguments Input.
                                                               (line  25)
 * wait:                                  Process Completion.  (line 104)
@@ -3466,49 +3465,46 @@ Function and Macro Index
 * warnx:                                 Error Messages.      (line 304)
 * WCOREDUMP:                             Process Completion Status.
                                                               (line  43)
-* wcpcpy:                                Copying and Concatenation.
-                                                              (line 343)
-* wcpncpy:                               Copying and Concatenation.
-                                                              (line 385)
+* wcpcpy:                                Copying Strings and Arrays.
+                                                              (line 272)
+* wcpncpy:                               Truncating Strings.  (line 127)
 * wcrtomb:                               Converting a Character.
                                                               (line 259)
 * wcscasecmp:                            String/Array Comparison.
-                                                              (line 136)
-* wcscat:                                Copying and Concatenation.
-                                                              (line 491)
-* wcschr:                                Search Functions.    (line  93)
-* wcschrnul:                             Search Functions.    (line 118)
+                                                              (line 137)
+* wcscat:                                Concatenating Strings.
+                                                              (line  37)
+* wcschr:                                Search Functions.    (line  92)
+* wcschrnul:                             Search Functions.    (line 117)
 * wcscmp:                                String/Array Comparison.
                                                               (line 105)
-* wcscoll:                               Collation Functions. (line  47)
-* wcscpy:                                Copying and Concatenation.
+* wcscoll:                               Collation Functions. (line  48)
+* wcscpy:                                Copying Strings and Arrays.
                                                               (line 206)
-* wcscspn:                               Search Functions.    (line 282)
-* wcsdup:                                Copying and Concatenation.
-                                                              (line 279)
+* wcscspn:                               Search Functions.    (line 277)
+* wcsdup:                                Copying Strings and Arrays.
+                                                              (line 225)
 * wcsftime:                              Formatting Calendar Time.
                                                               (line 413)
 * wcslen:                                String Length.       (line  70)
 * wcsncasecmp:                           String/Array Comparison.
-                                                              (line 178)
-* wcsncat:                               Copying and Concatenation.
-                                                              (line 656)
+                                                              (line 180)
+* wcsncat:                               Truncating Strings.  (line 188)
 * wcsncmp:                               String/Array Comparison.
                                                               (line 158)
-* wcsncpy:                               Copying and Concatenation.
-                                                              (line 243)
-* wcsnlen:                               String Length.       (line 103)
+* wcsncpy:                               Truncating Strings.  (line  39)
+* wcsnlen:                               String Length.       (line 104)
 * wcsnrtombs:                            Converting Strings.  (line 196)
-* wcspbrk:                               Search Functions.    (line 315)
-* wcsrchr:                               Search Functions.    (line 160)
+* wcspbrk:                               Search Functions.    (line 308)
+* wcsrchr:                               Search Functions.    (line 158)
 * wcsrtombs:                             Converting Strings.  (line  95)
-* wcsspn:                                Search Functions.    (line 251)
-* wcsstr:                                Search Functions.    (line 185)
+* wcsspn:                                Search Functions.    (line 248)
+* wcsstr:                                Search Functions.    (line 183)
 * wcstod:                                Parsing of Floats.   (line  99)
 * wcstof:                                Parsing of Floats.   (line 100)
 * wcstoimax:                             Parsing of Integers. (line 208)
 * wcstok:                                Finding Tokens in a String.
-                                                              (line  56)
+                                                              (line  54)
 * wcstol:                                Parsing of Integers. (line  72)
 * wcstold:                               Parsing of Floats.   (line 102)
 * wcstoll:                               Parsing of Integers. (line 127)
@@ -3519,8 +3515,8 @@ Function and Macro Index
 * wcstoull:                              Parsing of Integers. (line 164)
 * wcstoumax:                             Parsing of Integers. (line 229)
 * wcstouq:                               Parsing of Integers. (line 181)
-* wcswcs:                                Search Functions.    (line 197)
-* wcsxfrm:                               Collation Functions. (line 116)
+* wcswcs:                                Search Functions.    (line 195)
+* wcsxfrm:                               Collation Functions. (line 117)
 * wctob:                                 Converting a Character.
                                                               (line  68)
 * wctomb:                                Non-reentrant Character Conversion.
@@ -3540,13 +3536,13 @@ Function and Macro Index
 * wmemchr:                               Search Functions.    (line  21)
 * wmemcmp:                               String/Array Comparison.
                                                               (line  38)
-* wmemcpy:                               Copying and Concatenation.
+* wmemcpy:                               Copying Strings and Arrays.
                                                               (line  54)
-* wmemmove:                              Copying and Concatenation.
+* wmemmove:                              Copying Strings and Arrays.
                                                               (line 143)
-* wmempcpy:                              Copying and Concatenation.
+* wmempcpy:                              Copying Strings and Arrays.
                                                               (line 104)
-* wmemset:                               Copying and Concatenation.
+* wmemset:                               Copying Strings and Arrays.
                                                               (line 187)
 * wordexp:                               Calling Wordexp.     (line  41)
 * wordfree:                              Calling Wordexp.     (line  95)
@@ -5115,35 +5111,35 @@ Program and File Index
 * chown:                                 File Owner.          (line  27)
 * complex.h <1>:                         Operations on Complex.
                                                               (line   6)
-* complex.h <2>:                         Mathematics.         (line   9)
-* complex.h:                             Complex Numbers.     (line   6)
-* ctype.h <1>:                           Classification of Characters.
-                                                              (line  25)
+* complex.h <2>:                         Complex Numbers.     (line   6)
+* complex.h:                             Mathematics.         (line   9)
+* ctype.h <1>:                           Case Conversion.     (line  21)
 * ctype.h <2>:                           Character Handling.  (line   9)
-* ctype.h:                               Case Conversion.     (line  21)
-* dirent.h <1>:                          Random Access Directory.
-                                                              (line   6)
-* dirent.h <2>:                          Reading/Closing Directory.
-                                                              (line   6)
+* ctype.h:                               Classification of Characters.
+                                                              (line  25)
+* dirent.h <1>:                          Reserved Names.      (line  80)
+* dirent.h <2>:                          Directory Entries.   (line   6)
 * dirent.h <3>:                          Opening a Directory. (line   6)
-* dirent.h <4>:                          Directory Entries.   (line   6)
-* dirent.h:                              Reserved Names.      (line  80)
+* dirent.h <4>:                          Reading/Closing Directory.
+                                                              (line   6)
+* dirent.h:                              Random Access Directory.
+                                                              (line   6)
 * envz.h:                                Envz Functions.      (line  26)
 * errno.h <1>:                           Checking for Errors. (line  12)
-* errno.h <2>:                           Error Codes.         (line   6)
+* errno.h <2>:                           Error Reporting.     (line  13)
 * errno.h <3>:                           Checking for Errors. (line  53)
-* errno.h:                               Error Reporting.     (line  13)
+* errno.h:                               Error Codes.         (line   6)
 * execinfo.h:                            Backtraces.          (line  13)
-* fcntl.h <1>:                           Interrupt Input.     (line  20)
-* fcntl.h <2>:                           File Locks.          (line  39)
-* fcntl.h <3>:                           Duplicating Descriptors.
-                                                              (line  20)
-* fcntl.h <4>:                           File Status Flags.   (line  27)
+* fcntl.h <1>:                           File Locks.          (line  39)
+* fcntl.h <2>:                           Reserved Names.      (line  83)
+* fcntl.h <3>:                           Interrupt Input.     (line  20)
+* fcntl.h <4>:                           Control Operations.  (line  15)
 * fcntl.h <5>:                           Opening and Closing Files.
                                                               (line   8)
-* fcntl.h <6>:                           Reserved Names.      (line  83)
-* fcntl.h <7>:                           Descriptor Flags.    (line  16)
-* fcntl.h:                               Control Operations.  (line  15)
+* fcntl.h <6>:                           Descriptor Flags.    (line  16)
+* fcntl.h <7>:                           File Status Flags.   (line  27)
+* fcntl.h:                               Duplicating Descriptors.
+                                                              (line  20)
 * fcntl.h.:                              Open File Description Locks.
                                                               (line  56)
 * float.h:                               Floating Point Parameters.
@@ -5152,24 +5148,25 @@ Program and File Index
 * gcc:                                   ISO C.               (line  15)
 * gconv.h:                               glibc iconv Implementation.
                                                               (line 203)
-* grp.h <1>:                             Reserved Names.      (line  85)
-* grp.h <2>:                             Group Data Structure.
+* grp.h <1>:                             Setting Groups.      (line 110)
+* grp.h <2>:                             Reserved Names.      (line  85)
+* grp.h <3>:                             Group Data Structure.
                                                               (line   7)
 * grp.h:                                 Setting Groups.      (line  76)
 * hostid:                                Host Identification. (line  49)
 * hostname:                              Host Identification. (line  49)
 * iconv.h:                               Generic Conversion Interface.
-                                                              (line 200)
+                                                              (line  80)
 * kill:                                  Termination Signals. (line  27)
 * ksh:                                   Wildcard Matching.   (line  71)
 * langinfo.h:                            The Elegant and Fast Way.
                                                               (line  26)
-* limits.h <1>:                          Width of Type.       (line  14)
-* limits.h <2>:                          Selecting the Conversion.
+* limits.h <1>:                          Limits for Files.    (line  14)
+* limits.h <2>:                          Width of Type.       (line  14)
+* limits.h <3>:                          Reserved Names.      (line  87)
+* limits.h <4>:                          Selecting the Conversion.
                                                               (line  22)
-* limits.h <3>:                          Limits for Files.    (line  14)
-* limits.h <4>:                          General Limits.      (line  13)
-* limits.h:                              Reserved Names.      (line  87)
+* limits.h:                              General Limits.      (line  13)
 * locale:                                Locale Names.        (line   8)
 * locale.h <1>:                          Setting the Locale.  (line  21)
 * locale.h:                              The Lame Way to Locale Data.
@@ -5177,13 +5174,13 @@ Program and File Index
 * localtime:                             TZ Variable.         (line 136)
 * ls:                                    File Attributes.     (line   6)
 * malloc.h <1>:                          Hooks for Malloc.    (line  11)
-* malloc.h <2>:                          Statistics of Malloc.
-                                                              (line   9)
-* malloc.h:                              Malloc Tunable Parameters.
+* malloc.h <2>:                          Malloc Tunable Parameters.
                                                               (line   8)
-* math.h <1>:                            Rounding Functions.  (line   6)
-* math.h <2>:                            Normalization Functions.
+* malloc.h:                              Statistics of Malloc.
+                                                              (line   9)
+* math.h <1>:                            Normalization Functions.
                                                               (line  14)
+* math.h <2>:                            Rounding Functions.  (line   6)
 * math.h <3>:                            Absolute Value.      (line  12)
 * math.h <4>:                            Floating Point Classes.
                                                               (line   6)
@@ -5192,14 +5189,14 @@ Program and File Index
                                                               (line   8)
 * mkdir:                                 Creating Directories.
                                                               (line   6)
-* netdb.h <1>:                           Host Names.          (line  13)
+* netdb.h <1>:                           Protocols Database.  (line  27)
 * netdb.h <2>:                           Services Database.   (line   9)
 * netdb.h <3>:                           Networks Database.   (line   6)
-* netdb.h:                               Protocols Database.  (line  27)
-* netinet/in.h <1>:                      Byte Order.          (line  33)
-* netinet/in.h <2>:                      Ports.               (line  35)
-* netinet/in.h <3>:                      Host Address Data Type.
+* netdb.h:                               Host Names.          (line  13)
+* netinet/in.h <1>:                      Host Address Data Type.
                                                               (line  23)
+* netinet/in.h <2>:                      Ports.               (line  35)
+* netinet/in.h <3>:                      Byte Order.          (line  33)
 * netinet/in.h:                          Internet Address Formats.
                                                               (line  13)
 * obstack.h:                             Creating Obstacks.   (line   7)
@@ -5208,149 +5205,151 @@ Program and File Index
 * printf.h:                              Conversion Specifier Options.
                                                               (line  13)
 * pt_chown:                              Configuring and compiling.
-                                                              (line 119)
-* pwd.h <1>:                             User Data Structure. (line   7)
-* pwd.h:                                 Reserved Names.      (line  89)
-* setjmp.h <1>:                          Non-Local Exits and Signals.
+                                                              (line 130)
+* pwd.h <1>:                             Reserved Names.      (line  89)
+* pwd.h:                                 User Data Structure. (line   7)
+* setjmp.h <1>:                          Non-Local Details.   (line   8)
+* setjmp.h:                              Non-Local Exits and Signals.
                                                               (line  18)
-* setjmp.h:                              Non-Local Details.   (line   8)
 * sh:                                    Running a Command.   (line  12)
-* signal.h <1>:                          BSD Signal Handling. (line  18)
-* signal.h <2>:                          Signal Sets.         (line  11)
-* signal.h <3>:                          Signaling Another Process.
-                                                              (line  24)
-* signal.h <4>:                          Signaling Yourself.  (line   7)
-* signal.h <5>:                          Flags for Sigaction. (line  23)
-* signal.h <6>:                          Advanced Signal Handling.
+* signal.h <1>:                          Advanced Signal Handling.
                                                               (line  12)
-* signal.h <7>:                          Checking for Pending Signals.
-                                                              (line   7)
-* signal.h <8>:                          Basic Signal Handling.
+* signal.h <2>:                          BSD Signal Handling. (line  18)
+* signal.h <3>:                          Basic Signal Handling.
                                                               (line   8)
-* signal.h <9>:                          Standard Signals.    (line   6)
-* signal.h <10>:                         Reserved Names.      (line  92)
-* signal.h:                              Process Signal Mask. (line  12)
+* signal.h <4>:                          Checking for Pending Signals.
+                                                              (line   7)
+* signal.h <5>:                          Process Signal Mask. (line  12)
+* signal.h <6>:                          Signal Sets.         (line  11)
+* signal.h <7>:                          Signaling Yourself.  (line   7)
+* signal.h <8>:                          Flags for Sigaction. (line  23)
+* signal.h <9>:                          Reserved Names.      (line  92)
+* signal.h <10>:                         Standard Signals.    (line   6)
+* signal.h:                              Signaling Another Process.
+                                                              (line  24)
 * stdarg.h <1>:                          Receiving Arguments. (line  10)
 * stdarg.h:                              Argument Macros.     (line   7)
 * stddef.h:                              Important Data Types.
                                                               (line  11)
 * stdint.h:                              Integers.            (line  23)
-* stdio.h <1>:                           Variable Arguments Output.
-                                                              (line  55)
-* stdio.h <2>:                           Block Input/Output.  (line  25)
-* stdio.h <3>:                           Streams.             (line  14)
-* stdio.h <4>:                           Character Input.     (line   8)
-* stdio.h <5>:                           Standard Streams.    (line  11)
-* stdio.h <6>:                           Simple Output.       (line  10)
-* stdio.h <7>:                           Opening Streams.     (line  10)
-* stdio.h <8>:                           Who Logged In.       (line  14)
-* stdio.h <9>:                           Identifying the Terminal.
+* stdio.h <1>:                           Formatted Input Functions.
+                                                              (line   7)
+* stdio.h <2>:                           Identifying the Terminal.
                                                               (line  13)
-* stdio.h <10>:                          Signal Messages.     (line  45)
-* stdio.h <11>:                          Temporary Files.     (line  17)
-* stdio.h <12>:                          Deleting Files.      (line  82)
-* stdio.h <13>:                          Descriptors and Streams.
+* stdio.h <3>:                           Signal Messages.     (line  45)
+* stdio.h <4>:                           Temporary Files.     (line  17)
+* stdio.h <5>:                           Deleting Files.      (line  82)
+* stdio.h <6>:                           Who Logged In.       (line  14)
+* stdio.h <7>:                           Descriptors and Streams.
                                                               (line   9)
-* stdio.h <14>:                          Streams and Cookies. (line  25)
-* stdio.h <15>:                          String Streams.      (line   7)
-* stdio.h <16>:                          Controlling Buffering.
+* stdio.h <8>:                           Streams and Cookies. (line  25)
+* stdio.h <9>:                           String Streams.      (line   7)
+* stdio.h <10>:                          Controlling Buffering.
                                                               (line  11)
-* stdio.h <17>:                          Flushing Buffers.    (line  23)
-* stdio.h <18>:                          Portable Positioning.
+* stdio.h <11>:                          Flushing Buffers.    (line  23)
+* stdio.h <12>:                          Portable Positioning.
                                                               (line  50)
-* stdio.h <19>:                          File Positioning.    (line  19)
-* stdio.h <20>:                          Formatted Input Functions.
-                                                              (line   7)
-* stdio.h:                               Formatted Output Functions.
+* stdio.h <13>:                          File Positioning.    (line  19)
+* stdio.h <14>:                          Variable Arguments Output.
+                                                              (line  52)
+* stdio.h <15>:                          Formatted Output Functions.
                                                               (line  11)
-* stdlib.h <1>:                          Allocation.          (line   6)
-* stdlib.h <2>:                          Variable Size Automatic.
-                                                              (line  16)
-* stdlib.h <3>:                          ISO Random.          (line  10)
-* stdlib.h <4>:                          Basic Allocation.    (line   7)
-* stdlib.h <5>:                          Freeing after Malloc.
-                                                              (line   8)
-* stdlib.h <6>:                          Array Sort Function. (line   7)
-* stdlib.h <7>:                          Changing Block Size. (line  13)
-* stdlib.h <8>:                          Allocating Cleared Space.
-                                                              (line   7)
-* stdlib.h <9>:                          Array Search Function.
-                                                              (line  51)
-* stdlib.h <10>:                         BSD Random.          (line  10)
-* stdlib.h <11>:                         Temporary Files.     (line 157)
-* stdlib.h <12>:                         Aligned Memory Blocks.
-                                                              (line   6)
-* stdlib.h <13>:                         Running a Command.   (line  33)
-* stdlib.h <14>:                         Aborting a Program.  (line   7)
-* stdlib.h <15>:                         SVID Random.         (line  31)
-* stdlib.h <16>:                         Selecting the Conversion.
+* stdio.h <16>:                          Block Input/Output.  (line  25)
+* stdio.h <17>:                          Character Input.     (line   8)
+* stdio.h <18>:                          Simple Output.       (line  10)
+* stdio.h <19>:                          Opening Streams.     (line  10)
+* stdio.h <20>:                          Standard Streams.    (line  11)
+* stdio.h:                               Streams.             (line  14)
+* stdlib.h <1>:                          Aborting a Program.  (line   7)
+* stdlib.h <2>:                          Selecting the Conversion.
                                                               (line  31)
-* stdlib.h <17>:                         Non-reentrant Character Conversion.
+* stdlib.h <3>:                          Allocating Cleared Space.
+                                                              (line   7)
+* stdlib.h <4>:                          Aligned Memory Blocks.
+                                                              (line   6)
+* stdlib.h <5>:                          Array Search Function.
+                                                              (line  51)
+* stdlib.h <6>:                          Array Sort Function. (line   7)
+* stdlib.h <7>:                          Parsing of Floats.   (line   6)
+* stdlib.h <8>:                          Variable Size Automatic.
+                                                              (line  16)
+* stdlib.h <9>:                          Running a Command.   (line  33)
+* stdlib.h <10>:                         Parsing of Integers. (line   6)
+* stdlib.h <11>:                         Exit Status.         (line  43)
+* stdlib.h <12>:                         Environment Access.  (line   7)
+* stdlib.h <13>:                         Absolute Value.      (line  12)
+* stdlib.h <14>:                         Integer Division.    (line  16)
+* stdlib.h <15>:                         SVID Random.         (line  31)
+* stdlib.h <16>:                         BSD Random.          (line  10)
+* stdlib.h <17>:                         ISO Random.          (line  10)
+* stdlib.h <18>:                         Allocation.          (line   6)
+* stdlib.h <19>:                         Basic Allocation.    (line   7)
+* stdlib.h <20>:                         Temporary Files.     (line 157)
+* stdlib.h <21>:                         Non-reentrant Character Conversion.
                                                               (line 104)
-* stdlib.h <18>:                         Integer Division.    (line  16)
-* stdlib.h <19>:                         Exit Status.         (line  43)
-* stdlib.h <20>:                         Absolute Value.      (line  12)
-* stdlib.h <21>:                         Environment Access.  (line   7)
-* stdlib.h <22>:                         Parsing of Integers. (line   6)
-* stdlib.h:                              Parsing of Floats.   (line   6)
-* string.h <1>:                          Finding Tokens in a String.
-                                                              (line   9)
+* stdlib.h <22>:                         Freeing after Malloc.
+                                                              (line   8)
+* stdlib.h:                              Changing Block Size. (line  13)
+* string.h <1>:                          String Length.       (line   7)
 * string.h <2>:                          Search Functions.    (line   8)
-* string.h <3>:                          Collation Functions. (line  18)
+* string.h <3>:                          Trivial Encryption.  (line  15)
 * string.h <4>:                          String/Array Comparison.
                                                               (line  22)
-* string.h <5>:                          Copying and Concatenation.
-                                                              (line  10)
-* string.h <6>:                          String Length.       (line   7)
+* string.h <5>:                          Finding Tokens in a String.
+                                                              (line   9)
+* string.h <6>:                          Collation Functions. (line  18)
 * string.h <7>:                          Signal Messages.     (line  25)
-* string.h:                              Trivial Encryption.  (line  15)
+* string.h <8>:                          Concatenating Strings.
+                                                              (line   6)
+* string.h:                              Copying Strings and Arrays.
+                                                              (line   9)
 * sys/param.h:                           Host Identification. (line  72)
 * sys/resource.h <1>:                    Traditional Scheduling Functions.
                                                               (line   6)
 * sys/resource.h <2>:                    Resource Usage.      (line   6)
 * sys/resource.h:                        Limits on Resources. (line  26)
-* sys/socket.h <1>:                      Sending Datagrams.   (line   6)
-* sys/socket.h <2>:                      Socket Option Functions.
+* sys/socket.h <1>:                      Socket Data Options. (line   6)
+* sys/socket.h <2>:                      Local Namespace Details.
                                                               (line   6)
-* sys/socket.h <3>:                      Socket-Level Options.
-                                                              (line  11)
-* sys/socket.h <4>:                      Internet Namespace.  (line  18)
-* sys/socket.h <5>:                      Communication Styles.
-                                                              (line   9)
+* sys/socket.h <3>:                      Socket Option Functions.
+                                                              (line   6)
+* sys/socket.h <4>:                      Reading Address.     (line   6)
+* sys/socket.h <5>:                      Setting Address.     (line   6)
 * sys/socket.h <6>:                      Address Formats.     (line  20)
-* sys/socket.h <7>:                      Setting Address.     (line   6)
-* sys/socket.h <8>:                      Reading Address.     (line   6)
-* sys/socket.h <9>:                      Local Namespace Details.
-                                                              (line   6)
+* sys/socket.h <7>:                      Communication Styles.
+                                                              (line   9)
+* sys/socket.h <8>:                      Internet Namespace.  (line  18)
+* sys/socket.h <9>:                      Socket-Level Options.
+                                                              (line  11)
 * sys/socket.h <10>:                     Creating a Socket.   (line   7)
 * sys/socket.h <11>:                     Closing a Socket.    (line  13)
 * sys/socket.h <12>:                     Socket Pairs.        (line   6)
 * sys/socket.h <13>:                     Sending Data.        (line   6)
 * sys/socket.h <14>:                     Receiving Data.      (line   6)
-* sys/socket.h:                          Socket Data Options. (line   6)
-* sys/stat.h <1>:                        Reserved Names.      (line  95)
-* sys/stat.h <2>:                        Permission Bits.     (line  13)
-* sys/stat.h <3>:                        Setting Permissions. (line  41)
-* sys/stat.h <4>:                        Making Special Files.
-                                                              (line  10)
-* sys/stat.h <5>:                        FIFO Special Files.  (line  17)
-* sys/stat.h <6>:                        Attribute Meanings.  (line  12)
-* sys/stat.h <7>:                        Creating Directories.
+* sys/socket.h:                          Sending Datagrams.   (line   6)
+* sys/stat.h <1>:                        Setting Permissions. (line  41)
+* sys/stat.h <2>:                        FIFO Special Files.  (line  17)
+* sys/stat.h <3>:                        Creating Directories.
                                                               (line  50)
-* sys/stat.h:                            Testing File Type.   (line  21)
-* sys/time.h <1>:                        File Times.          (line  97)
-* sys/time.h <2>:                        Setting an Alarm.    (line  51)
-* sys/time.h:                            High-Resolution Calendar.
+* sys/stat.h <4>:                        Attribute Meanings.  (line  12)
+* sys/stat.h <5>:                        Testing File Type.   (line  21)
+* sys/stat.h <6>:                        Reserved Names.      (line  95)
+* sys/stat.h <7>:                        Making Special Files.
+                                                              (line  10)
+* sys/stat.h:                            Permission Bits.     (line  13)
+* sys/time.h <1>:                        Setting an Alarm.    (line  51)
+* sys/time.h <2>:                        High-Resolution Calendar.
                                                               (line  12)
+* sys/time.h:                            File Times.          (line  97)
 * sys/times.h <1>:                       Processor Time.      (line   9)
 * sys/times.h:                           Reserved Names.      (line  97)
 * sys/timex.h:                           High Accuracy Clock. (line   6)
-* sys/types.h <1>:                       Waiting for I/O.     (line  23)
+* sys/types.h <1>:                       Terminal Access Functions.
+                                                              (line   8)
 * sys/types.h <2>:                       Setting Groups.      (line   8)
 * sys/types.h <3>:                       Setting User ID.     (line   8)
 * sys/types.h <4>:                       Reading Persona.     (line   9)
-* sys/types.h <5>:                       Terminal Access Functions.
-                                                              (line   8)
+* sys/types.h <5>:                       Waiting for I/O.     (line  23)
 * sys/types.h <6>:                       Process Group Functions.
                                                               (line   8)
 * sys/types.h:                           Process Identification.
@@ -5360,81 +5359,80 @@ Program and File Index
 * sys/utsname.h:                         Platform Type.       (line   8)
 * sys/vlimit.h:                          Limits on Resources. (line 227)
 * sys/vtimes.h:                          Resource Usage.      (line 105)
-* sys/wait.h <1>:                        Process Completion.  (line   8)
-* sys/wait.h <2>:                        Process Completion Status.
+* sys/wait.h <1>:                        Process Completion Status.
                                                               (line  10)
-* sys/wait.h:                            BSD Wait Functions.  (line  14)
+* sys/wait.h <2>:                        BSD Wait Functions.  (line  14)
+* sys/wait.h:                            Process Completion.  (line   8)
 * termios.h <1>:                         Reserved Names.      (line 101)
 * termios.h:                             Terminal Modes.      (line   6)
-* time.h <1>:                            Formatting Calendar Time.
-                                                              (line   7)
-* time.h <2>:                            File Times.          (line  14)
-* time.h <3>:                            CPU Time.            (line   7)
-* time.h <4>:                            TZ Variable.         (line   9)
-* time.h:                                Simple Calendar Time.
+* time.h <1>:                            File Times.          (line  14)
+* time.h <2>:                            CPU Time.            (line   7)
+* time.h <3>:                            Simple Calendar Time.
                                                               (line   8)
+* time.h <4>:                            TZ Variable.         (line   9)
+* time.h:                                Formatting Calendar Time.
+                                                              (line   7)
 * ulimit.h:                              Limits on Resources. (line 187)
 * umask:                                 Setting Permissions. (line  29)
-* unistd.h <1>:                          Deleting Files.      (line  74)
-* unistd.h <2>:                          File Owner.          (line  31)
-* unistd.h <3>:                          Creating a Pipe.     (line  14)
-* unistd.h <4>:                          Is It a Terminal.    (line  10)
-* unistd.h <5>:                          Testing File Access. (line  76)
-* unistd.h <6>:                          Opening and Closing Files.
+* unistd.h <1>:                          Is It a Terminal.    (line  10)
+* unistd.h <2>:                          Options for Files.   (line  13)
+* unistd.h <3>:                          System Options.      (line  11)
+* unistd.h <4>:                          Host Identification. (line  49)
+* unistd.h <5>:                          Who Logged In.       (line  14)
+* unistd.h <6>:                          Setting Groups.      (line   8)
+* unistd.h <7>:                          Setting User ID.     (line   8)
+* unistd.h <8>:                          Reading Persona.     (line   9)
+* unistd.h <9>:                          Terminal Access Functions.
                                                               (line   8)
-* unistd.h <7>:                          Options for Files.   (line  13)
-* unistd.h <8>:                          System Options.      (line  11)
-* unistd.h <9>:                          Host Identification. (line  49)
-* unistd.h <10>:                         Setting Groups.      (line   8)
-* unistd.h <11>:                         Reading Persona.     (line   9)
-* unistd.h <12>:                         Terminal Access Functions.
+* unistd.h <10>:                         Process Group Functions.
                                                               (line   8)
-* unistd.h <13>:                         Process Group Functions.
-                                                              (line   8)
-* unistd.h <14>:                         Executing a File.    (line  13)
-* unistd.h <15>:                         Creating a Process.  (line   7)
+* unistd.h <11>:                         Executing a File.    (line  13)
+* unistd.h <12>:                         Creating a Process.  (line   7)
+* unistd.h <13>:                         Process Identification.
+                                                              (line  10)
+* unistd.h <14>:                         Termination Internals.
+                                                              (line   7)
+* unistd.h <15>:                         Using Getopt.        (line   7)
 * unistd.h <16>:                         Setting an Alarm.    (line  51)
-* unistd.h <17>:                         Using Getopt.        (line   7)
-* unistd.h <18>:                         Termination Internals.
-                                                              (line   7)
-* unistd.h <19>:                         Process Identification.
-                                                              (line  10)
-* unistd.h <20>:                         I/O Primitives.      (line   8)
-* unistd.h <21>:                         Descriptors and Streams.
-                                                              (line  60)
-* unistd.h <22>:                         Duplicating Descriptors.
-                                                              (line  20)
+* unistd.h <17>:                         Creating a Pipe.     (line  14)
+* unistd.h <18>:                         Testing File Access. (line  39)
+* unistd.h <19>:                         File Owner.          (line  31)
+* unistd.h <20>:                         Deleting Files.      (line  22)
+* unistd.h <21>:                         Symbolic Links.      (line  43)
+* unistd.h <22>:                         Hard Links.          (line  25)
 * unistd.h <23>:                         Working Directory.   (line  21)
-* unistd.h <24>:                         Hard Links.          (line  25)
-* unistd.h <25>:                         Symbolic Links.      (line  43)
-* unistd.h <26>:                         Who Logged In.       (line  14)
-* unistd.h:                              Setting User ID.     (line   8)
+* unistd.h <24>:                         Duplicating Descriptors.
+                                                              (line  20)
+* unistd.h <25>:                         Descriptors and Streams.
+                                                              (line  60)
+* unistd.h <26>:                         I/O Primitives.      (line   8)
+* unistd.h:                              Opening and Closing Files.
+                                                              (line   8)
 * utime.h:                               File Times.          (line  36)
-* utmp.h <1>:                            Manipulating the Database.
+* utmp.h <1>:                            Logging In and Out.  (line   7)
+* utmp.h:                                Manipulating the Database.
                                                               (line   7)
-* utmp.h:                                Logging In and Out.  (line   7)
 * utmpx.h:                               XPG Functions.       (line   7)
-* wchar.h <1>:                           Converting a Character.
-                                                              (line  77)
-* wchar.h <2>:                           Character Input.     (line   8)
-* wchar.h <3>:                           Converting Strings.  (line  49)
-* wchar.h <4>:                           Converting a Character.
-                                                              (line 125)
-* wchar.h <5>:                           Simple Output.       (line  10)
-* wchar.h <6>:                           Converting a Character.
-                                                              (line  32)
-* wchar.h <7>:                           Keeping the state.   (line  19)
-* wchar.h <8>:                           Extended Char Intro. (line  96)
-* wchar.h <9>:                           Parsing of Integers. (line   6)
-* wchar.h <10>:                          Collation Functions. (line  18)
-* wchar.h:                               Copying and Concatenation.
-                                                              (line  10)
-* wctype.h <1>:                          Wide Character Case Conversion.
-                                                              (line  75)
-* wctype.h <2>:                          Classification of Wide Characters.
+* wchar.h <1>:                           Keeping the state.   (line  55)
+* wchar.h <2>:                           Copying Strings and Arrays.
+                                                              (line   9)
+* wchar.h <3>:                           Concatenating Strings.
+                                                              (line   6)
+* wchar.h <4>:                           Collation Functions. (line  18)
+* wchar.h <5>:                           Extended Char Intro. (line 142)
+* wchar.h <6>:                           Keeping the state.   (line  19)
+* wchar.h <7>:                           Converting a Character.
+                                                              (line 300)
+* wchar.h <8>:                           Converting Strings.  (line 130)
+* wchar.h <9>:                           Simple Output.       (line  10)
+* wchar.h <10>:                          Character Input.     (line   8)
+* wchar.h:                               Parsing of Integers. (line   6)
+* wctype.h <1>:                          Classification of Wide Characters.
                                                               (line 254)
-* wctype.h:                              Wide Character Case Conversion.
-                                                              (line  62)
+* wctype.h <2>:                          Wide Character Case Conversion.
+                                                              (line  75)
+* wctype.h:                              Classification of Wide Characters.
+                                                              (line 240)
 * zoneinfo:                              TZ Variable.         (line 144)
 
 

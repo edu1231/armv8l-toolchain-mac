@@ -457,7 +457,9 @@ START-INFO-DIR-ENTRY
 * __ppc_mdoom: (libc)PowerPC.
 * __ppc_set_ppr_low: (libc)PowerPC.
 * __ppc_set_ppr_med: (libc)PowerPC.
+* __ppc_set_ppr_med_high: (libc)PowerPC.
 * __ppc_set_ppr_med_low: (libc)PowerPC.
+* __ppc_set_ppr_very_low: (libc)PowerPC.
 * __ppc_yield: (libc)PowerPC.
 * __va_copy: (libc)Argument Macros.
 * _exit: (libc)Termination Internals.
@@ -548,14 +550,14 @@ START-INFO-DIR-ENTRY
 * basename: (libc)Finding Tokens in a String.
 * basename: (libc)Finding Tokens in a String.
 * bcmp: (libc)String/Array Comparison.
-* bcopy: (libc)Copying and Concatenation.
+* bcopy: (libc)Copying Strings and Arrays.
 * bind: (libc)Setting Address.
 * bind_textdomain_codeset: (libc)Charset conversion in gettext.
 * bindtextdomain: (libc)Locating gettext catalog.
 * brk: (libc)Resizing the Data Segment.
 * bsearch: (libc)Array Search Function.
 * btowc: (libc)Converting a Character.
-* bzero: (libc)Copying and Concatenation.
+* bzero: (libc)Copying Strings and Arrays.
 * cabs: (libc)Absolute Value.
 * cabsf: (libc)Absolute Value.
 * cabsl: (libc)Absolute Value.
@@ -1159,16 +1161,16 @@ START-INFO-DIR-ENTRY
 * mbtowc: (libc)Non-reentrant Character Conversion.
 * mcheck: (libc)Heap Consistency Checking.
 * memalign: (libc)Aligned Memory Blocks.
-* memccpy: (libc)Copying and Concatenation.
+* memccpy: (libc)Copying Strings and Arrays.
 * memchr: (libc)Search Functions.
 * memcmp: (libc)String/Array Comparison.
-* memcpy: (libc)Copying and Concatenation.
+* memcpy: (libc)Copying Strings and Arrays.
 * memfrob: (libc)Trivial Encryption.
 * memmem: (libc)Search Functions.
-* memmove: (libc)Copying and Concatenation.
-* mempcpy: (libc)Copying and Concatenation.
+* memmove: (libc)Copying Strings and Arrays.
+* mempcpy: (libc)Copying Strings and Arrays.
 * memrchr: (libc)Search Functions.
-* memset: (libc)Copying and Concatenation.
+* memset: (libc)Copying Strings and Arrays.
 * mkdir: (libc)Creating Directories.
 * mkdtemp: (libc)Temporary Files.
 * mkfifo: (libc)FIFO Special Files.
@@ -1483,19 +1485,19 @@ START-INFO-DIR-ENTRY
 * stat64: (libc)Reading Attributes.
 * stat: (libc)Reading Attributes.
 * stime: (libc)Simple Calendar Time.
-* stpcpy: (libc)Copying and Concatenation.
-* stpncpy: (libc)Copying and Concatenation.
+* stpcpy: (libc)Copying Strings and Arrays.
+* stpncpy: (libc)Truncating Strings.
 * strcasecmp: (libc)String/Array Comparison.
 * strcasestr: (libc)Search Functions.
-* strcat: (libc)Copying and Concatenation.
+* strcat: (libc)Concatenating Strings.
 * strchr: (libc)Search Functions.
 * strchrnul: (libc)Search Functions.
 * strcmp: (libc)String/Array Comparison.
 * strcoll: (libc)Collation Functions.
-* strcpy: (libc)Copying and Concatenation.
+* strcpy: (libc)Copying Strings and Arrays.
 * strcspn: (libc)Search Functions.
-* strdup: (libc)Copying and Concatenation.
-* strdupa: (libc)Copying and Concatenation.
+* strdup: (libc)Copying Strings and Arrays.
+* strdupa: (libc)Copying Strings and Arrays.
 * strerror: (libc)Error Messages.
 * strerror_r: (libc)Error Messages.
 * strfmon: (libc)Formatting Numbers.
@@ -1503,11 +1505,11 @@ START-INFO-DIR-ENTRY
 * strftime: (libc)Formatting Calendar Time.
 * strlen: (libc)String Length.
 * strncasecmp: (libc)String/Array Comparison.
-* strncat: (libc)Copying and Concatenation.
+* strncat: (libc)Truncating Strings.
 * strncmp: (libc)String/Array Comparison.
-* strncpy: (libc)Copying and Concatenation.
-* strndup: (libc)Copying and Concatenation.
-* strndupa: (libc)Copying and Concatenation.
+* strncpy: (libc)Truncating Strings.
+* strndup: (libc)Truncating Strings.
+* strndupa: (libc)Truncating Strings.
 * strnlen: (libc)String Length.
 * strpbrk: (libc)Search Functions.
 * strptime: (libc)Low-Level Time String Parsing.
@@ -1641,24 +1643,24 @@ START-INFO-DIR-ENTRY
 * waitpid: (libc)Process Completion.
 * warn: (libc)Error Messages.
 * warnx: (libc)Error Messages.
-* wcpcpy: (libc)Copying and Concatenation.
-* wcpncpy: (libc)Copying and Concatenation.
+* wcpcpy: (libc)Copying Strings and Arrays.
+* wcpncpy: (libc)Truncating Strings.
 * wcrtomb: (libc)Converting a Character.
 * wcscasecmp: (libc)String/Array Comparison.
-* wcscat: (libc)Copying and Concatenation.
+* wcscat: (libc)Concatenating Strings.
 * wcschr: (libc)Search Functions.
 * wcschrnul: (libc)Search Functions.
 * wcscmp: (libc)String/Array Comparison.
 * wcscoll: (libc)Collation Functions.
-* wcscpy: (libc)Copying and Concatenation.
+* wcscpy: (libc)Copying Strings and Arrays.
 * wcscspn: (libc)Search Functions.
-* wcsdup: (libc)Copying and Concatenation.
+* wcsdup: (libc)Copying Strings and Arrays.
 * wcsftime: (libc)Formatting Calendar Time.
 * wcslen: (libc)String Length.
 * wcsncasecmp: (libc)String/Array Comparison.
-* wcsncat: (libc)Copying and Concatenation.
+* wcsncat: (libc)Truncating Strings.
 * wcsncmp: (libc)String/Array Comparison.
-* wcsncpy: (libc)Copying and Concatenation.
+* wcsncpy: (libc)Truncating Strings.
 * wcsnlen: (libc)String Length.
 * wcsnrtombs: (libc)Converting Strings.
 * wcspbrk: (libc)Search Functions.
@@ -1687,10 +1689,10 @@ START-INFO-DIR-ENTRY
 * wctype: (libc)Classification of Wide Characters.
 * wmemchr: (libc)Search Functions.
 * wmemcmp: (libc)String/Array Comparison.
-* wmemcpy: (libc)Copying and Concatenation.
-* wmemmove: (libc)Copying and Concatenation.
-* wmempcpy: (libc)Copying and Concatenation.
-* wmemset: (libc)Copying and Concatenation.
+* wmemcpy: (libc)Copying Strings and Arrays.
+* wmemmove: (libc)Copying Strings and Arrays.
+* wmempcpy: (libc)Copying Strings and Arrays.
+* wmemset: (libc)Copying Strings and Arrays.
 * wordexp: (libc)Calling Wordexp.
 * wordfree: (libc)Calling Wordexp.
 * wprintf: (libc)Formatted Output Functions.
@@ -1710,10 +1712,10 @@ END-INFO-DIR-ENTRY
 
    This file documents the GNU C Library.
 
-   This is `The GNU C Library Reference Manual', for version 2.22
-(crosstool-NG crosstool-ng-1.22.0).
+   This is `The GNU C Library Reference Manual', for version 2.23
+(crosstool-NG crosstool-ng-1.22.0-148-g7300eb1).
 
-   Copyright (C) 1993-2015 Free Software Foundation, Inc.
+   Copyright (C) 1993-2016 Free Software Foundation, Inc.
 
    Permission is granted to copy, distribute and/or modify this document
 under the terms of the GNU Free Documentation License, Version
@@ -2803,17 +2805,17 @@ Concept Index
 * allocation hooks, for malloc:          Hooks for Malloc.    (line   6)
 * allocation of memory with malloc:      Basic Allocation.    (line   6)
 * allocation size of string:             Representation of Strings.
-                                                              (line  56)
+                                                              (line  61)
 * allocation statistics:                 Statistics of Malloc.
                                                               (line   6)
-* alphabetic character <1>:              Classification of Wide Characters.
-                                                              (line  89)
-* alphabetic character:                  Classification of Characters.
+* alphabetic character <1>:              Classification of Characters.
                                                               (line  41)
-* alphanumeric character <1>:            Classification of Wide Characters.
-                                                              (line  74)
-* alphanumeric character:                Classification of Characters.
+* alphabetic character:                  Classification of Wide Characters.
+                                                              (line  89)
+* alphanumeric character <1>:            Classification of Characters.
                                                               (line  60)
+* alphanumeric character:                Classification of Wide Characters.
+                                                              (line  74)
 * append-access files:                   File Position.       (line  29)
 * argc (program argument count):         Program Arguments.   (line  16)
 * argp (program argument parser):        Argp.                (line   6)
@@ -2823,7 +2825,7 @@ Concept Index
                                                               (line   6)
 * argument parsing with argp:            Argp.                (line   6)
 * argument promotion:                    Calling Variadics.   (line  27)
-* argument vectors, null-character separated: Argz and Envz Vectors.
+* argument vectors, null-byte separated: Argz and Envz Vectors.
                                                               (line   6)
 * arguments (variadic functions):        Receiving Arguments. (line   6)
 * arguments, how many:                   How Many Arguments.  (line   6)
@@ -2834,8 +2836,8 @@ Concept Index
 * arithmetic expansion:                  Expansion Stages.    (line  22)
 * array comparison functions:            String/Array Comparison.
                                                               (line   6)
-* array copy functions:                  Copying and Concatenation.
-                                                              (line  10)
+* array copy functions:                  Copying Strings and Arrays.
+                                                              (line   9)
 * array search function:                 Array Search Function.
                                                               (line   6)
 * array sort function:                   Array Sort Function. (line   6)
@@ -2904,8 +2906,8 @@ Concept Index
                                                               (line   6)
 * broken pipe signal:                    Operation Error Signals.
                                                               (line  13)
-* broken-down time <1>:                  Broken-down Time.    (line   6)
-* broken-down time:                      Calendar Time.       (line  26)
+* broken-down time <1>:                  Calendar Time.       (line  26)
+* broken-down time:                      Broken-down Time.    (line   6)
 * BSD Unix:                              Berkeley Unix.       (line   6)
 * buffering of streams:                  Stream Buffering.    (line   6)
 * buffering, controlling:                Controlling Buffering.
@@ -2981,8 +2983,10 @@ Concept Index
                                                               (line 202)
 * complex numbers:                       Complex Numbers.     (line   6)
 * complex trigonometric functions:       Trig Functions.      (line  68)
-* concatenating strings:                 Copying and Concatenation.
-                                                              (line  10)
+* concatenating strings <1>:             Copying Strings and Arrays.
+                                                              (line   9)
+* concatenating strings:                 Concatenating Strings.
+                                                              (line   6)
 * Conditionally Safe Features:           Conditionally Safe Features.
                                                               (line   6)
 * configuring:                           Configuring and compiling.
@@ -3034,15 +3038,15 @@ Concept Index
                                                               (line   6)
 * converting port number to service name: Services Database.  (line   6)
 * converting service name to port number: Services Database.  (line   6)
-* converting string to collation order:  Collation Functions. (line  83)
+* converting string to collation order:  Collation Functions. (line  84)
 * converting strings to numbers:         Parsing of Numbers.  (line   6)
 * converting user ID to user name:       Lookup User.         (line   6)
 * converting user name to user ID:       Lookup User.         (line   6)
 * cookie, for custom stream:             Streams and Cookies. (line   6)
 * copy-on-write page fault:              Locked Memory Details.
                                                               (line  40)
-* copying strings and arrays:            Copying and Concatenation.
-                                                              (line  10)
+* copying strings and arrays:            Copying Strings and Arrays.
+                                                              (line   9)
 * corrupt:                               Unsafe Features.     (line  26)
 * cpu priority:                          Priority.            (line   6)
 * CPU time <1>:                          Processor And CPU Time.
@@ -3098,10 +3102,10 @@ Concept Index
 * delivery of signals:                   Delivery of Signal.  (line   6)
 * descriptors and streams:               Stream/Descriptor Precautions.
                                                               (line   6)
-* digit character <1>:                   Classification of Wide Characters.
-                                                              (line 121)
-* digit character:                       Classification of Characters.
+* digit character <1>:                   Classification of Characters.
                                                               (line  54)
+* digit character:                       Classification of Wide Characters.
+                                                              (line 121)
 * directories, accessing:                Accessing Directories.
                                                               (line   6)
 * directories, creating:                 Creating Directories.
@@ -3143,8 +3147,8 @@ Concept Index
 * efficiency of chunks:                  Obstack Chunks.      (line   6)
 * EINTR, and restarting interrupted primitives: Interrupted Primitives.
                                                               (line  46)
-* elapsed time <1>:                      Time Basics.         (line  24)
-* elapsed time:                          Elapsed Time.        (line   6)
+* elapsed time <1>:                      Elapsed Time.        (line   6)
+* elapsed time:                          Time Basics.         (line  24)
 * encryption:                            Trivial Encryption.  (line   6)
 * end of file, on a stream:              EOF and Errors.      (line   6)
 * end-of-file, on a file descriptor:     I/O Primitives.      (line  24)
@@ -3156,7 +3160,7 @@ Concept Index
 * environment representation:            Environment Access.  (line   6)
 * environment variable:                  Environment Variables.
                                                               (line   6)
-* environment vectors, null-character separated: Argz and Envz Vectors.
+* environment vectors, null-byte separated: Argz and Envz Vectors.
                                                               (line   9)
 * envz vectors (environment vectors):    Argz and Envz Vectors.
                                                               (line   9)
@@ -3289,10 +3293,10 @@ Concept Index
 * generation of signals:                 Signal Generation.   (line   6)
 * generic i/o control operations:        IOCTLs.              (line   6)
 * globbing:                              Globbing.            (line   6)
-* graphic character <1>:                 Classification of Wide Characters.
-                                                              (line 144)
-* graphic character:                     Classification of Characters.
+* graphic character <1>:                 Classification of Characters.
                                                               (line 117)
+* graphic character:                     Classification of Wide Characters.
+                                                              (line 144)
 * Gregorian calendar:                    Calendar Time.       (line  26)
 * group:                                 NSS Basics.          (line  26)
 * group database:                        Group Database.      (line   6)
@@ -3313,10 +3317,10 @@ Concept Index
                                                               (line   6)
 * heap, freeing memory from:             Freeing after Malloc.
                                                               (line   6)
-* hexadecimal digit character <1>:       Classification of Characters.
-                                                              (line  68)
-* hexadecimal digit character:           Classification of Wide Characters.
+* hexadecimal digit character <1>:       Classification of Wide Characters.
                                                               (line 242)
+* hexadecimal digit character:           Classification of Characters.
+                                                              (line  68)
 * hidden bit (of floating point number mantissa): Floating Point Concepts.
                                                               (line  42)
 * hierarchy, directory:                  Working with Directory Trees.
@@ -3340,7 +3344,7 @@ Concept Index
 * hosts database:                        Host Names.          (line   6)
 * how many arguments:                    How Many Arguments.  (line   6)
 * hyperbolic functions:                  Hyperbolic Functions.
-                                                              (line   6)
+                                                              (line  39)
 * i18n:                                  Unsafe Features.     (line  79)
 * iconv:                                 Unsafe Features.     (line  67)
 * identifying terminals:                 Is It a Terminal.    (line   6)
@@ -3427,7 +3431,7 @@ Concept Index
                                                               (line   6)
 * job control signals:                   Job Control Signals. (line   6)
 * job control, enabling:                 Initializing the Shell.
-                                                              (line   6)
+                                                              (line  24)
 * Kermit the frog:                       Search/Sort Example. (line 107)
 * kernel call:                           System Calls.        (line  16)
 * kernel header files:                   Linux.               (line   6)
@@ -3461,7 +3465,7 @@ Concept Index
                                                               (line  97)
 * leap second:                           Broken-down Time.    (line  28)
 * length of string:                      Representation of Strings.
-                                                              (line  56)
+                                                              (line  61)
 * level, for socket options:             Socket Options.      (line   9)
 * library:                               Introduction.        (line   9)
 * limit:                                 Limits on Resources. (line  12)
@@ -3565,11 +3569,11 @@ Concept Index
 * MT-Unsafe:                             POSIX Safety Concepts.
                                                               (line  68)
 * multi-threaded application:            Streams and Threads. (line   6)
+* multibyte character <1>:               Representation of Strings.
+                                                              (line  22)
 * multibyte character:                   Extended Char Intro. (line 156)
-* multibyte character string:            Representation of Strings.
-                                                              (line  11)
 * multibyte string:                      Representation of Strings.
-                                                              (line  67)
+                                                              (line  71)
 * multiple names for one file:           Hard Links.          (line   6)
 * multiplexing input:                    Waiting for I/O.     (line   6)
 * multiply-add:                          Misc FP Arithmetic.  (line   6)
@@ -3579,10 +3583,10 @@ Concept Index
 * name space:                            Reserved Names.      (line   6)
 * names of signals:                      Standard Signals.    (line   6)
 * namespace (of socket):                 Socket Concepts.     (line  33)
-* NaN <1>:                               FP Bit Twiddling.    (line  66)
-* NaN:                                   Infinity and NaN.    (line   6)
-* Netgroup:                              Netgroup Data.       (line   6)
+* NaN <1>:                               Infinity and NaN.    (line   6)
+* NaN:                                   FP Bit Twiddling.    (line  66)
 * netgroup:                              NSS Basics.          (line  26)
+* Netgroup:                              Netgroup Data.       (line   6)
 * network byte order:                    Byte Order.          (line  11)
 * network number:                        Abstract Host Addresses.
                                                               (line   9)
@@ -3595,10 +3599,10 @@ Concept Index
                                                               (line  72)
 * nisplus, and completeness:             Actions in the NSS configuration.
                                                               (line  65)
-* NLSPATH environment variable <1>:      Standard Environment.
-                                                              (line 100)
-* NLSPATH environment variable:          The catgets Functions.
+* NLSPATH environment variable <1>:      The catgets Functions.
                                                               (line  32)
+* NLSPATH environment variable:          Standard Environment.
+                                                              (line 100)
 * non-blocking open:                     Open-time Flags.     (line  30)
 * non-local exit, from signal handler:   Longjmp in Handler.  (line   6)
 * non-local exits:                       Non-Local Exits.     (line   6)
@@ -3612,12 +3616,12 @@ Concept Index
 * NSS:                                   Name Service Switch. (line   6)
 * nsswitch.conf:                         NSS Configuration File.
                                                               (line   6)
-* null character:                        Representation of Strings.
-                                                              (line  26)
+* null byte:                             Representation of Strings.
+                                                              (line  31)
 * null pointer constant:                 Null Pointer Constant.
                                                               (line   6)
 * null wide character:                   Representation of Strings.
-                                                              (line  26)
+                                                              (line  31)
 * number of arguments passed:            How Many Arguments.  (line   6)
 * number syntax, parsing:                Parsing of Numbers.  (line   6)
 * numeric value formatting:              The Lame Way to Locale Data.
@@ -3670,9 +3674,9 @@ Concept Index
                                                               (line  41)
 * parent directory:                      File Name Resolution.
                                                               (line  28)
-* parent process <1>:                    Processes.           (line  13)
-* parent process:                        Process Creation Concepts.
+* parent process <1>:                    Process Creation Concepts.
                                                               (line  15)
+* parent process:                        Processes.           (line  13)
 * parity checking:                       Input Modes.         (line  17)
 * parsing a template string:             Parsing a Template String.
                                                               (line   6)
@@ -3732,10 +3736,10 @@ Concept Index
                                                               (line  75)
 * primitives, interrupting:              Interrupted Primitives.
                                                               (line  46)
-* printing character <1>:                Classification of Characters.
-                                                              (line 125)
-* printing character:                    Classification of Wide Characters.
+* printing character <1>:                Classification of Wide Characters.
                                                               (line 171)
+* printing character:                    Classification of Characters.
+                                                              (line 125)
 * priority of a process:                 Priority.            (line   6)
 * priority, absolute:                    Absolute Priority.   (line   6)
 * process <1>:                           Processes.           (line   6)
@@ -3782,10 +3786,10 @@ Concept Index
                                                               (line   6)
 * pseudo-terminals:                      Pseudo-Terminals.    (line   6)
 * pthreads:                              POSIX Threads.       (line   6)
-* punctuation character <1>:             Classification of Wide Characters.
-                                                              (line 184)
-* punctuation character:                 Classification of Characters.
+* punctuation character <1>:             Classification of Characters.
                                                               (line  76)
+* punctuation character:                 Classification of Wide Characters.
+                                                              (line 184)
 * pushing input back:                    Unreading.           (line   6)
 * quick sort function (for arrays):      Array Sort Function. (line   6)
 * QUIT character:                        Signal Characters.   (line  22)
@@ -3876,12 +3880,12 @@ Concept Index
 * setting an alarm:                      Setting an Alarm.    (line  10)
 * setuid programs:                       How Change Persona.  (line   6)
 * setuid programs and file access:       Testing File Access. (line   6)
-* severity class <1>:                    Adding Severity Classes.
-                                                              (line   6)
-* severity class:                        Printing Formatted Messages.
+* severity class <1>:                    Printing Formatted Messages.
                                                               (line  96)
+* severity class:                        Adding Severity Classes.
+                                                              (line   6)
 * sgettext:                              GUI program problems.
-                                                              (line  59)
+                                                              (line  84)
 * shadow:                                NSS Basics.          (line  26)
 * shadowing functions with macros:       Macro Definitions.   (line   6)
 * shared lock:                           File Locks.          (line  19)
@@ -3903,8 +3907,8 @@ Concept Index
                                                               (line  53)
 * sign (of floating point number):       Floating Point Concepts.
                                                               (line  18)
-* signal <1>:                            Signal Handling.     (line   6)
-* signal:                                FP Exceptions.       (line   6)
+* signal <1>:                            FP Exceptions.       (line   6)
+* signal:                                Signal Handling.     (line   6)
 * signal action:                         Delivery of Signal.  (line  13)
 * signal actions:                        Signal Actions.      (line   6)
 * signal flags:                          Flags for Sigaction. (line   6)
@@ -3926,9 +3930,9 @@ Concept Index
                                                               (line  18)
 * simple time:                           Calendar Time.       (line  13)
 * single-byte string:                    Representation of Strings.
-                                                              (line  67)
+                                                              (line  71)
 * size of string:                        Representation of Strings.
-                                                              (line  56)
+                                                              (line  61)
 * SJIS:                                  Extended Char Intro. (line 188)
 * socket:                                Sockets.             (line   9)
 * socket address (name) binding:         Socket Addresses.    (line   6)
@@ -3984,14 +3988,14 @@ Concept Index
                                                               (line  11)
 * startup of program:                    Program Arguments.   (line   6)
 * stateful <1>:                          Keeping the state.   (line   6)
-* stateful <2>:                          Converting a Character.
-                                                              (line  91)
-* stateful <3>:                          Generic Conversion Interface.
-                                                              (line 119)
-* stateful <4>:                          iconv Examples.      (line  96)
-* stateful <5>:                          glibc iconv Implementation.
+* stateful <2>:                          glibc iconv Implementation.
                                                               (line 594)
-* stateful:                              Converting Strings.  (line  69)
+* stateful <3>:                          iconv Examples.      (line  96)
+* stateful <4>:                          Generic Conversion Interface.
+                                                              (line 119)
+* stateful <5>:                          Converting Strings.  (line  69)
+* stateful:                              Converting a Character.
+                                                              (line  91)
 * static memory allocation:              Memory Allocation and C.
                                                               (line  13)
 * static storage class:                  Memory Allocation and C.
@@ -4014,8 +4018,8 @@ Concept Index
 * storage allocating:                    Storage Allocation.  (line   6)
 * storage allocation:                    Memory.              (line   6)
 * stream (sockets):                      Socket Concepts.     (line  12)
-* stream orientation <1>:                Streams and I18N.    (line  38)
-* stream orientation:                    Opening Streams.     (line  98)
+* stream orientation <1>:                Opening Streams.     (line  98)
+* stream orientation:                    Streams and I18N.    (line  38)
 * stream, for I/O to a string:           String Streams.      (line   6)
 * streams and descriptors:               Stream/Descriptor Precautions.
                                                               (line   6)
@@ -4026,21 +4030,24 @@ Concept Index
 * string:                                Representation of Strings.
                                                               (line  11)
 * string allocation:                     Representation of Strings.
-                                                              (line  56)
+                                                              (line  61)
 * string collation functions:            Collation Functions. (line   6)
 * string comparison functions:           String/Array Comparison.
                                                               (line   6)
-* string concatenation functions:        Copying and Concatenation.
-                                                              (line  10)
-* string copy functions:                 Copying and Concatenation.
-                                                              (line  10)
+* string concatenation functions <1>:    Concatenating Strings.
+                                                              (line   6)
+* string concatenation functions:        Copying Strings and Arrays.
+                                                              (line   9)
+* string copy functions:                 Copying Strings and Arrays.
+                                                              (line   9)
 * string length:                         Representation of Strings.
-                                                              (line  56)
+                                                              (line  61)
 * string literal:                        Representation of Strings.
-                                                              (line  35)
+                                                              (line  40)
 * string search functions:               Search Functions.    (line   8)
 * string stream:                         String Streams.      (line   6)
-* string vectors, null-character separated: Argz and Envz Vectors.
+* string truncation:                     Truncating Strings.  (line   6)
+* string vectors, null-byte separated:   Argz and Envz Vectors.
                                                               (line   6)
 * string, representation of:             Representation of Strings.
                                                               (line   6)
@@ -4067,9 +4074,7 @@ Concept Index
 * syntax, for reading numbers:           Parsing of Numbers.  (line   6)
 * sysconf <1>:                           Query Memory Parameters.
                                                               (line  52)
-* sysconf <2>:                           Processor Resources. (line  19)
-* sysconf:                               Query Memory Parameters.
-                                                              (line  46)
+* sysconf:                               Processor Resources. (line  19)
 * system call:                           System Calls.        (line   6)
 * system call number:                    System Calls.        (line  45)
 * System V Unix:                         SVID.                (line   6)
@@ -4135,6 +4140,7 @@ Concept Index
 * triangulation:                         glibc iconv Implementation.
                                                               (line  42)
 * trigonometric functions:               Trig Functions.      (line   6)
+* truncating strings:                    Truncating Strings.  (line   6)
 * type measurements, floating:           Floating Type Macros.
                                                               (line   6)
 * type measurements, integer:            Width of Type.       (line   6)
@@ -4163,10 +4169,10 @@ Concept Index
                                                               (line   6)
 * unreading characters:                  Unreading.           (line   6)
 * Unsafe Features:                       Unsafe Features.     (line   6)
-* upper-case character <1>:              Classification of Wide Characters.
-                                                              (line 229)
-* upper-case character:                  Classification of Characters.
+* upper-case character <1>:              Classification of Characters.
                                                               (line  34)
+* upper-case character:                  Classification of Wide Characters.
+                                                              (line 229)
 * urgent data signal:                    Asynchronous I/O Signals.
                                                               (line  24)
 * urgent socket condition:               Out-of-Band Data.    (line  18)
@@ -4185,8 +4191,8 @@ Concept Index
 * UTF-16:                                Extended Char Intro. (line  49)
 * UTF-7:                                 Extended Char Intro. (line 222)
 * UTF-8:                                 Extended Char Intro. (line  49)
-* va_copy:                               Copying and Concatenation.
-                                                              (line 521)
+* va_copy:                               Concatenating Strings.
+                                                              (line  70)
 * variable number of arguments:          Variadic Functions.  (line   6)
 * variable substitution:                 Expansion Stages.    (line  15)
 * variable-sized arrays:                 GNU C Variable-Size Arrays.
@@ -4204,13 +4210,13 @@ Concept Index
                                                               (line   6)
 * waiting for input or output:           Waiting for I/O.     (line   6)
 * WERASE character:                      Editing Characters.  (line  61)
-* whitespace character <1>:              Classification of Characters.
-                                                              (line  83)
-* whitespace character:                  Classification of Wide Characters.
+* whitespace character <1>:              Classification of Wide Characters.
                                                               (line 197)
+* whitespace character:                  Classification of Characters.
+                                                              (line  83)
 * wide character:                        Extended Char Intro. (line  31)
-* wide character string:                 Representation of Strings.
-                                                              (line  21)
+* wide string:                           Representation of Strings.
+                                                              (line  86)
 * width of integer type:                 Width of Type.       (line   6)
 * wildcard expansion:                    Expansion Stages.    (line  27)
 * wint_t:                                String/Array Conventions.

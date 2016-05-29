@@ -457,7 +457,9 @@ START-INFO-DIR-ENTRY
 * __ppc_mdoom: (libc)PowerPC.
 * __ppc_set_ppr_low: (libc)PowerPC.
 * __ppc_set_ppr_med: (libc)PowerPC.
+* __ppc_set_ppr_med_high: (libc)PowerPC.
 * __ppc_set_ppr_med_low: (libc)PowerPC.
+* __ppc_set_ppr_very_low: (libc)PowerPC.
 * __ppc_yield: (libc)PowerPC.
 * __va_copy: (libc)Argument Macros.
 * _exit: (libc)Termination Internals.
@@ -548,14 +550,14 @@ START-INFO-DIR-ENTRY
 * basename: (libc)Finding Tokens in a String.
 * basename: (libc)Finding Tokens in a String.
 * bcmp: (libc)String/Array Comparison.
-* bcopy: (libc)Copying and Concatenation.
+* bcopy: (libc)Copying Strings and Arrays.
 * bind: (libc)Setting Address.
 * bind_textdomain_codeset: (libc)Charset conversion in gettext.
 * bindtextdomain: (libc)Locating gettext catalog.
 * brk: (libc)Resizing the Data Segment.
 * bsearch: (libc)Array Search Function.
 * btowc: (libc)Converting a Character.
-* bzero: (libc)Copying and Concatenation.
+* bzero: (libc)Copying Strings and Arrays.
 * cabs: (libc)Absolute Value.
 * cabsf: (libc)Absolute Value.
 * cabsl: (libc)Absolute Value.
@@ -1159,16 +1161,16 @@ START-INFO-DIR-ENTRY
 * mbtowc: (libc)Non-reentrant Character Conversion.
 * mcheck: (libc)Heap Consistency Checking.
 * memalign: (libc)Aligned Memory Blocks.
-* memccpy: (libc)Copying and Concatenation.
+* memccpy: (libc)Copying Strings and Arrays.
 * memchr: (libc)Search Functions.
 * memcmp: (libc)String/Array Comparison.
-* memcpy: (libc)Copying and Concatenation.
+* memcpy: (libc)Copying Strings and Arrays.
 * memfrob: (libc)Trivial Encryption.
 * memmem: (libc)Search Functions.
-* memmove: (libc)Copying and Concatenation.
-* mempcpy: (libc)Copying and Concatenation.
+* memmove: (libc)Copying Strings and Arrays.
+* mempcpy: (libc)Copying Strings and Arrays.
 * memrchr: (libc)Search Functions.
-* memset: (libc)Copying and Concatenation.
+* memset: (libc)Copying Strings and Arrays.
 * mkdir: (libc)Creating Directories.
 * mkdtemp: (libc)Temporary Files.
 * mkfifo: (libc)FIFO Special Files.
@@ -1483,19 +1485,19 @@ START-INFO-DIR-ENTRY
 * stat64: (libc)Reading Attributes.
 * stat: (libc)Reading Attributes.
 * stime: (libc)Simple Calendar Time.
-* stpcpy: (libc)Copying and Concatenation.
-* stpncpy: (libc)Copying and Concatenation.
+* stpcpy: (libc)Copying Strings and Arrays.
+* stpncpy: (libc)Truncating Strings.
 * strcasecmp: (libc)String/Array Comparison.
 * strcasestr: (libc)Search Functions.
-* strcat: (libc)Copying and Concatenation.
+* strcat: (libc)Concatenating Strings.
 * strchr: (libc)Search Functions.
 * strchrnul: (libc)Search Functions.
 * strcmp: (libc)String/Array Comparison.
 * strcoll: (libc)Collation Functions.
-* strcpy: (libc)Copying and Concatenation.
+* strcpy: (libc)Copying Strings and Arrays.
 * strcspn: (libc)Search Functions.
-* strdup: (libc)Copying and Concatenation.
-* strdupa: (libc)Copying and Concatenation.
+* strdup: (libc)Copying Strings and Arrays.
+* strdupa: (libc)Copying Strings and Arrays.
 * strerror: (libc)Error Messages.
 * strerror_r: (libc)Error Messages.
 * strfmon: (libc)Formatting Numbers.
@@ -1503,11 +1505,11 @@ START-INFO-DIR-ENTRY
 * strftime: (libc)Formatting Calendar Time.
 * strlen: (libc)String Length.
 * strncasecmp: (libc)String/Array Comparison.
-* strncat: (libc)Copying and Concatenation.
+* strncat: (libc)Truncating Strings.
 * strncmp: (libc)String/Array Comparison.
-* strncpy: (libc)Copying and Concatenation.
-* strndup: (libc)Copying and Concatenation.
-* strndupa: (libc)Copying and Concatenation.
+* strncpy: (libc)Truncating Strings.
+* strndup: (libc)Truncating Strings.
+* strndupa: (libc)Truncating Strings.
 * strnlen: (libc)String Length.
 * strpbrk: (libc)Search Functions.
 * strptime: (libc)Low-Level Time String Parsing.
@@ -1641,24 +1643,24 @@ START-INFO-DIR-ENTRY
 * waitpid: (libc)Process Completion.
 * warn: (libc)Error Messages.
 * warnx: (libc)Error Messages.
-* wcpcpy: (libc)Copying and Concatenation.
-* wcpncpy: (libc)Copying and Concatenation.
+* wcpcpy: (libc)Copying Strings and Arrays.
+* wcpncpy: (libc)Truncating Strings.
 * wcrtomb: (libc)Converting a Character.
 * wcscasecmp: (libc)String/Array Comparison.
-* wcscat: (libc)Copying and Concatenation.
+* wcscat: (libc)Concatenating Strings.
 * wcschr: (libc)Search Functions.
 * wcschrnul: (libc)Search Functions.
 * wcscmp: (libc)String/Array Comparison.
 * wcscoll: (libc)Collation Functions.
-* wcscpy: (libc)Copying and Concatenation.
+* wcscpy: (libc)Copying Strings and Arrays.
 * wcscspn: (libc)Search Functions.
-* wcsdup: (libc)Copying and Concatenation.
+* wcsdup: (libc)Copying Strings and Arrays.
 * wcsftime: (libc)Formatting Calendar Time.
 * wcslen: (libc)String Length.
 * wcsncasecmp: (libc)String/Array Comparison.
-* wcsncat: (libc)Copying and Concatenation.
+* wcsncat: (libc)Truncating Strings.
 * wcsncmp: (libc)String/Array Comparison.
-* wcsncpy: (libc)Copying and Concatenation.
+* wcsncpy: (libc)Truncating Strings.
 * wcsnlen: (libc)String Length.
 * wcsnrtombs: (libc)Converting Strings.
 * wcspbrk: (libc)Search Functions.
@@ -1687,10 +1689,10 @@ START-INFO-DIR-ENTRY
 * wctype: (libc)Classification of Wide Characters.
 * wmemchr: (libc)Search Functions.
 * wmemcmp: (libc)String/Array Comparison.
-* wmemcpy: (libc)Copying and Concatenation.
-* wmemmove: (libc)Copying and Concatenation.
-* wmempcpy: (libc)Copying and Concatenation.
-* wmemset: (libc)Copying and Concatenation.
+* wmemcpy: (libc)Copying Strings and Arrays.
+* wmemmove: (libc)Copying Strings and Arrays.
+* wmempcpy: (libc)Copying Strings and Arrays.
+* wmemset: (libc)Copying Strings and Arrays.
 * wordexp: (libc)Calling Wordexp.
 * wordfree: (libc)Calling Wordexp.
 * wprintf: (libc)Formatted Output Functions.
@@ -1710,10 +1712,10 @@ END-INFO-DIR-ENTRY
 
    This file documents the GNU C Library.
 
-   This is `The GNU C Library Reference Manual', for version 2.22
-(crosstool-NG crosstool-ng-1.22.0).
+   This is `The GNU C Library Reference Manual', for version 2.23
+(crosstool-NG crosstool-ng-1.22.0-148-g7300eb1).
 
-   Copyright (C) 1993-2015 Free Software Foundation, Inc.
+   Copyright (C) 1993-2016 Free Software Foundation, Inc.
 
    Permission is granted to copy, distribute and/or modify this document
 under the terms of the GNU Free Documentation License, Version
@@ -1727,6 +1729,54 @@ Free Documentation License".
    (a) The FSF's Back-Cover Text is: "You have the freedom to copy and
 modify this GNU manual.  Buying copies from the FSF supports it in
 developing GNU and promoting software freedom."
+
+
+File: libc.info,  Node: Message Translation,  Next: Searching and Sorting,  Prev: Locales,  Up: Top
+
+8 Message Translation
+*********************
+
+The program's interface with the user should be designed to ease the
+user's task.  One way to ease the user's task is to use messages in
+whatever language the user prefers.
+
+   Printing messages in different languages can be implemented in
+different ways.  One could add all the different languages in the
+source code and choose among the variants every time a message has to
+be printed.  This is certainly not a good solution since extending the
+set of languages is cumbersome (the code must be changed) and the code
+itself can become really big with dozens of message sets.
+
+   A better solution is to keep the message sets for each language in
+separate files which are loaded at runtime depending on the language
+selection of the user.
+
+   The GNU C Library provides two different sets of functions to support
+message translation.  The problem is that neither of the interfaces is
+officially defined by the POSIX standard.  The `catgets' family of
+functions is defined in the X/Open standard but this is derived from
+industry decisions and therefore not necessarily based on reasonable
+decisions.
+
+   As mentioned above the message catalog handling provides easy
+extendibility by using external data files which contain the message
+translations.  I.e., these files contain for each of the messages used
+in the program a translation for the appropriate language.  So the tasks
+of the message handling functions are
+
+   * locate the external data file with the appropriate translations
+
+   * load the data and make it possible to address the messages
+
+   * map a given key to the translated message
+
+   The two approaches mainly differ in the implementation of this last
+step.  Decisions made in the last step influence the rest of the design.
+
+* Menu:
+
+* Message catalogs a la X/Open::  The `catgets' family of functions.
+* The Uniforum approach::         The `gettext' family of functions.
 
 
 File: libc.info,  Node: Message catalogs a la X/Open,  Next: The Uniforum approach,  Up: Message Translation
@@ -8011,7 +8061,7 @@ way to make sure you have all the right prototypes is to just include
      The behavior of this function is undefined if copying takes place
      between objects that overlap--for example, if S is also given as
      an argument to be printed under control of the `%s' conversion.
-     *Note Copying and Concatenation::.
+     *Note Copying Strings and Arrays::.
 
      *Warning:* The `sprintf' function can be *dangerous* because it
      can potentially output more characters than can fit in the
@@ -8195,18 +8245,15 @@ choice, you are ready to call `vprintf'.  That argument and all
 subsequent arguments that were passed to your function are used by
 `vprintf' along with the template that you specified separately.
 
-   In some other systems, the `va_list' pointer may become invalid
-after the call to `vprintf', so you must not use `va_arg' after you
-call `vprintf'.  Instead, you should call `va_end' to retire the
-pointer from service.  However, you can safely call `va_start' on
-another pointer variable and begin fetching the arguments again through
-that pointer.  Calling `vprintf' does not destroy the argument list of
-your function, merely the particular pointer that you passed to it.
-
-   GNU C does not have such restrictions.  You can safely continue to
-fetch arguments from a `va_list' pointer after passing it to `vprintf',
-and `va_end' is a no-op.  (Note, however, that subsequent `va_arg'
-calls will fetch the same arguments which `vprintf' previously used.)
+   *Portability Note:* The value of the `va_list' pointer is
+undetermined after the call to `vprintf', so you must not use `va_arg'
+after you call `vprintf'.  Instead, you should call `va_end' to retire
+the pointer from service.  You can call `va_start' again and begin
+fetching the arguments from the start of the variable argument list.
+(Alternatively, you can use `va_copy' to make a copy of the `va_list'
+pointer before calling `vfprintf'.)  Calling `vprintf' does not destroy
+the argument list of your function, merely the particular pointer that
+you passed to it.
 
    Prototypes for these functions are declared in `stdio.h'.  
 
@@ -8587,95 +8634,4 @@ The function to register a new output conversion is
      probably not a good idea because of the potential for confusion.
      Library routines written by other people could break if you do
      this.
-
-
-File: libc.info,  Node: Conversion Specifier Options,  Next: Defining the Output Handler,  Prev: Registering New Conversions,  Up: Customizing Printf
-
-12.13.2 Conversion Specifier Options
-------------------------------------
-
-If you define a meaning for `%A', what if the template contains `%+23A'
-or `%-#A'?  To implement a sensible meaning for these, the handler when
-called needs to be able to get the options specified in the template.
-
-   Both the HANDLER-FUNCTION and ARGINFO-FUNCTION accept an argument
-that points to a `struct printf_info', which contains information about
-the options appearing in an instance of the conversion specifier.  This
-data type is declared in the header file `printf.h'.  
-
- -- Type: struct printf_info
-     This structure is used to pass information about the options
-     appearing in an instance of a conversion specifier in a `printf'
-     template string to the handler and arginfo functions for that
-     specifier.  It contains the following members:
-
-    `int prec'
-          This is the precision specified.  The value is `-1' if no
-          precision was specified.  If the precision was given as `*',
-          the `printf_info' structure passed to the handler function
-          contains the actual value retrieved from the argument list.
-          But the structure passed to the arginfo function contains a
-          value of `INT_MIN', since the actual value is not known.
-
-    `int width'
-          This is the minimum field width specified.  The value is `0'
-          if no width was specified.  If the field width was given as
-          `*', the `printf_info' structure passed to the handler
-          function contains the actual value retrieved from the
-          argument list.  But the structure passed to the arginfo
-          function contains a value of `INT_MIN', since the actual
-          value is not known.
-
-    `wchar_t spec'
-          This is the conversion specifier character specified.  It's
-          stored in the structure so that you can register the same
-          handler function for multiple characters, but still have a
-          way to tell them apart when the handler function is called.
-
-    `unsigned int is_long_double'
-          This is a boolean that is true if the `L', `ll', or `q' type
-          modifier was specified.  For integer conversions, this
-          indicates `long long int', as opposed to `long double' for
-          floating point conversions.
-
-    `unsigned int is_char'
-          This is a boolean that is true if the `hh' type modifier was
-          specified.
-
-    `unsigned int is_short'
-          This is a boolean that is true if the `h' type modifier was
-          specified.
-
-    `unsigned int is_long'
-          This is a boolean that is true if the `l' type modifier was
-          specified.
-
-    `unsigned int alt'
-          This is a boolean that is true if the `#' flag was specified.
-
-    `unsigned int space'
-          This is a boolean that is true if the ` ' flag was specified.
-
-    `unsigned int left'
-          This is a boolean that is true if the `-' flag was specified.
-
-    `unsigned int showsign'
-          This is a boolean that is true if the `+' flag was specified.
-
-    `unsigned int group'
-          This is a boolean that is true if the `'' flag was specified.
-
-    `unsigned int extra'
-          This flag has a special meaning depending on the context.  It
-          could be used freely by the user-defined handlers but when
-          called from the `printf' function this variable always
-          contains the value `0'.
-
-    `unsigned int wide'
-          This flag is set if the stream is wide oriented.
-
-    `wchar_t pad'
-          This is the character to use for padding the output to the
-          minimum field width.  The value is `'0'' if the `0' flag was
-          specified, and `' '' otherwise.
 
