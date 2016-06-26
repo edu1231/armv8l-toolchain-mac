@@ -16,7 +16,7 @@ set(CMAKE_IMPORT_FILE_VERSION 1)
 set(_targetsDefined)
 set(_targetsNotDefined)
 set(_expectedTargets)
-foreach(_expectedTarget libtiff libjpeg libwebp libjasper IlmImf opencv_core opencv_flann opencv_imgproc opencv_ml opencv_photo opencv_video opencv_imgcodecs opencv_shape opencv_videoio opencv_highgui opencv_objdetect opencv_superres opencv_features2d opencv_calib3d opencv_stitching opencv_videostab)
+foreach(_expectedTarget libtiff libjpeg libwebp libjasper IlmImf opencv_core opencv_flann opencv_imgproc opencv_ml opencv_photo opencv_reg opencv_surface_matching opencv_video libprotobuf opencv_dnn opencv_fuzzy opencv_imgcodecs opencv_shape opencv_videoio opencv_highgui opencv_objdetect opencv_plot opencv_superres opencv_xobjdetect opencv_xphoto opencv_bgsegm opencv_bioinspired opencv_dpm opencv_face opencv_features2d opencv_line_descriptor opencv_saliency opencv_text opencv_calib3d opencv_ccalib opencv_datasets opencv_rgbd opencv_stereo opencv_structured_light opencv_tracking opencv_videostab opencv_xfeatures2d opencv_ximgproc opencv_aruco opencv_optflow opencv_stitching)
   list(APPEND _expectedTargets ${_expectedTarget})
   if(NOT TARGET ${_expectedTarget})
     list(APPEND _targetsNotDefined ${_expectedTarget})
@@ -73,8 +73,23 @@ add_library(opencv_ml STATIC IMPORTED)
 # Create imported target opencv_photo
 add_library(opencv_photo STATIC IMPORTED)
 
+# Create imported target opencv_reg
+add_library(opencv_reg STATIC IMPORTED)
+
+# Create imported target opencv_surface_matching
+add_library(opencv_surface_matching STATIC IMPORTED)
+
 # Create imported target opencv_video
 add_library(opencv_video STATIC IMPORTED)
+
+# Create imported target libprotobuf
+add_library(libprotobuf STATIC IMPORTED)
+
+# Create imported target opencv_dnn
+add_library(opencv_dnn STATIC IMPORTED)
+
+# Create imported target opencv_fuzzy
+add_library(opencv_fuzzy STATIC IMPORTED)
 
 # Create imported target opencv_imgcodecs
 add_library(opencv_imgcodecs STATIC IMPORTED)
@@ -91,20 +106,80 @@ add_library(opencv_highgui STATIC IMPORTED)
 # Create imported target opencv_objdetect
 add_library(opencv_objdetect STATIC IMPORTED)
 
+# Create imported target opencv_plot
+add_library(opencv_plot STATIC IMPORTED)
+
 # Create imported target opencv_superres
 add_library(opencv_superres STATIC IMPORTED)
+
+# Create imported target opencv_xobjdetect
+add_library(opencv_xobjdetect STATIC IMPORTED)
+
+# Create imported target opencv_xphoto
+add_library(opencv_xphoto STATIC IMPORTED)
+
+# Create imported target opencv_bgsegm
+add_library(opencv_bgsegm STATIC IMPORTED)
+
+# Create imported target opencv_bioinspired
+add_library(opencv_bioinspired STATIC IMPORTED)
+
+# Create imported target opencv_dpm
+add_library(opencv_dpm STATIC IMPORTED)
+
+# Create imported target opencv_face
+add_library(opencv_face STATIC IMPORTED)
 
 # Create imported target opencv_features2d
 add_library(opencv_features2d STATIC IMPORTED)
 
+# Create imported target opencv_line_descriptor
+add_library(opencv_line_descriptor STATIC IMPORTED)
+
+# Create imported target opencv_saliency
+add_library(opencv_saliency STATIC IMPORTED)
+
+# Create imported target opencv_text
+add_library(opencv_text STATIC IMPORTED)
+
 # Create imported target opencv_calib3d
 add_library(opencv_calib3d STATIC IMPORTED)
 
-# Create imported target opencv_stitching
-add_library(opencv_stitching STATIC IMPORTED)
+# Create imported target opencv_ccalib
+add_library(opencv_ccalib STATIC IMPORTED)
+
+# Create imported target opencv_datasets
+add_library(opencv_datasets STATIC IMPORTED)
+
+# Create imported target opencv_rgbd
+add_library(opencv_rgbd STATIC IMPORTED)
+
+# Create imported target opencv_stereo
+add_library(opencv_stereo STATIC IMPORTED)
+
+# Create imported target opencv_structured_light
+add_library(opencv_structured_light STATIC IMPORTED)
+
+# Create imported target opencv_tracking
+add_library(opencv_tracking STATIC IMPORTED)
 
 # Create imported target opencv_videostab
 add_library(opencv_videostab STATIC IMPORTED)
+
+# Create imported target opencv_xfeatures2d
+add_library(opencv_xfeatures2d STATIC IMPORTED)
+
+# Create imported target opencv_ximgproc
+add_library(opencv_ximgproc STATIC IMPORTED)
+
+# Create imported target opencv_aruco
+add_library(opencv_aruco STATIC IMPORTED)
+
+# Create imported target opencv_optflow
+add_library(opencv_optflow STATIC IMPORTED)
+
+# Create imported target opencv_stitching
+add_library(opencv_stitching STATIC IMPORTED)
 
 # Load information for each installed configuration.
 get_filename_component(_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)

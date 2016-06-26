@@ -162,7 +162,7 @@ SET(OpenCV_VERSION_STATUS "-dev")
 # Link libraries: e.g. opencv_core;opencv_imgproc; etc...
 # ====================================================================
 
-SET(OpenCV_LIB_COMPONENTS opencv_videostab;opencv_videoio;opencv_video;opencv_superres;opencv_stitching;opencv_shape;opencv_photo;opencv_objdetect;opencv_ml;opencv_imgproc;opencv_imgcodecs;opencv_highgui;opencv_flann;opencv_features2d;opencv_core;opencv_calib3d)
+SET(OpenCV_LIB_COMPONENTS opencv_xphoto;opencv_xobjdetect;opencv_ximgproc;opencv_xfeatures2d;opencv_tracking;opencv_text;opencv_surface_matching;opencv_structured_light;opencv_stereo;opencv_saliency;opencv_rgbd;opencv_reg;opencv_plot;opencv_optflow;opencv_line_descriptor;opencv_fuzzy;opencv_face;opencv_dpm;opencv_dnn;opencv_datasets;opencv_ccalib;opencv_bioinspired;opencv_bgsegm;opencv_aruco;opencv_videostab;opencv_videoio;opencv_video;opencv_superres;opencv_stitching;opencv_shape;opencv_photo;opencv_objdetect;opencv_ml;opencv_imgproc;opencv_imgcodecs;opencv_highgui;opencv_flann;opencv_features2d;opencv_core;opencv_calib3d)
 list(REMOVE_ITEM OpenCV_LIB_COMPONENTS opencv_hal)
 SET(OpenCV_WORLD_COMPONENTS )
 
