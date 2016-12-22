@@ -1,5 +1,5 @@
 This is doc/gccinstall.info, produced by makeinfo version 4.8 from
-/Volumes/arm-linux-toolchain/rpi3/build/src/gcc-6.2.0/gcc/doc/install.texi.
+/Volumes/arm-linux-toolchain/rpi3/build/src/gcc-6.3.0/gcc/doc/install.texi.
 
    Copyright (C) 1988-2016 Free Software Foundation, Inc.
 
@@ -1896,6 +1896,31 @@ The following options only apply to building cross compilers.
      possibly `objdump'.  Otherwise, GCC may use an inconsistent set of
      tools.
 
+Overriding `configure' test results
+...................................
+
+Sometimes, it might be necessary to override the result of some
+`configure' test, for example in order to ease porting to a new system
+or work around a bug in a test.  The toplevel `configure' script
+provides three variables for this:
+
+`build_configargs'
+     The contents of this variable is passed to all build `configure'
+     scripts.
+
+`host_configargs'
+     The contents of this variable is passed to all host `configure'
+     scripts.
+
+`target_configargs'
+     The contents of this variable is passed to all target `configure'
+     scripts.
+
+
+   In order to avoid shell and `make' quoting issues for complex
+overrides, you can pass a setting for `CONFIG_SITE' and set variables
+in the site file.
+
 Java-Specific Options
 ---------------------
 
@@ -2129,31 +2154,6 @@ AWT-Specific Options
 `--disable-libarttest'
      Do not try to compile and run a test libart program.
 
-
-Overriding `configure' test results
-...................................
-
-Sometimes, it might be necessary to override the result of some
-`configure' test, for example in order to ease porting to a new system
-or work around a bug in a test.  The toplevel `configure' script
-provides three variables for this:
-
-`build_configargs'
-     The contents of this variable is passed to all build `configure'
-     scripts.
-
-`host_configargs'
-     The contents of this variable is passed to all host `configure'
-     scripts.
-
-`target_configargs'
-     The contents of this variable is passed to all target `configure'
-     scripts.
-
-
-   In order to avoid shell and `make' quoting issues for complex
-overrides, you can pass a setting for `CONFIG_SITE' and set variables
-in the site file.
 
 
 File: gccinstall.info,  Node: Building,  Next: Testing,  Prev: Configuration,  Up: Installing GCC
@@ -4784,7 +4784,7 @@ Concept Index
 * Menu:
 
 * Binaries:                              Binaries.           (line    6)
-* build_configargs:                      Configuration.      (line 1739)
+* build_configargs:                      Configuration.      (line 1505)
 * Configuration:                         Configuration.      (line    6)
 * configurations supported by GCC:       Configurations.     (line    6)
 * Downloading GCC:                       Downloading the source.
@@ -4794,7 +4794,7 @@ Concept Index
 * FDL, GNU Free Documentation License:   GNU Free Documentation License.
                                                              (line    6)
 * Host specific installation:            Specific.           (line    6)
-* host_configargs:                       Configuration.      (line 1743)
+* host_configargs:                       Configuration.      (line 1509)
 * Installing GCC: Binaries:              Binaries.           (line    6)
 * Installing GCC: Building:              Building.           (line    6)
 * Installing GCC: Configuration:         Configuration.      (line    6)
@@ -4804,7 +4804,7 @@ Concept Index
 * Specific installation notes:           Specific.           (line    6)
 * Target specific installation:          Specific.           (line    6)
 * Target specific installation notes:    Specific.           (line    6)
-* target_configargs:                     Configuration.      (line 1747)
+* target_configargs:                     Configuration.      (line 1513)
 * Testing:                               Testing.            (line    6)
 * Testsuite:                             Testing.            (line    6)
 

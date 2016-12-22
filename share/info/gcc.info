@@ -1,5 +1,5 @@
 This is doc/gcc.info, produced by makeinfo version 4.8 from
-/Volumes/arm-linux-toolchain/rpi3/build/src/gcc-6.2.0/gcc/doc/gcc.texi.
+/Volumes/arm-linux-toolchain/rpi3/build/src/gcc-6.3.0/gcc/doc/gcc.texi.
 
  Copyright (C) 1988-2016 Free Software Foundation, Inc.
 
@@ -60,7 +60,7 @@ Introduction
 This manual documents how to use the GNU compilers, as well as their
 features and incompatibilities, and how to report bugs.  It corresponds
 to the compilers (crosstool-NG crosstool-ng-1.22.0-234-g531eab4)
-version 6.2.0.  The internals of the GNU compilers, including how to
+version 6.3.0.  The internals of the GNU compilers, including how to
 port them to new targets and some information about how to write front
 ends for new languages, are documented in a separate manual.  *Note
 Introduction: (gccint)Top.
@@ -35594,13 +35594,14 @@ operations together with checking whether the operations overflowed.
  -- Built-in Function: bool __builtin_saddl_overflow (long int a, long
           int b, long int *res)
  -- Built-in Function: bool __builtin_saddll_overflow (long long int a,
-          long long int b, long int *res)
+          long long int b, long long int *res)
  -- Built-in Function: bool __builtin_uadd_overflow (unsigned int a,
           unsigned int b, unsigned int *res)
  -- Built-in Function: bool __builtin_uaddl_overflow (unsigned long int
           a, unsigned long int b, unsigned long int *res)
  -- Built-in Function: bool __builtin_uaddll_overflow (unsigned long
-          long int a, unsigned long long int b, unsigned long int *res)
+          long int a, unsigned long long int b, unsigned long long int
+          *res)
      These built-in functions promote the first two operands into
      infinite precision signed type and perform addition on those
      promoted operands.  The result is then cast to the type the third
@@ -35626,13 +35627,14 @@ operations together with checking whether the operations overflowed.
  -- Built-in Function: bool __builtin_ssubl_overflow (long int a, long
           int b, long int *res)
  -- Built-in Function: bool __builtin_ssubll_overflow (long long int a,
-          long long int b, long int *res)
+          long long int b, long long int *res)
  -- Built-in Function: bool __builtin_usub_overflow (unsigned int a,
           unsigned int b, unsigned int *res)
  -- Built-in Function: bool __builtin_usubl_overflow (unsigned long int
           a, unsigned long int b, unsigned long int *res)
  -- Built-in Function: bool __builtin_usubll_overflow (unsigned long
-          long int a, unsigned long long int b, unsigned long int *res)
+          long int a, unsigned long long int b, unsigned long long int
+          *res)
      These built-in functions are similar to the add overflow checking
      built-in functions above, except they perform subtraction,
      subtract the second argument from the first one, instead of
@@ -35646,13 +35648,14 @@ operations together with checking whether the operations overflowed.
  -- Built-in Function: bool __builtin_smull_overflow (long int a, long
           int b, long int *res)
  -- Built-in Function: bool __builtin_smulll_overflow (long long int a,
-          long long int b, long int *res)
+          long long int b, long long int *res)
  -- Built-in Function: bool __builtin_umul_overflow (unsigned int a,
           unsigned int b, unsigned int *res)
  -- Built-in Function: bool __builtin_umull_overflow (unsigned long int
           a, unsigned long int b, unsigned long int *res)
  -- Built-in Function: bool __builtin_umulll_overflow (unsigned long
-          long int a, unsigned long long int b, unsigned long int *res)
+          long int a, unsigned long long int b, unsigned long long int
+          *res)
      These built-in functions are similar to the add overflow checking
      built-in functions above, except they perform multiplication,
      instead of addition.
@@ -42346,10 +42349,8 @@ File: gcc.info,  Node: SPU Built-in Functions,  Next: TI C6X Built-in Functions,
 ------------------------------
 
 GCC provides extensions for the SPU processor as described in the
-Sony/Toshiba/IBM SPU Language Extensions Specification, which can be
-found at `http://cell.scei.co.jp/' or
-`http://www.ibm.com/developerworks/power/cell/'.  GCC's implementation
-differs in several ways.
+Sony/Toshiba/IBM SPU Language Extensions Specification.  GCC's
+implementation differs in several ways.
 
    * The optional extension of specifying vector constants in
      parentheses is not supported.
@@ -55053,7 +55054,7 @@ Keyword Index
 * __builtin_isunordered:                 Other Builtins.     (line    6)
 * __builtin_LINE:                        Other Builtins.     (line  461)
 * __builtin_mul_overflow:                Integer Overflow Builtins.
-                                                             (line   63)
+                                                             (line   65)
 * __builtin_nan:                         Other Builtins.     (line  584)
 * __builtin_nand128:                     Other Builtins.     (line  606)
 * __builtin_nand32:                      Other Builtins.     (line  600)
@@ -55155,19 +55156,19 @@ Keyword Index
 * __builtin_sh_set_fpscr:                SH Built-in Functions.
                                                              (line   39)
 * __builtin_smul_overflow:               Integer Overflow Builtins.
-                                                             (line   65)
-* __builtin_smull_overflow:              Integer Overflow Builtins.
                                                              (line   67)
-* __builtin_smulll_overflow:             Integer Overflow Builtins.
+* __builtin_smull_overflow:              Integer Overflow Builtins.
                                                              (line   69)
+* __builtin_smulll_overflow:             Integer Overflow Builtins.
+                                                             (line   71)
 * __builtin_ssub_overflow:               Integer Overflow Builtins.
-                                                             (line   45)
+                                                             (line   46)
 * __builtin_ssubl_overflow:              Integer Overflow Builtins.
-                                                             (line   47)
+                                                             (line   48)
 * __builtin_ssubll_overflow:             Integer Overflow Builtins.
-                                                             (line   49)
+                                                             (line   50)
 * __builtin_sub_overflow:                Integer Overflow Builtins.
-                                                             (line   43)
+                                                             (line   44)
 * __builtin_tabort:                      S/390 System z Built-in Functions.
                                                              (line   87)
 * __builtin_tbegin:                      S/390 System z Built-in Functions.
@@ -55195,20 +55196,20 @@ Keyword Index
 * __builtin_uaddl_overflow:              Integer Overflow Builtins.
                                                              (line   21)
 * __builtin_uaddll_overflow:             Integer Overflow Builtins.
-                                                             (line   23)
+                                                             (line   24)
 * __builtin_umul_overflow:               Integer Overflow Builtins.
-                                                             (line   71)
-* __builtin_umull_overflow:              Integer Overflow Builtins.
                                                              (line   73)
-* __builtin_umulll_overflow:             Integer Overflow Builtins.
+* __builtin_umull_overflow:              Integer Overflow Builtins.
                                                              (line   75)
+* __builtin_umulll_overflow:             Integer Overflow Builtins.
+                                                             (line   78)
 * __builtin_unreachable:                 Other Builtins.     (line  393)
 * __builtin_usub_overflow:               Integer Overflow Builtins.
-                                                             (line   51)
+                                                             (line   52)
 * __builtin_usubl_overflow:              Integer Overflow Builtins.
-                                                             (line   53)
+                                                             (line   54)
 * __builtin_usubll_overflow:             Integer Overflow Builtins.
-                                                             (line   55)
+                                                             (line   57)
 * __builtin_va_arg_pack:                 Constructing Calls. (line   53)
 * __builtin_va_arg_pack_len:             Constructing Calls. (line   76)
 * __complex__ keyword:                   Complex.            (line    6)
@@ -57422,151 +57423,151 @@ Node: Offsetof1425853
 Node: __sync Builtins1426694
 Node: __atomic Builtins1433139
 Node: Integer Overflow Builtins1446629
-Node: x86 specific memory model extensions for transactional memory1450759
-Node: Object Size Checking1452030
-Node: Pointer Bounds Checker builtins1457536
-Node: Cilk Plus Builtins1463542
-Node: Other Builtins1464458
-Node: Target Builtins1499023
-Node: AArch64 Built-in Functions1500515
-Node: Alpha Built-in Functions1500970
-Node: Altera Nios II Built-in Functions1504018
-Node: ARC Built-in Functions1508385
-Node: ARC SIMD Built-in Functions1513596
-Node: ARM iWMMXt Built-in Functions1522492
-Node: ARM C Language Extensions (ACLE)1529488
-Node: ARM Floating Point Status and Control Intrinsics1530765
-Node: AVR Built-in Functions1531241
-Node: Blackfin Built-in Functions1534340
-Node: FR-V Built-in Functions1534959
-Node: Argument Types1535825
-Node: Directly-mapped Integer Functions1537579
-Node: Directly-mapped Media Functions1538663
-Node: Raw read/write Functions1545697
-Node: Other Built-in Functions1546611
-Node: MIPS DSP Built-in Functions1547797
-Node: MIPS Paired-Single Support1560295
-Node: MIPS Loongson Built-in Functions1561794
-Node: Paired-Single Arithmetic1568314
-Node: Paired-Single Built-in Functions1569262
-Node: MIPS-3D Built-in Functions1571929
-Node: Other MIPS Built-in Functions1577306
-Node: MSP430 Built-in Functions1578311
-Node: NDS32 Built-in Functions1579712
-Node: picoChip Built-in Functions1581005
-Node: PowerPC Built-in Functions1582349
-Node: PowerPC AltiVec/VSX Built-in Functions1595146
-Node: PowerPC Hardware Transactional Memory Built-in Functions1741679
-Node: RX Built-in Functions1750170
-Node: S/390 System z Built-in Functions1754203
-Node: SH Built-in Functions1759438
-Node: SPARC VIS Built-in Functions1761166
-Node: SPU Built-in Functions1768092
-Node: TI C6X Built-in Functions1769908
-Node: TILE-Gx Built-in Functions1770932
-Node: TILEPro Built-in Functions1772049
-Node: x86 Built-in Functions1773147
-Node: x86 transactional memory intrinsics1833112
-Node: Target Format Checks1836332
-Node: Solaris Format Checks1836764
-Node: Darwin Format Checks1837190
-Node: Pragmas1838008
-Node: AArch64 Pragmas1838781
-Node: ARM Pragmas1839238
-Node: M32C Pragmas1839865
-Node: MeP Pragmas1840939
-Node: RS/6000 and PowerPC Pragmas1843008
-Node: S/390 Pragmas1843748
-Node: Darwin Pragmas1844314
-Node: Solaris Pragmas1845367
-Node: Symbol-Renaming Pragmas1846528
-Node: Structure-Layout Pragmas1848141
-Node: Weak Pragmas1850428
-Node: Diagnostic Pragmas1851163
-Node: Visibility Pragmas1854270
-Node: Push/Pop Macro Pragmas1854955
-Node: Function Specific Option Pragmas1855927
-Node: Loop-Specific Pragmas1857772
-Node: Unnamed Fields1858862
-Node: Thread-Local1861060
-Node: C99 Thread-Local Edits1863165
-Node: C++98 Thread-Local Edits1865177
-Node: Binary constants1868621
-Node: C++ Extensions1869292
-Node: C++ Volatiles1871070
-Node: Restricted Pointers1873418
-Node: Vague Linkage1875009
-Node: C++ Interface1878633
-Ref: C++ Interface-Footnote-11882426
-Node: Template Instantiation1882562
-Node: Bound member functions1890046
-Node: C++ Attributes1891578
-Node: Function Multiversioning1896020
-Node: Namespace Association1897835
-Node: Type Traits1899215
-Node: C++ Concepts1905702
-Node: Java Exceptions1907193
-Node: Deprecated Features1908584
-Node: Backwards Compatibility1911549
-Node: Objective-C1912901
-Node: GNU Objective-C runtime API1913510
-Node: Modern GNU Objective-C runtime API1914517
-Node: Traditional GNU Objective-C runtime API1916954
-Node: Executing code before main1917682
-Node: What you can and what you cannot do in +load1920424
-Node: Type encoding1922796
-Node: Legacy type encoding1927872
-Node: @encode1928963
-Node: Method signatures1929508
-Node: Garbage Collection1931503
-Node: Constant string objects1934192
-Node: compatibility_alias1936700
-Node: Exceptions1937426
-Node: Synchronization1940137
-Node: Fast enumeration1941321
-Node: Using fast enumeration1941633
-Node: c99-like fast enumeration syntax1942844
-Node: Fast enumeration details1943547
-Node: Fast enumeration protocol1945888
-Node: Messaging with the GNU Objective-C runtime1949040
-Node: Dynamically registering methods1950411
-Node: Forwarding hook1952102
-Node: Compatibility1955142
-Node: Gcov1961709
-Node: Gcov Intro1962244
-Node: Invoking Gcov1964962
-Node: Gcov and Optimization1979208
-Node: Gcov Data Files1982208
-Node: Cross-profiling1983603
-Node: Gcov-tool1985454
-Node: Gcov-tool Intro1985877
-Node: Invoking Gcov-tool1987838
-Node: Trouble1990386
-Node: Actual Bugs1991803
-Node: Interoperation1992250
-Node: Incompatibilities1999142
-Node: Fixed Headers2007293
-Node: Standard Libraries2008956
-Node: Disappointments2010328
-Node: C++ Misunderstandings2014686
-Node: Static Definitions2015497
-Node: Name lookup2016550
-Ref: Name lookup-Footnote-12021328
-Node: Temporaries2021515
-Node: Copy Assignment2023491
-Node: Non-bugs2025298
-Node: Warnings and Errors2035805
-Node: Bugs2037567
-Node: Bug Criteria2038034
-Node: Bug Reporting2040244
-Node: Service2040465
-Node: Contributing2041284
-Node: Funding2042024
-Node: GNU Project2044513
-Node: Copying2045159
-Node: GNU Free Documentation License2082687
-Node: Contributors2107824
-Node: Option Index2146633
-Node: Keyword Index2385788
+Node: x86 specific memory model extensions for transactional memory1450819
+Node: Object Size Checking1452090
+Node: Pointer Bounds Checker builtins1457596
+Node: Cilk Plus Builtins1463602
+Node: Other Builtins1464518
+Node: Target Builtins1499083
+Node: AArch64 Built-in Functions1500575
+Node: Alpha Built-in Functions1501030
+Node: Altera Nios II Built-in Functions1504078
+Node: ARC Built-in Functions1508445
+Node: ARC SIMD Built-in Functions1513656
+Node: ARM iWMMXt Built-in Functions1522552
+Node: ARM C Language Extensions (ACLE)1529548
+Node: ARM Floating Point Status and Control Intrinsics1530825
+Node: AVR Built-in Functions1531301
+Node: Blackfin Built-in Functions1534400
+Node: FR-V Built-in Functions1535019
+Node: Argument Types1535885
+Node: Directly-mapped Integer Functions1537639
+Node: Directly-mapped Media Functions1538723
+Node: Raw read/write Functions1545757
+Node: Other Built-in Functions1546671
+Node: MIPS DSP Built-in Functions1547857
+Node: MIPS Paired-Single Support1560355
+Node: MIPS Loongson Built-in Functions1561854
+Node: Paired-Single Arithmetic1568374
+Node: Paired-Single Built-in Functions1569322
+Node: MIPS-3D Built-in Functions1571989
+Node: Other MIPS Built-in Functions1577366
+Node: MSP430 Built-in Functions1578371
+Node: NDS32 Built-in Functions1579772
+Node: picoChip Built-in Functions1581065
+Node: PowerPC Built-in Functions1582409
+Node: PowerPC AltiVec/VSX Built-in Functions1595206
+Node: PowerPC Hardware Transactional Memory Built-in Functions1741739
+Node: RX Built-in Functions1750230
+Node: S/390 System z Built-in Functions1754263
+Node: SH Built-in Functions1759498
+Node: SPARC VIS Built-in Functions1761226
+Node: SPU Built-in Functions1768152
+Node: TI C6X Built-in Functions1769868
+Node: TILE-Gx Built-in Functions1770892
+Node: TILEPro Built-in Functions1772009
+Node: x86 Built-in Functions1773107
+Node: x86 transactional memory intrinsics1833072
+Node: Target Format Checks1836292
+Node: Solaris Format Checks1836724
+Node: Darwin Format Checks1837150
+Node: Pragmas1837968
+Node: AArch64 Pragmas1838741
+Node: ARM Pragmas1839198
+Node: M32C Pragmas1839825
+Node: MeP Pragmas1840899
+Node: RS/6000 and PowerPC Pragmas1842968
+Node: S/390 Pragmas1843708
+Node: Darwin Pragmas1844274
+Node: Solaris Pragmas1845327
+Node: Symbol-Renaming Pragmas1846488
+Node: Structure-Layout Pragmas1848101
+Node: Weak Pragmas1850388
+Node: Diagnostic Pragmas1851123
+Node: Visibility Pragmas1854230
+Node: Push/Pop Macro Pragmas1854915
+Node: Function Specific Option Pragmas1855887
+Node: Loop-Specific Pragmas1857732
+Node: Unnamed Fields1858822
+Node: Thread-Local1861020
+Node: C99 Thread-Local Edits1863125
+Node: C++98 Thread-Local Edits1865137
+Node: Binary constants1868581
+Node: C++ Extensions1869252
+Node: C++ Volatiles1871030
+Node: Restricted Pointers1873378
+Node: Vague Linkage1874969
+Node: C++ Interface1878593
+Ref: C++ Interface-Footnote-11882386
+Node: Template Instantiation1882522
+Node: Bound member functions1890006
+Node: C++ Attributes1891538
+Node: Function Multiversioning1895980
+Node: Namespace Association1897795
+Node: Type Traits1899175
+Node: C++ Concepts1905662
+Node: Java Exceptions1907153
+Node: Deprecated Features1908544
+Node: Backwards Compatibility1911509
+Node: Objective-C1912861
+Node: GNU Objective-C runtime API1913470
+Node: Modern GNU Objective-C runtime API1914477
+Node: Traditional GNU Objective-C runtime API1916914
+Node: Executing code before main1917642
+Node: What you can and what you cannot do in +load1920384
+Node: Type encoding1922756
+Node: Legacy type encoding1927832
+Node: @encode1928923
+Node: Method signatures1929468
+Node: Garbage Collection1931463
+Node: Constant string objects1934152
+Node: compatibility_alias1936660
+Node: Exceptions1937386
+Node: Synchronization1940097
+Node: Fast enumeration1941281
+Node: Using fast enumeration1941593
+Node: c99-like fast enumeration syntax1942804
+Node: Fast enumeration details1943507
+Node: Fast enumeration protocol1945848
+Node: Messaging with the GNU Objective-C runtime1949000
+Node: Dynamically registering methods1950371
+Node: Forwarding hook1952062
+Node: Compatibility1955102
+Node: Gcov1961669
+Node: Gcov Intro1962204
+Node: Invoking Gcov1964922
+Node: Gcov and Optimization1979168
+Node: Gcov Data Files1982168
+Node: Cross-profiling1983563
+Node: Gcov-tool1985414
+Node: Gcov-tool Intro1985837
+Node: Invoking Gcov-tool1987798
+Node: Trouble1990346
+Node: Actual Bugs1991763
+Node: Interoperation1992210
+Node: Incompatibilities1999102
+Node: Fixed Headers2007253
+Node: Standard Libraries2008916
+Node: Disappointments2010288
+Node: C++ Misunderstandings2014646
+Node: Static Definitions2015457
+Node: Name lookup2016510
+Ref: Name lookup-Footnote-12021288
+Node: Temporaries2021475
+Node: Copy Assignment2023451
+Node: Non-bugs2025258
+Node: Warnings and Errors2035765
+Node: Bugs2037527
+Node: Bug Criteria2037994
+Node: Bug Reporting2040204
+Node: Service2040425
+Node: Contributing2041244
+Node: Funding2041984
+Node: GNU Project2044473
+Node: Copying2045119
+Node: GNU Free Documentation License2082647
+Node: Contributors2107784
+Node: Option Index2146593
+Node: Keyword Index2385748
 
 End Tag Table
