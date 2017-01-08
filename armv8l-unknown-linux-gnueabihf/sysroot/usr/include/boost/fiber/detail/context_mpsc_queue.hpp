@@ -1,11 +1,13 @@
 
-//          Copyright Oliver Kowalke 2013.
+//          Copyright Dmitry Vyukov 2010-2011.
+//          Copyright Oliver Kowalke 2016.
 // Distributed under the Boost Software License, Version 1.0.
 //    (See accompanying file LICENSE_1_0.txt or copy at
 //          http://www.boost.org/LICENSE_1_0.txt)
 //
 // based on Dmitry Vyukov's intrusive MPSC queue
 // http://www.1024cores.net/home/lock-free-algorithms/queues/intrusive-mpsc-node-based-queue
+// https://groups.google.com/forum/#!topic/lock-free/aFHvZhu1G-0
 
 #ifndef BOOST_FIBERS_DETAIL_CONTEXT_MPSC_QUEUE_H
 #define BOOST_FIBERS_DETAIL_CONTEXT_MPSC_QUEUE_H
