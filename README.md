@@ -5,8 +5,8 @@ A cross-compiler toolchain for macOS (10.12) host and armv8l-linux-gnueabihf tar
 Checkout to /usr/local/armv8l-unknown-linux-gnueabihf and add /usr/local/armv8l-unknown-linux-gnueabihf/bin to PATH.
 
 #### Components and Versions
-* gcc 6.2.0, glibc 2.24, binutils 2.26, gdb 7.11.1 (built with crosstool-ng)
-* boost 1.62.0
+* gcc 5.4.0, glibc 2.24, binutils 2.26, gdb 7.11.1 (built with crosstool-ng)
+* boost 1.63.0
 * OpenCV 3.1.0
 * Raspicam (https://github.com/cedricve/raspicam)
 * Qt 5
