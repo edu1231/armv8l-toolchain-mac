@@ -1,7 +1,7 @@
 
 
 
-set(_GL_INCDIRS "/=/usr/include/vc" "/=/usr/include/vc/interface/vcos/pthreads" "/=/usr/include/vc/interface/vmcs_host/linux")
+set(_GL_INCDIRS "/usr/local/armv8l-unknown-linux-gnueabihf/armv8l-unknown-linux-gnueabihf/sysroot/usr/include/vc" "/usr/local/armv8l-unknown-linux-gnueabihf/armv8l-unknown-linux-gnueabihf/sysroot/usr/include/vc/interface/vcos/pthreads" "/usr/local/armv8l-unknown-linux-gnueabihf/armv8l-unknown-linux-gnueabihf/sysroot/usr/include/vc/interface/vmcs_host/linux")
 find_path(_qt5gui_OPENGL_INCLUDE_DIR GLES2/gl2.h
     PATHS ${_GL_INCDIRS}
 )
