@@ -71,9 +71,9 @@ macro(_qt5gui_find_extra_libs Name Libs LibDir IncDirs)
 endmacro()
 
 
-_qt5gui_find_extra_libs(EGL "-Wl,-rpath-link,/usr/local/armv8l-unknown-linux-gnueabihf/armv8l-unknown-linux-gnueabihf/sysroot/usr/lib/vc;EGL;GLESv2" "/=/usr/lib/vc" "/usr/local/armv8l-unknown-linux-gnueabihf/armv8l-unknown-linux-gnueabihf/sysroot/=/usr/include/vc;/usr/local/armv8l-unknown-linux-gnueabihf/armv8l-unknown-linux-gnueabihf/sysroot/=/usr/include/vc/interface/vcos/pthreads;/usr/local/armv8l-unknown-linux-gnueabihf/armv8l-unknown-linux-gnueabihf/sysroot/=/usr/include/vc/interface/vmcs_host/linux")
+_qt5gui_find_extra_libs(EGL "-Wl,-rpath-link,/usr/local/armv8l-unknown-linux-gnueabihf/armv8l-unknown-linux-gnueabihf/sysroot/usr/lib/vc;EGL;GLESv2" "/usr/local/armv8l-unknown-linux-gnueabihf/armv8l-unknown-linux-gnueabihf/sysroot/usr/lib/vc" "/usr/local/armv8l-unknown-linux-gnueabihf/armv8l-unknown-linux-gnueabihf/sysroot/usr/include/vc;/usr/local/armv8l-unknown-linux-gnueabihf/armv8l-unknown-linux-gnueabihf/sysroot/usr/include/vc/interface/vcos/pthreads;/usr/local/armv8l-unknown-linux-gnueabihf/armv8l-unknown-linux-gnueabihf/sysroot/usr/include/vc/interface/vmcs_host/linux")
 
-_qt5gui_find_extra_libs(OPENGL "-Wl,-rpath-link,/usr/local/armv8l-unknown-linux-gnueabihf/armv8l-unknown-linux-gnueabihf/sysroot/usr/lib/vc;GLESv2" "/usr/local/armv8l-unknown-linux-gnueabihf/armv8l-unknown-linux-gnueabihf/sysroot/=/usr/lib/vc" "/usr/local/armv8l-unknown-linux-gnueabihf/armv8l-unknown-linux-gnueabihf/sysroot/=/usr/include/vc;/usr/local/armv8l-unknown-linux-gnueabihf/armv8l-unknown-linux-gnueabihf/sysroot/=/usr/include/vc/interface/vcos/pthreads;/usr/local/armv8l-unknown-linux-gnueabihf/armv8l-unknown-linux-gnueabihf/sysroot/=/usr/include/vc/interface/vmcs_host/linux")
+_qt5gui_find_extra_libs(OPENGL "-Wl,-rpath-link,/usr/local/armv8l-unknown-linux-gnueabihf/armv8l-unknown-linux-gnueabihf/sysroot/usr/lib/vc;GLESv2" "/usr/local/armv8l-unknown-linux-gnueabihf/armv8l-unknown-linux-gnueabihf/sysroot/usr/lib/vc" "/usr/local/armv8l-unknown-linux-gnueabihf/armv8l-unknown-linux-gnueabihf/sysroot/usr/include/vc;/usr/local/armv8l-unknown-linux-gnueabihf/armv8l-unknown-linux-gnueabihf/sysroot/=/usr/include/vc/interface/vcos/pthreads;/usr/local/armv8l-unknown-linux-gnueabihf/armv8l-unknown-linux-gnueabihf/sysroot/usr/include/vc/interface/vmcs_host/linux")
 
 
 

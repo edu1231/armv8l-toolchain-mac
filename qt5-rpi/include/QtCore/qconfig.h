@@ -9,7 +9,7 @@
 #define QT_FEATURE_c__14 1
 #define QT_FEATURE_c__1z 1
 #define QT_FEATURE_concurrent 1
-#define QT_FEATURE_pkg_config -1
+#define QT_FEATURE_pkg_config 1
 #define QT_FEATURE_force_asserts -1
 #define QT_LARGEFILE_SUPPORT 64
 #define QT_COMPILER_SUPPORTS_NEON 1
