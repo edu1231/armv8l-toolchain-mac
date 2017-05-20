@@ -1,12 +1,12 @@
 This is stabs.info, produced by makeinfo version 4.8 from
-../../../src/gdb-7.11.1/gdb/doc/stabs.texinfo.
+../../../src/gdb-7.12.1/gdb/doc/stabs.texinfo.
 
 INFO-DIR-SECTION Software development
 START-INFO-DIR-ENTRY
 * Stabs: (stabs).                 The "stabs" debugging information format.
 END-INFO-DIR-ENTRY
 
-   Copyright (C) 1992-2016 Free Software Foundation, Inc.  Contributed
+   Copyright (C) 1992-2017 Free Software Foundation, Inc.  Contributed
 by Cygnus Support.  Written by Julia Menapace, Jim Kingdon, and David
 MacKenzie.
 
@@ -19,7 +19,7 @@ Free Documentation License".
 
    This document describes the stabs debugging symbol tables.
 
-   Copyright (C) 1992-2016 Free Software Foundation, Inc.  Contributed
+   Copyright (C) 1992-2017 Free Software Foundation, Inc.  Contributed
 by Cygnus Support.  Written by Julia Menapace, Jim Kingdon, and David
 MacKenzie.
 
