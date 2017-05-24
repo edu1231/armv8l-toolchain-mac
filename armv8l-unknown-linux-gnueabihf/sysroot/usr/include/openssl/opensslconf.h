@@ -8,32 +8,32 @@ extern "C" {
 #ifndef OPENSSL_DOING_MAKEDEPEND
 
 
-#ifndef OPENSSL_NO_EC2M
-# define OPENSSL_NO_EC2M
-#endif
 #ifndef OPENSSL_NO_EC_NISTP_64_GCC_128
 # define OPENSSL_NO_EC_NISTP_64_GCC_128
 #endif
 #ifndef OPENSSL_NO_GMP
 # define OPENSSL_NO_GMP
 #endif
-#ifndef OPENSSL_NO_GOST
-# define OPENSSL_NO_GOST
-#endif
 #ifndef OPENSSL_NO_JPAKE
 # define OPENSSL_NO_JPAKE
+#endif
+#ifndef OPENSSL_NO_KRB5
+# define OPENSSL_NO_KRB5
 #endif
 #ifndef OPENSSL_NO_LIBUNBOUND
 # define OPENSSL_NO_LIBUNBOUND
 #endif
-#ifndef OPENSSL_NO_MDC2
-# define OPENSSL_NO_MDC2
+#ifndef OPENSSL_NO_MD2
+# define OPENSSL_NO_MD2
 #endif
-#ifndef OPENSSL_NO_RSAX
-# define OPENSSL_NO_RSAX
+#ifndef OPENSSL_NO_RC5
+# define OPENSSL_NO_RC5
 #endif
-#ifndef OPENSSL_NO_SRP
-# define OPENSSL_NO_SRP
+#ifndef OPENSSL_NO_RFC3779
+# define OPENSSL_NO_RFC3779
+#endif
+#ifndef OPENSSL_NO_SCTP
+# define OPENSSL_NO_SCTP
 #endif
 #ifndef OPENSSL_NO_SSL_TRACE
 # define OPENSSL_NO_SSL_TRACE
@@ -56,11 +56,8 @@ extern "C" {
 #ifndef OPENSSL_THREADS
 # define OPENSSL_THREADS
 #endif
-#ifndef OPENSSL_NO_STATIC_ENGINE
-# define OPENSSL_NO_STATIC_ENGINE
-#endif
-#ifndef OPENSSL_FIPS
-# define OPENSSL_FIPS
+#ifndef OPENSSL_NO_DYNAMIC_ENGINE
+# define OPENSSL_NO_DYNAMIC_ENGINE
 #endif
 
 /* The OPENSSL_NO_* macros are also defined as NO_* if the application
@@ -68,32 +65,32 @@ extern "C" {
    who haven't had the time to do the appropriate changes in their
    applications.  */
 #ifdef OPENSSL_ALGORITHM_DEFINES
-# if defined(OPENSSL_NO_EC2M) && !defined(NO_EC2M)
-#  define NO_EC2M
-# endif
 # if defined(OPENSSL_NO_EC_NISTP_64_GCC_128) && !defined(NO_EC_NISTP_64_GCC_128)
 #  define NO_EC_NISTP_64_GCC_128
 # endif
 # if defined(OPENSSL_NO_GMP) && !defined(NO_GMP)
 #  define NO_GMP
 # endif
-# if defined(OPENSSL_NO_GOST) && !defined(NO_GOST)
-#  define NO_GOST
-# endif
 # if defined(OPENSSL_NO_JPAKE) && !defined(NO_JPAKE)
 #  define NO_JPAKE
+# endif
+# if defined(OPENSSL_NO_KRB5) && !defined(NO_KRB5)
+#  define NO_KRB5
 # endif
 # if defined(OPENSSL_NO_LIBUNBOUND) && !defined(NO_LIBUNBOUND)
 #  define NO_LIBUNBOUND
 # endif
-# if defined(OPENSSL_NO_MDC2) && !defined(NO_MDC2)
-#  define NO_MDC2
+# if defined(OPENSSL_NO_MD2) && !defined(NO_MD2)
+#  define NO_MD2
 # endif
-# if defined(OPENSSL_NO_RSAX) && !defined(NO_RSAX)
-#  define NO_RSAX
+# if defined(OPENSSL_NO_RC5) && !defined(NO_RC5)
+#  define NO_RC5
 # endif
-# if defined(OPENSSL_NO_SRP) && !defined(NO_SRP)
-#  define NO_SRP
+# if defined(OPENSSL_NO_RFC3779) && !defined(NO_RFC3779)
+#  define NO_RFC3779
+# endif
+# if defined(OPENSSL_NO_SCTP) && !defined(NO_SCTP)
+#  define NO_SCTP
 # endif
 # if defined(OPENSSL_NO_SSL_TRACE) && !defined(NO_SSL_TRACE)
 #  define NO_SSL_TRACE
@@ -112,36 +109,17 @@ extern "C" {
 # endif
 #endif
 
-#define OPENSSL_CPUID_OBJ
-
 /* crypto/opensslconf.h.in */
-
-#ifdef OPENSSL_DOING_MAKEDEPEND
-
-/* Include any symbols here that have to be explicitly set to enable a feature
- * that should be visible to makedepend.
- *
- * [Our "make depend" doesn't actually look at this, we use actual build settings
- * instead; we want to make it easy to remove subdirectories with disabled algorithms.]
- */
-
-#ifndef OPENSSL_FIPS
-#define OPENSSL_FIPS
-#endif
-
-#endif
 
 /* Generate 80386 code? */
 #undef I386_ONLY
 
 #if !(defined(VMS) || defined(__VMS)) /* VMS uses logical names instead */
 #if defined(HEADER_CRYPTLIB_H) && !defined(OPENSSLDIR)
-#define ENGINESDIR "/usr/lib/openssl/engines"
-#define OPENSSLDIR "/etc/pki/tls"
+#define ENGINESDIR "/usr/local/armv8l-unknown-linux-gnueabihf/armv8l-unknown-linux-gnueabihf/sysroot/usr/lib/engines"
+#define OPENSSLDIR "/usr/local/armv8l-unknown-linux-gnueabihf/armv8l-unknown-linux-gnueabihf/sysroot/etc/openssl"
 #endif
 #endif
-
-#define SYSTEM_CIPHERS_FILE "/etc/crypto-policies/back-ends/openssl.config"
 
 #undef OPENSSL_UNISTD
 #define OPENSSL_UNISTD <unistd.h>
