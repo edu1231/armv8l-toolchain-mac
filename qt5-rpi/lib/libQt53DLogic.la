@@ -10,7 +10,7 @@ library_names='  '
 old_library='libQt53DLogic.a'
 
 # Libraries that this one depends upon.
-dependency_libs='-L=/usr/lib/vc -L=/usr/local/armv8l-unknown-linux-gnueabihf/qt5-rpi/lib -lQt53DCore -L=/usr/local/armv8l-unknown-linux-gnueabihf/qt5-rpi/lib -Wl,-rpath-link,/usr/local/armv8l-unknown-linux-gnueabihf/armv8l-unknown-linux-gnueabihf/sysroot/usr/lib/vc -Wl,-rpath-link,/usr/local/armv8l-unknown-linux-gnueabihf/armv8l-unknown-linux-gnueabihf/sysroot/usr/lib/vc -lQt5Gui -Wl,-rpath-link,/usr/local/armv8l-unknown-linux-gnueabihf/armv8l-unknown-linux-gnueabihf/sysroot/usr/lib/vc -lGLESv2 -lqtlibpng -lqtharfbuzz -lQt5Network -lQt5Core -lm -lrt -lz -lqtpcre -ldl -lpthread '
+dependency_libs='-L=/usr/lib/vc -L=/usr/local/armv8l-unknown-linux-gnueabihf/qt5-rpi/lib -lQt53DCore -L=/usr/local/armv8l-unknown-linux-gnueabihf/qt5-rpi/lib -Wl,-rpath-link,/usr/local/armv8l-unknown-linux-gnueabihf/armv8l-unknown-linux-gnueabihf/sysroot/usr/lib/vc -Wl,-rpath-link,/usr/local/armv8l-unknown-linux-gnueabihf/armv8l-unknown-linux-gnueabihf/sysroot/usr/lib/vc -lQt5Gui -Wl,-rpath-link,/usr/local/armv8l-unknown-linux-gnueabihf/armv8l-unknown-linux-gnueabihf/sysroot/usr/lib/vc -lGLESv2_static -lqtlibpng -lqtharfbuzz -lQt5Network -lQt5Core -lm -lrt -lz -lqtpcre -ldl -lpthread '
 
 # Version information for libQt53DLogic.la
 current=58
