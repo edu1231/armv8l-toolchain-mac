@@ -10,7 +10,7 @@
 #define QT_FEATURE_qml_debug 1
 #define QT_FEATURE_reduce_exports 1
 #define QT_FEATURE_reduce_relocations -1
-#define QT_FEATURE_release_tools 1
+#define QT_FEATURE_release_tools -1
 #define QT_FEATURE_sql 1
 #define QT_FEATURE_system_zlib 1
 #define QT_FEATURE_testlib 1
