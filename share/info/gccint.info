@@ -1,5 +1,5 @@
 This is doc/gccint.info, produced by makeinfo version 4.8 from
-/Volumes/arm-linux-toolchain/rpi3/build/src/gcc-7.1.0/gcc/doc/gccint.texi.
+/Volumes/arm-linux-toolchain/rpi3/build/src/gcc-7.2.0/gcc/doc/gccint.texi.
 
  Copyright (C) 1988-2017 Free Software Foundation, Inc.
 
@@ -58,7 +58,7 @@ This manual documents the internals of the GNU compilers, including how
 to port them to new targets and some information about how to write
 front ends for new languages.  It corresponds to the compilers
 (crosstool-NG crosstool-ng-1.22.0-234-g531eab4c-dirty) version
-7.1.0.  The use of the GNU compilers is documented in a separate
+7.2.0.  The use of the GNU compilers is documented in a separate
 manual.  *Note Introduction: (gcc)Top.
 
  This manual is mainly a reference manual rather than a tutorial.  It
