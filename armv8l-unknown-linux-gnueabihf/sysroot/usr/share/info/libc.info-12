@@ -1,5 +1,5 @@
 This is
-/Volumes/arm-linux-toolchain/rpi3/build/armv8l-unknown-linux-gnueabihf/build/build-libc-final/multilib_./manual/libc.info,
+/Volumes/arm-linux-toolchain/rpi3/build/armv8l-unknown-linux-gnueabihf/build/build-libc-final/multilib/manual/libc.info,
 produced by makeinfo version 4.8 from libc.texinfo.
 
 INFO-DIR-SECTION Software libraries
@@ -1781,7 +1781,7 @@ END-INFO-DIR-ENTRY
    This file documents the GNU C Library.
 
    This is `The GNU C Library Reference Manual', for version 2.25
-(crosstool-NG crosstool-ng-1.22.0-234-g531eab4c-dirty).
+(crosstool-NG crosstool-ng-1.23.0).
 
    Copyright (C) 1993-2017 Free Software Foundation, Inc.
 
@@ -3773,8 +3773,8 @@ Variable and Constant Macro Index
 * _POSIX_NO_TRUNC:                       Options for Files.   (line  34)
 * _POSIX_SAVED_IDS:                      System Options.      (line  26)
 * _POSIX_SOURCE:                         Feature Test Macros. (line  38)
-* _POSIX_VDISABLE <1>:                   Special Characters.  (line  22)
-* _POSIX_VDISABLE:                       Options for Files.   (line  39)
+* _POSIX_VDISABLE <1>:                   Options for Files.   (line  39)
+* _POSIX_VDISABLE:                       Special Characters.  (line  22)
 * _POSIX_VERSION:                        Version Supported.   (line   7)
 * _REENTRANT:                            Feature Test Macros. (line 185)
 * _SC_2_C_DEV:                           Constants for Sysconf.
@@ -4434,9 +4434,9 @@ Variable and Constant Macro Index
 * EXPR_NEST_MAX:                         Utility Limits.      (line  36)
 * EXTA:                                  Line Speed.          (line  99)
 * EXTB:                                  Line Speed.          (line  99)
-* F_DUPFD <1>:                           Duplicating Descriptors.
+* F_DUPFD <1>:                           Control Operations.  (line  29)
+* F_DUPFD:                               Duplicating Descriptors.
                                                               (line  52)
-* F_DUPFD:                               Control Operations.  (line  29)
 * F_GETFD <1>:                           Control Operations.  (line  34)
 * F_GETFD:                               Descriptor Flags.    (line  19)
 * F_GETFL <1>:                           Getting File Status Flags.
@@ -4771,9 +4771,9 @@ Variable and Constant Macro Index
 * LOG_USER:                              syslog; vsyslog.     (line  27)
 * LOG_UUCP:                              syslog; vsyslog.     (line  48)
 * LOG_WARNING:                           syslog; vsyslog.     (line 110)
-* LOGIN_PROCESS <1>:                     Manipulating the Database.
+* LOGIN_PROCESS <1>:                     XPG Functions.       (line  63)
+* LOGIN_PROCESS:                         Manipulating the Database.
                                                               (line  93)
-* LOGIN_PROCESS:                         XPG Functions.       (line  63)
 * LONG_LONG_MAX:                         Range of Type.       (line  82)
 * LONG_LONG_MIN:                         Range of Type.       (line  81)
 * LONG_MAX:                              Range of Type.       (line  66)

@@ -1,5 +1,5 @@
 This is doc/cpp.info, produced by makeinfo version 4.8 from
-/Volumes/arm-linux-toolchain/rpi3/build/src/gcc-7.1.0/gcc/doc/cpp.texi.
+/Volumes/arm-linux-toolchain/rpi3/build/src/gcc-7.3.0/gcc/doc/cpp.texi.
 
    Copyright (C) 1987-2017 Free Software Foundation, Inc.
 
@@ -5292,8 +5292,8 @@ Concept Index
 * string literals:                       Tokenization.        (line  83)
 * stringizing:                           Stringizing.         (line   6)
 * symbolic constants:                    Object-like Macros.  (line   6)
-* system header files <1>:               System Headers.      (line   6)
-* system header files:                   Header Files.        (line  13)
+* system header files <1>:               Header Files.        (line  13)
+* system header files:                   System Headers.      (line   6)
 * system-specific predefined macros:     System-specific Predefined Macros.
                                                               (line   6)
 * testing predicates:                    Obsolete Features.   (line  37)
