@@ -1,5 +1,5 @@
 This is
-/Volumes/arm-linux-toolchain/rpi3/build/armv8l-unknown-linux-gnueabihf/build/build-libc-final/multilib_./manual/libc.info,
+/Volumes/arm-linux-toolchain/rpi3/build/armv8l-unknown-linux-gnueabihf/build/build-libc-final/multilib/manual/libc.info,
 produced by makeinfo version 4.8 from libc.texinfo.
 
 INFO-DIR-SECTION Software libraries
@@ -1781,7 +1781,7 @@ END-INFO-DIR-ENTRY
    This file documents the GNU C Library.
 
    This is `The GNU C Library Reference Manual', for version 2.25
-(crosstool-NG crosstool-ng-1.22.0-234-g531eab4c-dirty).
+(crosstool-NG crosstool-ng-1.23.0).
 
    Copyright (C) 1993-2017 Free Software Foundation, Inc.
 
@@ -1805,8 +1805,7 @@ Main Menu
 *********
 
 This is `The GNU C Library Reference Manual', for Version 2.25
-(crosstool-NG crosstool-ng-1.22.0-234-g531eab4c-dirty) of the GNU C
-Library.
+(crosstool-NG crosstool-ng-1.23.0) of the GNU C Library.
 
 * Menu:
 

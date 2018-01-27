@@ -1,5 +1,5 @@
 This is
-/Volumes/arm-linux-toolchain/rpi3/build/armv8l-unknown-linux-gnueabihf/build/build-libc-final/multilib_./manual/libc.info,
+/Volumes/arm-linux-toolchain/rpi3/build/armv8l-unknown-linux-gnueabihf/build/build-libc-final/multilib/manual/libc.info,
 produced by makeinfo version 4.8 from libc.texinfo.
 
 INFO-DIR-SECTION Software libraries
@@ -1781,7 +1781,7 @@ END-INFO-DIR-ENTRY
    This file documents the GNU C Library.
 
    This is `The GNU C Library Reference Manual', for version 2.25
-(crosstool-NG crosstool-ng-1.22.0-234-g531eab4c-dirty).
+(crosstool-NG crosstool-ng-1.23.0).
 
    Copyright (C) 1993-2017 Free Software Foundation, Inc.
 
@@ -2876,10 +2876,10 @@ Concept Index
                                                               (line  61)
 * allocation statistics:                 Statistics of Malloc.
                                                               (line   6)
-* alphabetic character <1>:              Classification of Characters.
-                                                              (line  41)
-* alphabetic character:                  Classification of Wide Characters.
+* alphabetic character <1>:              Classification of Wide Characters.
                                                               (line  88)
+* alphabetic character:                  Classification of Characters.
+                                                              (line  41)
 * alphanumeric character <1>:            Classification of Wide Characters.
                                                               (line  73)
 * alphanumeric character:                Classification of Characters.
@@ -3951,10 +3951,10 @@ Concept Index
 * setting an alarm:                      Setting an Alarm.    (line  10)
 * setuid programs:                       How Change Persona.  (line   6)
 * setuid programs and file access:       Testing File Access. (line   6)
-* severity class <1>:                    Printing Formatted Messages.
-                                                              (line  96)
-* severity class:                        Adding Severity Classes.
+* severity class <1>:                    Adding Severity Classes.
                                                               (line   6)
+* severity class:                        Printing Formatted Messages.
+                                                              (line  96)
 * sgettext:                              GUI program problems.
                                                               (line  83)
 * shadow:                                NSS Basics.          (line  26)
