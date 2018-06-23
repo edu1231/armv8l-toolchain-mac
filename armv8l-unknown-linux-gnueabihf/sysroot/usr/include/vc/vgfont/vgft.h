@@ -30,7 +30,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #ifndef VGFT_H
 #define VGFT_H
 
-#include <interface/vcos/vcos.h>
+#include "interface/vcos/vcos.h"
 #include <VG/openvg.h>
 #include <ft2build.h>
 

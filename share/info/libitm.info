@@ -1,7 +1,7 @@
 This is libitm.info, produced by makeinfo version 4.8 from
-/Volumes/arm-linux-toolchain/rpi3/build/src/gcc-7.3.0/libitm/libitm.texi.
+/Volumes/arm-linux-toolchain/rpi3/build/armv8l-unknown-linux-gnueabihf/src/gcc/libitm/libitm.texi.
 
-   Copyright (C) 2011-2017 Free Software Foundation, Inc.
+   Copyright (C) 2011-2018 Free Software Foundation, Inc.
 
    Permission is granted to copy, distribute and/or modify this document
 under the terms of the GNU Free Documentation License, Version 1.2 or
@@ -17,7 +17,7 @@ END-INFO-DIR-ENTRY
 
    This manual documents the GNU Transactional Memory Library.
 
-   Copyright (C) 2011-2017 Free Software Foundation, Inc.
+   Copyright (C) 2011-2018 Free Software Foundation, Inc.
 
    Permission is granted to copy, distribute and/or modify this document
 under the terms of the GNU Free Documentation License, Version 1.2 or
@@ -1308,15 +1308,15 @@ Library Index
 
 
 Tag Table:
-Node: Top1206
-Node: Enabling libitm2109
-Node: C/C++ Language Constructs for TM2503
-Node: The libitm ABI3983
-Ref: txn-code-properties7776
-Node: Internals18830
-Ref: serial-lock-impl28855
-Ref: progress-guarantees33605
-Node: GNU Free Documentation License35879
-Node: Library Index61028
+Node: Top1231
+Node: Enabling libitm2134
+Node: C/C++ Language Constructs for TM2528
+Node: The libitm ABI4008
+Ref: txn-code-properties7801
+Node: Internals18855
+Ref: serial-lock-impl28880
+Ref: progress-guarantees33630
+Node: GNU Free Documentation License35904
+Node: Library Index61053
 
 End Tag Table
