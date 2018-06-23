@@ -19,6 +19,7 @@ START-INFO-DIR-ENTRY
 * BRKINT: (libc)Input Modes.
 * BUFSIZ: (libc)Controlling Buffering.
 * CCTS_OFLOW: (libc)Control Modes.
+* CHAR_BIT: (libc)Width of Type.
 * CHILD_MAX: (libc)General Limits.
 * CIGNORE: (libc)Control Modes.
 * CLK_TCK: (libc)Processor Time.
@@ -232,6 +233,8 @@ START-INFO-DIR-ENTRY
 * HUGE_VAL: (libc)Math Error Reporting.
 * HUGE_VALF: (libc)Math Error Reporting.
 * HUGE_VALL: (libc)Math Error Reporting.
+* HUGE_VAL_FN: (libc)Math Error Reporting.
+* HUGE_VAL_FNx: (libc)Math Error Reporting.
 * HUPCL: (libc)Control Modes.
 * I: (libc)Complex Numbers.
 * ICANON: (libc)Local Modes.
@@ -370,6 +373,8 @@ START-INFO-DIR-ENTRY
 * SIG_ERR: (libc)Basic Signal Handling.
 * SNAN: (libc)Infinity and NaN.
 * SNANF: (libc)Infinity and NaN.
+* SNANFN: (libc)Infinity and NaN.
+* SNANFNx: (libc)Infinity and NaN.
 * SNANL: (libc)Infinity and NaN.
 * SOCK_DGRAM: (libc)Communication Styles.
 * SOCK_RAW: (libc)Communication Styles.
@@ -479,8 +484,12 @@ START-INFO-DIR-ENTRY
 * access: (libc)Testing File Access.
 * acos: (libc)Inverse Trig Functions.
 * acosf: (libc)Inverse Trig Functions.
+* acosfN: (libc)Inverse Trig Functions.
+* acosfNx: (libc)Inverse Trig Functions.
 * acosh: (libc)Hyperbolic Functions.
 * acoshf: (libc)Hyperbolic Functions.
+* acoshfN: (libc)Hyperbolic Functions.
+* acoshfNx: (libc)Hyperbolic Functions.
 * acoshl: (libc)Hyperbolic Functions.
 * acosl: (libc)Inverse Trig Functions.
 * addmntent: (libc)mtab.
@@ -529,8 +538,12 @@ START-INFO-DIR-ENTRY
 * asctime_r: (libc)Formatting Calendar Time.
 * asin: (libc)Inverse Trig Functions.
 * asinf: (libc)Inverse Trig Functions.
+* asinfN: (libc)Inverse Trig Functions.
+* asinfNx: (libc)Inverse Trig Functions.
 * asinh: (libc)Hyperbolic Functions.
 * asinhf: (libc)Hyperbolic Functions.
+* asinhfN: (libc)Hyperbolic Functions.
+* asinhfNx: (libc)Hyperbolic Functions.
 * asinhl: (libc)Hyperbolic Functions.
 * asinl: (libc)Inverse Trig Functions.
 * asprintf: (libc)Dynamic Output.
@@ -538,11 +551,17 @@ START-INFO-DIR-ENTRY
 * assert_perror: (libc)Consistency Checking.
 * atan2: (libc)Inverse Trig Functions.
 * atan2f: (libc)Inverse Trig Functions.
+* atan2fN: (libc)Inverse Trig Functions.
+* atan2fNx: (libc)Inverse Trig Functions.
 * atan2l: (libc)Inverse Trig Functions.
 * atan: (libc)Inverse Trig Functions.
 * atanf: (libc)Inverse Trig Functions.
+* atanfN: (libc)Inverse Trig Functions.
+* atanfNx: (libc)Inverse Trig Functions.
 * atanh: (libc)Hyperbolic Functions.
 * atanhf: (libc)Hyperbolic Functions.
+* atanhfN: (libc)Hyperbolic Functions.
+* atanhfNx: (libc)Hyperbolic Functions.
 * atanhl: (libc)Hyperbolic Functions.
 * atanl: (libc)Inverse Trig Functions.
 * atexit: (libc)Cleanups on Exit.
@@ -566,31 +585,49 @@ START-INFO-DIR-ENTRY
 * bzero: (libc)Copying Strings and Arrays.
 * cabs: (libc)Absolute Value.
 * cabsf: (libc)Absolute Value.
+* cabsfN: (libc)Absolute Value.
+* cabsfNx: (libc)Absolute Value.
 * cabsl: (libc)Absolute Value.
 * cacos: (libc)Inverse Trig Functions.
 * cacosf: (libc)Inverse Trig Functions.
+* cacosfN: (libc)Inverse Trig Functions.
+* cacosfNx: (libc)Inverse Trig Functions.
 * cacosh: (libc)Hyperbolic Functions.
 * cacoshf: (libc)Hyperbolic Functions.
+* cacoshfN: (libc)Hyperbolic Functions.
+* cacoshfNx: (libc)Hyperbolic Functions.
 * cacoshl: (libc)Hyperbolic Functions.
 * cacosl: (libc)Inverse Trig Functions.
 * calloc: (libc)Allocating Cleared Space.
 * canonicalize: (libc)FP Bit Twiddling.
 * canonicalize_file_name: (libc)Symbolic Links.
 * canonicalizef: (libc)FP Bit Twiddling.
+* canonicalizefN: (libc)FP Bit Twiddling.
+* canonicalizefNx: (libc)FP Bit Twiddling.
 * canonicalizel: (libc)FP Bit Twiddling.
 * carg: (libc)Operations on Complex.
 * cargf: (libc)Operations on Complex.
+* cargfN: (libc)Operations on Complex.
+* cargfNx: (libc)Operations on Complex.
 * cargl: (libc)Operations on Complex.
 * casin: (libc)Inverse Trig Functions.
 * casinf: (libc)Inverse Trig Functions.
+* casinfN: (libc)Inverse Trig Functions.
+* casinfNx: (libc)Inverse Trig Functions.
 * casinh: (libc)Hyperbolic Functions.
 * casinhf: (libc)Hyperbolic Functions.
+* casinhfN: (libc)Hyperbolic Functions.
+* casinhfNx: (libc)Hyperbolic Functions.
 * casinhl: (libc)Hyperbolic Functions.
 * casinl: (libc)Inverse Trig Functions.
 * catan: (libc)Inverse Trig Functions.
 * catanf: (libc)Inverse Trig Functions.
+* catanfN: (libc)Inverse Trig Functions.
+* catanfNx: (libc)Inverse Trig Functions.
 * catanh: (libc)Hyperbolic Functions.
 * catanhf: (libc)Hyperbolic Functions.
+* catanhfN: (libc)Hyperbolic Functions.
+* catanhfNx: (libc)Hyperbolic Functions.
 * catanhl: (libc)Hyperbolic Functions.
 * catanl: (libc)Inverse Trig Functions.
 * catclose: (libc)The catgets Functions.
@@ -599,23 +636,32 @@ START-INFO-DIR-ENTRY
 * cbc_crypt: (libc)DES Encryption.
 * cbrt: (libc)Exponents and Logarithms.
 * cbrtf: (libc)Exponents and Logarithms.
+* cbrtfN: (libc)Exponents and Logarithms.
+* cbrtfNx: (libc)Exponents and Logarithms.
 * cbrtl: (libc)Exponents and Logarithms.
 * ccos: (libc)Trig Functions.
 * ccosf: (libc)Trig Functions.
+* ccosfN: (libc)Trig Functions.
+* ccosfNx: (libc)Trig Functions.
 * ccosh: (libc)Hyperbolic Functions.
 * ccoshf: (libc)Hyperbolic Functions.
+* ccoshfN: (libc)Hyperbolic Functions.
+* ccoshfNx: (libc)Hyperbolic Functions.
 * ccoshl: (libc)Hyperbolic Functions.
 * ccosl: (libc)Trig Functions.
 * ceil: (libc)Rounding Functions.
 * ceilf: (libc)Rounding Functions.
+* ceilfN: (libc)Rounding Functions.
+* ceilfNx: (libc)Rounding Functions.
 * ceill: (libc)Rounding Functions.
 * cexp: (libc)Exponents and Logarithms.
 * cexpf: (libc)Exponents and Logarithms.
+* cexpfN: (libc)Exponents and Logarithms.
+* cexpfNx: (libc)Exponents and Logarithms.
 * cexpl: (libc)Exponents and Logarithms.
 * cfgetispeed: (libc)Line Speed.
 * cfgetospeed: (libc)Line Speed.
 * cfmakeraw: (libc)Noncanonical Input.
-* cfree: (libc)Freeing after Malloc.
 * cfsetispeed: (libc)Line Speed.
 * cfsetospeed: (libc)Line Speed.
 * cfsetspeed: (libc)Line Speed.
@@ -624,6 +670,8 @@ START-INFO-DIR-ENTRY
 * chown: (libc)File Owner.
 * cimag: (libc)Operations on Complex.
 * cimagf: (libc)Operations on Complex.
+* cimagfN: (libc)Operations on Complex.
+* cimagfNx: (libc)Operations on Complex.
 * cimagl: (libc)Operations on Complex.
 * clearenv: (libc)Environment Access.
 * clearerr: (libc)Error Recovery.
@@ -631,9 +679,13 @@ START-INFO-DIR-ENTRY
 * clock: (libc)CPU Time.
 * clog10: (libc)Exponents and Logarithms.
 * clog10f: (libc)Exponents and Logarithms.
+* clog10fN: (libc)Exponents and Logarithms.
+* clog10fNx: (libc)Exponents and Logarithms.
 * clog10l: (libc)Exponents and Logarithms.
 * clog: (libc)Exponents and Logarithms.
 * clogf: (libc)Exponents and Logarithms.
+* clogfN: (libc)Exponents and Logarithms.
+* clogfNx: (libc)Exponents and Logarithms.
 * clogl: (libc)Exponents and Logarithms.
 * close: (libc)Opening and Closing Files.
 * closedir: (libc)Reading/Closing Directory.
@@ -641,25 +693,39 @@ START-INFO-DIR-ENTRY
 * confstr: (libc)String Parameters.
 * conj: (libc)Operations on Complex.
 * conjf: (libc)Operations on Complex.
+* conjfN: (libc)Operations on Complex.
+* conjfNx: (libc)Operations on Complex.
 * conjl: (libc)Operations on Complex.
 * connect: (libc)Connecting.
 * copysign: (libc)FP Bit Twiddling.
 * copysignf: (libc)FP Bit Twiddling.
+* copysignfN: (libc)FP Bit Twiddling.
+* copysignfNx: (libc)FP Bit Twiddling.
 * copysignl: (libc)FP Bit Twiddling.
 * cos: (libc)Trig Functions.
 * cosf: (libc)Trig Functions.
+* cosfN: (libc)Trig Functions.
+* cosfNx: (libc)Trig Functions.
 * cosh: (libc)Hyperbolic Functions.
 * coshf: (libc)Hyperbolic Functions.
+* coshfN: (libc)Hyperbolic Functions.
+* coshfNx: (libc)Hyperbolic Functions.
 * coshl: (libc)Hyperbolic Functions.
 * cosl: (libc)Trig Functions.
 * cpow: (libc)Exponents and Logarithms.
 * cpowf: (libc)Exponents and Logarithms.
+* cpowfN: (libc)Exponents and Logarithms.
+* cpowfNx: (libc)Exponents and Logarithms.
 * cpowl: (libc)Exponents and Logarithms.
 * cproj: (libc)Operations on Complex.
 * cprojf: (libc)Operations on Complex.
+* cprojfN: (libc)Operations on Complex.
+* cprojfNx: (libc)Operations on Complex.
 * cprojl: (libc)Operations on Complex.
 * creal: (libc)Operations on Complex.
 * crealf: (libc)Operations on Complex.
+* crealfN: (libc)Operations on Complex.
+* crealfNx: (libc)Operations on Complex.
 * creall: (libc)Operations on Complex.
 * creat64: (libc)Opening and Closing Files.
 * creat: (libc)Opening and Closing Files.
@@ -667,17 +733,27 @@ START-INFO-DIR-ENTRY
 * crypt_r: (libc)crypt.
 * csin: (libc)Trig Functions.
 * csinf: (libc)Trig Functions.
+* csinfN: (libc)Trig Functions.
+* csinfNx: (libc)Trig Functions.
 * csinh: (libc)Hyperbolic Functions.
 * csinhf: (libc)Hyperbolic Functions.
+* csinhfN: (libc)Hyperbolic Functions.
+* csinhfNx: (libc)Hyperbolic Functions.
 * csinhl: (libc)Hyperbolic Functions.
 * csinl: (libc)Trig Functions.
 * csqrt: (libc)Exponents and Logarithms.
 * csqrtf: (libc)Exponents and Logarithms.
+* csqrtfN: (libc)Exponents and Logarithms.
+* csqrtfNx: (libc)Exponents and Logarithms.
 * csqrtl: (libc)Exponents and Logarithms.
 * ctan: (libc)Trig Functions.
 * ctanf: (libc)Trig Functions.
+* ctanfN: (libc)Trig Functions.
+* ctanfNx: (libc)Trig Functions.
 * ctanh: (libc)Hyperbolic Functions.
 * ctanhf: (libc)Hyperbolic Functions.
+* ctanhfN: (libc)Hyperbolic Functions.
+* ctanhfNx: (libc)Hyperbolic Functions.
 * ctanhl: (libc)Hyperbolic Functions.
 * ctanl: (libc)Trig Functions.
 * ctermid: (libc)Identifying the Terminal.
@@ -727,8 +803,12 @@ START-INFO-DIR-ENTRY
 * erf: (libc)Special Functions.
 * erfc: (libc)Special Functions.
 * erfcf: (libc)Special Functions.
+* erfcfN: (libc)Special Functions.
+* erfcfNx: (libc)Special Functions.
 * erfcl: (libc)Special Functions.
 * erff: (libc)Special Functions.
+* erffN: (libc)Special Functions.
+* erffNx: (libc)Special Functions.
 * erfl: (libc)Special Functions.
 * err: (libc)Error Messages.
 * errno: (libc)Checking for Errors.
@@ -744,19 +824,29 @@ START-INFO-DIR-ENTRY
 * exit: (libc)Normal Termination.
 * exp10: (libc)Exponents and Logarithms.
 * exp10f: (libc)Exponents and Logarithms.
+* exp10fN: (libc)Exponents and Logarithms.
+* exp10fNx: (libc)Exponents and Logarithms.
 * exp10l: (libc)Exponents and Logarithms.
 * exp2: (libc)Exponents and Logarithms.
 * exp2f: (libc)Exponents and Logarithms.
+* exp2fN: (libc)Exponents and Logarithms.
+* exp2fNx: (libc)Exponents and Logarithms.
 * exp2l: (libc)Exponents and Logarithms.
 * exp: (libc)Exponents and Logarithms.
 * expf: (libc)Exponents and Logarithms.
+* expfN: (libc)Exponents and Logarithms.
+* expfNx: (libc)Exponents and Logarithms.
 * expl: (libc)Exponents and Logarithms.
 * explicit_bzero: (libc)Erasing Sensitive Data.
 * expm1: (libc)Exponents and Logarithms.
 * expm1f: (libc)Exponents and Logarithms.
+* expm1fN: (libc)Exponents and Logarithms.
+* expm1fNx: (libc)Exponents and Logarithms.
 * expm1l: (libc)Exponents and Logarithms.
 * fabs: (libc)Absolute Value.
 * fabsf: (libc)Absolute Value.
+* fabsfN: (libc)Absolute Value.
+* fabsfNx: (libc)Absolute Value.
 * fabsl: (libc)Absolute Value.
 * fchdir: (libc)Working Directory.
 * fchmod: (libc)Setting Permissions.
@@ -769,6 +859,8 @@ START-INFO-DIR-ENTRY
 * fdatasync: (libc)Synchronizing I/O.
 * fdim: (libc)Misc FP Arithmetic.
 * fdimf: (libc)Misc FP Arithmetic.
+* fdimfN: (libc)Misc FP Arithmetic.
+* fdimfNx: (libc)Misc FP Arithmetic.
 * fdiml: (libc)Misc FP Arithmetic.
 * fdopen: (libc)Descriptors and Streams.
 * fdopendir: (libc)Opening a Directory.
@@ -818,25 +910,39 @@ START-INFO-DIR-ENTRY
 * flockfile: (libc)Streams and Threads.
 * floor: (libc)Rounding Functions.
 * floorf: (libc)Rounding Functions.
+* floorfN: (libc)Rounding Functions.
+* floorfNx: (libc)Rounding Functions.
 * floorl: (libc)Rounding Functions.
 * fma: (libc)Misc FP Arithmetic.
 * fmaf: (libc)Misc FP Arithmetic.
+* fmafN: (libc)Misc FP Arithmetic.
+* fmafNx: (libc)Misc FP Arithmetic.
 * fmal: (libc)Misc FP Arithmetic.
 * fmax: (libc)Misc FP Arithmetic.
 * fmaxf: (libc)Misc FP Arithmetic.
+* fmaxfN: (libc)Misc FP Arithmetic.
+* fmaxfNx: (libc)Misc FP Arithmetic.
 * fmaxl: (libc)Misc FP Arithmetic.
 * fmaxmag: (libc)Misc FP Arithmetic.
 * fmaxmagf: (libc)Misc FP Arithmetic.
+* fmaxmagfN: (libc)Misc FP Arithmetic.
+* fmaxmagfNx: (libc)Misc FP Arithmetic.
 * fmaxmagl: (libc)Misc FP Arithmetic.
 * fmemopen: (libc)String Streams.
 * fmin: (libc)Misc FP Arithmetic.
 * fminf: (libc)Misc FP Arithmetic.
+* fminfN: (libc)Misc FP Arithmetic.
+* fminfNx: (libc)Misc FP Arithmetic.
 * fminl: (libc)Misc FP Arithmetic.
 * fminmag: (libc)Misc FP Arithmetic.
 * fminmagf: (libc)Misc FP Arithmetic.
+* fminmagfN: (libc)Misc FP Arithmetic.
+* fminmagfNx: (libc)Misc FP Arithmetic.
 * fminmagl: (libc)Misc FP Arithmetic.
 * fmod: (libc)Remainder Functions.
 * fmodf: (libc)Remainder Functions.
+* fmodfN: (libc)Remainder Functions.
+* fmodfNx: (libc)Remainder Functions.
 * fmodl: (libc)Remainder Functions.
 * fmtmsg: (libc)Printing Formatted Messages.
 * fnmatch: (libc)Wildcard Matching.
@@ -863,12 +969,18 @@ START-INFO-DIR-ENTRY
 * freopen: (libc)Opening Streams.
 * frexp: (libc)Normalization Functions.
 * frexpf: (libc)Normalization Functions.
+* frexpfN: (libc)Normalization Functions.
+* frexpfNx: (libc)Normalization Functions.
 * frexpl: (libc)Normalization Functions.
 * fromfp: (libc)Rounding Functions.
 * fromfpf: (libc)Rounding Functions.
+* fromfpfN: (libc)Rounding Functions.
+* fromfpfNx: (libc)Rounding Functions.
 * fromfpl: (libc)Rounding Functions.
 * fromfpx: (libc)Rounding Functions.
 * fromfpxf: (libc)Rounding Functions.
+* fromfpxfN: (libc)Rounding Functions.
+* fromfpxfNx: (libc)Rounding Functions.
 * fromfpxl: (libc)Rounding Functions.
 * fscanf: (libc)Formatted Input Functions.
 * fseek: (libc)File Positioning.
@@ -957,6 +1069,8 @@ START-INFO-DIR-ENTRY
 * getpass: (libc)getpass.
 * getpayload: (libc)FP Bit Twiddling.
 * getpayloadf: (libc)FP Bit Twiddling.
+* getpayloadfN: (libc)FP Bit Twiddling.
+* getpayloadfNx: (libc)FP Bit Twiddling.
 * getpayloadl: (libc)FP Bit Twiddling.
 * getpeername: (libc)Who is Connected.
 * getpgid: (libc)Process Group Functions.
@@ -1027,6 +1141,8 @@ START-INFO-DIR-ENTRY
 * htons: (libc)Byte Order.
 * hypot: (libc)Exponents and Logarithms.
 * hypotf: (libc)Exponents and Logarithms.
+* hypotfN: (libc)Exponents and Logarithms.
+* hypotfNx: (libc)Exponents and Logarithms.
 * hypotl: (libc)Exponents and Logarithms.
 * iconv: (libc)Generic Conversion Interface.
 * iconv_close: (libc)Generic Conversion Interface.
@@ -1037,6 +1153,8 @@ START-INFO-DIR-ENTRY
 * if_nametoindex: (libc)Interface Naming.
 * ilogb: (libc)Exponents and Logarithms.
 * ilogbf: (libc)Exponents and Logarithms.
+* ilogbfN: (libc)Exponents and Logarithms.
+* ilogbfNx: (libc)Exponents and Logarithms.
 * ilogbl: (libc)Exponents and Logarithms.
 * imaxabs: (libc)Absolute Value.
 * imaxdiv: (libc)Integer Division.
@@ -1106,12 +1224,18 @@ START-INFO-DIR-ENTRY
 * iszero: (libc)Floating Point Classes.
 * j0: (libc)Special Functions.
 * j0f: (libc)Special Functions.
+* j0fN: (libc)Special Functions.
+* j0fNx: (libc)Special Functions.
 * j0l: (libc)Special Functions.
 * j1: (libc)Special Functions.
 * j1f: (libc)Special Functions.
+* j1fN: (libc)Special Functions.
+* j1fNx: (libc)Special Functions.
 * j1l: (libc)Special Functions.
 * jn: (libc)Special Functions.
 * jnf: (libc)Special Functions.
+* jnfN: (libc)Special Functions.
+* jnfNx: (libc)Special Functions.
 * jnl: (libc)Special Functions.
 * jrand48: (libc)SVID Random.
 * jrand48_r: (libc)SVID Random.
@@ -1123,12 +1247,18 @@ START-INFO-DIR-ENTRY
 * lcong48_r: (libc)SVID Random.
 * ldexp: (libc)Normalization Functions.
 * ldexpf: (libc)Normalization Functions.
+* ldexpfN: (libc)Normalization Functions.
+* ldexpfNx: (libc)Normalization Functions.
 * ldexpl: (libc)Normalization Functions.
 * ldiv: (libc)Integer Division.
 * lfind: (libc)Array Search Function.
 * lgamma: (libc)Special Functions.
 * lgamma_r: (libc)Special Functions.
 * lgammaf: (libc)Special Functions.
+* lgammafN: (libc)Special Functions.
+* lgammafN_r: (libc)Special Functions.
+* lgammafNx: (libc)Special Functions.
+* lgammafNx_r: (libc)Special Functions.
 * lgammaf_r: (libc)Special Functions.
 * lgammal: (libc)Special Functions.
 * lgammal_r: (libc)Special Functions.
@@ -1140,30 +1270,46 @@ START-INFO-DIR-ENTRY
 * lldiv: (libc)Integer Division.
 * llogb: (libc)Exponents and Logarithms.
 * llogbf: (libc)Exponents and Logarithms.
+* llogbfN: (libc)Exponents and Logarithms.
+* llogbfNx: (libc)Exponents and Logarithms.
 * llogbl: (libc)Exponents and Logarithms.
 * llrint: (libc)Rounding Functions.
 * llrintf: (libc)Rounding Functions.
+* llrintfN: (libc)Rounding Functions.
+* llrintfNx: (libc)Rounding Functions.
 * llrintl: (libc)Rounding Functions.
 * llround: (libc)Rounding Functions.
 * llroundf: (libc)Rounding Functions.
+* llroundfN: (libc)Rounding Functions.
+* llroundfNx: (libc)Rounding Functions.
 * llroundl: (libc)Rounding Functions.
 * localeconv: (libc)The Lame Way to Locale Data.
 * localtime: (libc)Broken-down Time.
 * localtime_r: (libc)Broken-down Time.
 * log10: (libc)Exponents and Logarithms.
 * log10f: (libc)Exponents and Logarithms.
+* log10fN: (libc)Exponents and Logarithms.
+* log10fNx: (libc)Exponents and Logarithms.
 * log10l: (libc)Exponents and Logarithms.
 * log1p: (libc)Exponents and Logarithms.
 * log1pf: (libc)Exponents and Logarithms.
+* log1pfN: (libc)Exponents and Logarithms.
+* log1pfNx: (libc)Exponents and Logarithms.
 * log1pl: (libc)Exponents and Logarithms.
 * log2: (libc)Exponents and Logarithms.
 * log2f: (libc)Exponents and Logarithms.
+* log2fN: (libc)Exponents and Logarithms.
+* log2fNx: (libc)Exponents and Logarithms.
 * log2l: (libc)Exponents and Logarithms.
 * log: (libc)Exponents and Logarithms.
 * logb: (libc)Exponents and Logarithms.
 * logbf: (libc)Exponents and Logarithms.
+* logbfN: (libc)Exponents and Logarithms.
+* logbfNx: (libc)Exponents and Logarithms.
 * logbl: (libc)Exponents and Logarithms.
 * logf: (libc)Exponents and Logarithms.
+* logfN: (libc)Exponents and Logarithms.
+* logfNx: (libc)Exponents and Logarithms.
 * login: (libc)Logging In and Out.
 * login_tty: (libc)Logging In and Out.
 * logl: (libc)Exponents and Logarithms.
@@ -1174,9 +1320,13 @@ START-INFO-DIR-ENTRY
 * lrand48_r: (libc)SVID Random.
 * lrint: (libc)Rounding Functions.
 * lrintf: (libc)Rounding Functions.
+* lrintfN: (libc)Rounding Functions.
+* lrintfNx: (libc)Rounding Functions.
 * lrintl: (libc)Rounding Functions.
 * lround: (libc)Rounding Functions.
 * lroundf: (libc)Rounding Functions.
+* lroundfN: (libc)Rounding Functions.
+* lroundfNx: (libc)Rounding Functions.
 * lroundl: (libc)Rounding Functions.
 * lsearch: (libc)Array Search Function.
 * lseek64: (libc)File Position Primitive.
@@ -1222,6 +1372,8 @@ START-INFO-DIR-ENTRY
 * mmap: (libc)Memory-mapped I/O.
 * modf: (libc)Rounding Functions.
 * modff: (libc)Rounding Functions.
+* modffN: (libc)Rounding Functions.
+* modffNx: (libc)Rounding Functions.
 * modfl: (libc)Rounding Functions.
 * mount: (libc)Mount-Unmount-Remount.
 * mprobe: (libc)Heap Consistency Checking.
@@ -1236,22 +1388,32 @@ START-INFO-DIR-ENTRY
 * muntrace: (libc)Tracing malloc.
 * nan: (libc)FP Bit Twiddling.
 * nanf: (libc)FP Bit Twiddling.
+* nanfN: (libc)FP Bit Twiddling.
+* nanfNx: (libc)FP Bit Twiddling.
 * nanl: (libc)FP Bit Twiddling.
 * nanosleep: (libc)Sleeping.
 * nearbyint: (libc)Rounding Functions.
 * nearbyintf: (libc)Rounding Functions.
+* nearbyintfN: (libc)Rounding Functions.
+* nearbyintfNx: (libc)Rounding Functions.
 * nearbyintl: (libc)Rounding Functions.
 * nextafter: (libc)FP Bit Twiddling.
 * nextafterf: (libc)FP Bit Twiddling.
+* nextafterfN: (libc)FP Bit Twiddling.
+* nextafterfNx: (libc)FP Bit Twiddling.
 * nextafterl: (libc)FP Bit Twiddling.
 * nextdown: (libc)FP Bit Twiddling.
 * nextdownf: (libc)FP Bit Twiddling.
+* nextdownfN: (libc)FP Bit Twiddling.
+* nextdownfNx: (libc)FP Bit Twiddling.
 * nextdownl: (libc)FP Bit Twiddling.
 * nexttoward: (libc)FP Bit Twiddling.
 * nexttowardf: (libc)FP Bit Twiddling.
 * nexttowardl: (libc)FP Bit Twiddling.
 * nextup: (libc)FP Bit Twiddling.
 * nextupf: (libc)FP Bit Twiddling.
+* nextupfN: (libc)FP Bit Twiddling.
+* nextupfNx: (libc)FP Bit Twiddling.
 * nextupl: (libc)FP Bit Twiddling.
 * nftw64: (libc)Working with Directory Trees.
 * nftw: (libc)Working with Directory Trees.
@@ -1312,9 +1474,15 @@ START-INFO-DIR-ENTRY
 * pow10l: (libc)Exponents and Logarithms.
 * pow: (libc)Exponents and Logarithms.
 * powf: (libc)Exponents and Logarithms.
+* powfN: (libc)Exponents and Logarithms.
+* powfNx: (libc)Exponents and Logarithms.
 * powl: (libc)Exponents and Logarithms.
 * pread64: (libc)I/O Primitives.
 * pread: (libc)I/O Primitives.
+* preadv2: (libc)I/O Primitives.
+* preadv64: (libc)I/O Primitives.
+* preadv64v2: (libc)I/O Primitives.
+* preadv: (libc)I/O Primitives.
 * printf: (libc)Formatted Output Functions.
 * printf_size: (libc)Predefined Printf Handlers.
 * printf_size_info: (libc)Predefined Printf Handlers.
@@ -1343,6 +1511,10 @@ START-INFO-DIR-ENTRY
 * putwchar_unlocked: (libc)Simple Output.
 * pwrite64: (libc)I/O Primitives.
 * pwrite: (libc)I/O Primitives.
+* pwritev2: (libc)I/O Primitives.
+* pwritev64: (libc)I/O Primitives.
+* pwritev64v2: (libc)I/O Primitives.
+* pwritev: (libc)I/O Primitives.
 * qecvt: (libc)System V Number Conversion.
 * qecvt_r: (libc)System V Number Conversion.
 * qfcvt: (libc)System V Number Conversion.
@@ -1363,6 +1535,7 @@ START-INFO-DIR-ENTRY
 * readlink: (libc)Symbolic Links.
 * readv: (libc)Scatter-Gather.
 * realloc: (libc)Changing Block Size.
+* reallocarray: (libc)Changing Block Size.
 * realpath: (libc)Symbolic Links.
 * recv: (libc)Receiving Data.
 * recvfrom: (libc)Receiving Datagrams.
@@ -1374,6 +1547,8 @@ START-INFO-DIR-ENTRY
 * register_printf_function: (libc)Registering New Conversions.
 * remainder: (libc)Remainder Functions.
 * remainderf: (libc)Remainder Functions.
+* remainderfN: (libc)Remainder Functions.
+* remainderfNx: (libc)Remainder Functions.
 * remainderl: (libc)Remainder Functions.
 * remove: (libc)Deleting Files.
 * rename: (libc)Renaming Files.
@@ -1382,13 +1557,19 @@ START-INFO-DIR-ENTRY
 * rindex: (libc)Search Functions.
 * rint: (libc)Rounding Functions.
 * rintf: (libc)Rounding Functions.
+* rintfN: (libc)Rounding Functions.
+* rintfNx: (libc)Rounding Functions.
 * rintl: (libc)Rounding Functions.
 * rmdir: (libc)Deleting Files.
 * round: (libc)Rounding Functions.
 * roundeven: (libc)Rounding Functions.
 * roundevenf: (libc)Rounding Functions.
+* roundevenfN: (libc)Rounding Functions.
+* roundevenfNx: (libc)Rounding Functions.
 * roundevenl: (libc)Rounding Functions.
 * roundf: (libc)Rounding Functions.
+* roundfN: (libc)Rounding Functions.
+* roundfNx: (libc)Rounding Functions.
 * roundl: (libc)Rounding Functions.
 * rpmatch: (libc)Yes-or-No Questions.
 * sbrk: (libc)Resizing the Data Segment.
@@ -1397,9 +1578,13 @@ START-INFO-DIR-ENTRY
 * scalbl: (libc)Normalization Functions.
 * scalbln: (libc)Normalization Functions.
 * scalblnf: (libc)Normalization Functions.
+* scalblnfN: (libc)Normalization Functions.
+* scalblnfNx: (libc)Normalization Functions.
 * scalblnl: (libc)Normalization Functions.
 * scalbn: (libc)Normalization Functions.
 * scalbnf: (libc)Normalization Functions.
+* scalbnfN: (libc)Normalization Functions.
+* scalbnfNx: (libc)Normalization Functions.
 * scalbnl: (libc)Normalization Functions.
 * scandir64: (libc)Scanning Directory Content.
 * scandir: (libc)Scanning Directory Content.
@@ -1462,9 +1647,13 @@ START-INFO-DIR-ENTRY
 * setnetgrent: (libc)Lookup Netgroup.
 * setpayload: (libc)FP Bit Twiddling.
 * setpayloadf: (libc)FP Bit Twiddling.
+* setpayloadfN: (libc)FP Bit Twiddling.
+* setpayloadfNx: (libc)FP Bit Twiddling.
 * setpayloadl: (libc)FP Bit Twiddling.
 * setpayloadsig: (libc)FP Bit Twiddling.
 * setpayloadsigf: (libc)FP Bit Twiddling.
+* setpayloadsigfN: (libc)FP Bit Twiddling.
+* setpayloadsigfNx: (libc)FP Bit Twiddling.
 * setpayloadsigl: (libc)FP Bit Twiddling.
 * setpgid: (libc)Process Group Functions.
 * setpgrp: (libc)Process Group Functions.
@@ -1514,10 +1703,16 @@ START-INFO-DIR-ENTRY
 * sin: (libc)Trig Functions.
 * sincos: (libc)Trig Functions.
 * sincosf: (libc)Trig Functions.
+* sincosfN: (libc)Trig Functions.
+* sincosfNx: (libc)Trig Functions.
 * sincosl: (libc)Trig Functions.
 * sinf: (libc)Trig Functions.
+* sinfN: (libc)Trig Functions.
+* sinfNx: (libc)Trig Functions.
 * sinh: (libc)Hyperbolic Functions.
 * sinhf: (libc)Hyperbolic Functions.
+* sinhfN: (libc)Hyperbolic Functions.
+* sinhfNx: (libc)Hyperbolic Functions.
 * sinhl: (libc)Hyperbolic Functions.
 * sinl: (libc)Trig Functions.
 * sleep: (libc)Sleeping.
@@ -1527,6 +1722,8 @@ START-INFO-DIR-ENTRY
 * sprintf: (libc)Formatted Output Functions.
 * sqrt: (libc)Exponents and Logarithms.
 * sqrtf: (libc)Exponents and Logarithms.
+* sqrtfN: (libc)Exponents and Logarithms.
+* sqrtfNx: (libc)Exponents and Logarithms.
 * sqrtl: (libc)Exponents and Logarithms.
 * srand48: (libc)SVID Random.
 * srand48_r: (libc)SVID Random.
@@ -1556,6 +1753,8 @@ START-INFO-DIR-ENTRY
 * strfmon: (libc)Formatting Numbers.
 * strfromd: (libc)Printing of Floats.
 * strfromf: (libc)Printing of Floats.
+* strfromfN: (libc)Printing of Floats.
+* strfromfNx: (libc)Printing of Floats.
 * strfroml: (libc)Printing of Floats.
 * strfry: (libc)strfry.
 * strftime: (libc)Formatting Calendar Time.
@@ -1576,6 +1775,8 @@ START-INFO-DIR-ENTRY
 * strstr: (libc)Search Functions.
 * strtod: (libc)Parsing of Floats.
 * strtof: (libc)Parsing of Floats.
+* strtofN: (libc)Parsing of Floats.
+* strtofNx: (libc)Parsing of Floats.
 * strtoimax: (libc)Parsing of Integers.
 * strtok: (libc)Finding Tokens in a String.
 * strtok_r: (libc)Finding Tokens in a String.
@@ -1603,8 +1804,12 @@ START-INFO-DIR-ENTRY
 * sysv_signal: (libc)Basic Signal Handling.
 * tan: (libc)Trig Functions.
 * tanf: (libc)Trig Functions.
+* tanfN: (libc)Trig Functions.
+* tanfNx: (libc)Trig Functions.
 * tanh: (libc)Hyperbolic Functions.
 * tanhf: (libc)Hyperbolic Functions.
+* tanhfN: (libc)Hyperbolic Functions.
+* tanhfNx: (libc)Hyperbolic Functions.
 * tanhl: (libc)Hyperbolic Functions.
 * tanl: (libc)Trig Functions.
 * tcdrain: (libc)Line Control.
@@ -1624,6 +1829,8 @@ START-INFO-DIR-ENTRY
 * tfind: (libc)Tree Search Function.
 * tgamma: (libc)Special Functions.
 * tgammaf: (libc)Special Functions.
+* tgammafN: (libc)Special Functions.
+* tgammafNx: (libc)Special Functions.
 * tgammal: (libc)Special Functions.
 * time: (libc)Simple Calendar Time.
 * timegm: (libc)Broken-down Time.
@@ -1637,9 +1844,13 @@ START-INFO-DIR-ENTRY
 * tolower: (libc)Case Conversion.
 * totalorder: (libc)FP Comparison Functions.
 * totalorderf: (libc)FP Comparison Functions.
+* totalorderfN: (libc)FP Comparison Functions.
+* totalorderfNx: (libc)FP Comparison Functions.
 * totalorderl: (libc)FP Comparison Functions.
 * totalordermag: (libc)FP Comparison Functions.
 * totalordermagf: (libc)FP Comparison Functions.
+* totalordermagfN: (libc)FP Comparison Functions.
+* totalordermagfNx: (libc)FP Comparison Functions.
 * totalordermagl: (libc)FP Comparison Functions.
 * toupper: (libc)Case Conversion.
 * towctrans: (libc)Wide Character Case Conversion.
@@ -1649,6 +1860,8 @@ START-INFO-DIR-ENTRY
 * truncate64: (libc)File Size.
 * truncate: (libc)File Size.
 * truncf: (libc)Rounding Functions.
+* truncfN: (libc)Rounding Functions.
+* truncfNx: (libc)Rounding Functions.
 * truncl: (libc)Rounding Functions.
 * tsearch: (libc)Tree Search Function.
 * ttyname: (libc)Is It a Terminal.
@@ -1657,9 +1870,13 @@ START-INFO-DIR-ENTRY
 * tzset: (libc)Time Zone Functions.
 * ufromfp: (libc)Rounding Functions.
 * ufromfpf: (libc)Rounding Functions.
+* ufromfpfN: (libc)Rounding Functions.
+* ufromfpfNx: (libc)Rounding Functions.
 * ufromfpl: (libc)Rounding Functions.
 * ufromfpx: (libc)Rounding Functions.
 * ufromfpxf: (libc)Rounding Functions.
+* ufromfpxfN: (libc)Rounding Functions.
+* ufromfpxfNx: (libc)Rounding Functions.
 * ufromfpxl: (libc)Rounding Functions.
 * ulimit: (libc)Limits on Resources.
 * umask: (libc)Setting Permissions.
@@ -1738,6 +1955,8 @@ START-INFO-DIR-ENTRY
 * wcsstr: (libc)Search Functions.
 * wcstod: (libc)Parsing of Floats.
 * wcstof: (libc)Parsing of Floats.
+* wcstofN: (libc)Parsing of Floats.
+* wcstofNx: (libc)Parsing of Floats.
 * wcstoimax: (libc)Parsing of Integers.
 * wcstok: (libc)Finding Tokens in a String.
 * wcstol: (libc)Parsing of Integers.
@@ -1769,19 +1988,25 @@ START-INFO-DIR-ENTRY
 * wscanf: (libc)Formatted Input Functions.
 * y0: (libc)Special Functions.
 * y0f: (libc)Special Functions.
+* y0fN: (libc)Special Functions.
+* y0fNx: (libc)Special Functions.
 * y0l: (libc)Special Functions.
 * y1: (libc)Special Functions.
 * y1f: (libc)Special Functions.
+* y1fN: (libc)Special Functions.
+* y1fNx: (libc)Special Functions.
 * y1l: (libc)Special Functions.
 * yn: (libc)Special Functions.
 * ynf: (libc)Special Functions.
+* ynfN: (libc)Special Functions.
+* ynfNx: (libc)Special Functions.
 * ynl: (libc)Special Functions.
 END-INFO-DIR-ENTRY
 
    This file documents the GNU C Library.
 
-   This is `The GNU C Library Reference Manual', for version 2.25
-(crosstool-NG crosstool-ng-1.23.0).
+   This is `The GNU C Library Reference Manual', for version 2.26
+(crosstool-NG 1.23.0.420-201f).
 
    Copyright (C) 1993-2017 Free Software Foundation, Inc.
 
@@ -1804,8 +2029,8 @@ File: libc.info,  Node: Top,  Next: Introduction,  Prev: (dir),  Up: (dir)
 Main Menu
 *********
 
-This is `The GNU C Library Reference Manual', for Version 2.25
-(crosstool-NG crosstool-ng-1.23.0) of the GNU C Library.
+This is `The GNU C Library Reference Manual', for Version 2.26
+(crosstool-NG 1.23.0.420-201f) of the GNU C Library.
 
 * Menu:
 
@@ -1948,6 +2173,7 @@ Memory Allocation
 * Unconstrained Allocation::    The `malloc' facility allows fully general
 		 		 dynamic allocation.
 * Allocation Debugging::        Finding memory leaks and not freed memory.
+* Replacing malloc::            Using your own `malloc'-style allocator.
 * Obstacks::                    Obstacks are less general than malloc
 				 but more efficient and convenient.
 * Variable Size Automatic::     Allocation of variable-sized blocks
@@ -3069,6 +3295,8 @@ Tunables
 
 * Tunable names::  The structure of a tunable name
 * Memory Allocation Tunables::  Tunables in the memory allocation subsystem
+* Hardware Capability Tunables::  Tunables that modify the hardware
+				  capabilities seen by the GNU C Library
 
 Language Features
 
@@ -4411,6 +4639,12 @@ relying on semantics undefined within the standard.
      enabled.  Only some of the features from this TS are supported by
      the GNU C Library.
 
+ -- Macro: __STDC_WANT_IEC_60559_TYPES_EXT__
+     If you define this macro, features from ISO/IEC TS 18661-3:2015
+     (Floating-point extensions for C: Interchange and extended types)
+     are enabled.  Only some of the features from this TS are supported
+     by the GNU C Library.
+
  -- Macro: _GNU_SOURCE
      If you define this macro, everything is included: ISO C89,
      ISO C99, POSIX.1, POSIX.2, BSD, SVID, X/Open, LFS, and GNU
@@ -4722,20 +4956,20 @@ can't occur on GNU systems, but they can occur using the GNU C Library
 on other systems.
 
  -- Macro: int EPERM
-     Operation not permitted; only the owner of the file (or other
+     "Operation not permitted."  Only the owner of the file (or other
      resource) or processes with special privileges can perform the
      operation.
 
  -- Macro: int ENOENT
-     No such file or directory.  This is a "file doesn't exist" error
+     "No such file or directory."  This is a "file doesn't exist" error
      for ordinary files that are referenced in contexts where they are
      expected to already exist.
 
  -- Macro: int ESRCH
-     No process matches the specified process ID.
+     "No such process."  No process matches the specified process ID.
 
  -- Macro: int EINTR
-     Interrupted function call; an asynchronous signal occurred and
+     "Interrupted system call."  An asynchronous signal occurred and
      prevented completion of the call.  When this happens, you should
      try the call again.
 
@@ -4744,93 +4978,97 @@ on other systems.
      Primitives::.
 
  -- Macro: int EIO
-     Input/output error; usually used for physical read or write errors.
+     "Input/output error."  Usually used for physical read or write
+     errors.
 
  -- Macro: int ENXIO
-     No such device or address.  The system tried to use the device
+     "No such device or address."  The system tried to use the device
      represented by a file you specified, and it couldn't find the
      device.  This can mean that the device file was installed
      incorrectly, or that the physical device is missing or not
      correctly attached to the computer.
 
  -- Macro: int E2BIG
-     Argument list too long; used when the arguments passed to a new
+     "Argument list too long."  Used when the arguments passed to a new
      program being executed with one of the `exec' functions (*note
      Executing a File::) occupy too much memory space.  This condition
      never arises on GNU/Hurd systems.
 
  -- Macro: int ENOEXEC
-     Invalid executable file format.  This condition is detected by the
-     `exec' functions; see *Note Executing a File::.
+     "Exec format error."  Invalid executable file format.  This
+     condition is detected by the `exec' functions; see *Note Executing
+     a File::.
 
  -- Macro: int EBADF
-     Bad file descriptor; for example, I/O on a descriptor that has been
-     closed or reading from a descriptor open only for writing (or vice
-     versa).
+     "Bad file descriptor."  For example, I/O on a descriptor that has
+     been closed or reading from a descriptor open only for writing (or
+     vice versa).
 
  -- Macro: int ECHILD
-     There are no child processes.  This error happens on operations
-     that are supposed to manipulate child processes, when there aren't
-     any processes to manipulate.
+     "No child processes."  This error happens on operations that are
+     supposed to manipulate child processes, when there aren't any
+     processes to manipulate.
 
  -- Macro: int EDEADLK
-     Deadlock avoided; allocating a system resource would have resulted
-     in a deadlock situation.  The system does not guarantee that it
-     will notice all such situations.  This error means you got lucky
-     and the system noticed; it might just hang.  *Note File Locks::,
-     for an example.
+     "Resource deadlock avoided."  Allocating a system resource would
+     have resulted in a deadlock situation.  The system does not
+     guarantee that it will notice all such situations.  This error
+     means you got lucky and the system noticed; it might just hang.
+     *Note File Locks::, for an example.
 
  -- Macro: int ENOMEM
-     No memory available.  The system cannot allocate more virtual
+     "Cannot allocate memory."  The system cannot allocate more virtual
      memory because its capacity is full.
 
  -- Macro: int EACCES
-     Permission denied; the file permissions do not allow the attempted
-     operation.
+     "Permission denied."  The file permissions do not allow the
+     attempted operation.
 
  -- Macro: int EFAULT
-     Bad address; an invalid pointer was detected.  On GNU/Hurd
+     "Bad address."  An invalid pointer was detected.  On GNU/Hurd
      systems, this error never happens; you get a signal instead.
 
  -- Macro: int ENOTBLK
-     A file that isn't a block special file was given in a situation
-     that requires one.  For example, trying to mount an ordinary file
-     as a file system in Unix gives this error.
+     "Block device required."  A file that isn't a block special file
+     was given in a situation that requires one.  For example, trying
+     to mount an ordinary file as a file system in Unix gives this
+     error.
 
  -- Macro: int EBUSY
-     Resource busy; a system resource that can't be shared is already
-     in use.  For example, if you try to delete a file that is the root
-     of a currently mounted filesystem, you get this error.
+     "Device or resource busy."  A system resource that can't be shared
+     is already in use.  For example, if you try to delete a file that
+     is the root of a currently mounted filesystem, you get this error.
 
  -- Macro: int EEXIST
-     File exists; an existing file was specified in a context where it
-     only makes sense to specify a new file.
+     "File exists."  An existing file was specified in a context where
+     it only makes sense to specify a new file.
 
  -- Macro: int EXDEV
-     An attempt to make an improper link across file systems was
-     detected.  This happens not only when you use `link' (*note Hard
-     Links::) but also when you rename a file with `rename' (*note
-     Renaming Files::).
+     "Invalid cross-device link."  An attempt to make an improper link
+     across file systems was detected.  This happens not only when you
+     use `link' (*note Hard Links::) but also when you rename a file
+     with `rename' (*note Renaming Files::).
 
  -- Macro: int ENODEV
-     The wrong type of device was given to a function that expects a
-     particular sort of device.
+     "No such device."  The wrong type of device was given to a
+     function that expects a particular sort of device.
 
  -- Macro: int ENOTDIR
-     A file that isn't a directory was specified when a directory is
-     required.
+     "Not a directory."  A file that isn't a directory was specified
+     when a directory is required.
 
  -- Macro: int EISDIR
-     File is a directory; you cannot open a directory for writing, or
+     "Is a directory."  You cannot open a directory for writing, or
      create or remove hard links to it.
 
  -- Macro: int EINVAL
-     Invalid argument.  This is used to indicate various kinds of
+     "Invalid argument."  This is used to indicate various kinds of
      problems with passing the wrong argument to a library function.
 
  -- Macro: int EMFILE
-     The current process has too many files open and can't open any
-     more.  Duplicate descriptors do count toward this limit.
+     "Too many open files."  The current process has too many files
+     open and can't open any more.  Duplicate descriptors do count
+     toward this limit.
 
      In BSD and GNU, the number of open files is controlled by a
      resource limit that can usually be increased.  If you get this
@@ -4838,62 +5076,66 @@ on other systems.
      make it unlimited; *note Limits on Resources::.
 
  -- Macro: int ENFILE
-     There are too many distinct file openings in the entire system.
-     Note that any number of linked channels count as just one file
-     opening; see *Note Linked Channels::.  This error never occurs on
-     GNU/Hurd systems.
+     "Too many open files in system."  There are too many distinct file
+     openings in the entire system.  Note that any number of linked
+     channels count as just one file opening; see *Note Linked
+     Channels::.  This error never occurs on GNU/Hurd systems.
 
  -- Macro: int ENOTTY
-     Inappropriate I/O control operation, such as trying to set terminal
-     modes on an ordinary file.
+     "Inappropriate ioctl for device."  Inappropriate I/O control
+     operation, such as trying to set terminal modes on an ordinary
+     file.
 
  -- Macro: int ETXTBSY
-     An attempt to execute a file that is currently open for writing, or
-     write to a file that is currently being executed.  Often using a
-     debugger to run a program is considered having it open for writing
-     and will cause this error.  (The name stands for "text file
-     busy".)  This is not an error on GNU/Hurd systems; the text is
-     copied as necessary.
+     "Text file busy."  An attempt to execute a file that is currently
+     open for writing, or write to a file that is currently being
+     executed.  Often using a debugger to run a program is considered
+     having it open for writing and will cause this error.  (The name
+     stands for "text file busy".)  This is not an error on GNU/Hurd
+     systems; the text is copied as necessary.
 
  -- Macro: int EFBIG
-     File too big; the size of a file would be larger than allowed by
-     the system.
+     "File too large."  The size of a file would be larger than allowed
+     by the system.
 
  -- Macro: int ENOSPC
-     No space left on device; write operation on a file failed because
-     the disk is full.
+     "No space left on device."  Write operation on a file failed
+     because the disk is full.
 
  -- Macro: int ESPIPE
-     Invalid seek operation (such as on a pipe).
+     "Illegal seek."  Invalid seek operation (such as on a pipe).
 
  -- Macro: int EROFS
-     An attempt was made to modify something on a read-only file system.
+     "Read-only file system."  An attempt was made to modify something
+     on a read-only file system.
 
  -- Macro: int EMLINK
-     Too many links; the link count of a single file would become too
-     large.  `rename' can cause this error if the file being renamed
-     already has as many links as it can take (*note Renaming Files::).
+     "Too many links."  The link count of a single file would become
+     too large.  `rename' can cause this error if the file being
+     renamed already has as many links as it can take (*note Renaming
+     Files::).
 
  -- Macro: int EPIPE
-     Broken pipe; there is no process reading from the other end of a
-     pipe.  Every library function that returns this error code also
+     "Broken pipe."  There is no process reading from the other end of
+     a pipe.  Every library function that returns this error code also
      generates a `SIGPIPE' signal; this signal terminates the program
      if not handled or blocked.  Thus, your program will never actually
      see `EPIPE' unless it has handled or blocked `SIGPIPE'.
 
  -- Macro: int EDOM
-     Domain error; used by mathematical functions when an argument
-     value does not fall into the domain over which the function is
-     defined.
+     "Numerical argument out of domain."  Used by mathematical
+     functions when an argument value does not fall into the domain
+     over which the function is defined.
 
  -- Macro: int ERANGE
-     Range error; used by mathematical functions when the result value
-     is not representable because of overflow or underflow.
+     "Numerical result out of range."  Used by mathematical functions
+     when the result value is not representable because of overflow or
+     underflow.
 
  -- Macro: int EAGAIN
-     Resource temporarily unavailable; the call might work if you try
-     again later.  The macro `EWOULDBLOCK' is another name for `EAGAIN';
-     they are always the same in the GNU C Library.
+     "Resource temporarily unavailable."  The call might work if you
+     try again later.  The macro `EWOULDBLOCK' is another name for
+     `EAGAIN'; they are always the same in the GNU C Library.
 
      This error can happen in a few different situations:
 
@@ -4920,217 +5162,233 @@ on other systems.
           error to the user and return to its command loop.
 
  -- Macro: int EWOULDBLOCK
-     In the GNU C Library, this is another name for `EAGAIN' (above).
-     The values are always the same, on every operating system.
+     "Operation would block."  In the GNU C Library, this is another
+     name for `EAGAIN' (above).  The values are always the same, on
+     every operating system.
 
      C libraries in many older Unix systems have `EWOULDBLOCK' as a
      separate error code.
 
  -- Macro: int EINPROGRESS
-     An operation that cannot complete immediately was initiated on an
-     object that has non-blocking mode selected.  Some functions that
-     must always block (such as `connect'; *note Connecting::) never
-     return `EAGAIN'.  Instead, they return `EINPROGRESS' to indicate
-     that the operation has begun and will take some time.  Attempts to
-     manipulate the object before the call completes return `EALREADY'.
-     You can use the `select' function to find out when the pending
-     operation has completed; *note Waiting for I/O::.
+     "Operation now in progress."  An operation that cannot complete
+     immediately was initiated on an object that has non-blocking mode
+     selected.  Some functions that must always block (such as
+     `connect'; *note Connecting::) never return `EAGAIN'.  Instead,
+     they return `EINPROGRESS' to indicate that the operation has begun
+     and will take some time.  Attempts to manipulate the object before
+     the call completes return `EALREADY'.  You can use the `select'
+     function to find out when the pending operation has completed;
+     *note Waiting for I/O::.
 
  -- Macro: int EALREADY
-     An operation is already in progress on an object that has
-     non-blocking mode selected.
+     "Operation already in progress."  An operation is already in
+     progress on an object that has non-blocking mode selected.
 
  -- Macro: int ENOTSOCK
-     A file that isn't a socket was specified when a socket is required.
+     "Socket operation on non-socket."  A file that isn't a socket was
+     specified when a socket is required.
 
  -- Macro: int EMSGSIZE
-     The size of a message sent on a socket was larger than the
-     supported maximum size.
+     "Message too long."  The size of a message sent on a socket was
+     larger than the supported maximum size.
 
  -- Macro: int EPROTOTYPE
-     The socket type does not support the requested communications
-     protocol.
+     "Protocol wrong type for socket."  The socket type does not
+     support the requested communications protocol.
 
  -- Macro: int ENOPROTOOPT
-     You specified a socket option that doesn't make sense for the
-     particular protocol being used by the socket.  *Note Socket
-     Options::.
+     "Protocol not available."  You specified a socket option that
+     doesn't make sense for the particular protocol being used by the
+     socket.  *Note Socket Options::.
 
  -- Macro: int EPROTONOSUPPORT
-     The socket domain does not support the requested communications
-     protocol (perhaps because the requested protocol is completely
-     invalid).  *Note Creating a Socket::.
+     "Protocol not supported."  The socket domain does not support the
+     requested communications protocol (perhaps because the requested
+     protocol is completely invalid).  *Note Creating a Socket::.
 
  -- Macro: int ESOCKTNOSUPPORT
-     The socket type is not supported.
+     "Socket type not supported."  The socket type is not supported.
 
  -- Macro: int EOPNOTSUPP
-     The operation you requested is not supported.  Some socket
-     functions don't make sense for all types of sockets, and others
-     may not be implemented for all communications protocols.  On
-     GNU/Hurd systems, this error can happen for many calls when the
-     object does not support the particular operation; it is a generic
-     indication that the server knows nothing to do for that call.
+     "Operation not supported."  The operation you requested is not
+     supported.  Some socket functions don't make sense for all types
+     of sockets, and others may not be implemented for all
+     communications protocols.  On GNU/Hurd systems, this error can
+     happen for many calls when the object does not support the
+     particular operation; it is a generic indication that the server
+     knows nothing to do for that call.
 
  -- Macro: int EPFNOSUPPORT
-     The socket communications protocol family you requested is not
-     supported.
+     "Protocol family not supported."  The socket communications
+     protocol family you requested is not supported.
 
  -- Macro: int EAFNOSUPPORT
-     The address family specified for a socket is not supported; it is
-     inconsistent with the protocol being used on the socket.  *Note
-     Sockets::.
+     "Address family not supported by protocol."  The address family
+     specified for a socket is not supported; it is inconsistent with
+     the protocol being used on the socket.  *Note Sockets::.
 
  -- Macro: int EADDRINUSE
-     The requested socket address is already in use.  *Note Socket
-     Addresses::.
+     "Address already in use."  The requested socket address is already
+     in use.  *Note Socket Addresses::.
 
  -- Macro: int EADDRNOTAVAIL
-     The requested socket address is not available; for example, you
-     tried to give a socket a name that doesn't match the local host
-     name.  *Note Socket Addresses::.
+     "Cannot assign requested address."  The requested socket address
+     is not available; for example, you tried to give a socket a name
+     that doesn't match the local host name.  *Note Socket Addresses::.
 
  -- Macro: int ENETDOWN
-     A socket operation failed because the network was down.
+     "Network is down."  A socket operation failed because the network
+     was down.
 
  -- Macro: int ENETUNREACH
-     A socket operation failed because the subnet containing the remote
-     host was unreachable.
+     "Network is unreachable."  A socket operation failed because the
+     subnet containing the remote host was unreachable.
 
  -- Macro: int ENETRESET
-     A network connection was reset because the remote host crashed.
+     "Network dropped connection on reset."  A network connection was
+     reset because the remote host crashed.
 
  -- Macro: int ECONNABORTED
-     A network connection was aborted locally.
+     "Software caused connection abort."  A network connection was
+     aborted locally.
 
  -- Macro: int ECONNRESET
-     A network connection was closed for reasons outside the control of
-     the local host, such as by the remote machine rebooting or an
-     unrecoverable protocol violation.
+     "Connection reset by peer."  A network connection was closed for
+     reasons outside the control of the local host, such as by the
+     remote machine rebooting or an unrecoverable protocol violation.
 
  -- Macro: int ENOBUFS
-     The kernel's buffers for I/O operations are all in use.  In GNU,
-     this error is always synonymous with `ENOMEM'; you may get one or
-     the other from network operations.
+     "No buffer space available."  The kernel's buffers for I/O
+     operations are all in use.  In GNU, this error is always
+     synonymous with `ENOMEM'; you may get one or the other from
+     network operations.
 
  -- Macro: int EISCONN
-     You tried to connect a socket that is already connected.  *Note
-     Connecting::.
+     "Transport endpoint is already connected."  You tried to connect a
+     socket that is already connected.  *Note Connecting::.
 
  -- Macro: int ENOTCONN
-     The socket is not connected to anything.  You get this error when
-     you try to transmit data over a socket, without first specifying a
+     "Transport endpoint is not connected."  The socket is not
+     connected to anything.  You get this error when you try to
+     transmit data over a socket, without first specifying a
      destination for the data.  For a connectionless socket (for
      datagram protocols, such as UDP), you get `EDESTADDRREQ' instead.
 
  -- Macro: int EDESTADDRREQ
-     No default destination address was set for the socket.  You get
-     this error when you try to transmit data over a connectionless
-     socket, without first specifying a destination for the data with
-     `connect'.
+     "Destination address required."  No default destination address
+     was set for the socket.  You get this error when you try to
+     transmit data over a connectionless socket, without first
+     specifying a destination for the data with `connect'.
 
  -- Macro: int ESHUTDOWN
-     The socket has already been shut down.
+     "Cannot send after transport endpoint shutdown."  The socket has
+     already been shut down.
 
  -- Macro: int ETOOMANYREFS
-     ???
+     "Too many references: cannot splice."
 
  -- Macro: int ETIMEDOUT
-     A socket operation with a specified timeout received no response
-     during the timeout period.
+     "Connection timed out."  A socket operation with a specified
+     timeout received no response during the timeout period.
 
  -- Macro: int ECONNREFUSED
-     A remote host refused to allow the network connection (typically
-     because it is not running the requested service).
+     "Connection refused."  A remote host refused to allow the network
+     connection (typically because it is not running the requested
+     service).
 
  -- Macro: int ELOOP
-     Too many levels of symbolic links were encountered in looking up a
-     file name.  This often indicates a cycle of symbolic links.
+     "Too many levels of symbolic links."  Too many levels of symbolic
+     links were encountered in looking up a file name.  This often
+     indicates a cycle of symbolic links.
 
  -- Macro: int ENAMETOOLONG
-     Filename too long (longer than `PATH_MAX'; *note Limits for
-     Files::) or host name too long (in `gethostname' or `sethostname';
-     *note Host Identification::).
+     "File name too long."  Filename too long (longer than `PATH_MAX';
+     *note Limits for Files::) or host name too long (in `gethostname'
+     or `sethostname'; *note Host Identification::).
 
  -- Macro: int EHOSTDOWN
-     The remote host for a requested network connection is down.
+     "Host is down."  The remote host for a requested network
+     connection is down.
 
  -- Macro: int EHOSTUNREACH
-     The remote host for a requested network connection is not
-     reachable.
+     "No route to host."  The remote host for a requested network
+     connection is not reachable.
 
  -- Macro: int ENOTEMPTY
-     Directory not empty, where an empty directory was expected.
-     Typically, this error occurs when you are trying to delete a
-     directory.
+     "Directory not empty."  Directory not empty, where an empty
+     directory was expected.  Typically, this error occurs when you are
+     trying to delete a directory.
 
  -- Macro: int EPROCLIM
-     This means that the per-user limit on new process would be
-     exceeded by an attempted `fork'.  *Note Limits on Resources::, for
-     details on the `RLIMIT_NPROC' limit.
+     "Too many processes."  This means that the per-user limit on new
+     process would be exceeded by an attempted `fork'.  *Note Limits on
+     Resources::, for details on the `RLIMIT_NPROC' limit.
 
  -- Macro: int EUSERS
-     The file quota system is confused because there are too many users.
+     "Too many users."  The file quota system is confused because there
+     are too many users.
 
  -- Macro: int EDQUOT
-     The user's disk quota was exceeded.
+     "Disk quota exceeded."  The user's disk quota was exceeded.
 
  -- Macro: int ESTALE
-     Stale file handle.  This indicates an internal confusion in the
+     "Stale file handle."  This indicates an internal confusion in the
      file system which is due to file system rearrangements on the
      server host for NFS file systems or corruption in other file
      systems.  Repairing this condition usually requires unmounting,
      possibly repairing and remounting the file system.
 
  -- Macro: int EREMOTE
-     An attempt was made to NFS-mount a remote file system with a file
-     name that already specifies an NFS-mounted file.  (This is an
-     error on some operating systems, but we expect it to work properly
-     on GNU/Hurd systems, making this error code impossible.)
+     "Object is remote."  An attempt was made to NFS-mount a remote
+     file system with a file name that already specifies an NFS-mounted
+     file.  (This is an error on some operating systems, but we expect
+     it to work properly on GNU/Hurd systems, making this error code
+     impossible.)
 
  -- Macro: int EBADRPC
-     ???
+     "RPC struct is bad."
 
  -- Macro: int ERPCMISMATCH
-     ???
+     "RPC version wrong."
 
  -- Macro: int EPROGUNAVAIL
-     ???
+     "RPC program not available."
 
  -- Macro: int EPROGMISMATCH
-     ???
+     "RPC program version wrong."
 
  -- Macro: int EPROCUNAVAIL
-     ???
+     "RPC bad procedure for program."
 
  -- Macro: int ENOLCK
-     No locks available.  This is used by the file locking facilities;
-     see *Note File Locks::.  This error is never generated by GNU/Hurd
-     systems, but it can result from an operation to an NFS server
-     running another operating system.
+     "No locks available."  This is used by the file locking
+     facilities; see *Note File Locks::.  This error is never generated
+     by GNU/Hurd systems, but it can result from an operation to an NFS
+     server running another operating system.
 
  -- Macro: int EFTYPE
-     Inappropriate file type or format.  The file was the wrong type
+     "Inappropriate file type or format."  The file was the wrong type
      for the operation, or a data file had the wrong format.
 
      On some systems `chmod' returns this error if you try to set the
      sticky bit on a non-directory file; *note Setting Permissions::.
 
  -- Macro: int EAUTH
-     ???
+     "Authentication error."
 
  -- Macro: int ENEEDAUTH
-     ???
+     "Need authenticator."
 
  -- Macro: int ENOSYS
-     Function not implemented.  This indicates that the function called
-     is not implemented at all, either in the C library itself or in the
-     operating system.  When you get this error, you can be sure that
-     this particular function will always fail with `ENOSYS' unless you
-     install a new version of the C library or the operating system.
+     "Function not implemented."  This indicates that the function
+     called is not implemented at all, either in the C library itself
+     or in the operating system.  When you get this error, you can be
+     sure that this particular function will always fail with `ENOSYS'
+     unless you install a new version of the C library or the operating
+     system.
 
  -- Macro: int ENOTSUP
-     Not supported.  A function returns this error when certain
+     "Not supported."  A function returns this error when certain
      parameter values are valid, but the functionality they request is
      not available.  This can mean that the function does not implement
      a particular command or option value or flag bit at all.  For
@@ -5144,60 +5402,75 @@ on other systems.
      implementation, it returns `ENOSYS' instead.
 
  -- Macro: int EILSEQ
-     While decoding a multibyte character the function came along an
-     invalid or an incomplete sequence of bytes or the given wide
-     character is invalid.
+     "Invalid or incomplete multibyte or wide character."  While
+     decoding a multibyte character the function came along an invalid
+     or an incomplete sequence of bytes or the given wide character is
+     invalid.
 
  -- Macro: int EBACKGROUND
-     On GNU/Hurd systems, servers supporting the `term' protocol return
-     this error for certain operations when the caller is not in the
-     foreground process group of the terminal.  Users do not usually
-     see this error because functions such as `read' and `write'
-     translate it into a `SIGTTIN' or `SIGTTOU' signal.  *Note Job
-     Control::, for information on process groups and these signals.
+     "Inappropriate operation for background process."  On GNU/Hurd
+     systems, servers supporting the `term' protocol return this error
+     for certain operations when the caller is not in the foreground
+     process group of the terminal.  Users do not usually see this
+     error because functions such as `read' and `write' translate it
+     into a `SIGTTIN' or `SIGTTOU' signal.  *Note Job Control::, for
+     information on process groups and these signals.
 
  -- Macro: int EDIED
-     On GNU/Hurd systems, opening a file returns this error when the
-     file is translated by a program and the translator program dies
-     while starting up, before it has connected to the file.
+     "Translator died."  On GNU/Hurd systems, opening a file returns
+     this error when the file is translated by a program and the
+     translator program dies while starting up, before it has connected
+     to the file.
 
  -- Macro: int ED
-     The experienced user will know what is wrong.
+     "?."  The experienced user will know what is wrong.
 
  -- Macro: int EGREGIOUS
-     You did *what*?
+     "You really blew it this time."  You did *what*?
 
  -- Macro: int EIEIO
-     Go home and have a glass of warm, dairy-fresh milk.
+     "Computer bought the farm."  Go home and have a glass of warm,
+     dairy-fresh milk.
 
  -- Macro: int EGRATUITOUS
-     This error code has no purpose.
+     "Gratuitous error."  This error code has no purpose.
 
  -- Macro: int EBADMSG
+     "Bad message."
 
  -- Macro: int EIDRM
+     "Identifier removed."
 
  -- Macro: int EMULTIHOP
+     "Multihop attempted."
 
  -- Macro: int ENODATA
+     "No data available."
 
  -- Macro: int ENOLINK
+     "Link has been severed."
 
  -- Macro: int ENOMSG
+     "No message of desired type."
 
  -- Macro: int ENOSR
+     "Out of streams resources."
 
  -- Macro: int ENOSTR
+     "Device not a stream."
 
  -- Macro: int EOVERFLOW
+     "Value too large for defined data type."
 
  -- Macro: int EPROTO
+     "Protocol error."
 
  -- Macro: int ETIME
+     "Timer expired."
 
  -- Macro: int ECANCELED
-     Operation canceled; an asynchronous operation was canceled before
-     it completed.  *Note Asynchronous I/O::.  When you call
+     "Operation canceled."  An asynchronous operation was canceled
+     before it completed.  *Note Asynchronous I/O::.  When you call
      `aio_cancel', the normal result is for the operations affected to
      complete with this error; *note Cancel AIO Operations::.
 
@@ -5205,98 +5478,145 @@ on other systems.
 They are not yet documented._
 
  -- Macro: int ERESTART
+     "Interrupted system call should be restarted."
 
  -- Macro: int ECHRNG
+     "Channel number out of range."
 
  -- Macro: int EL2NSYNC
+     "Level 2 not synchronized."
 
  -- Macro: int EL3HLT
+     "Level 3 halted."
 
  -- Macro: int EL3RST
+     "Level 3 reset."
 
  -- Macro: int ELNRNG
+     "Link number out of range."
 
  -- Macro: int EUNATCH
+     "Protocol driver not attached."
 
  -- Macro: int ENOCSI
+     "No CSI structure available."
 
  -- Macro: int EL2HLT
+     "Level 2 halted."
 
  -- Macro: int EBADE
+     "Invalid exchange."
 
  -- Macro: int EBADR
+     "Invalid request descriptor."
 
  -- Macro: int EXFULL
+     "Exchange full."
 
  -- Macro: int ENOANO
+     "No anode."
 
  -- Macro: int EBADRQC
+     "Invalid request code."
 
  -- Macro: int EBADSLT
+     "Invalid slot."
 
  -- Macro: int EDEADLOCK
+     "File locking deadlock error."
 
  -- Macro: int EBFONT
+     "Bad font file format."
 
  -- Macro: int ENONET
+     "Machine is not on the network."
 
  -- Macro: int ENOPKG
+     "Package not installed."
 
  -- Macro: int EADV
+     "Advertise error."
 
  -- Macro: int ESRMNT
+     "Srmount error."
 
  -- Macro: int ECOMM
+     "Communication error on send."
 
  -- Macro: int EDOTDOT
+     "RFS specific error."
 
  -- Macro: int ENOTUNIQ
+     "Name not unique on network."
 
  -- Macro: int EBADFD
+     "File descriptor in bad state."
 
  -- Macro: int EREMCHG
+     "Remote address changed."
 
  -- Macro: int ELIBACC
+     "Can not access a needed shared library."
 
  -- Macro: int ELIBBAD
+     "Accessing a corrupted shared library."
 
  -- Macro: int ELIBSCN
+     ".lib section in a.out corrupted."
 
  -- Macro: int ELIBMAX
+     "Attempting to link in too many shared libraries."
 
  -- Macro: int ELIBEXEC
+     "Cannot exec a shared library directly."
 
  -- Macro: int ESTRPIPE
+     "Streams pipe error."
 
  -- Macro: int EUCLEAN
+     "Structure needs cleaning."
 
  -- Macro: int ENOTNAM
+     "Not a XENIX named type file."
 
  -- Macro: int ENAVAIL
+     "No XENIX semaphores available."
 
  -- Macro: int EISNAM
+     "Is a named type file."
 
  -- Macro: int EREMOTEIO
+     "Remote I/O error."
 
  -- Macro: int ENOMEDIUM
+     "No medium found."
 
  -- Macro: int EMEDIUMTYPE
+     "Wrong medium type."
 
  -- Macro: int ENOKEY
+     "Required key not available."
 
  -- Macro: int EKEYEXPIRED
+     "Key has expired."
 
  -- Macro: int EKEYREVOKED
+     "Key has been revoked."
 
  -- Macro: int EKEYREJECTED
+     "Key was rejected by service."
 
  -- Macro: int EOWNERDEAD
+     "Owner died."
 
  -- Macro: int ENOTRECOVERABLE
+     "State not recoverable."
 
  -- Macro: int ERFKILL
+     "Operation not possible due to RF-kill."
 
  -- Macro: int EHWPOISON
+     "Memory page has hardware error."
 
 
 File: libc.info,  Node: Error Messages,  Prev: Error Codes,  Up: Error Reporting
@@ -5805,6 +6125,7 @@ special to the GNU C Library and GNU Compiler.
 * Unconstrained Allocation::    The `malloc' facility allows fully general
 		 		 dynamic allocation.
 * Allocation Debugging::        Finding memory leaks and not freed memory.
+* Replacing malloc::            Using your own `malloc'-style allocator.
 * Obstacks::                    Obstacks are less general than malloc
 				 but more efficient and convenient.
 * Variable Size Automatic::     Allocation of variable-sized blocks
@@ -5931,6 +6252,10 @@ completely with `M_MMAP_MAX'; *note Malloc Tunable Parameters::.
    A more detailed technical description of the GNU Allocator is
 maintained in the GNU C Library wiki. See
 `https://sourceware.org/glibc/wiki/MallocInternals'.
+
+   It is possible to use your own custom `malloc' instead of the
+built-in allocator provided by the GNU C Library.  *Note Replacing
+malloc::.
 
 
 File: libc.info,  Node: Unconstrained Allocation,  Next: Allocation Debugging,  Prev: The GNU Allocator,  Up: Memory Allocation
@@ -6075,13 +6400,6 @@ prototype for this function is in `stdlib.h'.
      The `free' function deallocates the block of memory pointed at by
      PTR.
 
- -- Function: void cfree (void *PTR)
-     Preliminary: | MT-Safe | AS-Unsafe lock | AC-Unsafe lock fd mem |
-     *Note POSIX Safety Concepts::.
-
-     This function does the same thing as `free'.  It's provided for
-     backward compatibility with SunOS; you should use `free' instead.
-
    Freeing a block alters the contents of the block.  *Do not expect to
 find any data (such as a pointer to the next block in a chain of
 blocks) in the block after freeing it.*  Copy whatever you need out of
@@ -6128,8 +6446,8 @@ block might be a buffer that you use to hold a line being read from a
 file; no matter how long you make the buffer initially, you may
 encounter a line that is longer.
 
-   You can make the block longer by calling `realloc'.  This function
-is declared in `stdlib.h'.  
+   You can make the block longer by calling `realloc' or
+`reallocarray'.  These functions are declared in `stdlib.h'.  
 
  -- Function: void * realloc (void *PTR, size_t NEWSIZE)
      Preliminary: | MT-Safe | AS-Unsafe lock | AC-Unsafe lock fd mem |
@@ -6149,9 +6467,28 @@ is declared in `stdlib.h'.
      implementations (before ISO C) may not support this behavior, and
      will probably crash when `realloc' is passed a null pointer.
 
-   Like `malloc', `realloc' may return a null pointer if no memory
-space is available to make the block bigger.  When this happens, the
-original block is untouched; it has not been modified or relocated.
+ -- Function: void * reallocarray (void *PTR, size_t NMEMB, size_t SIZE)
+     Preliminary: | MT-Safe | AS-Unsafe lock | AC-Unsafe lock fd mem |
+     *Note POSIX Safety Concepts::.
+
+     The `reallocarray' function changes the size of the block whose
+     address is PTR to be long enough to contain a vector of NMEMB
+     elements, each of size SIZE.  It is equivalent to `realloc (PTR,
+     NMEMB * SIZE)', except that `reallocarray' fails safely if the
+     multiplication overflows, by setting `errno' to `ENOMEM',
+     returning a null pointer, and leaving the original block unchanged.
+
+     `reallocarray' should be used instead of `realloc' when the new
+     size of the allocated block is the result of a multiplication that
+     might overflow.
+
+     *Portability Note:* This function is not part of any standard.  It
+     was first introduced in OpenBSD 5.6.
+
+   Like `malloc', `realloc' and `reallocarray' may return a null
+pointer if no memory space is available to make the block bigger.  When
+this happens, the original block is untouched; it has not been modified
+or relocated.
 
    In most cases it makes no difference what happens to the original
 block when `realloc' fails, because the application program cannot
@@ -6169,15 +6506,15 @@ error message as `xmalloc' does for `malloc':
        return value;
      }
 
-   You can also use `realloc' to make a block smaller.  The reason you
-would do this is to avoid tying up a lot of memory space when only a
-little is needed.  In several allocation implementations, making a
-block smaller sometimes necessitates copying it, so it can fail if no
-other space is available.
+   You can also use `realloc' or `reallocarray' to make a block
+smaller.  The reason you would do this is to avoid tying up a lot of
+memory space when only a little is needed.  In several allocation
+implementations, making a block smaller sometimes necessitates copying
+it, so it can fail if no other space is available.
 
    If the new size you specify is the same as the old size, `realloc'
-is guaranteed to change nothing and return the same address that you
-gave.
+and `reallocarray' are guaranteed to change nothing and return the same
+address that you gave.
 
 
 File: libc.info,  Node: Allocating Cleared Space,  Next: Aligned Memory Blocks,  Prev: Changing Block Size,  Up: Unconstrained Allocation
@@ -6786,6 +7123,11 @@ Here is a summary of the functions that work with `malloc':
      possibly by copying it to a new location.  *Note Changing Block
      Size::.
 
+`void *reallocarray (void *PTR, size_t NMEMB, size_t SIZE)'
+     Change the size of a block previously allocated by `malloc' to
+     `NMEMB * SIZE' bytes as with `realloc'.  *Note Changing Block
+     Size::.
+
 `void *calloc (size_t COUNT, size_t ELTSIZE)'
      Allocate a block of COUNT * ELTSIZE bytes using `malloc', and set
      its contents to zero.  *Note Allocating Cleared Space::.
@@ -6832,7 +7174,7 @@ Here is a summary of the functions that work with `malloc':
      Statistics of Malloc::.
 
 
-File: libc.info,  Node: Allocation Debugging,  Next: Obstacks,  Prev: Unconstrained Allocation,  Up: Memory Allocation
+File: libc.info,  Node: Allocation Debugging,  Next: Replacing malloc,  Prev: Unconstrained Allocation,  Up: Memory Allocation
 
 3.2.4 Allocation Debugging
 --------------------------
@@ -7080,9 +7422,74 @@ without freeing this memory before the program terminates.  Whether
 this is a real problem remains to be investigated.
 
 
-File: libc.info,  Node: Obstacks,  Next: Variable Size Automatic,  Prev: Allocation Debugging,  Up: Memory Allocation
+File: libc.info,  Node: Replacing malloc,  Next: Obstacks,  Prev: Allocation Debugging,  Up: Memory Allocation
 
-3.2.5 Obstacks
+3.2.5 Replacing `malloc'
+------------------------
+
+The GNU C Library supports replacing the built-in `malloc'
+implementation with a different allocator with the same interface.  For
+dynamically linked programs, this happens through ELF symbol
+interposition, either using shared object dependencies or `LD_PRELOAD'.
+For static linking, the `malloc' replacement library must be linked in
+before linking against `libc.a' (explicitly or implicitly).
+
+   *Note_* Failure to provide a complete set of replacement functions
+(that is, all the functions used by the application, the GNU C Library,
+and other linked-in libraries) can lead to static linking failures,
+and, at run time, to heap corruption and application crashes.
+
+   The minimum set of functions which has to be provided by a custom
+`malloc' is given in the table below.
+
+`malloc'
+
+`free'
+
+`calloc'
+
+`realloc'
+
+   These `malloc'-related functions are required for the GNU C Library
+to work.(1)
+
+   The `malloc' implementation in the GNU C Library provides additional
+functionality not used by the library itself, but which is often used by
+other system libraries and applications.  A general-purpose replacement
+`malloc' implementation should provide definitions of these functions,
+too.  Their names are listed in the following table.
+
+`aligned_alloc'
+
+`malloc_usable_size'
+
+`memalign'
+
+`posix_memalign'
+
+`pvalloc'
+
+`valloc'
+
+   In addition, very old applications may use the obsolete `cfree'
+function.
+
+   Further `malloc'-related functions such as `mallopt' or `mallinfo'
+will not have any effect or return incorrect statistics when a
+replacement `malloc' is in use.  However, failure to replace these
+functions typically does not result in crashes or other incorrect
+application behavior, but may result in static linking failures.
+
+   ---------- Footnotes ----------
+
+   (1) Versions of the GNU C Library before 2.25 required that a custom
+`malloc' defines `__libc_memalign' (with the same interface as the
+`memalign' function).
+
+
+File: libc.info,  Node: Obstacks,  Next: Variable Size Automatic,  Prev: Replacing malloc,  Up: Memory Allocation
+
+3.2.6 Obstacks
 --------------
 
 An "obstack" is a pool of memory containing a stack of objects.  You
@@ -7119,7 +7526,7 @@ suitable boundary.
 
 File: libc.info,  Node: Creating Obstacks,  Next: Preparing for Obstacks,  Up: Obstacks
 
-3.2.5.1 Creating Obstacks
+3.2.6.1 Creating Obstacks
 .........................
 
 The utilities for manipulating obstacks are declared in the header file
@@ -7159,7 +7566,7 @@ free a chunk.  These matters are described in the following section.
 
 File: libc.info,  Node: Preparing for Obstacks,  Next: Allocation in an Obstack,  Prev: Creating Obstacks,  Up: Obstacks
 
-3.2.5.2 Preparing for Using Obstacks
+3.2.6.2 Preparing for Using Obstacks
 ....................................
 
 Each source file in which you plan to use the obstack functions must
@@ -7230,7 +7637,7 @@ Second, an obstack that is itself dynamically allocated:
 
 File: libc.info,  Node: Allocation in an Obstack,  Next: Freeing Obstack Objects,  Prev: Preparing for Obstacks,  Up: Obstacks
 
-3.2.5.3 Allocation in an Obstack
+3.2.6.3 Allocation in an Obstack
 ................................
 
 The most direct way to allocate an object in an obstack is with
@@ -7302,7 +7709,7 @@ Contrast this with the previous example of `savestring' using `malloc'
 
 File: libc.info,  Node: Freeing Obstack Objects,  Next: Obstack Functions,  Prev: Allocation in an Obstack,  Up: Obstacks
 
-3.2.5.4 Freeing Objects in an Obstack
+3.2.6.4 Freeing Objects in an Obstack
 .....................................
 
 To free an object allocated in an obstack, use the function
@@ -7336,7 +7743,7 @@ chunk.
 
 File: libc.info,  Node: Obstack Functions,  Next: Growing Objects,  Prev: Freeing Obstack Objects,  Up: Obstacks
 
-3.2.5.5 Obstack Functions and Macros
+3.2.6.5 Obstack Functions and Macros
 ....................................
 
 The interfaces for using obstacks may be defined either as functions or
@@ -7387,7 +7794,7 @@ so as to compute each argument only once.
 
 File: libc.info,  Node: Growing Objects,  Next: Extra Fast Growing,  Prev: Obstack Functions,  Up: Obstacks
 
-3.2.5.6 Growing Objects
+3.2.6.6 Growing Objects
 .......................
 
 Because memory in obstack chunks is used sequentially, it is possible to
@@ -7505,7 +7912,7 @@ length--there's no telling what will happen if you do that.
 
 File: libc.info,  Node: Extra Fast Growing,  Next: Status of an Obstack,  Prev: Growing Objects,  Up: Obstacks
 
-3.2.5.7 Extra Fast Growing Objects
+3.2.6.7 Extra Fast Growing Objects
 ..................................
 
 The usual functions for growing objects incur overhead for checking
@@ -7610,7 +8017,7 @@ start using the fast growth functions again.
 
 File: libc.info,  Node: Status of an Obstack,  Next: Obstacks Data Alignment,  Prev: Extra Fast Growing,  Up: Obstacks
 
-3.2.5.8 Status of an Obstack
+3.2.6.8 Status of an Obstack
 ............................
 
 Here are functions that provide information on the current status of
@@ -7652,7 +8059,7 @@ while still growing it.
 
 File: libc.info,  Node: Obstacks Data Alignment,  Next: Obstack Chunks,  Prev: Status of an Obstack,  Up: Obstacks
 
-3.2.5.9 Alignment of Data in Obstacks
+3.2.6.9 Alignment of Data in Obstacks
 .....................................
 
 Each obstack has an "alignment boundary"; each object allocated in the
@@ -7696,7 +8103,7 @@ the next object.
 
 File: libc.info,  Node: Obstack Chunks,  Next: Summary of Obstacks,  Prev: Obstacks Data Alignment,  Up: Obstacks
 
-3.2.5.10 Obstack Chunks
+3.2.6.10 Obstack Chunks
 .......................
 
 Obstacks work by allocating space for themselves in large chunks, and
@@ -7750,7 +8157,7 @@ to the chunk size.  Here is how to do so cleanly:
 
 File: libc.info,  Node: Summary of Obstacks,  Prev: Obstack Chunks,  Up: Obstacks
 
-3.2.5.11 Summary of Obstack Functions
+3.2.6.11 Summary of Obstack Functions
 .....................................
 
 Here is a summary of all the functions associated with obstacks.  Each
@@ -7833,7 +8240,7 @@ argument.
 
 File: libc.info,  Node: Variable Size Automatic,  Prev: Obstacks,  Up: Memory Allocation
 
-3.2.6 Automatic Storage with Variable Size
+3.2.7 Automatic Storage with Variable Size
 ------------------------------------------
 
 The function `alloca' supports a kind of half-dynamic allocation in
@@ -7874,7 +8281,7 @@ function arguments.  An example of what to avoid is `foo (x, alloca
 
 File: libc.info,  Node: Alloca Example,  Next: Advantages of Alloca,  Up: Variable Size Automatic
 
-3.2.6.1 `alloca' Example
+3.2.7.1 `alloca' Example
 ........................
 
 As an example of the use of `alloca', here is a function that opens a
@@ -7910,7 +8317,7 @@ other, more important advantages, and some disadvantages.
 
 File: libc.info,  Node: Advantages of Alloca,  Next: Disadvantages of Alloca,  Prev: Alloca Example,  Up: Variable Size Automatic
 
-3.2.6.2 Advantages of `alloca'
+3.2.7.2 Advantages of `alloca'
 ..............................
 
 Here are the reasons why `alloca' may be preferable to `malloc':
@@ -7953,7 +8360,7 @@ Here are the reasons why `alloca' may be preferable to `malloc':
 
 File: libc.info,  Node: Disadvantages of Alloca,  Next: GNU C Variable-Size Arrays,  Prev: Advantages of Alloca,  Up: Variable Size Automatic
 
-3.2.6.3 Disadvantages of `alloca'
+3.2.7.3 Disadvantages of `alloca'
 .................................
 
 These are the disadvantages of `alloca' in comparison with `malloc':
@@ -7970,7 +8377,7 @@ These are the disadvantages of `alloca' in comparison with `malloc':
 
 File: libc.info,  Node: GNU C Variable-Size Arrays,  Prev: Disadvantages of Alloca,  Up: Variable Size Automatic
 
-3.2.6.4 GNU C Variable-Size Arrays
+3.2.7.4 GNU C Variable-Size Arrays
 ..................................
 
 In GNU C, you can replace most uses of `alloca' with an array of

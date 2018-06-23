@@ -31,9 +31,9 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #define VCFTLIB_H
 
 #include <stdint.h>
-#include <interface/vmcs_host/vc_dispservice_x_defs.h>
-#include <interface/vctypes/vc_image_types.h>
-#include <interface/vcos/vcos.h>
+#include "interface/vmcs_host/vc_dispservice_x_defs.h"
+#include "interface/vctypes/vc_image_types.h"
+#include "interface/vcos/vcos.h"
 
 //Definitions which in certain functions can be used to mean the actual width and height of a resource, without
 //having to know the data implicitly.

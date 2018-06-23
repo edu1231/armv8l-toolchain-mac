@@ -19,6 +19,7 @@ START-INFO-DIR-ENTRY
 * BRKINT: (libc)Input Modes.
 * BUFSIZ: (libc)Controlling Buffering.
 * CCTS_OFLOW: (libc)Control Modes.
+* CHAR_BIT: (libc)Width of Type.
 * CHILD_MAX: (libc)General Limits.
 * CIGNORE: (libc)Control Modes.
 * CLK_TCK: (libc)Processor Time.
@@ -232,6 +233,8 @@ START-INFO-DIR-ENTRY
 * HUGE_VAL: (libc)Math Error Reporting.
 * HUGE_VALF: (libc)Math Error Reporting.
 * HUGE_VALL: (libc)Math Error Reporting.
+* HUGE_VAL_FN: (libc)Math Error Reporting.
+* HUGE_VAL_FNx: (libc)Math Error Reporting.
 * HUPCL: (libc)Control Modes.
 * I: (libc)Complex Numbers.
 * ICANON: (libc)Local Modes.
@@ -370,6 +373,8 @@ START-INFO-DIR-ENTRY
 * SIG_ERR: (libc)Basic Signal Handling.
 * SNAN: (libc)Infinity and NaN.
 * SNANF: (libc)Infinity and NaN.
+* SNANFN: (libc)Infinity and NaN.
+* SNANFNx: (libc)Infinity and NaN.
 * SNANL: (libc)Infinity and NaN.
 * SOCK_DGRAM: (libc)Communication Styles.
 * SOCK_RAW: (libc)Communication Styles.
@@ -479,8 +484,12 @@ START-INFO-DIR-ENTRY
 * access: (libc)Testing File Access.
 * acos: (libc)Inverse Trig Functions.
 * acosf: (libc)Inverse Trig Functions.
+* acosfN: (libc)Inverse Trig Functions.
+* acosfNx: (libc)Inverse Trig Functions.
 * acosh: (libc)Hyperbolic Functions.
 * acoshf: (libc)Hyperbolic Functions.
+* acoshfN: (libc)Hyperbolic Functions.
+* acoshfNx: (libc)Hyperbolic Functions.
 * acoshl: (libc)Hyperbolic Functions.
 * acosl: (libc)Inverse Trig Functions.
 * addmntent: (libc)mtab.
@@ -529,8 +538,12 @@ START-INFO-DIR-ENTRY
 * asctime_r: (libc)Formatting Calendar Time.
 * asin: (libc)Inverse Trig Functions.
 * asinf: (libc)Inverse Trig Functions.
+* asinfN: (libc)Inverse Trig Functions.
+* asinfNx: (libc)Inverse Trig Functions.
 * asinh: (libc)Hyperbolic Functions.
 * asinhf: (libc)Hyperbolic Functions.
+* asinhfN: (libc)Hyperbolic Functions.
+* asinhfNx: (libc)Hyperbolic Functions.
 * asinhl: (libc)Hyperbolic Functions.
 * asinl: (libc)Inverse Trig Functions.
 * asprintf: (libc)Dynamic Output.
@@ -538,11 +551,17 @@ START-INFO-DIR-ENTRY
 * assert_perror: (libc)Consistency Checking.
 * atan2: (libc)Inverse Trig Functions.
 * atan2f: (libc)Inverse Trig Functions.
+* atan2fN: (libc)Inverse Trig Functions.
+* atan2fNx: (libc)Inverse Trig Functions.
 * atan2l: (libc)Inverse Trig Functions.
 * atan: (libc)Inverse Trig Functions.
 * atanf: (libc)Inverse Trig Functions.
+* atanfN: (libc)Inverse Trig Functions.
+* atanfNx: (libc)Inverse Trig Functions.
 * atanh: (libc)Hyperbolic Functions.
 * atanhf: (libc)Hyperbolic Functions.
+* atanhfN: (libc)Hyperbolic Functions.
+* atanhfNx: (libc)Hyperbolic Functions.
 * atanhl: (libc)Hyperbolic Functions.
 * atanl: (libc)Inverse Trig Functions.
 * atexit: (libc)Cleanups on Exit.
@@ -566,31 +585,49 @@ START-INFO-DIR-ENTRY
 * bzero: (libc)Copying Strings and Arrays.
 * cabs: (libc)Absolute Value.
 * cabsf: (libc)Absolute Value.
+* cabsfN: (libc)Absolute Value.
+* cabsfNx: (libc)Absolute Value.
 * cabsl: (libc)Absolute Value.
 * cacos: (libc)Inverse Trig Functions.
 * cacosf: (libc)Inverse Trig Functions.
+* cacosfN: (libc)Inverse Trig Functions.
+* cacosfNx: (libc)Inverse Trig Functions.
 * cacosh: (libc)Hyperbolic Functions.
 * cacoshf: (libc)Hyperbolic Functions.
+* cacoshfN: (libc)Hyperbolic Functions.
+* cacoshfNx: (libc)Hyperbolic Functions.
 * cacoshl: (libc)Hyperbolic Functions.
 * cacosl: (libc)Inverse Trig Functions.
 * calloc: (libc)Allocating Cleared Space.
 * canonicalize: (libc)FP Bit Twiddling.
 * canonicalize_file_name: (libc)Symbolic Links.
 * canonicalizef: (libc)FP Bit Twiddling.
+* canonicalizefN: (libc)FP Bit Twiddling.
+* canonicalizefNx: (libc)FP Bit Twiddling.
 * canonicalizel: (libc)FP Bit Twiddling.
 * carg: (libc)Operations on Complex.
 * cargf: (libc)Operations on Complex.
+* cargfN: (libc)Operations on Complex.
+* cargfNx: (libc)Operations on Complex.
 * cargl: (libc)Operations on Complex.
 * casin: (libc)Inverse Trig Functions.
 * casinf: (libc)Inverse Trig Functions.
+* casinfN: (libc)Inverse Trig Functions.
+* casinfNx: (libc)Inverse Trig Functions.
 * casinh: (libc)Hyperbolic Functions.
 * casinhf: (libc)Hyperbolic Functions.
+* casinhfN: (libc)Hyperbolic Functions.
+* casinhfNx: (libc)Hyperbolic Functions.
 * casinhl: (libc)Hyperbolic Functions.
 * casinl: (libc)Inverse Trig Functions.
 * catan: (libc)Inverse Trig Functions.
 * catanf: (libc)Inverse Trig Functions.
+* catanfN: (libc)Inverse Trig Functions.
+* catanfNx: (libc)Inverse Trig Functions.
 * catanh: (libc)Hyperbolic Functions.
 * catanhf: (libc)Hyperbolic Functions.
+* catanhfN: (libc)Hyperbolic Functions.
+* catanhfNx: (libc)Hyperbolic Functions.
 * catanhl: (libc)Hyperbolic Functions.
 * catanl: (libc)Inverse Trig Functions.
 * catclose: (libc)The catgets Functions.
@@ -599,23 +636,32 @@ START-INFO-DIR-ENTRY
 * cbc_crypt: (libc)DES Encryption.
 * cbrt: (libc)Exponents and Logarithms.
 * cbrtf: (libc)Exponents and Logarithms.
+* cbrtfN: (libc)Exponents and Logarithms.
+* cbrtfNx: (libc)Exponents and Logarithms.
 * cbrtl: (libc)Exponents and Logarithms.
 * ccos: (libc)Trig Functions.
 * ccosf: (libc)Trig Functions.
+* ccosfN: (libc)Trig Functions.
+* ccosfNx: (libc)Trig Functions.
 * ccosh: (libc)Hyperbolic Functions.
 * ccoshf: (libc)Hyperbolic Functions.
+* ccoshfN: (libc)Hyperbolic Functions.
+* ccoshfNx: (libc)Hyperbolic Functions.
 * ccoshl: (libc)Hyperbolic Functions.
 * ccosl: (libc)Trig Functions.
 * ceil: (libc)Rounding Functions.
 * ceilf: (libc)Rounding Functions.
+* ceilfN: (libc)Rounding Functions.
+* ceilfNx: (libc)Rounding Functions.
 * ceill: (libc)Rounding Functions.
 * cexp: (libc)Exponents and Logarithms.
 * cexpf: (libc)Exponents and Logarithms.
+* cexpfN: (libc)Exponents and Logarithms.
+* cexpfNx: (libc)Exponents and Logarithms.
 * cexpl: (libc)Exponents and Logarithms.
 * cfgetispeed: (libc)Line Speed.
 * cfgetospeed: (libc)Line Speed.
 * cfmakeraw: (libc)Noncanonical Input.
-* cfree: (libc)Freeing after Malloc.
 * cfsetispeed: (libc)Line Speed.
 * cfsetospeed: (libc)Line Speed.
 * cfsetspeed: (libc)Line Speed.
@@ -624,6 +670,8 @@ START-INFO-DIR-ENTRY
 * chown: (libc)File Owner.
 * cimag: (libc)Operations on Complex.
 * cimagf: (libc)Operations on Complex.
+* cimagfN: (libc)Operations on Complex.
+* cimagfNx: (libc)Operations on Complex.
 * cimagl: (libc)Operations on Complex.
 * clearenv: (libc)Environment Access.
 * clearerr: (libc)Error Recovery.
@@ -631,9 +679,13 @@ START-INFO-DIR-ENTRY
 * clock: (libc)CPU Time.
 * clog10: (libc)Exponents and Logarithms.
 * clog10f: (libc)Exponents and Logarithms.
+* clog10fN: (libc)Exponents and Logarithms.
+* clog10fNx: (libc)Exponents and Logarithms.
 * clog10l: (libc)Exponents and Logarithms.
 * clog: (libc)Exponents and Logarithms.
 * clogf: (libc)Exponents and Logarithms.
+* clogfN: (libc)Exponents and Logarithms.
+* clogfNx: (libc)Exponents and Logarithms.
 * clogl: (libc)Exponents and Logarithms.
 * close: (libc)Opening and Closing Files.
 * closedir: (libc)Reading/Closing Directory.
@@ -641,25 +693,39 @@ START-INFO-DIR-ENTRY
 * confstr: (libc)String Parameters.
 * conj: (libc)Operations on Complex.
 * conjf: (libc)Operations on Complex.
+* conjfN: (libc)Operations on Complex.
+* conjfNx: (libc)Operations on Complex.
 * conjl: (libc)Operations on Complex.
 * connect: (libc)Connecting.
 * copysign: (libc)FP Bit Twiddling.
 * copysignf: (libc)FP Bit Twiddling.
+* copysignfN: (libc)FP Bit Twiddling.
+* copysignfNx: (libc)FP Bit Twiddling.
 * copysignl: (libc)FP Bit Twiddling.
 * cos: (libc)Trig Functions.
 * cosf: (libc)Trig Functions.
+* cosfN: (libc)Trig Functions.
+* cosfNx: (libc)Trig Functions.
 * cosh: (libc)Hyperbolic Functions.
 * coshf: (libc)Hyperbolic Functions.
+* coshfN: (libc)Hyperbolic Functions.
+* coshfNx: (libc)Hyperbolic Functions.
 * coshl: (libc)Hyperbolic Functions.
 * cosl: (libc)Trig Functions.
 * cpow: (libc)Exponents and Logarithms.
 * cpowf: (libc)Exponents and Logarithms.
+* cpowfN: (libc)Exponents and Logarithms.
+* cpowfNx: (libc)Exponents and Logarithms.
 * cpowl: (libc)Exponents and Logarithms.
 * cproj: (libc)Operations on Complex.
 * cprojf: (libc)Operations on Complex.
+* cprojfN: (libc)Operations on Complex.
+* cprojfNx: (libc)Operations on Complex.
 * cprojl: (libc)Operations on Complex.
 * creal: (libc)Operations on Complex.
 * crealf: (libc)Operations on Complex.
+* crealfN: (libc)Operations on Complex.
+* crealfNx: (libc)Operations on Complex.
 * creall: (libc)Operations on Complex.
 * creat64: (libc)Opening and Closing Files.
 * creat: (libc)Opening and Closing Files.
@@ -667,17 +733,27 @@ START-INFO-DIR-ENTRY
 * crypt_r: (libc)crypt.
 * csin: (libc)Trig Functions.
 * csinf: (libc)Trig Functions.
+* csinfN: (libc)Trig Functions.
+* csinfNx: (libc)Trig Functions.
 * csinh: (libc)Hyperbolic Functions.
 * csinhf: (libc)Hyperbolic Functions.
+* csinhfN: (libc)Hyperbolic Functions.
+* csinhfNx: (libc)Hyperbolic Functions.
 * csinhl: (libc)Hyperbolic Functions.
 * csinl: (libc)Trig Functions.
 * csqrt: (libc)Exponents and Logarithms.
 * csqrtf: (libc)Exponents and Logarithms.
+* csqrtfN: (libc)Exponents and Logarithms.
+* csqrtfNx: (libc)Exponents and Logarithms.
 * csqrtl: (libc)Exponents and Logarithms.
 * ctan: (libc)Trig Functions.
 * ctanf: (libc)Trig Functions.
+* ctanfN: (libc)Trig Functions.
+* ctanfNx: (libc)Trig Functions.
 * ctanh: (libc)Hyperbolic Functions.
 * ctanhf: (libc)Hyperbolic Functions.
+* ctanhfN: (libc)Hyperbolic Functions.
+* ctanhfNx: (libc)Hyperbolic Functions.
 * ctanhl: (libc)Hyperbolic Functions.
 * ctanl: (libc)Trig Functions.
 * ctermid: (libc)Identifying the Terminal.
@@ -727,8 +803,12 @@ START-INFO-DIR-ENTRY
 * erf: (libc)Special Functions.
 * erfc: (libc)Special Functions.
 * erfcf: (libc)Special Functions.
+* erfcfN: (libc)Special Functions.
+* erfcfNx: (libc)Special Functions.
 * erfcl: (libc)Special Functions.
 * erff: (libc)Special Functions.
+* erffN: (libc)Special Functions.
+* erffNx: (libc)Special Functions.
 * erfl: (libc)Special Functions.
 * err: (libc)Error Messages.
 * errno: (libc)Checking for Errors.
@@ -744,19 +824,29 @@ START-INFO-DIR-ENTRY
 * exit: (libc)Normal Termination.
 * exp10: (libc)Exponents and Logarithms.
 * exp10f: (libc)Exponents and Logarithms.
+* exp10fN: (libc)Exponents and Logarithms.
+* exp10fNx: (libc)Exponents and Logarithms.
 * exp10l: (libc)Exponents and Logarithms.
 * exp2: (libc)Exponents and Logarithms.
 * exp2f: (libc)Exponents and Logarithms.
+* exp2fN: (libc)Exponents and Logarithms.
+* exp2fNx: (libc)Exponents and Logarithms.
 * exp2l: (libc)Exponents and Logarithms.
 * exp: (libc)Exponents and Logarithms.
 * expf: (libc)Exponents and Logarithms.
+* expfN: (libc)Exponents and Logarithms.
+* expfNx: (libc)Exponents and Logarithms.
 * expl: (libc)Exponents and Logarithms.
 * explicit_bzero: (libc)Erasing Sensitive Data.
 * expm1: (libc)Exponents and Logarithms.
 * expm1f: (libc)Exponents and Logarithms.
+* expm1fN: (libc)Exponents and Logarithms.
+* expm1fNx: (libc)Exponents and Logarithms.
 * expm1l: (libc)Exponents and Logarithms.
 * fabs: (libc)Absolute Value.
 * fabsf: (libc)Absolute Value.
+* fabsfN: (libc)Absolute Value.
+* fabsfNx: (libc)Absolute Value.
 * fabsl: (libc)Absolute Value.
 * fchdir: (libc)Working Directory.
 * fchmod: (libc)Setting Permissions.
@@ -769,6 +859,8 @@ START-INFO-DIR-ENTRY
 * fdatasync: (libc)Synchronizing I/O.
 * fdim: (libc)Misc FP Arithmetic.
 * fdimf: (libc)Misc FP Arithmetic.
+* fdimfN: (libc)Misc FP Arithmetic.
+* fdimfNx: (libc)Misc FP Arithmetic.
 * fdiml: (libc)Misc FP Arithmetic.
 * fdopen: (libc)Descriptors and Streams.
 * fdopendir: (libc)Opening a Directory.
@@ -818,25 +910,39 @@ START-INFO-DIR-ENTRY
 * flockfile: (libc)Streams and Threads.
 * floor: (libc)Rounding Functions.
 * floorf: (libc)Rounding Functions.
+* floorfN: (libc)Rounding Functions.
+* floorfNx: (libc)Rounding Functions.
 * floorl: (libc)Rounding Functions.
 * fma: (libc)Misc FP Arithmetic.
 * fmaf: (libc)Misc FP Arithmetic.
+* fmafN: (libc)Misc FP Arithmetic.
+* fmafNx: (libc)Misc FP Arithmetic.
 * fmal: (libc)Misc FP Arithmetic.
 * fmax: (libc)Misc FP Arithmetic.
 * fmaxf: (libc)Misc FP Arithmetic.
+* fmaxfN: (libc)Misc FP Arithmetic.
+* fmaxfNx: (libc)Misc FP Arithmetic.
 * fmaxl: (libc)Misc FP Arithmetic.
 * fmaxmag: (libc)Misc FP Arithmetic.
 * fmaxmagf: (libc)Misc FP Arithmetic.
+* fmaxmagfN: (libc)Misc FP Arithmetic.
+* fmaxmagfNx: (libc)Misc FP Arithmetic.
 * fmaxmagl: (libc)Misc FP Arithmetic.
 * fmemopen: (libc)String Streams.
 * fmin: (libc)Misc FP Arithmetic.
 * fminf: (libc)Misc FP Arithmetic.
+* fminfN: (libc)Misc FP Arithmetic.
+* fminfNx: (libc)Misc FP Arithmetic.
 * fminl: (libc)Misc FP Arithmetic.
 * fminmag: (libc)Misc FP Arithmetic.
 * fminmagf: (libc)Misc FP Arithmetic.
+* fminmagfN: (libc)Misc FP Arithmetic.
+* fminmagfNx: (libc)Misc FP Arithmetic.
 * fminmagl: (libc)Misc FP Arithmetic.
 * fmod: (libc)Remainder Functions.
 * fmodf: (libc)Remainder Functions.
+* fmodfN: (libc)Remainder Functions.
+* fmodfNx: (libc)Remainder Functions.
 * fmodl: (libc)Remainder Functions.
 * fmtmsg: (libc)Printing Formatted Messages.
 * fnmatch: (libc)Wildcard Matching.
@@ -863,12 +969,18 @@ START-INFO-DIR-ENTRY
 * freopen: (libc)Opening Streams.
 * frexp: (libc)Normalization Functions.
 * frexpf: (libc)Normalization Functions.
+* frexpfN: (libc)Normalization Functions.
+* frexpfNx: (libc)Normalization Functions.
 * frexpl: (libc)Normalization Functions.
 * fromfp: (libc)Rounding Functions.
 * fromfpf: (libc)Rounding Functions.
+* fromfpfN: (libc)Rounding Functions.
+* fromfpfNx: (libc)Rounding Functions.
 * fromfpl: (libc)Rounding Functions.
 * fromfpx: (libc)Rounding Functions.
 * fromfpxf: (libc)Rounding Functions.
+* fromfpxfN: (libc)Rounding Functions.
+* fromfpxfNx: (libc)Rounding Functions.
 * fromfpxl: (libc)Rounding Functions.
 * fscanf: (libc)Formatted Input Functions.
 * fseek: (libc)File Positioning.
@@ -957,6 +1069,8 @@ START-INFO-DIR-ENTRY
 * getpass: (libc)getpass.
 * getpayload: (libc)FP Bit Twiddling.
 * getpayloadf: (libc)FP Bit Twiddling.
+* getpayloadfN: (libc)FP Bit Twiddling.
+* getpayloadfNx: (libc)FP Bit Twiddling.
 * getpayloadl: (libc)FP Bit Twiddling.
 * getpeername: (libc)Who is Connected.
 * getpgid: (libc)Process Group Functions.
@@ -1027,6 +1141,8 @@ START-INFO-DIR-ENTRY
 * htons: (libc)Byte Order.
 * hypot: (libc)Exponents and Logarithms.
 * hypotf: (libc)Exponents and Logarithms.
+* hypotfN: (libc)Exponents and Logarithms.
+* hypotfNx: (libc)Exponents and Logarithms.
 * hypotl: (libc)Exponents and Logarithms.
 * iconv: (libc)Generic Conversion Interface.
 * iconv_close: (libc)Generic Conversion Interface.
@@ -1037,6 +1153,8 @@ START-INFO-DIR-ENTRY
 * if_nametoindex: (libc)Interface Naming.
 * ilogb: (libc)Exponents and Logarithms.
 * ilogbf: (libc)Exponents and Logarithms.
+* ilogbfN: (libc)Exponents and Logarithms.
+* ilogbfNx: (libc)Exponents and Logarithms.
 * ilogbl: (libc)Exponents and Logarithms.
 * imaxabs: (libc)Absolute Value.
 * imaxdiv: (libc)Integer Division.
@@ -1106,12 +1224,18 @@ START-INFO-DIR-ENTRY
 * iszero: (libc)Floating Point Classes.
 * j0: (libc)Special Functions.
 * j0f: (libc)Special Functions.
+* j0fN: (libc)Special Functions.
+* j0fNx: (libc)Special Functions.
 * j0l: (libc)Special Functions.
 * j1: (libc)Special Functions.
 * j1f: (libc)Special Functions.
+* j1fN: (libc)Special Functions.
+* j1fNx: (libc)Special Functions.
 * j1l: (libc)Special Functions.
 * jn: (libc)Special Functions.
 * jnf: (libc)Special Functions.
+* jnfN: (libc)Special Functions.
+* jnfNx: (libc)Special Functions.
 * jnl: (libc)Special Functions.
 * jrand48: (libc)SVID Random.
 * jrand48_r: (libc)SVID Random.
@@ -1123,12 +1247,18 @@ START-INFO-DIR-ENTRY
 * lcong48_r: (libc)SVID Random.
 * ldexp: (libc)Normalization Functions.
 * ldexpf: (libc)Normalization Functions.
+* ldexpfN: (libc)Normalization Functions.
+* ldexpfNx: (libc)Normalization Functions.
 * ldexpl: (libc)Normalization Functions.
 * ldiv: (libc)Integer Division.
 * lfind: (libc)Array Search Function.
 * lgamma: (libc)Special Functions.
 * lgamma_r: (libc)Special Functions.
 * lgammaf: (libc)Special Functions.
+* lgammafN: (libc)Special Functions.
+* lgammafN_r: (libc)Special Functions.
+* lgammafNx: (libc)Special Functions.
+* lgammafNx_r: (libc)Special Functions.
 * lgammaf_r: (libc)Special Functions.
 * lgammal: (libc)Special Functions.
 * lgammal_r: (libc)Special Functions.
@@ -1140,30 +1270,46 @@ START-INFO-DIR-ENTRY
 * lldiv: (libc)Integer Division.
 * llogb: (libc)Exponents and Logarithms.
 * llogbf: (libc)Exponents and Logarithms.
+* llogbfN: (libc)Exponents and Logarithms.
+* llogbfNx: (libc)Exponents and Logarithms.
 * llogbl: (libc)Exponents and Logarithms.
 * llrint: (libc)Rounding Functions.
 * llrintf: (libc)Rounding Functions.
+* llrintfN: (libc)Rounding Functions.
+* llrintfNx: (libc)Rounding Functions.
 * llrintl: (libc)Rounding Functions.
 * llround: (libc)Rounding Functions.
 * llroundf: (libc)Rounding Functions.
+* llroundfN: (libc)Rounding Functions.
+* llroundfNx: (libc)Rounding Functions.
 * llroundl: (libc)Rounding Functions.
 * localeconv: (libc)The Lame Way to Locale Data.
 * localtime: (libc)Broken-down Time.
 * localtime_r: (libc)Broken-down Time.
 * log10: (libc)Exponents and Logarithms.
 * log10f: (libc)Exponents and Logarithms.
+* log10fN: (libc)Exponents and Logarithms.
+* log10fNx: (libc)Exponents and Logarithms.
 * log10l: (libc)Exponents and Logarithms.
 * log1p: (libc)Exponents and Logarithms.
 * log1pf: (libc)Exponents and Logarithms.
+* log1pfN: (libc)Exponents and Logarithms.
+* log1pfNx: (libc)Exponents and Logarithms.
 * log1pl: (libc)Exponents and Logarithms.
 * log2: (libc)Exponents and Logarithms.
 * log2f: (libc)Exponents and Logarithms.
+* log2fN: (libc)Exponents and Logarithms.
+* log2fNx: (libc)Exponents and Logarithms.
 * log2l: (libc)Exponents and Logarithms.
 * log: (libc)Exponents and Logarithms.
 * logb: (libc)Exponents and Logarithms.
 * logbf: (libc)Exponents and Logarithms.
+* logbfN: (libc)Exponents and Logarithms.
+* logbfNx: (libc)Exponents and Logarithms.
 * logbl: (libc)Exponents and Logarithms.
 * logf: (libc)Exponents and Logarithms.
+* logfN: (libc)Exponents and Logarithms.
+* logfNx: (libc)Exponents and Logarithms.
 * login: (libc)Logging In and Out.
 * login_tty: (libc)Logging In and Out.
 * logl: (libc)Exponents and Logarithms.
@@ -1174,9 +1320,13 @@ START-INFO-DIR-ENTRY
 * lrand48_r: (libc)SVID Random.
 * lrint: (libc)Rounding Functions.
 * lrintf: (libc)Rounding Functions.
+* lrintfN: (libc)Rounding Functions.
+* lrintfNx: (libc)Rounding Functions.
 * lrintl: (libc)Rounding Functions.
 * lround: (libc)Rounding Functions.
 * lroundf: (libc)Rounding Functions.
+* lroundfN: (libc)Rounding Functions.
+* lroundfNx: (libc)Rounding Functions.
 * lroundl: (libc)Rounding Functions.
 * lsearch: (libc)Array Search Function.
 * lseek64: (libc)File Position Primitive.
@@ -1222,6 +1372,8 @@ START-INFO-DIR-ENTRY
 * mmap: (libc)Memory-mapped I/O.
 * modf: (libc)Rounding Functions.
 * modff: (libc)Rounding Functions.
+* modffN: (libc)Rounding Functions.
+* modffNx: (libc)Rounding Functions.
 * modfl: (libc)Rounding Functions.
 * mount: (libc)Mount-Unmount-Remount.
 * mprobe: (libc)Heap Consistency Checking.
@@ -1236,22 +1388,32 @@ START-INFO-DIR-ENTRY
 * muntrace: (libc)Tracing malloc.
 * nan: (libc)FP Bit Twiddling.
 * nanf: (libc)FP Bit Twiddling.
+* nanfN: (libc)FP Bit Twiddling.
+* nanfNx: (libc)FP Bit Twiddling.
 * nanl: (libc)FP Bit Twiddling.
 * nanosleep: (libc)Sleeping.
 * nearbyint: (libc)Rounding Functions.
 * nearbyintf: (libc)Rounding Functions.
+* nearbyintfN: (libc)Rounding Functions.
+* nearbyintfNx: (libc)Rounding Functions.
 * nearbyintl: (libc)Rounding Functions.
 * nextafter: (libc)FP Bit Twiddling.
 * nextafterf: (libc)FP Bit Twiddling.
+* nextafterfN: (libc)FP Bit Twiddling.
+* nextafterfNx: (libc)FP Bit Twiddling.
 * nextafterl: (libc)FP Bit Twiddling.
 * nextdown: (libc)FP Bit Twiddling.
 * nextdownf: (libc)FP Bit Twiddling.
+* nextdownfN: (libc)FP Bit Twiddling.
+* nextdownfNx: (libc)FP Bit Twiddling.
 * nextdownl: (libc)FP Bit Twiddling.
 * nexttoward: (libc)FP Bit Twiddling.
 * nexttowardf: (libc)FP Bit Twiddling.
 * nexttowardl: (libc)FP Bit Twiddling.
 * nextup: (libc)FP Bit Twiddling.
 * nextupf: (libc)FP Bit Twiddling.
+* nextupfN: (libc)FP Bit Twiddling.
+* nextupfNx: (libc)FP Bit Twiddling.
 * nextupl: (libc)FP Bit Twiddling.
 * nftw64: (libc)Working with Directory Trees.
 * nftw: (libc)Working with Directory Trees.
@@ -1312,9 +1474,15 @@ START-INFO-DIR-ENTRY
 * pow10l: (libc)Exponents and Logarithms.
 * pow: (libc)Exponents and Logarithms.
 * powf: (libc)Exponents and Logarithms.
+* powfN: (libc)Exponents and Logarithms.
+* powfNx: (libc)Exponents and Logarithms.
 * powl: (libc)Exponents and Logarithms.
 * pread64: (libc)I/O Primitives.
 * pread: (libc)I/O Primitives.
+* preadv2: (libc)I/O Primitives.
+* preadv64: (libc)I/O Primitives.
+* preadv64v2: (libc)I/O Primitives.
+* preadv: (libc)I/O Primitives.
 * printf: (libc)Formatted Output Functions.
 * printf_size: (libc)Predefined Printf Handlers.
 * printf_size_info: (libc)Predefined Printf Handlers.
@@ -1343,6 +1511,10 @@ START-INFO-DIR-ENTRY
 * putwchar_unlocked: (libc)Simple Output.
 * pwrite64: (libc)I/O Primitives.
 * pwrite: (libc)I/O Primitives.
+* pwritev2: (libc)I/O Primitives.
+* pwritev64: (libc)I/O Primitives.
+* pwritev64v2: (libc)I/O Primitives.
+* pwritev: (libc)I/O Primitives.
 * qecvt: (libc)System V Number Conversion.
 * qecvt_r: (libc)System V Number Conversion.
 * qfcvt: (libc)System V Number Conversion.
@@ -1363,6 +1535,7 @@ START-INFO-DIR-ENTRY
 * readlink: (libc)Symbolic Links.
 * readv: (libc)Scatter-Gather.
 * realloc: (libc)Changing Block Size.
+* reallocarray: (libc)Changing Block Size.
 * realpath: (libc)Symbolic Links.
 * recv: (libc)Receiving Data.
 * recvfrom: (libc)Receiving Datagrams.
@@ -1374,6 +1547,8 @@ START-INFO-DIR-ENTRY
 * register_printf_function: (libc)Registering New Conversions.
 * remainder: (libc)Remainder Functions.
 * remainderf: (libc)Remainder Functions.
+* remainderfN: (libc)Remainder Functions.
+* remainderfNx: (libc)Remainder Functions.
 * remainderl: (libc)Remainder Functions.
 * remove: (libc)Deleting Files.
 * rename: (libc)Renaming Files.
@@ -1382,13 +1557,19 @@ START-INFO-DIR-ENTRY
 * rindex: (libc)Search Functions.
 * rint: (libc)Rounding Functions.
 * rintf: (libc)Rounding Functions.
+* rintfN: (libc)Rounding Functions.
+* rintfNx: (libc)Rounding Functions.
 * rintl: (libc)Rounding Functions.
 * rmdir: (libc)Deleting Files.
 * round: (libc)Rounding Functions.
 * roundeven: (libc)Rounding Functions.
 * roundevenf: (libc)Rounding Functions.
+* roundevenfN: (libc)Rounding Functions.
+* roundevenfNx: (libc)Rounding Functions.
 * roundevenl: (libc)Rounding Functions.
 * roundf: (libc)Rounding Functions.
+* roundfN: (libc)Rounding Functions.
+* roundfNx: (libc)Rounding Functions.
 * roundl: (libc)Rounding Functions.
 * rpmatch: (libc)Yes-or-No Questions.
 * sbrk: (libc)Resizing the Data Segment.
@@ -1397,9 +1578,13 @@ START-INFO-DIR-ENTRY
 * scalbl: (libc)Normalization Functions.
 * scalbln: (libc)Normalization Functions.
 * scalblnf: (libc)Normalization Functions.
+* scalblnfN: (libc)Normalization Functions.
+* scalblnfNx: (libc)Normalization Functions.
 * scalblnl: (libc)Normalization Functions.
 * scalbn: (libc)Normalization Functions.
 * scalbnf: (libc)Normalization Functions.
+* scalbnfN: (libc)Normalization Functions.
+* scalbnfNx: (libc)Normalization Functions.
 * scalbnl: (libc)Normalization Functions.
 * scandir64: (libc)Scanning Directory Content.
 * scandir: (libc)Scanning Directory Content.
@@ -1462,9 +1647,13 @@ START-INFO-DIR-ENTRY
 * setnetgrent: (libc)Lookup Netgroup.
 * setpayload: (libc)FP Bit Twiddling.
 * setpayloadf: (libc)FP Bit Twiddling.
+* setpayloadfN: (libc)FP Bit Twiddling.
+* setpayloadfNx: (libc)FP Bit Twiddling.
 * setpayloadl: (libc)FP Bit Twiddling.
 * setpayloadsig: (libc)FP Bit Twiddling.
 * setpayloadsigf: (libc)FP Bit Twiddling.
+* setpayloadsigfN: (libc)FP Bit Twiddling.
+* setpayloadsigfNx: (libc)FP Bit Twiddling.
 * setpayloadsigl: (libc)FP Bit Twiddling.
 * setpgid: (libc)Process Group Functions.
 * setpgrp: (libc)Process Group Functions.
@@ -1514,10 +1703,16 @@ START-INFO-DIR-ENTRY
 * sin: (libc)Trig Functions.
 * sincos: (libc)Trig Functions.
 * sincosf: (libc)Trig Functions.
+* sincosfN: (libc)Trig Functions.
+* sincosfNx: (libc)Trig Functions.
 * sincosl: (libc)Trig Functions.
 * sinf: (libc)Trig Functions.
+* sinfN: (libc)Trig Functions.
+* sinfNx: (libc)Trig Functions.
 * sinh: (libc)Hyperbolic Functions.
 * sinhf: (libc)Hyperbolic Functions.
+* sinhfN: (libc)Hyperbolic Functions.
+* sinhfNx: (libc)Hyperbolic Functions.
 * sinhl: (libc)Hyperbolic Functions.
 * sinl: (libc)Trig Functions.
 * sleep: (libc)Sleeping.
@@ -1527,6 +1722,8 @@ START-INFO-DIR-ENTRY
 * sprintf: (libc)Formatted Output Functions.
 * sqrt: (libc)Exponents and Logarithms.
 * sqrtf: (libc)Exponents and Logarithms.
+* sqrtfN: (libc)Exponents and Logarithms.
+* sqrtfNx: (libc)Exponents and Logarithms.
 * sqrtl: (libc)Exponents and Logarithms.
 * srand48: (libc)SVID Random.
 * srand48_r: (libc)SVID Random.
@@ -1556,6 +1753,8 @@ START-INFO-DIR-ENTRY
 * strfmon: (libc)Formatting Numbers.
 * strfromd: (libc)Printing of Floats.
 * strfromf: (libc)Printing of Floats.
+* strfromfN: (libc)Printing of Floats.
+* strfromfNx: (libc)Printing of Floats.
 * strfroml: (libc)Printing of Floats.
 * strfry: (libc)strfry.
 * strftime: (libc)Formatting Calendar Time.
@@ -1576,6 +1775,8 @@ START-INFO-DIR-ENTRY
 * strstr: (libc)Search Functions.
 * strtod: (libc)Parsing of Floats.
 * strtof: (libc)Parsing of Floats.
+* strtofN: (libc)Parsing of Floats.
+* strtofNx: (libc)Parsing of Floats.
 * strtoimax: (libc)Parsing of Integers.
 * strtok: (libc)Finding Tokens in a String.
 * strtok_r: (libc)Finding Tokens in a String.
@@ -1603,8 +1804,12 @@ START-INFO-DIR-ENTRY
 * sysv_signal: (libc)Basic Signal Handling.
 * tan: (libc)Trig Functions.
 * tanf: (libc)Trig Functions.
+* tanfN: (libc)Trig Functions.
+* tanfNx: (libc)Trig Functions.
 * tanh: (libc)Hyperbolic Functions.
 * tanhf: (libc)Hyperbolic Functions.
+* tanhfN: (libc)Hyperbolic Functions.
+* tanhfNx: (libc)Hyperbolic Functions.
 * tanhl: (libc)Hyperbolic Functions.
 * tanl: (libc)Trig Functions.
 * tcdrain: (libc)Line Control.
@@ -1624,6 +1829,8 @@ START-INFO-DIR-ENTRY
 * tfind: (libc)Tree Search Function.
 * tgamma: (libc)Special Functions.
 * tgammaf: (libc)Special Functions.
+* tgammafN: (libc)Special Functions.
+* tgammafNx: (libc)Special Functions.
 * tgammal: (libc)Special Functions.
 * time: (libc)Simple Calendar Time.
 * timegm: (libc)Broken-down Time.
@@ -1637,9 +1844,13 @@ START-INFO-DIR-ENTRY
 * tolower: (libc)Case Conversion.
 * totalorder: (libc)FP Comparison Functions.
 * totalorderf: (libc)FP Comparison Functions.
+* totalorderfN: (libc)FP Comparison Functions.
+* totalorderfNx: (libc)FP Comparison Functions.
 * totalorderl: (libc)FP Comparison Functions.
 * totalordermag: (libc)FP Comparison Functions.
 * totalordermagf: (libc)FP Comparison Functions.
+* totalordermagfN: (libc)FP Comparison Functions.
+* totalordermagfNx: (libc)FP Comparison Functions.
 * totalordermagl: (libc)FP Comparison Functions.
 * toupper: (libc)Case Conversion.
 * towctrans: (libc)Wide Character Case Conversion.
@@ -1649,6 +1860,8 @@ START-INFO-DIR-ENTRY
 * truncate64: (libc)File Size.
 * truncate: (libc)File Size.
 * truncf: (libc)Rounding Functions.
+* truncfN: (libc)Rounding Functions.
+* truncfNx: (libc)Rounding Functions.
 * truncl: (libc)Rounding Functions.
 * tsearch: (libc)Tree Search Function.
 * ttyname: (libc)Is It a Terminal.
@@ -1657,9 +1870,13 @@ START-INFO-DIR-ENTRY
 * tzset: (libc)Time Zone Functions.
 * ufromfp: (libc)Rounding Functions.
 * ufromfpf: (libc)Rounding Functions.
+* ufromfpfN: (libc)Rounding Functions.
+* ufromfpfNx: (libc)Rounding Functions.
 * ufromfpl: (libc)Rounding Functions.
 * ufromfpx: (libc)Rounding Functions.
 * ufromfpxf: (libc)Rounding Functions.
+* ufromfpxfN: (libc)Rounding Functions.
+* ufromfpxfNx: (libc)Rounding Functions.
 * ufromfpxl: (libc)Rounding Functions.
 * ulimit: (libc)Limits on Resources.
 * umask: (libc)Setting Permissions.
@@ -1738,6 +1955,8 @@ START-INFO-DIR-ENTRY
 * wcsstr: (libc)Search Functions.
 * wcstod: (libc)Parsing of Floats.
 * wcstof: (libc)Parsing of Floats.
+* wcstofN: (libc)Parsing of Floats.
+* wcstofNx: (libc)Parsing of Floats.
 * wcstoimax: (libc)Parsing of Integers.
 * wcstok: (libc)Finding Tokens in a String.
 * wcstol: (libc)Parsing of Integers.
@@ -1769,19 +1988,25 @@ START-INFO-DIR-ENTRY
 * wscanf: (libc)Formatted Input Functions.
 * y0: (libc)Special Functions.
 * y0f: (libc)Special Functions.
+* y0fN: (libc)Special Functions.
+* y0fNx: (libc)Special Functions.
 * y0l: (libc)Special Functions.
 * y1: (libc)Special Functions.
 * y1f: (libc)Special Functions.
+* y1fN: (libc)Special Functions.
+* y1fNx: (libc)Special Functions.
 * y1l: (libc)Special Functions.
 * yn: (libc)Special Functions.
 * ynf: (libc)Special Functions.
+* ynfN: (libc)Special Functions.
+* ynfNx: (libc)Special Functions.
 * ynl: (libc)Special Functions.
 END-INFO-DIR-ENTRY
 
    This file documents the GNU C Library.
 
-   This is `The GNU C Library Reference Manual', for version 2.25
-(crosstool-NG crosstool-ng-1.23.0).
+   This is `The GNU C Library Reference Manual', for version 2.26
+(crosstool-NG 1.23.0.420-201f).
 
    Copyright (C) 1993-2017 Free Software Foundation, Inc.
 
@@ -5413,6 +5638,10 @@ These functions are declared in the header file `unistd.h'.
      not affected by the operation.  The value is the same as before
      the call.
 
+     However, on Linux, if a file is opened with `O_APPEND',  `pwrite'
+     appends data to the end of the file, regardless of the value of
+     `offset'.
+
      When the source file is compiled with `_FILE_OFFSET_BITS == 64' the
      `pwrite' function is in fact `pwrite64' and the type `off_t' has
      64 bits, which makes it possible to handle files up to 2^63 bytes
@@ -5449,6 +5678,183 @@ These functions are declared in the header file `unistd.h'.
      When the source file is compiled using `_FILE_OFFSET_BITS == 64'
      on a 32 bit machine this function is actually available under the
      name `pwrite' and so transparently replaces the 32 bit interface.
+
+ -- Function: ssize_t preadv (int FD, const struct iovec *IOV, int
+          IOVCNT, off_t OFFSET)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This function is similar to the `readv' function, with the
+     difference it adds an extra OFFSET parameter of type `off_t'
+     similar to `pread'.  The data is written to the file starting at
+     position OFFSET.  The position of the file descriptor itself is
+     not affected by the operation.  The value is the same as before
+     the call.
+
+     When the source file is compiled with `_FILE_OFFSET_BITS == 64' the
+     `preadv' function is in fact `preadv64' and the type `off_t' has
+     64 bits, which makes it possible to handle files up to 2^63 bytes
+     in length.
+
+     The return value is a count of bytes (_not_ buffers) read, 0
+     indicating end-of-file, or -1 indicating an error.  The possible
+     errors are the same as in `readv' and `pread'.
+
+ -- Function: ssize_t preadv64 (int FD, const struct iovec *IOV, int
+          IOVCNT, off64_t OFFSET)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This function is similar to the `preadv' function with the
+     difference is that the OFFSET parameter is of type `off64_t'
+     instead of `off_t'.  It makes it possible on 32 bit machines to
+     address files larger than 2^31 bytes and up to 2^63 bytes.  The
+     file descriptor `filedes' must be opened using `open64' since
+     otherwise the large offsets possible with `off64_t' will lead to
+     errors with a descriptor in small file mode.
+
+     When the source file is compiled using `_FILE_OFFSET_BITS == 64'
+     on a 32 bit machine this function is actually available under the
+     name `preadv' and so transparently replaces the 32 bit interface.
+
+ -- Function: ssize_t pwritev (int FD, const struct iovec *IOV, int
+          IOVCNT, off_t OFFSET)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This function is similar to the `writev' function, with the
+     difference it adds an extra OFFSET parameter of type `off_t'
+     similar to `pwrite'.  The data is written to the file starting at
+     position OFFSET.  The position of the file descriptor itself is
+     not affected by the operation.  The value is the same as before
+     the call.
+
+     However, on Linux, if a file is opened with `O_APPEND',  `pwrite'
+     appends data to the end of the file, regardless of the value of
+     `offset'.
+
+     When the source file is compiled with `_FILE_OFFSET_BITS == 64' the
+     `pwritev' function is in fact `pwritev64' and the type `off_t' has
+     64 bits, which makes it possible to handle files up to 2^63 bytes
+     in length.
+
+     The return value is a count of bytes (_not_ buffers) written, 0
+     indicating end-of-file, or -1 indicating an error.  The possible
+     errors are the same as in `writev' and `pwrite'.
+
+ -- Function: ssize_t pwritev64 (int FD, const struct iovec *IOV, int
+          IOVCNT, off64_t OFFSET)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This function is similar to the `pwritev' function with the
+     difference is that the OFFSET parameter is of type `off64_t'
+     instead of `off_t'.  It makes it possible on 32 bit machines to
+     address files larger than 2^31 bytes and up to 2^63 bytes.  The
+     file descriptor `filedes' must be opened using `open64' since
+     otherwise the large offsets possible with `off64_t' will lead to
+     errors with a descriptor in small file mode.
+
+     When the source file is compiled using `_FILE_OFFSET_BITS == 64'
+     on a 32 bit machine this function is actually available under the
+     name `pwritev' and so transparently replaces the 32 bit interface.
+
+ -- Function: ssize_t preadv2 (int FD, const struct iovec *IOV, int
+          IOVCNT, off_t OFFSET, int FLAGS)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This function is similar to the `preadv' function, with the
+     difference it adds an extra FLAGS parameter of type `int'.  The
+     supported FLAGS are dependent of the underlying system.  For Linux
+     it supports:
+
+    `RWF_HIPRI'
+          High priority request.  This adds a flag that tells the file
+          system that this is a high priority request for which it is
+          worth to poll the hardware.  The flag is purely advisory and
+          can be ignored if not supported.  The FD must be opened using
+          `O_DIRECT'.
+
+    `RWF_DSYNC'
+          Per-IO synchronization as if the file was opened with
+          `O_DSYNC' flag.
+
+    `RWF_SYNC'
+          Per-IO synchronization as if the file was opened with
+          `O_SYNC' flag.
+
+    `RWF_NOWAIT'
+          Use nonblocking mode for this operation; that is, this call
+          to `preadv2' will fail and set `errno' to `EAGAIN' if the
+          operation would block.
+
+     When the source file is compiled with `_FILE_OFFSET_BITS == 64' the
+     `preadv2' function is in fact `preadv64v2' and the type `off_t'
+     has 64 bits, which makes it possible to handle files up to 2^63
+     bytes in length.
+
+     The return value is a count of bytes (_not_ buffers) read, 0
+     indicating end-of-file, or -1 indicating an error.  The possible
+     errors are the same as in `preadv' with the addition of:
+
+    `EOPNOTSUPP'
+          An unsupported FLAGS was used.
+
+
+
+ -- Function: ssize_t preadv64v2 (int FD, const struct iovec *IOV, int
+          IOVCNT, off64_t OFFSET, int FLAGS)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This function is similar to the `preadv2' function with the
+     difference is that the OFFSET parameter is of type `off64_t'
+     instead of `off_t'.  It makes it possible on 32 bit machines to
+     address files larger than 2^31 bytes and up to 2^63 bytes.  The
+     file descriptor `filedes' must be opened using `open64' since
+     otherwise the large offsets possible with `off64_t' will lead to
+     errors with a descriptor in small file mode.
+
+     When the source file is compiled using `_FILE_OFFSET_BITS == 64'
+     on a 32 bit machine this function is actually available under the
+     name `preadv2' and so transparently replaces the 32 bit interface.
+
+ -- Function: ssize_t pwritev2 (int FD, const struct iovec *IOV, int
+          IOVCNT, off_t OFFSET, int FLAGS)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This function is similar to the `pwritev' function, with the
+     difference it adds an extra FLAGS parameter of type `int'.  The
+     supported FLAGS are dependent of the underlying system and for
+     Linux it supports the same ones as for `preadv2'.
+
+     When the source file is compiled with `_FILE_OFFSET_BITS == 64' the
+     `pwritev2' function is in fact `pwritev64v2' and the type `off_t'
+     has 64 bits, which makes it possible to handle files up to 2^63
+     bytes in length.
+
+     The return value is a count of bytes (_not_ buffers) write, 0
+     indicating end-of-file, or -1 indicating an error.  The possible
+     errors are the same as in `preadv2'.
+
+ -- Function: ssize_t pwritev64v2 (int FD, const struct iovec *IOV, int
+          IOVCNT, off64_t OFFSET, int FLAGS)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This function is similar to the `pwritev2' function with the
+     difference is that the OFFSET parameter is of type `off64_t'
+     instead of `off_t'.  It makes it possible on 32 bit machines to
+     address files larger than 2^31 bytes and up to 2^63 bytes.  The
+     file descriptor `filedes' must be opened using `open64' since
+     otherwise the large offsets possible with `off64_t' will lead to
+     errors with a descriptor in small file mode.
+
+     When the source file is compiled using `_FILE_OFFSET_BITS == 64'
+     on a 32 bit machine this function is actually available under the
+     name `pwritev2' and so transparently replaces the 32 bit interface.
 
 
 File: libc.info,  Node: File Position Primitive,  Next: Descriptors and Streams,  Prev: I/O Primitives,  Up: Low-Level I/O
@@ -8626,284 +9032,4 @@ access permissions and modification times.
 * File Attributes::             Attributes of individual files.
 * Making Special Files::        How to create special files.
 * Temporary Files::             Naming and creating temporary files.
-
-
-File: libc.info,  Node: Working Directory,  Next: Accessing Directories,  Up: File System Interface
-
-14.1 Working Directory
-======================
-
-Each process has associated with it a directory, called its "current
-working directory" or simply "working directory", that is used in the
-resolution of relative file names (*note File Name Resolution::).
-
-   When you log in and begin a new session, your working directory is
-initially set to the home directory associated with your login account
-in the system user database.  You can find any user's home directory
-using the `getpwuid' or `getpwnam' functions; see *Note User Database::.
-
-   Users can change the working directory using shell commands like
-`cd'.  The functions described in this section are the primitives used
-by those commands and by other programs for examining and changing the
-working directory.  
-
-   Prototypes for these functions are declared in the header file
-`unistd.h'.  
-
- -- Function: char * getcwd (char *BUFFER, size_t SIZE)
-     Preliminary: | MT-Safe | AS-Unsafe heap | AC-Unsafe mem fd | *Note
-     POSIX Safety Concepts::.
-
-     The `getcwd' function returns an absolute file name representing
-     the current working directory, storing it in the character array
-     BUFFER that you provide.  The SIZE argument is how you tell the
-     system the allocation size of BUFFER.
-
-     The GNU C Library version of this function also permits you to
-     specify a null pointer for the BUFFER argument.  Then `getcwd'
-     allocates a buffer automatically, as with `malloc' (*note
-     Unconstrained Allocation::).  If the SIZE is greater than zero,
-     then the buffer is that large; otherwise, the buffer is as large
-     as necessary to hold the result.
-
-     The return value is BUFFER on success and a null pointer on
-     failure.  The following `errno' error conditions are defined for
-     this function:
-
-    `EINVAL'
-          The SIZE argument is zero and BUFFER is not a null pointer.
-
-    `ERANGE'
-          The SIZE argument is less than the length of the working
-          directory name.  You need to allocate a bigger array and try
-          again.
-
-    `EACCES'
-          Permission to read or search a component of the file name was
-          denied.
-
-   You could implement the behavior of GNU's `getcwd (NULL, 0)' using
-only the standard behavior of `getcwd':
-
-     char *
-     gnu_getcwd ()
-     {
-       size_t size = 100;
-
-       while (1)
-         {
-           char *buffer = (char *) xmalloc (size);
-           if (getcwd (buffer, size) == buffer)
-             return buffer;
-           free (buffer);
-           if (errno != ERANGE)
-             return 0;
-           size *= 2;
-         }
-     }
-
-*Note Malloc Examples::, for information about `xmalloc', which is not
-a library function but is a customary name used in most GNU software.
-
- -- Deprecated Function: char * getwd (char *BUFFER)
-     Preliminary: | MT-Safe | AS-Unsafe heap i18n | AC-Unsafe mem fd |
-     *Note POSIX Safety Concepts::.
-
-     This is similar to `getcwd', but has no way to specify the size of
-     the buffer.  The GNU C Library provides `getwd' only for backwards
-     compatibility with BSD.
-
-     The BUFFER argument should be a pointer to an array at least
-     `PATH_MAX' bytes long (*note Limits for Files::).  On GNU/Hurd
-     systems there is no limit to the size of a file name, so this is
-     not necessarily enough space to contain the directory name.  That
-     is why this function is deprecated.
-
- -- Function: char * get_current_dir_name (void)
-     Preliminary: | MT-Safe env | AS-Unsafe heap | AC-Unsafe mem fd |
-     *Note POSIX Safety Concepts::.
-
-     This `get_current_dir_name' function is basically equivalent to
-     `getcwd (NULL, 0)'.  The only difference is that the value of the
-     `PWD' variable is returned if this value is correct.  This is a
-     subtle difference which is visible if the path described by the
-     `PWD' value is using one or more symbol links in which case the
-     value returned by `getcwd' can resolve the symbol links and
-     therefore yield a different result.
-
-     This function is a GNU extension.
-
- -- Function: int chdir (const char *FILENAME)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     This function is used to set the process's working directory to
-     FILENAME.
-
-     The normal, successful return value from `chdir' is `0'.  A value
-     of `-1' is returned to indicate an error.  The `errno' error
-     conditions defined for this function are the usual file name
-     syntax errors (*note File Name Errors::), plus `ENOTDIR' if the
-     file FILENAME is not a directory.
-
- -- Function: int fchdir (int FILEDES)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     This function is used to set the process's working directory to
-     directory associated with the file descriptor FILEDES.
-
-     The normal, successful return value from `fchdir' is `0'.  A value
-     of `-1' is returned to indicate an error.  The following `errno'
-     error conditions are defined for this function:
-
-    `EACCES'
-          Read permission is denied for the directory named by
-          `dirname'.
-
-    `EBADF'
-          The FILEDES argument is not a valid file descriptor.
-
-    `ENOTDIR'
-          The file descriptor FILEDES is not associated with a
-          directory.
-
-    `EINTR'
-          The function call was interrupt by a signal.
-
-    `EIO'
-          An I/O error occurred.
-
-
-File: libc.info,  Node: Accessing Directories,  Next: Working with Directory Trees,  Prev: Working Directory,  Up: File System Interface
-
-14.2 Accessing Directories
-==========================
-
-The facilities described in this section let you read the contents of a
-directory file.  This is useful if you want your program to list all the
-files in a directory, perhaps as part of a menu.
-
-   The `opendir' function opens a "directory stream" whose elements are
-directory entries.  Alternatively `fdopendir' can be used which can
-have advantages if the program needs to have more control over the way
-the directory is opened for reading.  This allows, for instance, to
-pass the `O_NOATIME' flag to `open'.
-
-   You use the `readdir' function on the directory stream to retrieve
-these entries, represented as `struct dirent' objects.  The name of the
-file for each entry is stored in the `d_name' member of this structure.
-There are obvious parallels here to the stream facilities for ordinary
-files, described in *Note I/O on Streams::.
-
-* Menu:
-
-* Directory Entries::           Format of one directory entry.
-* Opening a Directory::         How to open a directory stream.
-* Reading/Closing Directory::   How to read directory entries from the stream.
-* Simple Directory Lister::     A very simple directory listing program.
-* Random Access Directory::     Rereading part of the directory
-                                 already read with the same stream.
-* Scanning Directory Content::  Get entries for user selected subset of
-                                 contents in given directory.
-* Simple Directory Lister Mark II::  Revised version of the program.
-
-
-File: libc.info,  Node: Directory Entries,  Next: Opening a Directory,  Up: Accessing Directories
-
-14.2.1 Format of a Directory Entry
-----------------------------------
-
-This section describes what you find in a single directory entry, as you
-might obtain it from a directory stream.  All the symbols are declared
-in the header file `dirent.h'.
-
- -- Data Type: struct dirent
-     This is a structure type used to return information about directory
-     entries.  It contains the following fields:
-
-    `char d_name[]'
-          This is the null-terminated file name component.  This is the
-          only field you can count on in all POSIX systems.
-
-    `ino_t d_fileno'
-          This is the file serial number.  For BSD compatibility, you
-          can also refer to this member as `d_ino'.  On GNU/Linux and
-          GNU/Hurd systems and most POSIX systems, for most files this
-          the same as the `st_ino' member that `stat' will return for
-          the file.  *Note File Attributes::.
-
-    `unsigned char d_namlen'
-          This is the length of the file name, not including the
-          terminating null character.  Its type is `unsigned char'
-          because that is the integer type of the appropriate size.
-          This member is a BSD extension.  The symbol
-          `_DIRENT_HAVE_D_NAMLEN' is defined if this member is
-          available.
-
-    `unsigned char d_type'
-          This is the type of the file, possibly unknown.  The
-          following constants are defined for its value:
-
-         `DT_UNKNOWN'
-               The type is unknown.  Only some filesystems have full
-               support to return the type of the file, others might
-               always return this value.
-
-         `DT_REG'
-               A regular file.
-
-         `DT_DIR'
-               A directory.
-
-         `DT_FIFO'
-               A named pipe, or FIFO.  *Note FIFO Special Files::.
-
-         `DT_SOCK'
-               A local-domain socket.
-
-         `DT_CHR'
-               A character device.
-
-         `DT_BLK'
-               A block device.
-
-         `DT_LNK'
-               A symbolic link.
-
-          This member is a BSD extension.  The symbol
-          `_DIRENT_HAVE_D_TYPE' is defined if this member is available.
-          On systems where it is used, it corresponds to the file type
-          bits in the `st_mode' member of `struct stat'.  If the value
-          cannot be determined the member value is DT_UNKNOWN.  These
-          two macros convert between `d_type' values and `st_mode'
-          values:
-
-           -- Function: int IFTODT (mode_t MODE)
-               Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX
-               Safety Concepts::.
-
-               This returns the `d_type' value corresponding to MODE.
-
-           -- Function: mode_t DTTOIF (int DTYPE)
-               Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX
-               Safety Concepts::.
-
-               This returns the `st_mode' value corresponding to DTYPE.
-
-     This structure may contain additional members in the future.  Their
-     availability is always announced in the compilation environment by
-     a macro named `_DIRENT_HAVE_D_XXX' where XXX is replaced by the
-     name of the new member.  For instance, the member `d_reclen'
-     available on some systems is announced through the macro
-     `_DIRENT_HAVE_D_RECLEN'.
-
-     When a file has multiple names, each name has its own directory
-     entry.  The only way you can tell that the directory entries
-     belong to a single file is that they have the same value for the
-     `d_fileno' field.
-
-     File attributes such as size, modification times etc., are part of
-     the file itself, not of any particular directory entry.  *Note
-     File Attributes::.
 

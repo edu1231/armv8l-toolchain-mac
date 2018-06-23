@@ -19,6 +19,7 @@ START-INFO-DIR-ENTRY
 * BRKINT: (libc)Input Modes.
 * BUFSIZ: (libc)Controlling Buffering.
 * CCTS_OFLOW: (libc)Control Modes.
+* CHAR_BIT: (libc)Width of Type.
 * CHILD_MAX: (libc)General Limits.
 * CIGNORE: (libc)Control Modes.
 * CLK_TCK: (libc)Processor Time.
@@ -232,6 +233,8 @@ START-INFO-DIR-ENTRY
 * HUGE_VAL: (libc)Math Error Reporting.
 * HUGE_VALF: (libc)Math Error Reporting.
 * HUGE_VALL: (libc)Math Error Reporting.
+* HUGE_VAL_FN: (libc)Math Error Reporting.
+* HUGE_VAL_FNx: (libc)Math Error Reporting.
 * HUPCL: (libc)Control Modes.
 * I: (libc)Complex Numbers.
 * ICANON: (libc)Local Modes.
@@ -370,6 +373,8 @@ START-INFO-DIR-ENTRY
 * SIG_ERR: (libc)Basic Signal Handling.
 * SNAN: (libc)Infinity and NaN.
 * SNANF: (libc)Infinity and NaN.
+* SNANFN: (libc)Infinity and NaN.
+* SNANFNx: (libc)Infinity and NaN.
 * SNANL: (libc)Infinity and NaN.
 * SOCK_DGRAM: (libc)Communication Styles.
 * SOCK_RAW: (libc)Communication Styles.
@@ -479,8 +484,12 @@ START-INFO-DIR-ENTRY
 * access: (libc)Testing File Access.
 * acos: (libc)Inverse Trig Functions.
 * acosf: (libc)Inverse Trig Functions.
+* acosfN: (libc)Inverse Trig Functions.
+* acosfNx: (libc)Inverse Trig Functions.
 * acosh: (libc)Hyperbolic Functions.
 * acoshf: (libc)Hyperbolic Functions.
+* acoshfN: (libc)Hyperbolic Functions.
+* acoshfNx: (libc)Hyperbolic Functions.
 * acoshl: (libc)Hyperbolic Functions.
 * acosl: (libc)Inverse Trig Functions.
 * addmntent: (libc)mtab.
@@ -529,8 +538,12 @@ START-INFO-DIR-ENTRY
 * asctime_r: (libc)Formatting Calendar Time.
 * asin: (libc)Inverse Trig Functions.
 * asinf: (libc)Inverse Trig Functions.
+* asinfN: (libc)Inverse Trig Functions.
+* asinfNx: (libc)Inverse Trig Functions.
 * asinh: (libc)Hyperbolic Functions.
 * asinhf: (libc)Hyperbolic Functions.
+* asinhfN: (libc)Hyperbolic Functions.
+* asinhfNx: (libc)Hyperbolic Functions.
 * asinhl: (libc)Hyperbolic Functions.
 * asinl: (libc)Inverse Trig Functions.
 * asprintf: (libc)Dynamic Output.
@@ -538,11 +551,17 @@ START-INFO-DIR-ENTRY
 * assert_perror: (libc)Consistency Checking.
 * atan2: (libc)Inverse Trig Functions.
 * atan2f: (libc)Inverse Trig Functions.
+* atan2fN: (libc)Inverse Trig Functions.
+* atan2fNx: (libc)Inverse Trig Functions.
 * atan2l: (libc)Inverse Trig Functions.
 * atan: (libc)Inverse Trig Functions.
 * atanf: (libc)Inverse Trig Functions.
+* atanfN: (libc)Inverse Trig Functions.
+* atanfNx: (libc)Inverse Trig Functions.
 * atanh: (libc)Hyperbolic Functions.
 * atanhf: (libc)Hyperbolic Functions.
+* atanhfN: (libc)Hyperbolic Functions.
+* atanhfNx: (libc)Hyperbolic Functions.
 * atanhl: (libc)Hyperbolic Functions.
 * atanl: (libc)Inverse Trig Functions.
 * atexit: (libc)Cleanups on Exit.
@@ -566,31 +585,49 @@ START-INFO-DIR-ENTRY
 * bzero: (libc)Copying Strings and Arrays.
 * cabs: (libc)Absolute Value.
 * cabsf: (libc)Absolute Value.
+* cabsfN: (libc)Absolute Value.
+* cabsfNx: (libc)Absolute Value.
 * cabsl: (libc)Absolute Value.
 * cacos: (libc)Inverse Trig Functions.
 * cacosf: (libc)Inverse Trig Functions.
+* cacosfN: (libc)Inverse Trig Functions.
+* cacosfNx: (libc)Inverse Trig Functions.
 * cacosh: (libc)Hyperbolic Functions.
 * cacoshf: (libc)Hyperbolic Functions.
+* cacoshfN: (libc)Hyperbolic Functions.
+* cacoshfNx: (libc)Hyperbolic Functions.
 * cacoshl: (libc)Hyperbolic Functions.
 * cacosl: (libc)Inverse Trig Functions.
 * calloc: (libc)Allocating Cleared Space.
 * canonicalize: (libc)FP Bit Twiddling.
 * canonicalize_file_name: (libc)Symbolic Links.
 * canonicalizef: (libc)FP Bit Twiddling.
+* canonicalizefN: (libc)FP Bit Twiddling.
+* canonicalizefNx: (libc)FP Bit Twiddling.
 * canonicalizel: (libc)FP Bit Twiddling.
 * carg: (libc)Operations on Complex.
 * cargf: (libc)Operations on Complex.
+* cargfN: (libc)Operations on Complex.
+* cargfNx: (libc)Operations on Complex.
 * cargl: (libc)Operations on Complex.
 * casin: (libc)Inverse Trig Functions.
 * casinf: (libc)Inverse Trig Functions.
+* casinfN: (libc)Inverse Trig Functions.
+* casinfNx: (libc)Inverse Trig Functions.
 * casinh: (libc)Hyperbolic Functions.
 * casinhf: (libc)Hyperbolic Functions.
+* casinhfN: (libc)Hyperbolic Functions.
+* casinhfNx: (libc)Hyperbolic Functions.
 * casinhl: (libc)Hyperbolic Functions.
 * casinl: (libc)Inverse Trig Functions.
 * catan: (libc)Inverse Trig Functions.
 * catanf: (libc)Inverse Trig Functions.
+* catanfN: (libc)Inverse Trig Functions.
+* catanfNx: (libc)Inverse Trig Functions.
 * catanh: (libc)Hyperbolic Functions.
 * catanhf: (libc)Hyperbolic Functions.
+* catanhfN: (libc)Hyperbolic Functions.
+* catanhfNx: (libc)Hyperbolic Functions.
 * catanhl: (libc)Hyperbolic Functions.
 * catanl: (libc)Inverse Trig Functions.
 * catclose: (libc)The catgets Functions.
@@ -599,23 +636,32 @@ START-INFO-DIR-ENTRY
 * cbc_crypt: (libc)DES Encryption.
 * cbrt: (libc)Exponents and Logarithms.
 * cbrtf: (libc)Exponents and Logarithms.
+* cbrtfN: (libc)Exponents and Logarithms.
+* cbrtfNx: (libc)Exponents and Logarithms.
 * cbrtl: (libc)Exponents and Logarithms.
 * ccos: (libc)Trig Functions.
 * ccosf: (libc)Trig Functions.
+* ccosfN: (libc)Trig Functions.
+* ccosfNx: (libc)Trig Functions.
 * ccosh: (libc)Hyperbolic Functions.
 * ccoshf: (libc)Hyperbolic Functions.
+* ccoshfN: (libc)Hyperbolic Functions.
+* ccoshfNx: (libc)Hyperbolic Functions.
 * ccoshl: (libc)Hyperbolic Functions.
 * ccosl: (libc)Trig Functions.
 * ceil: (libc)Rounding Functions.
 * ceilf: (libc)Rounding Functions.
+* ceilfN: (libc)Rounding Functions.
+* ceilfNx: (libc)Rounding Functions.
 * ceill: (libc)Rounding Functions.
 * cexp: (libc)Exponents and Logarithms.
 * cexpf: (libc)Exponents and Logarithms.
+* cexpfN: (libc)Exponents and Logarithms.
+* cexpfNx: (libc)Exponents and Logarithms.
 * cexpl: (libc)Exponents and Logarithms.
 * cfgetispeed: (libc)Line Speed.
 * cfgetospeed: (libc)Line Speed.
 * cfmakeraw: (libc)Noncanonical Input.
-* cfree: (libc)Freeing after Malloc.
 * cfsetispeed: (libc)Line Speed.
 * cfsetospeed: (libc)Line Speed.
 * cfsetspeed: (libc)Line Speed.
@@ -624,6 +670,8 @@ START-INFO-DIR-ENTRY
 * chown: (libc)File Owner.
 * cimag: (libc)Operations on Complex.
 * cimagf: (libc)Operations on Complex.
+* cimagfN: (libc)Operations on Complex.
+* cimagfNx: (libc)Operations on Complex.
 * cimagl: (libc)Operations on Complex.
 * clearenv: (libc)Environment Access.
 * clearerr: (libc)Error Recovery.
@@ -631,9 +679,13 @@ START-INFO-DIR-ENTRY
 * clock: (libc)CPU Time.
 * clog10: (libc)Exponents and Logarithms.
 * clog10f: (libc)Exponents and Logarithms.
+* clog10fN: (libc)Exponents and Logarithms.
+* clog10fNx: (libc)Exponents and Logarithms.
 * clog10l: (libc)Exponents and Logarithms.
 * clog: (libc)Exponents and Logarithms.
 * clogf: (libc)Exponents and Logarithms.
+* clogfN: (libc)Exponents and Logarithms.
+* clogfNx: (libc)Exponents and Logarithms.
 * clogl: (libc)Exponents and Logarithms.
 * close: (libc)Opening and Closing Files.
 * closedir: (libc)Reading/Closing Directory.
@@ -641,25 +693,39 @@ START-INFO-DIR-ENTRY
 * confstr: (libc)String Parameters.
 * conj: (libc)Operations on Complex.
 * conjf: (libc)Operations on Complex.
+* conjfN: (libc)Operations on Complex.
+* conjfNx: (libc)Operations on Complex.
 * conjl: (libc)Operations on Complex.
 * connect: (libc)Connecting.
 * copysign: (libc)FP Bit Twiddling.
 * copysignf: (libc)FP Bit Twiddling.
+* copysignfN: (libc)FP Bit Twiddling.
+* copysignfNx: (libc)FP Bit Twiddling.
 * copysignl: (libc)FP Bit Twiddling.
 * cos: (libc)Trig Functions.
 * cosf: (libc)Trig Functions.
+* cosfN: (libc)Trig Functions.
+* cosfNx: (libc)Trig Functions.
 * cosh: (libc)Hyperbolic Functions.
 * coshf: (libc)Hyperbolic Functions.
+* coshfN: (libc)Hyperbolic Functions.
+* coshfNx: (libc)Hyperbolic Functions.
 * coshl: (libc)Hyperbolic Functions.
 * cosl: (libc)Trig Functions.
 * cpow: (libc)Exponents and Logarithms.
 * cpowf: (libc)Exponents and Logarithms.
+* cpowfN: (libc)Exponents and Logarithms.
+* cpowfNx: (libc)Exponents and Logarithms.
 * cpowl: (libc)Exponents and Logarithms.
 * cproj: (libc)Operations on Complex.
 * cprojf: (libc)Operations on Complex.
+* cprojfN: (libc)Operations on Complex.
+* cprojfNx: (libc)Operations on Complex.
 * cprojl: (libc)Operations on Complex.
 * creal: (libc)Operations on Complex.
 * crealf: (libc)Operations on Complex.
+* crealfN: (libc)Operations on Complex.
+* crealfNx: (libc)Operations on Complex.
 * creall: (libc)Operations on Complex.
 * creat64: (libc)Opening and Closing Files.
 * creat: (libc)Opening and Closing Files.
@@ -667,17 +733,27 @@ START-INFO-DIR-ENTRY
 * crypt_r: (libc)crypt.
 * csin: (libc)Trig Functions.
 * csinf: (libc)Trig Functions.
+* csinfN: (libc)Trig Functions.
+* csinfNx: (libc)Trig Functions.
 * csinh: (libc)Hyperbolic Functions.
 * csinhf: (libc)Hyperbolic Functions.
+* csinhfN: (libc)Hyperbolic Functions.
+* csinhfNx: (libc)Hyperbolic Functions.
 * csinhl: (libc)Hyperbolic Functions.
 * csinl: (libc)Trig Functions.
 * csqrt: (libc)Exponents and Logarithms.
 * csqrtf: (libc)Exponents and Logarithms.
+* csqrtfN: (libc)Exponents and Logarithms.
+* csqrtfNx: (libc)Exponents and Logarithms.
 * csqrtl: (libc)Exponents and Logarithms.
 * ctan: (libc)Trig Functions.
 * ctanf: (libc)Trig Functions.
+* ctanfN: (libc)Trig Functions.
+* ctanfNx: (libc)Trig Functions.
 * ctanh: (libc)Hyperbolic Functions.
 * ctanhf: (libc)Hyperbolic Functions.
+* ctanhfN: (libc)Hyperbolic Functions.
+* ctanhfNx: (libc)Hyperbolic Functions.
 * ctanhl: (libc)Hyperbolic Functions.
 * ctanl: (libc)Trig Functions.
 * ctermid: (libc)Identifying the Terminal.
@@ -727,8 +803,12 @@ START-INFO-DIR-ENTRY
 * erf: (libc)Special Functions.
 * erfc: (libc)Special Functions.
 * erfcf: (libc)Special Functions.
+* erfcfN: (libc)Special Functions.
+* erfcfNx: (libc)Special Functions.
 * erfcl: (libc)Special Functions.
 * erff: (libc)Special Functions.
+* erffN: (libc)Special Functions.
+* erffNx: (libc)Special Functions.
 * erfl: (libc)Special Functions.
 * err: (libc)Error Messages.
 * errno: (libc)Checking for Errors.
@@ -744,19 +824,29 @@ START-INFO-DIR-ENTRY
 * exit: (libc)Normal Termination.
 * exp10: (libc)Exponents and Logarithms.
 * exp10f: (libc)Exponents and Logarithms.
+* exp10fN: (libc)Exponents and Logarithms.
+* exp10fNx: (libc)Exponents and Logarithms.
 * exp10l: (libc)Exponents and Logarithms.
 * exp2: (libc)Exponents and Logarithms.
 * exp2f: (libc)Exponents and Logarithms.
+* exp2fN: (libc)Exponents and Logarithms.
+* exp2fNx: (libc)Exponents and Logarithms.
 * exp2l: (libc)Exponents and Logarithms.
 * exp: (libc)Exponents and Logarithms.
 * expf: (libc)Exponents and Logarithms.
+* expfN: (libc)Exponents and Logarithms.
+* expfNx: (libc)Exponents and Logarithms.
 * expl: (libc)Exponents and Logarithms.
 * explicit_bzero: (libc)Erasing Sensitive Data.
 * expm1: (libc)Exponents and Logarithms.
 * expm1f: (libc)Exponents and Logarithms.
+* expm1fN: (libc)Exponents and Logarithms.
+* expm1fNx: (libc)Exponents and Logarithms.
 * expm1l: (libc)Exponents and Logarithms.
 * fabs: (libc)Absolute Value.
 * fabsf: (libc)Absolute Value.
+* fabsfN: (libc)Absolute Value.
+* fabsfNx: (libc)Absolute Value.
 * fabsl: (libc)Absolute Value.
 * fchdir: (libc)Working Directory.
 * fchmod: (libc)Setting Permissions.
@@ -769,6 +859,8 @@ START-INFO-DIR-ENTRY
 * fdatasync: (libc)Synchronizing I/O.
 * fdim: (libc)Misc FP Arithmetic.
 * fdimf: (libc)Misc FP Arithmetic.
+* fdimfN: (libc)Misc FP Arithmetic.
+* fdimfNx: (libc)Misc FP Arithmetic.
 * fdiml: (libc)Misc FP Arithmetic.
 * fdopen: (libc)Descriptors and Streams.
 * fdopendir: (libc)Opening a Directory.
@@ -818,25 +910,39 @@ START-INFO-DIR-ENTRY
 * flockfile: (libc)Streams and Threads.
 * floor: (libc)Rounding Functions.
 * floorf: (libc)Rounding Functions.
+* floorfN: (libc)Rounding Functions.
+* floorfNx: (libc)Rounding Functions.
 * floorl: (libc)Rounding Functions.
 * fma: (libc)Misc FP Arithmetic.
 * fmaf: (libc)Misc FP Arithmetic.
+* fmafN: (libc)Misc FP Arithmetic.
+* fmafNx: (libc)Misc FP Arithmetic.
 * fmal: (libc)Misc FP Arithmetic.
 * fmax: (libc)Misc FP Arithmetic.
 * fmaxf: (libc)Misc FP Arithmetic.
+* fmaxfN: (libc)Misc FP Arithmetic.
+* fmaxfNx: (libc)Misc FP Arithmetic.
 * fmaxl: (libc)Misc FP Arithmetic.
 * fmaxmag: (libc)Misc FP Arithmetic.
 * fmaxmagf: (libc)Misc FP Arithmetic.
+* fmaxmagfN: (libc)Misc FP Arithmetic.
+* fmaxmagfNx: (libc)Misc FP Arithmetic.
 * fmaxmagl: (libc)Misc FP Arithmetic.
 * fmemopen: (libc)String Streams.
 * fmin: (libc)Misc FP Arithmetic.
 * fminf: (libc)Misc FP Arithmetic.
+* fminfN: (libc)Misc FP Arithmetic.
+* fminfNx: (libc)Misc FP Arithmetic.
 * fminl: (libc)Misc FP Arithmetic.
 * fminmag: (libc)Misc FP Arithmetic.
 * fminmagf: (libc)Misc FP Arithmetic.
+* fminmagfN: (libc)Misc FP Arithmetic.
+* fminmagfNx: (libc)Misc FP Arithmetic.
 * fminmagl: (libc)Misc FP Arithmetic.
 * fmod: (libc)Remainder Functions.
 * fmodf: (libc)Remainder Functions.
+* fmodfN: (libc)Remainder Functions.
+* fmodfNx: (libc)Remainder Functions.
 * fmodl: (libc)Remainder Functions.
 * fmtmsg: (libc)Printing Formatted Messages.
 * fnmatch: (libc)Wildcard Matching.
@@ -863,12 +969,18 @@ START-INFO-DIR-ENTRY
 * freopen: (libc)Opening Streams.
 * frexp: (libc)Normalization Functions.
 * frexpf: (libc)Normalization Functions.
+* frexpfN: (libc)Normalization Functions.
+* frexpfNx: (libc)Normalization Functions.
 * frexpl: (libc)Normalization Functions.
 * fromfp: (libc)Rounding Functions.
 * fromfpf: (libc)Rounding Functions.
+* fromfpfN: (libc)Rounding Functions.
+* fromfpfNx: (libc)Rounding Functions.
 * fromfpl: (libc)Rounding Functions.
 * fromfpx: (libc)Rounding Functions.
 * fromfpxf: (libc)Rounding Functions.
+* fromfpxfN: (libc)Rounding Functions.
+* fromfpxfNx: (libc)Rounding Functions.
 * fromfpxl: (libc)Rounding Functions.
 * fscanf: (libc)Formatted Input Functions.
 * fseek: (libc)File Positioning.
@@ -957,6 +1069,8 @@ START-INFO-DIR-ENTRY
 * getpass: (libc)getpass.
 * getpayload: (libc)FP Bit Twiddling.
 * getpayloadf: (libc)FP Bit Twiddling.
+* getpayloadfN: (libc)FP Bit Twiddling.
+* getpayloadfNx: (libc)FP Bit Twiddling.
 * getpayloadl: (libc)FP Bit Twiddling.
 * getpeername: (libc)Who is Connected.
 * getpgid: (libc)Process Group Functions.
@@ -1027,6 +1141,8 @@ START-INFO-DIR-ENTRY
 * htons: (libc)Byte Order.
 * hypot: (libc)Exponents and Logarithms.
 * hypotf: (libc)Exponents and Logarithms.
+* hypotfN: (libc)Exponents and Logarithms.
+* hypotfNx: (libc)Exponents and Logarithms.
 * hypotl: (libc)Exponents and Logarithms.
 * iconv: (libc)Generic Conversion Interface.
 * iconv_close: (libc)Generic Conversion Interface.
@@ -1037,6 +1153,8 @@ START-INFO-DIR-ENTRY
 * if_nametoindex: (libc)Interface Naming.
 * ilogb: (libc)Exponents and Logarithms.
 * ilogbf: (libc)Exponents and Logarithms.
+* ilogbfN: (libc)Exponents and Logarithms.
+* ilogbfNx: (libc)Exponents and Logarithms.
 * ilogbl: (libc)Exponents and Logarithms.
 * imaxabs: (libc)Absolute Value.
 * imaxdiv: (libc)Integer Division.
@@ -1106,12 +1224,18 @@ START-INFO-DIR-ENTRY
 * iszero: (libc)Floating Point Classes.
 * j0: (libc)Special Functions.
 * j0f: (libc)Special Functions.
+* j0fN: (libc)Special Functions.
+* j0fNx: (libc)Special Functions.
 * j0l: (libc)Special Functions.
 * j1: (libc)Special Functions.
 * j1f: (libc)Special Functions.
+* j1fN: (libc)Special Functions.
+* j1fNx: (libc)Special Functions.
 * j1l: (libc)Special Functions.
 * jn: (libc)Special Functions.
 * jnf: (libc)Special Functions.
+* jnfN: (libc)Special Functions.
+* jnfNx: (libc)Special Functions.
 * jnl: (libc)Special Functions.
 * jrand48: (libc)SVID Random.
 * jrand48_r: (libc)SVID Random.
@@ -1123,12 +1247,18 @@ START-INFO-DIR-ENTRY
 * lcong48_r: (libc)SVID Random.
 * ldexp: (libc)Normalization Functions.
 * ldexpf: (libc)Normalization Functions.
+* ldexpfN: (libc)Normalization Functions.
+* ldexpfNx: (libc)Normalization Functions.
 * ldexpl: (libc)Normalization Functions.
 * ldiv: (libc)Integer Division.
 * lfind: (libc)Array Search Function.
 * lgamma: (libc)Special Functions.
 * lgamma_r: (libc)Special Functions.
 * lgammaf: (libc)Special Functions.
+* lgammafN: (libc)Special Functions.
+* lgammafN_r: (libc)Special Functions.
+* lgammafNx: (libc)Special Functions.
+* lgammafNx_r: (libc)Special Functions.
 * lgammaf_r: (libc)Special Functions.
 * lgammal: (libc)Special Functions.
 * lgammal_r: (libc)Special Functions.
@@ -1140,30 +1270,46 @@ START-INFO-DIR-ENTRY
 * lldiv: (libc)Integer Division.
 * llogb: (libc)Exponents and Logarithms.
 * llogbf: (libc)Exponents and Logarithms.
+* llogbfN: (libc)Exponents and Logarithms.
+* llogbfNx: (libc)Exponents and Logarithms.
 * llogbl: (libc)Exponents and Logarithms.
 * llrint: (libc)Rounding Functions.
 * llrintf: (libc)Rounding Functions.
+* llrintfN: (libc)Rounding Functions.
+* llrintfNx: (libc)Rounding Functions.
 * llrintl: (libc)Rounding Functions.
 * llround: (libc)Rounding Functions.
 * llroundf: (libc)Rounding Functions.
+* llroundfN: (libc)Rounding Functions.
+* llroundfNx: (libc)Rounding Functions.
 * llroundl: (libc)Rounding Functions.
 * localeconv: (libc)The Lame Way to Locale Data.
 * localtime: (libc)Broken-down Time.
 * localtime_r: (libc)Broken-down Time.
 * log10: (libc)Exponents and Logarithms.
 * log10f: (libc)Exponents and Logarithms.
+* log10fN: (libc)Exponents and Logarithms.
+* log10fNx: (libc)Exponents and Logarithms.
 * log10l: (libc)Exponents and Logarithms.
 * log1p: (libc)Exponents and Logarithms.
 * log1pf: (libc)Exponents and Logarithms.
+* log1pfN: (libc)Exponents and Logarithms.
+* log1pfNx: (libc)Exponents and Logarithms.
 * log1pl: (libc)Exponents and Logarithms.
 * log2: (libc)Exponents and Logarithms.
 * log2f: (libc)Exponents and Logarithms.
+* log2fN: (libc)Exponents and Logarithms.
+* log2fNx: (libc)Exponents and Logarithms.
 * log2l: (libc)Exponents and Logarithms.
 * log: (libc)Exponents and Logarithms.
 * logb: (libc)Exponents and Logarithms.
 * logbf: (libc)Exponents and Logarithms.
+* logbfN: (libc)Exponents and Logarithms.
+* logbfNx: (libc)Exponents and Logarithms.
 * logbl: (libc)Exponents and Logarithms.
 * logf: (libc)Exponents and Logarithms.
+* logfN: (libc)Exponents and Logarithms.
+* logfNx: (libc)Exponents and Logarithms.
 * login: (libc)Logging In and Out.
 * login_tty: (libc)Logging In and Out.
 * logl: (libc)Exponents and Logarithms.
@@ -1174,9 +1320,13 @@ START-INFO-DIR-ENTRY
 * lrand48_r: (libc)SVID Random.
 * lrint: (libc)Rounding Functions.
 * lrintf: (libc)Rounding Functions.
+* lrintfN: (libc)Rounding Functions.
+* lrintfNx: (libc)Rounding Functions.
 * lrintl: (libc)Rounding Functions.
 * lround: (libc)Rounding Functions.
 * lroundf: (libc)Rounding Functions.
+* lroundfN: (libc)Rounding Functions.
+* lroundfNx: (libc)Rounding Functions.
 * lroundl: (libc)Rounding Functions.
 * lsearch: (libc)Array Search Function.
 * lseek64: (libc)File Position Primitive.
@@ -1222,6 +1372,8 @@ START-INFO-DIR-ENTRY
 * mmap: (libc)Memory-mapped I/O.
 * modf: (libc)Rounding Functions.
 * modff: (libc)Rounding Functions.
+* modffN: (libc)Rounding Functions.
+* modffNx: (libc)Rounding Functions.
 * modfl: (libc)Rounding Functions.
 * mount: (libc)Mount-Unmount-Remount.
 * mprobe: (libc)Heap Consistency Checking.
@@ -1236,22 +1388,32 @@ START-INFO-DIR-ENTRY
 * muntrace: (libc)Tracing malloc.
 * nan: (libc)FP Bit Twiddling.
 * nanf: (libc)FP Bit Twiddling.
+* nanfN: (libc)FP Bit Twiddling.
+* nanfNx: (libc)FP Bit Twiddling.
 * nanl: (libc)FP Bit Twiddling.
 * nanosleep: (libc)Sleeping.
 * nearbyint: (libc)Rounding Functions.
 * nearbyintf: (libc)Rounding Functions.
+* nearbyintfN: (libc)Rounding Functions.
+* nearbyintfNx: (libc)Rounding Functions.
 * nearbyintl: (libc)Rounding Functions.
 * nextafter: (libc)FP Bit Twiddling.
 * nextafterf: (libc)FP Bit Twiddling.
+* nextafterfN: (libc)FP Bit Twiddling.
+* nextafterfNx: (libc)FP Bit Twiddling.
 * nextafterl: (libc)FP Bit Twiddling.
 * nextdown: (libc)FP Bit Twiddling.
 * nextdownf: (libc)FP Bit Twiddling.
+* nextdownfN: (libc)FP Bit Twiddling.
+* nextdownfNx: (libc)FP Bit Twiddling.
 * nextdownl: (libc)FP Bit Twiddling.
 * nexttoward: (libc)FP Bit Twiddling.
 * nexttowardf: (libc)FP Bit Twiddling.
 * nexttowardl: (libc)FP Bit Twiddling.
 * nextup: (libc)FP Bit Twiddling.
 * nextupf: (libc)FP Bit Twiddling.
+* nextupfN: (libc)FP Bit Twiddling.
+* nextupfNx: (libc)FP Bit Twiddling.
 * nextupl: (libc)FP Bit Twiddling.
 * nftw64: (libc)Working with Directory Trees.
 * nftw: (libc)Working with Directory Trees.
@@ -1312,9 +1474,15 @@ START-INFO-DIR-ENTRY
 * pow10l: (libc)Exponents and Logarithms.
 * pow: (libc)Exponents and Logarithms.
 * powf: (libc)Exponents and Logarithms.
+* powfN: (libc)Exponents and Logarithms.
+* powfNx: (libc)Exponents and Logarithms.
 * powl: (libc)Exponents and Logarithms.
 * pread64: (libc)I/O Primitives.
 * pread: (libc)I/O Primitives.
+* preadv2: (libc)I/O Primitives.
+* preadv64: (libc)I/O Primitives.
+* preadv64v2: (libc)I/O Primitives.
+* preadv: (libc)I/O Primitives.
 * printf: (libc)Formatted Output Functions.
 * printf_size: (libc)Predefined Printf Handlers.
 * printf_size_info: (libc)Predefined Printf Handlers.
@@ -1343,6 +1511,10 @@ START-INFO-DIR-ENTRY
 * putwchar_unlocked: (libc)Simple Output.
 * pwrite64: (libc)I/O Primitives.
 * pwrite: (libc)I/O Primitives.
+* pwritev2: (libc)I/O Primitives.
+* pwritev64: (libc)I/O Primitives.
+* pwritev64v2: (libc)I/O Primitives.
+* pwritev: (libc)I/O Primitives.
 * qecvt: (libc)System V Number Conversion.
 * qecvt_r: (libc)System V Number Conversion.
 * qfcvt: (libc)System V Number Conversion.
@@ -1363,6 +1535,7 @@ START-INFO-DIR-ENTRY
 * readlink: (libc)Symbolic Links.
 * readv: (libc)Scatter-Gather.
 * realloc: (libc)Changing Block Size.
+* reallocarray: (libc)Changing Block Size.
 * realpath: (libc)Symbolic Links.
 * recv: (libc)Receiving Data.
 * recvfrom: (libc)Receiving Datagrams.
@@ -1374,6 +1547,8 @@ START-INFO-DIR-ENTRY
 * register_printf_function: (libc)Registering New Conversions.
 * remainder: (libc)Remainder Functions.
 * remainderf: (libc)Remainder Functions.
+* remainderfN: (libc)Remainder Functions.
+* remainderfNx: (libc)Remainder Functions.
 * remainderl: (libc)Remainder Functions.
 * remove: (libc)Deleting Files.
 * rename: (libc)Renaming Files.
@@ -1382,13 +1557,19 @@ START-INFO-DIR-ENTRY
 * rindex: (libc)Search Functions.
 * rint: (libc)Rounding Functions.
 * rintf: (libc)Rounding Functions.
+* rintfN: (libc)Rounding Functions.
+* rintfNx: (libc)Rounding Functions.
 * rintl: (libc)Rounding Functions.
 * rmdir: (libc)Deleting Files.
 * round: (libc)Rounding Functions.
 * roundeven: (libc)Rounding Functions.
 * roundevenf: (libc)Rounding Functions.
+* roundevenfN: (libc)Rounding Functions.
+* roundevenfNx: (libc)Rounding Functions.
 * roundevenl: (libc)Rounding Functions.
 * roundf: (libc)Rounding Functions.
+* roundfN: (libc)Rounding Functions.
+* roundfNx: (libc)Rounding Functions.
 * roundl: (libc)Rounding Functions.
 * rpmatch: (libc)Yes-or-No Questions.
 * sbrk: (libc)Resizing the Data Segment.
@@ -1397,9 +1578,13 @@ START-INFO-DIR-ENTRY
 * scalbl: (libc)Normalization Functions.
 * scalbln: (libc)Normalization Functions.
 * scalblnf: (libc)Normalization Functions.
+* scalblnfN: (libc)Normalization Functions.
+* scalblnfNx: (libc)Normalization Functions.
 * scalblnl: (libc)Normalization Functions.
 * scalbn: (libc)Normalization Functions.
 * scalbnf: (libc)Normalization Functions.
+* scalbnfN: (libc)Normalization Functions.
+* scalbnfNx: (libc)Normalization Functions.
 * scalbnl: (libc)Normalization Functions.
 * scandir64: (libc)Scanning Directory Content.
 * scandir: (libc)Scanning Directory Content.
@@ -1462,9 +1647,13 @@ START-INFO-DIR-ENTRY
 * setnetgrent: (libc)Lookup Netgroup.
 * setpayload: (libc)FP Bit Twiddling.
 * setpayloadf: (libc)FP Bit Twiddling.
+* setpayloadfN: (libc)FP Bit Twiddling.
+* setpayloadfNx: (libc)FP Bit Twiddling.
 * setpayloadl: (libc)FP Bit Twiddling.
 * setpayloadsig: (libc)FP Bit Twiddling.
 * setpayloadsigf: (libc)FP Bit Twiddling.
+* setpayloadsigfN: (libc)FP Bit Twiddling.
+* setpayloadsigfNx: (libc)FP Bit Twiddling.
 * setpayloadsigl: (libc)FP Bit Twiddling.
 * setpgid: (libc)Process Group Functions.
 * setpgrp: (libc)Process Group Functions.
@@ -1514,10 +1703,16 @@ START-INFO-DIR-ENTRY
 * sin: (libc)Trig Functions.
 * sincos: (libc)Trig Functions.
 * sincosf: (libc)Trig Functions.
+* sincosfN: (libc)Trig Functions.
+* sincosfNx: (libc)Trig Functions.
 * sincosl: (libc)Trig Functions.
 * sinf: (libc)Trig Functions.
+* sinfN: (libc)Trig Functions.
+* sinfNx: (libc)Trig Functions.
 * sinh: (libc)Hyperbolic Functions.
 * sinhf: (libc)Hyperbolic Functions.
+* sinhfN: (libc)Hyperbolic Functions.
+* sinhfNx: (libc)Hyperbolic Functions.
 * sinhl: (libc)Hyperbolic Functions.
 * sinl: (libc)Trig Functions.
 * sleep: (libc)Sleeping.
@@ -1527,6 +1722,8 @@ START-INFO-DIR-ENTRY
 * sprintf: (libc)Formatted Output Functions.
 * sqrt: (libc)Exponents and Logarithms.
 * sqrtf: (libc)Exponents and Logarithms.
+* sqrtfN: (libc)Exponents and Logarithms.
+* sqrtfNx: (libc)Exponents and Logarithms.
 * sqrtl: (libc)Exponents and Logarithms.
 * srand48: (libc)SVID Random.
 * srand48_r: (libc)SVID Random.
@@ -1556,6 +1753,8 @@ START-INFO-DIR-ENTRY
 * strfmon: (libc)Formatting Numbers.
 * strfromd: (libc)Printing of Floats.
 * strfromf: (libc)Printing of Floats.
+* strfromfN: (libc)Printing of Floats.
+* strfromfNx: (libc)Printing of Floats.
 * strfroml: (libc)Printing of Floats.
 * strfry: (libc)strfry.
 * strftime: (libc)Formatting Calendar Time.
@@ -1576,6 +1775,8 @@ START-INFO-DIR-ENTRY
 * strstr: (libc)Search Functions.
 * strtod: (libc)Parsing of Floats.
 * strtof: (libc)Parsing of Floats.
+* strtofN: (libc)Parsing of Floats.
+* strtofNx: (libc)Parsing of Floats.
 * strtoimax: (libc)Parsing of Integers.
 * strtok: (libc)Finding Tokens in a String.
 * strtok_r: (libc)Finding Tokens in a String.
@@ -1603,8 +1804,12 @@ START-INFO-DIR-ENTRY
 * sysv_signal: (libc)Basic Signal Handling.
 * tan: (libc)Trig Functions.
 * tanf: (libc)Trig Functions.
+* tanfN: (libc)Trig Functions.
+* tanfNx: (libc)Trig Functions.
 * tanh: (libc)Hyperbolic Functions.
 * tanhf: (libc)Hyperbolic Functions.
+* tanhfN: (libc)Hyperbolic Functions.
+* tanhfNx: (libc)Hyperbolic Functions.
 * tanhl: (libc)Hyperbolic Functions.
 * tanl: (libc)Trig Functions.
 * tcdrain: (libc)Line Control.
@@ -1624,6 +1829,8 @@ START-INFO-DIR-ENTRY
 * tfind: (libc)Tree Search Function.
 * tgamma: (libc)Special Functions.
 * tgammaf: (libc)Special Functions.
+* tgammafN: (libc)Special Functions.
+* tgammafNx: (libc)Special Functions.
 * tgammal: (libc)Special Functions.
 * time: (libc)Simple Calendar Time.
 * timegm: (libc)Broken-down Time.
@@ -1637,9 +1844,13 @@ START-INFO-DIR-ENTRY
 * tolower: (libc)Case Conversion.
 * totalorder: (libc)FP Comparison Functions.
 * totalorderf: (libc)FP Comparison Functions.
+* totalorderfN: (libc)FP Comparison Functions.
+* totalorderfNx: (libc)FP Comparison Functions.
 * totalorderl: (libc)FP Comparison Functions.
 * totalordermag: (libc)FP Comparison Functions.
 * totalordermagf: (libc)FP Comparison Functions.
+* totalordermagfN: (libc)FP Comparison Functions.
+* totalordermagfNx: (libc)FP Comparison Functions.
 * totalordermagl: (libc)FP Comparison Functions.
 * toupper: (libc)Case Conversion.
 * towctrans: (libc)Wide Character Case Conversion.
@@ -1649,6 +1860,8 @@ START-INFO-DIR-ENTRY
 * truncate64: (libc)File Size.
 * truncate: (libc)File Size.
 * truncf: (libc)Rounding Functions.
+* truncfN: (libc)Rounding Functions.
+* truncfNx: (libc)Rounding Functions.
 * truncl: (libc)Rounding Functions.
 * tsearch: (libc)Tree Search Function.
 * ttyname: (libc)Is It a Terminal.
@@ -1657,9 +1870,13 @@ START-INFO-DIR-ENTRY
 * tzset: (libc)Time Zone Functions.
 * ufromfp: (libc)Rounding Functions.
 * ufromfpf: (libc)Rounding Functions.
+* ufromfpfN: (libc)Rounding Functions.
+* ufromfpfNx: (libc)Rounding Functions.
 * ufromfpl: (libc)Rounding Functions.
 * ufromfpx: (libc)Rounding Functions.
 * ufromfpxf: (libc)Rounding Functions.
+* ufromfpxfN: (libc)Rounding Functions.
+* ufromfpxfNx: (libc)Rounding Functions.
 * ufromfpxl: (libc)Rounding Functions.
 * ulimit: (libc)Limits on Resources.
 * umask: (libc)Setting Permissions.
@@ -1738,6 +1955,8 @@ START-INFO-DIR-ENTRY
 * wcsstr: (libc)Search Functions.
 * wcstod: (libc)Parsing of Floats.
 * wcstof: (libc)Parsing of Floats.
+* wcstofN: (libc)Parsing of Floats.
+* wcstofNx: (libc)Parsing of Floats.
 * wcstoimax: (libc)Parsing of Integers.
 * wcstok: (libc)Finding Tokens in a String.
 * wcstol: (libc)Parsing of Integers.
@@ -1769,19 +1988,25 @@ START-INFO-DIR-ENTRY
 * wscanf: (libc)Formatted Input Functions.
 * y0: (libc)Special Functions.
 * y0f: (libc)Special Functions.
+* y0fN: (libc)Special Functions.
+* y0fNx: (libc)Special Functions.
 * y0l: (libc)Special Functions.
 * y1: (libc)Special Functions.
 * y1f: (libc)Special Functions.
+* y1fN: (libc)Special Functions.
+* y1fNx: (libc)Special Functions.
 * y1l: (libc)Special Functions.
 * yn: (libc)Special Functions.
 * ynf: (libc)Special Functions.
+* ynfN: (libc)Special Functions.
+* ynfNx: (libc)Special Functions.
 * ynl: (libc)Special Functions.
 END-INFO-DIR-ENTRY
 
    This file documents the GNU C Library.
 
-   This is `The GNU C Library Reference Manual', for version 2.25
-(crosstool-NG crosstool-ng-1.23.0).
+   This is `The GNU C Library Reference Manual', for version 2.26
+(crosstool-NG 1.23.0.420-201f).
 
    Copyright (C) 1993-2017 Free Software Foundation, Inc.
 
@@ -1799,6 +2024,130 @@ modify this GNU manual.  Buying copies from the FSF supports it in
 developing GNU and promoting software freedom."
 
 
+File: libc.info,  Node: FP Comparison Functions,  Next: Misc FP Arithmetic,  Prev: FP Bit Twiddling,  Up: Arithmetic Functions
+
+20.8.6 Floating-Point Comparison Functions
+------------------------------------------
+
+The standard C comparison operators provoke exceptions when one or other
+of the operands is NaN.  For example,
+
+     int v = a < 1.0;
+
+will raise an exception if A is NaN.  (This does _not_ happen with `=='
+and `!='; those merely return false and true, respectively, when NaN is
+examined.)  Frequently this exception is undesirable.  ISO C99
+therefore defines comparison functions that do not raise exceptions
+when NaN is examined.  All of the functions are implemented as macros
+which allow their arguments to be of any floating-point type.  The
+macros are guaranteed to evaluate their arguments only once.  TS
+18661-1:2014 adds such a macro for an equality comparison that _does_
+raise an exception for a NaN argument; it also adds functions that
+provide a total ordering on all floating-point values, including NaNs,
+without raising any exceptions even for signaling NaNs.
+
+ -- Macro: int isgreater (_real-floating_ X, _real-floating_ Y)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This macro determines whether the argument X is greater than Y.
+     It is equivalent to `(X) > (Y)', but no exception is raised if X
+     or Y are NaN.
+
+ -- Macro: int isgreaterequal (_real-floating_ X, _real-floating_ Y)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This macro determines whether the argument X is greater than or
+     equal to Y.  It is equivalent to `(X) >= (Y)', but no exception is
+     raised if X or Y are NaN.
+
+ -- Macro: int isless (_real-floating_ X, _real-floating_ Y)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This macro determines whether the argument X is less than Y.  It
+     is equivalent to `(X) < (Y)', but no exception is raised if X or Y
+     are NaN.
+
+ -- Macro: int islessequal (_real-floating_ X, _real-floating_ Y)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This macro determines whether the argument X is less than or equal
+     to Y.  It is equivalent to `(X) <= (Y)', but no exception is
+     raised if X or Y are NaN.
+
+ -- Macro: int islessgreater (_real-floating_ X, _real-floating_ Y)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This macro determines whether the argument X is less or greater
+     than Y.  It is equivalent to `(X) < (Y) || (X) > (Y)' (although it
+     only evaluates X and Y once), but no exception is raised if X or Y
+     are NaN.
+
+     This macro is not equivalent to `X != Y', because that expression
+     is true if X or Y are NaN.
+
+ -- Macro: int isunordered (_real-floating_ X, _real-floating_ Y)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This macro determines whether its arguments are unordered.  In
+     other words, it is true if X or Y are NaN, and false otherwise.
+
+ -- Macro: int iseqsig (_real-floating_ X, _real-floating_ Y)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This macro determines whether its arguments are equal.  It is
+     equivalent to `(X) == (Y)', but it raises the invalid exception
+     and sets `errno' to `EDOM' if either argument is a NaN.
+
+ -- Function: int totalorder (double X, double Y)
+ -- Function: int totalorderf (float X, float Y)
+ -- Function: int totalorderl (long double X, long double Y)
+ -- Function: int totalorderfN (_FloatN X, _FloatN Y)
+ -- Function: int totalorderfNx (_FloatNx X, _FloatNx Y)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     These functions determine whether the total order relationship,
+     defined in IEEE 754-2008, is true for X and Y, returning nonzero
+     if it is true and zero if it is false.  No exceptions are raised
+     even for signaling NaNs.  The relationship is true if they are the
+     same floating-point value (including sign for zero and NaNs, and
+     payload for NaNs), or if X comes before Y in the following order:
+     negative quiet NaNs, in order of decreasing payload; negative
+     signaling NaNs, in order of decreasing payload; negative infinity;
+     finite numbers, in ascending order, with negative zero before
+     positive zero; positive infinity; positive signaling NaNs, in
+     order of increasing payload; positive quiet NaNs, in order of
+     increasing payload.
+
+ -- Function: int totalordermag (double X, double Y)
+ -- Function: int totalordermagf (float X, float Y)
+ -- Function: int totalordermagl (long double X, long double Y)
+ -- Function: int totalordermagfN (_FloatN X, _FloatN Y)
+ -- Function: int totalordermagfNx (_FloatNx X, _FloatNx Y)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     These functions determine whether the total order relationship,
+     defined in IEEE 754-2008, is true for the absolute values of X and
+     Y, returning nonzero if it is true and zero if it is false.  No
+     exceptions are raised even for signaling NaNs.
+
+   Not all machines provide hardware support for these operations.  On
+machines that don't, the macros can be very slow.  Therefore, you should
+not use these functions when NaN is not a concern.
+
+   *NB:* There are no macros `isequal' or `isunequal'.  They are
+unnecessary, because the `==' and `!=' operators do _not_ throw an
+exception if one or both of the operands are NaN.
+
+
 File: libc.info,  Node: Misc FP Arithmetic,  Prev: FP Comparison Functions,  Up: Arithmetic Functions
 
 20.8.7 Miscellaneous FP arithmetic functions
@@ -1812,6 +2161,8 @@ perform these operations faster than the equivalent C code.
  -- Function: double fmin (double X, double Y)
  -- Function: float fminf (float X, float Y)
  -- Function: long double fminl (long double X, long double Y)
+ -- Function: _FloatN fminfN (_FloatN X, _FloatN Y)
+ -- Function: _FloatNx fminfNx (_FloatNx X, _FloatNx Y)
      Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
      Concepts::.
 
@@ -1826,6 +2177,8 @@ perform these operations faster than the equivalent C code.
  -- Function: double fmax (double X, double Y)
  -- Function: float fmaxf (float X, float Y)
  -- Function: long double fmaxl (long double X, long double Y)
+ -- Function: _FloatN fmaxfN (_FloatN X, _FloatN Y)
+ -- Function: _FloatNx fmaxfNx (_FloatNx X, _FloatNx Y)
      Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
      Concepts::.
 
@@ -1837,17 +2190,21 @@ perform these operations faster than the equivalent C code.
  -- Function: double fminmag (double X, double Y)
  -- Function: float fminmagf (float X, float Y)
  -- Function: long double fminmagl (long double X, long double Y)
+ -- Function: _FloatN fminmagfN (_FloatN X, _FloatN Y)
+ -- Function: _FloatNx fminmagfNx (_FloatNx X, _FloatNx Y)
      Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
      Concepts::.
 
-     These functions, from TS 18661-1:2014, return whichever of the two
-     values X and Y has the smaller absolute value.  If both have the
-     same absolute value, or either is NaN, they behave the same as the
-     `fmin' functions.
+     These functions, from TS 18661-1:2014 and TS 18661-3:2015, return
+     whichever of the two values X and Y has the smaller absolute
+     value.  If both have the same absolute value, or either is NaN,
+     they behave the same as the `fmin' functions.
 
  -- Function: double fmaxmag (double X, double Y)
  -- Function: float fmaxmagf (float X, float Y)
  -- Function: long double fmaxmagl (long double X, long double Y)
+ -- Function: _FloatN fmaxmagfN (_FloatN X, _FloatN Y)
+ -- Function: _FloatNx fmaxmagfNx (_FloatNx X, _FloatNx Y)
      Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
      Concepts::.
 
@@ -1859,6 +2216,8 @@ perform these operations faster than the equivalent C code.
  -- Function: double fdim (double X, double Y)
  -- Function: float fdimf (float X, float Y)
  -- Function: long double fdiml (long double X, long double Y)
+ -- Function: _FloatN fdimfN (_FloatN X, _FloatN Y)
+ -- Function: _FloatNx fdimfNx (_FloatNx X, _FloatNx Y)
      Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
      Concepts::.
 
@@ -1872,6 +2231,8 @@ perform these operations faster than the equivalent C code.
  -- Function: float fmaf (float X, float Y, float Z)
  -- Function: long double fmal (long double X, long double Y, long
           double Z)
+ -- Function: _FloatN fmafN (_FloatN X, _FloatN Y, _FloatN Z)
+ -- Function: _FloatNx fmafNx (_FloatNx X, _FloatNx Y, _FloatNx Z)
      Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
      Concepts::.
 
@@ -1904,6 +2265,10 @@ a new type qualifier, `complex'.  It is a keyword if and only if
 `complex.h' has been included.  There are three complex types,
 corresponding to the three real types:  `float complex', `double
 complex', and `long double complex'.
+
+   Likewise, on machines that have support for `_FloatN' or `_FloatNx'
+enabled, the complex types `_FloatN complex' and `_FloatNx complex' are
+also available if `complex.h' has been included; *note Mathematics::.
 
    To construct complex numbers you need a way to indicate the imaginary
 part of a number.  There is no standard notation for an imaginary
@@ -1951,6 +2316,8 @@ three variants, one for each of the three complex types.
  -- Function: double creal (complex double Z)
  -- Function: float crealf (complex float Z)
  -- Function: long double creall (complex long double Z)
+ -- Function: _FloatN crealfN (complex _FloatN Z)
+ -- Function: _FloatNx crealfNx (complex _FloatNx Z)
      Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
      Concepts::.
 
@@ -1959,6 +2326,8 @@ three variants, one for each of the three complex types.
  -- Function: double cimag (complex double Z)
  -- Function: float cimagf (complex float Z)
  -- Function: long double cimagl (complex long double Z)
+ -- Function: _FloatN cimagfN (complex _FloatN Z)
+ -- Function: _FloatNx cimagfNx (complex _FloatNx Z)
      Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
      Concepts::.
 
@@ -1967,6 +2336,8 @@ three variants, one for each of the three complex types.
  -- Function: complex double conj (complex double Z)
  -- Function: complex float conjf (complex float Z)
  -- Function: complex long double conjl (complex long double Z)
+ -- Function: complex _FloatN conjfN (complex _FloatN Z)
+ -- Function: complex _FloatNx conjfNx (complex _FloatNx Z)
      Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
      Concepts::.
 
@@ -1977,6 +2348,8 @@ three variants, one for each of the three complex types.
  -- Function: double carg (complex double Z)
  -- Function: float cargf (complex float Z)
  -- Function: long double cargl (complex long double Z)
+ -- Function: _FloatN cargfN (complex _FloatN Z)
+ -- Function: _FloatNx cargfNx (complex _FloatNx Z)
      Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
      Concepts::.
 
@@ -1991,6 +2364,8 @@ three variants, one for each of the three complex types.
  -- Function: complex double cproj (complex double Z)
  -- Function: complex float cprojf (complex float Z)
  -- Function: complex long double cprojl (complex long double Z)
+ -- Function: complex _FloatN cprojfN (complex _FloatN Z)
+ -- Function: complex _FloatNx cprojfNx (complex _FloatNx Z)
      Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
      Concepts::.
 
@@ -2422,20 +2797,40 @@ defined there) so we have to do it as well.
 
      These functions have been GNU extensions and are new to ISO C99.
 
+ -- Function: _FloatN strtofN (const char *STRING, char **TAILPTR)
+ -- Function: _FloatNx strtofNx (const char *STRING, char **TAILPTR)
+     Preliminary: | MT-Safe locale | AS-Safe | AC-Safe | *Note POSIX
+     Safety Concepts::.
+
+     These functions are like `strtod', except for the return type.
+
+     They were introduced in ISO/IEC TS 18661-3 and are available on
+     machines that support the related types; *note Mathematics::.
+
  -- Function: double wcstod (const wchar_t *restrict STRING, wchar_t
           **restrict TAILPTR)
  -- Function: float wcstof (const wchar_t *STRING, wchar_t **TAILPTR)
  -- Function: long double wcstold (const wchar_t *STRING, wchar_t
           **TAILPTR)
+ -- Function: _FloatN wcstofN (const wchar_t *STRING, wchar_t **TAILPTR)
+ -- Function: _FloatNx wcstofNx (const wchar_t *STRING, wchar_t
+          **TAILPTR)
      Preliminary: | MT-Safe locale | AS-Safe | AC-Safe | *Note POSIX
      Safety Concepts::.
 
-     The `wcstod', `wcstof', and `wcstol' functions are equivalent in
-     nearly all aspect to the `strtod', `strtof', and `strtold'
-     functions but it handles wide character string.
+     The `wcstod', `wcstof', `wcstol', `wcstofN', and `wcstofNx'
+     functions are equivalent in nearly all aspects to the `strtod',
+     `strtof', `strtold', `strtofN', and `strtofNx' functions, but they
+     handle wide character strings.
 
      The `wcstod' function was introduced in Amendment 1 of ISO C90.
      The `wcstof' and `wcstold' functions were introduced in ISO C99.
+
+     The `wcstofN' and `wcstofNx' functions are not in any standard,
+     but are added to provide completeness for the non-deprecated
+     interface of wide character string to floating-point conversion
+     functions.  They are only available on machines that support the
+     related types; *note Mathematics::.
 
  -- Function: double atof (const char *STRING)
      Preliminary: | MT-Safe locale | AS-Safe | AC-Safe | *Note POSIX
@@ -2492,6 +2887,19 @@ The `strfrom' functions are declared in `stdlib.h'.
      the returned value is less than SIZE.
 
      These functions were introduced by ISO/IEC TS 18661-1.
+
+ -- Function: int strfromfN (char *restrict STRING, size_t SIZE, const
+          char *restrict FORMAT, _FloatN VALUE)
+ -- Function: int strfromfNx (char *restrict STRING, size_t SIZE, const
+          char *restrict FORMAT, _FloatNx VALUE)
+     Preliminary: | MT-Safe locale | AS-Unsafe heap | AC-Unsafe mem |
+     *Note POSIX Safety Concepts::.
+
+     These functions are like `strfromd', except for the type of
+     `value'.
+
+     They were introduced in ISO/IEC TS 18661-3 and are available on
+     machines that support the related types; *note Mathematics::.
 
 
 File: libc.info,  Node: System V Number Conversion,  Prev: Printing of Floats,  Up: Arithmetic
@@ -8836,215 +9244,4 @@ has been a signal since that part last checked.
            }
        }
      }
-
-
-File: libc.info,  Node: Nonreentrancy,  Next: Atomic Data Access,  Prev: Merged Signals,  Up: Defining Handlers
-
-24.4.6 Signal Handling and Nonreentrant Functions
--------------------------------------------------
-
-Handler functions usually don't do very much.  The best practice is to
-write a handler that does nothing but set an external variable that the
-program checks regularly, and leave all serious work to the program.
-This is best because the handler can be called asynchronously, at
-unpredictable times--perhaps in the middle of a primitive function, or
-even between the beginning and the end of a C operator that requires
-multiple instructions.  The data structures being manipulated might
-therefore be in an inconsistent state when the handler function is
-invoked.  Even copying one `int' variable into another can take two
-instructions on most machines.
-
-   This means you have to be very careful about what you do in a signal
-handler.
-
-   * If your handler needs to access any global variables from your
-     program, declare those variables `volatile'.  This tells the
-     compiler that the value of the variable might change
-     asynchronously, and inhibits certain optimizations that would be
-     invalidated by such modifications.
-
-   * If you call a function in the handler, make sure it is "reentrant"
-     with respect to signals, or else make sure that the signal cannot
-     interrupt a call to a related function.
-
-   A function can be non-reentrant if it uses memory that is not on the
-stack.
-
-   * If a function uses a static variable or a global variable, or a
-     dynamically-allocated object that it finds for itself, then it is
-     non-reentrant and any two calls to the function can interfere.
-
-     For example, suppose that the signal handler uses `gethostbyname'.
-     This function returns its value in a static object, reusing the
-     same object each time.  If the signal happens to arrive during a
-     call to `gethostbyname', or even after one (while the program is
-     still using the value), it will clobber the value that the program
-     asked for.
-
-     However, if the program does not use `gethostbyname' or any other
-     function that returns information in the same object, or if it
-     always blocks signals around each use, then you are safe.
-
-     There are a large number of library functions that return values
-     in a fixed object, always reusing the same object in this fashion,
-     and all of them cause the same problem.  Function descriptions in
-     this manual always mention this behavior.
-
-   * If a function uses and modifies an object that you supply, then it
-     is potentially non-reentrant; two calls can interfere if they use
-     the same object.
-
-     This case arises when you do I/O using streams.  Suppose that the
-     signal handler prints a message with `fprintf'.  Suppose that the
-     program was in the middle of an `fprintf' call using the same
-     stream when the signal was delivered.  Both the signal handler's
-     message and the program's data could be corrupted, because both
-     calls operate on the same data structure--the stream itself.
-
-     However, if you know that the stream that the handler uses cannot
-     possibly be used by the program at a time when signals can arrive,
-     then you are safe.  It is no problem if the program uses some
-     other stream.
-
-   * On most systems, `malloc' and `free' are not reentrant, because
-     they use a static data structure which records what memory blocks
-     are free.  As a result, no library functions that allocate or free
-     memory are reentrant.  This includes functions that allocate space
-     to store a result.
-
-     The best way to avoid the need to allocate memory in a handler is
-     to allocate in advance space for signal handlers to use.
-
-     The best way to avoid freeing memory in a handler is to flag or
-     record the objects to be freed, and have the program check from
-     time to time whether anything is waiting to be freed.  But this
-     must be done with care, because placing an object on a chain is
-     not atomic, and if it is interrupted by another signal handler
-     that does the same thing, you could "lose" one of the objects.
-
-   * Any function that modifies `errno' is non-reentrant, but you can
-     correct for this: in the handler, save the original value of
-     `errno' and restore it before returning normally.  This prevents
-     errors that occur within the signal handler from being confused
-     with errors from system calls at the point the program is
-     interrupted to run the handler.
-
-     This technique is generally applicable; if you want to call in a
-     handler a function that modifies a particular object in memory,
-     you can make this safe by saving and restoring that object.
-
-   * Merely reading from a memory object is safe provided that you can
-     deal with any of the values that might appear in the object at a
-     time when the signal can be delivered.  Keep in mind that
-     assignment to some data types requires more than one instruction,
-     which means that the handler could run "in the middle of" an
-     assignment to the variable if its type is not atomic.  *Note
-     Atomic Data Access::.
-
-   * Merely writing into a memory object is safe as long as a sudden
-     change in the value, at any time when the handler might run, will
-     not disturb anything.
-
-
-File: libc.info,  Node: Atomic Data Access,  Prev: Nonreentrancy,  Up: Defining Handlers
-
-24.4.7 Atomic Data Access and Signal Handling
----------------------------------------------
-
-Whether the data in your application concerns atoms, or mere text, you
-have to be careful about the fact that access to a single datum is not
-necessarily "atomic".  This means that it can take more than one
-instruction to read or write a single object.  In such cases, a signal
-handler might be invoked in the middle of reading or writing the object.
-
-   There are three ways you can cope with this problem.  You can use
-data types that are always accessed atomically; you can carefully
-arrange that nothing untoward happens if an access is interrupted, or
-you can block all signals around any access that had better not be
-interrupted (*note Blocking Signals::).
-
-* Menu:
-
-* Non-atomic Example::		A program illustrating interrupted access.
-* Types: Atomic Types.		Data types that guarantee no interruption.
-* Usage: Atomic Usage.		Proving that interruption is harmless.
-
-
-File: libc.info,  Node: Non-atomic Example,  Next: Atomic Types,  Up: Atomic Data Access
-
-24.4.7.1 Problems with Non-Atomic Access
-........................................
-
-Here is an example which shows what can happen if a signal handler runs
-in the middle of modifying a variable.  (Interrupting the reading of a
-variable can also lead to paradoxical results, but here we only show
-writing.)
-
-     #include <signal.h>
-     #include <stdio.h>
-
-     volatile struct two_words { int a, b; } memory;
-
-     void
-     handler(int signum)
-     {
-        printf ("%d,%d\n", memory.a, memory.b);
-        alarm (1);
-     }
-
-     int
-     main (void)
-     {
-        static struct two_words zeros = { 0, 0 }, ones = { 1, 1 };
-        signal (SIGALRM, handler);
-        memory = zeros;
-        alarm (1);
-        while (1)
-          {
-            memory = zeros;
-            memory = ones;
-          }
-     }
-
-   This program fills `memory' with zeros, ones, zeros, ones,
-alternating forever; meanwhile, once per second, the alarm signal
-handler prints the current contents.  (Calling `printf' in the handler
-is safe in this program because it is certainly not being called outside
-the handler when the signal happens.)
-
-   Clearly, this program can print a pair of zeros or a pair of ones.
-But that's not all it can do!  On most machines, it takes several
-instructions to store a new value in `memory', and the value is stored
-one word at a time.  If the signal is delivered in between these
-instructions, the handler might find that `memory.a' is zero and
-`memory.b' is one (or vice versa).
-
-   On some machines it may be possible to store a new value in `memory'
-with just one instruction that cannot be interrupted.  On these
-machines, the handler will always print two zeros or two ones.
-
-
-File: libc.info,  Node: Atomic Types,  Next: Atomic Usage,  Prev: Non-atomic Example,  Up: Atomic Data Access
-
-24.4.7.2 Atomic Types
-.....................
-
-To avoid uncertainty about interrupting access to a variable, you can
-use a particular data type for which access is always atomic:
-`sig_atomic_t'.  Reading and writing this data type is guaranteed to
-happen in a single instruction, so there's no way for a handler to run
-"in the middle" of an access.
-
-   The type `sig_atomic_t' is always an integer data type, but which
-one it is, and how many bits it contains, may vary from machine to
-machine.
-
- -- Data Type: sig_atomic_t
-     This is an integer data type.  Objects of this type are always
-     accessed atomically.
-
-   In practice, you can assume that `int' is atomic.  You can also
-assume that pointer types are atomic; that is very convenient.  Both of
-these assumptions are true on all of the machines that the GNU C
-Library supports and on all POSIX systems we know of.
 

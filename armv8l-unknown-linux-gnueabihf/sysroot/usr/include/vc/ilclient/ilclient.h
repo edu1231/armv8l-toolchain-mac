@@ -43,8 +43,8 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #ifndef _IL_CLIENT_H
 #define _IL_CLIENT_H
 
-#include <IL/OMX_Broadcom.h>
-#include <interface/vcos/vcos.h>
+#include "IL/OMX_Broadcom.h"
+#include "interface/vcos/vcos.h"
 
 /**
  * The <DFN>ILCLIENT_T</DFN> structure encapsulates the state needed for the IL
