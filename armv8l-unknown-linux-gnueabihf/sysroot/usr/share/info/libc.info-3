@@ -39,7 +39,6 @@ START-INFO-DIR-ENTRY
 * CS8: (libc)Control Modes.
 * CSIZE: (libc)Control Modes.
 * CSTOPB: (libc)Control Modes.
-* DES_FAILED: (libc)DES Encryption.
 * DTTOIF: (libc)Directory Entries.
 * E2BIG: (libc)Error Codes.
 * EACCES: (libc)Error Codes.
@@ -309,6 +308,7 @@ START-INFO-DIR-ENTRY
 * O_READ: (libc)Access Modes.
 * O_SHLOCK: (libc)Open-time Flags.
 * O_SYNC: (libc)Operating Modes.
+* O_TMPFILE: (libc)Open-time Flags.
 * O_TRUNC: (libc)Open-time Flags.
 * O_WRITE: (libc)Access Modes.
 * O_WRONLY: (libc)Access Modes.
@@ -472,6 +472,7 @@ START-INFO-DIR-ENTRY
 * __ppc_set_ppr_med_low: (libc)PowerPC.
 * __ppc_set_ppr_very_low: (libc)PowerPC.
 * __ppc_yield: (libc)PowerPC.
+* __riscv_flush_icache: (libc)RISC-V.
 * __va_copy: (libc)Argument Macros.
 * _exit: (libc)Termination Internals.
 * _flushlbf: (libc)Flushing Buffers.
@@ -598,6 +599,7 @@ START-INFO-DIR-ENTRY
 * cacoshfNx: (libc)Hyperbolic Functions.
 * cacoshl: (libc)Hyperbolic Functions.
 * cacosl: (libc)Inverse Trig Functions.
+* call_once: (libc)Call Once.
 * calloc: (libc)Allocating Cleared Space.
 * canonicalize: (libc)FP Bit Twiddling.
 * canonicalize_file_name: (libc)Symbolic Links.
@@ -633,7 +635,6 @@ START-INFO-DIR-ENTRY
 * catclose: (libc)The catgets Functions.
 * catgets: (libc)The catgets Functions.
 * catopen: (libc)The catgets Functions.
-* cbc_crypt: (libc)DES Encryption.
 * cbrt: (libc)Exponents and Logarithms.
 * cbrtf: (libc)Exponents and Logarithms.
 * cbrtfN: (libc)Exponents and Logarithms.
@@ -690,6 +691,12 @@ START-INFO-DIR-ENTRY
 * close: (libc)Opening and Closing Files.
 * closedir: (libc)Reading/Closing Directory.
 * closelog: (libc)closelog.
+* cnd_broadcast: (libc)ISO C Condition Variables.
+* cnd_destroy: (libc)ISO C Condition Variables.
+* cnd_init: (libc)ISO C Condition Variables.
+* cnd_signal: (libc)ISO C Condition Variables.
+* cnd_timedwait: (libc)ISO C Condition Variables.
+* cnd_wait: (libc)ISO C Condition Variables.
 * confstr: (libc)String Parameters.
 * conj: (libc)Operations on Complex.
 * conjf: (libc)Operations on Complex.
@@ -697,6 +704,7 @@ START-INFO-DIR-ENTRY
 * conjfNx: (libc)Operations on Complex.
 * conjl: (libc)Operations on Complex.
 * connect: (libc)Connecting.
+* copy_file_range: (libc)Copying File Data.
 * copysign: (libc)FP Bit Twiddling.
 * copysignf: (libc)FP Bit Twiddling.
 * copysignfN: (libc)FP Bit Twiddling.
@@ -729,8 +737,8 @@ START-INFO-DIR-ENTRY
 * creall: (libc)Operations on Complex.
 * creat64: (libc)Opening and Closing Files.
 * creat: (libc)Opening and Closing Files.
-* crypt: (libc)crypt.
-* crypt_r: (libc)crypt.
+* crypt: (libc)Passphrase Storage.
+* crypt_r: (libc)Passphrase Storage.
 * csin: (libc)Trig Functions.
 * csinf: (libc)Trig Functions.
 * csinfN: (libc)Trig Functions.
@@ -760,27 +768,27 @@ START-INFO-DIR-ENTRY
 * ctime: (libc)Formatting Calendar Time.
 * ctime_r: (libc)Formatting Calendar Time.
 * cuserid: (libc)Who Logged In.
+* daddl: (libc)Misc FP Arithmetic.
 * dcgettext: (libc)Translation with gettext.
 * dcngettext: (libc)Advanced gettext functions.
-* des_setparity: (libc)DES Encryption.
+* ddivl: (libc)Misc FP Arithmetic.
 * dgettext: (libc)Translation with gettext.
 * difftime: (libc)Elapsed Time.
 * dirfd: (libc)Opening a Directory.
 * dirname: (libc)Finding Tokens in a String.
 * div: (libc)Integer Division.
+* dmull: (libc)Misc FP Arithmetic.
 * dngettext: (libc)Advanced gettext functions.
 * drand48: (libc)SVID Random.
 * drand48_r: (libc)SVID Random.
 * drem: (libc)Remainder Functions.
 * dremf: (libc)Remainder Functions.
 * dreml: (libc)Remainder Functions.
+* dsubl: (libc)Misc FP Arithmetic.
 * dup2: (libc)Duplicating Descriptors.
 * dup: (libc)Duplicating Descriptors.
-* ecb_crypt: (libc)DES Encryption.
 * ecvt: (libc)System V Number Conversion.
 * ecvt_r: (libc)System V Number Conversion.
-* encrypt: (libc)DES Encryption.
-* encrypt_r: (libc)DES Encryption.
 * endfsent: (libc)fstab.
 * endgrent: (libc)Scanning All Groups.
 * endhostent: (libc)Host Names.
@@ -843,11 +851,29 @@ START-INFO-DIR-ENTRY
 * expm1fN: (libc)Exponents and Logarithms.
 * expm1fNx: (libc)Exponents and Logarithms.
 * expm1l: (libc)Exponents and Logarithms.
+* fMaddfN: (libc)Misc FP Arithmetic.
+* fMaddfNx: (libc)Misc FP Arithmetic.
+* fMdivfN: (libc)Misc FP Arithmetic.
+* fMdivfNx: (libc)Misc FP Arithmetic.
+* fMmulfN: (libc)Misc FP Arithmetic.
+* fMmulfNx: (libc)Misc FP Arithmetic.
+* fMsubfN: (libc)Misc FP Arithmetic.
+* fMsubfNx: (libc)Misc FP Arithmetic.
+* fMxaddfN: (libc)Misc FP Arithmetic.
+* fMxaddfNx: (libc)Misc FP Arithmetic.
+* fMxdivfN: (libc)Misc FP Arithmetic.
+* fMxdivfNx: (libc)Misc FP Arithmetic.
+* fMxmulfN: (libc)Misc FP Arithmetic.
+* fMxmulfNx: (libc)Misc FP Arithmetic.
+* fMxsubfN: (libc)Misc FP Arithmetic.
+* fMxsubfNx: (libc)Misc FP Arithmetic.
 * fabs: (libc)Absolute Value.
 * fabsf: (libc)Absolute Value.
 * fabsfN: (libc)Absolute Value.
 * fabsfNx: (libc)Absolute Value.
 * fabsl: (libc)Absolute Value.
+* fadd: (libc)Misc FP Arithmetic.
+* faddl: (libc)Misc FP Arithmetic.
 * fchdir: (libc)Working Directory.
 * fchmod: (libc)Setting Permissions.
 * fchown: (libc)File Owner.
@@ -862,6 +888,8 @@ START-INFO-DIR-ENTRY
 * fdimfN: (libc)Misc FP Arithmetic.
 * fdimfNx: (libc)Misc FP Arithmetic.
 * fdiml: (libc)Misc FP Arithmetic.
+* fdiv: (libc)Misc FP Arithmetic.
+* fdivl: (libc)Misc FP Arithmetic.
 * fdopen: (libc)Descriptors and Streams.
 * fdopendir: (libc)Opening a Directory.
 * feclearexcept: (libc)Status bit operations.
@@ -945,6 +973,8 @@ START-INFO-DIR-ENTRY
 * fmodfNx: (libc)Remainder Functions.
 * fmodl: (libc)Remainder Functions.
 * fmtmsg: (libc)Printing Formatted Messages.
+* fmul: (libc)Misc FP Arithmetic.
+* fmull: (libc)Misc FP Arithmetic.
 * fnmatch: (libc)Wildcard Matching.
 * fopen64: (libc)Opening Streams.
 * fopen: (libc)Opening Streams.
@@ -990,6 +1020,8 @@ START-INFO-DIR-ENTRY
 * fsetpos: (libc)Portable Positioning.
 * fstat64: (libc)Reading Attributes.
 * fstat: (libc)Reading Attributes.
+* fsub: (libc)Misc FP Arithmetic.
+* fsubl: (libc)Misc FP Arithmetic.
 * fsync: (libc)Synchronizing I/O.
 * ftell: (libc)File Positioning.
 * ftello64: (libc)File Positioning.
@@ -1263,6 +1295,7 @@ START-INFO-DIR-ENTRY
 * lgammal: (libc)Special Functions.
 * lgammal_r: (libc)Special Functions.
 * link: (libc)Hard Links.
+* linkat: (libc)Hard Links.
 * lio_listio64: (libc)Asynchronous Reads/Writes.
 * lio_listio: (libc)Asynchronous Reads/Writes.
 * listen: (libc)Listening.
@@ -1353,7 +1386,8 @@ START-INFO-DIR-ENTRY
 * memchr: (libc)Search Functions.
 * memcmp: (libc)String/Array Comparison.
 * memcpy: (libc)Copying Strings and Arrays.
-* memfrob: (libc)Trivial Encryption.
+* memfd_create: (libc)Memory-mapped I/O.
+* memfrob: (libc)Obfuscating Data.
 * memmem: (libc)Search Functions.
 * memmove: (libc)Copying Strings and Arrays.
 * mempcpy: (libc)Copying Strings and Arrays.
@@ -1366,6 +1400,7 @@ START-INFO-DIR-ENTRY
 * mkstemp: (libc)Temporary Files.
 * mktemp: (libc)Temporary Files.
 * mktime: (libc)Broken-down Time.
+* mlock2: (libc)Page Lock Functions.
 * mlock: (libc)Page Lock Functions.
 * mlockall: (libc)Page Lock Functions.
 * mmap64: (libc)Memory-mapped I/O.
@@ -1377,11 +1412,18 @@ START-INFO-DIR-ENTRY
 * modfl: (libc)Rounding Functions.
 * mount: (libc)Mount-Unmount-Remount.
 * mprobe: (libc)Heap Consistency Checking.
+* mprotect: (libc)Memory Protection.
 * mrand48: (libc)SVID Random.
 * mrand48_r: (libc)SVID Random.
 * mremap: (libc)Memory-mapped I/O.
 * msync: (libc)Memory-mapped I/O.
 * mtrace: (libc)Tracing malloc.
+* mtx_destroy: (libc)ISO C Mutexes.
+* mtx_init: (libc)ISO C Mutexes.
+* mtx_lock: (libc)ISO C Mutexes.
+* mtx_timedlock: (libc)ISO C Mutexes.
+* mtx_trylock: (libc)ISO C Mutexes.
+* mtx_unlock: (libc)ISO C Mutexes.
 * munlock: (libc)Page Lock Functions.
 * munlockall: (libc)Page Lock Functions.
 * munmap: (libc)Memory-mapped I/O.
@@ -1465,13 +1507,15 @@ START-INFO-DIR-ENTRY
 * pclose: (libc)Pipe to a Subprocess.
 * perror: (libc)Error Messages.
 * pipe: (libc)Creating a Pipe.
+* pkey_alloc: (libc)Memory Protection.
+* pkey_free: (libc)Memory Protection.
+* pkey_get: (libc)Memory Protection.
+* pkey_mprotect: (libc)Memory Protection.
+* pkey_set: (libc)Memory Protection.
 * popen: (libc)Pipe to a Subprocess.
 * posix_fallocate64: (libc)Storage Allocation.
 * posix_fallocate: (libc)Storage Allocation.
 * posix_memalign: (libc)Aligned Memory Blocks.
-* pow10: (libc)Exponents and Logarithms.
-* pow10f: (libc)Exponents and Logarithms.
-* pow10l: (libc)Exponents and Logarithms.
 * pow: (libc)Exponents and Logarithms.
 * powf: (libc)Exponents and Logarithms.
 * powfN: (libc)Exponents and Logarithms.
@@ -1479,10 +1523,10 @@ START-INFO-DIR-ENTRY
 * powl: (libc)Exponents and Logarithms.
 * pread64: (libc)I/O Primitives.
 * pread: (libc)I/O Primitives.
-* preadv2: (libc)I/O Primitives.
-* preadv64: (libc)I/O Primitives.
-* preadv64v2: (libc)I/O Primitives.
-* preadv: (libc)I/O Primitives.
+* preadv2: (libc)Scatter-Gather.
+* preadv64: (libc)Scatter-Gather.
+* preadv64v2: (libc)Scatter-Gather.
+* preadv: (libc)Scatter-Gather.
 * printf: (libc)Formatted Output Functions.
 * printf_size: (libc)Predefined Printf Handlers.
 * printf_size_info: (libc)Predefined Printf Handlers.
@@ -1511,10 +1555,10 @@ START-INFO-DIR-ENTRY
 * putwchar_unlocked: (libc)Simple Output.
 * pwrite64: (libc)I/O Primitives.
 * pwrite: (libc)I/O Primitives.
-* pwritev2: (libc)I/O Primitives.
-* pwritev64: (libc)I/O Primitives.
-* pwritev64v2: (libc)I/O Primitives.
-* pwritev: (libc)I/O Primitives.
+* pwritev2: (libc)Scatter-Gather.
+* pwritev64: (libc)Scatter-Gather.
+* pwritev64v2: (libc)Scatter-Gather.
+* pwritev: (libc)Scatter-Gather.
 * qecvt: (libc)System V Number Conversion.
 * qecvt_r: (libc)System V Number Conversion.
 * qfcvt: (libc)System V Number Conversion.
@@ -1637,8 +1681,6 @@ START-INFO-DIR-ENTRY
 * sethostname: (libc)Host Identification.
 * setitimer: (libc)Setting an Alarm.
 * setjmp: (libc)Non-Local Details.
-* setkey: (libc)DES Encryption.
-* setkey_r: (libc)DES Encryption.
 * setlinebuf: (libc)Controlling Buffering.
 * setlocale: (libc)Setting the Locale.
 * setlogmask: (libc)setlogmask.
@@ -1756,7 +1798,7 @@ START-INFO-DIR-ENTRY
 * strfromfN: (libc)Printing of Floats.
 * strfromfNx: (libc)Printing of Floats.
 * strfroml: (libc)Printing of Floats.
-* strfry: (libc)strfry.
+* strfry: (libc)Shuffling Bytes.
 * strftime: (libc)Formatting Calendar Time.
 * strlen: (libc)String Length.
 * strncasecmp: (libc)String/Array Comparison.
@@ -1832,6 +1874,14 @@ START-INFO-DIR-ENTRY
 * tgammafN: (libc)Special Functions.
 * tgammafNx: (libc)Special Functions.
 * tgammal: (libc)Special Functions.
+* thrd_create: (libc)ISO C Thread Management.
+* thrd_current: (libc)ISO C Thread Management.
+* thrd_detach: (libc)ISO C Thread Management.
+* thrd_equal: (libc)ISO C Thread Management.
+* thrd_exit: (libc)ISO C Thread Management.
+* thrd_join: (libc)ISO C Thread Management.
+* thrd_sleep: (libc)ISO C Thread Management.
+* thrd_yield: (libc)ISO C Thread Management.
 * time: (libc)Simple Calendar Time.
 * timegm: (libc)Broken-down Time.
 * timelocal: (libc)Broken-down Time.
@@ -1864,6 +1914,10 @@ START-INFO-DIR-ENTRY
 * truncfNx: (libc)Rounding Functions.
 * truncl: (libc)Rounding Functions.
 * tsearch: (libc)Tree Search Function.
+* tss_create: (libc)ISO C Thread-local Storage.
+* tss_delete: (libc)ISO C Thread-local Storage.
+* tss_get: (libc)ISO C Thread-local Storage.
+* tss_set: (libc)ISO C Thread-local Storage.
 * ttyname: (libc)Is It a Terminal.
 * ttyname_r: (libc)Is It a Terminal.
 * twalk: (libc)Tree Search Function.
@@ -2005,10 +2059,10 @@ END-INFO-DIR-ENTRY
 
    This file documents the GNU C Library.
 
-   This is `The GNU C Library Reference Manual', for version 2.26
-(crosstool-NG 1.23.0.420-201f).
+   This is `The GNU C Library Reference Manual', for version 2.28
+(crosstool-NG 1.23.0.513-84e6).
 
-   Copyright (C) 1993-2017 Free Software Foundation, Inc.
+   Copyright (C) 1993-2018 Free Software Foundation, Inc.
 
    Permission is granted to copy, distribute and/or modify this document
 under the terms of the GNU Free Documentation License, Version
@@ -2022,6 +2076,268 @@ Free Documentation License".
    (a) The FSF's Back-Cover Text is: "You have the freedom to copy and
 modify this GNU manual.  Buying copies from the FSF supports it in
 developing GNU and promoting software freedom."
+
+
+File: libc.info,  Node: The Lame Way to Locale Data,  Next: The Elegant and Fast Way,  Up: Locale Information
+
+7.7.1 `localeconv': It is portable but ...
+------------------------------------------
+
+Together with the `setlocale' function the ISO C people invented the
+`localeconv' function.  It is a masterpiece of poor design.  It is
+expensive to use, not extensible, and not generally usable as it
+provides access to only `LC_MONETARY' and `LC_NUMERIC' related
+information.  Nevertheless, if it is applicable to a given situation it
+should be used since it is very portable.  The function `strfmon'
+formats monetary amounts according to the selected locale using this
+information.  
+
+ -- Function: struct lconv * localeconv (void)
+     Preliminary: | MT-Unsafe race:localeconv locale | AS-Unsafe |
+     AC-Safe | *Note POSIX Safety Concepts::.
+
+     The `localeconv' function returns a pointer to a structure whose
+     components contain information about how numeric and monetary
+     values should be formatted in the current locale.
+
+     You should not modify the structure or its contents.  The
+     structure might be overwritten by subsequent calls to
+     `localeconv', or by calls to `setlocale', but no other function in
+     the library overwrites this value.
+
+ -- Data Type: struct lconv
+     `localeconv''s return value is of this data type.  Its elements are
+     described in the following subsections.
+
+   If a member of the structure `struct lconv' has type `char', and the
+value is `CHAR_MAX', it means that the current locale has no value for
+that parameter.
+
+* Menu:
+
+* General Numeric::             Parameters for formatting numbers and
+                                 currency amounts.
+* Currency Symbol::             How to print the symbol that identifies an
+                                 amount of money (e.g. `$').
+* Sign of Money Amount::        How to print the (positive or negative) sign
+                                 for a monetary amount, if one exists.
+
+
+File: libc.info,  Node: General Numeric,  Next: Currency Symbol,  Up: The Lame Way to Locale Data
+
+7.7.1.1 Generic Numeric Formatting Parameters
+.............................................
+
+These are the standard members of `struct lconv'; there may be others.
+
+`char *decimal_point'
+`char *mon_decimal_point'
+     These are the decimal-point separators used in formatting
+     non-monetary and monetary quantities, respectively.  In the `C'
+     locale, the value of `decimal_point' is `"."', and the value of
+     `mon_decimal_point' is `""'.  
+
+`char *thousands_sep'
+`char *mon_thousands_sep'
+     These are the separators used to delimit groups of digits to the
+     left of the decimal point in formatting non-monetary and monetary
+     quantities, respectively.  In the `C' locale, both members have a
+     value of `""' (the empty string).
+
+`char *grouping'
+`char *mon_grouping'
+     These are strings that specify how to group the digits to the left
+     of the decimal point.  `grouping' applies to non-monetary
+     quantities and `mon_grouping' applies to monetary quantities.  Use
+     either `thousands_sep' or `mon_thousands_sep' to separate the digit
+     groups.  
+
+     Each member of these strings is to be interpreted as an integer
+     value of type `char'.  Successive numbers (from left to right)
+     give the sizes of successive groups (from right to left, starting
+     at the decimal point.)  The last member is either `0', in which
+     case the previous member is used over and over again for all the
+     remaining groups, or `CHAR_MAX', in which case there is no more
+     grouping--or, put another way, any remaining digits form one large
+     group without separators.
+
+     For example, if `grouping' is `"\04\03\02"', the correct grouping
+     for the number `123456787654321' is `12', `34', `56', `78', `765',
+     `4321'.  This uses a group of 4 digits at the end, preceded by a
+     group of 3 digits, preceded by groups of 2 digits (as many as
+     needed).  With a separator of `,', the number would be printed as
+     `12,34,56,78,765,4321'.
+
+     A value of `"\03"' indicates repeated groups of three digits, as
+     normally used in the U.S.
+
+     In the standard `C' locale, both `grouping' and `mon_grouping'
+     have a value of `""'.  This value specifies no grouping at all.
+
+`char int_frac_digits'
+`char frac_digits'
+     These are small integers indicating how many fractional digits (to
+     the right of the decimal point) should be displayed in a monetary
+     value in international and local formats, respectively.  (Most
+     often, both members have the same value.)
+
+     In the standard `C' locale, both of these members have the value
+     `CHAR_MAX', meaning "unspecified".  The ISO standard doesn't say
+     what to do when you find this value; we recommend printing no
+     fractional digits.  (This locale also specifies the empty string
+     for `mon_decimal_point', so printing any fractional digits would be
+     confusing!)
+
+
+File: libc.info,  Node: Currency Symbol,  Next: Sign of Money Amount,  Prev: General Numeric,  Up: The Lame Way to Locale Data
+
+7.7.1.2 Printing the Currency Symbol
+....................................
+
+These members of the `struct lconv' structure specify how to print the
+symbol to identify a monetary value--the international analog of `$'
+for US dollars.
+
+   Each country has two standard currency symbols.  The "local currency
+symbol" is used commonly within the country, while the "international
+currency symbol" is used internationally to refer to that country's
+currency when it is necessary to indicate the country unambiguously.
+
+   For example, many countries use the dollar as their monetary unit,
+and when dealing with international currencies it's important to specify
+that one is dealing with (say) Canadian dollars instead of U.S. dollars
+or Australian dollars.  But when the context is known to be Canada,
+there is no need to make this explicit--dollar amounts are implicitly
+assumed to be in Canadian dollars.
+
+`char *currency_symbol'
+     The local currency symbol for the selected locale.
+
+     In the standard `C' locale, this member has a value of `""' (the
+     empty string), meaning "unspecified".  The ISO standard doesn't
+     say what to do when you find this value; we recommend you simply
+     print the empty string as you would print any other string pointed
+     to by this variable.
+
+`char *int_curr_symbol'
+     The international currency symbol for the selected locale.
+
+     The value of `int_curr_symbol' should normally consist of a
+     three-letter abbreviation determined by the international standard
+     `ISO 4217 Codes for the Representation of Currency and Funds',
+     followed by a one-character separator (often a space).
+
+     In the standard `C' locale, this member has a value of `""' (the
+     empty string), meaning "unspecified".  We recommend you simply
+     print the empty string as you would print any other string pointed
+     to by this variable.
+
+`char p_cs_precedes'
+`char n_cs_precedes'
+`char int_p_cs_precedes'
+`char int_n_cs_precedes'
+     These members are `1' if the `currency_symbol' or
+     `int_curr_symbol' strings should precede the value of a monetary
+     amount, or `0' if the strings should follow the value.  The
+     `p_cs_precedes' and `int_p_cs_precedes' members apply to positive
+     amounts (or zero), and the `n_cs_precedes' and `int_n_cs_precedes'
+     members apply to negative amounts.
+
+     In the standard `C' locale, all of these members have a value of
+     `CHAR_MAX', meaning "unspecified".  The ISO standard doesn't say
+     what to do when you find this value.  We recommend printing the
+     currency symbol before the amount, which is right for most
+     countries.  In other words, treat all nonzero values alike in
+     these members.
+
+     The members with the `int_' prefix apply to the `int_curr_symbol'
+     while the other two apply to `currency_symbol'.
+
+`char p_sep_by_space'
+`char n_sep_by_space'
+`char int_p_sep_by_space'
+`char int_n_sep_by_space'
+     These members are `1' if a space should appear between the
+     `currency_symbol' or `int_curr_symbol' strings and the amount, or
+     `0' if no space should appear.  The `p_sep_by_space' and
+     `int_p_sep_by_space' members apply to positive amounts (or zero),
+     and the `n_sep_by_space' and `int_n_sep_by_space' members apply to
+     negative amounts.
+
+     In the standard `C' locale, all of these members have a value of
+     `CHAR_MAX', meaning "unspecified".  The ISO standard doesn't say
+     what you should do when you find this value; we suggest you treat
+     it as 1 (print a space).  In other words, treat all nonzero values
+     alike in these members.
+
+     The members with the `int_' prefix apply to the `int_curr_symbol'
+     while the other two apply to `currency_symbol'.  There is one
+     specialty with the `int_curr_symbol', though.  Since all legal
+     values contain a space at the end of the string one either prints
+     this space (if the currency symbol must appear in front and must
+     be separated) or one has to avoid printing this character at all
+     (especially when at the end of the string).
+
+
+File: libc.info,  Node: Sign of Money Amount,  Prev: Currency Symbol,  Up: The Lame Way to Locale Data
+
+7.7.1.3 Printing the Sign of a Monetary Amount
+..............................................
+
+These members of the `struct lconv' structure specify how to print the
+sign (if any) of a monetary value.
+
+`char *positive_sign'
+`char *negative_sign'
+     These are strings used to indicate positive (or zero) and negative
+     monetary quantities, respectively.
+
+     In the standard `C' locale, both of these members have a value of
+     `""' (the empty string), meaning "unspecified".
+
+     The ISO standard doesn't say what to do when you find this value;
+     we recommend printing `positive_sign' as you find it, even if it is
+     empty.  For a negative value, print `negative_sign' as you find it
+     unless both it and `positive_sign' are empty, in which case print
+     `-' instead.  (Failing to indicate the sign at all seems rather
+     unreasonable.)
+
+`char p_sign_posn'
+`char n_sign_posn'
+`char int_p_sign_posn'
+`char int_n_sign_posn'
+     These members are small integers that indicate how to position the
+     sign for nonnegative and negative monetary quantities,
+     respectively.  (The string used for the sign is what was specified
+     with `positive_sign' or `negative_sign'.)  The possible values are
+     as follows:
+
+    `0'
+          The currency symbol and quantity should be surrounded by
+          parentheses.
+
+    `1'
+          Print the sign string before the quantity and currency symbol.
+
+    `2'
+          Print the sign string after the quantity and currency symbol.
+
+    `3'
+          Print the sign string right before the currency symbol.
+
+    `4'
+          Print the sign string right after the currency symbol.
+
+    `CHAR_MAX'
+          "Unspecified".  Both members have this value in the standard
+          `C' locale.
+
+     The ISO standard doesn't say what you should do when the value is
+     `CHAR_MAX'.  We recommend you print the sign after the currency
+     symbol.
+
+     The members with the `int_' prefix apply to the `int_curr_symbol'
+     while the other two apply to `currency_symbol'.
 
 
 File: libc.info,  Node: The Elegant and Fast Way,  Prev: The Lame Way to Locale Data,  Up: Locale Information
@@ -2049,7 +2365,7 @@ ways to access it.  Therefore the `nl_langinfo' function was introduced.
      formatting information, information from the `LC_TIME' and
      `LC_MESSAGES' categories is available.
 
-     The type `nl_type' is defined in `nl_types.h'.  The argument ITEM
+     The type `nl_item' is defined in `nl_types.h'.  The argument ITEM
      is a numeric value defined in the header `langinfo.h'.  The X/Open
      standard defines the following values:
 
@@ -2074,7 +2390,7 @@ ways to access it.  Therefore the `nl_langinfo' function was introduced.
     `DAY_5'
     `DAY_6'
     `DAY_7'
-          Similar to `ABDAY_1' etc., but here the return value is the
+          Similar to `ABDAY_1', etc., but here the return value is the
           unabbreviated weekday name.
 
     `ABMON_1'
@@ -2089,8 +2405,9 @@ ways to access it.  Therefore the `nl_langinfo' function was introduced.
     `ABMON_10'
     `ABMON_11'
     `ABMON_12'
-          The return value is abbreviated name of the month.  `ABMON_1'
-          corresponds to January.
+          The return value is the abbreviated name of the month, in the
+          grammatical form used when the month forms part of a complete
+          date.  `ABMON_1' corresponds to January.
 
     `MON_1'
     `MON_2'
@@ -2104,9 +2421,36 @@ ways to access it.  Therefore the `nl_langinfo' function was introduced.
     `MON_10'
     `MON_11'
     `MON_12'
-          Similar to `ABMON_1' etc., but here the month names are not
-          abbreviated.  Here the first value `MON_1' also corresponds
-          to January.
+          Similar to `ABMON_1', etc., but here the month names are not
+          abbreviated.  Here the first value `MON_1' also corresponds to
+          January.
+
+    `ALTMON_1'
+    `ALTMON_2'
+    `ALTMON_3'
+    `ALTMON_4'
+    `ALTMON_5'
+    `ALTMON_6'
+    `ALTMON_7'
+    `ALTMON_8'
+    `ALTMON_9'
+    `ALTMON_10'
+    `ALTMON_11'
+    `ALTMON_12'
+          Similar to `MON_1', etc., but here the month names are in the
+          grammatical form used when the month is named by itself.  The
+          `strftime' functions use these month names for the conversion
+          specifier `%OB' (*note Formatting Calendar Time::).
+
+          Note that not all languages need two different forms of the
+          month names, so the strings returned for `MON_...' and
+          `ALTMON_...' may or may not be the same, depending on the
+          locale.
+
+          *NB:* `ABALTMON_...' constants corresponding to the `%Ob'
+          conversion specifier are not currently provided, but are
+          expected to be in a future release.  In the meantime, it is
+          possible to use `_NL_ABALTMON_...'.
 
     `AM_STR'
     `PM_STR'
@@ -8514,7 +8858,7 @@ options that they use.
 verifies that the correct number and types of arguments are supplied.
 There is also a GNU C syntax to tell the compiler that a function you
 write uses a `printf'-style format string.  *Note Declaring Attributes
-of Functions: (gcc.info)Function Attributes, for more information.
+of Functions: (gcc)Function Attributes, for more information.
 
 
 File: libc.info,  Node: Table of Output Conversions,  Next: Integer Conversions,  Prev: Output Conversion Syntax,  Up: Formatted Output
@@ -8600,369 +8944,4 @@ specifications in the template string, or if the arguments are not of
 the correct types, the results are unpredictable.  If you supply more
 arguments than conversion specifications, the extra argument values are
 simply ignored; this is sometimes useful.
-
-
-File: libc.info,  Node: Integer Conversions,  Next: Floating-Point Conversions,  Prev: Table of Output Conversions,  Up: Formatted Output
-
-12.12.4 Integer Conversions
----------------------------
-
-This section describes the options for the `%d', `%i', `%o', `%u',
-`%x', and `%X' conversion specifications.  These conversions print
-integers in various formats.
-
-   The `%d' and `%i' conversion specifications both print an `int'
-argument as a signed decimal number; while `%o', `%u', and `%x' print
-the argument as an unsigned octal, decimal, or hexadecimal number
-(respectively).  The `%X' conversion specification is just like `%x'
-except that it uses the characters `ABCDEF' as digits instead of
-`abcdef'.
-
-   The following flags are meaningful:
-
-`-'
-     Left-justify the result in the field (instead of the normal
-     right-justification).
-
-`+'
-     For the signed `%d' and `%i' conversions, print a plus sign if the
-     value is positive.
-
-` '
-     For the signed `%d' and `%i' conversions, if the result doesn't
-     start with a plus or minus sign, prefix it with a space character
-     instead.  Since the `+' flag ensures that the result includes a
-     sign, this flag is ignored if you supply both of them.
-
-`#'
-     For the `%o' conversion, this forces the leading digit to be `0',
-     as if by increasing the precision.  For `%x' or `%X', this
-     prefixes a leading `0x' or `0X' (respectively) to the result.
-     This doesn't do anything useful for the `%d', `%i', or `%u'
-     conversions.  Using this flag produces output which can be parsed
-     by the `strtoul' function (*note Parsing of Integers::) and
-     `scanf' with the `%i' conversion (*note Numeric Input
-     Conversions::).
-
-`''
-     Separate the digits into groups as specified by the locale
-     specified for the `LC_NUMERIC' category; *note General Numeric::.
-     This flag is a GNU extension.
-
-`0'
-     Pad the field with zeros instead of spaces.  The zeros are placed
-     after any indication of sign or base.  This flag is ignored if the
-     `-' flag is also specified, or if a precision is specified.
-
-   If a precision is supplied, it specifies the minimum number of
-digits to appear; leading zeros are produced if necessary.  If you
-don't specify a precision, the number is printed with as many digits as
-it needs.  If you convert a value of zero with an explicit precision of
-zero, then no characters at all are produced.
-
-   Without a type modifier, the corresponding argument is treated as an
-`int' (for the signed conversions `%i' and `%d') or `unsigned int' (for
-the unsigned conversions `%o', `%u', `%x', and `%X').  Recall that
-since `printf' and friends are variadic, any `char' and `short'
-arguments are automatically converted to `int' by the default argument
-promotions.  For arguments of other integer types, you can use these
-modifiers:
-
-`hh'
-     Specifies that the argument is a `signed char' or `unsigned char',
-     as appropriate.  A `char' argument is converted to an `int' or
-     `unsigned int' by the default argument promotions anyway, but the
-     `hh' modifier says to convert it back to a `char' again.
-
-     This modifier was introduced in ISO C99.
-
-`h'
-     Specifies that the argument is a `short int' or `unsigned short
-     int', as appropriate.  A `short' argument is converted to an `int'
-     or `unsigned int' by the default argument promotions anyway, but
-     the `h' modifier says to convert it back to a `short' again.
-
-`j'
-     Specifies that the argument is a `intmax_t' or `uintmax_t', as
-     appropriate.
-
-     This modifier was introduced in ISO C99.
-
-`l'
-     Specifies that the argument is a `long int' or `unsigned long
-     int', as appropriate.  Two `l' characters are like the `L'
-     modifier, below.
-
-     If used with `%c' or `%s' the corresponding parameter is
-     considered as a wide character or wide character string
-     respectively.  This use of `l' was introduced in Amendment 1 to
-     ISO C90.
-
-`L'
-`ll'
-`q'
-     Specifies that the argument is a `long long int'.  (This type is
-     an extension supported by the GNU C compiler.  On systems that
-     don't support extra-long integers, this is the same as `long int'.)
-
-     The `q' modifier is another name for the same thing, which comes
-     from 4.4 BSD; a `long long int' is sometimes called a "quad" `int'.
-
-`t'
-     Specifies that the argument is a `ptrdiff_t'.
-
-     This modifier was introduced in ISO C99.
-
-`z'
-`Z'
-     Specifies that the argument is a `size_t'.
-
-     `z' was introduced in ISO C99.  `Z' is a GNU extension predating
-     this addition and should not be used in new code.
-
-   Here is an example.  Using the template string:
-
-     "|%5d|%-5d|%+5d|%+-5d|% 5d|%05d|%5.0d|%5.2d|%d|\n"
-
-to print numbers using the different options for the `%d' conversion
-gives results like:
-
-     |    0|0    |   +0|+0   |    0|00000|     |   00|0|
-     |    1|1    |   +1|+1   |    1|00001|    1|   01|1|
-     |   -1|-1   |   -1|-1   |   -1|-0001|   -1|  -01|-1|
-     |100000|100000|+100000|+100000| 100000|100000|100000|100000|100000|
-
-   In particular, notice what happens in the last case where the number
-is too large to fit in the minimum field width specified.
-
-   Here are some more examples showing how unsigned integers print under
-various format options, using the template string:
-
-     "|%5u|%5o|%5x|%5X|%#5o|%#5x|%#5X|%#10.8x|\n"
-
-     |    0|    0|    0|    0|    0|    0|    0|  00000000|
-     |    1|    1|    1|    1|   01|  0x1|  0X1|0x00000001|
-     |100000|303240|186a0|186A0|0303240|0x186a0|0X186A0|0x000186a0|
-
-
-File: libc.info,  Node: Floating-Point Conversions,  Next: Other Output Conversions,  Prev: Integer Conversions,  Up: Formatted Output
-
-12.12.5 Floating-Point Conversions
-----------------------------------
-
-This section discusses the conversion specifications for floating-point
-numbers: the `%f', `%e', `%E', `%g', and `%G' conversions.
-
-   The `%f' conversion prints its argument in fixed-point notation,
-producing output of the form [`-']DDD`.'DDD, where the number of digits
-following the decimal point is controlled by the precision you specify.
-
-   The `%e' conversion prints its argument in exponential notation,
-producing output of the form [`-']D`.'DDD`e'[`+'|`-']DD.  Again, the
-number of digits following the decimal point is controlled by the
-precision.  The exponent always contains at least two digits.  The `%E'
-conversion is similar but the exponent is marked with the letter `E'
-instead of `e'.
-
-   The `%g' and `%G' conversions print the argument in the style of
-`%e' or `%E' (respectively) if the exponent would be less than -4 or
-greater than or equal to the precision; otherwise they use the `%f'
-style.  A precision of `0', is taken as 1.  Trailing zeros are removed
-from the fractional portion of the result and a decimal-point character
-appears only if it is followed by a digit.
-
-   The `%a' and `%A' conversions are meant for representing
-floating-point numbers exactly in textual form so that they can be
-exchanged as texts between different programs and/or machines.  The
-numbers are represented in the form [`-']`0x'H`.'HHH`p'[`+'|`-']DD.  At
-the left of the decimal-point character exactly one digit is print.
-This character is only `0' if the number is denormalized.  Otherwise
-the value is unspecified; it is implementation dependent how many bits
-are used.  The number of hexadecimal digits on the right side of the
-decimal-point character is equal to the precision.  If the precision is
-zero it is determined to be large enough to provide an exact
-representation of the number (or it is large enough to distinguish two
-adjacent values if the `FLT_RADIX' is not a power of 2, *note Floating
-Point Parameters::).  For the `%a' conversion lower-case characters are
-used to represent the hexadecimal number and the prefix and exponent
-sign are printed as `0x' and `p' respectively.  Otherwise upper-case
-characters are used and `0X' and `P' are used for the representation of
-prefix and exponent string.  The exponent to the base of two is printed
-as a decimal number using at least one digit but at most as many digits
-as necessary to represent the value exactly.
-
-   If the value to be printed represents infinity or a NaN, the output
-is [`-']`inf' or `nan' respectively if the conversion specifier is
-`%a', `%e', `%f', or `%g' and it is [`-']`INF' or `NAN' respectively if
-the conversion is `%A', `%E', or `%G'.
-
-   The following flags can be used to modify the behavior:
-
-`-'
-     Left-justify the result in the field.  Normally the result is
-     right-justified.
-
-`+'
-     Always include a plus or minus sign in the result.
-
-` '
-     If the result doesn't start with a plus or minus sign, prefix it
-     with a space instead.  Since the `+' flag ensures that the result
-     includes a sign, this flag is ignored if you supply both of them.
-
-`#'
-     Specifies that the result should always include a decimal point,
-     even if no digits follow it.  For the `%g' and `%G' conversions,
-     this also forces trailing zeros after the decimal point to be left
-     in place where they would otherwise be removed.
-
-`''
-     Separate the digits of the integer part of the result into groups
-     as specified by the locale specified for the `LC_NUMERIC' category;
-     *note General Numeric::.  This flag is a GNU extension.
-
-`0'
-     Pad the field with zeros instead of spaces; the zeros are placed
-     after any sign.  This flag is ignored if the `-' flag is also
-     specified.
-
-   The precision specifies how many digits follow the decimal-point
-character for the `%f', `%e', and `%E' conversions.  For these
-conversions, the default precision is `6'.  If the precision is
-explicitly `0', this suppresses the decimal point character entirely.
-For the `%g' and `%G' conversions, the precision specifies how many
-significant digits to print.  Significant digits are the first digit
-before the decimal point, and all the digits after it.  If the
-precision is `0' or not specified for `%g' or `%G', it is treated like
-a value of `1'.  If the value being printed cannot be expressed
-accurately in the specified number of digits, the value is rounded to
-the nearest number that fits.
-
-   Without a type modifier, the floating-point conversions use an
-argument of type `double'.  (By the default argument promotions, any
-`float' arguments are automatically converted to `double'.)  The
-following type modifier is supported:
-
-`L'
-     An uppercase `L' specifies that the argument is a `long double'.
-
-   Here are some examples showing how numbers print using the various
-floating-point conversions.  All of the numbers were printed using this
-template string:
-
-     "|%13.4a|%13.4f|%13.4e|%13.4g|\n"
-
-   Here is the output:
-
-     |  0x0.0000p+0|       0.0000|   0.0000e+00|            0|
-     |  0x1.0000p-1|       0.5000|   5.0000e-01|          0.5|
-     |  0x1.0000p+0|       1.0000|   1.0000e+00|            1|
-     | -0x1.0000p+0|      -1.0000|  -1.0000e+00|           -1|
-     |  0x1.9000p+6|     100.0000|   1.0000e+02|          100|
-     |  0x1.f400p+9|    1000.0000|   1.0000e+03|         1000|
-     | 0x1.3880p+13|   10000.0000|   1.0000e+04|        1e+04|
-     | 0x1.81c8p+13|   12345.0000|   1.2345e+04|    1.234e+04|
-     | 0x1.86a0p+16|  100000.0000|   1.0000e+05|        1e+05|
-     | 0x1.e240p+16|  123456.0000|   1.2346e+05|    1.235e+05|
-
-   Notice how the `%g' conversion drops trailing zeros.
-
-
-File: libc.info,  Node: Other Output Conversions,  Next: Formatted Output Functions,  Prev: Floating-Point Conversions,  Up: Formatted Output
-
-12.12.6 Other Output Conversions
---------------------------------
-
-This section describes miscellaneous conversions for `printf'.
-
-   The `%c' conversion prints a single character.  In case there is no
-`l' modifier the `int' argument is first converted to an `unsigned
-char'.  Then, if used in a wide stream function, the character is
-converted into the corresponding wide character.  The `-' flag can be
-used to specify left-justification in the field, but no other flags are
-defined, and no precision or type modifier can be given.  For example:
-
-     printf ("%c%c%c%c%c", 'h', 'e', 'l', 'l', 'o');
-
-prints `hello'.
-
-   If there is an `l' modifier present the argument is expected to be
-of type `wint_t'.  If used in a multibyte function the wide character
-is converted into a multibyte character before being added to the
-output.  In this case more than one output byte can be produced.
-
-   The `%s' conversion prints a string.  If no `l' modifier is present
-the corresponding argument must be of type `char *' (or `const char
-*').  If used in a wide stream function the string is first converted
-to a wide character string.  A precision can be specified to indicate
-the maximum number of characters to write; otherwise characters in the
-string up to but not including the terminating null character are
-written to the output stream.  The `-' flag can be used to specify
-left-justification in the field, but no other flags or type modifiers
-are defined for this conversion.  For example:
-
-     printf ("%3s%-6s", "no", "where");
-
-prints ` nowhere '.
-
-   If there is an `l' modifier present, the argument is expected to be
-of type `wchar_t' (or `const wchar_t *').
-
-   If you accidentally pass a null pointer as the argument for a `%s'
-conversion, the GNU C Library prints it as `(null)'.  We think this is
-more useful than crashing.  But it's not good practice to pass a null
-argument intentionally.
-
-   The `%m' conversion prints the string corresponding to the error
-code in `errno'.  *Note Error Messages::.  Thus:
-
-     fprintf (stderr, "can't open `%s': %m\n", filename);
-
-is equivalent to:
-
-     fprintf (stderr, "can't open `%s': %s\n", filename, strerror (errno));
-
-The `%m' conversion is a GNU C Library extension.
-
-   The `%p' conversion prints a pointer value.  The corresponding
-argument must be of type `void *'.  In practice, you can use any type
-of pointer.
-
-   In the GNU C Library, non-null pointers are printed as unsigned
-integers, as if a `%#x' conversion were used.  Null pointers print as
-`(nil)'.  (Pointers might print differently in other systems.)
-
-   For example:
-
-     printf ("%p", "testing");
-
-prints `0x' followed by a hexadecimal number--the address of the string
-constant `"testing"'.  It does not print the word `testing'.
-
-   You can supply the `-' flag with the `%p' conversion to specify
-left-justification, but no other flags, precision, or type modifiers
-are defined.
-
-   The `%n' conversion is unlike any of the other output conversions.
-It uses an argument which must be a pointer to an `int', but instead of
-printing anything it stores the number of characters printed so far by
-this call at that location.  The `h' and `l' type modifiers are
-permitted to specify that the argument is of type `short int *' or
-`long int *' instead of `int *', but no flags, field width, or
-precision are permitted.
-
-   For example,
-
-     int nchar;
-     printf ("%d %s%n\n", 3, "bears", &nchar);
-
-prints:
-
-     3 bears
-
-and sets `nchar' to `7', because `3 bears' is seven characters.
-
-   The `%%' conversion prints a literal `%' character.  This conversion
-doesn't use an argument, and no flags, field width, precision, or type
-modifiers are permitted.
 

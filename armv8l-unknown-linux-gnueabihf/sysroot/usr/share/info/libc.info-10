@@ -39,7 +39,6 @@ START-INFO-DIR-ENTRY
 * CS8: (libc)Control Modes.
 * CSIZE: (libc)Control Modes.
 * CSTOPB: (libc)Control Modes.
-* DES_FAILED: (libc)DES Encryption.
 * DTTOIF: (libc)Directory Entries.
 * E2BIG: (libc)Error Codes.
 * EACCES: (libc)Error Codes.
@@ -309,6 +308,7 @@ START-INFO-DIR-ENTRY
 * O_READ: (libc)Access Modes.
 * O_SHLOCK: (libc)Open-time Flags.
 * O_SYNC: (libc)Operating Modes.
+* O_TMPFILE: (libc)Open-time Flags.
 * O_TRUNC: (libc)Open-time Flags.
 * O_WRITE: (libc)Access Modes.
 * O_WRONLY: (libc)Access Modes.
@@ -472,6 +472,7 @@ START-INFO-DIR-ENTRY
 * __ppc_set_ppr_med_low: (libc)PowerPC.
 * __ppc_set_ppr_very_low: (libc)PowerPC.
 * __ppc_yield: (libc)PowerPC.
+* __riscv_flush_icache: (libc)RISC-V.
 * __va_copy: (libc)Argument Macros.
 * _exit: (libc)Termination Internals.
 * _flushlbf: (libc)Flushing Buffers.
@@ -598,6 +599,7 @@ START-INFO-DIR-ENTRY
 * cacoshfNx: (libc)Hyperbolic Functions.
 * cacoshl: (libc)Hyperbolic Functions.
 * cacosl: (libc)Inverse Trig Functions.
+* call_once: (libc)Call Once.
 * calloc: (libc)Allocating Cleared Space.
 * canonicalize: (libc)FP Bit Twiddling.
 * canonicalize_file_name: (libc)Symbolic Links.
@@ -633,7 +635,6 @@ START-INFO-DIR-ENTRY
 * catclose: (libc)The catgets Functions.
 * catgets: (libc)The catgets Functions.
 * catopen: (libc)The catgets Functions.
-* cbc_crypt: (libc)DES Encryption.
 * cbrt: (libc)Exponents and Logarithms.
 * cbrtf: (libc)Exponents and Logarithms.
 * cbrtfN: (libc)Exponents and Logarithms.
@@ -690,6 +691,12 @@ START-INFO-DIR-ENTRY
 * close: (libc)Opening and Closing Files.
 * closedir: (libc)Reading/Closing Directory.
 * closelog: (libc)closelog.
+* cnd_broadcast: (libc)ISO C Condition Variables.
+* cnd_destroy: (libc)ISO C Condition Variables.
+* cnd_init: (libc)ISO C Condition Variables.
+* cnd_signal: (libc)ISO C Condition Variables.
+* cnd_timedwait: (libc)ISO C Condition Variables.
+* cnd_wait: (libc)ISO C Condition Variables.
 * confstr: (libc)String Parameters.
 * conj: (libc)Operations on Complex.
 * conjf: (libc)Operations on Complex.
@@ -697,6 +704,7 @@ START-INFO-DIR-ENTRY
 * conjfNx: (libc)Operations on Complex.
 * conjl: (libc)Operations on Complex.
 * connect: (libc)Connecting.
+* copy_file_range: (libc)Copying File Data.
 * copysign: (libc)FP Bit Twiddling.
 * copysignf: (libc)FP Bit Twiddling.
 * copysignfN: (libc)FP Bit Twiddling.
@@ -729,8 +737,8 @@ START-INFO-DIR-ENTRY
 * creall: (libc)Operations on Complex.
 * creat64: (libc)Opening and Closing Files.
 * creat: (libc)Opening and Closing Files.
-* crypt: (libc)crypt.
-* crypt_r: (libc)crypt.
+* crypt: (libc)Passphrase Storage.
+* crypt_r: (libc)Passphrase Storage.
 * csin: (libc)Trig Functions.
 * csinf: (libc)Trig Functions.
 * csinfN: (libc)Trig Functions.
@@ -760,27 +768,27 @@ START-INFO-DIR-ENTRY
 * ctime: (libc)Formatting Calendar Time.
 * ctime_r: (libc)Formatting Calendar Time.
 * cuserid: (libc)Who Logged In.
+* daddl: (libc)Misc FP Arithmetic.
 * dcgettext: (libc)Translation with gettext.
 * dcngettext: (libc)Advanced gettext functions.
-* des_setparity: (libc)DES Encryption.
+* ddivl: (libc)Misc FP Arithmetic.
 * dgettext: (libc)Translation with gettext.
 * difftime: (libc)Elapsed Time.
 * dirfd: (libc)Opening a Directory.
 * dirname: (libc)Finding Tokens in a String.
 * div: (libc)Integer Division.
+* dmull: (libc)Misc FP Arithmetic.
 * dngettext: (libc)Advanced gettext functions.
 * drand48: (libc)SVID Random.
 * drand48_r: (libc)SVID Random.
 * drem: (libc)Remainder Functions.
 * dremf: (libc)Remainder Functions.
 * dreml: (libc)Remainder Functions.
+* dsubl: (libc)Misc FP Arithmetic.
 * dup2: (libc)Duplicating Descriptors.
 * dup: (libc)Duplicating Descriptors.
-* ecb_crypt: (libc)DES Encryption.
 * ecvt: (libc)System V Number Conversion.
 * ecvt_r: (libc)System V Number Conversion.
-* encrypt: (libc)DES Encryption.
-* encrypt_r: (libc)DES Encryption.
 * endfsent: (libc)fstab.
 * endgrent: (libc)Scanning All Groups.
 * endhostent: (libc)Host Names.
@@ -843,11 +851,29 @@ START-INFO-DIR-ENTRY
 * expm1fN: (libc)Exponents and Logarithms.
 * expm1fNx: (libc)Exponents and Logarithms.
 * expm1l: (libc)Exponents and Logarithms.
+* fMaddfN: (libc)Misc FP Arithmetic.
+* fMaddfNx: (libc)Misc FP Arithmetic.
+* fMdivfN: (libc)Misc FP Arithmetic.
+* fMdivfNx: (libc)Misc FP Arithmetic.
+* fMmulfN: (libc)Misc FP Arithmetic.
+* fMmulfNx: (libc)Misc FP Arithmetic.
+* fMsubfN: (libc)Misc FP Arithmetic.
+* fMsubfNx: (libc)Misc FP Arithmetic.
+* fMxaddfN: (libc)Misc FP Arithmetic.
+* fMxaddfNx: (libc)Misc FP Arithmetic.
+* fMxdivfN: (libc)Misc FP Arithmetic.
+* fMxdivfNx: (libc)Misc FP Arithmetic.
+* fMxmulfN: (libc)Misc FP Arithmetic.
+* fMxmulfNx: (libc)Misc FP Arithmetic.
+* fMxsubfN: (libc)Misc FP Arithmetic.
+* fMxsubfNx: (libc)Misc FP Arithmetic.
 * fabs: (libc)Absolute Value.
 * fabsf: (libc)Absolute Value.
 * fabsfN: (libc)Absolute Value.
 * fabsfNx: (libc)Absolute Value.
 * fabsl: (libc)Absolute Value.
+* fadd: (libc)Misc FP Arithmetic.
+* faddl: (libc)Misc FP Arithmetic.
 * fchdir: (libc)Working Directory.
 * fchmod: (libc)Setting Permissions.
 * fchown: (libc)File Owner.
@@ -862,6 +888,8 @@ START-INFO-DIR-ENTRY
 * fdimfN: (libc)Misc FP Arithmetic.
 * fdimfNx: (libc)Misc FP Arithmetic.
 * fdiml: (libc)Misc FP Arithmetic.
+* fdiv: (libc)Misc FP Arithmetic.
+* fdivl: (libc)Misc FP Arithmetic.
 * fdopen: (libc)Descriptors and Streams.
 * fdopendir: (libc)Opening a Directory.
 * feclearexcept: (libc)Status bit operations.
@@ -945,6 +973,8 @@ START-INFO-DIR-ENTRY
 * fmodfNx: (libc)Remainder Functions.
 * fmodl: (libc)Remainder Functions.
 * fmtmsg: (libc)Printing Formatted Messages.
+* fmul: (libc)Misc FP Arithmetic.
+* fmull: (libc)Misc FP Arithmetic.
 * fnmatch: (libc)Wildcard Matching.
 * fopen64: (libc)Opening Streams.
 * fopen: (libc)Opening Streams.
@@ -990,6 +1020,8 @@ START-INFO-DIR-ENTRY
 * fsetpos: (libc)Portable Positioning.
 * fstat64: (libc)Reading Attributes.
 * fstat: (libc)Reading Attributes.
+* fsub: (libc)Misc FP Arithmetic.
+* fsubl: (libc)Misc FP Arithmetic.
 * fsync: (libc)Synchronizing I/O.
 * ftell: (libc)File Positioning.
 * ftello64: (libc)File Positioning.
@@ -1263,6 +1295,7 @@ START-INFO-DIR-ENTRY
 * lgammal: (libc)Special Functions.
 * lgammal_r: (libc)Special Functions.
 * link: (libc)Hard Links.
+* linkat: (libc)Hard Links.
 * lio_listio64: (libc)Asynchronous Reads/Writes.
 * lio_listio: (libc)Asynchronous Reads/Writes.
 * listen: (libc)Listening.
@@ -1353,7 +1386,8 @@ START-INFO-DIR-ENTRY
 * memchr: (libc)Search Functions.
 * memcmp: (libc)String/Array Comparison.
 * memcpy: (libc)Copying Strings and Arrays.
-* memfrob: (libc)Trivial Encryption.
+* memfd_create: (libc)Memory-mapped I/O.
+* memfrob: (libc)Obfuscating Data.
 * memmem: (libc)Search Functions.
 * memmove: (libc)Copying Strings and Arrays.
 * mempcpy: (libc)Copying Strings and Arrays.
@@ -1366,6 +1400,7 @@ START-INFO-DIR-ENTRY
 * mkstemp: (libc)Temporary Files.
 * mktemp: (libc)Temporary Files.
 * mktime: (libc)Broken-down Time.
+* mlock2: (libc)Page Lock Functions.
 * mlock: (libc)Page Lock Functions.
 * mlockall: (libc)Page Lock Functions.
 * mmap64: (libc)Memory-mapped I/O.
@@ -1377,11 +1412,18 @@ START-INFO-DIR-ENTRY
 * modfl: (libc)Rounding Functions.
 * mount: (libc)Mount-Unmount-Remount.
 * mprobe: (libc)Heap Consistency Checking.
+* mprotect: (libc)Memory Protection.
 * mrand48: (libc)SVID Random.
 * mrand48_r: (libc)SVID Random.
 * mremap: (libc)Memory-mapped I/O.
 * msync: (libc)Memory-mapped I/O.
 * mtrace: (libc)Tracing malloc.
+* mtx_destroy: (libc)ISO C Mutexes.
+* mtx_init: (libc)ISO C Mutexes.
+* mtx_lock: (libc)ISO C Mutexes.
+* mtx_timedlock: (libc)ISO C Mutexes.
+* mtx_trylock: (libc)ISO C Mutexes.
+* mtx_unlock: (libc)ISO C Mutexes.
 * munlock: (libc)Page Lock Functions.
 * munlockall: (libc)Page Lock Functions.
 * munmap: (libc)Memory-mapped I/O.
@@ -1465,13 +1507,15 @@ START-INFO-DIR-ENTRY
 * pclose: (libc)Pipe to a Subprocess.
 * perror: (libc)Error Messages.
 * pipe: (libc)Creating a Pipe.
+* pkey_alloc: (libc)Memory Protection.
+* pkey_free: (libc)Memory Protection.
+* pkey_get: (libc)Memory Protection.
+* pkey_mprotect: (libc)Memory Protection.
+* pkey_set: (libc)Memory Protection.
 * popen: (libc)Pipe to a Subprocess.
 * posix_fallocate64: (libc)Storage Allocation.
 * posix_fallocate: (libc)Storage Allocation.
 * posix_memalign: (libc)Aligned Memory Blocks.
-* pow10: (libc)Exponents and Logarithms.
-* pow10f: (libc)Exponents and Logarithms.
-* pow10l: (libc)Exponents and Logarithms.
 * pow: (libc)Exponents and Logarithms.
 * powf: (libc)Exponents and Logarithms.
 * powfN: (libc)Exponents and Logarithms.
@@ -1479,10 +1523,10 @@ START-INFO-DIR-ENTRY
 * powl: (libc)Exponents and Logarithms.
 * pread64: (libc)I/O Primitives.
 * pread: (libc)I/O Primitives.
-* preadv2: (libc)I/O Primitives.
-* preadv64: (libc)I/O Primitives.
-* preadv64v2: (libc)I/O Primitives.
-* preadv: (libc)I/O Primitives.
+* preadv2: (libc)Scatter-Gather.
+* preadv64: (libc)Scatter-Gather.
+* preadv64v2: (libc)Scatter-Gather.
+* preadv: (libc)Scatter-Gather.
 * printf: (libc)Formatted Output Functions.
 * printf_size: (libc)Predefined Printf Handlers.
 * printf_size_info: (libc)Predefined Printf Handlers.
@@ -1511,10 +1555,10 @@ START-INFO-DIR-ENTRY
 * putwchar_unlocked: (libc)Simple Output.
 * pwrite64: (libc)I/O Primitives.
 * pwrite: (libc)I/O Primitives.
-* pwritev2: (libc)I/O Primitives.
-* pwritev64: (libc)I/O Primitives.
-* pwritev64v2: (libc)I/O Primitives.
-* pwritev: (libc)I/O Primitives.
+* pwritev2: (libc)Scatter-Gather.
+* pwritev64: (libc)Scatter-Gather.
+* pwritev64v2: (libc)Scatter-Gather.
+* pwritev: (libc)Scatter-Gather.
 * qecvt: (libc)System V Number Conversion.
 * qecvt_r: (libc)System V Number Conversion.
 * qfcvt: (libc)System V Number Conversion.
@@ -1637,8 +1681,6 @@ START-INFO-DIR-ENTRY
 * sethostname: (libc)Host Identification.
 * setitimer: (libc)Setting an Alarm.
 * setjmp: (libc)Non-Local Details.
-* setkey: (libc)DES Encryption.
-* setkey_r: (libc)DES Encryption.
 * setlinebuf: (libc)Controlling Buffering.
 * setlocale: (libc)Setting the Locale.
 * setlogmask: (libc)setlogmask.
@@ -1756,7 +1798,7 @@ START-INFO-DIR-ENTRY
 * strfromfN: (libc)Printing of Floats.
 * strfromfNx: (libc)Printing of Floats.
 * strfroml: (libc)Printing of Floats.
-* strfry: (libc)strfry.
+* strfry: (libc)Shuffling Bytes.
 * strftime: (libc)Formatting Calendar Time.
 * strlen: (libc)String Length.
 * strncasecmp: (libc)String/Array Comparison.
@@ -1832,6 +1874,14 @@ START-INFO-DIR-ENTRY
 * tgammafN: (libc)Special Functions.
 * tgammafNx: (libc)Special Functions.
 * tgammal: (libc)Special Functions.
+* thrd_create: (libc)ISO C Thread Management.
+* thrd_current: (libc)ISO C Thread Management.
+* thrd_detach: (libc)ISO C Thread Management.
+* thrd_equal: (libc)ISO C Thread Management.
+* thrd_exit: (libc)ISO C Thread Management.
+* thrd_join: (libc)ISO C Thread Management.
+* thrd_sleep: (libc)ISO C Thread Management.
+* thrd_yield: (libc)ISO C Thread Management.
 * time: (libc)Simple Calendar Time.
 * timegm: (libc)Broken-down Time.
 * timelocal: (libc)Broken-down Time.
@@ -1864,6 +1914,10 @@ START-INFO-DIR-ENTRY
 * truncfNx: (libc)Rounding Functions.
 * truncl: (libc)Rounding Functions.
 * tsearch: (libc)Tree Search Function.
+* tss_create: (libc)ISO C Thread-local Storage.
+* tss_delete: (libc)ISO C Thread-local Storage.
+* tss_get: (libc)ISO C Thread-local Storage.
+* tss_set: (libc)ISO C Thread-local Storage.
 * ttyname: (libc)Is It a Terminal.
 * ttyname_r: (libc)Is It a Terminal.
 * twalk: (libc)Tree Search Function.
@@ -2005,10 +2059,10 @@ END-INFO-DIR-ENTRY
 
    This file documents the GNU C Library.
 
-   This is `The GNU C Library Reference Manual', for version 2.26
-(crosstool-NG 1.23.0.420-201f).
+   This is `The GNU C Library Reference Manual', for version 2.28
+(crosstool-NG 1.23.0.513-84e6).
 
-   Copyright (C) 1993-2017 Free Software Foundation, Inc.
+   Copyright (C) 1993-2018 Free Software Foundation, Inc.
 
    Permission is granted to copy, distribute and/or modify this document
 under the terms of the GNU Free Documentation License, Version
@@ -2022,6 +2076,1101 @@ Free Documentation License".
    (a) The FSF's Back-Cover Text is: "You have the freedom to copy and
 modify this GNU manual.  Buying copies from the FSF supports it in
 developing GNU and promoting software freedom."
+
+
+File: libc.info,  Node: Consistency Checking,  Next: Variadic Functions,  Up: Language Features
+
+A.1 Explicitly Checking Internal Consistency
+============================================
+
+When you're writing a program, it's often a good idea to put in checks
+at strategic places for "impossible" errors or violations of basic
+assumptions.  These kinds of checks are helpful in debugging problems
+with the interfaces between different parts of the program, for example.
+
+   The `assert' macro, defined in the header file `assert.h', provides
+a convenient way to abort the program while printing a message about
+where in the program the error was detected.
+
+   Once you think your program is debugged, you can disable the error
+checks performed by the `assert' macro by recompiling with the macro
+`NDEBUG' defined.  This means you don't actually have to change the
+program source code to disable these checks.
+
+   But disabling these consistency checks is undesirable unless they
+make the program significantly slower.  All else being equal, more error
+checking is good no matter who is running the program.  A wise user
+would rather have a program crash, visibly, than have it return nonsense
+without indicating anything might be wrong.
+
+ -- Macro: void assert (int EXPRESSION)
+     Preliminary: | MT-Safe | AS-Unsafe heap corrupt | AC-Unsafe mem
+     lock corrupt | *Note POSIX Safety Concepts::.
+
+     Verify the programmer's belief that EXPRESSION is nonzero at this
+     point in the program.
+
+     If `NDEBUG' is not defined, `assert' tests the value of
+     EXPRESSION.  If it is false (zero), `assert' aborts the program
+     (*note Aborting a Program::) after printing a message of the form:
+
+          `FILE':LINENUM: FUNCTION: Assertion `EXPRESSION' failed.
+
+     on the standard error stream `stderr' (*note Standard Streams::).
+     The filename and line number are taken from the C preprocessor
+     macros `__FILE__' and `__LINE__' and specify where the call to
+     `assert' was made.  When using the GNU C compiler, the name of the
+     function which calls `assert' is taken from the built-in variable
+     `__PRETTY_FUNCTION__'; with older compilers, the function name and
+     following colon are omitted.
+
+     If the preprocessor macro `NDEBUG' is defined before `assert.h' is
+     included, the `assert' macro is defined to do absolutely nothing.
+
+     *Warning:* Even the argument expression EXPRESSION is not
+     evaluated if `NDEBUG' is in effect.  So never use `assert' with
+     arguments that involve side effects.  For example, `assert (++i >
+     0);' is a bad idea, because `i' will not be incremented if
+     `NDEBUG' is defined.
+
+   Sometimes the "impossible" condition you want to check for is an
+error return from an operating system function.  Then it is useful to
+display not only where the program crashes, but also what error was
+returned.  The `assert_perror' macro makes this easy.
+
+ -- Macro: void assert_perror (int ERRNUM)
+     Preliminary: | MT-Safe | AS-Unsafe heap corrupt | AC-Unsafe mem
+     lock corrupt | *Note POSIX Safety Concepts::.
+
+     Similar to `assert', but verifies that ERRNUM is zero.
+
+     If `NDEBUG' is not defined, `assert_perror' tests the value of
+     ERRNUM.  If it is nonzero, `assert_perror' aborts the program
+     after printing a message of the form:
+
+          `FILE':LINENUM: FUNCTION: ERROR TEXT
+
+     on the standard error stream.  The file name, line number, and
+     function name are as for `assert'.  The error text is the result of
+     `strerror (ERRNUM)'.  *Note Error Messages::.
+
+     Like `assert', if `NDEBUG' is defined before `assert.h' is
+     included, the `assert_perror' macro does absolutely nothing.  It
+     does not evaluate the argument, so ERRNUM should not have any side
+     effects.  It is best for ERRNUM to be just a simple variable
+     reference; often it will be `errno'.
+
+     This macro is a GNU extension.
+
+   *Usage note:* The `assert' facility is designed for detecting
+_internal inconsistency_; it is not suitable for reporting invalid
+input or improper usage by the _user_ of the program.
+
+   The information in the diagnostic messages printed by the `assert'
+and `assert_perror' macro is intended to help you, the programmer,
+track down the cause of a bug, but is not really useful for telling a
+user of your program why his or her input was invalid or why a command
+could not be carried out.  What's more, your program should not abort
+when given invalid input, as `assert' would do--it should exit with
+nonzero status (*note Exit Status::) after printing its error messages,
+or perhaps read another command or move on to the next input file.
+
+   *Note Error Messages::, for information on printing error messages
+for problems that _do not_ represent bugs in the program.
+
+
+File: libc.info,  Node: Variadic Functions,  Next: Null Pointer Constant,  Prev: Consistency Checking,  Up: Language Features
+
+A.2 Variadic Functions
+======================
+
+ISO C defines a syntax for declaring a function to take a variable
+number or type of arguments.  (Such functions are referred to as
+"varargs functions" or "variadic functions".)  However, the language
+itself provides no mechanism for such functions to access their
+non-required arguments; instead, you use the variable arguments macros
+defined in `stdarg.h'.
+
+   This section describes how to declare variadic functions, how to
+write them, and how to call them properly.
+
+   *Compatibility Note:* Many older C dialects provide a similar, but
+incompatible, mechanism for defining functions with variable numbers of
+arguments, using `varargs.h'.
+
+* Menu:
+
+* Why Variadic::                Reasons for making functions take
+                                 variable arguments.
+* How Variadic::                How to define and call variadic functions.
+* Variadic Example::            A complete example.
+
+
+File: libc.info,  Node: Why Variadic,  Next: How Variadic,  Up: Variadic Functions
+
+A.2.1 Why Variadic Functions are Used
+-------------------------------------
+
+Ordinary C functions take a fixed number of arguments.  When you define
+a function, you specify the data type for each argument.  Every call to
+the function should supply the expected number of arguments, with types
+that can be converted to the specified ones.  Thus, if the function
+`foo' is declared with `int foo (int, char *);' then you must call it
+with two arguments, a number (any kind will do) and a string pointer.
+
+   But some functions perform operations that can meaningfully accept an
+unlimited number of arguments.
+
+   In some cases a function can handle any number of values by
+operating on all of them as a block.  For example, consider a function
+that allocates a one-dimensional array with `malloc' to hold a
+specified set of values.  This operation makes sense for any number of
+values, as long as the length of the array corresponds to that number.
+Without facilities for variable arguments, you would have to define a
+separate function for each possible array size.
+
+   The library function `printf' (*note Formatted Output::) is an
+example of another class of function where variable arguments are
+useful.  This function prints its arguments (which can vary in type as
+well as number) under the control of a format template string.
+
+   These are good reasons to define a "variadic" function which can
+handle as many arguments as the caller chooses to pass.
+
+   Some functions such as `open' take a fixed set of arguments, but
+occasionally ignore the last few.  Strict adherence to ISO C requires
+these functions to be defined as variadic; in practice, however, the GNU
+C compiler and most other C compilers let you define such a function to
+take a fixed set of arguments--the most it can ever use--and then only
+_declare_ the function as variadic (or not declare its arguments at
+all!).
+
+
+File: libc.info,  Node: How Variadic,  Next: Variadic Example,  Prev: Why Variadic,  Up: Variadic Functions
+
+A.2.2 How Variadic Functions are Defined and Used
+-------------------------------------------------
+
+Defining and using a variadic function involves three steps:
+
+   * _Define_ the function as variadic, using an ellipsis (`...') in
+     the argument list, and using special macros to access the variable
+     arguments.  *Note Receiving Arguments::.
+
+   * _Declare_ the function as variadic, using a prototype with an
+     ellipsis (`...'), in all the files which call it.  *Note Variadic
+     Prototypes::.
+
+   * _Call_ the function by writing the fixed arguments followed by the
+     additional variable arguments.  *Note Calling Variadics::.
+
+* Menu:
+
+* Variadic Prototypes::  How to make a prototype for a function
+			  with variable arguments.
+* Receiving Arguments::  Steps you must follow to access the
+			  optional argument values.
+* How Many Arguments::   How to decide whether there are more arguments.
+* Calling Variadics::    Things you need to know about calling
+			  variable arguments functions.
+* Argument Macros::      Detailed specification of the macros
+        		  for accessing variable arguments.
+
+
+File: libc.info,  Node: Variadic Prototypes,  Next: Receiving Arguments,  Up: How Variadic
+
+A.2.2.1 Syntax for Variable Arguments
+.....................................
+
+A function that accepts a variable number of arguments must be declared
+with a prototype that says so.   You write the fixed arguments as usual,
+and then tack on `...' to indicate the possibility of additional
+arguments.  The syntax of ISO C requires at least one fixed argument
+before the `...'.  For example,
+
+     int
+     func (const char *a, int b, ...)
+     {
+       ...
+     }
+
+defines a function `func' which returns an `int' and takes two required
+arguments, a `const char *' and an `int'.  These are followed by any
+number of anonymous arguments.
+
+   *Portability note:* For some C compilers, the last required argument
+must not be declared `register' in the function definition.
+Furthermore, this argument's type must be "self-promoting": that is,
+the default promotions must not change its type.  This rules out array
+and function types, as well as `float', `char' (whether signed or not)
+and `short int' (whether signed or not).  This is actually an ISO C
+requirement.
+
+
+File: libc.info,  Node: Receiving Arguments,  Next: How Many Arguments,  Prev: Variadic Prototypes,  Up: How Variadic
+
+A.2.2.2 Receiving the Argument Values
+.....................................
+
+Ordinary fixed arguments have individual names, and you can use these
+names to access their values.  But optional arguments have no
+names--nothing but `...'.  How can you access them?
+
+   The only way to access them is sequentially, in the order they were
+written, and you must use special macros from `stdarg.h' in the
+following three step process:
+
+  1. You initialize an argument pointer variable of type `va_list' using
+     `va_start'.  The argument pointer when initialized points to the
+     first optional argument.
+
+  2. You access the optional arguments by successive calls to `va_arg'.
+     The first call to `va_arg' gives you the first optional argument,
+     the next call gives you the second, and so on.
+
+     You can stop at any time if you wish to ignore any remaining
+     optional arguments.  It is perfectly all right for a function to
+     access fewer arguments than were supplied in the call, but you
+     will get garbage values if you try to access too many arguments.
+
+  3. You indicate that you are finished with the argument pointer
+     variable by calling `va_end'.
+
+     (In practice, with most C compilers, calling `va_end' does nothing.
+     This is always true in the GNU C compiler.  But you might as well
+     call `va_end' just in case your program is someday compiled with a
+     peculiar compiler.)
+
+   *Note Argument Macros::, for the full definitions of `va_start',
+`va_arg' and `va_end'.
+
+   Steps 1 and 3 must be performed in the function that accepts the
+optional arguments.  However, you can pass the `va_list' variable as an
+argument to another function and perform all or part of step 2 there.
+
+   You can perform the entire sequence of three steps multiple times
+within a single function invocation.  If you want to ignore the optional
+arguments, you can do these steps zero times.
+
+   You can have more than one argument pointer variable if you like.
+You can initialize each variable with `va_start' when you wish, and
+then you can fetch arguments with each argument pointer as you wish.
+Each argument pointer variable will sequence through the same set of
+argument values, but at its own pace.
+
+   *Portability note:* With some compilers, once you pass an argument
+pointer value to a subroutine, you must not keep using the same
+argument pointer value after that subroutine returns.  For full
+portability, you should just pass it to `va_end'.  This is actually an
+ISO C requirement, but most ANSI C compilers work happily regardless.
+
+
+File: libc.info,  Node: How Many Arguments,  Next: Calling Variadics,  Prev: Receiving Arguments,  Up: How Variadic
+
+A.2.2.3 How Many Arguments Were Supplied
+........................................
+
+There is no general way for a function to determine the number and type
+of the optional arguments it was called with.  So whoever designs the
+function typically designs a convention for the caller to specify the
+number and type of arguments.  It is up to you to define an appropriate
+calling convention for each variadic function, and write all calls
+accordingly.
+
+   One kind of calling convention is to pass the number of optional
+arguments as one of the fixed arguments.  This convention works provided
+all of the optional arguments are of the same type.
+
+   A similar alternative is to have one of the required arguments be a
+bit mask, with a bit for each possible purpose for which an optional
+argument might be supplied.  You would test the bits in a predefined
+sequence; if the bit is set, fetch the value of the next argument,
+otherwise use a default value.
+
+   A required argument can be used as a pattern to specify both the
+number and types of the optional arguments.  The format string argument
+to `printf' is one example of this (*note Formatted Output Functions::).
+
+   Another possibility is to pass an "end marker" value as the last
+optional argument.  For example, for a function that manipulates an
+arbitrary number of pointer arguments, a null pointer might indicate the
+end of the argument list.  (This assumes that a null pointer isn't
+otherwise meaningful to the function.)  The `execl' function works in
+just this way; see *Note Executing a File::.
+
+
+File: libc.info,  Node: Calling Variadics,  Next: Argument Macros,  Prev: How Many Arguments,  Up: How Variadic
+
+A.2.2.4 Calling Variadic Functions
+..................................
+
+You don't have to do anything special to call a variadic function.
+Just put the arguments (required arguments, followed by optional ones)
+inside parentheses, separated by commas, as usual.  But you must declare
+the function with a prototype and know how the argument values are
+converted.
+
+   In principle, functions that are _defined_ to be variadic must also
+be _declared_ to be variadic using a function prototype whenever you
+call them.  (*Note Variadic Prototypes::, for how.)  This is because
+some C compilers use a different calling convention to pass the same set
+of argument values to a function depending on whether that function
+takes variable arguments or fixed arguments.
+
+   In practice, the GNU C compiler always passes a given set of argument
+types in the same way regardless of whether they are optional or
+required.  So, as long as the argument types are self-promoting, you can
+safely omit declaring them.  Usually it is a good idea to declare the
+argument types for variadic functions, and indeed for all functions.
+But there are a few functions which it is extremely convenient not to
+have to declare as variadic--for example, `open' and `printf'.
+
+   Since the prototype doesn't specify types for optional arguments, in
+a call to a variadic function the "default argument promotions" are
+performed on the optional argument values.  This means the objects of
+type `char' or `short int' (whether signed or not) are promoted to
+either `int' or `unsigned int', as appropriate; and that objects of
+type `float' are promoted to type `double'.  So, if the caller passes a
+`char' as an optional argument, it is promoted to an `int', and the
+function can access it with `va_arg (AP, int)'.
+
+   Conversion of the required arguments is controlled by the function
+prototype in the usual way: the argument expression is converted to the
+declared argument type as if it were being assigned to a variable of
+that type.
+
+
+File: libc.info,  Node: Argument Macros,  Prev: Calling Variadics,  Up: How Variadic
+
+A.2.2.5 Argument Access Macros
+..............................
+
+Here are descriptions of the macros used to retrieve variable arguments.
+These macros are defined in the header file `stdarg.h'.  
+
+ -- Data Type: va_list
+     The type `va_list' is used for argument pointer variables.
+
+ -- Macro: void va_start (va_list AP, LAST-REQUIRED)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This macro initializes the argument pointer variable AP to point
+     to the first of the optional arguments of the current function;
+     LAST-REQUIRED must be the last required argument to the function.
+
+ -- Macro: TYPE va_arg (va_list AP, TYPE)
+     Preliminary: | MT-Safe race:ap | AS-Safe | AC-Unsafe corrupt |
+     *Note POSIX Safety Concepts::.
+
+     The `va_arg' macro returns the value of the next optional argument,
+     and modifies the value of AP to point to the subsequent argument.
+     Thus, successive uses of `va_arg' return successive optional
+     arguments.
+
+     The type of the value returned by `va_arg' is TYPE as specified in
+     the call.  TYPE must be a self-promoting type (not `char' or
+     `short int' or `float') that matches the type of the actual
+     argument.
+
+ -- Macro: void va_end (va_list AP)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This ends the use of AP.  After a `va_end' call, further `va_arg'
+     calls with the same AP may not work.  You should invoke `va_end'
+     before returning from the function in which `va_start' was invoked
+     with the same AP argument.
+
+     In the GNU C Library, `va_end' does nothing, and you need not ever
+     use it except for reasons of portability.
+
+
+   Sometimes it is necessary to parse the list of parameters more than
+once or one wants to remember a certain position in the parameter list.
+To do this, one will have to make a copy of the current value of the
+argument.  But `va_list' is an opaque type and one cannot necessarily
+assign the value of one variable of type `va_list' to another variable
+of the same type.
+
+ -- Macro: void va_copy (va_list DEST, va_list SRC)
+ -- Macro: void __va_copy (va_list DEST, va_list SRC)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     The `va_copy' macro allows copying of objects of type `va_list'
+     even if this is not an integral type.  The argument pointer in
+     DEST is initialized to point to the same argument as the pointer
+     in SRC.
+
+     `va_copy' was added in ISO C99.  When building for strict
+     conformance to ISO C90 (`gcc -std=c90'), it is not available.  GCC
+     provides `__va_copy', as an extension, in any standards mode;
+     before GCC 3.0, it was the only macro for this functionality.
+
+     These macros are no longer provided by the GNU C Library, but
+     rather by the compiler.
+
+   If you want to use `va_copy' and be portable to pre-C99 systems, you
+should always be prepared for the possibility that this macro will not
+be available.  On architectures where a simple assignment is invalid,
+hopefully `va_copy' _will_ be available, so one should always write
+something like this if concerned about pre-C99 portability:
+
+     {
+       va_list ap, save;
+       ...
+     #ifdef va_copy
+       va_copy (save, ap);
+     #else
+       save = ap;
+     #endif
+       ...
+     }
+
+
+File: libc.info,  Node: Variadic Example,  Prev: How Variadic,  Up: Variadic Functions
+
+A.2.3 Example of a Variadic Function
+------------------------------------
+
+Here is a complete sample function that accepts a variable number of
+arguments.  The first argument to the function is the count of remaining
+arguments, which are added up and the result returned.  While trivial,
+this function is sufficient to illustrate how to use the variable
+arguments facility.
+
+
+     #include <stdarg.h>
+     #include <stdio.h>
+
+     int
+     add_em_up (int count,...)
+     {
+       va_list ap;
+       int i, sum;
+
+       va_start (ap, count);         /* Initialize the argument list. */
+
+       sum = 0;
+       for (i = 0; i < count; i++)
+         sum += va_arg (ap, int);    /* Get the next argument value. */
+
+       va_end (ap);                  /* Clean up. */
+       return sum;
+     }
+
+     int
+     main (void)
+     {
+       /* This call prints 16. */
+       printf ("%d\n", add_em_up (3, 5, 5, 6));
+
+       /* This call prints 55. */
+       printf ("%d\n", add_em_up (10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
+
+       return 0;
+     }
+
+
+File: libc.info,  Node: Null Pointer Constant,  Next: Important Data Types,  Prev: Variadic Functions,  Up: Language Features
+
+A.3 Null Pointer Constant
+=========================
+
+The null pointer constant is guaranteed not to point to any real object.
+You can assign it to any pointer variable since it has type `void *'.
+The preferred way to write a null pointer constant is with `NULL'.
+
+ -- Macro: void * NULL
+     This is a null pointer constant.
+
+   You can also use `0' or `(void *)0' as a null pointer constant, but
+using `NULL' is cleaner because it makes the purpose of the constant
+more evident.
+
+   If you use the null pointer constant as a function argument, then for
+complete portability you should make sure that the function has a
+prototype declaration.  Otherwise, if the target machine has two
+different pointer representations, the compiler won't know which
+representation to use for that argument.  You can avoid the problem by
+explicitly casting the constant to the proper pointer type, but we
+recommend instead adding a prototype for the function you are calling.
+
+
+File: libc.info,  Node: Important Data Types,  Next: Data Type Measurements,  Prev: Null Pointer Constant,  Up: Language Features
+
+A.4 Important Data Types
+========================
+
+The result of subtracting two pointers in C is always an integer, but
+the precise data type varies from C compiler to C compiler.  Likewise,
+the data type of the result of `sizeof' also varies between compilers.
+ISO C defines standard aliases for these two types, so you can refer to
+them in a portable fashion.  They are defined in the header file
+`stddef.h'.  
+
+ -- Data Type: ptrdiff_t
+     This is the signed integer type of the result of subtracting two
+     pointers.  For example, with the declaration `char *p1, *p2;', the
+     expression `p2 - p1' is of type `ptrdiff_t'.  This will probably
+     be one of the standard signed integer types (`short int', `int' or
+     `long int'), but might be a nonstandard type that exists only for
+     this purpose.
+
+ -- Data Type: size_t
+     This is an unsigned integer type used to represent the sizes of
+     objects.  The result of the `sizeof' operator is of this type, and
+     functions such as `malloc' (*note Unconstrained Allocation::) and
+     `memcpy' (*note Copying Strings and Arrays::) accept arguments of
+     this type to specify object sizes.  On systems using the GNU C
+     Library, this will be `unsigned int' or `unsigned long int'.
+
+     *Usage Note:* `size_t' is the preferred way to declare any
+     arguments or variables that hold the size of an object.
+
+   *Compatibility Note:* Implementations of C before the advent of
+ISO C generally used `unsigned int' for representing object sizes and
+`int' for pointer subtraction results.  They did not necessarily define
+either `size_t' or `ptrdiff_t'.  Unix systems did define `size_t', in
+`sys/types.h', but the definition was usually a signed type.
+
+
+File: libc.info,  Node: Data Type Measurements,  Prev: Important Data Types,  Up: Language Features
+
+A.5 Data Type Measurements
+==========================
+
+Most of the time, if you choose the proper C data type for each object
+in your program, you need not be concerned with just how it is
+represented or how many bits it uses.  When you do need such
+information, the C language itself does not provide a way to get it.
+The header files `limits.h' and `float.h' contain macros which give you
+this information in full detail.
+
+* Menu:
+
+* Width of Type::           How many bits does an integer type hold?
+* Range of Type::           What are the largest and smallest values
+			     that an integer type can hold?
+* Floating Type Macros::    Parameters that measure the floating point types.
+* Structure Measurement::   Getting measurements on structure types.
+
+
+File: libc.info,  Node: Width of Type,  Next: Range of Type,  Up: Data Type Measurements
+
+A.5.1 Width of an Integer Type
+------------------------------
+
+TS 18661-1:2014 defines macros for the width of integer types (the
+number of value and sign bits).  One benefit of these macros is they
+can be used in `#if' preprocessor directives, whereas `sizeof' cannot.
+The following macros are defined in `limits.h'.
+
+`CHAR_WIDTH'
+`SCHAR_WIDTH'
+`UCHAR_WIDTH'
+`SHRT_WIDTH'
+`USHRT_WIDTH'
+`INT_WIDTH'
+`UINT_WIDTH'
+`LONG_WIDTH'
+`ULONG_WIDTH'
+`LLONG_WIDTH'
+`ULLONG_WIDTH'
+     These are the widths of the types `char', `signed char', `unsigned
+     char', `short int', `unsigned short int', `int', `unsigned int',
+     `long int', `unsigned long int', `long long int' and `unsigned
+     long long int', respectively.
+
+   Further such macros are defined in `stdint.h'.  Apart from those for
+types specified by width (*note Integers::), the following are defined:
+
+`INTPTR_WIDTH'
+`UINTPTR_WIDTH'
+`PTRDIFF_WIDTH'
+`SIG_ATOMIC_WIDTH'
+`SIZE_WIDTH'
+`WCHAR_WIDTH'
+`WINT_WIDTH'
+     These are the widths of the types `intptr_t', `uintptr_t',
+     `ptrdiff_t', `sig_atomic_t', `size_t', `wchar_t' and `wint_t',
+     respectively.
+
+   A common reason that a program needs to know how many bits are in an
+integer type is for using an array of `unsigned long int' as a bit
+vector.  You can access the bit at index N with:
+
+     vector[N / ULONG_WIDTH] & (1UL << (N % ULONG_WIDTH))
+
+   Before `ULONG_WIDTH' was a part of the C language, `CHAR_BIT' was
+used to compute the number of bits in an integer data type.
+
+ -- Macro: int CHAR_BIT
+     This is the number of bits in a `char'.  POSIX.1-2001 requires
+     this to be 8.
+
+   The number of bits in any data type TYPE can be computed like this:
+
+     sizeof (TYPE) * CHAR_BIT
+
+   That expression includes padding bits as well as value and sign bits.
+On all systems supported by the GNU C Library, standard integer types
+other than `_Bool' do not have any padding bits.
+
+   *Portability Note:* One cannot actually easily compute the number of
+usable bits in a portable manner.
+
+
+File: libc.info,  Node: Range of Type,  Next: Floating Type Macros,  Prev: Width of Type,  Up: Data Type Measurements
+
+A.5.2 Range of an Integer Type
+------------------------------
+
+Suppose you need to store an integer value which can range from zero to
+one million.  Which is the smallest type you can use?  There is no
+general rule; it depends on the C compiler and target machine.  You can
+use the `MIN' and `MAX' macros in `limits.h' to determine which type
+will work.
+
+   Each signed integer type has a pair of macros which give the smallest
+and largest values that it can hold.  Each unsigned integer type has one
+such macro, for the maximum value; the minimum value is, of course,
+zero.
+
+   The values of these macros are all integer constant expressions.  The
+`MAX' and `MIN' macros for `char' and `short int' types have values of
+type `int'.  The `MAX' and `MIN' macros for the other types have values
+of the same type described by the macro--thus, `ULONG_MAX' has type
+`unsigned long int'.
+
+`SCHAR_MIN'
+     This is the minimum value that can be represented by a
+     `signed char'.
+
+`SCHAR_MAX'
+`UCHAR_MAX'
+     These are the maximum values that can be represented by a
+     `signed char' and `unsigned char', respectively.
+
+`CHAR_MIN'
+     This is the minimum value that can be represented by a `char'.
+     It's equal to `SCHAR_MIN' if `char' is signed, or zero otherwise.
+
+`CHAR_MAX'
+     This is the maximum value that can be represented by a `char'.
+     It's equal to `SCHAR_MAX' if `char' is signed, or `UCHAR_MAX'
+     otherwise.
+
+`SHRT_MIN'
+     This is the minimum value that can be represented by a
+     `signed short int'.  On most machines that the GNU C Library runs
+     on, `short' integers are 16-bit quantities.
+
+`SHRT_MAX'
+`USHRT_MAX'
+     These are the maximum values that can be represented by a
+     `signed short int' and `unsigned short int', respectively.
+
+`INT_MIN'
+     This is the minimum value that can be represented by a
+     `signed int'.  On most machines that the GNU C Library runs on, an
+     `int' is a 32-bit quantity.
+
+`INT_MAX'
+`UINT_MAX'
+     These are the maximum values that can be represented by,
+     respectively, the type `signed int' and the type `unsigned int'.
+
+`LONG_MIN'
+     This is the minimum value that can be represented by a
+     `signed long int'.  On most machines that the GNU C Library runs
+     on, `long' integers are 32-bit quantities, the same size as `int'.
+
+`LONG_MAX'
+`ULONG_MAX'
+     These are the maximum values that can be represented by a
+     `signed long int' and `unsigned long int', respectively.
+
+`LLONG_MIN'
+     This is the minimum value that can be represented by a
+     `signed long long int'.  On most machines that the GNU C Library
+     runs on, `long long' integers are 64-bit quantities.
+
+`LLONG_MAX'
+`ULLONG_MAX'
+     These are the maximum values that can be represented by a `signed
+     long long int' and `unsigned long long int', respectively.
+
+`LONG_LONG_MIN'
+`LONG_LONG_MAX'
+`ULONG_LONG_MAX'
+     These are obsolete names for `LLONG_MIN', `LLONG_MAX', and
+     `ULLONG_MAX'.  They are only available if `_GNU_SOURCE' is defined
+     (*note Feature Test Macros::).  In GCC versions prior to 3.0,
+     these were the only names available.
+
+`WCHAR_MAX'
+     This is the maximum value that can be represented by a `wchar_t'.
+     *Note Extended Char Intro::.
+
+   The header file `limits.h' also defines some additional constants
+that parameterize various operating system and file system limits.
+These constants are described in *Note System Configuration::.
+
+
+File: libc.info,  Node: Floating Type Macros,  Next: Structure Measurement,  Prev: Range of Type,  Up: Data Type Measurements
+
+A.5.3 Floating Type Macros
+--------------------------
+
+The specific representation of floating point numbers varies from
+machine to machine.  Because floating point numbers are represented
+internally as approximate quantities, algorithms for manipulating
+floating point data often need to take account of the precise details of
+the machine's floating point representation.
+
+   Some of the functions in the C library itself need this information;
+for example, the algorithms for printing and reading floating point
+numbers (*note I/O on Streams::) and for calculating trigonometric and
+irrational functions (*note Mathematics::) use it to avoid round-off
+error and loss of accuracy.  User programs that implement numerical
+analysis techniques also often need this information in order to
+minimize or compute error bounds.
+
+   The header file `float.h' describes the format used by your machine.
+
+* Menu:
+
+* Floating Point Concepts::     Definitions of terminology.
+* Floating Point Parameters::   Details of specific macros.
+* IEEE Floating Point::         The measurements for one common
+                                 representation.
+
+
+File: libc.info,  Node: Floating Point Concepts,  Next: Floating Point Parameters,  Up: Floating Type Macros
+
+A.5.3.1 Floating Point Representation Concepts
+..............................................
+
+This section introduces the terminology for describing floating point
+representations.
+
+   You are probably already familiar with most of these concepts in
+terms of scientific or exponential notation for floating point numbers.
+For example, the number `123456.0' could be expressed in exponential
+notation as `1.23456e+05', a shorthand notation indicating that the
+mantissa `1.23456' is multiplied by the base `10' raised to power `5'.
+
+   More formally, the internal representation of a floating point number
+can be characterized in terms of the following parameters:
+
+   * The "sign" is either `-1' or `1'.
+
+   * The "base" or "radix" for exponentiation, an integer greater than
+     `1'.  This is a constant for a particular representation.
+
+   * The "exponent" to which the base is raised.  The upper and lower
+     bounds of the exponent value are constants for a particular
+     representation.
+
+     Sometimes, in the actual bits representing the floating point
+     number, the exponent is "biased" by adding a constant to it, to
+     make it always be represented as an unsigned quantity.  This is
+     only important if you have some reason to pick apart the bit
+     fields making up the floating point number by hand, which is
+     something for which the GNU C Library provides no support.  So
+     this is ignored in the discussion that follows.
+
+   * The "mantissa" or "significand" is an unsigned integer which is a
+     part of each floating point number.
+
+   * The "precision" of the mantissa.  If the base of the representation
+     is B, then the precision is the number of base-B digits in the
+     mantissa.  This is a constant for a particular representation.
+
+     Many floating point representations have an implicit "hidden bit"
+     in the mantissa.  This is a bit which is present virtually in the
+     mantissa, but not stored in memory because its value is always 1
+     in a normalized number.  The precision figure (see above) includes
+     any hidden bits.
+
+     Again, the GNU C Library provides no facilities for dealing with
+     such low-level aspects of the representation.
+
+   The mantissa of a floating point number represents an implicit
+fraction whose denominator is the base raised to the power of the
+precision.  Since the largest representable mantissa is one less than
+this denominator, the value of the fraction is always strictly less
+than `1'.  The mathematical value of a floating point number is then
+the product of this fraction, the sign, and the base raised to the
+exponent.
+
+   We say that the floating point number is "normalized" if the
+fraction is at least `1/B', where B is the base.  In other words, the
+mantissa would be too large to fit if it were multiplied by the base.
+Non-normalized numbers are sometimes called "denormal"; they contain
+less precision than the representation normally can hold.
+
+   If the number is not normalized, then you can subtract `1' from the
+exponent while multiplying the mantissa by the base, and get another
+floating point number with the same value.  "Normalization" consists of
+doing this repeatedly until the number is normalized.  Two distinct
+normalized floating point numbers cannot be equal in value.
+
+   (There is an exception to this rule: if the mantissa is zero, it is
+considered normalized.  Another exception happens on certain machines
+where the exponent is as small as the representation can hold.  Then it
+is impossible to subtract `1' from the exponent, so a number may be
+normalized even if its fraction is less than `1/B'.)
+
+
+File: libc.info,  Node: Floating Point Parameters,  Next: IEEE Floating Point,  Prev: Floating Point Concepts,  Up: Floating Type Macros
+
+A.5.3.2 Floating Point Parameters
+.................................
+
+These macro definitions can be accessed by including the header file
+`float.h' in your program.
+
+   Macro names starting with `FLT_' refer to the `float' type, while
+names beginning with `DBL_' refer to the `double' type and names
+beginning with `LDBL_' refer to the `long double' type.  (If GCC does
+not support `long double' as a distinct data type on a target machine
+then the values for the `LDBL_' constants are equal to the
+corresponding constants for the `double' type.)
+
+   Of these macros, only `FLT_RADIX' is guaranteed to be a constant
+expression.  The other macros listed here cannot be reliably used in
+places that require constant expressions, such as `#if' preprocessing
+directives or in the dimensions of static arrays.
+
+   Although the ISO C standard specifies minimum and maximum values for
+most of these parameters, the GNU C implementation uses whatever values
+describe the floating point representation of the target machine.  So in
+principle GNU C actually satisfies the ISO C requirements only if the
+target machine is suitable.  In practice, all the machines currently
+supported are suitable.
+
+`FLT_ROUNDS'
+     This value characterizes the rounding mode for floating point
+     addition.  The following values indicate standard rounding modes:
+
+    `-1'
+          The mode is indeterminable.
+
+    `0'
+          Rounding is towards zero.
+
+    `1'
+          Rounding is to the nearest number.
+
+    `2'
+          Rounding is towards positive infinity.
+
+    `3'
+          Rounding is towards negative infinity.
+
+     Any other value represents a machine-dependent nonstandard rounding
+     mode.
+
+     On most machines, the value is `1', in accordance with the IEEE
+     standard for floating point.
+
+     Here is a table showing how certain values round for each possible
+     value of `FLT_ROUNDS', if the other aspects of the representation
+     match the IEEE single-precision standard.
+
+                          0      1             2             3
+           1.00000003    1.0    1.0           1.00000012    1.0
+           1.00000007    1.0    1.00000012    1.00000012    1.0
+          -1.00000003   -1.0   -1.0          -1.0          -1.00000012
+          -1.00000007   -1.0   -1.00000012   -1.0          -1.00000012
+
+`FLT_RADIX'
+     This is the value of the base, or radix, of the exponent
+     representation.  This is guaranteed to be a constant expression,
+     unlike the other macros described in this section.  The value is 2
+     on all machines we know of except the IBM 360 and derivatives.
+
+`FLT_MANT_DIG'
+     This is the number of base-`FLT_RADIX' digits in the floating point
+     mantissa for the `float' data type.  The following expression
+     yields `1.0' (even though mathematically it should not) due to the
+     limited number of mantissa digits:
+
+          float radix = FLT_RADIX;
+
+          1.0f + 1.0f / radix / radix / ... / radix
+
+     where `radix' appears `FLT_MANT_DIG' times.
+
+`DBL_MANT_DIG'
+`LDBL_MANT_DIG'
+     This is the number of base-`FLT_RADIX' digits in the floating point
+     mantissa for the data types `double' and `long double',
+     respectively.
+
+`FLT_DIG'
+     This is the number of decimal digits of precision for the `float'
+     data type.  Technically, if P and B are the precision and base
+     (respectively) for the representation, then the decimal precision
+     Q is the maximum number of decimal digits such that any floating
+     point number with Q base 10 digits can be rounded to a floating
+     point number with P base B digits and back again, without change
+     to the Q decimal digits.
+
+     The value of this macro is supposed to be at least `6', to satisfy
+     ISO C.
+
+`DBL_DIG'
+`LDBL_DIG'
+     These are similar to `FLT_DIG', but for the data types `double'
+     and `long double', respectively.  The values of these macros are
+     supposed to be at least `10'.
+
+`FLT_MIN_EXP'
+     This is the smallest possible exponent value for type `float'.
+     More precisely, it is the minimum negative integer such that the
+     value `FLT_RADIX' raised to this power minus 1 can be represented
+     as a normalized floating point number of type `float'.
+
+`DBL_MIN_EXP'
+`LDBL_MIN_EXP'
+     These are similar to `FLT_MIN_EXP', but for the data types
+     `double' and `long double', respectively.
+
+`FLT_MIN_10_EXP'
+     This is the minimum negative integer such that `10' raised to this
+     power minus 1 can be represented as a normalized floating point
+     number of type `float'.  This is supposed to be `-37' or even less.
+
+`DBL_MIN_10_EXP'
+`LDBL_MIN_10_EXP'
+     These are similar to `FLT_MIN_10_EXP', but for the data types
+     `double' and `long double', respectively.
+
+`FLT_MAX_EXP'
+     This is the largest possible exponent value for type `float'.  More
+     precisely, this is the maximum positive integer such that value
+     `FLT_RADIX' raised to this power minus 1 can be represented as a
+     floating point number of type `float'.
+
+`DBL_MAX_EXP'
+`LDBL_MAX_EXP'
+     These are similar to `FLT_MAX_EXP', but for the data types
+     `double' and `long double', respectively.
+
+`FLT_MAX_10_EXP'
+     This is the maximum positive integer such that `10' raised to this
+     power minus 1 can be represented as a normalized floating point
+     number of type `float'.  This is supposed to be at least `37'.
+
+`DBL_MAX_10_EXP'
+`LDBL_MAX_10_EXP'
+     These are similar to `FLT_MAX_10_EXP', but for the data types
+     `double' and `long double', respectively.
+
+`FLT_MAX'
+     The value of this macro is the maximum number representable in type
+     `float'.  It is supposed to be at least `1E+37'.  The value has
+     type `float'.
+
+     The smallest representable number is `- FLT_MAX'.
+
+`DBL_MAX'
+`LDBL_MAX'
+     These are similar to `FLT_MAX', but for the data types `double'
+     and `long double', respectively.  The type of the macro's value is
+     the same as the type it describes.
+
+`FLT_MIN'
+     The value of this macro is the minimum normalized positive floating
+     point number that is representable in type `float'.  It is supposed
+     to be no more than `1E-37'.
+
+`DBL_MIN'
+`LDBL_MIN'
+     These are similar to `FLT_MIN', but for the data types `double'
+     and `long double', respectively.  The type of the macro's value is
+     the same as the type it describes.
+
+`FLT_EPSILON'
+     This is the difference between 1 and the smallest floating point
+     number of type `float' that is greater than 1.  It's supposed to
+     be no greater than `1E-5'.
+
+`DBL_EPSILON'
+`LDBL_EPSILON'
+     These are similar to `FLT_EPSILON', but for the data types
+     `double' and `long double', respectively.  The type of the macro's
+     value is the same as the type it describes.  The values are not
+     supposed to be greater than `1E-9'.
+
+
+File: libc.info,  Node: IEEE Floating Point,  Prev: Floating Point Parameters,  Up: Floating Type Macros
+
+A.5.3.3 IEEE Floating Point
+...........................
+
+Here is an example showing how the floating type measurements come out
+for the most common floating point representation, specified by the
+`IEEE Standard for Binary Floating Point Arithmetic (ANSI/IEEE Std
+754-1985)'.  Nearly all computers designed since the 1980s use this
+format.
+
+   The IEEE single-precision float representation uses a base of 2.
+There is a sign bit, a mantissa with 23 bits plus one hidden bit (so
+the total precision is 24 base-2 digits), and an 8-bit exponent that
+can represent values in the range -125 to 128, inclusive.
+
+   So, for an implementation that uses this representation for the
+`float' data type, appropriate values for the corresponding parameters
+are:
+
+     FLT_RADIX                             2
+     FLT_MANT_DIG                         24
+     FLT_DIG                               6
+     FLT_MIN_EXP                        -125
+     FLT_MIN_10_EXP                      -37
+     FLT_MAX_EXP                         128
+     FLT_MAX_10_EXP                      +38
+     FLT_MIN                 1.17549435E-38F
+     FLT_MAX                 3.40282347E+38F
+     FLT_EPSILON             1.19209290E-07F
+
+   Here are the values for the `double' data type:
+
+     DBL_MANT_DIG                         53
+     DBL_DIG                              15
+     DBL_MIN_EXP                       -1021
+     DBL_MIN_10_EXP                     -307
+     DBL_MAX_EXP                        1024
+     DBL_MAX_10_EXP                      308
+     DBL_MAX         1.7976931348623157E+308
+     DBL_MIN         2.2250738585072014E-308
+     DBL_EPSILON     2.2204460492503131E-016
+
+
+File: libc.info,  Node: Structure Measurement,  Prev: Floating Type Macros,  Up: Data Type Measurements
+
+A.5.4 Structure Field Offset Measurement
+----------------------------------------
+
+You can use `offsetof' to measure the location within a structure type
+of a particular structure member.
+
+ -- Macro: size_t offsetof (TYPE, MEMBER)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This expands to an integer constant expression that is the offset
+     of the structure member named MEMBER in the structure type TYPE.
+     For example, `offsetof (struct s, elem)' is the offset, in bytes,
+     of the member `elem' in a `struct s'.
+
+     This macro won't work if MEMBER is a bit field; you get an error
+     from the C compiler in that case.
 
 
 File: libc.info,  Node: Library Summary,  Next: Installation,  Prev: Language Features,  Up: Top
@@ -2301,33 +3450,6 @@ it.
      `utmp.h' (SVID):  *Note Manipulating the Database::.
 
      `utmpx.h' (XPG4.2):  *Note XPG Functions::.
-
-`DESERR_BADPARAM'
-     `rpc/des_crypt.h' (SUNRPC):  *Note DES Encryption::.
-
-`DESERR_HWERROR'
-     `rpc/des_crypt.h' (SUNRPC):  *Note DES Encryption::.
-
-`DESERR_NOHWDEVICE'
-     `rpc/des_crypt.h' (SUNRPC):  *Note DES Encryption::.
-
-`DESERR_NONE'
-     `rpc/des_crypt.h' (SUNRPC):  *Note DES Encryption::.
-
-`DES_DECRYPT'
-     `rpc/des_crypt.h' (SUNRPC):  *Note DES Encryption::.
-
-`DES_ENCRYPT'
-     `rpc/des_crypt.h' (SUNRPC):  *Note DES Encryption::.
-
-`int DES_FAILED (int ERR)'
-     `rpc/des_crypt.h' (SUNRPC):  *Note DES Encryption::.
-
-`DES_HW'
-     `rpc/des_crypt.h' (SUNRPC):  *Note DES Encryption::.
-
-`DES_SW'
-     `rpc/des_crypt.h' (SUNRPC):  *Note DES Encryption::.
 
 `DIR'
      `dirent.h' (POSIX.1):  *Note Opening a Directory::.
@@ -2677,7 +3799,7 @@ it.
      `errno.h' (Linux???):  *Note Error Codes::.
 
 `int ENOTRECOVERABLE'
-     `errno.h' (Linux):  *Note Error Codes::.
+     `errno.h' (GNU):  *Note Error Codes::.
 
 `int ENOTSOCK'
      `errno.h' (BSD):  *Note Error Codes::.
@@ -2704,7 +3826,7 @@ it.
      `errno.h' (XOPEN):  *Note Error Codes::.
 
 `int EOWNERDEAD'
-     `errno.h' (Linux):  *Note Error Codes::.
+     `errno.h' (GNU):  *Note Error Codes::.
 
 `int EPERM'
      `errno.h' (POSIX.1):  *Note Error Codes::.
@@ -3337,6 +4459,12 @@ it.
 `int L_tmpnam'
      `stdio.h' (ISO):  *Note Temporary Files::.
 
+`MADV_HUGEPAGE'
+     `sys/mman.h' (Linux):  *Note Memory-mapped I/O::.
+
+`MAP_HUGETLB'
+     `sys/mman.h' (Linux):  *Note Memory-mapped I/O::.
+
 `int MAXNAMLEN'
      `dirent.h' (BSD):  *Note Limits for Files::.
 
@@ -3357,6 +4485,18 @@ it.
 
 `tcflag_t MDMBUF'
      `termios.h' (BSD):  *Note Control Modes::.
+
+`MFD_ALLOW_SEALING'
+     `sys/mman.h' (Linux):  *Note Memory-mapped I/O::.
+
+`MFD_CLOEXEC'
+     `sys/mman.h' (Linux):  *Note Memory-mapped I/O::.
+
+`MFD_HUGETLB'
+     `sys/mman.h' (Linux):  *Note Memory-mapped I/O::.
+
+`MLOCK_ONFAULT'
+     `sys/mman.h' (Linux):  *Note Page Lock Functions::.
 
 `int MSG_DONTROUTE'
      `sys/socket.h' (BSD):  *Note Socket Data Options::.
@@ -3406,6 +4546,9 @@ it.
      `utmp.h' (SVID):  *Note Manipulating the Database::.
 
      `utmpx.h' (XPG4.2):  *Note XPG Functions::.
+
+`ONCE_FLAG_INIT'
+     `threads.h' (C11):  *Note Call Once::.
 
 `tcflag_t ONLCR'
      `termios.h' (POSIX.1):  *Note Output Modes::.
@@ -3499,6 +4642,9 @@ it.
 `int O_SYNC'
      `fcntl.h' (BSD):  *Note Operating Modes::.
 
+`int O_TMPFILE'
+     `fcntl.h' (GNU):  *Note Open-time Flags::.
+
 `int O_TRUNC'
      `fcntl.h' (POSIX.1):  *Note Open-time Flags::.
 
@@ -3580,6 +4726,12 @@ it.
 `int PIPE_BUF'
      `limits.h' (POSIX.1):  *Note Limits for Files::.
 
+`PKEY_DISABLE_ACCESS'
+     `sys/mman.h' (Linux):  *Note Memory Protection::.
+
+`PKEY_DISABLE_WRITE'
+     `sys/mman.h' (Linux):  *Note Memory Protection::.
+
 `POSIX_REC_INCR_XFER_SIZE'
      `limits.h' (POSIX.1):  *Note File Minimums::.
 
@@ -3606,6 +4758,18 @@ it.
 
 `PRIO_USER'
      `sys/resource.h' (BSD):  *Note Traditional Scheduling Functions::.
+
+`PROT_EXEC'
+     `sys/mman.h' (POSIX):  *Note Memory Protection::.
+
+`PROT_NONE'
+     `sys/mman.h' (POSIX):  *Note Memory Protection::.
+
+`PROT_READ'
+     `sys/mman.h' (POSIX):  *Note Memory Protection::.
+
+`PROT_WRITE'
+     `sys/mman.h' (POSIX):  *Note Memory Protection::.
 
 `PTRDIFF_WIDTH'
      `stdint.h' (ISO):  *Note Width of Type::.
@@ -3745,9 +4909,6 @@ it.
 
 `SCHAR_WIDTH'
      `limits.h' (ISO):  *Note Width of Type::.
-
-`SC_SSIZE_MAX'
-     `unistd.h' (X/Open):  *Note Constants for Sysconf::.
 
 `int SEEK_CUR'
      `stdio.h' (ISO):  *Note File Positioning::.
@@ -4106,6 +5267,9 @@ it.
 `TRY_AGAIN'
      `netdb.h' (BSD):  *Note Host Names::.
 
+`TSS_DTOR_ITERATIONS'
+     `threads.h' (C11):  *Note ISO C Thread-local Storage::.
+
 `int TZNAME_MAX'
      `limits.h' (POSIX.1):  *Note General Limits::.
 
@@ -4285,6 +5449,9 @@ it.
 `int X_OK'
      `unistd.h' (POSIX.1):  *Note Testing File Access::.
 
+`_ATFILE_SOURCE'
+     _no header_ (GNU):  *Note Feature Test Macros::.
+
 `_CS_LFS64_CFLAGS'
      `unistd.h' (Unix98):  *Note String Parameters::.
 
@@ -4324,6 +5491,9 @@ it.
 `_FILE_OFFSET_BITS'
      _no header_ (X/Open):  *Note Feature Test Macros::.
 
+`_FORTIFY_SOURCE'
+     _no header_ (GNU):  *Note Feature Test Macros::.
+
 `_GNU_SOURCE'
      _no header_ (GNU):  *Note Feature Test Macros::.
 
@@ -4335,6 +5505,9 @@ it.
 
 `int _IONBF'
      `stdio.h' (ISO):  *Note Controlling Buffering::.
+
+`_ISOC11_SOURCE'
+     _no header_ (C11):  *Note Feature Test Macros::.
 
 `_ISOC99_SOURCE'
      _no header_ (GNU):  *Note Feature Test Macros::.
@@ -4612,6 +5785,51 @@ it.
 `_SC_JOB_CONTROL'
      `unistd.h' (POSIX.1):  *Note Constants for Sysconf::.
 
+`_SC_LEVEL1_DCACHE_ASSOC'
+     `unistd.h' (GNU):  *Note Constants for Sysconf::.
+
+`_SC_LEVEL1_DCACHE_LINESIZE'
+     `unistd.h' (GNU):  *Note Constants for Sysconf::.
+
+`_SC_LEVEL1_DCACHE_SIZE'
+     `unistd.h' (GNU):  *Note Constants for Sysconf::.
+
+`_SC_LEVEL1_ICACHE_ASSOC'
+     `unistd.h' (GNU):  *Note Constants for Sysconf::.
+
+`_SC_LEVEL1_ICACHE_LINESIZE'
+     `unistd.h' (GNU):  *Note Constants for Sysconf::.
+
+`_SC_LEVEL1_ICACHE_SIZE'
+     `unistd.h' (GNU):  *Note Constants for Sysconf::.
+
+`_SC_LEVEL2_CACHE_ASSOC'
+     `unistd.h' (GNU):  *Note Constants for Sysconf::.
+
+`_SC_LEVEL2_CACHE_LINESIZE'
+     `unistd.h' (GNU):  *Note Constants for Sysconf::.
+
+`_SC_LEVEL2_CACHE_SIZE'
+     `unistd.h' (GNU):  *Note Constants for Sysconf::.
+
+`_SC_LEVEL3_CACHE_ASSOC'
+     `unistd.h' (GNU):  *Note Constants for Sysconf::.
+
+`_SC_LEVEL3_CACHE_LINESIZE'
+     `unistd.h' (GNU):  *Note Constants for Sysconf::.
+
+`_SC_LEVEL3_CACHE_SIZE'
+     `unistd.h' (GNU):  *Note Constants for Sysconf::.
+
+`_SC_LEVEL4_CACHE_ASSOC'
+     `unistd.h' (GNU):  *Note Constants for Sysconf::.
+
+`_SC_LEVEL4_CACHE_LINESIZE'
+     `unistd.h' (GNU):  *Note Constants for Sysconf::.
+
+`_SC_LEVEL4_CACHE_SIZE'
+     `unistd.h' (GNU):  *Note Constants for Sysconf::.
+
 `_SC_LINE_MAX'
      `unistd.h' (POSIX.2):  *Note Constants for Sysconf::.
 
@@ -4758,6 +5976,9 @@ it.
 
 `_SC_SIGQUEUE_MAX'
      `unistd.h' (POSIX.1):  *Note Constants for Sysconf::.
+
+`_SC_SSIZE_MAX'
+     `unistd.h' (X/Open):  *Note Constants for Sysconf::.
 
 `_SC_STREAM_MAX'
      `unistd.h' (POSIX.1):  *Note Constants for Sysconf::.
@@ -4961,6 +6182,9 @@ it.
 
 `__realloc_hook'
      `malloc.h' (GNU):  *Note Hooks for Malloc::.
+
+`void __va_copy (va_list DEST, va_list SRC)'
+     `stdarg.h' (GNU):  *Note Argument Macros::.
 
 `void _exit (int STATUS)'
      `unistd.h' (POSIX.1):  *Note Termination Internals::.
@@ -5377,6 +6601,9 @@ it.
 `complex long double cacosl (complex long double Z)'
      `complex.h' (ISO):  *Note Inverse Trig Functions::.
 
+`void call_once (once_flag *FLAG, void (*FUNC) (void))'
+     `threads.h' (C11):  *Note Call Once::.
+
 `void * calloc (size_t COUNT, size_t ELTSIZE)'
      `malloc.h' (ISO):  *Note Allocating Cleared Space::.
 
@@ -5477,9 +6704,6 @@ it.
 
 `nl_catd catopen (const char *CAT_NAME, int FLAG)'
      `nl_types.h' (X/Open):  *Note The catgets Functions::.
-
-`int cbc_crypt (char *KEY, char *BLOCKS, unsigned int LEN, unsigned int MODE, char *IVEC)'
-     `rpc/des_crypt.h' (SUNRPC):  *Note DES Encryption::.
 
 `double cbrt (double X)'
      `math.h' (BSD):  *Note Exponents and Logarithms::.
@@ -5655,6 +6879,27 @@ it.
 `void closelog (void)'
      `syslog.h' (BSD):  *Note closelog::.
 
+`int cnd_broadcast (cnd_t *COND)'
+     `threads.h' (C11):  *Note ISO C Condition Variables::.
+
+`void cnd_destroy (cnd_t *COND)'
+     `threads.h' (C11):  *Note ISO C Condition Variables::.
+
+`int cnd_init (cnd_t *COND)'
+     `threads.h' (C11):  *Note ISO C Condition Variables::.
+
+`int cnd_signal (cnd_t *COND)'
+     `threads.h' (C11):  *Note ISO C Condition Variables::.
+
+`cnd_t'
+     `threads.h' (C11):  *Note ISO C Condition Variables::.
+
+`int cnd_timedwait (cnd_t *restrict COND, mtx_t *restrict MUTEX, const struct timespec *restrict TIME_POINT)'
+     `threads.h' (C11):  *Note ISO C Condition Variables::.
+
+`int cnd_wait (cnd_t *COND, mtx_t *MUTEX)'
+     `threads.h' (C11):  *Note ISO C Condition Variables::.
+
 `size_t confstr (int PARAMETER, char *BUF, size_t LEN)'
      `unistd.h' (POSIX.2):  *Note String Parameters::.
 
@@ -5690,6 +6935,9 @@ it.
 
 `cookie_write_function_t'
      `stdio.h' (GNU):  *Note Hook Functions::.
+
+`ssize_t copy_file_range (int INPUTFD, off64_t *INPUTPOS, int OUTPUTFD, off64_t *OUTPUTPOS, ssize_t LENGTH, unsigned int FLAGS)'
+     `unistd.h' (GNU):  *Note Copying File Data::.
 
 `double copysign (double X, double Y)'
      `math.h' (ISO):  *Note FP Bit Twiddling::.
@@ -5790,13 +7038,13 @@ it.
 `int creat64 (const char *FILENAME, mode_t MODE)'
      `fcntl.h' (Unix98):  *Note Opening and Closing Files::.
 
-`char * crypt (const char *KEY, const char *SALT)'
-     `crypt.h' (BSD):  *Note crypt::.
+`char * crypt (const char *PHRASE, const char *SALT)'
+     `unistd.h' (X/Open):  *Note Passphrase Storage::.
 
-     `crypt.h' (SVID):  *Note crypt::.
+     `crypt.h' (GNU):  *Note Passphrase Storage::.
 
-`char * crypt_r (const char *KEY, const char *SALT, struct crypt_data * DATA)'
-     `crypt.h' (GNU):  *Note crypt::.
+`char * crypt_r (const char *PHRASE, const char *SALT, struct crypt_data *DATA)'
+     `crypt.h' (GNU):  *Note Passphrase Storage::.
 
 `complex double csin (complex double Z)'
      `complex.h' (ISO):  *Note Trig Functions::.
@@ -5885,6 +7133,9 @@ it.
 `char * cuserid (char *STRING)'
      `stdio.h' (POSIX.1):  *Note Who Logged In::.
 
+`double daddl (long double X, long double Y)'
+     `math.h' (TS 18661-1:2014):  *Note Misc FP Arithmetic::.
+
 `int daylight'
      `time.h' (SVID):  *Note Time Zone Functions::.
 
@@ -5894,8 +7145,8 @@ it.
 `char * dcngettext (const char *DOMAIN, const char *MSGID1, const char *MSGID2, unsigned long int N, int CATEGORY)'
      `libintl.h' (GNU):  *Note Advanced gettext functions::.
 
-`void des_setparity (char *KEY)'
-     `rpc/des_crypt.h' (SUNRPC):  *Note DES Encryption::.
+`double ddivl (long double X, long double Y)'
+     `math.h' (TS 18661-1:2014):  *Note Misc FP Arithmetic::.
 
 `dev_t'
      `sys/types.h' (POSIX.1):  *Note Attribute Meanings::.
@@ -5921,6 +7172,9 @@ it.
 `div_t'
      `stdlib.h' (ISO):  *Note Integer Division::.
 
+`double dmull (long double X, long double Y)'
+     `math.h' (TS 18661-1:2014):  *Note Misc FP Arithmetic::.
+
 `char * dngettext (const char *DOMAIN, const char *MSGID1, const char *MSGID2, unsigned long int N)'
      `libintl.h' (GNU):  *Note Advanced gettext functions::.
 
@@ -5939,14 +7193,14 @@ it.
 `long double dreml (long double NUMERATOR, long double DENOMINATOR)'
      `math.h' (BSD):  *Note Remainder Functions::.
 
+`double dsubl (long double X, long double Y)'
+     `math.h' (TS 18661-1:2014):  *Note Misc FP Arithmetic::.
+
 `int dup (int OLD)'
      `unistd.h' (POSIX.1):  *Note Duplicating Descriptors::.
 
 `int dup2 (int OLD, int NEW)'
      `unistd.h' (POSIX.1):  *Note Duplicating Descriptors::.
-
-`int ecb_crypt (char *KEY, char *BLOCKS, unsigned int LEN, unsigned int MODE)'
-     `rpc/des_crypt.h' (SUNRPC):  *Note DES Encryption::.
 
 `char * ecvt (double VALUE, int NDIGIT, int *DECPT, int *NEG)'
      `stdlib.h' (SVID):  *Note System V Number Conversion::.
@@ -5955,14 +7209,6 @@ it.
 
 `int ecvt_r (double VALUE, int NDIGIT, int *DECPT, int *NEG, char *BUF, size_t LEN)'
      `stdlib.h' (GNU):  *Note System V Number Conversion::.
-
-`void encrypt (char *BLOCK, int EDFLAG)'
-     `crypt.h' (BSD):  *Note DES Encryption::.
-
-     `crypt.h' (SVID):  *Note DES Encryption::.
-
-`void encrypt_r (char *BLOCK, int EDFLAG, struct crypt_data * DATA)'
-     `crypt.h' (GNU):  *Note DES Encryption::.
 
 `void endfsent (void)'
      `fstab.h' (BSD):  *Note fstab::.
@@ -6169,6 +7415,54 @@ it.
 `long double expm1l (long double X)'
      `math.h' (ISO):  *Note Exponents and Logarithms::.
 
+`_FloatM fMaddfN (_FloatN X, _FloatN Y)'
+     `math.h' (TS 18661-3:2015):  *Note Misc FP Arithmetic::.
+
+`_FloatM fMaddfNx (_FloatNx X, _FloatNx Y)'
+     `math.h' (TS 18661-3:2015):  *Note Misc FP Arithmetic::.
+
+`_FloatM fMdivfN (_FloatN X, _FloatN Y)'
+     `math.h' (TS 18661-3:2015):  *Note Misc FP Arithmetic::.
+
+`_FloatM fMdivfNx (_FloatNx X, _FloatNx Y)'
+     `math.h' (TS 18661-3:2015):  *Note Misc FP Arithmetic::.
+
+`_FloatM fMmulfN (_FloatN X, _FloatN Y)'
+     `math.h' (TS 18661-3:2015):  *Note Misc FP Arithmetic::.
+
+`_FloatM fMmulfNx (_FloatNx X, _FloatNx Y)'
+     `math.h' (TS 18661-3:2015):  *Note Misc FP Arithmetic::.
+
+`_FloatM fMsubfN (_FloatN X, _FloatN Y)'
+     `math.h' (TS 18661-3:2015):  *Note Misc FP Arithmetic::.
+
+`_FloatM fMsubfNx (_FloatNx X, _FloatNx Y)'
+     `math.h' (TS 18661-3:2015):  *Note Misc FP Arithmetic::.
+
+`_FloatMx fMxaddfN (_FloatN X, _FloatN Y)'
+     `math.h' (TS 18661-3:2015):  *Note Misc FP Arithmetic::.
+
+`_FloatMx fMxaddfNx (_FloatNx X, _FloatNx Y)'
+     `math.h' (TS 18661-3:2015):  *Note Misc FP Arithmetic::.
+
+`_FloatMx fMxdivfN (_FloatN X, _FloatN Y)'
+     `math.h' (TS 18661-3:2015):  *Note Misc FP Arithmetic::.
+
+`_FloatMx fMxdivfNx (_FloatNx X, _FloatNx Y)'
+     `math.h' (TS 18661-3:2015):  *Note Misc FP Arithmetic::.
+
+`_FloatMx fMxmulfN (_FloatN X, _FloatN Y)'
+     `math.h' (TS 18661-3:2015):  *Note Misc FP Arithmetic::.
+
+`_FloatMx fMxmulfNx (_FloatNx X, _FloatNx Y)'
+     `math.h' (TS 18661-3:2015):  *Note Misc FP Arithmetic::.
+
+`_FloatMx fMxsubfN (_FloatN X, _FloatN Y)'
+     `math.h' (TS 18661-3:2015):  *Note Misc FP Arithmetic::.
+
+`_FloatMx fMxsubfNx (_FloatNx X, _FloatNx Y)'
+     `math.h' (TS 18661-3:2015):  *Note Misc FP Arithmetic::.
+
 `double fabs (double NUMBER)'
      `math.h' (ISO):  *Note Absolute Value::.
 
@@ -6183,6 +7477,12 @@ it.
 
 `long double fabsl (long double NUMBER)'
      `math.h' (ISO):  *Note Absolute Value::.
+
+`float fadd (double X, double Y)'
+     `math.h' (TS 18661-1:2014):  *Note Misc FP Arithmetic::.
+
+`float faddl (long double X, long double Y)'
+     `math.h' (TS 18661-1:2014):  *Note Misc FP Arithmetic::.
 
 `int fchdir (int FILEDES)'
      `unistd.h' (XPG):  *Note Working Directory::.
@@ -6232,6 +7532,12 @@ it.
 
 `long double fdiml (long double X, long double Y)'
      `math.h' (ISO):  *Note Misc FP Arithmetic::.
+
+`float fdiv (double X, double Y)'
+     `math.h' (TS 18661-1:2014):  *Note Misc FP Arithmetic::.
+
+`float fdivl (long double X, long double Y)'
+     `math.h' (TS 18661-1:2014):  *Note Misc FP Arithmetic::.
 
 `FILE * fdopen (int FILEDES, const char *OPENTYPE)'
      `stdio.h' (POSIX.1):  *Note Descriptors and Streams::.
@@ -6485,6 +7791,12 @@ it.
 `int fmtmsg (long int CLASSIFICATION, const char *LABEL, int SEVERITY, const char *TEXT, const char *ACTION, const char *TAG)'
      `fmtmsg.h' (XPG):  *Note Printing Formatted Messages::.
 
+`float fmul (double X, double Y)'
+     `math.h' (TS 18661-1:2014):  *Note Misc FP Arithmetic::.
+
+`float fmull (long double X, long double Y)'
+     `math.h' (TS 18661-1:2014):  *Note Misc FP Arithmetic::.
+
 `int fnmatch (const char *PATTERN, const char *STRING, int FLAGS)'
      `fnmatch.h' (POSIX.2):  *Note Wildcard Matching::.
 
@@ -6630,6 +7942,12 @@ it.
 
 `int fstat64 (int FILEDES, struct stat64 *BUF)'
      `sys/stat.h' (Unix98):  *Note Reading Attributes::.
+
+`float fsub (double X, double Y)'
+     `math.h' (TS 18661-1:2014):  *Note Misc FP Arithmetic::.
+
+`float fsubl (long double X, long double Y)'
+     `math.h' (TS 18661-1:2014):  *Note Misc FP Arithmetic::.
 
 `int fsync (int FILDES)'
      `unistd.h' (POSIX):  *Note Synchronizing I/O::.
@@ -7524,6 +8842,9 @@ it.
 `int link (const char *OLDNAME, const char *NEWNAME)'
      `unistd.h' (POSIX.1):  *Note Hard Links::.
 
+`int linkat (int oldfd, const char *OLDNAME, int newfd, const char *NEWNAME, int flags)'
+     `unistd.h' (POSIX.1):  *Note Hard Links::.
+
 `int lio_listio (int MODE, struct aiocb *const LIST[], int NENT, struct sigevent *SIG)'
      `aio.h' (POSIX.1b):  *Note Asynchronous Reads/Writes::.
 
@@ -7802,8 +9123,11 @@ it.
 `void * memcpy (void *restrict TO, const void *restrict FROM, size_t SIZE)'
      `string.h' (ISO):  *Note Copying Strings and Arrays::.
 
+`int memfd_create (const char *NAME, unsigned int FLAGS)'
+     `sys/mman.h' (Linux):  *Note Memory-mapped I/O::.
+
 `void * memfrob (void *MEM, size_t LENGTH)'
-     `string.h' (GNU):  *Note Trivial Encryption::.
+     `string.h' (GNU):  *Note Obfuscating Data::.
 
 `void * memmem (const void *HAYSTACK, size_t HAYSTACK-LEN,
      const void *NEEDLE, size_t NEEDLE-LEN)'
@@ -7845,6 +9169,9 @@ it.
 `int mlock (const void *ADDR, size_t LEN)'
      `sys/mman.h' (POSIX.1b):  *Note Page Lock Functions::.
 
+`int mlock2 (const void *ADDR, size_t LEN, unsigned int FLAGS)'
+     `sys/mman.h' (Linux):  *Note Page Lock Functions::.
+
 `int mlockall (int FLAGS)'
      `sys/mman.h' (POSIX.1b):  *Note Page Lock Functions::.
 
@@ -7880,6 +9207,9 @@ it.
 
      `sys/mount.h' (BSD):  *Note Mount-Unmount-Remount::.
 
+`int mprotect (void *ADDRESS, size_t LENGTH, int PROTECTION)'
+     `sys/mman.h' (POSIX):  *Note Memory Protection::.
+
 `long int mrand48 (void)'
      `stdlib.h' (SVID):  *Note SVID Random::.
 
@@ -7894,6 +9224,36 @@ it.
 
 `void mtrace (void)'
      `mcheck.h' (GNU):  *Note Tracing malloc::.
+
+`void mtx_destroy (mtx_t *MUTEX)'
+     `threads.h' (C11):  *Note ISO C Mutexes::.
+
+`int mtx_init (mtx_t *MUTEX, int TYPE)'
+     `threads.h' (C11):  *Note ISO C Mutexes::.
+
+`int mtx_lock (mtx_t *MUTEX)'
+     `threads.h' (C11):  *Note ISO C Mutexes::.
+
+`mtx_plain'
+     `threads.h' (C11):  *Note ISO C Mutexes::.
+
+`mtx_recursive'
+     `threads.h' (C11):  *Note ISO C Mutexes::.
+
+`mtx_t'
+     `threads.h' (C11):  *Note ISO C Mutexes::.
+
+`mtx_timed'
+     `threads.h' (C11):  *Note ISO C Mutexes::.
+
+`int mtx_timedlock (mtx_t *restrict MUTEX, const struct timespec *restrict TIME_POINT)'
+     `threads.h' (C11):  *Note ISO C Mutexes::.
+
+`int mtx_trylock (mtx_t *MUTEX)'
+     `threads.h' (C11):  *Note ISO C Mutexes::.
+
+`int mtx_unlock (mtx_t *MUTEX)'
+     `threads.h' (C11):  *Note ISO C Mutexes::.
 
 `int munlock (const void *ADDR, size_t LEN)'
      `sys/mman.h' (POSIX.1b):  *Note Page Lock Functions::.
@@ -8125,6 +9485,9 @@ it.
 `int on_exit (void (*FUNCTION)(int STATUS, void *ARG), void *ARG)'
      `stdlib.h' (SunOS):  *Note Cleanups on Exit::.
 
+`once_flag'
+     `threads.h' (C11):  *Note Call Once::.
+
 `int open (const char *FILENAME, int FLAGS[, mode_t MODE])'
      `fcntl.h' (POSIX.1):  *Note Opening and Closing Files::.
 
@@ -8186,6 +9549,21 @@ it.
 `int pipe (int FILEDES[2])'
      `unistd.h' (POSIX.1):  *Note Creating a Pipe::.
 
+`int pkey_alloc (unsigned int FLAGS, unsigned int RESTRICTIONS)'
+     `sys/mman.h' (Linux):  *Note Memory Protection::.
+
+`int pkey_free (int KEY)'
+     `sys/mman.h' (Linux):  *Note Memory Protection::.
+
+`int pkey_get (int KEY)'
+     `sys/mman.h' (Linux):  *Note Memory Protection::.
+
+`int pkey_mprotect (void *ADDRESS, size_t LENGTH, int PROTECTION, int KEY)'
+     `sys/mman.h' (Linux):  *Note Memory Protection::.
+
+`int pkey_set (int KEY, unsigned int RIGHTS)'
+     `sys/mman.h' (Linux):  *Note Memory Protection::.
+
 `FILE * popen (const char *COMMAND, const char *MODE)'
      `stdio.h' (POSIX.2):  *Note Pipe to a Subprocess::.
 
@@ -8198,15 +9576,6 @@ it.
 
 `double pow (double BASE, double POWER)'
      `math.h' (ISO):  *Note Exponents and Logarithms::.
-
-`double pow10 (double X)'
-     `math.h' (GNU):  *Note Exponents and Logarithms::.
-
-`float pow10f (float X)'
-     `math.h' (GNU):  *Note Exponents and Logarithms::.
-
-`long double pow10l (long double X)'
-     `math.h' (GNU):  *Note Exponents and Logarithms::.
 
 `float powf (float BASE, float POWER)'
      `math.h' (ISO):  *Note Exponents and Logarithms::.
@@ -8227,16 +9596,16 @@ it.
      `unistd.h' (Unix98):  *Note I/O Primitives::.
 
 `ssize_t preadv (int FD, const struct iovec *IOV, int IOVCNT, off_t OFFSET)'
-     `sys/uio.h' (BSD):  *Note I/O Primitives::.
+     `sys/uio.h' (BSD):  *Note Scatter-Gather::.
 
 `ssize_t preadv2 (int FD, const struct iovec *IOV, int IOVCNT, off_t OFFSET, int FLAGS)'
-     `sys/uio.h' (GNU):  *Note I/O Primitives::.
+     `sys/uio.h' (GNU):  *Note Scatter-Gather::.
 
 `ssize_t preadv64 (int FD, const struct iovec *IOV, int IOVCNT, off64_t OFFSET)'
-     `unistd.h' (BSD):  *Note I/O Primitives::.
+     `unistd.h' (BSD):  *Note Scatter-Gather::.
 
 `ssize_t preadv64v2 (int FD, const struct iovec *IOV, int IOVCNT, off64_t OFFSET, int FLAGS)'
-     `unistd.h' (GNU):  *Note I/O Primitives::.
+     `unistd.h' (GNU):  *Note Scatter-Gather::.
 
 `int printf (const char *TEMPLATE, ...)'
      `stdio.h' (ISO):  *Note Formatted Output Functions::.
@@ -8346,16 +9715,16 @@ it.
      `unistd.h' (Unix98):  *Note I/O Primitives::.
 
 `ssize_t pwritev (int FD, const struct iovec *IOV, int IOVCNT, off_t OFFSET)'
-     `sys/uio.h' (BSD):  *Note I/O Primitives::.
+     `sys/uio.h' (BSD):  *Note Scatter-Gather::.
 
 `ssize_t pwritev2 (int FD, const struct iovec *IOV, int IOVCNT, off_t OFFSET, int FLAGS)'
-     `sys/uio.h' (GNU):  *Note I/O Primitives::.
+     `sys/uio.h' (GNU):  *Note Scatter-Gather::.
 
 `ssize_t pwritev64 (int FD, const struct iovec *IOV, int IOVCNT, off64_t OFFSET)'
-     `unistd.h' (BSD):  *Note I/O Primitives::.
+     `unistd.h' (BSD):  *Note Scatter-Gather::.
 
 `ssize_t pwritev64v2 (int FD, const struct iovec *IOV, int IOVCNT, off64_t OFFSET, int FLAGS)'
-     `unistd.h' (GNU):  *Note I/O Primitives::.
+     `unistd.h' (GNU):  *Note Scatter-Gather::.
 
 `char * qecvt (long double VALUE, int NDIGIT, int *DECPT, int *NEG)'
      `stdlib.h' (GNU):  *Note System V Number Conversion::.
@@ -8709,14 +10078,6 @@ it.
 
 `int setjmp (jmp_buf STATE)'
      `setjmp.h' (ISO):  *Note Non-Local Details::.
-
-`void setkey (const char *KEY)'
-     `crypt.h' (BSD):  *Note DES Encryption::.
-
-     `crypt.h' (SVID):  *Note DES Encryption::.
-
-`void setkey_r (const char *KEY, struct crypt_data * DATA)'
-     `crypt.h' (GNU):  *Note DES Encryption::.
 
 `void setlinebuf (FILE *STREAM)'
      `stdio.h' (BSD):  *Note Controlling Buffering::.
@@ -9128,7 +10489,7 @@ it.
      `stdlib.h' (ISO/IEC TS 18661-1):  *Note Printing of Floats::.
 
 `char * strfry (char *STRING)'
-     `string.h' (GNU):  *Note strfry::.
+     `string.h' (GNU):  *Note Shuffling Bytes::.
 
 `size_t strftime (char *S, size_t SIZE, const char *TEMPLATE, const struct tm *BROKENTIME)'
      `time.h' (ISO):  *Note Formatting Calendar Time::.
@@ -9211,7 +10572,7 @@ it.
 `long long int strtoq (const char *restrict STRING, char **restrict TAILPTR, int BASE)'
      `stdlib.h' (BSD):  *Note Parsing of Integers::.
 
-`unsigned long int strtoul (const char *retrict STRING, char **restrict TAILPTR, int BASE)'
+`unsigned long int strtoul (const char *restrict STRING, char **restrict TAILPTR, int BASE)'
      `stdlib.h' (ISO):  *Note Parsing of Integers::.
 
 `unsigned long long int strtoull (const char *restrict STRING, char **restrict TAILPTR, int BASE)'
@@ -9367,6 +10728,54 @@ it.
 
      `math.h' (ISO):  *Note Special Functions::.
 
+`thrd_busy'
+     `threads.h' (C11):  *Note ISO C Threads Return Values::.
+
+`int thrd_create (thrd_t *THR, thrd_start_t FUNC, void *ARG)'
+     `threads.h' (C11):  *Note ISO C Thread Management::.
+
+`thrd_t thrd_current (void)'
+     `threads.h' (C11):  *Note ISO C Thread Management::.
+
+`int thrd_detach (thrd_t THR)'
+     `threads.h' (C11):  *Note ISO C Thread Management::.
+
+`int thrd_equal (thrd_t LHS, thrd_t RHS)'
+     `threads.h' (C11):  *Note ISO C Thread Management::.
+
+`thrd_error'
+     `threads.h' (C11):  *Note ISO C Threads Return Values::.
+
+`_Noreturn void thrd_exit (int RES)'
+     `threads.h' (C11):  *Note ISO C Thread Management::.
+
+`int thrd_join (thrd_t THR, int *RES)'
+     `threads.h' (C11):  *Note ISO C Thread Management::.
+
+`thrd_nomem'
+     `threads.h' (C11):  *Note ISO C Threads Return Values::.
+
+`int thrd_sleep (const struct timespec *TIME_POINT, struct timespec *REMAINING)'
+     `threads.h' (C11):  *Note ISO C Thread Management::.
+
+`thrd_start_t'
+     `threads.h' (C11):  *Note ISO C Thread Management::.
+
+`thrd_success'
+     `threads.h' (C11):  *Note ISO C Threads Return Values::.
+
+`thrd_t'
+     `threads.h' (C11):  *Note ISO C Thread Management::.
+
+`thrd_timedout'
+     `threads.h' (C11):  *Note ISO C Threads Return Values::.
+
+`void thrd_yield (void)'
+     `threads.h' (C11):  *Note ISO C Thread Management::.
+
+`thread_local'
+     `threads.h' (C11):  *Note ISO C Thread-local Storage::.
+
 `time_t time (time_t *RESULT)'
      `time.h' (ISO):  *Note Simple Calendar Time::.
 
@@ -9486,6 +10895,24 @@ it.
 `void * tsearch (const void *KEY, void **ROOTP, comparison_fn_t COMPAR)'
      `search.h' (SVID):  *Note Tree Search Function::.
 
+`int tss_create (tss_t *TSS_KEY, tss_dtor_t DESTRUCTOR)'
+     `threads.h' (C11):  *Note ISO C Thread-local Storage::.
+
+`void tss_delete (tss_t TSS_KEY)'
+     `threads.h' (C11):  *Note ISO C Thread-local Storage::.
+
+`tss_dtor_t'
+     `threads.h' (C11):  *Note ISO C Thread-local Storage::.
+
+`void * tss_get (tss_t TSS_KEY)'
+     `threads.h' (C11):  *Note ISO C Thread-local Storage::.
+
+`int tss_set (tss_t TSS_KEY, void *VAL)'
+     `threads.h' (C11):  *Note ISO C Thread-local Storage::.
+
+`tss_t'
+     `threads.h' (C11):  *Note ISO C Thread-local Storage::.
+
 `char * ttyname (int FILEDES)'
      `unistd.h' (POSIX.1):  *Note Is It a Terminal::.
 
@@ -9596,7 +11023,7 @@ it.
      `stdarg.h' (ISO):  *Note Argument Macros::.
 
 `void va_copy (va_list DEST, va_list SRC)'
-     `stdarg.h' (ISO):  *Note Argument Macros::.
+     `stdarg.h' (C99):  *Note Argument Macros::.
 
 `void va_end (va_list AP)'
      `stdarg.h' (ISO):  *Note Argument Macros::.
@@ -9944,14 +11371,9 @@ Appendix C Installing the GNU C Library
 ***************************************
 
 Before you do anything else, you should read the FAQ at
-`http://sourceware.org/glibc/wiki/FAQ'.  It answers common questions
+`https://sourceware.org/glibc/wiki/FAQ'.  It answers common questions
 and describes problems you may experience with compilation and
 installation.
-
-   Features can be added to the GNU C Library via "add-on" bundles.
-These are separate tar files, which you unpack into the top level of
-the source tree.  Then you give `configure' the `--enable-add-ons'
-option to activate them, and they will be compiled into the library.
 
    You will need recent versions of several GNU tools: definitely GCC
 and GNU Make, and possibly others.  *Note Tools for Compilation::,
@@ -9965,1218 +11387,4 @@ below.
 * Tools for Compilation::       You'll need these first.
 * Linux::                       Specific advice for GNU/Linux systems.
 * Reporting Bugs::              So they'll get fixed.
-
-
-File: libc.info,  Node: Configuring and compiling,  Next: Running make install,  Up: Installation
-
-C.1 Configuring and compiling the GNU C Library
-===============================================
-
-The GNU C Library cannot be compiled in the source directory.  You must
-build it in a separate build directory.  For example, if you have
-unpacked the GNU C Library sources in `/src/gnu/glibc-VERSION', create
-a directory `/src/gnu/glibc-build' to put the object files in.  This
-allows removing the whole build directory in case an error occurs,
-which is the safest way to get a fresh start and should always be done.
-
-   From your object directory, run the shell script `configure' located
-at the top level of the source tree.  In the scenario above, you'd type
-
-     $ ../glibc-VERSION/configure ARGS...
-
-   Please note that even though you're building in a separate build
-directory, the compilation may need to create or modify files and
-directories in the source directory.
-
-`configure' takes many options, but the only one that is usually
-mandatory is `--prefix'.  This option tells `configure' where you want
-the GNU C Library installed.  This defaults to `/usr/local', but the
-normal setting to install as the standard system library is
-`--prefix=/usr' for GNU/Linux systems and `--prefix=' (an empty prefix)
-for GNU/Hurd systems.
-
-   It may also be useful to set the CC and CFLAGS variables in the
-environment when running `configure'.  CC selects the C compiler that
-will be used, and CFLAGS sets optimization options for the compiler.
-
-   The following list describes all of the available options for
-`configure':
-
-`--prefix=DIRECTORY'
-     Install machine-independent data files in subdirectories of
-     `DIRECTORY'.  The default is to install in `/usr/local'.
-
-`--exec-prefix=DIRECTORY'
-     Install the library and other machine-dependent files in
-     subdirectories of `DIRECTORY'.  The default is to the `--prefix'
-     directory if that option is specified, or `/usr/local' otherwise.
-
-`--with-headers=DIRECTORY'
-     Look for kernel header files in DIRECTORY, not `/usr/include'.
-     The GNU C Library needs information from the kernel's header files
-     describing the interface to the kernel.  The GNU C Library will
-     normally look in `/usr/include' for them, but if you specify this
-     option, it will look in DIRECTORY instead.
-
-     This option is primarily of use on a system where the headers in
-     `/usr/include' come from an older version of the GNU C Library.
-     Conflicts can occasionally happen in this case.  You can also use
-     this option if you want to compile the GNU C Library with a newer
-     set of kernel headers than the ones found in `/usr/include'.
-
-`--enable-add-ons[=LIST]'
-     Specify add-on packages to include in the build.  If this option is
-     specified with no list, it enables all the add-on packages it
-     finds in the main source directory; this is the default behavior.
-     You may specify an explicit list of add-ons to use in LIST,
-     separated by spaces or commas (if you use spaces, remember to
-     quote them from the shell).  Each add-on in LIST can be an
-     absolute directory name or can be a directory name relative to the
-     main source directory, or relative to the build directory (that
-     is, the current working directory).  For example,
-     `--enable-add-ons=nptl,../glibc-libidn-VERSION'.
-
-`--enable-kernel=VERSION'
-     This option is currently only useful on GNU/Linux systems.  The
-     VERSION parameter should have the form X.Y.Z and describes the
-     smallest version of the Linux kernel the generated library is
-     expected to support.  The higher the VERSION number is, the less
-     compatibility code is added, and the faster the code gets.
-
-`--with-binutils=DIRECTORY'
-     Use the binutils (assembler and linker) in `DIRECTORY', not the
-     ones the C compiler would default to.  You can use this option if
-     the default binutils on your system cannot deal with all the
-     constructs in the GNU C Library.  In that case, `configure' will
-     detect the problem and suppress these constructs, so that the
-     library will still be usable, but functionality may be lost--for
-     example, you can't build a shared libc with old binutils.
-
-`--without-fp'
-     Use this option if your computer lacks hardware floating-point
-     support and your operating system does not emulate an FPU.
-
-`--disable-shared'
-     Don't build shared libraries even if it is possible.  Not all
-     systems support shared libraries; you need ELF support and
-     (currently) the GNU linker.
-
-`--disable-profile'
-     Don't build libraries with profiling information.  You may want to
-     use this option if you don't plan to do profiling.
-
-`--enable-static-nss'
-     Compile static versions of the NSS (Name Service Switch) libraries.
-     This is not recommended because it defeats the purpose of NSS; a
-     program linked statically with the NSS libraries cannot be
-     dynamically reconfigured to use a different name database.
-
-`--enable-hardcoded-path-in-tests'
-     By default, dynamic tests are linked to run with the installed C
-     library.  This option hardcodes the newly built C library path in
-     dynamic tests so that they can be invoked directly.
-
-`--disable-timezone-tools'
-     By default, timezone related utilities (`zic', `zdump', and
-     `tzselect') are installed with the GNU C Library.  If you are
-     building these independently (e.g. by using the `tzcode' package),
-     then this option will allow disabling the install of these.
-
-     Note that you need to make sure the external tools are kept in
-     sync with the versions that the GNU C Library expects as the data
-     formats may change over time.  Consult the `timezone' subdirectory
-     for more details.
-
-`--enable-lock-elision=yes'
-     Enable lock elision for pthread mutexes by default.
-
-`--enable-stack-protector'
-`--enable-stack-protector=strong'
-`--enable-stack-protector=all'
-     Compile the C library and all other parts of the glibc package
-     (including the threading and math libraries, NSS modules, and
-     transliteration modules) using the GCC `-fstack-protector',
-     `-fstack-protector-strong' or `-fstack-protector-all' options to
-     detect stack overruns.  Only the dynamic linker and a small number
-     of routines called directly from assembler are excluded from this
-     protection.
-
-`--enable-bind-now'
-     Disable lazy binding for installed shared objects.  This provides
-     additional security hardening because it enables full RELRO and a
-     read-only global offset table (GOT), at the cost of slightly
-     increased program load times.
-
-`--enable-pt_chown'
-     The file `pt_chown' is a helper binary for `grantpt' (*note
-     Pseudo-Terminals: Allocation.) that is installed setuid root to
-     fix up pseudo-terminal ownership.  It is not built by default
-     because systems using the Linux kernel are commonly built with the
-     `devpts' filesystem enabled and mounted at `/dev/pts', which
-     manages pseudo-terminal ownership automatically.  By using
-     `--enable-pt_chown', you may build `pt_chown' and install it
-     setuid and owned by `root'.  The use of `pt_chown' introduces
-     additional security risks to the system and you should enable it
-     only if you understand and accept those risks.
-
-`--disable-werror'
-     By default, the GNU C Library is built with `-Werror'.  If you wish
-     to build without this option (for example, if building with a newer
-     version of GCC than this version of the GNU C Library was tested
-     with, so new warnings cause the build with `-Werror' to fail), you
-     can configure with `--disable-werror'.
-
-`--disable-mathvec'
-     By default for x86_64, the GNU C Library is built with the vector
-     math library.  Use this option to disable the vector math library.
-
-`--enable-tunables'
-     Tunables support allows additional library parameters to be
-     customized at runtime.  This feature is enabled by default.  This
-     option can take the following values:
-
-    `yes'
-          This is the default if no option is passed to configure. This
-          enables tunables and selects the default frontend (currently
-          `valstring').
-
-    `no'
-          This option disables tunables.
-
-    `valstring'
-          This enables tunables and selects the `valstring' frontend
-          for tunables.  This frontend allows users to specify tunables
-          as a colon-separated list in a single environment variable
-          `GLIBC_TUNABLES'.
-
-`--enable-obsolete-nsl'
-     By default, libnsl is only built as shared library for backward
-     compatibility and the NSS modules libnss_compat, libnss_nis and
-     libnss_nisplus are not built at all.  Use this option to enable
-     libnsl with all depending NSS modules and header files.
-
-`--disable-experimental-malloc'
-     By default, a per-thread cache is enabled in `malloc'.  While this
-     cache can be disabled on a per-application basis using tunables
-     (set glibc.malloc.tcache_count to zero), this option can be used to
-     remove it from the build completely.
-
-`--build=BUILD-SYSTEM'
-`--host=HOST-SYSTEM'
-     These options are for cross-compiling.  If you specify both
-     options and BUILD-SYSTEM is different from HOST-SYSTEM, `configure'
-     will prepare to cross-compile the GNU C Library from BUILD-SYSTEM
-     to be used on HOST-SYSTEM.  You'll probably need the
-     `--with-headers' option too, and you may have to override
-     CONFIGURE's selection of the compiler and/or binutils.
-
-     If you only specify `--host', `configure' will prepare for a
-     native compile but use what you specify instead of guessing what
-     your system is.  This is most useful to change the CPU submodel.
-     For example, if `configure' guesses your machine as
-     `i686-pc-linux-gnu' but you want to compile a library for 586es,
-     give `--host=i586-pc-linux-gnu' or just `--host=i586-linux' and add
-     the appropriate compiler flags (`-mcpu=i586' will do the trick) to
-     CFLAGS.
-
-     If you specify just `--build', `configure' will get confused.
-
-`--with-pkgversion=VERSION'
-     Specify a description, possibly including a build number or build
-     date, of the binaries being built, to be included in `--version'
-     output from programs installed with the GNU C Library.  For
-     example, `--with-pkgversion='FooBar GNU/Linux glibc build 123''.
-     The default value is `GNU libc'.
-
-`--with-bugurl=URL'
-     Specify the URL that users should visit if they wish to report a
-     bug, to be included in `--help' output from programs installed with
-     the GNU C Library.  The default value refers to the main
-     bug-reporting information for the GNU C Library.
-
-   To build the library and related programs, type `make'.  This will
-produce a lot of output, some of which may look like errors from `make'
-but aren't.  Look for error messages from `make' containing `***'.
-Those indicate that something is seriously wrong.
-
-   The compilation process can take a long time, depending on the
-configuration and the speed of your machine.  Some complex modules may
-take a very long time to compile, as much as several minutes on slower
-machines.  Do not panic if the compiler appears to hang.
-
-   If you want to run a parallel make, simply pass the `-j' option with
-an appropriate numeric parameter to `make'.  You need a recent GNU
-`make' version, though.
-
-   To build and run test programs which exercise some of the library
-facilities, type `make check'.  If it does not complete successfully,
-do not use the built library, and report a bug after verifying that the
-problem is not already known.  *Note Reporting Bugs::, for instructions
-on reporting bugs.  Note that some of the tests assume they are not
-being run by `root'.  We recommend you compile and test the GNU C
-Library as an unprivileged user.
-
-   Before reporting bugs make sure there is no problem with your system.
-The tests (and later installation) use some pre-existing files of the
-system such as `/etc/passwd', `/etc/nsswitch.conf' and others.  These
-files must all contain correct and sensible content.
-
-   Normally, `make check' will run all the tests before reporting all
-problems found and exiting with error status if any problems occurred.
-You can specify `stop-on-test-failure=y' when running `make check' to
-make the test run stop and exit with an error status immediately when a
-failure occurs.
-
-   The GNU C Library pretty printers come with their own set of scripts
-for testing, which run together with the rest of the testsuite through
-`make check'.  These scripts require the following tools to run
-successfully:
-
-   * Python 2.7.6/3.4.3 or later
-
-     Python is required for running the printers' test scripts.
-
-   * PExpect 4.0
-
-     The printer tests drive GDB through test programs and compare its
-     output to the printers'.  PExpect is used to capture the output of
-     GDB, and should be compatible with the Python version in your
-     system.
-
-   * GDB 7.8 or later with support for Python 2.7.6/3.4.3 or later
-
-     GDB itself needs to be configured with Python support in order to
-     use the pretty printers.  Notice that your system having Python
-     available doesn't imply that GDB supports it, nor that your
-     system's Python and GDB's have the same version.
-
-If these tools are absent, the printer tests will report themselves as
-`UNSUPPORTED'.  Notice that some of the printer tests require the GNU C
-Library to be compiled with debugging symbols.
-
-   To format the `GNU C Library Reference Manual' for printing, type
-`make dvi'.  You need a working TeX installation to do this.  The
-distribution builds the on-line formatted version of the manual, as
-Info files, as part of the build process.  You can build them manually
-with `make info'.
-
-   The library has a number of special-purpose configuration parameters
-which you can find in `Makeconfig'.  These can be overwritten with the
-file `configparms'.  To change them, create a `configparms' in your
-build directory and add values as appropriate for your system.  The
-file is included and parsed by `make' and has to follow the conventions
-for makefiles.
-
-   It is easy to configure the GNU C Library for cross-compilation by
-setting a few variables in `configparms'.  Set `CC' to the
-cross-compiler for the target you configured the library for; it is
-important to use this same `CC' value when running `configure', like
-this: `CC=TARGET-gcc configure TARGET'.  Set `BUILD_CC' to the compiler
-to use for programs run on the build system as part of compiling the
-library.  You may need to set `AR' to cross-compiling versions of `ar'
-if the native tools are not configured to work with object files for
-the target you configured for.  When cross-compiling the GNU C Library,
-it may be tested using `make check
-test-wrapper="SRCDIR/scripts/cross-test-ssh.sh HOSTNAME"', where SRCDIR
-is the absolute directory name for the main source directory and
-HOSTNAME is the host name of a system that can run the newly built
-binaries of the GNU C Library.  The source and build directories must
-be visible at the same locations on both the build system and HOSTNAME.
-
-   In general, when testing the GNU C Library, `test-wrapper' may be set
-to the name and arguments of any program to run newly built binaries.
-This program must preserve the arguments to the binary being run, its
-working directory and the standard input, output and error file
-descriptors.  If `TEST-WRAPPER env' will not work to run a program with
-environment variables set, then `test-wrapper-env' must be set to a
-program that runs a newly built program with environment variable
-assignments in effect, those assignments being specified as `VAR=VALUE'
-before the name of the program to be run.  If multiple assignments to
-the same variable are specified, the last assignment specified must
-take precedence.  Similarly, if `TEST-WRAPPER env -i' will not work to
-run a program with an environment completely empty of variables except
-those directly assigned, then `test-wrapper-env-only' must be set; its
-use has the same syntax as `test-wrapper-env', the only difference in
-its semantics being starting with an empty set of environment variables
-rather than the ambient set.
-
-
-File: libc.info,  Node: Running make install,  Next: Tools for Compilation,  Prev: Configuring and compiling,  Up: Installation
-
-C.2 Installing the C Library
-============================
-
-To install the library and its header files, and the Info files of the
-manual, type `make install'.  This will build things, if necessary,
-before installing them; however, you should still compile everything
-first.  If you are installing the GNU C Library as your primary C
-library, we recommend that you shut the system down to single-user mode
-first, and reboot afterward.  This minimizes the risk of breaking
-things when the library changes out from underneath.
-
-   `make install' will do the entire job of upgrading from a previous
-installation of the GNU C Library version 2.x.  There may sometimes be
-headers left behind from the previous installation, but those are
-generally harmless.  If you want to avoid leaving headers behind you
-can do things in the following order.
-
-   You must first build the library (`make'), optionally check it
-(`make check'), switch the include directories and then install (`make
-install').  The steps must be done in this order.  Not moving the
-directory before install will result in an unusable mixture of header
-files from both libraries, but configuring, building, and checking the
-library requires the ability to compile and run programs against the old
-library.  The new `/usr/include', after switching the include
-directories and before installing the library should contain the Linux
-headers, but nothing else.  If you do this, you will need to restore
-any headers from libraries other than the GNU C Library yourself after
-installing the library.
-
-   You can install the GNU C Library somewhere other than where you
-configured it to go by setting the `DESTDIR' GNU standard make variable
-on the command line for `make install'.  The value of this variable is
-prepended to all the paths for installation.  This is useful when
-setting up a chroot environment or preparing a binary distribution.
-The directory should be specified with an absolute file name. Installing
-with the `prefix' and `exec_prefix' GNU standard make variables set is
-not supported.
-
-   The GNU C Library includes a daemon called `nscd', which you may or
-may not want to run.  `nscd' caches name service lookups; it can
-dramatically improve performance with NIS+, and may help with DNS as
-well.
-
-   One auxiliary program, `/usr/libexec/pt_chown', is installed setuid
-`root' if the `--enable-pt_chown' configuration option is used.  This
-program is invoked by the `grantpt' function; it sets the permissions
-on a pseudoterminal so it can be used by the calling process.  If you
-are using a Linux kernel with the `devpts' filesystem enabled and
-mounted at `/dev/pts', you don't need this program.
-
-   After installation you might want to configure the timezone and
-locale installation of your system.  The GNU C Library comes with a
-locale database which gets configured with `localedef'.  For example, to
-set up a German locale with name `de_DE', simply issue the command
-`localedef -i de_DE -f ISO-8859-1 de_DE'.  To configure all locales
-that are supported by the GNU C Library, you can issue from your build
-directory the command `make localedata/install-locales'.
-
-   To configure the locally used timezone, set the `TZ' environment
-variable.  The script `tzselect' helps you to select the right value.
-As an example, for Germany, `tzselect' would tell you to use
-`TZ='Europe/Berlin''.  For a system wide installation (the given paths
-are for an installation with `--prefix=/usr'), link the timezone file
-which is in `/usr/share/zoneinfo' to the file `/etc/localtime'.  For
-Germany, you might execute `ln -s /usr/share/zoneinfo/Europe/Berlin
-/etc/localtime'.
-
-
-File: libc.info,  Node: Tools for Compilation,  Next: Linux,  Prev: Running make install,  Up: Installation
-
-C.3 Recommended Tools for Compilation
-=====================================
-
-We recommend installing the following GNU tools before attempting to
-build the GNU C Library:
-
-   * GNU `make' 3.79 or newer
-
-     You need the latest version of GNU `make'.  Modifying the GNU C
-     Library to work with other `make' programs would be so difficult
-     that we recommend you port GNU `make' instead.  *Really.*  We
-     recommend GNU `make' version 3.79.  All earlier versions have
-     severe bugs or lack features.
-
-   * GCC 4.9 or newer
-
-     GCC 4.9 or higher is required.  In general it is recommended to use
-     the newest version of the compiler that is known to work for
-     building the GNU C Library, as newer compilers usually produce
-     better code.  As of release time, GCC 7.1 is the newest compiler
-     verified to work to build the GNU C Library.
-
-     For PowerPC 64-bits little-endian (powerpc64le), GCC 6.2 or higher
-     is required.  This compiler version is the first to provide the
-     features required for building the GNU C Library with support for
-     `_Float128'.
-
-     For multi-arch support it is recommended to use a GCC which has
-     been built with support for GNU indirect functions.  This ensures
-     that correct debugging information is generated for functions
-     selected by IFUNC resolvers.  This support can either be enabled
-     by configuring GCC with `--enable-gnu-indirect-function', or by
-     enabling it by default by setting `default_gnu_indirect_function'
-     variable for a particular architecture in the GCC source file
-     `gcc/config.gcc'.
-
-     You can use whatever compiler you like to compile programs that use
-     the GNU C Library.
-
-     Check the FAQ for any special compiler issues on particular
-     platforms.
-
-   * GNU `binutils' 2.25 or later
-
-     You must use GNU `binutils' (as and ld) to build the GNU C Library.
-     No other assembler or linker has the necessary functionality at the
-     moment. As of release time, GNU `binutils' 2.27 is the newest
-     verified to work to build the GNU C Library.
-
-   * GNU `texinfo' 4.7 or later
-
-     To correctly translate and install the Texinfo documentation you
-     need this version of the `texinfo' package.  Earlier versions do
-     not understand all the tags used in the document, and the
-     installation mechanism for the info files is not present or works
-     differently.  As of release time, `texinfo' 6.0 is the newest
-     verified to work to build the GNU C Library.
-
-   * GNU `awk' 3.1.2, or higher
-
-     `awk' is used in several places to generate files.  Some `gawk'
-     extensions are used, including the `asorti' function, which was
-     introduced in version 3.1.2 of `gawk'.  As of release time, `gawk'
-     version 4.1.3 is the newest verified to work to build the GNU C
-     Library.
-
-   * Perl 5
-
-     Perl is not required, but it is used if present to test the
-     installation.  We may decide to use it elsewhere in the future.
-
-   * GNU `sed' 3.02 or newer
-
-     `Sed' is used in several places to generate files.  Most scripts
-     work with any version of `sed'.  As of release time, `sed' version
-     4.2.2 is the newest verified to work to build the GNU C Library.
-
-
-If you change any of the `configure.ac' files you will also need
-
-   * GNU `autoconf' 2.69 (exactly)
-
-and if you change any of the message translation files you will need
-
-   * GNU `gettext' 0.10.36 or later
-
-If you wish to regenerate the `yacc' parser code in the `intl'
-subdirectory you will need
-
-   * GNU `bison' 2.7 or later
-
-You may also need these packages if you upgrade your source tree using
-patches, although we try to avoid this.
-
-
-File: libc.info,  Node: Linux,  Next: Reporting Bugs,  Prev: Tools for Compilation,  Up: Installation
-
-C.4 Specific advice for GNU/Linux systems
-=========================================
-
-If you are installing the GNU C Library on GNU/Linux systems, you need
-to have the header files from a 3.2 or newer kernel around for
-reference.  (For the ia64 architecture, you need version 3.2.18 or
-newer because this is the first version with support for the `accept4'
-system call.)  These headers must be installed using `make
-headers_install'; the headers present in the kernel source directory
-are not suitable for direct use by the GNU C Library.  You do not need
-to use that kernel, just have its headers installed where the GNU C
-Library can access them, referred to here as INSTALL-DIRECTORY.  The
-easiest way to do this is to unpack it in a directory such as
-`/usr/src/linux-VERSION'.  In that directory, run `make headers_install
-INSTALL_HDR_PATH=INSTALL-DIRECTORY'.  Finally, configure the GNU C
-Library with the option `--with-headers=INSTALL-DIRECTORY/include'.
-Use the most recent kernel you can get your hands on.  (If you are
-cross-compiling the GNU C Library, you need to specify
-`ARCH=ARCHITECTURE' in the `make headers_install' command, where
-ARCHITECTURE is the architecture name used by the Linux kernel, such as
-`x86' or `powerpc'.)
-
-   After installing the GNU C Library, you may need to remove or rename
-directories such as `/usr/include/linux' and `/usr/include/asm', and
-replace them with copies of directories such as `linux' and `asm' from
-`INSTALL-DIRECTORY/include'.  All directories present in
-`INSTALL-DIRECTORY/include' should be copied, except that the GNU C
-Library provides its own version of `/usr/include/scsi'; the files
-provided by the kernel should be copied without replacing those
-provided by the GNU C Library.  The `linux', `asm' and `asm-generic'
-directories are required to compile programs using the GNU C Library;
-the other directories describe interfaces to the kernel but are not
-required if not compiling programs using those interfaces.  You do not
-need to copy kernel headers if you did not specify an alternate kernel
-header source using `--with-headers'.
-
-   The Filesystem Hierarchy Standard for GNU/Linux systems expects some
-components of the GNU C Library installation to be in `/lib' and some
-in `/usr/lib'.  This is handled automatically if you configure the GNU
-C Library with `--prefix=/usr'.  If you set some other prefix or allow
-it to default to `/usr/local', then all the components are installed
-there.
-
-
-File: libc.info,  Node: Reporting Bugs,  Prev: Linux,  Up: Installation
-
-C.5 Reporting Bugs
-==================
-
-There are probably bugs in the GNU C Library.  There are certainly
-errors and omissions in this manual.  If you report them, they will get
-fixed.  If you don't, no one will ever know about them and they will
-remain unfixed for all eternity, if not longer.
-
-   It is a good idea to verify that the problem has not already been
-reported.  Bugs are documented in two places: The file `BUGS' describes
-a number of well known bugs and the central GNU C Library bug tracking
-system has a WWW interface at `http://sourceware.org/bugzilla/'.  The
-WWW interface gives you access to open and closed reports.  A closed
-report normally includes a patch or a hint on solving the problem.
-
-   To report a bug, first you must find it.  With any luck, this will
-be the hard part.  Once you've found a bug, make sure it's really a
-bug.  A good way to do this is to see if the GNU C Library behaves the
-same way some other C library does.  If so, probably you are wrong and
-the libraries are right (but not necessarily).  If not, one of the
-libraries is probably wrong.  It might not be the GNU C Library.  Many
-historical Unix C libraries permit things that we don't, such as
-closing a file twice.
-
-   If you think you have found some way in which the GNU C Library does
-not conform to the ISO and POSIX standards (*note Standards and
-Portability::), that is definitely a bug.  Report it!
-
-   Once you're sure you've found a bug, try to narrow it down to the
-smallest test case that reproduces the problem.  In the case of a C
-library, you really only need to narrow it down to one library function
-call, if possible.  This should not be too difficult.
-
-   The final step when you have a simple test case is to report the bug.
-Do this at `http://www.gnu.org/software/libc/bugs.html'.
-
-   If you are not sure how a function should behave, and this manual
-doesn't tell you, that's a bug in the manual.  Report that too!  If the
-function's behavior disagrees with the manual, then either the library
-or the manual has a bug, so report the disagreement.  If you find any
-errors or omissions in this manual, please report them to the bug
-database.  If you refer to specific sections of the manual, please
-include the section names for easier identification.
-
-
-File: libc.info,  Node: Maintenance,  Next: Platform,  Prev: Installation,  Up: Top
-
-Appendix D Library Maintenance
-******************************
-
-* Menu:
-
-* Source Layout::         How to add new functions or header files
-                             to the GNU C Library.
-* Porting::               How to port the GNU C Library to
-                             a new machine or operating system.
-
-
-File: libc.info,  Node: Source Layout,  Next: Porting,  Up: Maintenance
-
-D.1 Adding New Functions
-========================
-
-The process of building the library is driven by the makefiles, which
-make heavy use of special features of GNU `make'.  The makefiles are
-very complex, and you probably don't want to try to understand them.
-But what they do is fairly straightforward, and only requires that you
-define a few variables in the right places.
-
-   The library sources are divided into subdirectories, grouped by
-topic.
-
-   The `string' subdirectory has all the string-manipulation functions,
-`math' has all the mathematical functions, etc.
-
-   Each subdirectory contains a simple makefile, called `Makefile',
-which defines a few `make' variables and then includes the global
-makefile `Rules' with a line like:
-
-     include ../Rules
-
-The basic variables that a subdirectory makefile defines are:
-
-`subdir'
-     The name of the subdirectory, for example `stdio'.  This variable
-     *must* be defined.
-
-`headers'
-     The names of the header files in this section of the library, such
-     as `stdio.h'.
-
-`routines'
-`aux'
-     The names of the modules (source files) in this section of the
-     library.  These should be simple names, such as `strlen' (rather
-     than complete file names, such as `strlen.c').  Use `routines' for
-     modules that define functions in the library, and `aux' for
-     auxiliary modules containing things like data definitions.  But the
-     values of `routines' and `aux' are just concatenated, so there
-     really is no practical difference.
-
-`tests'
-     The names of test programs for this section of the library.  These
-     should be simple names, such as `tester' (rather than complete file
-     names, such as `tester.c').  `make tests' will build and run all
-     the test programs.  If a test program needs input, put the test
-     data in a file called `TEST-PROGRAM.input'; it will be given to
-     the test program on its standard input.  If a test program wants
-     to be run with arguments, put the arguments (all on a single line)
-     in a file called `TEST-PROGRAM.args'.  Test programs should exit
-     with zero status when the test passes, and nonzero status when the
-     test indicates a bug in the library or error in building.
-
-`others'
-     The names of "other" programs associated with this section of the
-     library.  These are programs which are not tests per se, but are
-     other small programs included with the library.  They are built by
-     `make others'.
-
-`install-lib'
-`install-data'
-`install'
-     Files to be installed by `make install'.  Files listed in
-     `install-lib' are installed in the directory specified by `libdir'
-     in `configparms' or `Makeconfig' (*note Installation::).  Files
-     listed in `install-data' are installed in the directory specified
-     by `datadir' in `configparms' or `Makeconfig'.  Files listed in
-     `install' are installed in the directory specified by `bindir' in
-     `configparms' or `Makeconfig'.
-
-`distribute'
-     Other files from this subdirectory which should be put into a
-     distribution tar file.  You need not list here the makefile itself
-     or the source and header files listed in the other standard
-     variables.  Only define `distribute' if there are files used in an
-     unusual way that should go into the distribution.
-
-`generated'
-     Files which are generated by `Makefile' in this subdirectory.
-     These files will be removed by `make clean', and they will never
-     go into a distribution.
-
-`extra-objs'
-     Extra object files which are built by `Makefile' in this
-     subdirectory.  This should be a list of file names like `foo.o';
-     the files will actually be found in whatever directory object
-     files are being built in.  These files will be removed by
-     `make clean'.  This variable is used for secondary object files
-     needed to build `others' or `tests'.
-
-* Menu:
-
-* Platform: Adding Platform-specific.             Adding platform-specific
-                                         features.
-
-
-File: libc.info,  Node: Adding Platform-specific,  Up: Source Layout
-
-D.1.1 Platform-specific types, macros and functions
----------------------------------------------------
-
-It's sometimes necessary to provide nonstandard, platform-specific
-features to developers.  The C library is traditionally the lowest
-library layer, so it makes sense for it to provide these low-level
-features.  However, including these features in the C library may be a
-disadvantage if another package provides them as well as there will be
-two conflicting versions of them.  Also, the features won't be
-available to projects that do not use the GNU C Library but use other
-GNU tools, like GCC.
-
-   The current guidelines are:
-   * If the header file provides features that only make sense on a
-     particular machine architecture and have nothing to do with an
-     operating system, then the features should ultimately be provided
-     as GCC built-in functions.  Until then, the GNU C Library may
-     provide them in the header file.  When the GCC built-in functions
-     become available, those provided in the header file should be made
-     conditionally available prior to the GCC version in which the
-     built-in function was made available.
-
-   * If the header file provides features that are specific to an
-     operating system, both GCC and the GNU C Library could provide it,
-     but the GNU C Library is preferred as it already has a lot of
-     information about the operating system.
-
-   * If the header file provides features that are specific to an
-     operating system but used by the GNU C Library, then the GNU C
-     Library should provide them.
-
-   The general solution for providing low-level features is to export
-them as follows:
-
-   * A nonstandard, low-level header file that defines macros and inline
-     functions should be called `sys/platform/NAME.h'.
-
-   * Each header file's name should include the platform name, to avoid
-     users thinking there is anything in common between the different
-     header files for different platforms.  For example, a
-     `sys/platform/ARCH.h' name such as `sys/platform/ppc.h' is better
-     than `sys/platform.h'.
-
-   * A platform-specific header file provided by the GNU C Library
-     should coordinate with GCC such that compiler built-in versions of
-     the functions and macros are preferred if available.  This means
-     that user programs will only ever need to include
-     `sys/platform/ARCH.h', keeping the same names of types, macros,
-     and functions for convenience and portability.
-
-   * Each included symbol must have the prefix `__ARCH_', such as
-     `__ppc_get_timebase'.
-
-   The easiest way to provide a header file is to add it to the
-`sysdep_headers' variable.  For example, the combination of
-Linux-specific header files on PowerPC could be provided like this:
-
-     sysdep_headers += sys/platform/ppc.h
-
-   Then ensure that you have added a `sys/platform/ppc.h' header file
-in the machine-specific directory, e.g.,
-`sysdeps/powerpc/sys/platform/ppc.h'.
-
-
-File: libc.info,  Node: Porting,  Prev: Source Layout,  Up: Maintenance
-
-D.2 Porting the GNU C Library
-=============================
-
-The GNU C Library is written to be easily portable to a variety of
-machines and operating systems.  Machine- and operating system-dependent
-functions are well separated to make it easy to add implementations for
-new machines or operating systems.  This section describes the layout of
-the library source tree and explains the mechanisms used to select
-machine-dependent code to use.
-
-   All the machine-dependent and operating system-dependent files in the
-library are in the subdirectory `sysdeps' under the top-level library
-source directory.  This directory contains a hierarchy of
-subdirectories (*note Hierarchy Conventions::).
-
-   Each subdirectory of `sysdeps' contains source files for a
-particular machine or operating system, or for a class of machine or
-operating system (for example, systems by a particular vendor, or all
-machines that use IEEE 754 floating-point format).  A configuration
-specifies an ordered list of these subdirectories.  Each subdirectory
-implicitly appends its parent directory to the list.  For example,
-specifying the list `unix/bsd/vax' is equivalent to specifying the list
-`unix/bsd/vax unix/bsd unix'.  A subdirectory can also specify that it
-implies other subdirectories which are not directly above it in the
-directory hierarchy.  If the file `Implies' exists in a subdirectory,
-it lists other subdirectories of `sysdeps' which are appended to the
-list, appearing after the subdirectory containing the `Implies' file.
-Lines in an `Implies' file that begin with a `#' character are ignored
-as comments.  For example, `unix/bsd/Implies' contains:
-     # BSD has Internet-related things.
-     unix/inet
-   and `unix/Implies' contains:
-     posix
-
-So the final list is `unix/bsd/vax unix/bsd unix/inet unix posix'.
-
-   `sysdeps' has a "special" subdirectory called `generic'.  It is
-always implicitly appended to the list of subdirectories, so you
-needn't put it in an `Implies' file, and you should not create any
-subdirectories under it intended to be new specific categories.
-`generic' serves two purposes.  First, the makefiles do not bother to
-look for a system-dependent version of a file that's not in `generic'.
-This means that any system-dependent source file must have an analogue
-in `generic', even if the routines defined by that file are not
-implemented on other platforms.  Second, the `generic' version of a
-system-dependent file is used if the makefiles do not find a version
-specific to the system you're compiling for.
-
-   If it is possible to implement the routines in a `generic' file in
-machine-independent C, using only other machine-independent functions in
-the C library, then you should do so.  Otherwise, make them stubs.  A
-"stub" function is a function which cannot be implemented on a
-particular machine or operating system.  Stub functions always return an
-error, and set `errno' to `ENOSYS' (Function not implemented).  *Note
-Error Reporting::.  If you define a stub function, you must place the
-statement `stub_warning(FUNCTION)', where FUNCTION is the name of your
-function, after its definition.  This causes the function to be listed
-in the installed `<gnu/stubs.h>', and makes GNU ld warn when the
-function is used.
-
-   Some rare functions are only useful on specific systems and aren't
-defined at all on others; these do not appear anywhere in the
-system-independent source code or makefiles (including the `generic'
-directory), only in the system-dependent `Makefile' in the specific
-system's subdirectory.
-
-   If you come across a file that is in one of the main source
-directories (`string', `stdio', etc.), and you want to write a machine-
-or operating system-dependent version of it, move the file into
-`sysdeps/generic' and write your new implementation in the appropriate
-system-specific subdirectory.  Note that if a file is to be
-system-dependent, it *must not* appear in one of the main source
-directories.
-
-   There are a few special files that may exist in each subdirectory of
-`sysdeps':
-
-`Makefile'
-     A makefile for this machine or operating system, or class of
-     machine or operating system.  This file is included by the library
-     makefile `Makerules', which is used by the top-level makefile and
-     the subdirectory makefiles.  It can change the variables set in the
-     including makefile or add new rules.  It can use GNU `make'
-     conditional directives based on the variable `subdir' (see above)
-     to select different sets of variables and rules for different
-     sections of the library.  It can also set the `make' variable
-     `sysdep-routines', to specify extra modules to be included in the
-     library.  You should use `sysdep-routines' rather than adding
-     modules to `routines' because the latter is used in determining
-     what to distribute for each subdirectory of the main source tree.
-
-     Each makefile in a subdirectory in the ordered list of
-     subdirectories to be searched is included in order.  Since several
-     system-dependent makefiles may be included, each should append to
-     `sysdep-routines' rather than simply setting it:
-
-          sysdep-routines := $(sysdep-routines) foo bar
-
-`Subdirs'
-     This file contains the names of new whole subdirectories under the
-     top-level library source tree that should be included for this
-     system.  These subdirectories are treated just like the
-     system-independent subdirectories in the library source tree, such
-     as `stdio' and `math'.
-
-     Use this when there are completely new sets of functions and header
-     files that should go into the library for the system this
-     subdirectory of `sysdeps' implements.  For example,
-     `sysdeps/unix/inet/Subdirs' contains `inet'; the `inet' directory
-     contains various network-oriented operations which only make sense
-     to put in the library on systems that support the Internet.
-
-`configure'
-     This file is a shell script fragment to be run at configuration
-     time.  The top-level `configure' script uses the shell `.' command
-     to read the `configure' file in each system-dependent directory
-     chosen, in order.  The `configure' files are often generated from
-     `configure.ac' files using Autoconf.
-
-     A system-dependent `configure' script will usually add things to
-     the shell variables `DEFS' and `config_vars'; see the top-level
-     `configure' script for details.  The script can check for
-     `--with-PACKAGE' options that were passed to the top-level
-     `configure'.  For an option `--with-PACKAGE=VALUE' `configure'
-     sets the shell variable `with_PACKAGE' (with any dashes in PACKAGE
-     converted to underscores) to VALUE; if the option is just
-     `--with-PACKAGE' (no argument), then it sets `with_PACKAGE' to
-     `yes'.
-
-`configure.ac'
-     This file is an Autoconf input fragment to be processed into the
-     file `configure' in this subdirectory.  *Note Introduction:
-     (autoconf.info)Introduction, for a description of Autoconf.  You
-     should write either `configure' or `configure.ac', but not both.
-     The first line of `configure.ac' should invoke the `m4' macro
-     `GLIBC_PROVIDES'.  This macro does several `AC_PROVIDE' calls for
-     Autoconf macros which are used by the top-level `configure'
-     script; without this, those macros might be invoked again
-     unnecessarily by Autoconf.
-
-   That is the general system for how system-dependencies are isolated.
-
-* Menu:
-
-* Hierarchy Conventions::       The layout of the `sysdeps' hierarchy.
-* Porting to Unix::             Porting the library to an average
-                                   Unix-like system.
-
-
-File: libc.info,  Node: Hierarchy Conventions,  Next: Porting to Unix,  Up: Porting
-
-D.2.1 Layout of the `sysdeps' Directory Hierarchy
--------------------------------------------------
-
-A GNU configuration name has three parts: the CPU type, the
-manufacturer's name, and the operating system.  `configure' uses these
-to pick the list of system-dependent directories to look for.  If the
-`--nfp' option is _not_ passed to `configure', the directory
-`MACHINE/fpu' is also used.  The operating system often has a "base
-operating system"; for example, if the operating system is `Linux', the
-base operating system is `unix/sysv'.  The algorithm used to pick the
-list of directories is simple: `configure' makes a list of the base
-operating system, manufacturer, CPU type, and operating system, in that
-order.  It then concatenates all these together with slashes in
-between, to produce a directory name; for example, the configuration
-`i686-linux-gnu' results in `unix/sysv/linux/i386/i686'.  `configure'
-then tries removing each element of the list in turn, so
-`unix/sysv/linux' and `unix/sysv' are also tried, among others.  Since
-the precise version number of the operating system is often not
-important, and it would be very inconvenient, for example, to have
-identical `irix6.2' and `irix6.3' directories, `configure' tries
-successively less specific operating system names by removing trailing
-suffixes starting with a period.
-
-   As an example, here is the complete list of directories that would be
-tried for the configuration `i686-linux-gnu' (with the `crypt' and
-`linuxthreads' add-on):
-
-     sysdeps/i386/elf
-     crypt/sysdeps/unix
-     linuxthreads/sysdeps/unix/sysv/linux
-     linuxthreads/sysdeps/pthread
-     linuxthreads/sysdeps/unix/sysv
-     linuxthreads/sysdeps/unix
-     linuxthreads/sysdeps/i386/i686
-     linuxthreads/sysdeps/i386
-     linuxthreads/sysdeps/pthread/no-cmpxchg
-     sysdeps/unix/sysv/linux/i386
-     sysdeps/unix/sysv/linux
-     sysdeps/gnu
-     sysdeps/unix/common
-     sysdeps/unix/mman
-     sysdeps/unix/inet
-     sysdeps/unix/sysv/i386/i686
-     sysdeps/unix/sysv/i386
-     sysdeps/unix/sysv
-     sysdeps/unix/i386
-     sysdeps/unix
-     sysdeps/posix
-     sysdeps/i386/i686
-     sysdeps/i386/i486
-     sysdeps/libm-i387/i686
-     sysdeps/i386/fpu
-     sysdeps/libm-i387
-     sysdeps/i386
-     sysdeps/wordsize-32
-     sysdeps/ieee754
-     sysdeps/libm-ieee754
-     sysdeps/generic
-
-   Different machine architectures are conventionally subdirectories at
-the top level of the `sysdeps' directory tree.  For example,
-`sysdeps/sparc' and `sysdeps/m68k'.  These contain files specific to
-those machine architectures, but not specific to any particular
-operating system.  There might be subdirectories for specializations of
-those architectures, such as `sysdeps/m68k/68020'.  Code which is
-specific to the floating-point coprocessor used with a particular
-machine should go in `sysdeps/MACHINE/fpu'.
-
-   There are a few directories at the top level of the `sysdeps'
-hierarchy that are not for particular machine architectures.
-
-`generic'
-     As described above (*note Porting::), this is the subdirectory
-     that every configuration implicitly uses after all others.
-
-`ieee754'
-     This directory is for code using the IEEE 754 floating-point
-     format, where the C type `float' is IEEE 754 single-precision
-     format, and `double' is IEEE 754 double-precision format.  Usually
-     this directory is referred to in the `Implies' file in a machine
-     architecture-specific directory, such as `m68k/Implies'.
-
-`libm-ieee754'
-     This directory contains an implementation of a mathematical library
-     usable on platforms which use IEEE 754 conformant floating-point
-     arithmetic.
-
-`libm-i387'
-     This is a special case.  Ideally the code should be in
-     `sysdeps/i386/fpu' but for various reasons it is kept aside.
-
-`posix'
-     This directory contains implementations of things in the library in
-     terms of POSIX.1 functions.  This includes some of the POSIX.1
-     functions themselves.  Of course, POSIX.1 cannot be completely
-     implemented in terms of itself, so a configuration using just
-     `posix' cannot be complete.
-
-`unix'
-     This is the directory for Unix-like things.  *Note Porting to
-     Unix::.  `unix' implies `posix'.  There are some special-purpose
-     subdirectories of `unix':
-
-    `unix/common'
-          This directory is for things common to both BSD and System V
-          release 4.  Both `unix/bsd' and `unix/sysv/sysv4' imply
-          `unix/common'.
-
-    `unix/inet'
-          This directory is for `socket' and related functions on Unix
-          systems.  `unix/inet/Subdirs' enables the `inet' top-level
-          subdirectory.  `unix/common' implies `unix/inet'.
-
-`mach'
-     This is the directory for things based on the Mach microkernel
-     from CMU (including GNU/Hurd systems).  Other basic operating
-     systems (VMS, for example) would have their own directories at the
-     top level of the `sysdeps' hierarchy, parallel to `unix' and
-     `mach'.
-
-
-File: libc.info,  Node: Porting to Unix,  Prev: Hierarchy Conventions,  Up: Porting
-
-D.2.2 Porting the GNU C Library to Unix Systems
------------------------------------------------
-
-Most Unix systems are fundamentally very similar.  There are variations
-between different machines, and variations in what facilities are
-provided by the kernel.  But the interface to the operating system
-facilities is, for the most part, pretty uniform and simple.
-
-   The code for Unix systems is in the directory `unix', at the top
-level of the `sysdeps' hierarchy.  This directory contains
-subdirectories (and subdirectory trees) for various Unix variants.
-
-   The functions which are system calls in most Unix systems are
-implemented in assembly code, which is generated automatically from
-specifications in files named `syscalls.list'.  There are several such
-files, one in `sysdeps/unix' and others in its subdirectories.  Some
-special system calls are implemented in files that are named with a
-suffix of `.S'; for example, `_exit.S'.  Files ending in `.S' are run
-through the C preprocessor before being fed to the assembler.
-
-   These files all use a set of macros that should be defined in
-`sysdep.h'.  The `sysdep.h' file in `sysdeps/unix' partially defines
-them; a `sysdep.h' file in another directory must finish defining them
-for the particular machine and operating system variant.  See
-`sysdeps/unix/sysdep.h' and the machine-specific `sysdep.h'
-implementations to see what these macros are and what they should do.
-
-   The system-specific makefile for the `unix' directory
-(`sysdeps/unix/Makefile') gives rules to generate several files from
-the Unix system you are building the library on (which is assumed to be
-the target system you are building the library _for_).  All the
-generated files are put in the directory where the object files are
-kept; they should not affect the source tree itself.  The files
-generated are `ioctls.h', `errnos.h', `sys/param.h', and `errlist.c'
-(for the `stdio' section of the library).
-
-
-File: libc.info,  Node: Platform,  Next: Contributors,  Prev: Maintenance,  Up: Top
-
-Appendix E Platform-specific facilities
-***************************************
-
-The GNU C Library can provide machine-specific functionality.
-
-* Menu:
-
-* PowerPC::           Facilities Specific to the PowerPC Architecture
-
-
-File: libc.info,  Node: PowerPC,  Up: Platform
-
-E.1 PowerPC-specific Facilities
-===============================
-
-Facilities specific to PowerPC that are not specific to a particular
-operating system are declared in `sys/platform/ppc.h'.
-
- -- Function: uint64_t __ppc_get_timebase (void)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     Read the current value of the Time Base Register.
-
-     The "Time Base Register" is a 64-bit register that stores a
-     monotonically incremented value updated at a system-dependent
-     frequency that may be different from the processor frequency.
-     More information is available in `Power ISA 2.06b - Book II -
-     Section 5.2'.
-
-     `__ppc_get_timebase' uses the processor's time base facility
-     directly without requiring assistance from the operating system,
-     so it is very efficient.
-
- -- Function: uint64_t __ppc_get_timebase_freq (void)
-     Preliminary: | MT-Unsafe init | AS-Unsafe corrupt:init | AC-Unsafe
-     corrupt:init | *Note POSIX Safety Concepts::.
-
-     Read the current frequency at which the Time Base Register is
-     updated.
-
-     This frequency is not related to the processor clock or the bus
-     clock.  It is also possible that this frequency is not constant.
-     More information is available in `Power ISA 2.06b - Book II -
-     Section 5.2'.
-
-   The following functions provide hints about the usage of resources
-that are shared with other processors.  They can be used, for example,
-if a program waiting on a lock intends to divert the shared resources
-to be used by other processors.  More information is available in
-`Power ISA 2.06b - Book II - Section 3.2'.
-
- -- Function: void __ppc_yield (void)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     Provide a hint that performance will probably be improved if
-     shared resources dedicated to the executing processor are released
-     for use by other processors.
-
- -- Function: void __ppc_mdoio (void)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     Provide a hint that performance will probably be improved if
-     shared resources dedicated to the executing processor are released
-     until all outstanding storage accesses to caching-inhibited
-     storage have been completed.
-
- -- Function: void __ppc_mdoom (void)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     Provide a hint that performance will probably be improved if
-     shared resources dedicated to the executing processor are released
-     until all outstanding storage accesses to cacheable storage for
-     which the data is not in the cache have been completed.
-
- -- Function: void __ppc_set_ppr_med (void)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     Set the Program Priority Register to medium value (default).
-
-     The "Program Priority Register" (PPR) is a 64-bit register that
-     controls the program's priority.  By adjusting the PPR value the
-     programmer may improve system throughput by causing the system
-     resources to be used more efficiently, especially in contention
-     situations.  The three unprivileged states available are covered
-     by the functions `__ppc_set_ppr_med' (medium - default),
-     `__ppc_set_ppc_low' (low) and `__ppc_set_ppc_med_low' (medium
-     low).  More information available in `Power ISA 2.06b - Book II -
-     Section 3.1'.
-
- -- Function: void __ppc_set_ppr_low (void)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     Set the Program Priority Register to low value.
-
- -- Function: void __ppc_set_ppr_med_low (void)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     Set the Program Priority Register to medium low value.
-
-   Power ISA 2.07 extends the priorities that can be set to the Program
-Priority Register (PPR).  The following functions implement the new
-priority levels: very low and medium high.
-
- -- Function: void __ppc_set_ppr_very_low (void)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     Set the Program Priority Register to very low value.
-
- -- Function: void __ppc_set_ppr_med_high (void)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     Set the Program Priority Register to medium high value.  The
-     medium high priority is privileged and may only be set during
-     certain time intervals by problem-state programs.  If the program
-     priority is medium high when the time interval expires or if an
-     attempt is made to set the priority to medium high when it is not
-     allowed, the priority is set to medium.
 

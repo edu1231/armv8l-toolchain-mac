@@ -39,7 +39,6 @@ START-INFO-DIR-ENTRY
 * CS8: (libc)Control Modes.
 * CSIZE: (libc)Control Modes.
 * CSTOPB: (libc)Control Modes.
-* DES_FAILED: (libc)DES Encryption.
 * DTTOIF: (libc)Directory Entries.
 * E2BIG: (libc)Error Codes.
 * EACCES: (libc)Error Codes.
@@ -309,6 +308,7 @@ START-INFO-DIR-ENTRY
 * O_READ: (libc)Access Modes.
 * O_SHLOCK: (libc)Open-time Flags.
 * O_SYNC: (libc)Operating Modes.
+* O_TMPFILE: (libc)Open-time Flags.
 * O_TRUNC: (libc)Open-time Flags.
 * O_WRITE: (libc)Access Modes.
 * O_WRONLY: (libc)Access Modes.
@@ -472,6 +472,7 @@ START-INFO-DIR-ENTRY
 * __ppc_set_ppr_med_low: (libc)PowerPC.
 * __ppc_set_ppr_very_low: (libc)PowerPC.
 * __ppc_yield: (libc)PowerPC.
+* __riscv_flush_icache: (libc)RISC-V.
 * __va_copy: (libc)Argument Macros.
 * _exit: (libc)Termination Internals.
 * _flushlbf: (libc)Flushing Buffers.
@@ -598,6 +599,7 @@ START-INFO-DIR-ENTRY
 * cacoshfNx: (libc)Hyperbolic Functions.
 * cacoshl: (libc)Hyperbolic Functions.
 * cacosl: (libc)Inverse Trig Functions.
+* call_once: (libc)Call Once.
 * calloc: (libc)Allocating Cleared Space.
 * canonicalize: (libc)FP Bit Twiddling.
 * canonicalize_file_name: (libc)Symbolic Links.
@@ -633,7 +635,6 @@ START-INFO-DIR-ENTRY
 * catclose: (libc)The catgets Functions.
 * catgets: (libc)The catgets Functions.
 * catopen: (libc)The catgets Functions.
-* cbc_crypt: (libc)DES Encryption.
 * cbrt: (libc)Exponents and Logarithms.
 * cbrtf: (libc)Exponents and Logarithms.
 * cbrtfN: (libc)Exponents and Logarithms.
@@ -690,6 +691,12 @@ START-INFO-DIR-ENTRY
 * close: (libc)Opening and Closing Files.
 * closedir: (libc)Reading/Closing Directory.
 * closelog: (libc)closelog.
+* cnd_broadcast: (libc)ISO C Condition Variables.
+* cnd_destroy: (libc)ISO C Condition Variables.
+* cnd_init: (libc)ISO C Condition Variables.
+* cnd_signal: (libc)ISO C Condition Variables.
+* cnd_timedwait: (libc)ISO C Condition Variables.
+* cnd_wait: (libc)ISO C Condition Variables.
 * confstr: (libc)String Parameters.
 * conj: (libc)Operations on Complex.
 * conjf: (libc)Operations on Complex.
@@ -697,6 +704,7 @@ START-INFO-DIR-ENTRY
 * conjfNx: (libc)Operations on Complex.
 * conjl: (libc)Operations on Complex.
 * connect: (libc)Connecting.
+* copy_file_range: (libc)Copying File Data.
 * copysign: (libc)FP Bit Twiddling.
 * copysignf: (libc)FP Bit Twiddling.
 * copysignfN: (libc)FP Bit Twiddling.
@@ -729,8 +737,8 @@ START-INFO-DIR-ENTRY
 * creall: (libc)Operations on Complex.
 * creat64: (libc)Opening and Closing Files.
 * creat: (libc)Opening and Closing Files.
-* crypt: (libc)crypt.
-* crypt_r: (libc)crypt.
+* crypt: (libc)Passphrase Storage.
+* crypt_r: (libc)Passphrase Storage.
 * csin: (libc)Trig Functions.
 * csinf: (libc)Trig Functions.
 * csinfN: (libc)Trig Functions.
@@ -760,27 +768,27 @@ START-INFO-DIR-ENTRY
 * ctime: (libc)Formatting Calendar Time.
 * ctime_r: (libc)Formatting Calendar Time.
 * cuserid: (libc)Who Logged In.
+* daddl: (libc)Misc FP Arithmetic.
 * dcgettext: (libc)Translation with gettext.
 * dcngettext: (libc)Advanced gettext functions.
-* des_setparity: (libc)DES Encryption.
+* ddivl: (libc)Misc FP Arithmetic.
 * dgettext: (libc)Translation with gettext.
 * difftime: (libc)Elapsed Time.
 * dirfd: (libc)Opening a Directory.
 * dirname: (libc)Finding Tokens in a String.
 * div: (libc)Integer Division.
+* dmull: (libc)Misc FP Arithmetic.
 * dngettext: (libc)Advanced gettext functions.
 * drand48: (libc)SVID Random.
 * drand48_r: (libc)SVID Random.
 * drem: (libc)Remainder Functions.
 * dremf: (libc)Remainder Functions.
 * dreml: (libc)Remainder Functions.
+* dsubl: (libc)Misc FP Arithmetic.
 * dup2: (libc)Duplicating Descriptors.
 * dup: (libc)Duplicating Descriptors.
-* ecb_crypt: (libc)DES Encryption.
 * ecvt: (libc)System V Number Conversion.
 * ecvt_r: (libc)System V Number Conversion.
-* encrypt: (libc)DES Encryption.
-* encrypt_r: (libc)DES Encryption.
 * endfsent: (libc)fstab.
 * endgrent: (libc)Scanning All Groups.
 * endhostent: (libc)Host Names.
@@ -843,11 +851,29 @@ START-INFO-DIR-ENTRY
 * expm1fN: (libc)Exponents and Logarithms.
 * expm1fNx: (libc)Exponents and Logarithms.
 * expm1l: (libc)Exponents and Logarithms.
+* fMaddfN: (libc)Misc FP Arithmetic.
+* fMaddfNx: (libc)Misc FP Arithmetic.
+* fMdivfN: (libc)Misc FP Arithmetic.
+* fMdivfNx: (libc)Misc FP Arithmetic.
+* fMmulfN: (libc)Misc FP Arithmetic.
+* fMmulfNx: (libc)Misc FP Arithmetic.
+* fMsubfN: (libc)Misc FP Arithmetic.
+* fMsubfNx: (libc)Misc FP Arithmetic.
+* fMxaddfN: (libc)Misc FP Arithmetic.
+* fMxaddfNx: (libc)Misc FP Arithmetic.
+* fMxdivfN: (libc)Misc FP Arithmetic.
+* fMxdivfNx: (libc)Misc FP Arithmetic.
+* fMxmulfN: (libc)Misc FP Arithmetic.
+* fMxmulfNx: (libc)Misc FP Arithmetic.
+* fMxsubfN: (libc)Misc FP Arithmetic.
+* fMxsubfNx: (libc)Misc FP Arithmetic.
 * fabs: (libc)Absolute Value.
 * fabsf: (libc)Absolute Value.
 * fabsfN: (libc)Absolute Value.
 * fabsfNx: (libc)Absolute Value.
 * fabsl: (libc)Absolute Value.
+* fadd: (libc)Misc FP Arithmetic.
+* faddl: (libc)Misc FP Arithmetic.
 * fchdir: (libc)Working Directory.
 * fchmod: (libc)Setting Permissions.
 * fchown: (libc)File Owner.
@@ -862,6 +888,8 @@ START-INFO-DIR-ENTRY
 * fdimfN: (libc)Misc FP Arithmetic.
 * fdimfNx: (libc)Misc FP Arithmetic.
 * fdiml: (libc)Misc FP Arithmetic.
+* fdiv: (libc)Misc FP Arithmetic.
+* fdivl: (libc)Misc FP Arithmetic.
 * fdopen: (libc)Descriptors and Streams.
 * fdopendir: (libc)Opening a Directory.
 * feclearexcept: (libc)Status bit operations.
@@ -945,6 +973,8 @@ START-INFO-DIR-ENTRY
 * fmodfNx: (libc)Remainder Functions.
 * fmodl: (libc)Remainder Functions.
 * fmtmsg: (libc)Printing Formatted Messages.
+* fmul: (libc)Misc FP Arithmetic.
+* fmull: (libc)Misc FP Arithmetic.
 * fnmatch: (libc)Wildcard Matching.
 * fopen64: (libc)Opening Streams.
 * fopen: (libc)Opening Streams.
@@ -990,6 +1020,8 @@ START-INFO-DIR-ENTRY
 * fsetpos: (libc)Portable Positioning.
 * fstat64: (libc)Reading Attributes.
 * fstat: (libc)Reading Attributes.
+* fsub: (libc)Misc FP Arithmetic.
+* fsubl: (libc)Misc FP Arithmetic.
 * fsync: (libc)Synchronizing I/O.
 * ftell: (libc)File Positioning.
 * ftello64: (libc)File Positioning.
@@ -1263,6 +1295,7 @@ START-INFO-DIR-ENTRY
 * lgammal: (libc)Special Functions.
 * lgammal_r: (libc)Special Functions.
 * link: (libc)Hard Links.
+* linkat: (libc)Hard Links.
 * lio_listio64: (libc)Asynchronous Reads/Writes.
 * lio_listio: (libc)Asynchronous Reads/Writes.
 * listen: (libc)Listening.
@@ -1353,7 +1386,8 @@ START-INFO-DIR-ENTRY
 * memchr: (libc)Search Functions.
 * memcmp: (libc)String/Array Comparison.
 * memcpy: (libc)Copying Strings and Arrays.
-* memfrob: (libc)Trivial Encryption.
+* memfd_create: (libc)Memory-mapped I/O.
+* memfrob: (libc)Obfuscating Data.
 * memmem: (libc)Search Functions.
 * memmove: (libc)Copying Strings and Arrays.
 * mempcpy: (libc)Copying Strings and Arrays.
@@ -1366,6 +1400,7 @@ START-INFO-DIR-ENTRY
 * mkstemp: (libc)Temporary Files.
 * mktemp: (libc)Temporary Files.
 * mktime: (libc)Broken-down Time.
+* mlock2: (libc)Page Lock Functions.
 * mlock: (libc)Page Lock Functions.
 * mlockall: (libc)Page Lock Functions.
 * mmap64: (libc)Memory-mapped I/O.
@@ -1377,11 +1412,18 @@ START-INFO-DIR-ENTRY
 * modfl: (libc)Rounding Functions.
 * mount: (libc)Mount-Unmount-Remount.
 * mprobe: (libc)Heap Consistency Checking.
+* mprotect: (libc)Memory Protection.
 * mrand48: (libc)SVID Random.
 * mrand48_r: (libc)SVID Random.
 * mremap: (libc)Memory-mapped I/O.
 * msync: (libc)Memory-mapped I/O.
 * mtrace: (libc)Tracing malloc.
+* mtx_destroy: (libc)ISO C Mutexes.
+* mtx_init: (libc)ISO C Mutexes.
+* mtx_lock: (libc)ISO C Mutexes.
+* mtx_timedlock: (libc)ISO C Mutexes.
+* mtx_trylock: (libc)ISO C Mutexes.
+* mtx_unlock: (libc)ISO C Mutexes.
 * munlock: (libc)Page Lock Functions.
 * munlockall: (libc)Page Lock Functions.
 * munmap: (libc)Memory-mapped I/O.
@@ -1465,13 +1507,15 @@ START-INFO-DIR-ENTRY
 * pclose: (libc)Pipe to a Subprocess.
 * perror: (libc)Error Messages.
 * pipe: (libc)Creating a Pipe.
+* pkey_alloc: (libc)Memory Protection.
+* pkey_free: (libc)Memory Protection.
+* pkey_get: (libc)Memory Protection.
+* pkey_mprotect: (libc)Memory Protection.
+* pkey_set: (libc)Memory Protection.
 * popen: (libc)Pipe to a Subprocess.
 * posix_fallocate64: (libc)Storage Allocation.
 * posix_fallocate: (libc)Storage Allocation.
 * posix_memalign: (libc)Aligned Memory Blocks.
-* pow10: (libc)Exponents and Logarithms.
-* pow10f: (libc)Exponents and Logarithms.
-* pow10l: (libc)Exponents and Logarithms.
 * pow: (libc)Exponents and Logarithms.
 * powf: (libc)Exponents and Logarithms.
 * powfN: (libc)Exponents and Logarithms.
@@ -1479,10 +1523,10 @@ START-INFO-DIR-ENTRY
 * powl: (libc)Exponents and Logarithms.
 * pread64: (libc)I/O Primitives.
 * pread: (libc)I/O Primitives.
-* preadv2: (libc)I/O Primitives.
-* preadv64: (libc)I/O Primitives.
-* preadv64v2: (libc)I/O Primitives.
-* preadv: (libc)I/O Primitives.
+* preadv2: (libc)Scatter-Gather.
+* preadv64: (libc)Scatter-Gather.
+* preadv64v2: (libc)Scatter-Gather.
+* preadv: (libc)Scatter-Gather.
 * printf: (libc)Formatted Output Functions.
 * printf_size: (libc)Predefined Printf Handlers.
 * printf_size_info: (libc)Predefined Printf Handlers.
@@ -1511,10 +1555,10 @@ START-INFO-DIR-ENTRY
 * putwchar_unlocked: (libc)Simple Output.
 * pwrite64: (libc)I/O Primitives.
 * pwrite: (libc)I/O Primitives.
-* pwritev2: (libc)I/O Primitives.
-* pwritev64: (libc)I/O Primitives.
-* pwritev64v2: (libc)I/O Primitives.
-* pwritev: (libc)I/O Primitives.
+* pwritev2: (libc)Scatter-Gather.
+* pwritev64: (libc)Scatter-Gather.
+* pwritev64v2: (libc)Scatter-Gather.
+* pwritev: (libc)Scatter-Gather.
 * qecvt: (libc)System V Number Conversion.
 * qecvt_r: (libc)System V Number Conversion.
 * qfcvt: (libc)System V Number Conversion.
@@ -1637,8 +1681,6 @@ START-INFO-DIR-ENTRY
 * sethostname: (libc)Host Identification.
 * setitimer: (libc)Setting an Alarm.
 * setjmp: (libc)Non-Local Details.
-* setkey: (libc)DES Encryption.
-* setkey_r: (libc)DES Encryption.
 * setlinebuf: (libc)Controlling Buffering.
 * setlocale: (libc)Setting the Locale.
 * setlogmask: (libc)setlogmask.
@@ -1756,7 +1798,7 @@ START-INFO-DIR-ENTRY
 * strfromfN: (libc)Printing of Floats.
 * strfromfNx: (libc)Printing of Floats.
 * strfroml: (libc)Printing of Floats.
-* strfry: (libc)strfry.
+* strfry: (libc)Shuffling Bytes.
 * strftime: (libc)Formatting Calendar Time.
 * strlen: (libc)String Length.
 * strncasecmp: (libc)String/Array Comparison.
@@ -1832,6 +1874,14 @@ START-INFO-DIR-ENTRY
 * tgammafN: (libc)Special Functions.
 * tgammafNx: (libc)Special Functions.
 * tgammal: (libc)Special Functions.
+* thrd_create: (libc)ISO C Thread Management.
+* thrd_current: (libc)ISO C Thread Management.
+* thrd_detach: (libc)ISO C Thread Management.
+* thrd_equal: (libc)ISO C Thread Management.
+* thrd_exit: (libc)ISO C Thread Management.
+* thrd_join: (libc)ISO C Thread Management.
+* thrd_sleep: (libc)ISO C Thread Management.
+* thrd_yield: (libc)ISO C Thread Management.
 * time: (libc)Simple Calendar Time.
 * timegm: (libc)Broken-down Time.
 * timelocal: (libc)Broken-down Time.
@@ -1864,6 +1914,10 @@ START-INFO-DIR-ENTRY
 * truncfNx: (libc)Rounding Functions.
 * truncl: (libc)Rounding Functions.
 * tsearch: (libc)Tree Search Function.
+* tss_create: (libc)ISO C Thread-local Storage.
+* tss_delete: (libc)ISO C Thread-local Storage.
+* tss_get: (libc)ISO C Thread-local Storage.
+* tss_set: (libc)ISO C Thread-local Storage.
 * ttyname: (libc)Is It a Terminal.
 * ttyname_r: (libc)Is It a Terminal.
 * twalk: (libc)Tree Search Function.
@@ -2005,10 +2059,10 @@ END-INFO-DIR-ENTRY
 
    This file documents the GNU C Library.
 
-   This is `The GNU C Library Reference Manual', for version 2.26
-(crosstool-NG 1.23.0.420-201f).
+   This is `The GNU C Library Reference Manual', for version 2.28
+(crosstool-NG 1.23.0.513-84e6).
 
-   Copyright (C) 1993-2017 Free Software Foundation, Inc.
+   Copyright (C) 1993-2018 Free Software Foundation, Inc.
 
    Permission is granted to copy, distribute and/or modify this document
 under the terms of the GNU Free Documentation License, Version
@@ -2022,6 +2076,943 @@ Free Documentation License".
    (a) The FSF's Back-Cover Text is: "You have the freedom to copy and
 modify this GNU manual.  Buying copies from the FSF supports it in
 developing GNU and promoting software freedom."
+
+
+File: libc.info,  Node: Rounding,  Next: Control Functions,  Prev: Floating Point Errors,  Up: Arithmetic
+
+20.6 Rounding Modes
+===================
+
+Floating-point calculations are carried out internally with extra
+precision, and then rounded to fit into the destination type.  This
+ensures that results are as precise as the input data.  IEEE 754
+defines four possible rounding modes:
+
+Round to nearest.
+     This is the default mode.  It should be used unless there is a
+     specific need for one of the others.  In this mode results are
+     rounded to the nearest representable value.  If the result is
+     midway between two representable values, the even representable is
+     chosen. "Even" here means the lowest-order bit is zero.  This
+     rounding mode prevents statistical bias and guarantees numeric
+     stability: round-off errors in a lengthy calculation will remain
+     smaller than half of `FLT_EPSILON'.
+
+Round toward plus Infinity.
+     All results are rounded to the smallest representable value which
+     is greater than the result.
+
+Round toward minus Infinity.
+     All results are rounded to the largest representable value which
+     is less than the result.
+
+Round toward zero.
+     All results are rounded to the largest representable value whose
+     magnitude is less than that of the result.  In other words, if the
+     result is negative it is rounded up; if it is positive, it is
+     rounded down.
+
+`fenv.h' defines constants which you can use to refer to the various
+rounding modes.  Each one will be defined if and only if the FPU
+supports the corresponding rounding mode.
+
+`FE_TONEAREST'
+     Round to nearest.
+
+`FE_UPWARD'
+     Round toward +oo.
+
+`FE_DOWNWARD'
+     Round toward -oo.
+
+`FE_TOWARDZERO'
+     Round toward zero.
+
+   Underflow is an unusual case.  Normally, IEEE 754 floating point
+numbers are always normalized (*note Floating Point Concepts::).
+Numbers smaller than 2^r (where r is the minimum exponent,
+`FLT_MIN_RADIX-1' for FLOAT) cannot be represented as normalized
+numbers.  Rounding all such numbers to zero or 2^r would cause some
+algorithms to fail at 0.  Therefore, they are left in denormalized
+form.  That produces loss of precision, since some bits of the mantissa
+are stolen to indicate the decimal point.
+
+   If a result is too small to be represented as a denormalized number,
+it is rounded to zero.  However, the sign of the result is preserved; if
+the calculation was negative, the result is "negative zero".  Negative
+zero can also result from some operations on infinity, such as 4/-oo.
+
+   At any time, one of the above four rounding modes is selected.  You
+can find out which one with this function:
+
+ -- Function: int fegetround (void)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     Returns the currently selected rounding mode, represented by one
+     of the values of the defined rounding mode macros.
+
+To change the rounding mode, use this function:
+
+ -- Function: int fesetround (int ROUND)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     Changes the currently selected rounding mode to ROUND.  If ROUND
+     does not correspond to one of the supported rounding modes nothing
+     is changed.  `fesetround' returns zero if it changed the rounding
+     mode, or a nonzero value if the mode is not supported.
+
+   You should avoid changing the rounding mode if possible.  It can be
+an expensive operation; also, some hardware requires you to compile your
+program differently for it to work.  The resulting code may run slower.
+See your compiler documentation for details.
+
+
+File: libc.info,  Node: Control Functions,  Next: Arithmetic Functions,  Prev: Rounding,  Up: Arithmetic
+
+20.7 Floating-Point Control Functions
+=====================================
+
+IEEE 754 floating-point implementations allow the programmer to decide
+whether traps will occur for each of the exceptions, by setting bits in
+the "control word".  In C, traps result in the program receiving the
+`SIGFPE' signal; see *Note Signal Handling::.
+
+   *NB:* IEEE 754 says that trap handlers are given details of the
+exceptional situation, and can set the result value.  C signals do not
+provide any mechanism to pass this information back and forth.
+Trapping exceptions in C is therefore not very useful.
+
+   It is sometimes necessary to save the state of the floating-point
+unit while you perform some calculation.  The library provides functions
+which save and restore the exception flags, the set of exceptions that
+generate traps, and the rounding mode.  This information is known as the
+"floating-point environment".
+
+   The functions to save and restore the floating-point environment all
+use a variable of type `fenv_t' to store information.  This type is
+defined in `fenv.h'.  Its size and contents are implementation-defined.
+You should not attempt to manipulate a variable of this type directly.
+
+   To save the state of the FPU, use one of these functions:
+
+ -- Function: int fegetenv (fenv_t *ENVP)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     Store the floating-point environment in the variable pointed to by
+     ENVP.
+
+     The function returns zero in case the operation was successful, a
+     non-zero value otherwise.
+
+ -- Function: int feholdexcept (fenv_t *ENVP)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     Store the current floating-point environment in the object pointed
+     to by ENVP.  Then clear all exception flags, and set the FPU to
+     trap no exceptions.  Not all FPUs support trapping no exceptions;
+     if `feholdexcept' cannot set this mode, it returns nonzero value.
+     If it succeeds, it returns zero.
+
+   The functions which restore the floating-point environment can take
+these kinds of arguments:
+
+   * Pointers to `fenv_t' objects, which were initialized previously by
+     a call to `fegetenv' or `feholdexcept'.
+
+   * The special macro `FE_DFL_ENV' which represents the floating-point
+     environment as it was available at program start.
+
+   * Implementation defined macros with names starting with `FE_' and
+     having type `fenv_t *'.
+
+     If possible, the GNU C Library defines a macro `FE_NOMASK_ENV'
+     which represents an environment where every exception raised
+     causes a trap to occur.  You can test for this macro using
+     `#ifdef'.  It is only defined if `_GNU_SOURCE' is defined.
+
+     Some platforms might define other predefined environments.
+
+To set the floating-point environment, you can use either of these
+functions:
+
+ -- Function: int fesetenv (const fenv_t *ENVP)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     Set the floating-point environment to that described by ENVP.
+
+     The function returns zero in case the operation was successful, a
+     non-zero value otherwise.
+
+ -- Function: int feupdateenv (const fenv_t *ENVP)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     Like `fesetenv', this function sets the floating-point environment
+     to that described by ENVP.  However, if any exceptions were
+     flagged in the status word before `feupdateenv' was called, they
+     remain flagged after the call.  In other words, after `feupdateenv'
+     is called, the status word is the bitwise OR of the previous
+     status word and the one saved in ENVP.
+
+     The function returns zero in case the operation was successful, a
+     non-zero value otherwise.
+
+TS 18661-1:2014 defines additional functions to save and restore
+floating-point control modes (such as the rounding mode and whether
+traps are enabled) while leaving other status (such as raised flags)
+unchanged.
+
+   The special macro `FE_DFL_MODE' may be passed to `fesetmode'.  It
+represents the floating-point control modes at program start.
+
+ -- Function: int fegetmode (femode_t *MODEP)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     Store the floating-point control modes in the variable pointed to
+     by MODEP.
+
+     The function returns zero in case the operation was successful, a
+     non-zero value otherwise.
+
+ -- Function: int fesetmode (const femode_t *MODEP)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     Set the floating-point control modes to those described by MODEP.
+
+     The function returns zero in case the operation was successful, a
+     non-zero value otherwise.
+
+To control for individual exceptions if raising them causes a trap to
+occur, you can use the following two functions.
+
+   *Portability Note:* These functions are all GNU extensions.
+
+ -- Function: int feenableexcept (int EXCEPTS)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This function enables traps for each of the exceptions as
+     indicated by the parameter EXCEPTS.  The individual exceptions are
+     described in *Note Status bit operations::.  Only the specified
+     exceptions are enabled, the status of the other exceptions is not
+     changed.
+
+     The function returns the previous enabled exceptions in case the
+     operation was successful, `-1' otherwise.
+
+ -- Function: int fedisableexcept (int EXCEPTS)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This function disables traps for each of the exceptions as
+     indicated by the parameter EXCEPTS.  The individual exceptions are
+     described in *Note Status bit operations::.  Only the specified
+     exceptions are disabled, the status of the other exceptions is not
+     changed.
+
+     The function returns the previous enabled exceptions in case the
+     operation was successful, `-1' otherwise.
+
+ -- Function: int fegetexcept (void)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     The function returns a bitmask of all currently enabled
+     exceptions.  It returns `-1' in case of failure.
+
+
+File: libc.info,  Node: Arithmetic Functions,  Next: Complex Numbers,  Prev: Control Functions,  Up: Arithmetic
+
+20.8 Arithmetic Functions
+=========================
+
+The C library provides functions to do basic operations on
+floating-point numbers.  These include absolute value, maximum and
+minimum, normalization, bit twiddling, rounding, and a few others.
+
+* Menu:
+
+* Absolute Value::              Absolute values of integers and floats.
+* Normalization Functions::     Extracting exponents and putting them back.
+* Rounding Functions::          Rounding floats to integers.
+* Remainder Functions::         Remainders on division, precisely defined.
+* FP Bit Twiddling::            Sign bit adjustment.  Adding epsilon.
+* FP Comparison Functions::     Comparisons without risk of exceptions.
+* Misc FP Arithmetic::          Max, min, positive difference, multiply-add.
+
+
+File: libc.info,  Node: Absolute Value,  Next: Normalization Functions,  Up: Arithmetic Functions
+
+20.8.1 Absolute Value
+---------------------
+
+These functions are provided for obtaining the "absolute value" (or
+"magnitude") of a number.  The absolute value of a real number X is X
+if X is positive, -X if X is negative.  For a complex number Z, whose
+real part is X and whose imaginary part is Y, the absolute value is
+`sqrt (X*X + Y*Y)'.
+
+   Prototypes for `abs', `labs' and `llabs' are in `stdlib.h';
+`imaxabs' is declared in `inttypes.h'; the `fabs' functions are
+declared in `math.h'; the `cabs' functions are declared in `complex.h'.
+
+ -- Function: int abs (int NUMBER)
+ -- Function: long int labs (long int NUMBER)
+ -- Function: long long int llabs (long long int NUMBER)
+ -- Function: intmax_t imaxabs (intmax_t NUMBER)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     These functions return the absolute value of NUMBER.
+
+     Most computers use a two's complement integer representation, in
+     which the absolute value of `INT_MIN' (the smallest possible `int')
+     cannot be represented; thus, `abs (INT_MIN)' is not defined.
+
+     `llabs' and `imaxdiv' are new to ISO C99.
+
+     See *Note Integers:: for a description of the `intmax_t' type.
+
+
+ -- Function: double fabs (double NUMBER)
+ -- Function: float fabsf (float NUMBER)
+ -- Function: long double fabsl (long double NUMBER)
+ -- Function: _FloatN fabsfN (_FloatN NUMBER)
+ -- Function: _FloatNx fabsfNx (_FloatNx NUMBER)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This function returns the absolute value of the floating-point
+     number NUMBER.
+
+ -- Function: double cabs (complex double Z)
+ -- Function: float cabsf (complex float Z)
+ -- Function: long double cabsl (complex long double Z)
+ -- Function: _FloatN cabsfN (complex _FloatN Z)
+ -- Function: _FloatNx cabsfNx (complex _FloatNx Z)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     These functions return the absolute  value of the complex number Z
+     (*note Complex Numbers::).  The absolute value of a complex number
+     is:
+
+          sqrt (creal (Z) * creal (Z) + cimag (Z) * cimag (Z))
+
+     This function should always be used instead of the direct formula
+     because it takes special care to avoid losing precision.  It may
+     also take advantage of hardware support for this operation.  See
+     `hypot' in *Note Exponents and Logarithms::.
+
+
+File: libc.info,  Node: Normalization Functions,  Next: Rounding Functions,  Prev: Absolute Value,  Up: Arithmetic Functions
+
+20.8.2 Normalization Functions
+------------------------------
+
+The functions described in this section are primarily provided as a way
+to efficiently perform certain low-level manipulations on floating point
+numbers that are represented internally using a binary radix; see *Note
+Floating Point Concepts::.  These functions are required to have
+equivalent behavior even if the representation does not use a radix of
+2, but of course they are unlikely to be particularly efficient in
+those cases.
+
+   All these functions are declared in `math.h'.
+
+ -- Function: double frexp (double VALUE, int *EXPONENT)
+ -- Function: float frexpf (float VALUE, int *EXPONENT)
+ -- Function: long double frexpl (long double VALUE, int *EXPONENT)
+ -- Function: _FloatN frexpfN (_FloatN VALUE, int *EXPONENT)
+ -- Function: _FloatNx frexpfNx (_FloatNx VALUE, int *EXPONENT)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     These functions are used to split the number VALUE into a
+     normalized fraction and an exponent.
+
+     If the argument VALUE is not zero, the return value is VALUE times
+     a power of two, and its magnitude is always in the range 1/2
+     (inclusive) to 1 (exclusive).  The corresponding exponent is
+     stored in `*EXPONENT'; the return value multiplied by 2 raised to
+     this exponent equals the original number VALUE.
+
+     For example, `frexp (12.8, &exponent)' returns `0.8' and stores
+     `4' in `exponent'.
+
+     If VALUE is zero, then the return value is zero and zero is stored
+     in `*EXPONENT'.
+
+ -- Function: double ldexp (double VALUE, int EXPONENT)
+ -- Function: float ldexpf (float VALUE, int EXPONENT)
+ -- Function: long double ldexpl (long double VALUE, int EXPONENT)
+ -- Function: _FloatN ldexpfN (_FloatN VALUE, int EXPONENT)
+ -- Function: _FloatNx ldexpfNx (_FloatNx VALUE, int EXPONENT)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     These functions return the result of multiplying the floating-point
+     number VALUE by 2 raised to the power EXPONENT.  (It can be used
+     to reassemble floating-point numbers that were taken apart by
+     `frexp'.)
+
+     For example, `ldexp (0.8, 4)' returns `12.8'.
+
+   The following functions, which come from BSD, provide facilities
+equivalent to those of `ldexp' and `frexp'.  See also the ISO C
+function `logb' which originally also appeared in BSD.  The `_FloatN'
+and `_FloatN' variants of the following functions come from TS
+18661-3:2015.
+
+ -- Function: double scalb (double VALUE, double EXPONENT)
+ -- Function: float scalbf (float VALUE, float EXPONENT)
+ -- Function: long double scalbl (long double VALUE, long double
+          EXPONENT)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     The `scalb' function is the BSD name for `ldexp'.
+
+ -- Function: double scalbn (double X, int N)
+ -- Function: float scalbnf (float X, int N)
+ -- Function: long double scalbnl (long double X, int N)
+ -- Function: _FloatN scalbnfN (_FloatN X, int N)
+ -- Function: _FloatNx scalbnfNx (_FloatNx X, int N)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     `scalbn' is identical to `scalb', except that the exponent N is an
+     `int' instead of a floating-point number.
+
+ -- Function: double scalbln (double X, long int N)
+ -- Function: float scalblnf (float X, long int N)
+ -- Function: long double scalblnl (long double X, long int N)
+ -- Function: _FloatN scalblnfN (_FloatN X, long int N)
+ -- Function: _FloatNx scalblnfNx (_FloatNx X, long int N)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     `scalbln' is identical to `scalb', except that the exponent N is a
+     `long int' instead of a floating-point number.
+
+ -- Function: double significand (double X)
+ -- Function: float significandf (float X)
+ -- Function: long double significandl (long double X)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     `significand' returns the mantissa of X scaled to the range [1, 2).
+     It is equivalent to `scalb (X, (double) -ilogb (X))'.
+
+     This function exists mainly for use in certain standardized tests
+     of IEEE 754 conformance.
+
+
+File: libc.info,  Node: Rounding Functions,  Next: Remainder Functions,  Prev: Normalization Functions,  Up: Arithmetic Functions
+
+20.8.3 Rounding Functions
+-------------------------
+
+The functions listed here perform operations such as rounding and
+truncation of floating-point values.  Some of these functions convert
+floating point numbers to integer values.  They are all declared in
+`math.h'.
+
+   You can also convert floating-point numbers to integers simply by
+casting them to `int'.  This discards the fractional part, effectively
+rounding towards zero.  However, this only works if the result can
+actually be represented as an `int'--for very large numbers, this is
+impossible.  The functions listed here return the result as a `double'
+instead to get around this problem.
+
+   The `fromfp' functions use the following macros, from TS
+18661-1:2014, to specify the direction of rounding.  These correspond
+to the rounding directions defined in IEEE 754-2008.
+
+`FP_INT_UPWARD'
+     Round toward +oo.
+
+`FP_INT_DOWNWARD'
+     Round toward -oo.
+
+`FP_INT_TOWARDZERO'
+     Round toward zero.
+
+`FP_INT_TONEARESTFROMZERO'
+     Round to nearest, ties round away from zero.
+
+`FP_INT_TONEAREST'
+     Round to nearest, ties round to even.
+
+ -- Function: double ceil (double X)
+ -- Function: float ceilf (float X)
+ -- Function: long double ceill (long double X)
+ -- Function: _FloatN ceilfN (_FloatN X)
+ -- Function: _FloatNx ceilfNx (_FloatNx X)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     These functions round X upwards to the nearest integer, returning
+     that value as a `double'.  Thus, `ceil (1.5)' is `2.0'.
+
+ -- Function: double floor (double X)
+ -- Function: float floorf (float X)
+ -- Function: long double floorl (long double X)
+ -- Function: _FloatN floorfN (_FloatN X)
+ -- Function: _FloatNx floorfNx (_FloatNx X)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     These functions round X downwards to the nearest integer,
+     returning that value as a `double'.  Thus, `floor (1.5)' is `1.0'
+     and `floor (-1.5)' is `-2.0'.
+
+ -- Function: double trunc (double X)
+ -- Function: float truncf (float X)
+ -- Function: long double truncl (long double X)
+ -- Function: _FloatN truncfN (_FloatN X)
+ -- Function: _FloatNx truncfNx (_FloatNx X)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     The `trunc' functions round X towards zero to the nearest integer
+     (returned in floating-point format).  Thus, `trunc (1.5)' is `1.0'
+     and `trunc (-1.5)' is `-1.0'.
+
+ -- Function: double rint (double X)
+ -- Function: float rintf (float X)
+ -- Function: long double rintl (long double X)
+ -- Function: _FloatN rintfN (_FloatN X)
+ -- Function: _FloatNx rintfNx (_FloatNx X)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     These functions round X to an integer value according to the
+     current rounding mode.  *Note Floating Point Parameters::, for
+     information about the various rounding modes.  The default
+     rounding mode is to round to the nearest integer; some machines
+     support other modes, but round-to-nearest is always used unless
+     you explicitly select another.
+
+     If X was not initially an integer, these functions raise the
+     inexact exception.
+
+ -- Function: double nearbyint (double X)
+ -- Function: float nearbyintf (float X)
+ -- Function: long double nearbyintl (long double X)
+ -- Function: _FloatN nearbyintfN (_FloatN X)
+ -- Function: _FloatNx nearbyintfNx (_FloatNx X)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     These functions return the same value as the `rint' functions, but
+     do not raise the inexact exception if X is not an integer.
+
+ -- Function: double round (double X)
+ -- Function: float roundf (float X)
+ -- Function: long double roundl (long double X)
+ -- Function: _FloatN roundfN (_FloatN X)
+ -- Function: _FloatNx roundfNx (_FloatNx X)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     These functions are similar to `rint', but they round halfway
+     cases away from zero instead of to the nearest integer (or other
+     current rounding mode).
+
+ -- Function: double roundeven (double X)
+ -- Function: float roundevenf (float X)
+ -- Function: long double roundevenl (long double X)
+ -- Function: _FloatN roundevenfN (_FloatN X)
+ -- Function: _FloatNx roundevenfNx (_FloatNx X)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     These functions, from TS 18661-1:2014 and TS 18661-3:2015, are
+     similar to `round', but they round halfway cases to even instead
+     of away from zero.
+
+ -- Function: long int lrint (double X)
+ -- Function: long int lrintf (float X)
+ -- Function: long int lrintl (long double X)
+ -- Function: long int lrintfN (_FloatN X)
+ -- Function: long int lrintfNx (_FloatNx X)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     These functions are just like `rint', but they return a `long int'
+     instead of a floating-point number.
+
+ -- Function: long long int llrint (double X)
+ -- Function: long long int llrintf (float X)
+ -- Function: long long int llrintl (long double X)
+ -- Function: long long int llrintfN (_FloatN X)
+ -- Function: long long int llrintfNx (_FloatNx X)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     These functions are just like `rint', but they return a `long long
+     int' instead of a floating-point number.
+
+ -- Function: long int lround (double X)
+ -- Function: long int lroundf (float X)
+ -- Function: long int lroundl (long double X)
+ -- Function: long int lroundfN (_FloatN X)
+ -- Function: long int lroundfNx (_FloatNx X)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     These functions are just like `round', but they return a `long
+     int' instead of a floating-point number.
+
+ -- Function: long long int llround (double X)
+ -- Function: long long int llroundf (float X)
+ -- Function: long long int llroundl (long double X)
+ -- Function: long long int llroundfN (_FloatN X)
+ -- Function: long long int llroundfNx (_FloatNx X)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     These functions are just like `round', but they return a `long
+     long int' instead of a floating-point number.
+
+ -- Function: intmax_t fromfp (double X, int ROUND, unsigned int WIDTH)
+ -- Function: intmax_t fromfpf (float X, int ROUND, unsigned int WIDTH)
+ -- Function: intmax_t fromfpl (long double X, int ROUND, unsigned int
+          WIDTH)
+ -- Function: intmax_t fromfpfN (_FloatN X, int ROUND, unsigned int
+          WIDTH)
+ -- Function: intmax_t fromfpfNx (_FloatNx X, int ROUND, unsigned int
+          WIDTH)
+ -- Function: uintmax_t ufromfp (double X, int ROUND, unsigned int
+          WIDTH)
+ -- Function: uintmax_t ufromfpf (float X, int ROUND, unsigned int
+          WIDTH)
+ -- Function: uintmax_t ufromfpl (long double X, int ROUND, unsigned
+          int WIDTH)
+ -- Function: uintmax_t ufromfpfN (_FloatN X, int ROUND, unsigned int
+          WIDTH)
+ -- Function: uintmax_t ufromfpfNx (_FloatNx X, int ROUND, unsigned int
+          WIDTH)
+ -- Function: intmax_t fromfpx (double X, int ROUND, unsigned int WIDTH)
+ -- Function: intmax_t fromfpxf (float X, int ROUND, unsigned int WIDTH)
+ -- Function: intmax_t fromfpxl (long double X, int ROUND, unsigned int
+          WIDTH)
+ -- Function: intmax_t fromfpxfN (_FloatN X, int ROUND, unsigned int
+          WIDTH)
+ -- Function: intmax_t fromfpxfNx (_FloatNx X, int ROUND, unsigned int
+          WIDTH)
+ -- Function: uintmax_t ufromfpx (double X, int ROUND, unsigned int
+          WIDTH)
+ -- Function: uintmax_t ufromfpxf (float X, int ROUND, unsigned int
+          WIDTH)
+ -- Function: uintmax_t ufromfpxl (long double X, int ROUND, unsigned
+          int WIDTH)
+ -- Function: uintmax_t ufromfpxfN (_FloatN X, int ROUND, unsigned int
+          WIDTH)
+ -- Function: uintmax_t ufromfpxfNx (_FloatNx X, int ROUND, unsigned
+          int WIDTH)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     These functions, from TS 18661-1:2014 and TS 18661-3:2015, convert
+     a floating-point number to an integer according to the rounding
+     direction ROUND (one of the `FP_INT_*' macros).  If the integer is
+     outside the range of a signed or unsigned (depending on the return
+     type of the function) type of width WIDTH bits (or outside the
+     range of the return type, if WIDTH is larger), or if X is infinite
+     or NaN, or if WIDTH is zero, a domain error occurs and an
+     unspecified value is returned.  The functions with an `x' in their
+     names raise the inexact exception when a domain error does not
+     occur and the argument is not an integer; the other functions do
+     not raise the inexact exception.
+
+ -- Function: double modf (double VALUE, double *INTEGER-PART)
+ -- Function: float modff (float VALUE, float *INTEGER-PART)
+ -- Function: long double modfl (long double VALUE, long double
+          *INTEGER-PART)
+ -- Function: _FloatN modffN (_FloatN VALUE, _FloatN *INTEGER-PART)
+ -- Function: _FloatNx modffNx (_FloatNx VALUE, _FloatNx *INTEGER-PART)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     These functions break the argument VALUE into an integer part and a
+     fractional part (between `-1' and `1', exclusive).  Their sum
+     equals VALUE.  Each of the parts has the same sign as VALUE, and
+     the integer part is always rounded toward zero.
+
+     `modf' stores the integer part in `*INTEGER-PART', and returns the
+     fractional part.  For example, `modf (2.5, &intpart)' returns
+     `0.5' and stores `2.0' into `intpart'.
+
+
+File: libc.info,  Node: Remainder Functions,  Next: FP Bit Twiddling,  Prev: Rounding Functions,  Up: Arithmetic Functions
+
+20.8.4 Remainder Functions
+--------------------------
+
+The functions in this section compute the remainder on division of two
+floating-point numbers.  Each is a little different; pick the one that
+suits your problem.
+
+ -- Function: double fmod (double NUMERATOR, double DENOMINATOR)
+ -- Function: float fmodf (float NUMERATOR, float DENOMINATOR)
+ -- Function: long double fmodl (long double NUMERATOR, long double
+          DENOMINATOR)
+ -- Function: _FloatN fmodfN (_FloatN NUMERATOR, _FloatN DENOMINATOR)
+ -- Function: _FloatNx fmodfNx (_FloatNx NUMERATOR, _FloatNx
+          DENOMINATOR)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     These functions compute the remainder from the division of
+     NUMERATOR by DENOMINATOR.  Specifically, the return value is
+     `NUMERATOR - N * DENOMINATOR', where N is the quotient of
+     NUMERATOR divided by DENOMINATOR, rounded towards zero to an
+     integer.  Thus, `fmod (6.5, 2.3)' returns `1.9', which is `6.5'
+     minus `4.6'.
+
+     The result has the same sign as the NUMERATOR and has magnitude
+     less than the magnitude of the DENOMINATOR.
+
+     If DENOMINATOR is zero, `fmod' signals a domain error.
+
+ -- Function: double remainder (double NUMERATOR, double DENOMINATOR)
+ -- Function: float remainderf (float NUMERATOR, float DENOMINATOR)
+ -- Function: long double remainderl (long double NUMERATOR, long
+          double DENOMINATOR)
+ -- Function: _FloatN remainderfN (_FloatN NUMERATOR, _FloatN
+          DENOMINATOR)
+ -- Function: _FloatNx remainderfNx (_FloatNx NUMERATOR, _FloatNx
+          DENOMINATOR)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     These functions are like `fmod' except that they round the
+     internal quotient N to the nearest integer instead of towards zero
+     to an integer.  For example, `remainder (6.5, 2.3)' returns
+     `-0.4', which is `6.5' minus `6.9'.
+
+     The absolute value of the result is less than or equal to half the
+     absolute value of the DENOMINATOR.  The difference between `fmod
+     (NUMERATOR, DENOMINATOR)' and `remainder (NUMERATOR, DENOMINATOR)'
+     is always either DENOMINATOR, minus DENOMINATOR, or zero.
+
+     If DENOMINATOR is zero, `remainder' signals a domain error.
+
+ -- Function: double drem (double NUMERATOR, double DENOMINATOR)
+ -- Function: float dremf (float NUMERATOR, float DENOMINATOR)
+ -- Function: long double dreml (long double NUMERATOR, long double
+          DENOMINATOR)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This function is another name for `remainder'.
+
+
+File: libc.info,  Node: FP Bit Twiddling,  Next: FP Comparison Functions,  Prev: Remainder Functions,  Up: Arithmetic Functions
+
+20.8.5 Setting and modifying single bits of FP values
+-----------------------------------------------------
+
+There are some operations that are too complicated or expensive to
+perform by hand on floating-point numbers.  ISO C99 defines functions
+to do these operations, which mostly involve changing single bits.
+
+ -- Function: double copysign (double X, double Y)
+ -- Function: float copysignf (float X, float Y)
+ -- Function: long double copysignl (long double X, long double Y)
+ -- Function: _FloatN copysignfN (_FloatN X, _FloatN Y)
+ -- Function: _FloatNx copysignfNx (_FloatNx X, _FloatNx Y)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     These functions return X but with the sign of Y.  They work even
+     if X or Y are NaN or zero.  Both of these can carry a sign
+     (although not all implementations support it) and this is one of
+     the few operations that can tell the difference.
+
+     `copysign' never raises an exception.
+
+     This function is defined in IEC 559 (and the appendix with
+     recommended functions in IEEE 754/IEEE 854).
+
+ -- Function: int signbit (_float-type_ X)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     `signbit' is a generic macro which can work on all floating-point
+     types.  It returns a nonzero value if the value of X has its sign
+     bit set.
+
+     This is not the same as `x < 0.0', because IEEE 754 floating point
+     allows zero to be signed.  The comparison `-0.0 < 0.0' is false,
+     but `signbit (-0.0)' will return a nonzero value.
+
+ -- Function: double nextafter (double X, double Y)
+ -- Function: float nextafterf (float X, float Y)
+ -- Function: long double nextafterl (long double X, long double Y)
+ -- Function: _FloatN nextafterfN (_FloatN X, _FloatN Y)
+ -- Function: _FloatNx nextafterfNx (_FloatNx X, _FloatNx Y)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     The `nextafter' function returns the next representable neighbor of
+     X in the direction towards Y.  The size of the step between X and
+     the result depends on the type of the result.  If X = Y the
+     function simply returns Y.  If either value is `NaN', `NaN' is
+     returned.  Otherwise a value corresponding to the value of the
+     least significant bit in the mantissa is added or subtracted,
+     depending on the direction.  `nextafter' will signal overflow or
+     underflow if the result goes outside of the range of normalized
+     numbers.
+
+     This function is defined in IEC 559 (and the appendix with
+     recommended functions in IEEE 754/IEEE 854).
+
+ -- Function: double nexttoward (double X, long double Y)
+ -- Function: float nexttowardf (float X, long double Y)
+ -- Function: long double nexttowardl (long double X, long double Y)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     These functions are identical to the corresponding versions of
+     `nextafter' except that their second argument is a `long double'.
+
+ -- Function: double nextup (double X)
+ -- Function: float nextupf (float X)
+ -- Function: long double nextupl (long double X)
+ -- Function: _FloatN nextupfN (_FloatN X)
+ -- Function: _FloatNx nextupfNx (_FloatNx X)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     The `nextup' function returns the next representable neighbor of X
+     in the direction of positive infinity.  If X is the smallest
+     negative subnormal number in the type of X the function returns
+     `-0'.  If X = `0' the function returns the smallest positive
+     subnormal number in the type of X.  If X is NaN, NaN is returned.
+     If X is +oo, +oo is returned.  `nextup' is from TS 18661-1:2014
+     and TS 18661-3:2015.  `nextup' never raises an exception except
+     for signaling NaNs.
+
+ -- Function: double nextdown (double X)
+ -- Function: float nextdownf (float X)
+ -- Function: long double nextdownl (long double X)
+ -- Function: _FloatN nextdownfN (_FloatN X)
+ -- Function: _FloatNx nextdownfNx (_FloatNx X)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     The `nextdown' function returns the next representable neighbor of
+     X in the direction of negative infinity.  If X is the smallest
+     positive subnormal number in the type of X the function returns
+     `+0'.  If X = `0' the function returns the smallest negative
+     subnormal number in the type of X.  If X is NaN, NaN is returned.
+     If X is -oo, -oo is returned.  `nextdown' is from TS 18661-1:2014
+     and TS 18661-3:2015.  `nextdown' never raises an exception except
+     for signaling NaNs.
+
+ -- Function: double nan (const char *TAGP)
+ -- Function: float nanf (const char *TAGP)
+ -- Function: long double nanl (const char *TAGP)
+ -- Function: _FloatN nanfN (const char *TAGP)
+ -- Function: _FloatNx nanfNx (const char *TAGP)
+     Preliminary: | MT-Safe locale | AS-Safe | AC-Safe | *Note POSIX
+     Safety Concepts::.
+
+     The `nan' function returns a representation of NaN, provided that
+     NaN is supported by the target platform.  `nan
+     ("N-CHAR-SEQUENCE")' is equivalent to `strtod
+     ("NAN(N-CHAR-SEQUENCE)")'.
+
+     The argument TAGP is used in an unspecified manner.  On IEEE 754
+     systems, there are many representations of NaN, and TAGP selects
+     one.  On other systems it may do nothing.
+
+ -- Function: int canonicalize (double *CX, const double *X)
+ -- Function: int canonicalizef (float *CX, const float *X)
+ -- Function: int canonicalizel (long double *CX, const long double *X)
+ -- Function: int canonicalizefN (_FloatN *CX, const _FloatN *X)
+ -- Function: int canonicalizefNx (_FloatNx *CX, const _FloatNx *X)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     In some floating-point formats, some values have canonical
+     (preferred) and noncanonical encodings (for IEEE interchange
+     binary formats, all encodings are canonical).  These functions,
+     defined by TS 18661-1:2014 and TS 18661-3:2015, attempt to produce
+     a canonical version of the floating-point value pointed to by X;
+     if that value is a signaling NaN, they raise the invalid exception
+     and produce a quiet NaN.  If a canonical value is produced, it is
+     stored in the object pointed to by CX, and these functions return
+     zero.  Otherwise (if a canonical value could not be produced
+     because the object pointed to by X is not a valid representation
+     of any floating-point value), the object pointed to by CX is
+     unchanged and a nonzero value is returned.
+
+     Note that some formats have multiple encodings of a value which are
+     all equally canonical; when such an encoding is used as an input to
+     this function, any such encoding of the same value (or of the
+     corresponding quiet NaN, if that value is a signaling NaN) may be
+     produced as output.
+
+ -- Function: double getpayload (const double *X)
+ -- Function: float getpayloadf (const float *X)
+ -- Function: long double getpayloadl (const long double *X)
+ -- Function: _FloatN getpayloadfN (const _FloatN *X)
+ -- Function: _FloatNx getpayloadfNx (const _FloatNx *X)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     IEEE 754 defines the "payload" of a NaN to be an integer value
+     encoded in the representation of the NaN.  Payloads are typically
+     propagated from NaN inputs to the result of a floating-point
+     operation.  These functions, defined by TS 18661-1:2014 and TS
+     18661-3:2015, return the payload of the NaN pointed to by X
+     (returned as a positive integer, or positive zero, represented as a
+     floating-point number); if X is not a NaN, they return an
+     unspecified value.  They raise no floating-point exceptions even
+     for signaling NaNs.
+
+ -- Function: int setpayload (double *X, double PAYLOAD)
+ -- Function: int setpayloadf (float *X, float PAYLOAD)
+ -- Function: int setpayloadl (long double *X, long double PAYLOAD)
+ -- Function: int setpayloadfN (_FloatN *X, _FloatN PAYLOAD)
+ -- Function: int setpayloadfNx (_FloatNx *X, _FloatNx PAYLOAD)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     These functions, defined by TS 18661-1:2014 and TS 18661-3:2015,
+     set the object pointed to by X to a quiet NaN with payload PAYLOAD
+     and a zero sign bit and return zero.  If PAYLOAD is not a
+     positive-signed integer that is a valid payload for a quiet NaN of
+     the given type, the object pointed to by X is set to positive zero
+     and a nonzero value is returned.  They raise no floating-point
+     exceptions.
+
+ -- Function: int setpayloadsig (double *X, double PAYLOAD)
+ -- Function: int setpayloadsigf (float *X, float PAYLOAD)
+ -- Function: int setpayloadsigl (long double *X, long double PAYLOAD)
+ -- Function: int setpayloadsigfN (_FloatN *X, _FloatN PAYLOAD)
+ -- Function: int setpayloadsigfNx (_FloatNx *X, _FloatNx PAYLOAD)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     These functions, defined by TS 18661-1:2014 and TS 18661-3:2015,
+     set the object pointed to by X to a signaling NaN with payload
+     PAYLOAD and a zero sign bit and return zero.  If PAYLOAD is not a
+     positive-signed integer that is a valid payload for a signaling
+     NaN of the given type, the object pointed to by X is set to
+     positive zero and a nonzero value is returned.  They raise no
+     floating-point exceptions.
 
 
 File: libc.info,  Node: FP Comparison Functions,  Next: Misc FP Arithmetic,  Prev: FP Bit Twiddling,  Up: Arithmetic Functions
@@ -2254,6 +3245,62 @@ perform these operations faster than the equivalent C code.
      slower than the expression `x*y + z'.  In the GNU C Library, this
      always means the operation is implemented in hardware.
 
+ -- Function: float fadd (double X, double Y)
+ -- Function: float faddl (long double X, long double Y)
+ -- Function: double daddl (long double X, long double Y)
+ -- Function: _FloatM fMaddfN (_FloatN X, _FloatN Y)
+ -- Function: _FloatM fMaddfNx (_FloatNx X, _FloatNx Y)
+ -- Function: _FloatMx fMxaddfN (_FloatN X, _FloatN Y)
+ -- Function: _FloatMx fMxaddfNx (_FloatNx X, _FloatNx Y)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     These functions, from TS 18661-1:2014 and TS 18661-3:2015, return
+     X + Y, rounded once to the return type of the function without any
+     intermediate rounding to the type of the arguments.
+
+ -- Function: float fsub (double X, double Y)
+ -- Function: float fsubl (long double X, long double Y)
+ -- Function: double dsubl (long double X, long double Y)
+ -- Function: _FloatM fMsubfN (_FloatN X, _FloatN Y)
+ -- Function: _FloatM fMsubfNx (_FloatNx X, _FloatNx Y)
+ -- Function: _FloatMx fMxsubfN (_FloatN X, _FloatN Y)
+ -- Function: _FloatMx fMxsubfNx (_FloatNx X, _FloatNx Y)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     These functions, from TS 18661-1:2014 and TS 18661-3:2015, return
+     X - Y, rounded once to the return type of the function without any
+     intermediate rounding to the type of the arguments.
+
+ -- Function: float fmul (double X, double Y)
+ -- Function: float fmull (long double X, long double Y)
+ -- Function: double dmull (long double X, long double Y)
+ -- Function: _FloatM fMmulfN (_FloatN X, _FloatN Y)
+ -- Function: _FloatM fMmulfNx (_FloatNx X, _FloatNx Y)
+ -- Function: _FloatMx fMxmulfN (_FloatN X, _FloatN Y)
+ -- Function: _FloatMx fMxmulfNx (_FloatNx X, _FloatNx Y)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     These functions, from TS 18661-1:2014 and TS 18661-3:2015, return
+     X * Y, rounded once to the return type of the function without any
+     intermediate rounding to the type of the arguments.
+
+ -- Function: float fdiv (double X, double Y)
+ -- Function: float fdivl (long double X, long double Y)
+ -- Function: double ddivl (long double X, long double Y)
+ -- Function: _FloatM fMdivfN (_FloatN X, _FloatN Y)
+ -- Function: _FloatM fMdivfNx (_FloatNx X, _FloatNx Y)
+ -- Function: _FloatMx fMxdivfN (_FloatN X, _FloatN Y)
+ -- Function: _FloatMx fMxdivfNx (_FloatNx X, _FloatNx Y)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     These functions, from TS 18661-1:2014 and TS 18661-3:2015, return
+     X / Y, rounded once to the return type of the function without any
+     intermediate rounding to the type of the arguments.
+
 
 File: libc.info,  Node: Complex Numbers,  Next: Operations on Complex,  Prev: Arithmetic Functions,  Up: Arithmetic
 
@@ -2476,7 +3523,7 @@ defined there) so we have to do it as well.
 
      The `wcstol' function was introduced in Amendment 1 of ISO C90.
 
- -- Function: unsigned long int strtoul (const char *retrict STRING,
+ -- Function: unsigned long int strtoul (const char *restrict STRING,
           char **restrict TAILPTR, int BASE)
      Preliminary: | MT-Safe locale | AS-Safe | AC-Safe | *Note POSIX
      Safety Concepts::.
@@ -4140,8 +5187,13 @@ strings.  These functions are declared in the header file `time.h'.
           Emperors' reigns.
 
     `O'
-          Use the locale's alternate numeric symbols for numbers.  This
-          modifier applies only to numeric format specifiers.
+          With all format specifiers that produce numbers: use the
+          locale's alternate numeric symbols.
+
+          With `%B', `%b', and `%h': use the grammatical form for month
+          names that is appropriate when the month is named by itself,
+          rather than the form that is appropriate when the month is
+          used as part of a complete date.  This is a GNU extension.
 
      If the format supports the modifier but no alternate representation
      is available, it is ignored.
@@ -4157,13 +5209,23 @@ strings.  These functions are declared in the header file `time.h'.
           The full weekday name according to the current locale.
 
     `%b'
-          The abbreviated month name according to the current locale.
+          The abbreviated month name according to the current locale,
+          in the grammatical form used when the month is part of a
+          complete date.  As a GNU extension, the `O' modifier can be
+          used (`%Ob') to get the grammatical form used when the month
+          is named by itself.
 
     `%B'
-          The full month name according to the current locale.
+          The full month name according to the current locale, in the
+          grammatical form used when the month is part of a complete
+          date.  As a GNU extension, the `O' modifier can be used
+          (`%OB') to get the grammatical form used when the month is
+          named by itself.
 
-          Using `%B' together with `%d' produces grammatically
-          incorrect results for some locales.
+          Note that not all languages need two different forms of the
+          month names, so the text produced by `%B' and `%OB', and by
+          `%b' and `%Ob', may or may not be the same, depending on the
+          locale.
 
     `%c'
           The preferred calendar time representation for the current
@@ -4521,8 +5583,15 @@ is defined and implemented in terms of calls to `strptime'.
     `%b'
     `%B'
     `%h'
-          The month name according to the current locale, in
-          abbreviated form or the full name.
+          A month name according to the current locale.  All three
+          specifiers will recognize both abbreviated and full month
+          names.  If the locale provides two different grammatical
+          forms of month names, all three specifiers will recognize
+          both forms.
+
+          As a GNU extension, the `O' modifier can be used with these
+          specifiers; it has no effect, as both grammatical forms of
+          month names are recognized.
 
     `%c'
           The date and time representation for the current locale.
@@ -7350,6 +8419,11 @@ functions:
      stack.  Executing the contents would start at the point where the
      `getcontext' call just returned.
 
+     *Compatibility Note:* Depending on the operating system,
+     information about the current context's stack may be in the
+     `uc_stack' field of UCP, or it may instead be in
+     architecture-specific subfields of the `uc_mcontext' field.
+
      The function returns `0' if successful.  Otherwise it returns `-1'
      and sets ERRNO accordingly.
 
@@ -8157,1091 +9231,4 @@ signals is to ignore them.
  -- Macro: int SIGPOLL
      This is a System V signal name, more or less similar to `SIGIO'.
      It is defined only for compatibility.
-
-
-File: libc.info,  Node: Job Control Signals,  Next: Operation Error Signals,  Prev: Asynchronous I/O Signals,  Up: Standard Signals
-
-24.2.5 Job Control Signals
---------------------------
-
-These signals are used to support job control.  If your system doesn't
-support job control, then these macros are defined but the signals
-themselves can't be raised or handled.
-
-   You should generally leave these signals alone unless you really
-understand how job control works.  *Note Job Control::.
-
- -- Macro: int SIGCHLD
-     This signal is sent to a parent process whenever one of its child
-     processes terminates or stops.
-
-     The default action for this signal is to ignore it.  If you
-     establish a handler for this signal while there are child
-     processes that have terminated but not reported their status via
-     `wait' or `waitpid' (*note Process Completion::), whether your new
-     handler applies to those processes or not depends on the
-     particular operating system.
-
- -- Macro: int SIGCLD
-     This is an obsolete name for `SIGCHLD'.
-
- -- Macro: int SIGCONT
-     You can send a `SIGCONT' signal to a process to make it continue.
-     This signal is special--it always makes the process continue if it
-     is stopped, before the signal is delivered.  The default behavior
-     is to do nothing else.  You cannot block this signal.  You can set
-     a handler, but `SIGCONT' always makes the process continue
-     regardless.
-
-     Most programs have no reason to handle `SIGCONT'; they simply
-     resume execution without realizing they were ever stopped.  You
-     can use a handler for `SIGCONT' to make a program do something
-     special when it is stopped and continued--for example, to reprint
-     a prompt when it is suspended while waiting for input.
-
- -- Macro: int SIGSTOP
-     The `SIGSTOP' signal stops the process.  It cannot be handled,
-     ignored, or blocked.
-   
- -- Macro: int SIGTSTP
-     The `SIGTSTP' signal is an interactive stop signal.  Unlike
-     `SIGSTOP', this signal can be handled and ignored.
-
-     Your program should handle this signal if you have a special need
-     to leave files or system tables in a secure state when a process is
-     stopped.  For example, programs that turn off echoing should handle
-     `SIGTSTP' so they can turn echoing back on before stopping.
-
-     This signal is generated when the user types the SUSP character
-     (normally `C-z').  For more information about terminal driver
-     support, see *Note Special Characters::.
-   
- -- Macro: int SIGTTIN
-     A process cannot read from the user's terminal while it is running
-     as a background job.  When any process in a background job tries to
-     read from the terminal, all of the processes in the job are sent a
-     `SIGTTIN' signal.  The default action for this signal is to stop
-     the process.  For more information about how this interacts with
-     the terminal driver, see *Note Access to the Terminal::.
-   
- -- Macro: int SIGTTOU
-     This is similar to `SIGTTIN', but is generated when a process in a
-     background job attempts to write to the terminal or set its modes.
-     Again, the default action is to stop the process.  `SIGTTOU' is
-     only generated for an attempt to write to the terminal if the
-     `TOSTOP' output mode is set; *note Output Modes::.
-   
-   While a process is stopped, no more signals can be delivered to it
-until it is continued, except `SIGKILL' signals and (obviously)
-`SIGCONT' signals.  The signals are marked as pending, but not
-delivered until the process is continued.  The `SIGKILL' signal always
-causes termination of the process and can't be blocked, handled or
-ignored.  You can ignore `SIGCONT', but it always causes the process to
-be continued anyway if it is stopped.  Sending a `SIGCONT' signal to a
-process causes any pending stop signals for that process to be
-discarded.  Likewise, any pending `SIGCONT' signals for a process are
-discarded when it receives a stop signal.
-
-   When a process in an orphaned process group (*note Orphaned Process
-Groups::) receives a `SIGTSTP', `SIGTTIN', or `SIGTTOU' signal and does
-not handle it, the process does not stop.  Stopping the process would
-probably not be very useful, since there is no shell program that will
-notice it stop and allow the user to continue it.  What happens instead
-depends on the operating system you are using.  Some systems may do
-nothing; others may deliver another signal instead, such as `SIGKILL'
-or `SIGHUP'.  On GNU/Hurd systems, the process dies with `SIGKILL';
-this avoids the problem of many stopped, orphaned processes lying
-around the system.
-
-
-File: libc.info,  Node: Operation Error Signals,  Next: Miscellaneous Signals,  Prev: Job Control Signals,  Up: Standard Signals
-
-24.2.6 Operation Error Signals
-------------------------------
-
-These signals are used to report various errors generated by an
-operation done by the program.  They do not necessarily indicate a
-programming error in the program, but an error that prevents an
-operating system call from completing.  The default action for all of
-them is to cause the process to terminate.
-
- -- Macro: int SIGPIPE
-     Broken pipe.  If you use pipes or FIFOs, you have to design your
-     application so that one process opens the pipe for reading before
-     another starts writing.  If the reading process never starts, or
-     terminates unexpectedly, writing to the pipe or FIFO raises a
-     `SIGPIPE' signal.  If `SIGPIPE' is blocked, handled or ignored,
-     the offending call fails with `EPIPE' instead.
-
-     Pipes and FIFO special files are discussed in more detail in *Note
-     Pipes and FIFOs::.
-
-     Another cause of `SIGPIPE' is when you try to output to a socket
-     that isn't connected.  *Note Sending Data::.
-
- -- Macro: int SIGLOST
-     Resource lost.  This signal is generated when you have an advisory
-     lock on an NFS file, and the NFS server reboots and forgets about
-     your lock.
-
-     On GNU/Hurd systems, `SIGLOST' is generated when any server program
-     dies unexpectedly.  It is usually fine to ignore the signal;
-     whatever call was made to the server that died just returns an
-     error.
-
- -- Macro: int SIGXCPU
-     CPU time limit exceeded.  This signal is generated when the process
-     exceeds its soft resource limit on CPU time.  *Note Limits on
-     Resources::.
-
- -- Macro: int SIGXFSZ
-     File size limit exceeded.  This signal is generated when the
-     process attempts to extend a file so it exceeds the process's soft
-     resource limit on file size.  *Note Limits on Resources::.
-
-
-File: libc.info,  Node: Miscellaneous Signals,  Next: Signal Messages,  Prev: Operation Error Signals,  Up: Standard Signals
-
-24.2.7 Miscellaneous Signals
-----------------------------
-
-These signals are used for various other purposes.  In general, they
-will not affect your program unless it explicitly uses them for
-something.
-
- -- Macro: int SIGUSR1
- -- Macro: int SIGUSR2
-     The `SIGUSR1' and `SIGUSR2' signals are set aside for you to use
-     any way you want.  They're useful for simple interprocess
-     communication, if you write a signal handler for them in the
-     program that receives the signal.
-
-     There is an example showing the use of `SIGUSR1' and `SIGUSR2' in
-     *Note Signaling Another Process::.
-
-     The default action is to terminate the process.
-
- -- Macro: int SIGWINCH
-     Window size change.  This is generated on some systems (including
-     GNU) when the terminal driver's record of the number of rows and
-     columns on the screen is changed.  The default action is to ignore
-     it.
-
-     If a program does full-screen display, it should handle `SIGWINCH'.
-     When the signal arrives, it should fetch the new screen size and
-     reformat its display accordingly.
-
- -- Macro: int SIGINFO
-     Information request.  On 4.4 BSD and GNU/Hurd systems, this signal
-     is sent to all the processes in the foreground process group of
-     the controlling terminal when the user types the STATUS character
-     in canonical mode; *note Signal Characters::.
-
-     If the process is the leader of the process group, the default
-     action is to print some status information about the system and
-     what the process is doing.  Otherwise the default is to do nothing.
-
-
-File: libc.info,  Node: Signal Messages,  Prev: Miscellaneous Signals,  Up: Standard Signals
-
-24.2.8 Signal Messages
-----------------------
-
-We mentioned above that the shell prints a message describing the signal
-that terminated a child process.  The clean way to print a message
-describing a signal is to use the functions `strsignal' and `psignal'.
-These functions use a signal number to specify which kind of signal to
-describe.  The signal number may come from the termination status of a
-child process (*note Process Completion::) or it may come from a signal
-handler in the same process.
-
- -- Function: char * strsignal (int SIGNUM)
-     Preliminary: | MT-Unsafe race:strsignal locale | AS-Unsafe init
-     i18n corrupt heap | AC-Unsafe init corrupt mem | *Note POSIX
-     Safety Concepts::.
-
-     This function returns a pointer to a statically-allocated string
-     containing a message describing the signal SIGNUM.  You should not
-     modify the contents of this string; and, since it can be rewritten
-     on subsequent calls, you should save a copy of it if you need to
-     reference it later.
-
-     This function is a GNU extension, declared in the header file
-     `string.h'.
-
- -- Function: void psignal (int SIGNUM, const char *MESSAGE)
-     Preliminary: | MT-Safe locale | AS-Unsafe corrupt i18n heap |
-     AC-Unsafe lock corrupt mem | *Note POSIX Safety Concepts::.
-
-     This function prints a message describing the signal SIGNUM to the
-     standard error output stream `stderr'; see *Note Standard
-     Streams::.
-
-     If you call `psignal' with a MESSAGE that is either a null pointer
-     or an empty string, `psignal' just prints the message
-     corresponding to SIGNUM, adding a trailing newline.
-
-     If you supply a non-null MESSAGE argument, then `psignal' prefixes
-     its output with this string.  It adds a colon and a space
-     character to separate the MESSAGE from the string corresponding to
-     SIGNUM.
-
-     This function is a BSD feature, declared in the header file
-     `signal.h'.
-
-   There is also an array `sys_siglist' which contains the messages for
-the various signal codes.  This array exists on BSD systems, unlike
-`strsignal'.
-
-
-File: libc.info,  Node: Signal Actions,  Next: Defining Handlers,  Prev: Standard Signals,  Up: Signal Handling
-
-24.3 Specifying Signal Actions
-==============================
-
-The simplest way to change the action for a signal is to use the
-`signal' function.  You can specify a built-in action (such as to
-ignore the signal), or you can "establish a handler".
-
-   The GNU C Library also implements the more versatile `sigaction'
-facility.  This section describes both facilities and gives suggestions
-on which to use when.
-
-* Menu:
-
-* Basic Signal Handling::       The simple `signal' function.
-* Advanced Signal Handling::    The more powerful `sigaction' function.
-* Signal and Sigaction::        How those two functions interact.
-* Sigaction Function Example::  An example of using the sigaction function.
-* Flags for Sigaction::         Specifying options for signal handling.
-* Initial Signal Actions::      How programs inherit signal actions.
-
-
-File: libc.info,  Node: Basic Signal Handling,  Next: Advanced Signal Handling,  Up: Signal Actions
-
-24.3.1 Basic Signal Handling
-----------------------------
-
-The `signal' function provides a simple interface for establishing an
-action for a particular signal.  The function and associated macros are
-declared in the header file `signal.h'.  
-
- -- Data Type: sighandler_t
-     This is the type of signal handler functions.  Signal handlers
-     take one integer argument specifying the signal number, and have
-     return type `void'.  So, you should define handler functions like
-     this:
-
-          void HANDLER (int `signum') { ... }
-
-     The name `sighandler_t' for this data type is a GNU extension.
-
- -- Function: sighandler_t signal (int SIGNUM, sighandler_t ACTION)
-     Preliminary: | MT-Safe sigintr | AS-Safe | AC-Safe | *Note POSIX
-     Safety Concepts::.
-
-     The `signal' function establishes ACTION as the action for the
-     signal SIGNUM.
-
-     The first argument, SIGNUM, identifies the signal whose behavior
-     you want to control, and should be a signal number.  The proper
-     way to specify a signal number is with one of the symbolic signal
-     names (*note Standard Signals::)--don't use an explicit number,
-     because the numerical code for a given kind of signal may vary
-     from operating system to operating system.
-
-     The second argument, ACTION, specifies the action to use for the
-     signal SIGNUM.  This can be one of the following:
-
-    `SIG_DFL'
-          `SIG_DFL' specifies the default action for the particular
-          signal.  The default actions for various kinds of signals are
-          stated in *Note Standard Signals::.
-
-    `SIG_IGN'
-          `SIG_IGN' specifies that the signal should be ignored.
-
-          Your program generally should not ignore signals that
-          represent serious events or that are normally used to request
-          termination.  You cannot ignore the `SIGKILL' or `SIGSTOP'
-          signals at all.  You can ignore program error signals like
-          `SIGSEGV', but ignoring the error won't enable the program to
-          continue executing meaningfully.  Ignoring user requests such
-          as `SIGINT', `SIGQUIT', and `SIGTSTP' is unfriendly.
-
-          When you do not wish signals to be delivered during a certain
-          part of the program, the thing to do is to block them, not
-          ignore them.  *Note Blocking Signals::.
-
-    `HANDLER'
-          Supply the address of a handler function in your program, to
-          specify running this handler as the way to deliver the signal.
-
-          For more information about defining signal handler functions,
-          see *Note Defining Handlers::.
-
-     If you set the action for a signal to `SIG_IGN', or if you set it
-     to `SIG_DFL' and the default action is to ignore that signal, then
-     any pending signals of that type are discarded (even if they are
-     blocked).  Discarding the pending signals means that they will
-     never be delivered, not even if you subsequently specify another
-     action and unblock this kind of signal.
-
-     The `signal' function returns the action that was previously in
-     effect for the specified SIGNUM.  You can save this value and
-     restore it later by calling `signal' again.
-
-     If `signal' can't honor the request, it returns `SIG_ERR' instead.
-     The following `errno' error conditions are defined for this
-     function:
-
-    `EINVAL'
-          You specified an invalid SIGNUM; or you tried to ignore or
-          provide a handler for `SIGKILL' or `SIGSTOP'.
-
-   *Compatibility Note:* A problem encountered when working with the
-`signal' function is that it has different semantics on BSD and SVID
-systems.  The difference is that on SVID systems the signal handler is
-deinstalled after signal delivery.  On BSD systems the handler must be
-explicitly deinstalled.  In the GNU C Library we use the BSD version by
-default.  To use the SVID version you can either use the function
-`sysv_signal' (see below) or use the `_XOPEN_SOURCE' feature select
-macro (*note Feature Test Macros::).  In general, use of these
-functions should be avoided because of compatibility problems.  It is
-better to use `sigaction' if it is available since the results are much
-more reliable.
-
-   Here is a simple example of setting up a handler to delete temporary
-files when certain fatal signals happen:
-
-     #include <signal.h>
-
-     void
-     termination_handler (int signum)
-     {
-       struct temp_file *p;
-
-       for (p = temp_file_list; p; p = p->next)
-         unlink (p->name);
-     }
-
-     int
-     main (void)
-     {
-       ...
-       if (signal (SIGINT, termination_handler) == SIG_IGN)
-         signal (SIGINT, SIG_IGN);
-       if (signal (SIGHUP, termination_handler) == SIG_IGN)
-         signal (SIGHUP, SIG_IGN);
-       if (signal (SIGTERM, termination_handler) == SIG_IGN)
-         signal (SIGTERM, SIG_IGN);
-       ...
-     }
-
-Note that if a given signal was previously set to be ignored, this code
-avoids altering that setting.  This is because non-job-control shells
-often ignore certain signals when starting children, and it is important
-for the children to respect this.
-
-   We do not handle `SIGQUIT' or the program error signals in this
-example because these are designed to provide information for debugging
-(a core dump), and the temporary files may give useful information.
-
- -- Function: sighandler_t sysv_signal (int SIGNUM, sighandler_t ACTION)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     The `sysv_signal' implements the behavior of the standard `signal'
-     function as found on SVID systems.  The difference to BSD systems
-     is that the handler is deinstalled after a delivery of a signal.
-
-     *Compatibility Note:* As said above for `signal', this function
-     should be avoided when possible.  `sigaction' is the preferred
-     method.
-
- -- Function: sighandler_t ssignal (int SIGNUM, sighandler_t ACTION)
-     Preliminary: | MT-Safe sigintr | AS-Safe | AC-Safe | *Note POSIX
-     Safety Concepts::.
-
-     The `ssignal' function does the same thing as `signal'; it is
-     provided only for compatibility with SVID.
-
- -- Macro: sighandler_t SIG_ERR
-     The value of this macro is used as the return value from `signal'
-     to indicate an error.
-
-
-File: libc.info,  Node: Advanced Signal Handling,  Next: Signal and Sigaction,  Prev: Basic Signal Handling,  Up: Signal Actions
-
-24.3.2 Advanced Signal Handling
--------------------------------
-
-The `sigaction' function has the same basic effect as `signal': to
-specify how a signal should be handled by the process.  However,
-`sigaction' offers more control, at the expense of more complexity.  In
-particular, `sigaction' allows you to specify additional flags to
-control when the signal is generated and how the handler is invoked.
-
-   The `sigaction' function is declared in `signal.h'.  
-
- -- Data Type: struct sigaction
-     Structures of type `struct sigaction' are used in the `sigaction'
-     function to specify all the information about how to handle a
-     particular signal.  This structure contains at least the following
-     members:
-
-    `sighandler_t sa_handler'
-          This is used in the same way as the ACTION argument to the
-          `signal' function.  The value can be `SIG_DFL', `SIG_IGN', or
-          a function pointer.  *Note Basic Signal Handling::.
-
-    `sigset_t sa_mask'
-          This specifies a set of signals to be blocked while the
-          handler runs.  Blocking is explained in *Note Blocking for
-          Handler::.  Note that the signal that was delivered is
-          automatically blocked by default before its handler is
-          started; this is true regardless of the value in `sa_mask'.
-          If you want that signal not to be blocked within its handler,
-          you must write code in the handler to unblock it.
-
-    `int sa_flags'
-          This specifies various flags which can affect the behavior of
-          the signal.  These are described in more detail in *Note
-          Flags for Sigaction::.
-
- -- Function: int sigaction (int SIGNUM, const struct sigaction
-          *restrict ACTION, struct sigaction *restrict OLD-ACTION)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     The ACTION argument is used to set up a new action for the signal
-     SIGNUM, while the OLD-ACTION argument is used to return
-     information about the action previously associated with this
-     signal.  (In other words, OLD-ACTION has the same purpose as the
-     `signal' function's return value--you can check to see what the
-     old action in effect for the signal was, and restore it later if
-     you want.)
-
-     Either ACTION or OLD-ACTION can be a null pointer.  If OLD-ACTION
-     is a null pointer, this simply suppresses the return of
-     information about the old action.  If ACTION is a null pointer,
-     the action associated with the signal SIGNUM is unchanged; this
-     allows you to inquire about how a signal is being handled without
-     changing that handling.
-
-     The return value from `sigaction' is zero if it succeeds, and `-1'
-     on failure.  The following `errno' error conditions are defined
-     for this function:
-
-    `EINVAL'
-          The SIGNUM argument is not valid, or you are trying to trap
-          or ignore `SIGKILL' or `SIGSTOP'.
-
-
-File: libc.info,  Node: Signal and Sigaction,  Next: Sigaction Function Example,  Prev: Advanced Signal Handling,  Up: Signal Actions
-
-24.3.3 Interaction of `signal' and `sigaction'
-----------------------------------------------
-
-It's possible to use both the `signal' and `sigaction' functions within
-a single program, but you have to be careful because they can interact
-in slightly strange ways.
-
-   The `sigaction' function specifies more information than the
-`signal' function, so the return value from `signal' cannot express the
-full range of `sigaction' possibilities.  Therefore, if you use
-`signal' to save and later reestablish an action, it may not be able to
-reestablish properly a handler that was established with `sigaction'.
-
-   To avoid having problems as a result, always use `sigaction' to save
-and restore a handler if your program uses `sigaction' at all.  Since
-`sigaction' is more general, it can properly save and reestablish any
-action, regardless of whether it was established originally with
-`signal' or `sigaction'.
-
-   On some systems if you establish an action with `signal' and then
-examine it with `sigaction', the handler address that you get may not
-be the same as what you specified with `signal'.  It may not even be
-suitable for use as an action argument with `signal'.  But you can rely
-on using it as an argument to `sigaction'.  This problem never happens
-on GNU systems.
-
-   So, you're better off using one or the other of the mechanisms
-consistently within a single program.
-
-   *Portability Note:* The basic `signal' function is a feature of
-ISO C, while `sigaction' is part of the POSIX.1 standard.  If you are
-concerned about portability to non-POSIX systems, then you should use
-the `signal' function instead.
-
-
-File: libc.info,  Node: Sigaction Function Example,  Next: Flags for Sigaction,  Prev: Signal and Sigaction,  Up: Signal Actions
-
-24.3.4 `sigaction' Function Example
------------------------------------
-
-In *Note Basic Signal Handling::, we gave an example of establishing a
-simple handler for termination signals using `signal'.  Here is an
-equivalent example using `sigaction':
-
-     #include <signal.h>
-
-     void
-     termination_handler (int signum)
-     {
-       struct temp_file *p;
-
-       for (p = temp_file_list; p; p = p->next)
-         unlink (p->name);
-     }
-
-     int
-     main (void)
-     {
-       ...
-       struct sigaction new_action, old_action;
-
-       /* Set up the structure to specify the new action. */
-       new_action.sa_handler = termination_handler;
-       sigemptyset (&new_action.sa_mask);
-       new_action.sa_flags = 0;
-
-       sigaction (SIGINT, NULL, &old_action);
-       if (old_action.sa_handler != SIG_IGN)
-         sigaction (SIGINT, &new_action, NULL);
-       sigaction (SIGHUP, NULL, &old_action);
-       if (old_action.sa_handler != SIG_IGN)
-         sigaction (SIGHUP, &new_action, NULL);
-       sigaction (SIGTERM, NULL, &old_action);
-       if (old_action.sa_handler != SIG_IGN)
-         sigaction (SIGTERM, &new_action, NULL);
-       ...
-     }
-
-   The program just loads the `new_action' structure with the desired
-parameters and passes it in the `sigaction' call.  The usage of
-`sigemptyset' is described later; see *Note Blocking Signals::.
-
-   As in the example using `signal', we avoid handling signals
-previously set to be ignored.  Here we can avoid altering the signal
-handler even momentarily, by using the feature of `sigaction' that lets
-us examine the current action without specifying a new one.
-
-   Here is another example.  It retrieves information about the current
-action for `SIGINT' without changing that action.
-
-     struct sigaction query_action;
-
-     if (sigaction (SIGINT, NULL, &query_action) < 0)
-       /* `sigaction' returns -1 in case of error. */
-     else if (query_action.sa_handler == SIG_DFL)
-       /* `SIGINT' is handled in the default, fatal manner. */
-     else if (query_action.sa_handler == SIG_IGN)
-       /* `SIGINT' is ignored. */
-     else
-       /* A programmer-defined signal handler is in effect. */
-
-
-File: libc.info,  Node: Flags for Sigaction,  Next: Initial Signal Actions,  Prev: Sigaction Function Example,  Up: Signal Actions
-
-24.3.5 Flags for `sigaction'
-----------------------------
-
-The `sa_flags' member of the `sigaction' structure is a catch-all for
-special features.  Most of the time, `SA_RESTART' is a good value to
-use for this field.
-
-   The value of `sa_flags' is interpreted as a bit mask.  Thus, you
-should choose the flags you want to set, OR those flags together, and
-store the result in the `sa_flags' member of your `sigaction' structure.
-
-   Each signal number has its own set of flags.  Each call to
-`sigaction' affects one particular signal number, and the flags that
-you specify apply only to that particular signal.
-
-   In the GNU C Library, establishing a handler with `signal' sets all
-the flags to zero except for `SA_RESTART', whose value depends on the
-settings you have made with `siginterrupt'.  *Note Interrupted
-Primitives::, to see what this is about.
-
-   These macros are defined in the header file `signal.h'.
-
- -- Macro: int SA_NOCLDSTOP
-     This flag is meaningful only for the `SIGCHLD' signal.  When the
-     flag is set, the system delivers the signal for a terminated child
-     process but not for one that is stopped.  By default, `SIGCHLD' is
-     delivered for both terminated children and stopped children.
-
-     Setting this flag for a signal other than `SIGCHLD' has no effect.
-
- -- Macro: int SA_ONSTACK
-     If this flag is set for a particular signal number, the system
-     uses the signal stack when delivering that kind of signal.  *Note
-     Signal Stack::.  If a signal with this flag arrives and you have
-     not set a signal stack, the system terminates the program with
-     `SIGILL'.
-
- -- Macro: int SA_RESTART
-     This flag controls what happens when a signal is delivered during
-     certain primitives (such as `open', `read' or `write'), and the
-     signal handler returns normally.  There are two alternatives: the
-     library function can resume, or it can return failure with error
-     code `EINTR'.
-
-     The choice is controlled by the `SA_RESTART' flag for the
-     particular kind of signal that was delivered.  If the flag is set,
-     returning from a handler resumes the library function.  If the
-     flag is clear, returning from a handler makes the function fail.
-     *Note Interrupted Primitives::.
-
-
-File: libc.info,  Node: Initial Signal Actions,  Prev: Flags for Sigaction,  Up: Signal Actions
-
-24.3.6 Initial Signal Actions
------------------------------
-
-When a new process is created (*note Creating a Process::), it inherits
-handling of signals from its parent process.  However, when you load a
-new process image using the `exec' function (*note Executing a File::),
-any signals that you've defined your own handlers for revert to their
-`SIG_DFL' handling.  (If you think about it a little, this makes sense;
-the handler functions from the old program are specific to that
-program, and aren't even present in the address space of the new
-program image.)  Of course, the new program can establish its own
-handlers.
-
-   When a program is run by a shell, the shell normally sets the initial
-actions for the child process to `SIG_DFL' or `SIG_IGN', as
-appropriate.  It's a good idea to check to make sure that the shell has
-not set up an initial action of `SIG_IGN' before you establish your own
-signal handlers.
-
-   Here is an example of how to establish a handler for `SIGHUP', but
-not if `SIGHUP' is currently ignored:
-
-     ...
-     struct sigaction temp;
-
-     sigaction (SIGHUP, NULL, &temp);
-
-     if (temp.sa_handler != SIG_IGN)
-       {
-         temp.sa_handler = handle_sighup;
-         sigemptyset (&temp.sa_mask);
-         sigaction (SIGHUP, &temp, NULL);
-       }
-
-
-File: libc.info,  Node: Defining Handlers,  Next: Interrupted Primitives,  Prev: Signal Actions,  Up: Signal Handling
-
-24.4 Defining Signal Handlers
-=============================
-
-This section describes how to write a signal handler function that can
-be established with the `signal' or `sigaction' functions.
-
-   A signal handler is just a function that you compile together with
-the rest of the program.  Instead of directly invoking the function,
-you use `signal' or `sigaction' to tell the operating system to call it
-when a signal arrives.  This is known as "establishing" the handler.
-*Note Signal Actions::.
-
-   There are two basic strategies you can use in signal handler
-functions:
-
-   * You can have the handler function note that the signal arrived by
-     tweaking some global data structures, and then return normally.
-
-   * You can have the handler function terminate the program or transfer
-     control to a point where it can recover from the situation that
-     caused the signal.
-
-   You need to take special care in writing handler functions because
-they can be called asynchronously.  That is, a handler might be called
-at any point in the program, unpredictably.  If two signals arrive
-during a very short interval, one handler can run within another.  This
-section describes what your handler should do, and what you should
-avoid.
-
-* Menu:
-
-* Handler Returns::             Handlers that return normally, and what
-                                 this means.
-* Termination in Handler::      How handler functions terminate a program.
-* Longjmp in Handler::          Nonlocal transfer of control out of a
-                                 signal handler.
-* Signals in Handler::          What happens when signals arrive while
-                                 the handler is already occupied.
-* Merged Signals::		When a second signal arrives before the
-				 first is handled.
-* Nonreentrancy::               Do not call any functions unless you know they
-                                 are reentrant with respect to signals.
-* Atomic Data Access::          A single handler can run in the middle of
-                                 reading or writing a single object.
-
-
-File: libc.info,  Node: Handler Returns,  Next: Termination in Handler,  Up: Defining Handlers
-
-24.4.1 Signal Handlers that Return
-----------------------------------
-
-Handlers which return normally are usually used for signals such as
-`SIGALRM' and the I/O and interprocess communication signals.  But a
-handler for `SIGINT' might also return normally after setting a flag
-that tells the program to exit at a convenient time.
-
-   It is not safe to return normally from the handler for a program
-error signal, because the behavior of the program when the handler
-function returns is not defined after a program error.  *Note Program
-Error Signals::.
-
-   Handlers that return normally must modify some global variable in
-order to have any effect.  Typically, the variable is one that is
-examined periodically by the program during normal operation.  Its data
-type should be `sig_atomic_t' for reasons described in *Note Atomic
-Data Access::.
-
-   Here is a simple example of such a program.  It executes the body of
-the loop until it has noticed that a `SIGALRM' signal has arrived.
-This technique is useful because it allows the iteration in progress
-when the signal arrives to complete before the loop exits.
-
-
-     #include <signal.h>
-     #include <stdio.h>
-     #include <stdlib.h>
-
-     /* This flag controls termination of the main loop. */
-     volatile sig_atomic_t keep_going = 1;
-
-     /* The signal handler just clears the flag and re-enables itself. */
-     void
-     catch_alarm (int sig)
-     {
-       keep_going = 0;
-       signal (sig, catch_alarm);
-     }
-
-     void
-     do_stuff (void)
-     {
-       puts ("Doing stuff while waiting for alarm....");
-     }
-
-     int
-     main (void)
-     {
-       /* Establish a handler for SIGALRM signals. */
-       signal (SIGALRM, catch_alarm);
-
-       /* Set an alarm to go off in a little while. */
-       alarm (2);
-
-       /* Check the flag once in a while to see when to quit. */
-       while (keep_going)
-         do_stuff ();
-
-       return EXIT_SUCCESS;
-     }
-
-
-File: libc.info,  Node: Termination in Handler,  Next: Longjmp in Handler,  Prev: Handler Returns,  Up: Defining Handlers
-
-24.4.2 Handlers That Terminate the Process
-------------------------------------------
-
-Handler functions that terminate the program are typically used to cause
-orderly cleanup or recovery from program error signals and interactive
-interrupts.
-
-   The cleanest way for a handler to terminate the process is to raise
-the same signal that ran the handler in the first place.  Here is how
-to do this:
-
-     volatile sig_atomic_t fatal_error_in_progress = 0;
-
-     void
-     fatal_error_signal (int sig)
-     {
-       /* Since this handler is established for more than one kind of signal,
-          it might still get invoked recursively by delivery of some other kind
-          of signal.  Use a static variable to keep track of that. */
-       if (fatal_error_in_progress)
-         raise (sig);
-       fatal_error_in_progress = 1;
-
-       /* Now do the clean up actions:
-          - reset terminal modes
-          - kill child processes
-          - remove lock files */
-       ...
-
-       /* Now reraise the signal.  We reactivate the signal's
-          default handling, which is to terminate the process.
-          We could just call `exit' or `abort',
-          but reraising the signal sets the return status
-          from the process correctly. */
-       signal (sig, SIG_DFL);
-       raise (sig);
-     }
-
-
-File: libc.info,  Node: Longjmp in Handler,  Next: Signals in Handler,  Prev: Termination in Handler,  Up: Defining Handlers
-
-24.4.3 Nonlocal Control Transfer in Handlers
---------------------------------------------
-
-You can do a nonlocal transfer of control out of a signal handler using
-the `setjmp' and `longjmp' facilities (*note Non-Local Exits::).
-
-   When the handler does a nonlocal control transfer, the part of the
-program that was running will not continue.  If this part of the program
-was in the middle of updating an important data structure, the data
-structure will remain inconsistent.  Since the program does not
-terminate, the inconsistency is likely to be noticed later on.
-
-   There are two ways to avoid this problem.  One is to block the signal
-for the parts of the program that update important data structures.
-Blocking the signal delays its delivery until it is unblocked, once the
-critical updating is finished.  *Note Blocking Signals::.
-
-   The other way is to re-initialize the crucial data structures in the
-signal handler, or to make their values consistent.
-
-   Here is a rather schematic example showing the reinitialization of
-one global variable.
-
-     #include <signal.h>
-     #include <setjmp.h>
-
-     jmp_buf return_to_top_level;
-
-     volatile sig_atomic_t waiting_for_input;
-
-     void
-     handle_sigint (int signum)
-     {
-       /* We may have been waiting for input when the signal arrived,
-          but we are no longer waiting once we transfer control. */
-       waiting_for_input = 0;
-       longjmp (return_to_top_level, 1);
-     }
-
-     int
-     main (void)
-     {
-       ...
-       signal (SIGINT, sigint_handler);
-       ...
-       while (1) {
-         prepare_for_command ();
-         if (setjmp (return_to_top_level) == 0)
-           read_and_execute_command ();
-       }
-     }
-
-     /* Imagine this is a subroutine used by various commands. */
-     char *
-     read_data ()
-     {
-       if (input_from_terminal) {
-         waiting_for_input = 1;
-         ...
-         waiting_for_input = 0;
-       } else {
-         ...
-       }
-     }
-
-
-File: libc.info,  Node: Signals in Handler,  Next: Merged Signals,  Prev: Longjmp in Handler,  Up: Defining Handlers
-
-24.4.4 Signals Arriving While a Handler Runs
---------------------------------------------
-
-What happens if another signal arrives while your signal handler
-function is running?
-
-   When the handler for a particular signal is invoked, that signal is
-automatically blocked until the handler returns.  That means that if two
-signals of the same kind arrive close together, the second one will be
-held until the first has been handled.  (The handler can explicitly
-unblock the signal using `sigprocmask', if you want to allow more
-signals of this type to arrive; see *Note Process Signal Mask::.)
-
-   However, your handler can still be interrupted by delivery of another
-kind of signal.  To avoid this, you can use the `sa_mask' member of the
-action structure passed to `sigaction' to explicitly specify which
-signals should be blocked while the signal handler runs.  These signals
-are in addition to the signal for which the handler was invoked, and
-any other signals that are normally blocked by the process.  *Note
-Blocking for Handler::.
-
-   When the handler returns, the set of blocked signals is restored to
-the value it had before the handler ran.  So using `sigprocmask' inside
-the handler only affects what signals can arrive during the execution of
-the handler itself, not what signals can arrive once the handler
-returns.
-
-   *Portability Note:* Always use `sigaction' to establish a handler
-for a signal that you expect to receive asynchronously, if you want
-your program to work properly on System V Unix.  On this system, the
-handling of a signal whose handler was established with `signal'
-automatically sets the signal's action back to `SIG_DFL', and the
-handler must re-establish itself each time it runs.  This practice,
-while inconvenient, does work when signals cannot arrive in succession.
-However, if another signal can arrive right away, it may arrive before
-the handler can re-establish itself.  Then the second signal would
-receive the default handling, which could terminate the process.
-
-
-File: libc.info,  Node: Merged Signals,  Next: Nonreentrancy,  Prev: Signals in Handler,  Up: Defining Handlers
-
-24.4.5 Signals Close Together Merge into One
---------------------------------------------
-
-If multiple signals of the same type are delivered to your process
-before your signal handler has a chance to be invoked at all, the
-handler may only be invoked once, as if only a single signal had
-arrived.  In effect, the signals merge into one.  This situation can
-arise when the signal is blocked, or in a multiprocessing environment
-where the system is busy running some other processes while the signals
-are delivered.  This means, for example, that you cannot reliably use a
-signal handler to count signals.  The only distinction you can reliably
-make is whether at least one signal has arrived since a given time in
-the past.
-
-   Here is an example of a handler for `SIGCHLD' that compensates for
-the fact that the number of signals received may not equal the number of
-child processes that generate them.  It assumes that the program keeps
-track of all the child processes with a chain of structures as follows:
-
-     struct process
-     {
-       struct process *next;
-       /* The process ID of this child.  */
-       int pid;
-       /* The descriptor of the pipe or pseudo terminal
-          on which output comes from this child.  */
-       int input_descriptor;
-       /* Nonzero if this process has stopped or terminated.  */
-       sig_atomic_t have_status;
-       /* The status of this child; 0 if running,
-          otherwise a status value from `waitpid'.  */
-       int status;
-     };
-
-     struct process *process_list;
-
-   This example also uses a flag to indicate whether signals have
-arrived since some time in the past--whenever the program last cleared
-it to zero.
-
-     /* Nonzero means some child's status has changed
-        so look at `process_list' for the details.  */
-     int process_status_change;
-
-   Here is the handler itself:
-
-     void
-     sigchld_handler (int signo)
-     {
-       int old_errno = errno;
-
-       while (1) {
-         register int pid;
-         int w;
-         struct process *p;
-
-         /* Keep asking for a status until we get a definitive result.  */
-         do
-           {
-             errno = 0;
-             pid = waitpid (WAIT_ANY, &w, WNOHANG | WUNTRACED);
-           }
-         while (pid <= 0 && errno == EINTR);
-
-         if (pid <= 0) {
-           /* A real failure means there are no more
-              stopped or terminated child processes, so return.  */
-           errno = old_errno;
-           return;
-         }
-
-         /* Find the process that signaled us, and record its status.  */
-
-         for (p = process_list; p; p = p->next)
-           if (p->pid == pid) {
-             p->status = w;
-             /* Indicate that the `status' field
-                has data to look at.  We do this only after storing it.  */
-             p->have_status = 1;
-
-             /* If process has terminated, stop waiting for its output.  */
-             if (WIFSIGNALED (w) || WIFEXITED (w))
-               if (p->input_descriptor)
-                 FD_CLR (p->input_descriptor, &input_wait_mask);
-
-             /* The program should check this flag from time to time
-                to see if there is any news in `process_list'.  */
-             ++process_status_change;
-           }
-
-         /* Loop around to handle all the processes
-            that have something to tell us.  */
-       }
-     }
-
-   Here is the proper way to check the flag `process_status_change':
-
-     if (process_status_change) {
-       struct process *p;
-       process_status_change = 0;
-       for (p = process_list; p; p = p->next)
-         if (p->have_status) {
-           ... Examine `p->status' ...
-         }
-     }
-
-It is vital to clear the flag before examining the list; otherwise, if a
-signal were delivered just before the clearing of the flag, and after
-the appropriate element of the process list had been checked, the status
-change would go unnoticed until the next signal arrived to set the flag
-again.  You could, of course, avoid this problem by blocking the signal
-while scanning the list, but it is much more elegant to guarantee
-correctness by doing things in the right order.
-
-   The loop which checks process status avoids examining `p->status'
-until it sees that status has been validly stored.  This is to make sure
-that the status cannot change in the middle of accessing it.  Once
-`p->have_status' is set, it means that the child process is stopped or
-terminated, and in either case, it cannot stop or terminate again until
-the program has taken notice.  *Note Atomic Usage::, for more
-information about coping with interruptions during accesses of a
-variable.
-
-   Here is another way you can test whether the handler has run since
-the last time you checked.  This technique uses a counter which is never
-changed outside the handler.  Instead of clearing the count, the program
-remembers the previous value and sees whether it has changed since the
-previous check.  The advantage of this method is that different parts of
-the program can check independently, each part checking whether there
-has been a signal since that part last checked.
-
-     sig_atomic_t process_status_change;
-
-     sig_atomic_t last_process_status_change;
-
-     ...
-     {
-       sig_atomic_t prev = last_process_status_change;
-       last_process_status_change = process_status_change;
-       if (last_process_status_change != prev) {
-         struct process *p;
-         for (p = process_list; p; p = p->next)
-           if (p->have_status) {
-             ... Examine `p->status' ...
-           }
-       }
-     }
 

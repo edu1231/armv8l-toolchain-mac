@@ -39,7 +39,6 @@ START-INFO-DIR-ENTRY
 * CS8: (libc)Control Modes.
 * CSIZE: (libc)Control Modes.
 * CSTOPB: (libc)Control Modes.
-* DES_FAILED: (libc)DES Encryption.
 * DTTOIF: (libc)Directory Entries.
 * E2BIG: (libc)Error Codes.
 * EACCES: (libc)Error Codes.
@@ -309,6 +308,7 @@ START-INFO-DIR-ENTRY
 * O_READ: (libc)Access Modes.
 * O_SHLOCK: (libc)Open-time Flags.
 * O_SYNC: (libc)Operating Modes.
+* O_TMPFILE: (libc)Open-time Flags.
 * O_TRUNC: (libc)Open-time Flags.
 * O_WRITE: (libc)Access Modes.
 * O_WRONLY: (libc)Access Modes.
@@ -472,6 +472,7 @@ START-INFO-DIR-ENTRY
 * __ppc_set_ppr_med_low: (libc)PowerPC.
 * __ppc_set_ppr_very_low: (libc)PowerPC.
 * __ppc_yield: (libc)PowerPC.
+* __riscv_flush_icache: (libc)RISC-V.
 * __va_copy: (libc)Argument Macros.
 * _exit: (libc)Termination Internals.
 * _flushlbf: (libc)Flushing Buffers.
@@ -598,6 +599,7 @@ START-INFO-DIR-ENTRY
 * cacoshfNx: (libc)Hyperbolic Functions.
 * cacoshl: (libc)Hyperbolic Functions.
 * cacosl: (libc)Inverse Trig Functions.
+* call_once: (libc)Call Once.
 * calloc: (libc)Allocating Cleared Space.
 * canonicalize: (libc)FP Bit Twiddling.
 * canonicalize_file_name: (libc)Symbolic Links.
@@ -633,7 +635,6 @@ START-INFO-DIR-ENTRY
 * catclose: (libc)The catgets Functions.
 * catgets: (libc)The catgets Functions.
 * catopen: (libc)The catgets Functions.
-* cbc_crypt: (libc)DES Encryption.
 * cbrt: (libc)Exponents and Logarithms.
 * cbrtf: (libc)Exponents and Logarithms.
 * cbrtfN: (libc)Exponents and Logarithms.
@@ -690,6 +691,12 @@ START-INFO-DIR-ENTRY
 * close: (libc)Opening and Closing Files.
 * closedir: (libc)Reading/Closing Directory.
 * closelog: (libc)closelog.
+* cnd_broadcast: (libc)ISO C Condition Variables.
+* cnd_destroy: (libc)ISO C Condition Variables.
+* cnd_init: (libc)ISO C Condition Variables.
+* cnd_signal: (libc)ISO C Condition Variables.
+* cnd_timedwait: (libc)ISO C Condition Variables.
+* cnd_wait: (libc)ISO C Condition Variables.
 * confstr: (libc)String Parameters.
 * conj: (libc)Operations on Complex.
 * conjf: (libc)Operations on Complex.
@@ -697,6 +704,7 @@ START-INFO-DIR-ENTRY
 * conjfNx: (libc)Operations on Complex.
 * conjl: (libc)Operations on Complex.
 * connect: (libc)Connecting.
+* copy_file_range: (libc)Copying File Data.
 * copysign: (libc)FP Bit Twiddling.
 * copysignf: (libc)FP Bit Twiddling.
 * copysignfN: (libc)FP Bit Twiddling.
@@ -729,8 +737,8 @@ START-INFO-DIR-ENTRY
 * creall: (libc)Operations on Complex.
 * creat64: (libc)Opening and Closing Files.
 * creat: (libc)Opening and Closing Files.
-* crypt: (libc)crypt.
-* crypt_r: (libc)crypt.
+* crypt: (libc)Passphrase Storage.
+* crypt_r: (libc)Passphrase Storage.
 * csin: (libc)Trig Functions.
 * csinf: (libc)Trig Functions.
 * csinfN: (libc)Trig Functions.
@@ -760,27 +768,27 @@ START-INFO-DIR-ENTRY
 * ctime: (libc)Formatting Calendar Time.
 * ctime_r: (libc)Formatting Calendar Time.
 * cuserid: (libc)Who Logged In.
+* daddl: (libc)Misc FP Arithmetic.
 * dcgettext: (libc)Translation with gettext.
 * dcngettext: (libc)Advanced gettext functions.
-* des_setparity: (libc)DES Encryption.
+* ddivl: (libc)Misc FP Arithmetic.
 * dgettext: (libc)Translation with gettext.
 * difftime: (libc)Elapsed Time.
 * dirfd: (libc)Opening a Directory.
 * dirname: (libc)Finding Tokens in a String.
 * div: (libc)Integer Division.
+* dmull: (libc)Misc FP Arithmetic.
 * dngettext: (libc)Advanced gettext functions.
 * drand48: (libc)SVID Random.
 * drand48_r: (libc)SVID Random.
 * drem: (libc)Remainder Functions.
 * dremf: (libc)Remainder Functions.
 * dreml: (libc)Remainder Functions.
+* dsubl: (libc)Misc FP Arithmetic.
 * dup2: (libc)Duplicating Descriptors.
 * dup: (libc)Duplicating Descriptors.
-* ecb_crypt: (libc)DES Encryption.
 * ecvt: (libc)System V Number Conversion.
 * ecvt_r: (libc)System V Number Conversion.
-* encrypt: (libc)DES Encryption.
-* encrypt_r: (libc)DES Encryption.
 * endfsent: (libc)fstab.
 * endgrent: (libc)Scanning All Groups.
 * endhostent: (libc)Host Names.
@@ -843,11 +851,29 @@ START-INFO-DIR-ENTRY
 * expm1fN: (libc)Exponents and Logarithms.
 * expm1fNx: (libc)Exponents and Logarithms.
 * expm1l: (libc)Exponents and Logarithms.
+* fMaddfN: (libc)Misc FP Arithmetic.
+* fMaddfNx: (libc)Misc FP Arithmetic.
+* fMdivfN: (libc)Misc FP Arithmetic.
+* fMdivfNx: (libc)Misc FP Arithmetic.
+* fMmulfN: (libc)Misc FP Arithmetic.
+* fMmulfNx: (libc)Misc FP Arithmetic.
+* fMsubfN: (libc)Misc FP Arithmetic.
+* fMsubfNx: (libc)Misc FP Arithmetic.
+* fMxaddfN: (libc)Misc FP Arithmetic.
+* fMxaddfNx: (libc)Misc FP Arithmetic.
+* fMxdivfN: (libc)Misc FP Arithmetic.
+* fMxdivfNx: (libc)Misc FP Arithmetic.
+* fMxmulfN: (libc)Misc FP Arithmetic.
+* fMxmulfNx: (libc)Misc FP Arithmetic.
+* fMxsubfN: (libc)Misc FP Arithmetic.
+* fMxsubfNx: (libc)Misc FP Arithmetic.
 * fabs: (libc)Absolute Value.
 * fabsf: (libc)Absolute Value.
 * fabsfN: (libc)Absolute Value.
 * fabsfNx: (libc)Absolute Value.
 * fabsl: (libc)Absolute Value.
+* fadd: (libc)Misc FP Arithmetic.
+* faddl: (libc)Misc FP Arithmetic.
 * fchdir: (libc)Working Directory.
 * fchmod: (libc)Setting Permissions.
 * fchown: (libc)File Owner.
@@ -862,6 +888,8 @@ START-INFO-DIR-ENTRY
 * fdimfN: (libc)Misc FP Arithmetic.
 * fdimfNx: (libc)Misc FP Arithmetic.
 * fdiml: (libc)Misc FP Arithmetic.
+* fdiv: (libc)Misc FP Arithmetic.
+* fdivl: (libc)Misc FP Arithmetic.
 * fdopen: (libc)Descriptors and Streams.
 * fdopendir: (libc)Opening a Directory.
 * feclearexcept: (libc)Status bit operations.
@@ -945,6 +973,8 @@ START-INFO-DIR-ENTRY
 * fmodfNx: (libc)Remainder Functions.
 * fmodl: (libc)Remainder Functions.
 * fmtmsg: (libc)Printing Formatted Messages.
+* fmul: (libc)Misc FP Arithmetic.
+* fmull: (libc)Misc FP Arithmetic.
 * fnmatch: (libc)Wildcard Matching.
 * fopen64: (libc)Opening Streams.
 * fopen: (libc)Opening Streams.
@@ -990,6 +1020,8 @@ START-INFO-DIR-ENTRY
 * fsetpos: (libc)Portable Positioning.
 * fstat64: (libc)Reading Attributes.
 * fstat: (libc)Reading Attributes.
+* fsub: (libc)Misc FP Arithmetic.
+* fsubl: (libc)Misc FP Arithmetic.
 * fsync: (libc)Synchronizing I/O.
 * ftell: (libc)File Positioning.
 * ftello64: (libc)File Positioning.
@@ -1263,6 +1295,7 @@ START-INFO-DIR-ENTRY
 * lgammal: (libc)Special Functions.
 * lgammal_r: (libc)Special Functions.
 * link: (libc)Hard Links.
+* linkat: (libc)Hard Links.
 * lio_listio64: (libc)Asynchronous Reads/Writes.
 * lio_listio: (libc)Asynchronous Reads/Writes.
 * listen: (libc)Listening.
@@ -1353,7 +1386,8 @@ START-INFO-DIR-ENTRY
 * memchr: (libc)Search Functions.
 * memcmp: (libc)String/Array Comparison.
 * memcpy: (libc)Copying Strings and Arrays.
-* memfrob: (libc)Trivial Encryption.
+* memfd_create: (libc)Memory-mapped I/O.
+* memfrob: (libc)Obfuscating Data.
 * memmem: (libc)Search Functions.
 * memmove: (libc)Copying Strings and Arrays.
 * mempcpy: (libc)Copying Strings and Arrays.
@@ -1366,6 +1400,7 @@ START-INFO-DIR-ENTRY
 * mkstemp: (libc)Temporary Files.
 * mktemp: (libc)Temporary Files.
 * mktime: (libc)Broken-down Time.
+* mlock2: (libc)Page Lock Functions.
 * mlock: (libc)Page Lock Functions.
 * mlockall: (libc)Page Lock Functions.
 * mmap64: (libc)Memory-mapped I/O.
@@ -1377,11 +1412,18 @@ START-INFO-DIR-ENTRY
 * modfl: (libc)Rounding Functions.
 * mount: (libc)Mount-Unmount-Remount.
 * mprobe: (libc)Heap Consistency Checking.
+* mprotect: (libc)Memory Protection.
 * mrand48: (libc)SVID Random.
 * mrand48_r: (libc)SVID Random.
 * mremap: (libc)Memory-mapped I/O.
 * msync: (libc)Memory-mapped I/O.
 * mtrace: (libc)Tracing malloc.
+* mtx_destroy: (libc)ISO C Mutexes.
+* mtx_init: (libc)ISO C Mutexes.
+* mtx_lock: (libc)ISO C Mutexes.
+* mtx_timedlock: (libc)ISO C Mutexes.
+* mtx_trylock: (libc)ISO C Mutexes.
+* mtx_unlock: (libc)ISO C Mutexes.
 * munlock: (libc)Page Lock Functions.
 * munlockall: (libc)Page Lock Functions.
 * munmap: (libc)Memory-mapped I/O.
@@ -1465,13 +1507,15 @@ START-INFO-DIR-ENTRY
 * pclose: (libc)Pipe to a Subprocess.
 * perror: (libc)Error Messages.
 * pipe: (libc)Creating a Pipe.
+* pkey_alloc: (libc)Memory Protection.
+* pkey_free: (libc)Memory Protection.
+* pkey_get: (libc)Memory Protection.
+* pkey_mprotect: (libc)Memory Protection.
+* pkey_set: (libc)Memory Protection.
 * popen: (libc)Pipe to a Subprocess.
 * posix_fallocate64: (libc)Storage Allocation.
 * posix_fallocate: (libc)Storage Allocation.
 * posix_memalign: (libc)Aligned Memory Blocks.
-* pow10: (libc)Exponents and Logarithms.
-* pow10f: (libc)Exponents and Logarithms.
-* pow10l: (libc)Exponents and Logarithms.
 * pow: (libc)Exponents and Logarithms.
 * powf: (libc)Exponents and Logarithms.
 * powfN: (libc)Exponents and Logarithms.
@@ -1479,10 +1523,10 @@ START-INFO-DIR-ENTRY
 * powl: (libc)Exponents and Logarithms.
 * pread64: (libc)I/O Primitives.
 * pread: (libc)I/O Primitives.
-* preadv2: (libc)I/O Primitives.
-* preadv64: (libc)I/O Primitives.
-* preadv64v2: (libc)I/O Primitives.
-* preadv: (libc)I/O Primitives.
+* preadv2: (libc)Scatter-Gather.
+* preadv64: (libc)Scatter-Gather.
+* preadv64v2: (libc)Scatter-Gather.
+* preadv: (libc)Scatter-Gather.
 * printf: (libc)Formatted Output Functions.
 * printf_size: (libc)Predefined Printf Handlers.
 * printf_size_info: (libc)Predefined Printf Handlers.
@@ -1511,10 +1555,10 @@ START-INFO-DIR-ENTRY
 * putwchar_unlocked: (libc)Simple Output.
 * pwrite64: (libc)I/O Primitives.
 * pwrite: (libc)I/O Primitives.
-* pwritev2: (libc)I/O Primitives.
-* pwritev64: (libc)I/O Primitives.
-* pwritev64v2: (libc)I/O Primitives.
-* pwritev: (libc)I/O Primitives.
+* pwritev2: (libc)Scatter-Gather.
+* pwritev64: (libc)Scatter-Gather.
+* pwritev64v2: (libc)Scatter-Gather.
+* pwritev: (libc)Scatter-Gather.
 * qecvt: (libc)System V Number Conversion.
 * qecvt_r: (libc)System V Number Conversion.
 * qfcvt: (libc)System V Number Conversion.
@@ -1637,8 +1681,6 @@ START-INFO-DIR-ENTRY
 * sethostname: (libc)Host Identification.
 * setitimer: (libc)Setting an Alarm.
 * setjmp: (libc)Non-Local Details.
-* setkey: (libc)DES Encryption.
-* setkey_r: (libc)DES Encryption.
 * setlinebuf: (libc)Controlling Buffering.
 * setlocale: (libc)Setting the Locale.
 * setlogmask: (libc)setlogmask.
@@ -1756,7 +1798,7 @@ START-INFO-DIR-ENTRY
 * strfromfN: (libc)Printing of Floats.
 * strfromfNx: (libc)Printing of Floats.
 * strfroml: (libc)Printing of Floats.
-* strfry: (libc)strfry.
+* strfry: (libc)Shuffling Bytes.
 * strftime: (libc)Formatting Calendar Time.
 * strlen: (libc)String Length.
 * strncasecmp: (libc)String/Array Comparison.
@@ -1832,6 +1874,14 @@ START-INFO-DIR-ENTRY
 * tgammafN: (libc)Special Functions.
 * tgammafNx: (libc)Special Functions.
 * tgammal: (libc)Special Functions.
+* thrd_create: (libc)ISO C Thread Management.
+* thrd_current: (libc)ISO C Thread Management.
+* thrd_detach: (libc)ISO C Thread Management.
+* thrd_equal: (libc)ISO C Thread Management.
+* thrd_exit: (libc)ISO C Thread Management.
+* thrd_join: (libc)ISO C Thread Management.
+* thrd_sleep: (libc)ISO C Thread Management.
+* thrd_yield: (libc)ISO C Thread Management.
 * time: (libc)Simple Calendar Time.
 * timegm: (libc)Broken-down Time.
 * timelocal: (libc)Broken-down Time.
@@ -1864,6 +1914,10 @@ START-INFO-DIR-ENTRY
 * truncfNx: (libc)Rounding Functions.
 * truncl: (libc)Rounding Functions.
 * tsearch: (libc)Tree Search Function.
+* tss_create: (libc)ISO C Thread-local Storage.
+* tss_delete: (libc)ISO C Thread-local Storage.
+* tss_get: (libc)ISO C Thread-local Storage.
+* tss_set: (libc)ISO C Thread-local Storage.
 * ttyname: (libc)Is It a Terminal.
 * ttyname_r: (libc)Is It a Terminal.
 * twalk: (libc)Tree Search Function.
@@ -2005,10 +2059,10 @@ END-INFO-DIR-ENTRY
 
    This file documents the GNU C Library.
 
-   This is `The GNU C Library Reference Manual', for version 2.26
-(crosstool-NG 1.23.0.420-201f).
+   This is `The GNU C Library Reference Manual', for version 2.28
+(crosstool-NG 1.23.0.513-84e6).
 
-   Copyright (C) 1993-2017 Free Software Foundation, Inc.
+   Copyright (C) 1993-2018 Free Software Foundation, Inc.
 
    Permission is granted to copy, distribute and/or modify this document
 under the terms of the GNU Free Documentation License, Version
@@ -2022,6 +2076,430 @@ Free Documentation License".
    (a) The FSF's Back-Cover Text is: "You have the freedom to copy and
 modify this GNU manual.  Buying copies from the FSF supports it in
 developing GNU and promoting software freedom."
+
+
+File: libc.info,  Node: Page Lock Functions,  Prev: Locked Memory Details,  Up: Locking Pages
+
+3.5.3 Functions To Lock And Unlock Pages
+----------------------------------------
+
+The symbols in this section are declared in `sys/mman.h'.  These
+functions are defined by POSIX.1b, but their availability depends on
+your kernel.  If your kernel doesn't allow these functions, they exist
+but always fail.  They _are_ available with a Linux kernel.
+
+   *Portability Note:* POSIX.1b requires that when the `mlock' and
+`munlock' functions are available, the file `unistd.h' define the macro
+`_POSIX_MEMLOCK_RANGE' and the file `limits.h' define the macro
+`PAGESIZE' to be the size of a memory page in bytes.  It requires that
+when the `mlockall' and `munlockall' functions are available, the
+`unistd.h' file define the macro `_POSIX_MEMLOCK'.  The GNU C Library
+conforms to this requirement.
+
+ -- Function: int mlock (const void *ADDR, size_t LEN)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     `mlock' locks a range of the calling process' virtual pages.
+
+     The range of memory starts at address ADDR and is LEN bytes long.
+     Actually, since you must lock whole pages, it is the range of
+     pages that include any part of the specified range.
+
+     When the function returns successfully, each of those pages is
+     backed by (connected to) a real frame (is resident) and is marked
+     to stay that way.  This means the function may cause page-ins and
+     have to wait for them.
+
+     When the function fails, it does not affect the lock status of any
+     pages.
+
+     The return value is zero if the function succeeds.  Otherwise, it
+     is `-1' and `errno' is set accordingly.  `errno' values specific
+     to this function are:
+
+    `ENOMEM'
+             * At least some of the specified address range does not
+               exist in the calling process' virtual address space.
+
+             * The locking would cause the process to exceed its locked
+               page limit.
+
+    `EPERM'
+          The calling process is not superuser.
+
+    `EINVAL'
+          LEN is not positive.
+
+    `ENOSYS'
+          The kernel does not provide `mlock' capability.
+
+
+ -- Function: int mlock2 (const void *ADDR, size_t LEN, unsigned int
+          FLAGS)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This function is similar to `mlock'.  If FLAGS is zero, a call to
+     `mlock2' behaves exactly as the equivalent call to `mlock'.
+
+     The FLAGS argument must be a combination of zero or more of the
+     following flags:
+
+    `MLOCK_ONFAULT'
+          Only those pages in the specified address range which are
+          already in memory are locked immediately.  Additional pages
+          in the range are automatically locked in case of a page fault
+          and allocation of memory.
+
+     Like `mlock', `mlock2' returns zero on success and `-1' on
+     failure, setting `errno' accordingly.  Additional `errno' values
+     defined for `mlock2' are:
+
+    `EINVAL'
+          The specified (non-zero) FLAGS argument is not supported by
+          this system.
+
+   You can lock _all_ a process' memory with `mlockall'.  You unlock
+memory with `munlock' or `munlockall'.
+
+   To avoid all page faults in a C program, you have to use `mlockall',
+because some of the memory a program uses is hidden from the C code,
+e.g. the stack and automatic variables, and you wouldn't know what
+address to tell `mlock'.
+
+ -- Function: int munlock (const void *ADDR, size_t LEN)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     `munlock' unlocks a range of the calling process' virtual pages.
+
+     `munlock' is the inverse of `mlock' and functions completely
+     analogously to `mlock', except that there is no `EPERM' failure.
+
+
+ -- Function: int mlockall (int FLAGS)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     `mlockall' locks all the pages in a process' virtual memory address
+     space, and/or any that are added to it in the future.  This
+     includes the pages of the code, data and stack segment, as well as
+     shared libraries, user space kernel data, shared memory, and
+     memory mapped files.
+
+     FLAGS is a string of single bit flags represented by the following
+     macros.  They tell `mlockall' which of its functions you want.  All
+     other bits must be zero.
+
+    `MCL_CURRENT'
+          Lock all pages which currently exist in the calling process'
+          virtual address space.
+
+    `MCL_FUTURE'
+          Set a mode such that any pages added to the process' virtual
+          address space in the future will be locked from birth.  This
+          mode does not affect future address spaces owned by the same
+          process so exec, which replaces a process' address space,
+          wipes out `MCL_FUTURE'.  *Note Executing a File::.
+
+
+     When the function returns successfully, and you specified
+     `MCL_CURRENT', all of the process' pages are backed by (connected
+     to) real frames (they are resident) and are marked to stay that
+     way.  This means the function may cause page-ins and have to wait
+     for them.
+
+     When the process is in `MCL_FUTURE' mode because it successfully
+     executed this function and specified `MCL_CURRENT', any system call
+     by the process that requires space be added to its virtual address
+     space fails with `errno' = `ENOMEM' if locking the additional space
+     would cause the process to exceed its locked page limit.  In the
+     case that the address space addition that can't be accommodated is
+     stack expansion, the stack expansion fails and the kernel sends a
+     `SIGSEGV' signal to the process.
+
+     When the function fails, it does not affect the lock status of any
+     pages or the future locking mode.
+
+     The return value is zero if the function succeeds.  Otherwise, it
+     is `-1' and `errno' is set accordingly.  `errno' values specific
+     to this function are:
+
+    `ENOMEM'
+             * At least some of the specified address range does not
+               exist in the calling process' virtual address space.
+
+             * The locking would cause the process to exceed its locked
+               page limit.
+
+    `EPERM'
+          The calling process is not superuser.
+
+    `EINVAL'
+          Undefined bits in FLAGS are not zero.
+
+    `ENOSYS'
+          The kernel does not provide `mlockall' capability.
+
+
+     You can lock just specific pages with `mlock'.  You unlock pages
+     with `munlockall' and `munlock'.
+
+
+ -- Function: int munlockall (void)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     `munlockall' unlocks every page in the calling process' virtual
+     address space and turns off `MCL_FUTURE' future locking mode.
+
+     The return value is zero if the function succeeds.  Otherwise, it
+     is `-1' and `errno' is set accordingly.  The only way this
+     function can fail is for generic reasons that all functions and
+     system calls can fail, so there are no specific `errno' values.
+
+
+
+File: libc.info,  Node: Character Handling,  Next: String and Array Utilities,  Prev: Memory,  Up: Top
+
+4 Character Handling
+********************
+
+Programs that work with characters and strings often need to classify a
+character--is it alphabetic, is it a digit, is it whitespace, and so
+on--and perform case conversion operations on characters.  The
+functions in the header file `ctype.h' are provided for this purpose.  
+
+   Since the choice of locale and character set can alter the
+classifications of particular character codes, all of these functions
+are affected by the current locale.  (More precisely, they are affected
+by the locale currently selected for character classification--the
+`LC_CTYPE' category; see *Note Locale Categories::.)
+
+   The ISO C standard specifies two different sets of functions.  The
+one set works on `char' type characters, the other one on `wchar_t'
+wide characters (*note Extended Char Intro::).
+
+* Menu:
+
+* Classification of Characters::       Testing whether characters are
+			                letters, digits, punctuation, etc.
+
+* Case Conversion::                    Case mapping, and the like.
+* Classification of Wide Characters::  Character class determination for
+                                        wide characters.
+* Using Wide Char Classes::            Notes on using the wide character
+                                        classes.
+* Wide Character Case Conversion::     Mapping of wide characters.
+
+
+File: libc.info,  Node: Classification of Characters,  Next: Case Conversion,  Up: Character Handling
+
+4.1 Classification of Characters
+================================
+
+This section explains the library functions for classifying characters.
+For example, `isalpha' is the function to test for an alphabetic
+character.  It takes one argument, the character to test, and returns a
+nonzero integer if the character is alphabetic, and zero otherwise.  You
+would use it like this:
+
+     if (isalpha (c))
+       printf ("The character `%c' is alphabetic.\n", c);
+
+   Each of the functions in this section tests for membership in a
+particular class of characters; each has a name starting with `is'.
+Each of them takes one argument, which is a character to test, and
+returns an `int' which is treated as a boolean value.  The character
+argument is passed as an `int', and it may be the constant value `EOF'
+instead of a real character.
+
+   The attributes of any given character can vary between locales.
+*Note Locales::, for more information on locales.
+
+   These functions are declared in the header file `ctype.h'.  
+
+ -- Function: int islower (int C)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     Returns true if C is a lower-case letter.  The letter need not be
+     from the Latin alphabet, any alphabet representable is valid.
+
+ -- Function: int isupper (int C)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     Returns true if C is an upper-case letter.  The letter need not be
+     from the Latin alphabet, any alphabet representable is valid.
+
+ -- Function: int isalpha (int C)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     Returns true if C is an alphabetic character (a letter).  If
+     `islower' or `isupper' is true of a character, then `isalpha' is
+     also true.
+
+     In some locales, there may be additional characters for which
+     `isalpha' is true--letters which are neither upper case nor lower
+     case.  But in the standard `"C"' locale, there are no such
+     additional characters.
+
+ -- Function: int isdigit (int C)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     Returns true if C is a decimal digit (`0' through `9').
+
+ -- Function: int isalnum (int C)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     Returns true if C is an alphanumeric character (a letter or
+     number); in other words, if either `isalpha' or `isdigit' is true
+     of a character, then `isalnum' is also true.
+
+ -- Function: int isxdigit (int C)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     Returns true if C is a hexadecimal digit.  Hexadecimal digits
+     include the normal decimal digits `0' through `9' and the letters
+     `A' through `F' and `a' through `f'.
+
+ -- Function: int ispunct (int C)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     Returns true if C is a punctuation character.  This means any
+     printing character that is not alphanumeric or a space character.
+
+ -- Function: int isspace (int C)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     Returns true if C is a "whitespace" character.  In the standard
+     `"C"' locale, `isspace' returns true for only the standard
+     whitespace characters:
+
+    `' ''
+          space
+
+    `'\f''
+          formfeed
+
+    `'\n''
+          newline
+
+    `'\r''
+          carriage return
+
+    `'\t''
+          horizontal tab
+
+    `'\v''
+          vertical tab
+
+ -- Function: int isblank (int C)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     Returns true if C is a blank character; that is, a space or a tab.
+     This function was originally a GNU extension, but was added in
+     ISO C99.
+
+ -- Function: int isgraph (int C)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     Returns true if C is a graphic character; that is, a character
+     that has a glyph associated with it.  The whitespace characters
+     are not considered graphic.
+
+ -- Function: int isprint (int C)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     Returns true if C is a printing character.  Printing characters
+     include all the graphic characters, plus the space (` ') character.
+
+ -- Function: int iscntrl (int C)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     Returns true if C is a control character (that is, a character that
+     is not a printing character).
+
+ -- Function: int isascii (int C)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     Returns true if C is a 7-bit `unsigned char' value that fits into
+     the US/UK ASCII character set.  This function is a BSD extension
+     and is also an SVID extension.
+
+
+File: libc.info,  Node: Case Conversion,  Next: Classification of Wide Characters,  Prev: Classification of Characters,  Up: Character Handling
+
+4.2 Case Conversion
+===================
+
+This section explains the library functions for performing conversions
+such as case mappings on characters.  For example, `toupper' converts
+any character to upper case if possible.  If the character can't be
+converted, `toupper' returns it unchanged.
+
+   These functions take one argument of type `int', which is the
+character to convert, and return the converted character as an `int'.
+If the conversion is not applicable to the argument given, the argument
+is returned unchanged.
+
+   *Compatibility Note:* In pre-ISO C dialects, instead of returning
+the argument unchanged, these functions may fail when the argument is
+not suitable for the conversion.  Thus for portability, you may need to
+write `islower(c) ? toupper(c) : c' rather than just `toupper(c)'.
+
+   These functions are declared in the header file `ctype.h'.  
+
+ -- Function: int tolower (int C)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     If C is an upper-case letter, `tolower' returns the corresponding
+     lower-case letter.  If C is not an upper-case letter, C is
+     returned unchanged.
+
+ -- Function: int toupper (int C)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     If C is a lower-case letter, `toupper' returns the corresponding
+     upper-case letter.  Otherwise C is returned unchanged.
+
+ -- Function: int toascii (int C)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This function converts C to a 7-bit `unsigned char' value that
+     fits into the US/UK ASCII character set, by clearing the high-order
+     bits.  This function is a BSD extension and is also an SVID
+     extension.
+
+ -- Function: int _tolower (int C)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This is identical to `tolower', and is provided for compatibility
+     with the SVID.  *Note SVID::.
+
+ -- Function: int _toupper (int C)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This is identical to `toupper', and is provided for compatibility
+     with the SVID.
 
 
 File: libc.info,  Node: Classification of Wide Characters,  Next: Using Wide Char Classes,  Prev: Case Conversion,  Up: Character Handling
@@ -2473,8 +2951,8 @@ typically highly optimized, your program may run faster too.
 				 for delimiters.
 * Erasing Sensitive Data::      Clearing memory which contains sensitive
                                  data, after it's no longer needed.
-* strfry::                      Function for flash-cooking a string.
-* Trivial Encryption::          Obscuring data.
+* Shuffling Bytes::             Or how to flash-cook a string.
+* Obfuscating Data::            Reversibly obscuring data from casual view.
 * Encode Binary Data::          Encoding and Decoding of Binary Data.
 * Argz and Envz Vectors::       Null-separated string vectors.
 
@@ -3506,7 +3984,7 @@ calls to copying functions with calls to truncation functions, there
 are often easier and safer automatic techniques that cause buffer
 overruns to reliably terminate a program, such as GCC's
 `-fcheck-pointer-bounds' and `-fsanitize=address' options.  *Note
-Options for Debugging Your Program or GCC: (gcc.info)Debugging Options.
+Options for Debugging Your Program or GCC: (gcc)Debugging Options.
 Because truncation functions can mask application bugs that would
 otherwise be caught by the automatic techniques, these functions should
 be used only when the application's underlying logic requires
@@ -4686,7 +5164,7 @@ available available for wide strings.
      be found in `libgen.h'.
 
 
-File: libc.info,  Node: Erasing Sensitive Data,  Next: strfry,  Prev: Finding Tokens in a String,  Up: String and Array Utilities
+File: libc.info,  Node: Erasing Sensitive Data,  Next: Shuffling Bytes,  Prev: Finding Tokens in a String,  Up: String and Array Utilities
 
 5.11 Erasing Sensitive Data
 ===========================
@@ -4777,74 +5255,76 @@ the affected data, whereever they may be.
      other systems it may be in `strings.h' instead.
 
 
-File: libc.info,  Node: strfry,  Next: Trivial Encryption,  Prev: Erasing Sensitive Data,  Up: String and Array Utilities
+File: libc.info,  Node: Shuffling Bytes,  Next: Obfuscating Data,  Prev: Erasing Sensitive Data,  Up: String and Array Utilities
 
-5.12 strfry
-===========
+5.12 Shuffling Bytes
+====================
 
 The function below addresses the perennial programming quandary: "How do
 I take good data in string form and painlessly turn it into garbage?"
-This is actually a fairly simple task for C programmers who do not use
-the GNU C Library string functions, but for programs based on the GNU C
-Library, the `strfry' function is the preferred method for destroying
-string data.
+This is not a difficult thing to code for oneself, but the authors of
+the GNU C Library wish to make it as convenient as possible.
 
-   The prototype for this function is in `string.h'.
+   To _erase_ data, use `explicit_bzero' (*note Erasing Sensitive
+Data::); to obfuscate it reversibly, use `memfrob' (*note Obfuscating
+Data::).
 
  -- Function: char * strfry (char *STRING)
      Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
      Concepts::.
 
-     `strfry' creates a pseudorandom anagram of a string, replacing the
-     input with the anagram in place.  For each position in the string,
-     `strfry' swaps it with a position in the string selected at random
-     (from a uniform distribution).  The two positions may be the same.
+     `strfry' performs an in-place shuffle on STRING.  Each character
+     is swapped to a position selected at random, within the portion of
+     the string starting with the character's original position.  (This
+     is the Fisher-Yates algorithm for unbiased shuffling.)
+
+     Calling `strfry' will not disturb any of the random number
+     generators that have global state (*note Pseudo-Random Numbers::).
 
      The return value of `strfry' is always STRING.
 
      *Portability Note:*  This function is unique to the GNU C Library.
-
+     It is declared in `string.h'.
 
 
-File: libc.info,  Node: Trivial Encryption,  Next: Encode Binary Data,  Prev: strfry,  Up: String and Array Utilities
+File: libc.info,  Node: Obfuscating Data,  Next: Encode Binary Data,  Prev: Shuffling Bytes,  Up: String and Array Utilities
 
-5.13 Trivial Encryption
-=======================
+5.13 Obfuscating Data
+=====================
 
-The `memfrob' function converts an array of data to something
-unrecognizable and back again.  It is not encryption in its usual sense
-since it is easy for someone to convert the encrypted data back to clear
-text.  The transformation is analogous to Usenet's "Rot13" encryption
-method for obscuring offensive jokes from sensitive eyes and such.
-Unlike Rot13, `memfrob' works on arbitrary binary data, not just text.  
+The `memfrob' function reversibly obfuscates an array of binary data.
+This is not true encryption; the obfuscated data still bears a clear
+relationship to the original, and no secret key is required to undo the
+obfuscation.  It is analogous to the "Rot13" cipher used on Usenet for
+obscuring offensive jokes, spoilers for works of fiction, and so on,
+but it can be applied to arbitrary binary data.
 
-   For true encryption, *Note Cryptographic Functions::.
+   Programs that need true encryption--a transformation that completely
+obscures the original and cannot be reversed without knowledge of a
+secret key--should use a dedicated cryptography library, such as
+libgcrypt.
 
-   This function is declared in `string.h'.  
+   Programs that need to _destroy_ data should use `explicit_bzero'
+(*note Erasing Sensitive Data::), or possibly `strfry' (*note Shuffling
+Bytes::).
 
  -- Function: void * memfrob (void *MEM, size_t LENGTH)
      Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
      Concepts::.
 
-     `memfrob' transforms (frobnicates) each byte of the data structure
-     at MEM, which is LENGTH bytes long, by bitwise exclusive oring it
-     with binary 00101010.  It does the transformation in place and its
-     return value is always MEM.
+     The function `memfrob' obfuscates LENGTH bytes of data beginning
+     at MEM, in place.  Each byte is bitwise xor-ed with the binary
+     pattern 00101010 (hexadecimal 0x2A).  The return value is always
+     MEM.
 
-     Note that `memfrob' a second time on the same data structure
-     returns it to its original state.
-
-     This is a good function for hiding information from someone who
-     doesn't want to see it or doesn't want to see it very much.  To
-     really prevent people from retrieving the information, use
-     stronger encryption such as that described in *Note Cryptographic
-     Functions::.
+     `memfrob' a second time on the same data returns it to its
+     original state.
 
      *Portability Note:*  This function is unique to the GNU C Library.
-
+     It is declared in `string.h'.
 
 
-File: libc.info,  Node: Encode Binary Data,  Next: Argz and Envz Vectors,  Prev: Trivial Encryption,  Up: String and Array Utilities
+File: libc.info,  Node: Encode Binary Data,  Next: Argz and Envz Vectors,  Prev: Obfuscating Data,  Up: String and Array Utilities
 
 5.14 Encode Binary Data
 =======================
@@ -5816,16 +6296,16 @@ and they also do not require it to be in the initial state.
 
      The `mbrtowc' function ("multibyte restartable to wide character")
      converts the next multibyte character in the string pointed to by
-     S into a wide character and stores it in the wide character string
-     pointed to by PWC.  The conversion is performed according to the
-     locale currently selected for the `LC_CTYPE' category.  If the
-     conversion for the character set used in the locale requires a
-     state, the multibyte string is interpreted in the state
-     represented by the object pointed to by PS.  If PS is a null
-     pointer, a static, internal state variable used only by the
-     `mbrtowc' function is used.
+     S into a wide character and stores it in the location pointed to
+     by PWC.  The conversion is performed according to the locale
+     currently selected for the `LC_CTYPE' category.  If the conversion
+     for the character set used in the locale requires a state, the
+     multibyte string is interpreted in the state represented by the
+     object pointed to by PS.  If PS is a null pointer, a static,
+     internal state variable used only by the `mbrtowc' function is
+     used.
 
-     If the next multibyte character corresponds to the NUL wide
+     If the next multibyte character corresponds to the null wide
      character, the return value of the function is 0 and the state
      object is afterwards in the initial state.  If the next N or fewer
      bytes form a correct multibyte character, the return value is the
@@ -5838,9 +6318,11 @@ and they also do not require it to be in the initial state.
      If the first N bytes of the multibyte string possibly form a valid
      multibyte character but there are more than N bytes needed to
      complete it, the return value of the function is `(size_t) -2' and
-     no value is stored.  Please note that this can happen even if N
-     has a value greater than or equal to `MB_CUR_MAX' since the input
-     might contain redundant shift sequences.
+     no value is stored in `*PWC'.  The conversion state is updated and
+     all N input bytes are consumed and should not be submitted again.
+     Please note that this can happen even if N has a value greater
+     than or equal to `MB_CUR_MAX' since the input might contain
+     redundant shift sequences.
 
      If the first `n' bytes of the multibyte string cannot possibly form
      a valid multibyte character, no value is stored, the global
@@ -5848,58 +6330,89 @@ and they also do not require it to be in the initial state.
      returns `(size_t) -1'.  The conversion state is afterwards
      undefined.
 
+     As specified, the `mbrtowc' function could deal with multibyte
+     sequences which contain embedded null bytes (which happens in
+     Unicode encodings such as UTF-16), but the GNU C Library does not
+     support such multibyte encodings.  When encountering a null input
+     byte, the function will either return zero, or return `(size_t)
+     -1)' and report a `EILSEQ' error.  The `iconv' function can be
+     used for converting between arbitrary encodings.  *Note Generic
+     Conversion Interface::.
+
      `mbrtowc' was introduced in Amendment 1 to ISO C90 and is declared
      in `wchar.h'.
 
-   Use of `mbrtowc' is straightforward.  A function that copies a
-multibyte string into a wide character string while at the same time
-converting all lowercase characters into uppercase could look like this
-(this is not the final version, just an example; it has no error
-checking, and sometimes leaks memory):
+   A function that copies a multibyte string into a wide character
+string while at the same time converting all lowercase characters into
+uppercase could look like this:
 
      wchar_t *
      mbstouwcs (const char *s)
      {
-       size_t len = strlen (s);
-       wchar_t *result = malloc ((len + 1) * sizeof (wchar_t));
-       wchar_t *wcp = result;
-       wchar_t tmp[1];
-       mbstate_t state;
-       size_t nbytes;
+       /* Include the null terminator in the conversion. */
+       size_t len = strlen (s) + 1;
+       wchar_t *result = reallocarray (NULL, len, sizeof (wchar_t));
+       if (result == NULL)
+         return NULL;
 
+       wchar_t *wcp = result;
+       mbstate_t state;
        memset (&state, '\0', sizeof (state));
-       while ((nbytes = mbrtowc (tmp, s, len, &state)) > 0)
+
+       while (true)
          {
-           if (nbytes >= (size_t) -2)
-             /* Invalid input string.  */
-             return NULL;
-           *wcp++ = towupper (tmp[0]);
-           len -= nbytes;
-           s += nbytes;
+           wchar_t wc;
+           size_t nbytes = mbrtowc (&wc, s, len, &state);
+           if (nbytes == 0)
+             {
+               /* Terminate the result string. */
+               *wcp = L'\0';
+               break;
+             }
+           else if (nbytes == (size_t) -2)
+             {
+               /* Truncated input string. */
+               errno = EILSEQ;
+               free (result);
+               return NULL;
+             }
+           else if (nbytes == (size_t) -1)
+             {
+               /* Some other error (including EILSEQ). */
+               free (result);
+               return NULL;
+             }
+           else
+             {
+               /* A character was converted. */
+               *wcp++ = towupper (wc);
+               len -= nbytes;
+               s += nbytes;
+             }
          }
        return result;
      }
 
-   The use of `mbrtowc' should be clear.  A single wide character is
-stored in `TMP[0]', and the number of consumed bytes is stored in the
-variable NBYTES.  If the conversion is successful, the uppercase
-variant of the wide character is stored in the RESULT array and the
-pointer to the input string and the number of available bytes is
-adjusted.
+   In the inner loop, a single wide character is stored in `wc', and
+the number of consumed bytes is stored in the variable `nbytes'.  If
+the conversion is successful, the uppercase variant of the wide
+character is stored in the `result' array and the pointer to the input
+string and the number of available bytes is adjusted.  If the `mbrtowc'
+function returns zero, the null input byte has not been converted, so
+it must be stored explicitly in the result.
 
-   The only non-obvious thing about `mbrtowc' might be the way memory
-is allocated for the result.  The above code uses the fact that there
-can never be more wide characters in the converted result than there are
-bytes in the multibyte input string.  This method yields a pessimistic
-guess about the size of the result, and if many wide character strings
-have to be constructed this way or if the strings are long, the extra
-memory required to be allocated because the input string contains
-multibyte characters might be significant.  The allocated memory block
-can be resized to the correct size before returning it, but a better
-solution might be to allocate just the right amount of space for the
-result right away.  Unfortunately there is no function to compute the
-length of the wide character string directly from the multibyte string.
-There is, however, a function that does part of the work.
+   The above code uses the fact that there can never be more wide
+characters in the converted result than there are bytes in the multibyte
+input string.  This method yields a pessimistic guess about the size of
+the result, and if many wide character strings have to be constructed
+this way or if the strings are long, the extra memory required to be
+allocated because the input string contains multibyte characters might
+be significant.  The allocated memory block can be resized to the
+correct size before returning it, but a better solution might be to
+allocate just the right amount of space for the result right away.
+Unfortunately there is no function to compute the length of the wide
+character string directly from the multibyte string.  There is, however,
+a function that does part of the work.
 
  -- Function: size_t mbrlen (const char *restrict S, size_t N,
           mbstate_t *PS)
@@ -8482,266 +8995,4 @@ system follows the Unix standards.
 
 * The Lame Way to Locale Data::   ISO C's `localeconv'.
 * The Elegant and Fast Way::      X/Open's `nl_langinfo'.
-
-
-File: libc.info,  Node: The Lame Way to Locale Data,  Next: The Elegant and Fast Way,  Up: Locale Information
-
-7.7.1 `localeconv': It is portable but ...
-------------------------------------------
-
-Together with the `setlocale' function the ISO C people invented the
-`localeconv' function.  It is a masterpiece of poor design.  It is
-expensive to use, not extensible, and not generally usable as it
-provides access to only `LC_MONETARY' and `LC_NUMERIC' related
-information.  Nevertheless, if it is applicable to a given situation it
-should be used since it is very portable.  The function `strfmon'
-formats monetary amounts according to the selected locale using this
-information.  
-
- -- Function: struct lconv * localeconv (void)
-     Preliminary: | MT-Unsafe race:localeconv locale | AS-Unsafe |
-     AC-Safe | *Note POSIX Safety Concepts::.
-
-     The `localeconv' function returns a pointer to a structure whose
-     components contain information about how numeric and monetary
-     values should be formatted in the current locale.
-
-     You should not modify the structure or its contents.  The
-     structure might be overwritten by subsequent calls to
-     `localeconv', or by calls to `setlocale', but no other function in
-     the library overwrites this value.
-
- -- Data Type: struct lconv
-     `localeconv''s return value is of this data type.  Its elements are
-     described in the following subsections.
-
-   If a member of the structure `struct lconv' has type `char', and the
-value is `CHAR_MAX', it means that the current locale has no value for
-that parameter.
-
-* Menu:
-
-* General Numeric::             Parameters for formatting numbers and
-                                 currency amounts.
-* Currency Symbol::             How to print the symbol that identifies an
-                                 amount of money (e.g. `$').
-* Sign of Money Amount::        How to print the (positive or negative) sign
-                                 for a monetary amount, if one exists.
-
-
-File: libc.info,  Node: General Numeric,  Next: Currency Symbol,  Up: The Lame Way to Locale Data
-
-7.7.1.1 Generic Numeric Formatting Parameters
-.............................................
-
-These are the standard members of `struct lconv'; there may be others.
-
-`char *decimal_point'
-`char *mon_decimal_point'
-     These are the decimal-point separators used in formatting
-     non-monetary and monetary quantities, respectively.  In the `C'
-     locale, the value of `decimal_point' is `"."', and the value of
-     `mon_decimal_point' is `""'.  
-
-`char *thousands_sep'
-`char *mon_thousands_sep'
-     These are the separators used to delimit groups of digits to the
-     left of the decimal point in formatting non-monetary and monetary
-     quantities, respectively.  In the `C' locale, both members have a
-     value of `""' (the empty string).
-
-`char *grouping'
-`char *mon_grouping'
-     These are strings that specify how to group the digits to the left
-     of the decimal point.  `grouping' applies to non-monetary
-     quantities and `mon_grouping' applies to monetary quantities.  Use
-     either `thousands_sep' or `mon_thousands_sep' to separate the digit
-     groups.  
-
-     Each member of these strings is to be interpreted as an integer
-     value of type `char'.  Successive numbers (from left to right)
-     give the sizes of successive groups (from right to left, starting
-     at the decimal point.)  The last member is either `0', in which
-     case the previous member is used over and over again for all the
-     remaining groups, or `CHAR_MAX', in which case there is no more
-     grouping--or, put another way, any remaining digits form one large
-     group without separators.
-
-     For example, if `grouping' is `"\04\03\02"', the correct grouping
-     for the number `123456787654321' is `12', `34', `56', `78', `765',
-     `4321'.  This uses a group of 4 digits at the end, preceded by a
-     group of 3 digits, preceded by groups of 2 digits (as many as
-     needed).  With a separator of `,', the number would be printed as
-     `12,34,56,78,765,4321'.
-
-     A value of `"\03"' indicates repeated groups of three digits, as
-     normally used in the U.S.
-
-     In the standard `C' locale, both `grouping' and `mon_grouping'
-     have a value of `""'.  This value specifies no grouping at all.
-
-`char int_frac_digits'
-`char frac_digits'
-     These are small integers indicating how many fractional digits (to
-     the right of the decimal point) should be displayed in a monetary
-     value in international and local formats, respectively.  (Most
-     often, both members have the same value.)
-
-     In the standard `C' locale, both of these members have the value
-     `CHAR_MAX', meaning "unspecified".  The ISO standard doesn't say
-     what to do when you find this value; we recommend printing no
-     fractional digits.  (This locale also specifies the empty string
-     for `mon_decimal_point', so printing any fractional digits would be
-     confusing!)
-
-
-File: libc.info,  Node: Currency Symbol,  Next: Sign of Money Amount,  Prev: General Numeric,  Up: The Lame Way to Locale Data
-
-7.7.1.2 Printing the Currency Symbol
-....................................
-
-These members of the `struct lconv' structure specify how to print the
-symbol to identify a monetary value--the international analog of `$'
-for US dollars.
-
-   Each country has two standard currency symbols.  The "local currency
-symbol" is used commonly within the country, while the "international
-currency symbol" is used internationally to refer to that country's
-currency when it is necessary to indicate the country unambiguously.
-
-   For example, many countries use the dollar as their monetary unit,
-and when dealing with international currencies it's important to specify
-that one is dealing with (say) Canadian dollars instead of U.S. dollars
-or Australian dollars.  But when the context is known to be Canada,
-there is no need to make this explicit--dollar amounts are implicitly
-assumed to be in Canadian dollars.
-
-`char *currency_symbol'
-     The local currency symbol for the selected locale.
-
-     In the standard `C' locale, this member has a value of `""' (the
-     empty string), meaning "unspecified".  The ISO standard doesn't
-     say what to do when you find this value; we recommend you simply
-     print the empty string as you would print any other string pointed
-     to by this variable.
-
-`char *int_curr_symbol'
-     The international currency symbol for the selected locale.
-
-     The value of `int_curr_symbol' should normally consist of a
-     three-letter abbreviation determined by the international standard
-     `ISO 4217 Codes for the Representation of Currency and Funds',
-     followed by a one-character separator (often a space).
-
-     In the standard `C' locale, this member has a value of `""' (the
-     empty string), meaning "unspecified".  We recommend you simply
-     print the empty string as you would print any other string pointed
-     to by this variable.
-
-`char p_cs_precedes'
-`char n_cs_precedes'
-`char int_p_cs_precedes'
-`char int_n_cs_precedes'
-     These members are `1' if the `currency_symbol' or
-     `int_curr_symbol' strings should precede the value of a monetary
-     amount, or `0' if the strings should follow the value.  The
-     `p_cs_precedes' and `int_p_cs_precedes' members apply to positive
-     amounts (or zero), and the `n_cs_precedes' and `int_n_cs_precedes'
-     members apply to negative amounts.
-
-     In the standard `C' locale, all of these members have a value of
-     `CHAR_MAX', meaning "unspecified".  The ISO standard doesn't say
-     what to do when you find this value.  We recommend printing the
-     currency symbol before the amount, which is right for most
-     countries.  In other words, treat all nonzero values alike in
-     these members.
-
-     The members with the `int_' prefix apply to the `int_curr_symbol'
-     while the other two apply to `currency_symbol'.
-
-`char p_sep_by_space'
-`char n_sep_by_space'
-`char int_p_sep_by_space'
-`char int_n_sep_by_space'
-     These members are `1' if a space should appear between the
-     `currency_symbol' or `int_curr_symbol' strings and the amount, or
-     `0' if no space should appear.  The `p_sep_by_space' and
-     `int_p_sep_by_space' members apply to positive amounts (or zero),
-     and the `n_sep_by_space' and `int_n_sep_by_space' members apply to
-     negative amounts.
-
-     In the standard `C' locale, all of these members have a value of
-     `CHAR_MAX', meaning "unspecified".  The ISO standard doesn't say
-     what you should do when you find this value; we suggest you treat
-     it as 1 (print a space).  In other words, treat all nonzero values
-     alike in these members.
-
-     The members with the `int_' prefix apply to the `int_curr_symbol'
-     while the other two apply to `currency_symbol'.  There is one
-     specialty with the `int_curr_symbol', though.  Since all legal
-     values contain a space at the end of the string one either prints
-     this space (if the currency symbol must appear in front and must
-     be separated) or one has to avoid printing this character at all
-     (especially when at the end of the string).
-
-
-File: libc.info,  Node: Sign of Money Amount,  Prev: Currency Symbol,  Up: The Lame Way to Locale Data
-
-7.7.1.3 Printing the Sign of a Monetary Amount
-..............................................
-
-These members of the `struct lconv' structure specify how to print the
-sign (if any) of a monetary value.
-
-`char *positive_sign'
-`char *negative_sign'
-     These are strings used to indicate positive (or zero) and negative
-     monetary quantities, respectively.
-
-     In the standard `C' locale, both of these members have a value of
-     `""' (the empty string), meaning "unspecified".
-
-     The ISO standard doesn't say what to do when you find this value;
-     we recommend printing `positive_sign' as you find it, even if it is
-     empty.  For a negative value, print `negative_sign' as you find it
-     unless both it and `positive_sign' are empty, in which case print
-     `-' instead.  (Failing to indicate the sign at all seems rather
-     unreasonable.)
-
-`char p_sign_posn'
-`char n_sign_posn'
-`char int_p_sign_posn'
-`char int_n_sign_posn'
-     These members are small integers that indicate how to position the
-     sign for nonnegative and negative monetary quantities,
-     respectively.  (The string used for the sign is what was specified
-     with `positive_sign' or `negative_sign'.)  The possible values are
-     as follows:
-
-    `0'
-          The currency symbol and quantity should be surrounded by
-          parentheses.
-
-    `1'
-          Print the sign string before the quantity and currency symbol.
-
-    `2'
-          Print the sign string after the quantity and currency symbol.
-
-    `3'
-          Print the sign string right before the currency symbol.
-
-    `4'
-          Print the sign string right after the currency symbol.
-
-    `CHAR_MAX'
-          "Unspecified".  Both members have this value in the standard
-          `C' locale.
-
-     The ISO standard doesn't say what you should do when the value is
-     `CHAR_MAX'.  We recommend you print the sign after the currency
-     symbol.
-
-     The members with the `int_' prefix apply to the `int_curr_symbol'
-     while the other two apply to `currency_symbol'.
 

@@ -39,7 +39,6 @@ START-INFO-DIR-ENTRY
 * CS8: (libc)Control Modes.
 * CSIZE: (libc)Control Modes.
 * CSTOPB: (libc)Control Modes.
-* DES_FAILED: (libc)DES Encryption.
 * DTTOIF: (libc)Directory Entries.
 * E2BIG: (libc)Error Codes.
 * EACCES: (libc)Error Codes.
@@ -309,6 +308,7 @@ START-INFO-DIR-ENTRY
 * O_READ: (libc)Access Modes.
 * O_SHLOCK: (libc)Open-time Flags.
 * O_SYNC: (libc)Operating Modes.
+* O_TMPFILE: (libc)Open-time Flags.
 * O_TRUNC: (libc)Open-time Flags.
 * O_WRITE: (libc)Access Modes.
 * O_WRONLY: (libc)Access Modes.
@@ -472,6 +472,7 @@ START-INFO-DIR-ENTRY
 * __ppc_set_ppr_med_low: (libc)PowerPC.
 * __ppc_set_ppr_very_low: (libc)PowerPC.
 * __ppc_yield: (libc)PowerPC.
+* __riscv_flush_icache: (libc)RISC-V.
 * __va_copy: (libc)Argument Macros.
 * _exit: (libc)Termination Internals.
 * _flushlbf: (libc)Flushing Buffers.
@@ -598,6 +599,7 @@ START-INFO-DIR-ENTRY
 * cacoshfNx: (libc)Hyperbolic Functions.
 * cacoshl: (libc)Hyperbolic Functions.
 * cacosl: (libc)Inverse Trig Functions.
+* call_once: (libc)Call Once.
 * calloc: (libc)Allocating Cleared Space.
 * canonicalize: (libc)FP Bit Twiddling.
 * canonicalize_file_name: (libc)Symbolic Links.
@@ -633,7 +635,6 @@ START-INFO-DIR-ENTRY
 * catclose: (libc)The catgets Functions.
 * catgets: (libc)The catgets Functions.
 * catopen: (libc)The catgets Functions.
-* cbc_crypt: (libc)DES Encryption.
 * cbrt: (libc)Exponents and Logarithms.
 * cbrtf: (libc)Exponents and Logarithms.
 * cbrtfN: (libc)Exponents and Logarithms.
@@ -690,6 +691,12 @@ START-INFO-DIR-ENTRY
 * close: (libc)Opening and Closing Files.
 * closedir: (libc)Reading/Closing Directory.
 * closelog: (libc)closelog.
+* cnd_broadcast: (libc)ISO C Condition Variables.
+* cnd_destroy: (libc)ISO C Condition Variables.
+* cnd_init: (libc)ISO C Condition Variables.
+* cnd_signal: (libc)ISO C Condition Variables.
+* cnd_timedwait: (libc)ISO C Condition Variables.
+* cnd_wait: (libc)ISO C Condition Variables.
 * confstr: (libc)String Parameters.
 * conj: (libc)Operations on Complex.
 * conjf: (libc)Operations on Complex.
@@ -697,6 +704,7 @@ START-INFO-DIR-ENTRY
 * conjfNx: (libc)Operations on Complex.
 * conjl: (libc)Operations on Complex.
 * connect: (libc)Connecting.
+* copy_file_range: (libc)Copying File Data.
 * copysign: (libc)FP Bit Twiddling.
 * copysignf: (libc)FP Bit Twiddling.
 * copysignfN: (libc)FP Bit Twiddling.
@@ -729,8 +737,8 @@ START-INFO-DIR-ENTRY
 * creall: (libc)Operations on Complex.
 * creat64: (libc)Opening and Closing Files.
 * creat: (libc)Opening and Closing Files.
-* crypt: (libc)crypt.
-* crypt_r: (libc)crypt.
+* crypt: (libc)Passphrase Storage.
+* crypt_r: (libc)Passphrase Storage.
 * csin: (libc)Trig Functions.
 * csinf: (libc)Trig Functions.
 * csinfN: (libc)Trig Functions.
@@ -760,27 +768,27 @@ START-INFO-DIR-ENTRY
 * ctime: (libc)Formatting Calendar Time.
 * ctime_r: (libc)Formatting Calendar Time.
 * cuserid: (libc)Who Logged In.
+* daddl: (libc)Misc FP Arithmetic.
 * dcgettext: (libc)Translation with gettext.
 * dcngettext: (libc)Advanced gettext functions.
-* des_setparity: (libc)DES Encryption.
+* ddivl: (libc)Misc FP Arithmetic.
 * dgettext: (libc)Translation with gettext.
 * difftime: (libc)Elapsed Time.
 * dirfd: (libc)Opening a Directory.
 * dirname: (libc)Finding Tokens in a String.
 * div: (libc)Integer Division.
+* dmull: (libc)Misc FP Arithmetic.
 * dngettext: (libc)Advanced gettext functions.
 * drand48: (libc)SVID Random.
 * drand48_r: (libc)SVID Random.
 * drem: (libc)Remainder Functions.
 * dremf: (libc)Remainder Functions.
 * dreml: (libc)Remainder Functions.
+* dsubl: (libc)Misc FP Arithmetic.
 * dup2: (libc)Duplicating Descriptors.
 * dup: (libc)Duplicating Descriptors.
-* ecb_crypt: (libc)DES Encryption.
 * ecvt: (libc)System V Number Conversion.
 * ecvt_r: (libc)System V Number Conversion.
-* encrypt: (libc)DES Encryption.
-* encrypt_r: (libc)DES Encryption.
 * endfsent: (libc)fstab.
 * endgrent: (libc)Scanning All Groups.
 * endhostent: (libc)Host Names.
@@ -843,11 +851,29 @@ START-INFO-DIR-ENTRY
 * expm1fN: (libc)Exponents and Logarithms.
 * expm1fNx: (libc)Exponents and Logarithms.
 * expm1l: (libc)Exponents and Logarithms.
+* fMaddfN: (libc)Misc FP Arithmetic.
+* fMaddfNx: (libc)Misc FP Arithmetic.
+* fMdivfN: (libc)Misc FP Arithmetic.
+* fMdivfNx: (libc)Misc FP Arithmetic.
+* fMmulfN: (libc)Misc FP Arithmetic.
+* fMmulfNx: (libc)Misc FP Arithmetic.
+* fMsubfN: (libc)Misc FP Arithmetic.
+* fMsubfNx: (libc)Misc FP Arithmetic.
+* fMxaddfN: (libc)Misc FP Arithmetic.
+* fMxaddfNx: (libc)Misc FP Arithmetic.
+* fMxdivfN: (libc)Misc FP Arithmetic.
+* fMxdivfNx: (libc)Misc FP Arithmetic.
+* fMxmulfN: (libc)Misc FP Arithmetic.
+* fMxmulfNx: (libc)Misc FP Arithmetic.
+* fMxsubfN: (libc)Misc FP Arithmetic.
+* fMxsubfNx: (libc)Misc FP Arithmetic.
 * fabs: (libc)Absolute Value.
 * fabsf: (libc)Absolute Value.
 * fabsfN: (libc)Absolute Value.
 * fabsfNx: (libc)Absolute Value.
 * fabsl: (libc)Absolute Value.
+* fadd: (libc)Misc FP Arithmetic.
+* faddl: (libc)Misc FP Arithmetic.
 * fchdir: (libc)Working Directory.
 * fchmod: (libc)Setting Permissions.
 * fchown: (libc)File Owner.
@@ -862,6 +888,8 @@ START-INFO-DIR-ENTRY
 * fdimfN: (libc)Misc FP Arithmetic.
 * fdimfNx: (libc)Misc FP Arithmetic.
 * fdiml: (libc)Misc FP Arithmetic.
+* fdiv: (libc)Misc FP Arithmetic.
+* fdivl: (libc)Misc FP Arithmetic.
 * fdopen: (libc)Descriptors and Streams.
 * fdopendir: (libc)Opening a Directory.
 * feclearexcept: (libc)Status bit operations.
@@ -945,6 +973,8 @@ START-INFO-DIR-ENTRY
 * fmodfNx: (libc)Remainder Functions.
 * fmodl: (libc)Remainder Functions.
 * fmtmsg: (libc)Printing Formatted Messages.
+* fmul: (libc)Misc FP Arithmetic.
+* fmull: (libc)Misc FP Arithmetic.
 * fnmatch: (libc)Wildcard Matching.
 * fopen64: (libc)Opening Streams.
 * fopen: (libc)Opening Streams.
@@ -990,6 +1020,8 @@ START-INFO-DIR-ENTRY
 * fsetpos: (libc)Portable Positioning.
 * fstat64: (libc)Reading Attributes.
 * fstat: (libc)Reading Attributes.
+* fsub: (libc)Misc FP Arithmetic.
+* fsubl: (libc)Misc FP Arithmetic.
 * fsync: (libc)Synchronizing I/O.
 * ftell: (libc)File Positioning.
 * ftello64: (libc)File Positioning.
@@ -1263,6 +1295,7 @@ START-INFO-DIR-ENTRY
 * lgammal: (libc)Special Functions.
 * lgammal_r: (libc)Special Functions.
 * link: (libc)Hard Links.
+* linkat: (libc)Hard Links.
 * lio_listio64: (libc)Asynchronous Reads/Writes.
 * lio_listio: (libc)Asynchronous Reads/Writes.
 * listen: (libc)Listening.
@@ -1353,7 +1386,8 @@ START-INFO-DIR-ENTRY
 * memchr: (libc)Search Functions.
 * memcmp: (libc)String/Array Comparison.
 * memcpy: (libc)Copying Strings and Arrays.
-* memfrob: (libc)Trivial Encryption.
+* memfd_create: (libc)Memory-mapped I/O.
+* memfrob: (libc)Obfuscating Data.
 * memmem: (libc)Search Functions.
 * memmove: (libc)Copying Strings and Arrays.
 * mempcpy: (libc)Copying Strings and Arrays.
@@ -1366,6 +1400,7 @@ START-INFO-DIR-ENTRY
 * mkstemp: (libc)Temporary Files.
 * mktemp: (libc)Temporary Files.
 * mktime: (libc)Broken-down Time.
+* mlock2: (libc)Page Lock Functions.
 * mlock: (libc)Page Lock Functions.
 * mlockall: (libc)Page Lock Functions.
 * mmap64: (libc)Memory-mapped I/O.
@@ -1377,11 +1412,18 @@ START-INFO-DIR-ENTRY
 * modfl: (libc)Rounding Functions.
 * mount: (libc)Mount-Unmount-Remount.
 * mprobe: (libc)Heap Consistency Checking.
+* mprotect: (libc)Memory Protection.
 * mrand48: (libc)SVID Random.
 * mrand48_r: (libc)SVID Random.
 * mremap: (libc)Memory-mapped I/O.
 * msync: (libc)Memory-mapped I/O.
 * mtrace: (libc)Tracing malloc.
+* mtx_destroy: (libc)ISO C Mutexes.
+* mtx_init: (libc)ISO C Mutexes.
+* mtx_lock: (libc)ISO C Mutexes.
+* mtx_timedlock: (libc)ISO C Mutexes.
+* mtx_trylock: (libc)ISO C Mutexes.
+* mtx_unlock: (libc)ISO C Mutexes.
 * munlock: (libc)Page Lock Functions.
 * munlockall: (libc)Page Lock Functions.
 * munmap: (libc)Memory-mapped I/O.
@@ -1465,13 +1507,15 @@ START-INFO-DIR-ENTRY
 * pclose: (libc)Pipe to a Subprocess.
 * perror: (libc)Error Messages.
 * pipe: (libc)Creating a Pipe.
+* pkey_alloc: (libc)Memory Protection.
+* pkey_free: (libc)Memory Protection.
+* pkey_get: (libc)Memory Protection.
+* pkey_mprotect: (libc)Memory Protection.
+* pkey_set: (libc)Memory Protection.
 * popen: (libc)Pipe to a Subprocess.
 * posix_fallocate64: (libc)Storage Allocation.
 * posix_fallocate: (libc)Storage Allocation.
 * posix_memalign: (libc)Aligned Memory Blocks.
-* pow10: (libc)Exponents and Logarithms.
-* pow10f: (libc)Exponents and Logarithms.
-* pow10l: (libc)Exponents and Logarithms.
 * pow: (libc)Exponents and Logarithms.
 * powf: (libc)Exponents and Logarithms.
 * powfN: (libc)Exponents and Logarithms.
@@ -1479,10 +1523,10 @@ START-INFO-DIR-ENTRY
 * powl: (libc)Exponents and Logarithms.
 * pread64: (libc)I/O Primitives.
 * pread: (libc)I/O Primitives.
-* preadv2: (libc)I/O Primitives.
-* preadv64: (libc)I/O Primitives.
-* preadv64v2: (libc)I/O Primitives.
-* preadv: (libc)I/O Primitives.
+* preadv2: (libc)Scatter-Gather.
+* preadv64: (libc)Scatter-Gather.
+* preadv64v2: (libc)Scatter-Gather.
+* preadv: (libc)Scatter-Gather.
 * printf: (libc)Formatted Output Functions.
 * printf_size: (libc)Predefined Printf Handlers.
 * printf_size_info: (libc)Predefined Printf Handlers.
@@ -1511,10 +1555,10 @@ START-INFO-DIR-ENTRY
 * putwchar_unlocked: (libc)Simple Output.
 * pwrite64: (libc)I/O Primitives.
 * pwrite: (libc)I/O Primitives.
-* pwritev2: (libc)I/O Primitives.
-* pwritev64: (libc)I/O Primitives.
-* pwritev64v2: (libc)I/O Primitives.
-* pwritev: (libc)I/O Primitives.
+* pwritev2: (libc)Scatter-Gather.
+* pwritev64: (libc)Scatter-Gather.
+* pwritev64v2: (libc)Scatter-Gather.
+* pwritev: (libc)Scatter-Gather.
 * qecvt: (libc)System V Number Conversion.
 * qecvt_r: (libc)System V Number Conversion.
 * qfcvt: (libc)System V Number Conversion.
@@ -1637,8 +1681,6 @@ START-INFO-DIR-ENTRY
 * sethostname: (libc)Host Identification.
 * setitimer: (libc)Setting an Alarm.
 * setjmp: (libc)Non-Local Details.
-* setkey: (libc)DES Encryption.
-* setkey_r: (libc)DES Encryption.
 * setlinebuf: (libc)Controlling Buffering.
 * setlocale: (libc)Setting the Locale.
 * setlogmask: (libc)setlogmask.
@@ -1756,7 +1798,7 @@ START-INFO-DIR-ENTRY
 * strfromfN: (libc)Printing of Floats.
 * strfromfNx: (libc)Printing of Floats.
 * strfroml: (libc)Printing of Floats.
-* strfry: (libc)strfry.
+* strfry: (libc)Shuffling Bytes.
 * strftime: (libc)Formatting Calendar Time.
 * strlen: (libc)String Length.
 * strncasecmp: (libc)String/Array Comparison.
@@ -1832,6 +1874,14 @@ START-INFO-DIR-ENTRY
 * tgammafN: (libc)Special Functions.
 * tgammafNx: (libc)Special Functions.
 * tgammal: (libc)Special Functions.
+* thrd_create: (libc)ISO C Thread Management.
+* thrd_current: (libc)ISO C Thread Management.
+* thrd_detach: (libc)ISO C Thread Management.
+* thrd_equal: (libc)ISO C Thread Management.
+* thrd_exit: (libc)ISO C Thread Management.
+* thrd_join: (libc)ISO C Thread Management.
+* thrd_sleep: (libc)ISO C Thread Management.
+* thrd_yield: (libc)ISO C Thread Management.
 * time: (libc)Simple Calendar Time.
 * timegm: (libc)Broken-down Time.
 * timelocal: (libc)Broken-down Time.
@@ -1864,6 +1914,10 @@ START-INFO-DIR-ENTRY
 * truncfNx: (libc)Rounding Functions.
 * truncl: (libc)Rounding Functions.
 * tsearch: (libc)Tree Search Function.
+* tss_create: (libc)ISO C Thread-local Storage.
+* tss_delete: (libc)ISO C Thread-local Storage.
+* tss_get: (libc)ISO C Thread-local Storage.
+* tss_set: (libc)ISO C Thread-local Storage.
 * ttyname: (libc)Is It a Terminal.
 * ttyname_r: (libc)Is It a Terminal.
 * twalk: (libc)Tree Search Function.
@@ -2005,10 +2059,10 @@ END-INFO-DIR-ENTRY
 
    This file documents the GNU C Library.
 
-   This is `The GNU C Library Reference Manual', for version 2.26
-(crosstool-NG 1.23.0.420-201f).
+   This is `The GNU C Library Reference Manual', for version 2.28
+(crosstool-NG 1.23.0.513-84e6).
 
-   Copyright (C) 1993-2017 Free Software Foundation, Inc.
+   Copyright (C) 1993-2018 Free Software Foundation, Inc.
 
    Permission is granted to copy, distribute and/or modify this document
 under the terms of the GNU Free Documentation License, Version
@@ -2022,6 +2076,670 @@ Free Documentation License".
    (a) The FSF's Back-Cover Text is: "You have the freedom to copy and
 modify this GNU manual.  Buying copies from the FSF supports it in
 developing GNU and promoting software freedom."
+
+
+File: libc.info,  Node: Networks Database,  Prev: Socket Options,  Up: Sockets
+
+16.13 Networks Database
+=======================
+
+Many systems come with a database that records a list of networks known
+to the system developer.  This is usually kept either in the file
+`/etc/networks' or in an equivalent from a name server.  This data base
+is useful for routing programs such as `route', but it is not useful
+for programs that simply communicate over the network.  We provide
+functions to access this database, which are declared in `netdb.h'.
+
+ -- Data Type: struct netent
+     This data type is used to represent information about entries in
+     the networks database.  It has the following members:
+
+    `char *n_name'
+          This is the "official" name of the network.
+
+    `char **n_aliases'
+          These are alternative names for the network, represented as a
+          vector of strings.  A null pointer terminates the array.
+
+    `int n_addrtype'
+          This is the type of the network number; this is always equal
+          to `AF_INET' for Internet networks.
+
+    `unsigned long int n_net'
+          This is the network number.  Network numbers are returned in
+          host byte order; see *Note Byte Order::.
+
+   Use the `getnetbyname' or `getnetbyaddr' functions to search the
+networks database for information about a specific network.  The
+information is returned in a statically-allocated structure; you must
+copy the information if you need to save it.
+
+ -- Function: struct netent * getnetbyname (const char *NAME)
+     Preliminary: | MT-Unsafe race:netbyname env locale | AS-Unsafe
+     dlopen plugin heap lock | AC-Unsafe corrupt lock fd mem | *Note
+     POSIX Safety Concepts::.
+
+     The `getnetbyname' function returns information about the network
+     named NAME.  It returns a null pointer if there is no such network.
+
+ -- Function: struct netent * getnetbyaddr (uint32_t NET, int TYPE)
+     Preliminary: | MT-Unsafe race:netbyaddr locale | AS-Unsafe dlopen
+     plugin heap lock | AC-Unsafe corrupt lock fd mem | *Note POSIX
+     Safety Concepts::.
+
+     The `getnetbyaddr' function returns information about the network
+     of type TYPE with number NET.  You should specify a value of
+     `AF_INET' for the TYPE argument for Internet networks.
+
+     `getnetbyaddr' returns a null pointer if there is no such network.
+
+   You can also scan the networks database using `setnetent',
+`getnetent' and `endnetent'.  Be careful when using these functions
+because they are not reentrant.
+
+ -- Function: void setnetent (int STAYOPEN)
+     Preliminary: | MT-Unsafe race:netent env locale | AS-Unsafe dlopen
+     plugin heap lock | AC-Unsafe corrupt lock fd mem | *Note POSIX
+     Safety Concepts::.
+
+     This function opens and rewinds the networks database.
+
+     If the STAYOPEN argument is nonzero, this sets a flag so that
+     subsequent calls to `getnetbyname' or `getnetbyaddr' will not
+     close the database (as they usually would).  This makes for more
+     efficiency if you call those functions several times, by avoiding
+     reopening the database for each call.
+
+ -- Function: struct netent * getnetent (void)
+     Preliminary: | MT-Unsafe race:netent race:netentbuf env locale |
+     AS-Unsafe dlopen plugin heap lock | AC-Unsafe corrupt lock fd mem
+     | *Note POSIX Safety Concepts::.
+
+     This function returns the next entry in the networks database.  It
+     returns a null pointer if there are no more entries.
+
+ -- Function: void endnetent (void)
+     Preliminary: | MT-Unsafe race:netent env locale | AS-Unsafe dlopen
+     plugin heap lock | AC-Unsafe corrupt lock fd mem | *Note POSIX
+     Safety Concepts::.
+
+     This function closes the networks database.
+
+
+File: libc.info,  Node: Low-Level Terminal Interface,  Next: Syslog,  Prev: Sockets,  Up: Top
+
+17 Low-Level Terminal Interface
+*******************************
+
+This chapter describes functions that are specific to terminal devices.
+You can use these functions to do things like turn off input echoing;
+set serial line characteristics such as line speed and flow control; and
+change which characters are used for end-of-file, command-line editing,
+sending signals, and similar control functions.
+
+   Most of the functions in this chapter operate on file descriptors.
+*Note Low-Level I/O::, for more information about what a file
+descriptor is and how to open a file descriptor for a terminal device.
+
+* Menu:
+
+* Is It a Terminal::            How to determine if a file is a terminal
+			         device, and what its name is.
+* I/O Queues::                  About flow control and typeahead.
+* Canonical or Not::            Two basic styles of input processing.
+* Terminal Modes::              How to examine and modify flags controlling
+			         details of terminal I/O: echoing,
+                                 signals, editing.  Posix.
+* BSD Terminal Modes::          BSD compatible terminal mode setting
+* Line Control::                Sending break sequences, clearing
+                                 terminal buffers ...
+* Noncanon Example::            How to read single characters without echo.
+* getpass::                     Prompting the user for a passphrase.
+* Pseudo-Terminals::            How to open a pseudo-terminal.
+
+
+File: libc.info,  Node: Is It a Terminal,  Next: I/O Queues,  Up: Low-Level Terminal Interface
+
+17.1 Identifying Terminals
+==========================
+
+The functions described in this chapter only work on files that
+correspond to terminal devices.  You can find out whether a file
+descriptor is associated with a terminal by using the `isatty' function.
+
+   Prototypes for the functions in this section are declared in the
+header file `unistd.h'.
+
+ -- Function: int isatty (int FILEDES)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This function returns `1' if FILEDES is a file descriptor
+     associated with an open terminal device, and 0 otherwise.
+
+   If a file descriptor is associated with a terminal, you can get its
+associated file name using the `ttyname' function.  See also the
+`ctermid' function, described in *Note Identifying the Terminal::.
+
+ -- Function: char * ttyname (int FILEDES)
+     Preliminary: | MT-Unsafe race:ttyname | AS-Unsafe heap lock |
+     AC-Unsafe lock fd mem | *Note POSIX Safety Concepts::.
+
+     If the file descriptor FILEDES is associated with a terminal
+     device, the `ttyname' function returns a pointer to a
+     statically-allocated, null-terminated string containing the file
+     name of the terminal file.  The value is a null pointer if the
+     file descriptor isn't associated with a terminal, or the file name
+     cannot be determined.
+
+ -- Function: int ttyname_r (int FILEDES, char *BUF, size_t LEN)
+     Preliminary: | MT-Safe | AS-Unsafe heap | AC-Unsafe mem fd | *Note
+     POSIX Safety Concepts::.
+
+     The `ttyname_r' function is similar to the `ttyname' function
+     except that it places its result into the user-specified buffer
+     starting at BUF with length LEN.
+
+     The normal return value from `ttyname_r' is 0.  Otherwise an error
+     number is returned to indicate the error.  The following `errno'
+     error conditions are defined for this function:
+
+    `EBADF'
+          The FILEDES argument is not a valid file descriptor.
+
+    `ENOTTY'
+          The FILEDES is not associated with a terminal.
+
+    `ERANGE'
+          The buffer length LEN is too small to store the string to be
+          returned.
+
+    `ENODEV'
+          The FILEDES is associated with a terminal device that is a
+          slave pseudo-terminal, but the file name associated with that
+          device could not be determined.  This is a GNU extension.
+
+
+File: libc.info,  Node: I/O Queues,  Next: Canonical or Not,  Prev: Is It a Terminal,  Up: Low-Level Terminal Interface
+
+17.2 I/O Queues
+===============
+
+Many of the remaining functions in this section refer to the input and
+output queues of a terminal device.  These queues implement a form of
+buffering _within the kernel_ independent of the buffering implemented
+by I/O streams (*note I/O on Streams::).
+
+   The "terminal input queue" is also sometimes referred to as its
+"typeahead buffer".  It holds the characters that have been received
+from the terminal but not yet read by any process.
+
+   The size of the input queue is described by the `MAX_INPUT' and
+`_POSIX_MAX_INPUT' parameters; see *Note Limits for Files::.  You are
+guaranteed a queue size of at least `MAX_INPUT', but the queue might be
+larger, and might even dynamically change size.  If input flow control
+is enabled by setting the `IXOFF' input mode bit (*note Input Modes::),
+the terminal driver transmits STOP and START characters to the terminal
+when necessary to prevent the queue from overflowing.  Otherwise, input
+may be lost if it comes in too fast from the terminal.  In canonical
+mode, all input stays in the queue until a newline character is
+received, so the terminal input queue can fill up when you type a very
+long line.  *Note Canonical or Not::.
+
+   The "terminal output queue" is like the input queue, but for output;
+it contains characters that have been written by processes, but not yet
+transmitted to the terminal.  If output flow control is enabled by
+setting the `IXON' input mode bit (*note Input Modes::), the terminal
+driver obeys START and STOP characters sent by the terminal to stop and
+restart transmission of output.
+
+   "Clearing" the terminal input queue means discarding any characters
+that have been received but not yet read.  Similarly, clearing the
+terminal output queue means discarding any characters that have been
+written but not yet transmitted.
+
+
+File: libc.info,  Node: Canonical or Not,  Next: Terminal Modes,  Prev: I/O Queues,  Up: Low-Level Terminal Interface
+
+17.3 Two Styles of Input: Canonical or Not
+==========================================
+
+POSIX systems support two basic modes of input: canonical and
+noncanonical.
+
+   In "canonical input processing" mode, terminal input is processed in
+lines terminated by newline (`'\n''), EOF, or EOL characters.  No input
+can be read until an entire line has been typed by the user, and the
+`read' function (*note I/O Primitives::) returns at most a single line
+of input, no matter how many bytes are requested.
+
+   In canonical input mode, the operating system provides input editing
+facilities: some characters are interpreted specially to perform editing
+operations within the current line of text, such as ERASE and KILL.
+*Note Editing Characters::.
+
+   The constants `_POSIX_MAX_CANON' and `MAX_CANON' parameterize the
+maximum number of bytes which may appear in a single line of canonical
+input.  *Note Limits for Files::.  You are guaranteed a maximum line
+length of at least `MAX_CANON' bytes, but the maximum might be larger,
+and might even dynamically change size.
+
+   In "noncanonical input processing" mode, characters are not grouped
+into lines, and ERASE and KILL processing is not performed.  The
+granularity with which bytes are read in noncanonical input mode is
+controlled by the MIN and TIME settings.  *Note Noncanonical Input::.
+
+   Most programs use canonical input mode, because this gives the user a
+way to edit input line by line.  The usual reason to use noncanonical
+mode is when the program accepts single-character commands or provides
+its own editing facilities.
+
+   The choice of canonical or noncanonical input is controlled by the
+`ICANON' flag in the `c_lflag' member of `struct termios'.  *Note Local
+Modes::.
+
+
+File: libc.info,  Node: Terminal Modes,  Next: BSD Terminal Modes,  Prev: Canonical or Not,  Up: Low-Level Terminal Interface
+
+17.4 Terminal Modes
+===================
+
+This section describes the various terminal attributes that control how
+input and output are done.  The functions, data structures, and symbolic
+constants are all declared in the header file `termios.h'.
+
+   Don't confuse terminal attributes with file attributes.  A device
+special file which is associated with a terminal has file attributes as
+described in *Note File Attributes::.  These are unrelated to the
+attributes of the terminal device itself, which are discussed in this
+section.
+
+* Menu:
+
+* Mode Data Types::             The data type `struct termios' and
+                                 related types.
+* Mode Functions::              Functions to read and set the terminal
+                                 attributes.
+* Setting Modes::               The right way to set terminal attributes
+                                 reliably.
+* Input Modes::                 Flags controlling low-level input handling.
+* Output Modes::                Flags controlling low-level output handling.
+* Control Modes::               Flags controlling serial port behavior.
+* Local Modes::                 Flags controlling high-level input handling.
+* Line Speed::                  How to read and set the terminal line speed.
+* Special Characters::          Characters that have special effects,
+			         and how to change them.
+* Noncanonical Input::          Controlling how long to wait for input.
+
+
+File: libc.info,  Node: Mode Data Types,  Next: Mode Functions,  Up: Terminal Modes
+
+17.4.1 Terminal Mode Data Types
+-------------------------------
+
+The entire collection of attributes of a terminal is stored in a
+structure of type `struct termios'.  This structure is used with the
+functions `tcgetattr' and `tcsetattr' to read and set the attributes.
+
+ -- Data Type: struct termios
+     A `struct termios' records all the I/O attributes of a terminal.
+     The structure includes at least the following members:
+
+    `tcflag_t c_iflag'
+          A bit mask specifying flags for input modes; see *Note Input
+          Modes::.
+
+    `tcflag_t c_oflag'
+          A bit mask specifying flags for output modes; see *Note
+          Output Modes::.
+
+    `tcflag_t c_cflag'
+          A bit mask specifying flags for control modes; see *Note
+          Control Modes::.
+
+    `tcflag_t c_lflag'
+          A bit mask specifying flags for local modes; see *Note Local
+          Modes::.
+
+    `cc_t c_cc[NCCS]'
+          An array specifying which characters are associated with
+          various control functions; see *Note Special Characters::.
+
+     The `struct termios' structure also contains members which encode
+     input and output transmission speeds, but the representation is
+     not specified.  *Note Line Speed::, for how to examine and store
+     the speed values.
+
+   The following sections describe the details of the members of the
+`struct termios' structure.
+
+ -- Data Type: tcflag_t
+     This is an unsigned integer type used to represent the various bit
+     masks for terminal flags.
+
+ -- Data Type: cc_t
+     This is an unsigned integer type used to represent characters
+     associated with various terminal control functions.
+
+ -- Macro: int NCCS
+     The value of this macro is the number of elements in the `c_cc'
+     array.
+
+
+File: libc.info,  Node: Mode Functions,  Next: Setting Modes,  Prev: Mode Data Types,  Up: Terminal Modes
+
+17.4.2 Terminal Mode Functions
+------------------------------
+
+ -- Function: int tcgetattr (int FILEDES, struct termios *TERMIOS-P)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This function is used to examine the attributes of the terminal
+     device with file descriptor FILEDES.  The attributes are returned
+     in the structure that TERMIOS-P points to.
+
+     If successful, `tcgetattr' returns 0.  A return value of -1
+     indicates an error.  The following `errno' error conditions are
+     defined for this function:
+
+    `EBADF'
+          The FILEDES argument is not a valid file descriptor.
+
+    `ENOTTY'
+          The FILEDES is not associated with a terminal.
+
+ -- Function: int tcsetattr (int FILEDES, int WHEN, const struct
+          termios *TERMIOS-P)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This function sets the attributes of the terminal device with file
+     descriptor FILEDES.  The new attributes are taken from the
+     structure that TERMIOS-P points to.
+
+     The WHEN argument specifies how to deal with input and output
+     already queued.  It can be one of the following values:
+
+    `TCSANOW'
+          Make the change immediately.
+
+    `TCSADRAIN'
+          Make the change after waiting until all queued output has
+          been written.  You should usually use this option when
+          changing parameters that affect output.
+
+    `TCSAFLUSH'
+          This is like `TCSADRAIN', but also discards any queued input.
+
+    `TCSASOFT'
+          This is a flag bit that you can add to any of the above
+          alternatives.  Its meaning is to inhibit alteration of the
+          state of the terminal hardware.  It is a BSD extension; it is
+          only supported on BSD systems and GNU/Hurd systems.
+
+          Using `TCSASOFT' is exactly the same as setting the `CIGNORE'
+          bit in the `c_cflag' member of the structure TERMIOS-P points
+          to.  *Note Control Modes::, for a description of `CIGNORE'.
+
+     If this function is called from a background process on its
+     controlling terminal, normally all processes in the process group
+     are sent a `SIGTTOU' signal, in the same way as if the process
+     were trying to write to the terminal.  The exception is if the
+     calling process itself is ignoring or blocking `SIGTTOU' signals,
+     in which case the operation is performed and no signal is sent.
+     *Note Job Control::.
+
+     If successful, `tcsetattr' returns 0.  A return value of -1
+     indicates an error.  The following `errno' error conditions are
+     defined for this function:
+
+    `EBADF'
+          The FILEDES argument is not a valid file descriptor.
+
+    `ENOTTY'
+          The FILEDES is not associated with a terminal.
+
+    `EINVAL'
+          Either the value of the `when' argument is not valid, or
+          there is something wrong with the data in the TERMIOS-P
+          argument.
+
+Although `tcgetattr' and `tcsetattr' specify the terminal device with a
+file descriptor, the attributes are those of the terminal device itself
+and not of the file descriptor.  This means that the effects of
+changing terminal attributes are persistent; if another process opens
+the terminal file later on, it will see the changed attributes even
+though it doesn't have anything to do with the open file descriptor you
+originally specified in changing the attributes.
+
+   Similarly, if a single process has multiple or duplicated file
+descriptors for the same terminal device, changing the terminal
+attributes affects input and output to all of these file descriptors.
+This means, for example, that you can't open one file descriptor or
+stream to read from a terminal in the normal line-buffered, echoed
+mode; and simultaneously have another file descriptor for the same
+terminal that you use to read from it in single-character, non-echoed
+mode.  Instead, you have to explicitly switch the terminal back and
+forth between the two modes.
+
+
+File: libc.info,  Node: Setting Modes,  Next: Input Modes,  Prev: Mode Functions,  Up: Terminal Modes
+
+17.4.3 Setting Terminal Modes Properly
+--------------------------------------
+
+When you set terminal modes, you should call `tcgetattr' first to get
+the current modes of the particular terminal device, modify only those
+modes that you are really interested in, and store the result with
+`tcsetattr'.
+
+   It's a bad idea to simply initialize a `struct termios' structure to
+a chosen set of attributes and pass it directly to `tcsetattr'.  Your
+program may be run years from now, on systems that support members not
+documented in this manual.  The way to avoid setting these members to
+unreasonable values is to avoid changing them.
+
+   What's more, different terminal devices may require different mode
+settings in order to function properly.  So you should avoid blindly
+copying attributes from one terminal device to another.
+
+   When a member contains a collection of independent flags, as the
+`c_iflag', `c_oflag' and `c_cflag' members do, even setting the entire
+member is a bad idea, because particular operating systems have their
+own flags.  Instead, you should start with the current value of the
+member and alter only the flags whose values matter in your program,
+leaving any other flags unchanged.
+
+   Here is an example of how to set one flag (`ISTRIP') in the `struct
+termios' structure while properly preserving all the other data in the
+structure:
+
+     int
+     set_istrip (int desc, int value)
+     {
+       struct termios settings;
+       int result;
+
+       result = tcgetattr (desc, &settings);
+       if (result < 0)
+         {
+           perror ("error in tcgetattr");
+           return 0;
+         }
+       settings.c_iflag &= ~ISTRIP;
+       if (value)
+         settings.c_iflag |= ISTRIP;
+       result = tcsetattr (desc, TCSANOW, &settings);
+       if (result < 0)
+         {
+           perror ("error in tcsetattr");
+           return 0;
+        }
+       return 1;
+     }
+
+
+File: libc.info,  Node: Input Modes,  Next: Output Modes,  Prev: Setting Modes,  Up: Terminal Modes
+
+17.4.4 Input Modes
+------------------
+
+This section describes the terminal attribute flags that control fairly
+low-level aspects of input processing: handling of parity errors, break
+signals, flow control, and <RET> and <LFD> characters.
+
+   All of these flags are bits in the `c_iflag' member of the `struct
+termios' structure.  The member is an integer, and you change flags
+using the operators `&', `|' and `^'.  Don't try to specify the entire
+value for `c_iflag'--instead, change only specific flags and leave the
+rest untouched (*note Setting Modes::).
+
+ -- Macro: tcflag_t INPCK
+     If this bit is set, input parity checking is enabled.  If it is
+     not set, no checking at all is done for parity errors on input; the
+     characters are simply passed through to the application.
+
+     Parity checking on input processing is independent of whether
+     parity detection and generation on the underlying terminal
+     hardware is enabled; see *Note Control Modes::.  For example, you
+     could clear the `INPCK' input mode flag and set the `PARENB'
+     control mode flag to ignore parity errors on input, but still
+     generate parity on output.
+
+     If this bit is set, what happens when a parity error is detected
+     depends on whether the `IGNPAR' or `PARMRK' bits are set.  If
+     neither of these bits are set, a byte with a parity error is
+     passed to the application as a `'\0'' character.
+
+ -- Macro: tcflag_t IGNPAR
+     If this bit is set, any byte with a framing or parity error is
+     ignored.  This is only useful if `INPCK' is also set.
+
+ -- Macro: tcflag_t PARMRK
+     If this bit is set, input bytes with parity or framing errors are
+     marked when passed to the program.  This bit is meaningful only
+     when `INPCK' is set and `IGNPAR' is not set.
+
+     The way erroneous bytes are marked is with two preceding bytes,
+     `377' and `0'.  Thus, the program actually reads three bytes for
+     one erroneous byte received from the terminal.
+
+     If a valid byte has the value `0377', and `ISTRIP' (see below) is
+     not set, the program might confuse it with the prefix that marks a
+     parity error.  So a valid byte `0377' is passed to the program as
+     two bytes, `0377' `0377', in this case.
+
+ -- Macro: tcflag_t ISTRIP
+     If this bit is set, valid input bytes are stripped to seven bits;
+     otherwise, all eight bits are available for programs to read.
+
+ -- Macro: tcflag_t IGNBRK
+     If this bit is set, break conditions are ignored.
+
+     A "break condition" is defined in the context of asynchronous
+     serial data transmission as a series of zero-value bits longer
+     than a single byte.
+
+ -- Macro: tcflag_t BRKINT
+     If this bit is set and `IGNBRK' is not set, a break condition
+     clears the terminal input and output queues and raises a `SIGINT'
+     signal for the foreground process group associated with the
+     terminal.
+
+     If neither `BRKINT' nor `IGNBRK' are set, a break condition is
+     passed to the application as a single `'\0'' character if `PARMRK'
+     is not set, or otherwise as a three-character sequence `'\377'',
+     `'\0'', `'\0''.
+
+ -- Macro: tcflag_t IGNCR
+     If this bit is set, carriage return characters (`'\r'') are
+     discarded on input.  Discarding carriage return may be useful on
+     terminals that send both carriage return and linefeed when you
+     type the <RET> key.
+
+ -- Macro: tcflag_t ICRNL
+     If this bit is set and `IGNCR' is not set, carriage return
+     characters (`'\r'') received as input are passed to the
+     application as newline characters (`'\n'').
+
+ -- Macro: tcflag_t INLCR
+     If this bit is set, newline characters (`'\n'') received as input
+     are passed to the application as carriage return characters
+     (`'\r'').
+
+ -- Macro: tcflag_t IXOFF
+     If this bit is set, start/stop control on input is enabled.  In
+     other words, the computer sends STOP and START characters as
+     necessary to prevent input from coming in faster than programs are
+     reading it.  The idea is that the actual terminal hardware that is
+     generating the input data responds to a STOP character by
+     suspending transmission, and to a START character by resuming
+     transmission.  *Note Start/Stop Characters::.
+
+ -- Macro: tcflag_t IXON
+     If this bit is set, start/stop control on output is enabled.  In
+     other words, if the computer receives a STOP character, it
+     suspends output until a START character is received.  In this
+     case, the STOP and START characters are never passed to the
+     application program.  If this bit is not set, then START and STOP
+     can be read as ordinary characters.  *Note Start/Stop Characters::.
+
+ -- Macro: tcflag_t IXANY
+     If this bit is set, any input character restarts output when
+     output has been suspended with the STOP character.  Otherwise,
+     only the START character restarts output.
+
+     This is a BSD extension; it exists only on BSD systems and
+     GNU/Linux and GNU/Hurd systems.
+
+ -- Macro: tcflag_t IMAXBEL
+     If this bit is set, then filling up the terminal input buffer
+     sends a BEL character (code `007') to the terminal to ring the
+     bell.
+
+     This is a BSD extension.
+
+
+File: libc.info,  Node: Output Modes,  Next: Control Modes,  Prev: Input Modes,  Up: Terminal Modes
+
+17.4.5 Output Modes
+-------------------
+
+This section describes the terminal flags and fields that control how
+output characters are translated and padded for display.  All of these
+are contained in the `c_oflag' member of the `struct termios' structure.
+
+   The `c_oflag' member itself is an integer, and you change the flags
+and fields using the operators `&', `|', and `^'.  Don't try to specify
+the entire value for `c_oflag'--instead, change only specific flags and
+leave the rest untouched (*note Setting Modes::).
+
+ -- Macro: tcflag_t OPOST
+     If this bit is set, output data is processed in some unspecified
+     way so that it is displayed appropriately on the terminal device.
+     This typically includes mapping newline characters (`'\n'') onto
+     carriage return and linefeed pairs.
+
+     If this bit isn't set, the characters are transmitted as-is.
+
+   The following three bits are effective only if `OPOST' is set.
+
+ -- Macro: tcflag_t ONLCR
+     If this bit is set, convert the newline character on output into a
+     pair of characters, carriage return followed by linefeed.
+
+ -- Macro: tcflag_t OXTABS
+     If this bit is set, convert tab characters on output into the
+     appropriate number of spaces to emulate a tab stop every eight
+     columns.  This bit exists only on BSD systems and GNU/Hurd
+     systems; on GNU/Linux systems it is available as `XTABS'.
+
+ -- Macro: tcflag_t ONOEOT
+     If this bit is set, discard `C-d' characters (code `004') on
+     output.  These characters cause many dial-up terminals to
+     disconnect.  This bit exists only on BSD systems and GNU/Hurd
+     systems.
 
 
 File: libc.info,  Node: Control Modes,  Next: Local Modes,  Prev: Output Modes,  Up: Terminal Modes
@@ -2992,7 +3710,7 @@ operation is performed and no signal is sent.  *Note Job Control::.
           A bad value was supplied as the ACTION argument.
 
 
-File: libc.info,  Node: Noncanon Example,  Next: Pseudo-Terminals,  Prev: Line Control,  Up: Low-Level Terminal Interface
+File: libc.info,  Node: Noncanon Example,  Next: getpass,  Prev: Line Control,  Up: Low-Level Terminal Interface
 
 17.7 Noncanonical Mode Example
 ==============================
@@ -3072,9 +3790,73 @@ establish handlers for job control signals that reset terminal modes.
 The above example does so.
 
 
-File: libc.info,  Node: Pseudo-Terminals,  Prev: Noncanon Example,  Up: Low-Level Terminal Interface
+File: libc.info,  Node: getpass,  Next: Pseudo-Terminals,  Prev: Noncanon Example,  Up: Low-Level Terminal Interface
 
-17.8 Pseudo-Terminals
+17.8 Reading Passphrases
+========================
+
+When reading in a passphrase, it is desirable to avoid displaying it on
+the screen, to help keep it secret.  The following function handles this
+in a convenient way.
+
+ -- Function: char * getpass (const char *PROMPT)
+     Preliminary: | MT-Unsafe term | AS-Unsafe heap lock corrupt |
+     AC-Unsafe term lock corrupt | *Note POSIX Safety Concepts::.
+
+     `getpass' outputs PROMPT, then reads a string in from the terminal
+     without echoing it.  It tries to connect to the real terminal,
+     `/dev/tty', if possible, to encourage users not to put plaintext
+     passphrases in files; otherwise, it uses `stdin' and `stderr'.
+     `getpass' also disables the INTR, QUIT, and SUSP characters on the
+     terminal using the `ISIG' terminal attribute (*note Local Modes::).
+     The terminal is flushed before and after `getpass', so that
+     characters of a mistyped passphrase are not accidentally visible.
+
+     In other C libraries, `getpass' may only return the first
+     `PASS_MAX' bytes of a passphrase.  The GNU C Library has no limit,
+     so `PASS_MAX' is undefined.
+
+     The prototype for this function is in `unistd.h'.  `PASS_MAX'
+     would be defined in `limits.h'.
+
+   This precise set of operations may not suit all possible situations.
+In this case, it is recommended that users write their own `getpass'
+substitute.  For instance, a very simple substitute is as follows:
+
+
+     #include <termios.h>
+     #include <stdio.h>
+
+     ssize_t
+     my_getpass (char **lineptr, size_t *n, FILE *stream)
+     {
+       struct termios old, new;
+       int nread;
+
+       /* Turn echoing off and fail if we can't. */
+       if (tcgetattr (fileno (stream), &old) != 0)
+         return -1;
+       new = old;
+       new.c_lflag &= ~ECHO;
+       if (tcsetattr (fileno (stream), TCSAFLUSH, &new) != 0)
+         return -1;
+
+       /* Read the passphrase */
+       nread = getline (lineptr, n, stream);
+
+       /* Restore terminal. */
+       (void) tcsetattr (fileno (stream), TCSAFLUSH, &old);
+
+       return nread;
+     }
+
+   The substitute takes the same parameters as `getline' (*note Line
+Input::); the user must print any prompt desired.
+
+
+File: libc.info,  Node: Pseudo-Terminals,  Prev: getpass,  Up: Low-Level Terminal Interface
+
+17.9 Pseudo-Terminals
 =====================
 
 A "pseudo-terminal" is a special interprocess communication channel
@@ -3097,7 +3879,7 @@ implement their terminal emulation functionality.
 
 File: libc.info,  Node: Allocation,  Next: Pseudo-Terminal Pairs,  Up: Pseudo-Terminals
 
-17.8.1 Allocating Pseudo-Terminals
+17.9.1 Allocating Pseudo-Terminals
 ----------------------------------
 
 This subsection describes functions for allocating a pseudo-terminal,
@@ -3245,7 +4027,7 @@ example:
 
 File: libc.info,  Node: Pseudo-Terminal Pairs,  Prev: Allocation,  Up: Pseudo-Terminals
 
-17.8.2 Opening a Pseudo-Terminal Pair
+17.9.2 Opening a Pseudo-Terminal Pair
 -------------------------------------
 
 These functions, derived from BSD, are available in the separate
@@ -3858,20 +4640,22 @@ wise to pick the narrowest type that can accommodate your data.  Not
 all machines have a distinct `long double' type; it may be the same as
 `double'.
 
-   On some machines, the GNU C Library also provides `_FloatN' and
-`_FloatNx' types.  These types are defined in ISO/IEC TS 18661-3, which
-extends ISO C and defines floating-point types that are not
-machine-dependent.  When such a type, such as `_Float128', is supported
-by the GNU C Library, extra variants for most of the mathematical
-functions provided for `double', `float', and `long double' are also
-provided for the supported type.  Throughout this manual, the `_FloatN'
-and `_FloatNx' variants of these functions are described along with the
-`double', `float', and `long double' variants and they come from
-ISO/IEC TS 18661-3, unless explicitly stated otherwise.
+   The GNU C Library also provides `_FloatN' and `_FloatNx' types.
+These types are defined in ISO/IEC TS 18661-3, which extends ISO C and
+defines floating-point types that are not machine-dependent.  When such
+a type, such as `_Float128', is supported by the GNU C Library, extra
+variants for most of the mathematical functions provided for `double',
+`float', and `long double' are also provided for the supported type.
+Throughout this manual, the `_FloatN' and `_FloatNx' variants of these
+functions are described along with the `double', `float', and `long
+double' variants and they come from ISO/IEC TS 18661-3, unless
+explicitly stated otherwise.
 
-   Currently, support for `_FloatN' or `_FloatNx' types is only
-provided for `_Float128' on powerpc64le (PowerPC 64-bits
-little-endian), x86_64, x86 and ia64.
+   Support for `_FloatN' or `_FloatNx' types is provided for
+`_Float32', `_Float64' and `_Float32x' on all platforms.  It is also
+provided for `_Float128' and `_Float64x' on powerpc64le (PowerPC
+64-bits little-endian), x86_64, x86, ia64, aarch64, alpha, mips64,
+riscv, s390 and sparc.
 
 * Menu:
 
@@ -4245,18 +5029,13 @@ File: libc.info,  Node: Exponents and Logarithms,  Next: Hyperbolic Functions,  
  -- Function: long double exp10l (long double X)
  -- Function: _FloatN exp10fN (_FloatN X)
  -- Function: _FloatNx exp10fNx (_FloatNx X)
- -- Function: double pow10 (double X)
- -- Function: float pow10f (float X)
- -- Function: long double pow10l (long double X)
      Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
      Concepts::.
 
      These functions compute `10' raised to the power X.
      Mathematically, `exp10 (x)' is the same as `exp (x * log (10))'.
 
-     The `exp10' functions are from TS 18661-4:2015; the `pow10' names
-     are GNU extensions.  The name `exp10' is preferred, since it is
-     analogous to `exp' and `exp2'.
+     The `exp10' functions are from TS 18661-4:2015.
 
  -- Function: double log (double X)
  -- Function: float logf (float X)
@@ -4990,6 +5769,10 @@ acoshf        2               2               2               -               -
 acosh         2               2               2               -               -
 acoshl        2               -               2               -               -
 acoshf128     -               -               -               -               -
+add_ldoublef  -               -               -               -               -
+add_ldouble   -               -               -               -               -
+add_ldoublel  -               -               -               -               -
+add_ldoublef128-               -               -               -               -
 asinf         1               1               1               -               -
 asin          -               -               -               -               -
 asinl         1               -               1               -               -
@@ -5067,14 +5850,14 @@ clog10        3 + i 2         3 + i 2         3 + i 2         0 + i 1         -
 clog10l       2 + i 2         -               2 + i 2         -               -
 clog10f128    -               -               -               -               -
 cosf          1               1               1               1               -
-cos           -               -               -               2               -
+cos           1               1               -               2               -
 cosl          1               -               1               -               -
 cosf128       -               -               -               -               -
 coshf         1               1               1               -               -
 cosh          1               1               1               -               -
 coshl         1               -               1               -               -
 coshf128      -               -               -               -               -
-cpowf         5 + i 2         4 + i 2         4 + i 2         4 + i 2         -
+cpowf         5 + i 2         5 + i 2         5 + i 2         4 + i 2         -
 cpow          2 + i 0         2 + i 0         2 + i 0         2 + i 2         -
 cpowl         4 + i 1         -               4 + i 1         -               -
 cpowf128      -               -               -               -               -
@@ -5090,14 +5873,18 @@ csqrtf        2 + i 2         2 + i 2         2 + i 2         1 + i 0         -
 csqrt         2 + i 2         2 + i 2         2 + i 2         -               -
 csqrtl        2 + i 2         -               2 + i 2         -               -
 csqrtf128     -               -               -               -               -
-ctanf         1 + i 1         1 + i 1         1 + i 1         -               -
+ctanf         1 + i 2         1 + i 2         1 + i 2         -               -
 ctan          1 + i 2         1 + i 2         1 + i 2         0 + i 1         -
 ctanl         3 + i 3         -               3 + i 3         -               -
 ctanf128      -               -               -               -               -
-ctanhf        2 + i 1         1 + i 2         1 + i 2         2 + i 1         -
+ctanhf        2 + i 1         2 + i 2         2 + i 2         2 + i 1         -
 ctanh         2 + i 2         2 + i 2         2 + i 2         1 + i 0         -
 ctanhl        3 + i 3         -               3 + i 3         -               -
 ctanhf128     -               -               -               -               -
+div_ldoublef  -               -               -               -               -
+div_ldouble   -               -               -               -               -
+div_ldoublel  -               -               -               -               -
+div_ldoublef128-               -               -               -               -
 erff          1               1               1               -               -
 erf           1               1               1               1               -
 erfl          1               -               1               -               -
@@ -5170,20 +5957,20 @@ log2f         1               1               1               -               -
 log2          1               2               2               -               -
 log2l         2               -               2               -               -
 log2f128      -               -               -               -               -
+mul_ldoublef  -               -               -               -               -
+mul_ldouble   -               -               -               -               -
+mul_ldoublel  -               -               -               -               -
+mul_ldoublef128-               -               -               -               -
 powf          1               1               1               -               -
-pow           -               -               -               -               -
+pow           1               1               -               -               -
 powl          2               -               2               -               -
 powf128       -               -               -               -               -
-pow10f        -               -               -               -               -
-pow10         2               2               2               -               -
-pow10l        2               -               2               -               -
-pow10f128     -               -               -               -               -
 sinf          1               1               1               -               -
-sin           -               -               -               -               -
+sin           1               1               -               -               -
 sinl          1               -               1               -               -
 sinf128       -               -               -               -               -
 sincosf       1               1               1               1               -
-sincos        -               -               -               1               -
+sincos        1               1               -               1               -
 sincosl       1               -               1               -               -
 sincosf128    -               -               -               -               -
 sinhf         2               2               2               -               -
@@ -5194,6 +5981,10 @@ sqrtf         -               -               -               -               -
 sqrt          -               -               -               -               -
 sqrtl         -               -               -               -               -
 sqrtf128      -               -               -               -               -
+sub_ldoublef  -               -               -               -               -
+sub_ldouble   -               -               -               -               -
+sub_ldoublel  -               -               -               -               -
+sub_ldoublef128-               -               -               -               -
 tanf          1               1               1               -               -
 tan           -               -               -               1               -
 tanl          1               -               1               -               -
@@ -5214,152 +6005,160 @@ y1f           2               2               2               2               -
 y1            3               3               3               3               -
 y1l           2               -               2               -               -
 y1f128        -               -               -               -               -
-ynf           2               2               2               2               -
+ynf           3               3               3               2               -
 yn            3               3               3               3               -
 ynl           5               -               5               -               -
 ynf128        -               -               -               -               -
 
 Function      HPPA            IA64            M68k            MIPS 32-bit     MIPS 64-bit
 acosf         1               -               -               1               1
-acos          -               -               -               -               -
+acos          -               1               -               -               -
 acosl         -               -               -               -               1
-acosf128      -               -               -               -               -
+acosf128      -               1               -               -               -
 acoshf        2               -               1               2               2
-acosh         2               -               1               2               2
-acoshl        -               -               1               -               2
-acoshf128     -               -               -               -               -
+acosh         2               1               1               2               2
+acoshl        -               1               1               -               2
+acoshf128     -               2               -               -               -
+add_ldoublef  -               -               -               -               -
+add_ldouble   -               -               -               -               -
+add_ldoublel  -               -               -               -               -
+add_ldoublef128-               -               -               -               -
 asinf         1               -               -               1               1
 asin          -               -               -               -               -
 asinl         -               -               -               -               1
-asinf128      -               -               -               -               -
+asinf128      -               1               -               -               -
 asinhf        1               -               1               1               1
-asinh         1               -               1               1               1
+asinh         1               1               1               1               1
 asinhl        -               -               1               -               3
-asinhf128     -               -               -               -               -
+asinhf128     -               3               -               -               -
 atanf         1               -               -               1               1
 atan          -               -               -               -               -
 atanl         -               -               -               -               1
-atanf128      -               -               -               -               -
+atanf128      -               1               -               -               -
 atan2f        1               -               1               1               1
 atan2         -               -               -               -               -
 atan2l        -               -               1               -               1
-atan2f128     -               -               -               -               -
+atan2f128     -               1               -               -               -
 atanhf        2               -               -               2               2
 atanh         2               -               -               2               2
 atanhl        -               -               -               -               3
-atanhf128     -               -               -               -               -
+atanhf128     -               3               -               -               -
 cabsf         -               -               -               -               -
 cabs          1               -               1               1               1
 cabsl         -               -               1               -               1
-cabsf128      -               -               -               -               -
+cabsf128      -               1               -               -               -
 cacosf        2 + i 2         2 + i 2         2 + i 1         2 + i 2         2 + i 2
-cacos         1 + i 2         1 + i 1         1 + i 1         1 + i 2         1 + i 2
+cacos         1 + i 2         1 + i 2         1 + i 1         1 + i 2         1 + i 2
 cacosl        -               1 + i 2         1 + i 2         -               2 + i 2
-cacosf128     -               -               -               -               -
+cacosf128     -               2 + i 2         -               -               -
 cacoshf       2 + i 2         2 + i 2         1 + i 2         2 + i 2         2 + i 2
-cacosh        2 + i 1         1 + i 1         1 + i 1         2 + i 1         2 + i 1
+cacosh        2 + i 1         2 + i 1         1 + i 1         2 + i 1         2 + i 1
 cacoshl       -               2 + i 1         2 + i 1         -               2 + i 2
-cacoshf128    -               -               -               -               -
+cacoshf128    -               2 + i 2         -               -               -
 cargf         1               -               1               1               1
 carg          -               -               -               -               -
 cargl         -               -               1               -               2
-cargf128      -               -               -               -               -
+cargf128      -               2               -               -               -
 casinf        1 + i 2         1 + i 2         1 + i 1         1 + i 2         1 + i 2
-casin         1 + i 2         1 + i 1         1 + i 1         1 + i 2         1 + i 2
+casin         1 + i 2         1 + i 2         1 + i 1         1 + i 2         1 + i 2
 casinl        1 + i 0         1 + i 2         1 + i 2         -               2 + i 2
-casinf128     -               -               -               -               -
+casinf128     -               2 + i 2         -               -               -
 casinhf       2 + i 1         2 + i 1         1 + i 1         2 + i 1         2 + i 1
-casinh        5 + i 3         1 + i 1         1 + i 1         2 + i 1         2 + i 1
+casinh        5 + i 3         2 + i 1         1 + i 1         2 + i 1         2 + i 1
 casinhl       5 + i 3         2 + i 1         2 + i 1         -               2 + i 2
-casinhf128    -               -               -               -               -
+casinhf128    -               2 + i 2         -               -               -
 catanf        1 + i 1         0 + i 1         0 + i 1         1 + i 1         1 + i 1
-catan         1 + i 1         0 + i 1         0 + i 1         1 + i 1         1 + i 1
+catan         1 + i 1         1 + i 1         0 + i 1         1 + i 1         1 + i 1
 catanl        0 + i 1         0 + i 1         1 + i 1         -               1 + i 1
-catanf128     -               -               -               -               -
+catanf128     -               1 + i 1         -               -               -
 catanhf       1 + i 1         1 + i 0         1 + i 0         1 + i 1         1 + i 1
-catanh        4 + i 1         1 + i 0         1 + i 0         1 + i 1         1 + i 1
+catanh        4 + i 1         1 + i 1         1 + i 0         1 + i 1         1 + i 1
 catanhl       4 + i 0         1 + i 0         1 + i 1         -               1 + i 1
-catanhf128    -               -               -               -               -
+catanhf128    -               1 + i 1         -               -               -
 cbrtf         1               -               1               1               1
 cbrt          3               -               1               3               3
 cbrtl         1               -               1               -               1
-cbrtf128      -               -               -               -               -
+cbrtf128      -               1               -               -               -
 ccosf         1 + i 1         0 + i 1         -               1 + i 1         1 + i 1
 ccos          1 + i 1         1 + i 1         -               1 + i 1         1 + i 1
 ccosl         1 + i 0         1 + i 1         1 + i 1         -               1 + i 1
-ccosf128      -               -               -               -               -
+ccosf128      -               1 + i 1         -               -               -
 ccoshf        1 + i 1         1 + i 1         -               1 + i 1         1 + i 1
 ccosh         1 + i 1         1 + i 1         -               1 + i 1         1 + i 1
 ccoshl        1 + i 0         0 + i 1         0 + i 1         -               1 + i 1
-ccoshf128     -               -               -               -               -
+ccoshf128     -               1 + i 1         -               -               -
 cexpf         1 + i 2         1 + i 2         -               1 + i 2         1 + i 2
 cexp          2 + i 1         2 + i 1         -               2 + i 1         2 + i 1
 cexpl         -               1 + i 1         1 + i 1         -               1 + i 1
-cexpf128      -               -               -               -               -
-clogf         3 + i 1         1 + i 0         2 + i 1         3 + i 1         3 + i 1
-clog          3 + i 0         1 + i 1         3 + i 1         3 + i 0         3 + i 0
-clogl         -               1 + i 1         3 + i 1         -               2 + i 1
-clogf128      -               -               -               -               -
-clog10f       4 + i 2         2 + i 1         2 + i 1         4 + i 2         4 + i 2
-clog10        3 + i 2         2 + i 1         2 + i 1         3 + i 2         3 + i 2
-clog10l       0 + i 1         1 + i 1         3 + i 2         -               2 + i 2
-clog10f128    -               -               -               -               -
+cexpf128      -               1 + i 1         -               -               -
+clogf         3 + i 1         3 + i 0         2 + i 1         3 + i 1         3 + i 1
+clog          3 + i 0         2 + i 1         3 + i 1         3 + i 0         3 + i 0
+clogl         -               2 + i 1         3 + i 1         -               2 + i 1
+clogf128      -               2 + i 1         -               -               -
+clog10f       4 + i 2         4 + i 1         2 + i 1         4 + i 2         4 + i 2
+clog10        3 + i 2         3 + i 2         2 + i 1         3 + i 2         3 + i 2
+clog10l       0 + i 1         2 + i 1         3 + i 2         -               2 + i 2
+clog10f128    -               2 + i 2         -               -               -
 cosf          1               -               -               1               1
-cos           2               1               1               -               -
+cos           2               1               1               1               1
 cosl          2               -               -               -               1
-cosf128       -               -               -               -               -
+cosf128       -               1               -               -               -
 coshf         1               -               -               1               1
 cosh          1               -               -               1               1
 coshl         -               -               -               -               1
-coshf128      -               -               -               -               -
-cpowf         4 + i 2         5 + i 2         3 + i 5         4 + i 2         4 + i 2
+coshf128      -               1               -               -               -
+cpowf         5 + i 2         5 + i 2         3 + i 5         5 + i 2         5 + i 2
 cpow          2 + i 2         2 + i 0         1 + i 0         2 + i 0         2 + i 0
 cpowl         2 + i 2         3 + i 4         3 + i 1         -               4 + i 1
-cpowf128      -               -               -               -               -
+cpowf128      -               4 + i 1         -               -               -
 csinf         1 + i 0         1 + i 1         -               1 + i 0         1 + i 0
 csin          1 + i 0         1 + i 0         -               1 + i 0         1 + i 0
 csinl         -               1 + i 0         1 + i 0         -               1 + i 1
-csinf128      -               -               -               -               -
+csinf128      -               1 + i 1         -               -               -
 csinhf        1 + i 1         1 + i 1         -               1 + i 1         1 + i 1
 csinh         0 + i 1         1 + i 1         -               0 + i 1         0 + i 1
-csinhl        0 + i 1         1 + i 0         1 + i 0         -               1 + i 1
-csinhf128     -               -               -               -               -
-csqrtf        2 + i 2         1 + i 1         1 + i 1         2 + i 2         2 + i 2
-csqrt         2 + i 2         1 + i 1         1 + i 1         2 + i 2         2 + i 2
-csqrtl        -               1 + i 1         2 + i 2         -               2 + i 2
-csqrtf128     -               -               -               -               -
-ctanf         1 + i 1         1 + i 1         1 + i 1         1 + i 1         1 + i 1
+csinhl        0 + i 1         1 + i 1         1 + i 0         -               1 + i 1
+csinhf128     -               1 + i 1         -               -               -
+csqrtf        2 + i 2         2 + i 2         1 + i 1         2 + i 2         2 + i 2
+csqrt         2 + i 2         2 + i 2         1 + i 1         2 + i 2         2 + i 2
+csqrtl        -               2 + i 2         2 + i 2         -               2 + i 2
+csqrtf128     -               2 + i 2         -               -               -
+ctanf         1 + i 2         1 + i 1         1 + i 1         1 + i 2         1 + i 2
 ctan          1 + i 2         1 + i 2         1 + i 1         1 + i 2         1 + i 2
 ctanl         0 + i 1         2 + i 2         2 + i 2         -               3 + i 3
-ctanf128      -               -               -               -               -
-ctanhf        1 + i 2         1 + i 1         1 + i 2         1 + i 2         1 + i 2
+ctanf128      -               3 + i 3         -               -               -
+ctanhf        2 + i 2         1 + i 1         1 + i 2         2 + i 2         2 + i 2
 ctanh         2 + i 2         2 + i 2         1 + i 1         2 + i 2         2 + i 2
 ctanhl        1 + i 0         1 + i 2         2 + i 2         -               3 + i 3
-ctanhf128     -               -               -               -               -
+ctanhf128     -               3 + i 3         -               -               -
+div_ldoublef  -               -               -               -               -
+div_ldouble   -               -               -               -               -
+div_ldoublel  -               -               -               -               -
+div_ldoublef128-               -               -               -               -
 erff          1               -               1               1               1
 erf           1               -               -               1               1
 erfl          1               -               1               -               1
-erff128       -               -               -               -               -
+erff128       -               1               -               -               -
 erfcf         2               -               1               2               2
 erfc          3               -               -               3               3
 erfcl         1               -               2               -               2
-erfcf128      -               -               -               -               -
-expf          1               -               -               1               1
+erfcf128      -               2               -               -               -
+expf          1               1               -               1               1
 exp           -               -               -               -               -
 expl          -               -               -               -               1
-expf128       -               -               -               -               -
+expf128       -               1               -               -               -
 exp10f        2               -               -               -               -
 exp10         6               -               -               2               2
 exp10l        6               -               -               -               2
-exp10f128     -               -               -               -               -
+exp10f128     -               2               -               -               -
 exp2f         1               -               -               1               1
-exp2          1               -               1               1               1
-exp2l         -               -               -               -               1
-exp2f128      -               -               -               -               -
+exp2          1               1               1               1               1
+exp2l         -               1               -               -               1
+exp2f128      -               1               -               -               -
 expm1f        1               -               -               1               1
-expm1         1               -               -               1               1
+expm1         1               1               -               1               1
 expm1l        1               1               -               -               1
-expm1f128     -               -               -               -               -
+expm1f128     -               1               -               -               -
 fmaf          -               -               -               -               -
 fma           -               -               -               -               -
 fmal          -               -               -               -               -
@@ -5368,96 +6167,100 @@ fmodf         -               -               -               -               -
 fmod          -               -               -               -               -
 fmodl         -               -               -               -               -
 fmodf128      -               -               -               -               -
-gammaf        4               -               1               4               4
+gammaf        4               1               1               4               4
 gamma         4               -               -               4               4
 gammal        -               -               2               -               5
 gammaf128     -               -               -               -               -
 hypotf        1               -               -               -               -
 hypot         1               -               1               1               1
 hypotl        -               -               1               -               1
-hypotf128     -               -               -               -               -
+hypotf128     -               1               -               -               -
 j0f           2               2               2               2               2
 j0            2               2               1               2               2
 j0l           2               2               2               -               2
-j0f128        -               -               -               -               -
+j0f128        -               2               -               -               -
 j1f           2               2               2               2               2
 j1            1               1               -               1               1
 j1l           1               1               1               -               4
-j1f128        -               -               -               -               -
+j1f128        -               4               -               -               -
 jnf           5               4               2               4               4
 jn            4               4               2               4               4
 jnl           4               4               4               -               7
-jnf128        -               -               -               -               -
-lgammaf       4               -               1               4               4
+jnf128        -               7               -               -               -
+lgammaf       4               1               1               4               4
 lgamma        4               -               -               4               4
 lgammal       1               -               2               -               5
-lgammaf128    -               -               -               -               -
+lgammaf128    -               5               -               -               -
 logf          1               -               -               1               1
 log           -               -               -               -               -
 logl          -               -               -               -               1
-logf128       -               -               -               -               -
+logf128       -               1               -               -               -
 log10f        2               -               -               2               2
 log10         2               -               -               2               2
 log10l        1               -               -               -               1
-log10f128     -               -               -               -               -
+log10f128     -               1               -               -               -
 log1pf        1               -               -               1               1
 log1p         1               -               -               1               1
 log1pl        -               -               -               -               2
-log1pf128     -               -               -               -               -
+log1pf128     -               2               -               -               -
 log2f         1               -               -               1               1
 log2          2               -               -               2               2
 log2l         -               -               -               -               2
-log2f128      -               -               -               -               -
+log2f128      -               2               -               -               -
+mul_ldoublef  -               -               -               -               -
+mul_ldouble   -               -               -               -               -
+mul_ldoublel  -               -               -               -               -
+mul_ldoublef128-               -               -               -               -
 powf          1               -               7               1               1
-pow           -               -               1               -               -
+pow           1               -               1               1               1
 powl          -               -               9               -               2
-powf128       -               -               -               -               -
-pow10f        -               -               -               -               -
-pow10         2               -               -               2               2
-pow10l        -               -               -               -               2
-pow10f128     -               -               -               -               -
+powf128       -               2               -               -               -
 sinf          1               -               -               1               1
-sin           -               1               1               -               -
+sin           1               1               1               1               1
 sinl          -               -               -               -               1
-sinf128       -               -               -               -               -
+sinf128       -               1               -               -               -
 sincosf       1               -               -               1               1
-sincos        1               1               -               -               -
+sincos        1               1               -               1               1
 sincosl       1               -               -               -               1
-sincosf128    -               -               -               -               -
+sincosf128    -               1               -               -               -
 sinhf         2               -               -               2               2
 sinh          2               -               -               2               2
 sinhl         -               -               -               -               2
-sinhf128      -               -               -               -               -
+sinhf128      -               2               -               -               -
 sqrtf         -               -               -               -               -
 sqrt          -               -               -               -               -
 sqrtl         -               -               -               -               -
 sqrtf128      -               -               -               -               -
+sub_ldoublef  -               -               -               -               -
+sub_ldouble   -               -               -               -               -
+sub_ldoublel  -               -               -               -               -
+sub_ldoublef128-               -               -               -               -
 tanf          1               -               -               1               1
 tan           1               -               -               -               -
-tanl          1               -               -               -               1
-tanf128       -               -               -               -               -
+tanl          1               1               -               -               1
+tanf128       -               1               -               -               -
 tanhf         2               -               -               2               2
 tanh          2               -               -               2               2
 tanhl         -               -               -               -               2
-tanhf128      -               -               -               -               -
+tanhf128      -               2               -               -               -
 tgammaf       4               -               4               4               4
 tgamma        5               -               1               5               5
 tgammal       1               1               9               -               4
-tgammaf128    -               -               -               -               -
+tgammaf128    -               4               -               -               -
 y0f           1               1               1               1               1
 y0            2               2               1               2               2
 y0l           2               1               1               -               3
-y0f128        -               -               -               -               -
+y0f128        -               3               -               -               -
 y1f           2               2               3               2               2
 y1            3               3               1               3               3
 y1l           3               2               2               -               2
-y1f128        -               -               -               -               -
-ynf           2               3               3               2               2
+y1f128        -               2               -               -               -
+ynf           3               3               3               3               3
 yn            3               3               2               3               3
-ynl           3               2               4               -               5
-ynf128        -               -               -               -               -
+ynl           3               3               4               -               5
+ynf128        -               5               -               -               -
 
-Function      MicroBlaze      Nios II         PowerPC         PowerPC         S/390
+Function      MicroBlaze      Nios II         PowerPC         PowerPC         RISC-V
                                                               soft-float      
 acosf         1               1               1               1               1
 acos          -               -               -               -               -
@@ -5467,6 +6270,10 @@ acoshf        2               2               2               2               2
 acosh         2               2               2               2               2
 acoshl        -               -               2               1               2
 acoshf128     -               -               2               -               -
+add_ldoublef  -               -               1               1               -
+add_ldouble   -               -               1               1               -
+add_ldoublel  -               -               -               -               -
+add_ldoublef128-               -               -               -               -
 asinf         1               1               1               1               1
 asin          -               -               -               -               -
 asinl         -               -               2               2               1
@@ -5543,18 +6350,18 @@ clog10f       4 + i 2         4 + i 2         4 + i 2         4 + i 2         4 
 clog10        3 + i 2         3 + i 2         3 + i 2         3 + i 2         3 + i 2
 clog10l       -               -               3 + i 2         3 + i 2         2 + i 2
 clog10f128    -               -               2 + i 2         -               -
-cosf          1               1               3               1               1
-cos           -               -               -               -               -
+cosf          1               1               3               1               -
+cos           -               1               1               1               -
 cosl          -               -               4               4               1
 cosf128       -               -               1               -               -
 coshf         1               1               1               1               1
 cosh          1               1               1               1               1
 coshl         -               -               3               3               1
 coshf128      -               -               1               -               -
-cpowf         4 + i 2         4 + i 2         5 + i 2         4 + i 2         5 + i 2
+cpowf         4 + i 2         5 + i 2         5 + i 2         5 + i 2         5 + i 2
 cpow          2 + i 0         2 + i 0         2 + i 0         2 + i 0         2 + i 0
 cpowl         -               -               4 + i 2         4 + i 1         4 + i 1
-cpowf128      -               -               4 + i 9         -               -
+cpowf128      -               -               4 + i 1         -               -
 csinf         1 + i 0         1 + i 0         1 + i 0         1 + i 0         1 + i 0
 csin          1 + i 0         1 + i 0         1 + i 0         1 + i 0         1 + i 0
 csinl         -               -               2 + i 1         2 + i 1         1 + i 1
@@ -5567,14 +6374,18 @@ csqrtf        2 + i 2         2 + i 2         2 + i 2         2 + i 2         2 
 csqrt         2 + i 2         2 + i 2         2 + i 2         2 + i 2         2 + i 2
 csqrtl        -               -               1 + i 1         1 + i 1         2 + i 2
 csqrtf128     -               -               2 + i 2         -               -
-ctanf         1 + i 1         1 + i 1         1 + i 1         1 + i 1         1 + i 1
+ctanf         1 + i 1         1 + i 2         1 + i 2         1 + i 2         1 + i 2
 ctan          1 + i 2         1 + i 2         1 + i 2         1 + i 2         1 + i 2
 ctanl         -               -               3 + i 2         3 + i 2         3 + i 3
 ctanf128      -               -               3 + i 3         -               -
-ctanhf        1 + i 2         1 + i 2         2 + i 1         1 + i 2         2 + i 1
+ctanhf        1 + i 2         2 + i 2         2 + i 1         2 + i 2         2 + i 1
 ctanh         2 + i 2         2 + i 2         2 + i 2         2 + i 2         2 + i 2
 ctanhl        -               -               3 + i 3         2 + i 3         3 + i 3
 ctanhf128     -               -               3 + i 3         -               -
+div_ldoublef  -               -               1               1               -
+div_ldouble   -               -               -               -               -
+div_ldoublel  -               -               -               -               -
+div_ldoublef128-               -               -               -               -
 erff          1               1               1               1               1
 erf           1               1               1               1               1
 erfl          -               -               1               1               1
@@ -5583,7 +6394,7 @@ erfcf         2               2               2               2               2
 erfc          3               3               2               3               2
 erfcl         -               -               3               3               2
 erfcf128      -               -               2               -               -
-expf          1               1               1               1               1
+expf          1               1               -               1               -
 exp           -               -               1               -               -
 expl          -               -               1               1               1
 expf128       -               -               1               -               -
@@ -5591,7 +6402,7 @@ exp10f        -               -               -               -               -
 exp10         2               2               2               2               2
 exp10l        -               -               1               1               2
 exp10f128     -               -               2               -               -
-exp2f         1               1               1               1               1
+exp2f         1               1               -               1               -
 exp2          1               1               1               1               1
 exp2l         -               -               2               1               1
 exp2f128      -               -               1               -               -
@@ -5607,10 +6418,10 @@ fmodf         -               -               -               -               -
 fmod          -               -               -               -               -
 fmodl         -               -               1               1               -
 fmodf128      -               -               -               -               -
-gammaf        4               4               4               4               4
+gammaf        4               4               4               4               3
 gamma         4               4               3               4               3
 gammal        -               -               3               3               5
-gammaf128     -               -               9               -               -
+gammaf128     -               -               -               -               -
 hypotf        -               -               -               -               -
 hypot         1               1               1               1               1
 hypotl        -               -               1               1               1
@@ -5627,11 +6438,11 @@ jnf           4               4               4               4               4
 jn            4               4               4               4               4
 jnl           -               -               4               4               7
 jnf128        -               -               7               -               -
-lgammaf       4               4               4               4               4
+lgammaf       4               4               4               4               3
 lgamma        4               4               3               4               3
 lgammal       -               -               3               3               5
-lgammaf128    -               -               9               -               -
-logf          1               1               1               1               1
+lgammaf128    -               -               5               -               -
+logf          1               1               1               1               -
 log           -               -               -               -               -
 logl          -               -               1               1               1
 logf128       -               -               1               -               -
@@ -5647,20 +6458,20 @@ log2f         1               1               1               1               1
 log2          2               2               1               2               1
 log2l         -               -               1               1               2
 log2f128      -               -               2               -               -
-powf          1               3               1               1               1
-pow           -               -               -               -               -
+mul_ldoublef  -               -               1               1               -
+mul_ldouble   -               -               1               1               -
+mul_ldoublel  -               -               -               -               -
+mul_ldoublef128-               -               -               -               -
+powf          1               3               1               1               -
+pow           -               1               1               1               -
 powl          -               -               1               1               2
 powf128       -               -               2               -               -
-pow10f        -               -               -               -               -
-pow10         2               2               2               2               2
-pow10l        -               -               1               1               2
-pow10f128     -               -               2               -               -
-sinf          1               1               1               1               1
-sin           -               -               -               -               -
+sinf          1               1               1               1               -
+sin           -               1               1               1               -
 sinl          -               -               1               1               1
 sinf128       -               -               1               -               -
-sincosf       1               1               1               1               1
-sincos        -               -               -               -               -
+sincosf       1               1               1               1               -
+sincos        -               1               1               1               -
 sincosl       -               -               1               1               1
 sincosf128    -               -               1               -               -
 sinhf         2               2               2               2               2
@@ -5671,6 +6482,10 @@ sqrtf         -               -               -               -               -
 sqrt          -               -               -               -               -
 sqrtl         -               -               1               1               -
 sqrtf128      -               -               -               -               -
+sub_ldoublef  -               -               1               1               -
+sub_ldouble   -               -               1               1               -
+sub_ldoublel  -               -               -               -               -
+sub_ldoublef128-               -               -               -               -
 tanf          1               1               3               1               1
 tan           -               -               -               -               -
 tanl          -               -               2               2               1
@@ -5691,152 +6506,161 @@ y1f           2               2               2               2               2
 y1            3               3               3               3               3
 y1l           -               -               2               2               2
 y1f128        -               -               2               -               -
-ynf           2               2               2               2               2
+ynf           2               3               3               3               3
 yn            3               3               3               3               3
 ynl           -               -               2               2               5
 ynf128        -               -               5               -               -
 
-Function      SH              Sparc           Tile            i686            ix86
-acosf         -               1               1               -               -
-acos          -               -               -               1               1
-acosl         -               1               -               1               1
-acosf128      -               -               -               1               1
-acoshf        -               2               2               -               -
-acosh         1               2               2               1               1
-acoshl        -               2               -               2               2
-acoshf128     -               -               -               2               2
-asinf         -               1               1               -               -
-asin          -               -               -               1               1
-asinl         -               1               -               1               1
-asinf128      -               -               -               1               1
-asinhf        1               1               1               -               -
+Function      RISC-V          S/390           SH              Sparc           i686
+              soft-float                                                      
+acosf         1               1               1               1               -
+acos          -               -               -               -               1
+acosl         1               1               -               1               1
+acosf128      -               -               -               -               1
+acoshf        2               2               2               2               -
+acosh         2               2               2               2               1
+acoshl        2               2               -               2               2
+acoshf128     -               -               -               -               2
+add_ldoublef  -               -               -               -               -
+add_ldouble   -               -               -               -               -
+add_ldoublel  -               -               -               -               -
+add_ldoublef128-               -               -               -               -
+asinf         1               1               1               1               -
+asin          -               -               -               -               1
+asinl         1               1               -               1               1
+asinf128      -               -               -               -               1
+asinhf        1               1               1               1               -
 asinh         1               1               1               1               1
-asinhl        -               3               -               3               3
-asinhf128     -               -               -               3               3
-atanf         -               1               1               -               -
-atan          -               -               -               1               1
-atanl         -               1               -               1               1
-atanf128      -               -               -               1               1
-atan2f        1               1               1               -               -
-atan2         -               -               -               1               1
-atan2l        -               1               -               1               1
-atan2f128     -               -               -               1               1
-atanhf        1               2               2               -               -
-atanh         -               2               2               1               1
-atanhl        -               3               -               3               3
-atanhf128     -               -               -               3               3
+asinhl        3               3               -               3               3
+asinhf128     -               -               -               -               3
+atanf         1               1               1               1               -
+atan          -               -               -               -               1
+atanl         1               1               -               1               1
+atanf128      -               -               -               -               1
+atan2f        1               1               1               1               -
+atan2         -               -               -               -               1
+atan2l        1               1               -               1               1
+atan2f128     -               -               -               -               1
+atanhf        2               2               2               2               -
+atanh         2               2               2               2               1
+atanhl        3               3               -               3               3
+atanhf128     -               -               -               -               3
 cabsf         -               -               -               -               -
-cabs          -               1               1               1               1
-cabsl         -               1               -               1               1
-cabsf128      -               -               -               1               1
-cacosf        2 + i 2         2 + i 2         2 + i 2         1 + i 1         1 + i 1
-cacos         1 + i 1         1 + i 2         1 + i 1         1 + i 1         1 + i 1
-cacosl        -               2 + i 2         -               1 + i 2         1 + i 2
-cacosf128     -               -               -               2 + i 2         2 + i 2
-cacoshf       2 + i 2         2 + i 2         2 + i 2         1 + i 1         1 + i 1
-cacosh        1 + i 1         2 + i 1         1 + i 1         1 + i 1         1 + i 1
-cacoshl       -               2 + i 2         -               2 + i 1         2 + i 1
-cacoshf128    -               -               -               2 + i 2         2 + i 2
-cargf         -               1               1               -               -
-carg          -               -               -               1               1
-cargl         -               2               -               1               1
-cargf128      -               -               -               2               2
-casinf        1 + i 2         1 + i 2         1 + i 2         1 + i 1         1 + i 1
-casin         1 + i 1         1 + i 2         1 + i 1         1 + i 1         1 + i 1
-casinl        -               2 + i 2         -               1 + i 2         1 + i 2
-casinf128     -               -               -               2 + i 2         2 + i 2
-casinhf       2 + i 1         2 + i 1         2 + i 1         1 + i 1         1 + i 1
-casinh        1 + i 1         2 + i 1         1 + i 1         1 + i 1         1 + i 1
-casinhl       -               2 + i 2         -               2 + i 1         2 + i 1
-casinhf128    -               -               -               2 + i 2         2 + i 2
-catanf        1 + i 1         1 + i 1         1 + i 1         0 + i 1         0 + i 1
-catan         0 + i 1         1 + i 1         0 + i 1         1 + i 1         1 + i 1
-catanl        -               1 + i 1         -               1 + i 1         1 + i 1
-catanf128     -               -               -               1 + i 1         1 + i 1
-catanhf       1 + i 1         1 + i 1         1 + i 1         1 + i 0         1 + i 0
-catanh        1 + i 0         1 + i 1         1 + i 0         1 + i 1         1 + i 1
-catanhl       -               1 + i 1         -               1 + i 1         1 + i 1
-catanhf128    -               -               -               1 + i 1         1 + i 1
+cabs          1               1               1               1               1
+cabsl         1               1               -               1               1
+cabsf128      -               -               -               -               1
+cacosf        2 + i 2         2 + i 2         2 + i 2         2 + i 2         2 + i 2
+cacos         1 + i 2         1 + i 2         1 + i 2         1 + i 2         1 + i 2
+cacosl        2 + i 2         2 + i 2         -               2 + i 2         1 + i 2
+cacosf128     -               -               -               -               2 + i 2
+cacoshf       2 + i 2         2 + i 2         2 + i 2         2 + i 2         2 + i 2
+cacosh        2 + i 1         2 + i 1         2 + i 1         2 + i 1         2 + i 1
+cacoshl       2 + i 2         2 + i 2         -               2 + i 2         2 + i 1
+cacoshf128    -               -               -               -               2 + i 2
+cargf         1               1               1               1               -
+carg          -               -               -               -               1
+cargl         2               2               -               2               1
+cargf128      -               -               -               -               2
+casinf        1 + i 2         1 + i 2         1 + i 2         1 + i 2         1 + i 2
+casin         1 + i 2         1 + i 2         1 + i 2         1 + i 2         1 + i 2
+casinl        2 + i 2         2 + i 2         -               2 + i 2         1 + i 2
+casinf128     -               -               -               -               2 + i 2
+casinhf       2 + i 1         2 + i 1         2 + i 1         2 + i 1         2 + i 1
+casinh        2 + i 1         2 + i 1         2 + i 1         2 + i 1         2 + i 1
+casinhl       2 + i 2         2 + i 2         -               2 + i 2         2 + i 1
+casinhf128    -               -               -               -               2 + i 2
+catanf        1 + i 1         1 + i 1         1 + i 1         1 + i 1         0 + i 1
+catan         1 + i 1         1 + i 1         1 + i 1         1 + i 1         1 + i 1
+catanl        1 + i 1         1 + i 1         -               1 + i 1         1 + i 1
+catanf128     -               -               -               -               1 + i 1
+catanhf       1 + i 1         1 + i 1         1 + i 1         1 + i 1         1 + i 0
+catanh        1 + i 1         1 + i 1         1 + i 1         1 + i 1         1 + i 1
+catanhl       1 + i 1         1 + i 1         -               1 + i 1         1 + i 1
+catanhf128    -               -               -               -               1 + i 1
 cbrtf         1               1               1               1               1
-cbrt          1               3               3               1               1
-cbrtl         -               1               -               3               3
-cbrtf128      -               -               -               1               1
+cbrt          3               3               3               3               1
+cbrtl         1               1               -               1               3
+cbrtf128      -               -               -               -               1
 ccosf         1 + i 1         1 + i 1         1 + i 1         1 + i 1         1 + i 1
 ccos          1 + i 1         1 + i 1         1 + i 1         1 + i 1         1 + i 1
-ccosl         -               1 + i 1         -               1 + i 1         1 + i 1
-ccosf128      -               -               -               1 + i 1         1 + i 1
+ccosl         1 + i 1         1 + i 1         -               1 + i 1         1 + i 1
+ccosf128      -               -               -               -               1 + i 1
 ccoshf        1 + i 1         1 + i 1         1 + i 1         1 + i 1         1 + i 1
 ccosh         1 + i 1         1 + i 1         1 + i 1         1 + i 1         1 + i 1
-ccoshl        -               1 + i 1         -               1 + i 1         1 + i 1
-ccoshf128     -               -               -               1 + i 1         1 + i 1
+ccoshl        1 + i 1         1 + i 1         -               1 + i 1         1 + i 1
+ccoshf128     -               -               -               -               1 + i 1
 cexpf         1 + i 2         1 + i 2         1 + i 2         1 + i 2         1 + i 2
 cexp          2 + i 1         2 + i 1         2 + i 1         2 + i 1         2 + i 1
-cexpl         -               1 + i 1         -               1 + i 1         1 + i 1
-cexpf128      -               -               -               1 + i 1         1 + i 1
-clogf         1 + i 1         3 + i 1         3 + i 1         1 + i 0         1 + i 0
-clog          1 + i 0         3 + i 0         3 + i 0         2 + i 1         2 + i 1
-clogl         -               4 + i 1         -               3 + i 1         3 + i 1
-clogf128      -               -               -               2 + i 1         2 + i 1
-clog10f       2 + i 1         4 + i 2         4 + i 2         2 + i 0         2 + i 0
-clog10        2 + i 1         3 + i 2         3 + i 2         2 + i 1         2 + i 1
-clog10l       -               4 + i 2         -               4 + i 2         4 + i 2
-clog10f128    -               -               -               2 + i 2         2 + i 2
-cosf          1               1               1               -               1
-cos           -               -               -               -               -
-cosl          -               1               -               1               1
-cosf128       -               -               -               1               1
+cexpl         1 + i 1         1 + i 1         -               1 + i 1         1 + i 1
+cexpf128      -               -               -               -               1 + i 1
+clogf         3 + i 1         3 + i 1         3 + i 1         3 + i 1         3 + i 0
+clog          3 + i 0         3 + i 0         3 + i 0         3 + i 0         2 + i 1
+clogl         2 + i 1         2 + i 1         -               4 + i 1         3 + i 1
+clogf128      -               -               -               -               2 + i 1
+clog10f       4 + i 2         4 + i 2         4 + i 2         4 + i 2         4 + i 1
+clog10        3 + i 2         3 + i 2         3 + i 2         3 + i 2         3 + i 2
+clog10l       2 + i 2         2 + i 2         -               4 + i 2         4 + i 2
+clog10f128    -               -               -               -               2 + i 2
+cosf          -               -               1               1               -
+cos           -               1               1               1               1
+cosl          1               1               -               1               1
+cosf128       -               -               -               -               1
 coshf         1               1               1               1               1
 cosh          1               1               1               1               1
-coshl         -               1               -               2               2
-coshf128      -               -               -               1               1
-cpowf         4 + i 2         4 + i 2         4 + i 2         5 + i 2         5 + i 2
-cpow          2 + i 0         2 + i 0         2 + i 0         2 + i 1         2 + i 0
-cpowl         -               4 + i 1         -               3 + i 4         3 + i 4
-cpowf128      -               -               -               4 + i 1         4 + i 1
-csinf         1 + i 0         1 + i 0         1 + i 0         1 + i 1         1 + i 1
-csin          1 + i 0         1 + i 0         1 + i 0         1 + i 1         1 + i 0
-csinl         -               1 + i 1         -               1 + i 0         1 + i 0
-csinf128      -               -               -               1 + i 1         1 + i 1
-csinhf        1 + i 1         1 + i 1         1 + i 1         1 + i 1         0 + i 1
-csinh         0 + i 1         0 + i 1         0 + i 1         1 + i 1         0 + i 1
-csinhl        -               1 + i 1         -               1 + i 1         1 + i 1
-csinhf128     -               -               -               1 + i 1         1 + i 1
-csqrtf        1 + i 1         2 + i 2         2 + i 2         0 + i 1         0 + i 1
-csqrt         1 + i 1         2 + i 2         2 + i 2         1 + i 1         1 + i 1
-csqrtl        -               2 + i 2         -               2 + i 2         2 + i 2
-csqrtf128     -               -               -               2 + i 2         2 + i 2
-ctanf         1 + i 1         1 + i 1         1 + i 1         1 + i 1         1 + i 1
-ctan          1 + i 2         1 + i 2         1 + i 2         1 + i 1         1 + i 1
-ctanl         -               3 + i 3         -               2 + i 1         2 + i 1
-ctanf128      -               -               -               3 + i 3         3 + i 3
-ctanhf        1 + i 2         1 + i 2         1 + i 2         1 + i 1         1 + i 1
-ctanh         2 + i 2         2 + i 2         2 + i 2         1 + i 1         1 + i 1
-ctanhl        -               3 + i 3         -               1 + i 2         1 + i 2
-ctanhf128     -               -               -               3 + i 3         3 + i 3
-erff          -               1               1               1               1
+coshl         1               1               -               1               2
+coshf128      -               -               -               -               1
+cpowf         5 + i 2         5 + i 2         5 + i 2         5 + i 2         5 + i 2
+cpow          2 + i 0         2 + i 0         2 + i 0         2 + i 0         2 + i 1
+cpowl         4 + i 1         4 + i 1         -               4 + i 1         3 + i 4
+cpowf128      -               -               -               -               4 + i 1
+csinf         1 + i 0         1 + i 0         1 + i 0         1 + i 0         1 + i 1
+csin          1 + i 0         1 + i 0         1 + i 0         1 + i 0         1 + i 1
+csinl         1 + i 1         1 + i 1         -               1 + i 1         1 + i 0
+csinf128      -               -               -               -               1 + i 1
+csinhf        1 + i 1         1 + i 1         1 + i 1         1 + i 1         1 + i 1
+csinh         0 + i 1         0 + i 1         0 + i 1         0 + i 1         1 + i 1
+csinhl        1 + i 1         1 + i 1         -               1 + i 1         1 + i 1
+csinhf128     -               -               -               -               1 + i 1
+csqrtf        2 + i 2         2 + i 2         2 + i 2         2 + i 2         2 + i 2
+csqrt         2 + i 2         2 + i 2         2 + i 2         2 + i 2         2 + i 2
+csqrtl        2 + i 2         2 + i 2         -               2 + i 2         2 + i 2
+csqrtf128     -               -               -               -               2 + i 2
+ctanf         1 + i 2         1 + i 2         1 + i 2         1 + i 2         1 + i 2
+ctan          1 + i 2         1 + i 2         1 + i 2         1 + i 2         1 + i 2
+ctanl         3 + i 3         3 + i 3         -               3 + i 3         2 + i 1
+ctanf128      -               -               -               -               3 + i 3
+ctanhf        2 + i 2         2 + i 1         2 + i 2         2 + i 2         2 + i 2
+ctanh         2 + i 2         2 + i 2         2 + i 2         2 + i 2         2 + i 2
+ctanhl        3 + i 3         3 + i 3         -               3 + i 3         1 + i 2
+ctanhf128     -               -               -               -               3 + i 3
+div_ldoublef  -               -               -               -               -
+div_ldouble   -               -               -               -               -
+div_ldoublel  -               -               -               -               -
+div_ldoublef128-               -               -               -               -
+erff          1               1               1               1               1
 erf           1               1               1               1               1
-erfl          -               1               -               1               1
-erff128       -               -               -               1               1
-erfcf         1               2               2               1               1
-erfc          1               3               3               1               1
-erfcl         -               2               -               3               3
-erfcf128      -               -               -               2               2
-expf          -               1               1               -               -
-exp           -               -               -               1               1
-expl          -               1               -               1               1
-expf128       -               -               -               1               1
+erfl          1               1               -               1               1
+erff128       -               -               -               -               1
+erfcf         2               2               2               2               2
+erfc          3               2               3               3               3
+erfcl         2               2               -               2               3
+erfcf128      -               -               -               -               2
+expf          -               -               -               1               -
+exp           -               -               -               -               1
+expl          1               1               -               1               1
+expf128       -               -               -               -               1
 exp10f        -               -               -               -               -
-exp10         1               2               2               1               1
-exp10l        -               2               -               1               1
-exp10f128     -               -               -               2               2
-exp2f         -               1               1               -               -
-exp2          -               1               1               1               1
-exp2l         -               1               -               1               1
-exp2f128      -               -               -               1               1
-expm1f        1               1               1               -               -
+exp10         2               2               2               2               1
+exp10l        2               2               -               2               1
+exp10f128     -               -               -               -               2
+exp2f         -               -               -               1               -
+exp2          1               1               1               1               1
+exp2l         1               1               -               1               1
+exp2f128      -               -               -               -               1
+expm1f        1               1               1               1               -
 expm1         1               1               1               1               1
-expm1l        -               1               -               2               2
-expm1f128     -               -               -               1               1
+expm1l        1               1               -               1               2
+expm1f128     -               -               -               -               1
 fmaf          -               -               -               -               -
 fma           -               -               -               -               -
 fmal          -               -               -               -               -
@@ -5845,94 +6669,348 @@ fmodf         -               -               -               -               -
 fmod          -               -               -               -               -
 fmodl         -               -               -               -               -
 fmodf128      -               -               -               -               -
-gammaf        1               4               4               3               2
-gamma         1               4               4               3               3
-gammal        -               5               -               4               4
+gammaf        3               3               3               4               3
+gamma         4               3               4               4               4
+gammal        5               5               -               5               4
 gammaf128     -               -               -               -               -
 hypotf        -               -               -               -               -
 hypot         1               1               1               1               1
-hypotl        -               1               -               1               1
-hypotf128     -               -               -               1               1
-j0f           2               2               2               1               1
+hypotl        1               1               -               1               1
+hypotf128     -               -               -               -               1
+j0f           2               2               2               2               2
 j0            2               2               2               2               2
-j0l           -               2               -               2               2
-j0f128        -               -               -               2               2
-j1f           2               2               2               1               1
-j1            1               1               1               2               2
-j1l           -               4               -               1               1
-j1f128        -               -               -               4               4
-jnf           4               4               4               3               3
-jn            4               4               4               2               2
-jnl           -               7               -               4               4
-jnf128        -               -               -               7               7
-lgammaf       1               4               4               3               2
-lgamma        1               4               4               3               3
-lgammal       -               5               -               4               4
-lgammaf128    -               -               -               5               5
-logf          1               1               1               -               -
-log           -               -               -               1               1
-logl          -               1               -               1               1
-logf128       -               -               -               1               1
-log10f        2               2               2               -               -
-log10         1               2               2               1               1
-log10l        -               1               -               1               1
-log10f128     -               -               -               1               1
-log1pf        1               1               1               -               -
-log1p         -               1               1               1               1
-log1pl        -               2               -               2               2
-log1pf128     -               -               -               2               2
-log2f         -               1               1               -               -
-log2          -               2               2               1               1
-log2l         -               2               -               1               1
-log2f128      -               -               -               2               2
-powf          1               3               3               -               -
-pow           -               -               -               1               1
-powl          -               2               -               1               1
-powf128       -               -               -               2               2
-pow10f        -               -               -               -               -
-pow10         1               2               2               1               1
-pow10l        -               2               -               1               1
-pow10f128     -               -               -               -               -
-sinf          1               1               1               -               1
-sin           -               -               -               -               -
-sinl          -               1               -               1               1
-sinf128       -               -               -               1               1
-sincosf       1               1               1               -               1
-sincos        -               -               -               -               -
-sincosl       -               1               -               1               1
-sincosf128    -               -               -               1               1
-sinhf         -               2               2               -               -
-sinh          -               2               2               1               1
-sinhl         -               2               -               2               2
-sinhf128      -               -               -               2               2
+j0l           2               2               -               2               2
+j0f128        -               -               -               -               2
+j1f           2               2               2               2               2
+j1            1               1               1               1               2
+j1l           4               4               -               4               1
+j1f128        -               -               -               -               4
+jnf           4               4               4               4               4
+jn            4               4               4               4               4
+jnl           7               7               -               7               4
+jnf128        -               -               -               -               7
+lgammaf       3               3               3               4               3
+lgamma        4               3               4               4               4
+lgammal       5               5               -               5               4
+lgammaf128    -               -               -               -               5
+logf          -               -               1               1               -
+log           -               -               -               -               1
+logl          1               1               -               1               1
+logf128       -               -               -               -               1
+log10f        2               2               2               2               -
+log10         2               2               2               2               1
+log10l        1               1               -               1               1
+log10f128     -               -               -               -               1
+log1pf        1               1               1               1               -
+log1p         1               1               1               1               1
+log1pl        2               2               -               2               2
+log1pf128     -               -               -               -               2
+log2f         1               1               1               1               1
+log2          2               1               2               2               1
+log2l         2               2               -               2               1
+log2f128      -               -               -               -               2
+mul_ldoublef  -               -               -               -               -
+mul_ldouble   -               -               -               -               -
+mul_ldoublel  -               -               -               -               -
+mul_ldoublef128-               -               -               -               -
+powf          -               -               1               3               -
+pow           -               1               1               1               1
+powl          2               2               -               2               1
+powf128       -               -               -               -               2
+sinf          -               -               1               1               -
+sin           -               1               1               1               1
+sinl          1               1               -               1               1
+sinf128       -               -               -               -               1
+sincosf       -               -               1               1               -
+sincos        -               1               1               1               1
+sincosl       1               1               -               1               1
+sincosf128    -               -               -               -               1
+sinhf         2               2               2               2               2
+sinh          2               2               2               2               2
+sinhl         2               2               -               2               2
+sinhf128      -               -               -               -               2
 sqrtf         -               -               -               -               -
 sqrt          -               -               -               -               -
 sqrtl         -               -               -               -               -
 sqrtf128      -               -               -               -               -
-tanf          -               1               1               1               1
+sub_ldoublef  -               -               -               -               -
+sub_ldouble   -               -               -               -               -
+sub_ldoublel  -               -               -               -               -
+sub_ldoublef128-               -               -               -               -
+tanf          1               1               1               1               1
 tan           -               -               -               -               -
-tanl          -               1               -               2               2
-tanf128       -               -               -               1               1
-tanhf         -               2               2               -               -
-tanh          -               2               2               1               1
-tanhl         -               2               -               3               3
-tanhf128      -               -               -               2               2
-tgammaf       3               5               5               3               3
-tgamma        4               5               5               3               3
-tgammal       -               4               -               5               5
-tgammaf128    -               -               -               4               4
+tanl          1               1               -               1               2
+tanf128       -               -               -               -               1
+tanhf         2               2               2               2               2
+tanh          2               2               2               2               2
+tanhl         2               2               -               2               3
+tanhf128      -               -               -               -               2
+tgammaf       4               4               4               5               4
+tgamma        5               5               5               5               5
+tgammal       4               4               -               4               5
+tgammaf128    -               -               -               -               4
 y0f           1               1               1               1               1
-y0            2               2               2               1               1
-y0l           -               3               -               1               1
-y0f128        -               -               -               3               3
+y0            2               2               2               2               2
+y0l           3               3               -               3               1
+y0f128        -               -               -               -               3
 y1f           2               2               2               2               2
-y1            3               3               3               2               2
-y1l           -               2               -               2               2
-y1f128        -               -               -               2               2
-ynf           2               2               2               3               3
-yn            3               3               3               2               2
-ynl           -               5               -               4               4
-ynf128        -               -               -               5               5
+y1            3               3               3               3               3
+y1l           2               2               -               2               2
+y1f128        -               -               -               -               2
+ynf           3               3               3               3               3
+yn            3               3               3               3               3
+ynl           5               5               -               5               4
+ynf128        -               -               -               -               5
+
+Function      ix86            x86_64
+acosf         -               1
+acos          1               -
+acosl         1               1
+acosf128      1               1
+acoshf        -               2
+acosh         1               2
+acoshl        2               2
+acoshf128     2               2
+add_ldoublef  -               -
+add_ldouble   -               -
+add_ldoublel  -               -
+add_ldoublef128-               -
+asinf         -               1
+asin          1               -
+asinl         1               1
+asinf128      1               1
+asinhf        -               1
+asinh         1               1
+asinhl        3               3
+asinhf128     3               3
+atanf         -               1
+atan          1               -
+atanl         1               1
+atanf128      1               1
+atan2f        -               1
+atan2         1               -
+atan2l        1               1
+atan2f128     1               1
+atanhf        -               2
+atanh         1               2
+atanhl        3               3
+atanhf128     3               3
+cabsf         -               -
+cabs          1               1
+cabsl         1               1
+cabsf128      1               1
+cacosf        2 + i 2         2 + i 2
+cacos         1 + i 2         1 + i 2
+cacosl        1 + i 2         1 + i 2
+cacosf128     2 + i 2         2 + i 2
+cacoshf       2 + i 2         2 + i 2
+cacosh        2 + i 1         2 + i 1
+cacoshl       2 + i 1         2 + i 1
+cacoshf128    2 + i 2         2 + i 2
+cargf         -               1
+carg          1               -
+cargl         1               1
+cargf128      2               2
+casinf        1 + i 2         1 + i 2
+casin         1 + i 2         1 + i 2
+casinl        1 + i 2         1 + i 2
+casinf128     2 + i 2         2 + i 2
+casinhf       2 + i 1         2 + i 1
+casinh        2 + i 1         2 + i 1
+casinhl       2 + i 1         2 + i 1
+casinhf128    2 + i 2         2 + i 2
+catanf        0 + i 1         1 + i 1
+catan         1 + i 1         1 + i 1
+catanl        1 + i 1         1 + i 1
+catanf128     1 + i 1         1 + i 1
+catanhf       1 + i 0         1 + i 1
+catanh        1 + i 1         1 + i 1
+catanhl       1 + i 1         1 + i 1
+catanhf128    1 + i 1         1 + i 1
+cbrtf         1               1
+cbrt          1               3
+cbrtl         3               1
+cbrtf128      1               1
+ccosf         1 + i 1         1 + i 1
+ccos          1 + i 1         1 + i 1
+ccosl         1 + i 1         1 + i 1
+ccosf128      1 + i 1         1 + i 1
+ccoshf        1 + i 1         1 + i 1
+ccosh         1 + i 1         1 + i 1
+ccoshl        1 + i 1         1 + i 1
+ccoshf128     1 + i 1         1 + i 1
+cexpf         1 + i 2         1 + i 2
+cexp          2 + i 1         2 + i 1
+cexpl         1 + i 1         1 + i 1
+cexpf128      1 + i 1         1 + i 1
+clogf         3 + i 0         3 + i 1
+clog          2 + i 1         3 + i 0
+clogl         3 + i 1         3 + i 1
+clogf128      2 + i 1         2 + i 1
+clog10f       4 + i 1         4 + i 2
+clog10        3 + i 2         3 + i 2
+clog10l       4 + i 2         4 + i 2
+clog10f128    2 + i 2         2 + i 2
+cosf          1               -
+cos           1               1
+cosl          1               1
+cosf128       1               1
+coshf         1               1
+cosh          1               1
+coshl         2               2
+coshf128      1               1
+cpowf         5 + i 2         5 + i 2
+cpow          2 + i 0         2 + i 0
+cpowl         3 + i 4         3 + i 4
+cpowf128      4 + i 1         4 + i 1
+csinf         1 + i 1         1 + i 0
+csin          1 + i 0         1 + i 0
+csinl         1 + i 0         1 + i 0
+csinf128      1 + i 1         1 + i 1
+csinhf        1 + i 1         1 + i 1
+csinh         0 + i 1         0 + i 1
+csinhl        1 + i 1         1 + i 1
+csinhf128     1 + i 1         1 + i 1
+csqrtf        2 + i 2         2 + i 2
+csqrt         2 + i 2         2 + i 2
+csqrtl        2 + i 2         2 + i 2
+csqrtf128     2 + i 2         2 + i 2
+ctanf         1 + i 2         1 + i 2
+ctan          1 + i 2         1 + i 2
+ctanl         2 + i 1         2 + i 1
+ctanf128      3 + i 3         3 + i 3
+ctanhf        2 + i 2         2 + i 2
+ctanh         2 + i 2         2 + i 2
+ctanhl        1 + i 2         1 + i 2
+ctanhf128     3 + i 3         3 + i 3
+div_ldoublef  -               -
+div_ldouble   -               -
+div_ldoublel  -               -
+div_ldoublef128-               -
+erff          1               1
+erf           1               1
+erfl          1               1
+erff128       1               1
+erfcf         2               2
+erfc          3               3
+erfcl         3               3
+erfcf128      2               2
+expf          -               -
+exp           1               -
+expl          1               1
+expf128       1               1
+exp10f        -               -
+exp10         1               2
+exp10l        1               1
+exp10f128     2               2
+exp2f         -               1
+exp2          1               1
+exp2l         1               1
+exp2f128      1               1
+expm1f        -               1
+expm1         1               1
+expm1l        2               2
+expm1f128     1               1
+fmaf          -               -
+fma           -               -
+fmal          -               -
+fmaf128       -               -
+fmodf         -               -
+fmod          -               -
+fmodl         -               -
+fmodf128      -               -
+gammaf        3               4
+gamma         4               4
+gammal        4               4
+gammaf128     -               -
+hypotf        -               -
+hypot         1               1
+hypotl        1               1
+hypotf128     1               1
+j0f           2               2
+j0            2               2
+j0l           2               2
+j0f128        2               2
+j1f           2               2
+j1            2               1
+j1l           1               1
+j1f128        4               4
+jnf           4               4
+jn            4               4
+jnl           4               4
+jnf128        7               7
+lgammaf       3               4
+lgamma        4               4
+lgammal       4               4
+lgammaf128    5               5
+logf          -               1
+log           1               -
+logl          1               1
+logf128       1               1
+log10f        -               2
+log10         1               2
+log10l        1               1
+log10f128     1               1
+log1pf        -               1
+log1p         1               1
+log1pl        2               2
+log1pf128     2               2
+log2f         1               1
+log2          1               2
+log2l         1               1
+log2f128      2               2
+mul_ldoublef  -               -
+mul_ldouble   -               -
+mul_ldoublel  -               -
+mul_ldoublef128-               -
+powf          -               1
+pow           1               1
+powl          1               1
+powf128       2               2
+sinf          1               -
+sin           1               1
+sinl          1               1
+sinf128       1               1
+sincosf       1               -
+sincos        1               1
+sincosl       1               1
+sincosf128    1               1
+sinhf         2               2
+sinh          2               2
+sinhl         2               2
+sinhf128      2               2
+sqrtf         -               -
+sqrt          -               -
+sqrtl         -               -
+sqrtf128      -               -
+sub_ldoublef  -               -
+sub_ldouble   -               -
+sub_ldoublel  -               -
+sub_ldoublef128-               -
+tanf          1               1
+tan           -               -
+tanl          2               2
+tanf128       1               1
+tanhf         2               2
+tanh          2               2
+tanhl         3               3
+tanhf128      2               2
+tgammaf       4               5
+tgamma        5               5
+tgammal       5               5
+tgammaf128    4               4
+y0f           1               1
+y0            2               2
+y0l           1               1
+y0f128        3               3
+y1f           2               2
+y1            3               3
+y1l           2               2
+y1f128        2               2
+ynf           3               3
+yn            3               3
+ynl           4               4
+ynf128        5               5
 
 
 File: libc.info,  Node: Pseudo-Random Numbers,  Next: FP Function Optimizations,  Prev: Errors in Math Functions,  Up: Mathematics
@@ -6997,8 +8075,8 @@ macros, you do not have to worry about the type of their argument.
      Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
      Concepts::.
 
-     This function returns a nonzero value if X is finite or a "not a
-     number" value, and zero otherwise.
+     This function returns a nonzero value if X is neither infinite nor
+     a "not a number" value, and zero otherwise.
 
    *Portability Note:* The functions listed in this section are BSD
 extensions.
@@ -7039,13 +8117,6 @@ when an exception is raised, your program will receive the `SIGFPE'
 signal.  The default action for this signal is to terminate the
 program.  *Note Signal Handling::, for how you can change the effect of
 the signal.
-
-   In the System V math library, the user-defined function `matherr' is
-called when certain exceptions occur inside math library functions.
-However, the Unix98 standard deprecates this interface.  We support it
-for historical compatibility, but recommend that you do not use it in
-new programs.  When this interface is used, exceptions may not be
-raised.
 
 The exceptions defined in IEEE 754 are:
 
@@ -7412,941 +8483,4 @@ test for overflow on both old and new hardware.
      Mathematical functions return the appropriately typed version of
      `HUGE_VAL' or `-HUGE_VAL' when the result is too large to be
      represented.
-
-
-File: libc.info,  Node: Rounding,  Next: Control Functions,  Prev: Floating Point Errors,  Up: Arithmetic
-
-20.6 Rounding Modes
-===================
-
-Floating-point calculations are carried out internally with extra
-precision, and then rounded to fit into the destination type.  This
-ensures that results are as precise as the input data.  IEEE 754
-defines four possible rounding modes:
-
-Round to nearest.
-     This is the default mode.  It should be used unless there is a
-     specific need for one of the others.  In this mode results are
-     rounded to the nearest representable value.  If the result is
-     midway between two representable values, the even representable is
-     chosen. "Even" here means the lowest-order bit is zero.  This
-     rounding mode prevents statistical bias and guarantees numeric
-     stability: round-off errors in a lengthy calculation will remain
-     smaller than half of `FLT_EPSILON'.
-
-Round toward plus Infinity.
-     All results are rounded to the smallest representable value which
-     is greater than the result.
-
-Round toward minus Infinity.
-     All results are rounded to the largest representable value which
-     is less than the result.
-
-Round toward zero.
-     All results are rounded to the largest representable value whose
-     magnitude is less than that of the result.  In other words, if the
-     result is negative it is rounded up; if it is positive, it is
-     rounded down.
-
-`fenv.h' defines constants which you can use to refer to the various
-rounding modes.  Each one will be defined if and only if the FPU
-supports the corresponding rounding mode.
-
-`FE_TONEAREST'
-     Round to nearest.
-
-`FE_UPWARD'
-     Round toward +oo.
-
-`FE_DOWNWARD'
-     Round toward -oo.
-
-`FE_TOWARDZERO'
-     Round toward zero.
-
-   Underflow is an unusual case.  Normally, IEEE 754 floating point
-numbers are always normalized (*note Floating Point Concepts::).
-Numbers smaller than 2^r (where r is the minimum exponent,
-`FLT_MIN_RADIX-1' for FLOAT) cannot be represented as normalized
-numbers.  Rounding all such numbers to zero or 2^r would cause some
-algorithms to fail at 0.  Therefore, they are left in denormalized
-form.  That produces loss of precision, since some bits of the mantissa
-are stolen to indicate the decimal point.
-
-   If a result is too small to be represented as a denormalized number,
-it is rounded to zero.  However, the sign of the result is preserved; if
-the calculation was negative, the result is "negative zero".  Negative
-zero can also result from some operations on infinity, such as 4/-oo.
-
-   At any time, one of the above four rounding modes is selected.  You
-can find out which one with this function:
-
- -- Function: int fegetround (void)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     Returns the currently selected rounding mode, represented by one
-     of the values of the defined rounding mode macros.
-
-To change the rounding mode, use this function:
-
- -- Function: int fesetround (int ROUND)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     Changes the currently selected rounding mode to ROUND.  If ROUND
-     does not correspond to one of the supported rounding modes nothing
-     is changed.  `fesetround' returns zero if it changed the rounding
-     mode, or a nonzero value if the mode is not supported.
-
-   You should avoid changing the rounding mode if possible.  It can be
-an expensive operation; also, some hardware requires you to compile your
-program differently for it to work.  The resulting code may run slower.
-See your compiler documentation for details.
-
-
-File: libc.info,  Node: Control Functions,  Next: Arithmetic Functions,  Prev: Rounding,  Up: Arithmetic
-
-20.7 Floating-Point Control Functions
-=====================================
-
-IEEE 754 floating-point implementations allow the programmer to decide
-whether traps will occur for each of the exceptions, by setting bits in
-the "control word".  In C, traps result in the program receiving the
-`SIGFPE' signal; see *Note Signal Handling::.
-
-   *NB:* IEEE 754 says that trap handlers are given details of the
-exceptional situation, and can set the result value.  C signals do not
-provide any mechanism to pass this information back and forth.
-Trapping exceptions in C is therefore not very useful.
-
-   It is sometimes necessary to save the state of the floating-point
-unit while you perform some calculation.  The library provides functions
-which save and restore the exception flags, the set of exceptions that
-generate traps, and the rounding mode.  This information is known as the
-"floating-point environment".
-
-   The functions to save and restore the floating-point environment all
-use a variable of type `fenv_t' to store information.  This type is
-defined in `fenv.h'.  Its size and contents are implementation-defined.
-You should not attempt to manipulate a variable of this type directly.
-
-   To save the state of the FPU, use one of these functions:
-
- -- Function: int fegetenv (fenv_t *ENVP)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     Store the floating-point environment in the variable pointed to by
-     ENVP.
-
-     The function returns zero in case the operation was successful, a
-     non-zero value otherwise.
-
- -- Function: int feholdexcept (fenv_t *ENVP)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     Store the current floating-point environment in the object pointed
-     to by ENVP.  Then clear all exception flags, and set the FPU to
-     trap no exceptions.  Not all FPUs support trapping no exceptions;
-     if `feholdexcept' cannot set this mode, it returns nonzero value.
-     If it succeeds, it returns zero.
-
-   The functions which restore the floating-point environment can take
-these kinds of arguments:
-
-   * Pointers to `fenv_t' objects, which were initialized previously by
-     a call to `fegetenv' or `feholdexcept'.
-
-   * The special macro `FE_DFL_ENV' which represents the floating-point
-     environment as it was available at program start.
-
-   * Implementation defined macros with names starting with `FE_' and
-     having type `fenv_t *'.
-
-     If possible, the GNU C Library defines a macro `FE_NOMASK_ENV'
-     which represents an environment where every exception raised
-     causes a trap to occur.  You can test for this macro using
-     `#ifdef'.  It is only defined if `_GNU_SOURCE' is defined.
-
-     Some platforms might define other predefined environments.
-
-To set the floating-point environment, you can use either of these
-functions:
-
- -- Function: int fesetenv (const fenv_t *ENVP)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     Set the floating-point environment to that described by ENVP.
-
-     The function returns zero in case the operation was successful, a
-     non-zero value otherwise.
-
- -- Function: int feupdateenv (const fenv_t *ENVP)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     Like `fesetenv', this function sets the floating-point environment
-     to that described by ENVP.  However, if any exceptions were
-     flagged in the status word before `feupdateenv' was called, they
-     remain flagged after the call.  In other words, after `feupdateenv'
-     is called, the status word is the bitwise OR of the previous
-     status word and the one saved in ENVP.
-
-     The function returns zero in case the operation was successful, a
-     non-zero value otherwise.
-
-TS 18661-1:2014 defines additional functions to save and restore
-floating-point control modes (such as the rounding mode and whether
-traps are enabled) while leaving other status (such as raised flags)
-unchanged.
-
-   The special macro `FE_DFL_MODE' may be passed to `fesetmode'.  It
-represents the floating-point control modes at program start.
-
- -- Function: int fegetmode (femode_t *MODEP)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     Store the floating-point control modes in the variable pointed to
-     by MODEP.
-
-     The function returns zero in case the operation was successful, a
-     non-zero value otherwise.
-
- -- Function: int fesetmode (const femode_t *MODEP)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     Set the floating-point control modes to those described by MODEP.
-
-     The function returns zero in case the operation was successful, a
-     non-zero value otherwise.
-
-To control for individual exceptions if raising them causes a trap to
-occur, you can use the following two functions.
-
-   *Portability Note:* These functions are all GNU extensions.
-
- -- Function: int feenableexcept (int EXCEPTS)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     This function enables traps for each of the exceptions as
-     indicated by the parameter EXCEPTS.  The individual exceptions are
-     described in *Note Status bit operations::.  Only the specified
-     exceptions are enabled, the status of the other exceptions is not
-     changed.
-
-     The function returns the previous enabled exceptions in case the
-     operation was successful, `-1' otherwise.
-
- -- Function: int fedisableexcept (int EXCEPTS)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     This function disables traps for each of the exceptions as
-     indicated by the parameter EXCEPTS.  The individual exceptions are
-     described in *Note Status bit operations::.  Only the specified
-     exceptions are disabled, the status of the other exceptions is not
-     changed.
-
-     The function returns the previous enabled exceptions in case the
-     operation was successful, `-1' otherwise.
-
- -- Function: int fegetexcept (void)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     The function returns a bitmask of all currently enabled
-     exceptions.  It returns `-1' in case of failure.
-
-
-File: libc.info,  Node: Arithmetic Functions,  Next: Complex Numbers,  Prev: Control Functions,  Up: Arithmetic
-
-20.8 Arithmetic Functions
-=========================
-
-The C library provides functions to do basic operations on
-floating-point numbers.  These include absolute value, maximum and
-minimum, normalization, bit twiddling, rounding, and a few others.
-
-* Menu:
-
-* Absolute Value::              Absolute values of integers and floats.
-* Normalization Functions::     Extracting exponents and putting them back.
-* Rounding Functions::          Rounding floats to integers.
-* Remainder Functions::         Remainders on division, precisely defined.
-* FP Bit Twiddling::            Sign bit adjustment.  Adding epsilon.
-* FP Comparison Functions::     Comparisons without risk of exceptions.
-* Misc FP Arithmetic::          Max, min, positive difference, multiply-add.
-
-
-File: libc.info,  Node: Absolute Value,  Next: Normalization Functions,  Up: Arithmetic Functions
-
-20.8.1 Absolute Value
----------------------
-
-These functions are provided for obtaining the "absolute value" (or
-"magnitude") of a number.  The absolute value of a real number X is X
-if X is positive, -X if X is negative.  For a complex number Z, whose
-real part is X and whose imaginary part is Y, the absolute value is
-`sqrt (X*X + Y*Y)'.
-
-   Prototypes for `abs', `labs' and `llabs' are in `stdlib.h';
-`imaxabs' is declared in `inttypes.h'; the `fabs' functions are
-declared in `math.h'; the `cabs' functions are declared in `complex.h'.
-
- -- Function: int abs (int NUMBER)
- -- Function: long int labs (long int NUMBER)
- -- Function: long long int llabs (long long int NUMBER)
- -- Function: intmax_t imaxabs (intmax_t NUMBER)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     These functions return the absolute value of NUMBER.
-
-     Most computers use a two's complement integer representation, in
-     which the absolute value of `INT_MIN' (the smallest possible `int')
-     cannot be represented; thus, `abs (INT_MIN)' is not defined.
-
-     `llabs' and `imaxdiv' are new to ISO C99.
-
-     See *Note Integers:: for a description of the `intmax_t' type.
-
-
- -- Function: double fabs (double NUMBER)
- -- Function: float fabsf (float NUMBER)
- -- Function: long double fabsl (long double NUMBER)
- -- Function: _FloatN fabsfN (_FloatN NUMBER)
- -- Function: _FloatNx fabsfNx (_FloatNx NUMBER)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     This function returns the absolute value of the floating-point
-     number NUMBER.
-
- -- Function: double cabs (complex double Z)
- -- Function: float cabsf (complex float Z)
- -- Function: long double cabsl (complex long double Z)
- -- Function: _FloatN cabsfN (complex _FloatN Z)
- -- Function: _FloatNx cabsfNx (complex _FloatNx Z)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     These functions return the absolute  value of the complex number Z
-     (*note Complex Numbers::).  The absolute value of a complex number
-     is:
-
-          sqrt (creal (Z) * creal (Z) + cimag (Z) * cimag (Z))
-
-     This function should always be used instead of the direct formula
-     because it takes special care to avoid losing precision.  It may
-     also take advantage of hardware support for this operation.  See
-     `hypot' in *Note Exponents and Logarithms::.
-
-
-File: libc.info,  Node: Normalization Functions,  Next: Rounding Functions,  Prev: Absolute Value,  Up: Arithmetic Functions
-
-20.8.2 Normalization Functions
-------------------------------
-
-The functions described in this section are primarily provided as a way
-to efficiently perform certain low-level manipulations on floating point
-numbers that are represented internally using a binary radix; see *Note
-Floating Point Concepts::.  These functions are required to have
-equivalent behavior even if the representation does not use a radix of
-2, but of course they are unlikely to be particularly efficient in
-those cases.
-
-   All these functions are declared in `math.h'.
-
- -- Function: double frexp (double VALUE, int *EXPONENT)
- -- Function: float frexpf (float VALUE, int *EXPONENT)
- -- Function: long double frexpl (long double VALUE, int *EXPONENT)
- -- Function: _FloatN frexpfN (_FloatN VALUE, int *EXPONENT)
- -- Function: _FloatNx frexpfNx (_FloatNx VALUE, int *EXPONENT)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     These functions are used to split the number VALUE into a
-     normalized fraction and an exponent.
-
-     If the argument VALUE is not zero, the return value is VALUE times
-     a power of two, and its magnitude is always in the range 1/2
-     (inclusive) to 1 (exclusive).  The corresponding exponent is
-     stored in `*EXPONENT'; the return value multiplied by 2 raised to
-     this exponent equals the original number VALUE.
-
-     For example, `frexp (12.8, &exponent)' returns `0.8' and stores
-     `4' in `exponent'.
-
-     If VALUE is zero, then the return value is zero and zero is stored
-     in `*EXPONENT'.
-
- -- Function: double ldexp (double VALUE, int EXPONENT)
- -- Function: float ldexpf (float VALUE, int EXPONENT)
- -- Function: long double ldexpl (long double VALUE, int EXPONENT)
- -- Function: _FloatN ldexpfN (_FloatN VALUE, int EXPONENT)
- -- Function: _FloatNx ldexpfNx (_FloatNx VALUE, int EXPONENT)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     These functions return the result of multiplying the floating-point
-     number VALUE by 2 raised to the power EXPONENT.  (It can be used
-     to reassemble floating-point numbers that were taken apart by
-     `frexp'.)
-
-     For example, `ldexp (0.8, 4)' returns `12.8'.
-
-   The following functions, which come from BSD, provide facilities
-equivalent to those of `ldexp' and `frexp'.  See also the ISO C
-function `logb' which originally also appeared in BSD.  The `_FloatN'
-and `_FloatN' variants of the following functions come from TS
-18661-3:2015.
-
- -- Function: double scalb (double VALUE, double EXPONENT)
- -- Function: float scalbf (float VALUE, float EXPONENT)
- -- Function: long double scalbl (long double VALUE, long double
-          EXPONENT)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     The `scalb' function is the BSD name for `ldexp'.
-
- -- Function: double scalbn (double X, int N)
- -- Function: float scalbnf (float X, int N)
- -- Function: long double scalbnl (long double X, int N)
- -- Function: _FloatN scalbnfN (_FloatN X, int N)
- -- Function: _FloatNx scalbnfNx (_FloatNx X, int N)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     `scalbn' is identical to `scalb', except that the exponent N is an
-     `int' instead of a floating-point number.
-
- -- Function: double scalbln (double X, long int N)
- -- Function: float scalblnf (float X, long int N)
- -- Function: long double scalblnl (long double X, long int N)
- -- Function: _FloatN scalblnfN (_FloatN X, long int N)
- -- Function: _FloatNx scalblnfNx (_FloatNx X, long int N)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     `scalbln' is identical to `scalb', except that the exponent N is a
-     `long int' instead of a floating-point number.
-
- -- Function: double significand (double X)
- -- Function: float significandf (float X)
- -- Function: long double significandl (long double X)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     `significand' returns the mantissa of X scaled to the range [1, 2).
-     It is equivalent to `scalb (X, (double) -ilogb (X))'.
-
-     This function exists mainly for use in certain standardized tests
-     of IEEE 754 conformance.
-
-
-File: libc.info,  Node: Rounding Functions,  Next: Remainder Functions,  Prev: Normalization Functions,  Up: Arithmetic Functions
-
-20.8.3 Rounding Functions
--------------------------
-
-The functions listed here perform operations such as rounding and
-truncation of floating-point values.  Some of these functions convert
-floating point numbers to integer values.  They are all declared in
-`math.h'.
-
-   You can also convert floating-point numbers to integers simply by
-casting them to `int'.  This discards the fractional part, effectively
-rounding towards zero.  However, this only works if the result can
-actually be represented as an `int'--for very large numbers, this is
-impossible.  The functions listed here return the result as a `double'
-instead to get around this problem.
-
-   The `fromfp' functions use the following macros, from TS
-18661-1:2014, to specify the direction of rounding.  These correspond
-to the rounding directions defined in IEEE 754-2008.
-
-`FP_INT_UPWARD'
-     Round toward +oo.
-
-`FP_INT_DOWNWARD'
-     Round toward -oo.
-
-`FP_INT_TOWARDZERO'
-     Round toward zero.
-
-`FP_INT_TONEARESTFROMZERO'
-     Round to nearest, ties round away from zero.
-
-`FP_INT_TONEAREST'
-     Round to nearest, ties round to even.
-
- -- Function: double ceil (double X)
- -- Function: float ceilf (float X)
- -- Function: long double ceill (long double X)
- -- Function: _FloatN ceilfN (_FloatN X)
- -- Function: _FloatNx ceilfNx (_FloatNx X)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     These functions round X upwards to the nearest integer, returning
-     that value as a `double'.  Thus, `ceil (1.5)' is `2.0'.
-
- -- Function: double floor (double X)
- -- Function: float floorf (float X)
- -- Function: long double floorl (long double X)
- -- Function: _FloatN floorfN (_FloatN X)
- -- Function: _FloatNx floorfNx (_FloatNx X)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     These functions round X downwards to the nearest integer,
-     returning that value as a `double'.  Thus, `floor (1.5)' is `1.0'
-     and `floor (-1.5)' is `-2.0'.
-
- -- Function: double trunc (double X)
- -- Function: float truncf (float X)
- -- Function: long double truncl (long double X)
- -- Function: _FloatN truncfN (_FloatN X)
- -- Function: _FloatNx truncfNx (_FloatNx X)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     The `trunc' functions round X towards zero to the nearest integer
-     (returned in floating-point format).  Thus, `trunc (1.5)' is `1.0'
-     and `trunc (-1.5)' is `-1.0'.
-
- -- Function: double rint (double X)
- -- Function: float rintf (float X)
- -- Function: long double rintl (long double X)
- -- Function: _FloatN rintfN (_FloatN X)
- -- Function: _FloatNx rintfNx (_FloatNx X)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     These functions round X to an integer value according to the
-     current rounding mode.  *Note Floating Point Parameters::, for
-     information about the various rounding modes.  The default
-     rounding mode is to round to the nearest integer; some machines
-     support other modes, but round-to-nearest is always used unless
-     you explicitly select another.
-
-     If X was not initially an integer, these functions raise the
-     inexact exception.
-
- -- Function: double nearbyint (double X)
- -- Function: float nearbyintf (float X)
- -- Function: long double nearbyintl (long double X)
- -- Function: _FloatN nearbyintfN (_FloatN X)
- -- Function: _FloatNx nearbyintfNx (_FloatNx X)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     These functions return the same value as the `rint' functions, but
-     do not raise the inexact exception if X is not an integer.
-
- -- Function: double round (double X)
- -- Function: float roundf (float X)
- -- Function: long double roundl (long double X)
- -- Function: _FloatN roundfN (_FloatN X)
- -- Function: _FloatNx roundfNx (_FloatNx X)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     These functions are similar to `rint', but they round halfway
-     cases away from zero instead of to the nearest integer (or other
-     current rounding mode).
-
- -- Function: double roundeven (double X)
- -- Function: float roundevenf (float X)
- -- Function: long double roundevenl (long double X)
- -- Function: _FloatN roundevenfN (_FloatN X)
- -- Function: _FloatNx roundevenfNx (_FloatNx X)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     These functions, from TS 18661-1:2014 and TS 18661-3:2015, are
-     similar to `round', but they round halfway cases to even instead
-     of away from zero.
-
- -- Function: long int lrint (double X)
- -- Function: long int lrintf (float X)
- -- Function: long int lrintl (long double X)
- -- Function: long int lrintfN (_FloatN X)
- -- Function: long int lrintfNx (_FloatNx X)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     These functions are just like `rint', but they return a `long int'
-     instead of a floating-point number.
-
- -- Function: long long int llrint (double X)
- -- Function: long long int llrintf (float X)
- -- Function: long long int llrintl (long double X)
- -- Function: long long int llrintfN (_FloatN X)
- -- Function: long long int llrintfNx (_FloatNx X)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     These functions are just like `rint', but they return a `long long
-     int' instead of a floating-point number.
-
- -- Function: long int lround (double X)
- -- Function: long int lroundf (float X)
- -- Function: long int lroundl (long double X)
- -- Function: long int lroundfN (_FloatN X)
- -- Function: long int lroundfNx (_FloatNx X)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     These functions are just like `round', but they return a `long
-     int' instead of a floating-point number.
-
- -- Function: long long int llround (double X)
- -- Function: long long int llroundf (float X)
- -- Function: long long int llroundl (long double X)
- -- Function: long long int llroundfN (_FloatN X)
- -- Function: long long int llroundfNx (_FloatNx X)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     These functions are just like `round', but they return a `long
-     long int' instead of a floating-point number.
-
- -- Function: intmax_t fromfp (double X, int ROUND, unsigned int WIDTH)
- -- Function: intmax_t fromfpf (float X, int ROUND, unsigned int WIDTH)
- -- Function: intmax_t fromfpl (long double X, int ROUND, unsigned int
-          WIDTH)
- -- Function: intmax_t fromfpfN (_FloatN X, int ROUND, unsigned int
-          WIDTH)
- -- Function: intmax_t fromfpfNx (_FloatNx X, int ROUND, unsigned int
-          WIDTH)
- -- Function: uintmax_t ufromfp (double X, int ROUND, unsigned int
-          WIDTH)
- -- Function: uintmax_t ufromfpf (float X, int ROUND, unsigned int
-          WIDTH)
- -- Function: uintmax_t ufromfpl (long double X, int ROUND, unsigned
-          int WIDTH)
- -- Function: uintmax_t ufromfpfN (_FloatN X, int ROUND, unsigned int
-          WIDTH)
- -- Function: uintmax_t ufromfpfNx (_FloatNx X, int ROUND, unsigned int
-          WIDTH)
- -- Function: intmax_t fromfpx (double X, int ROUND, unsigned int WIDTH)
- -- Function: intmax_t fromfpxf (float X, int ROUND, unsigned int WIDTH)
- -- Function: intmax_t fromfpxl (long double X, int ROUND, unsigned int
-          WIDTH)
- -- Function: intmax_t fromfpxfN (_FloatN X, int ROUND, unsigned int
-          WIDTH)
- -- Function: intmax_t fromfpxfNx (_FloatNx X, int ROUND, unsigned int
-          WIDTH)
- -- Function: uintmax_t ufromfpx (double X, int ROUND, unsigned int
-          WIDTH)
- -- Function: uintmax_t ufromfpxf (float X, int ROUND, unsigned int
-          WIDTH)
- -- Function: uintmax_t ufromfpxl (long double X, int ROUND, unsigned
-          int WIDTH)
- -- Function: uintmax_t ufromfpxfN (_FloatN X, int ROUND, unsigned int
-          WIDTH)
- -- Function: uintmax_t ufromfpxfNx (_FloatNx X, int ROUND, unsigned
-          int WIDTH)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     These functions, from TS 18661-1:2014 and TS 18661-3:2015, convert
-     a floating-point number to an integer according to the rounding
-     direction ROUND (one of the `FP_INT_*' macros).  If the integer is
-     outside the range of a signed or unsigned (depending on the return
-     type of the function) type of width WIDTH bits (or outside the
-     range of the return type, if WIDTH is larger), or if X is infinite
-     or NaN, or if WIDTH is zero, a domain error occurs and an
-     unspecified value is returned.  The functions with an `x' in their
-     names raise the inexact exception when a domain error does not
-     occur and the argument is not an integer; the other functions do
-     not raise the inexact exception.
-
- -- Function: double modf (double VALUE, double *INTEGER-PART)
- -- Function: float modff (float VALUE, float *INTEGER-PART)
- -- Function: long double modfl (long double VALUE, long double
-          *INTEGER-PART)
- -- Function: _FloatN modffN (_FloatN VALUE, _FloatN *INTEGER-PART)
- -- Function: _FloatNx modffNx (_FloatNx VALUE, _FloatNx *INTEGER-PART)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     These functions break the argument VALUE into an integer part and a
-     fractional part (between `-1' and `1', exclusive).  Their sum
-     equals VALUE.  Each of the parts has the same sign as VALUE, and
-     the integer part is always rounded toward zero.
-
-     `modf' stores the integer part in `*INTEGER-PART', and returns the
-     fractional part.  For example, `modf (2.5, &intpart)' returns
-     `0.5' and stores `2.0' into `intpart'.
-
-
-File: libc.info,  Node: Remainder Functions,  Next: FP Bit Twiddling,  Prev: Rounding Functions,  Up: Arithmetic Functions
-
-20.8.4 Remainder Functions
---------------------------
-
-The functions in this section compute the remainder on division of two
-floating-point numbers.  Each is a little different; pick the one that
-suits your problem.
-
- -- Function: double fmod (double NUMERATOR, double DENOMINATOR)
- -- Function: float fmodf (float NUMERATOR, float DENOMINATOR)
- -- Function: long double fmodl (long double NUMERATOR, long double
-          DENOMINATOR)
- -- Function: _FloatN fmodfN (_FloatN NUMERATOR, _FloatN DENOMINATOR)
- -- Function: _FloatNx fmodfNx (_FloatNx NUMERATOR, _FloatNx
-          DENOMINATOR)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     These functions compute the remainder from the division of
-     NUMERATOR by DENOMINATOR.  Specifically, the return value is
-     `NUMERATOR - N * DENOMINATOR', where N is the quotient of
-     NUMERATOR divided by DENOMINATOR, rounded towards zero to an
-     integer.  Thus, `fmod (6.5, 2.3)' returns `1.9', which is `6.5'
-     minus `4.6'.
-
-     The result has the same sign as the NUMERATOR and has magnitude
-     less than the magnitude of the DENOMINATOR.
-
-     If DENOMINATOR is zero, `fmod' signals a domain error.
-
- -- Function: double remainder (double NUMERATOR, double DENOMINATOR)
- -- Function: float remainderf (float NUMERATOR, float DENOMINATOR)
- -- Function: long double remainderl (long double NUMERATOR, long
-          double DENOMINATOR)
- -- Function: _FloatN remainderfN (_FloatN NUMERATOR, _FloatN
-          DENOMINATOR)
- -- Function: _FloatNx remainderfNx (_FloatNx NUMERATOR, _FloatNx
-          DENOMINATOR)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     These functions are like `fmod' except that they round the
-     internal quotient N to the nearest integer instead of towards zero
-     to an integer.  For example, `remainder (6.5, 2.3)' returns
-     `-0.4', which is `6.5' minus `6.9'.
-
-     The absolute value of the result is less than or equal to half the
-     absolute value of the DENOMINATOR.  The difference between `fmod
-     (NUMERATOR, DENOMINATOR)' and `remainder (NUMERATOR, DENOMINATOR)'
-     is always either DENOMINATOR, minus DENOMINATOR, or zero.
-
-     If DENOMINATOR is zero, `remainder' signals a domain error.
-
- -- Function: double drem (double NUMERATOR, double DENOMINATOR)
- -- Function: float dremf (float NUMERATOR, float DENOMINATOR)
- -- Function: long double dreml (long double NUMERATOR, long double
-          DENOMINATOR)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     This function is another name for `remainder'.
-
-
-File: libc.info,  Node: FP Bit Twiddling,  Next: FP Comparison Functions,  Prev: Remainder Functions,  Up: Arithmetic Functions
-
-20.8.5 Setting and modifying single bits of FP values
------------------------------------------------------
-
-There are some operations that are too complicated or expensive to
-perform by hand on floating-point numbers.  ISO C99 defines functions
-to do these operations, which mostly involve changing single bits.
-
- -- Function: double copysign (double X, double Y)
- -- Function: float copysignf (float X, float Y)
- -- Function: long double copysignl (long double X, long double Y)
- -- Function: _FloatN copysignfN (_FloatN X, _FloatN Y)
- -- Function: _FloatNx copysignfNx (_FloatNx X, _FloatNx Y)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     These functions return X but with the sign of Y.  They work even
-     if X or Y are NaN or zero.  Both of these can carry a sign
-     (although not all implementations support it) and this is one of
-     the few operations that can tell the difference.
-
-     `copysign' never raises an exception.
-
-     This function is defined in IEC 559 (and the appendix with
-     recommended functions in IEEE 754/IEEE 854).
-
- -- Function: int signbit (_float-type_ X)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     `signbit' is a generic macro which can work on all floating-point
-     types.  It returns a nonzero value if the value of X has its sign
-     bit set.
-
-     This is not the same as `x < 0.0', because IEEE 754 floating point
-     allows zero to be signed.  The comparison `-0.0 < 0.0' is false,
-     but `signbit (-0.0)' will return a nonzero value.
-
- -- Function: double nextafter (double X, double Y)
- -- Function: float nextafterf (float X, float Y)
- -- Function: long double nextafterl (long double X, long double Y)
- -- Function: _FloatN nextafterfN (_FloatN X, _FloatN Y)
- -- Function: _FloatNx nextafterfNx (_FloatNx X, _FloatNx Y)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     The `nextafter' function returns the next representable neighbor of
-     X in the direction towards Y.  The size of the step between X and
-     the result depends on the type of the result.  If X = Y the
-     function simply returns Y.  If either value is `NaN', `NaN' is
-     returned.  Otherwise a value corresponding to the value of the
-     least significant bit in the mantissa is added or subtracted,
-     depending on the direction.  `nextafter' will signal overflow or
-     underflow if the result goes outside of the range of normalized
-     numbers.
-
-     This function is defined in IEC 559 (and the appendix with
-     recommended functions in IEEE 754/IEEE 854).
-
- -- Function: double nexttoward (double X, long double Y)
- -- Function: float nexttowardf (float X, long double Y)
- -- Function: long double nexttowardl (long double X, long double Y)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     These functions are identical to the corresponding versions of
-     `nextafter' except that their second argument is a `long double'.
-
- -- Function: double nextup (double X)
- -- Function: float nextupf (float X)
- -- Function: long double nextupl (long double X)
- -- Function: _FloatN nextupfN (_FloatN X)
- -- Function: _FloatNx nextupfNx (_FloatNx X)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     The `nextup' function returns the next representable neighbor of X
-     in the direction of positive infinity.  If X is the smallest
-     negative subnormal number in the type of X the function returns
-     `-0'.  If X = `0' the function returns the smallest positive
-     subnormal number in the type of X.  If X is NaN, NaN is returned.
-     If X is +oo, +oo is returned.  `nextup' is from TS 18661-1:2014
-     and TS 18661-3:2015.  `nextup' never raises an exception except
-     for signaling NaNs.
-
- -- Function: double nextdown (double X)
- -- Function: float nextdownf (float X)
- -- Function: long double nextdownl (long double X)
- -- Function: _FloatN nextdownfN (_FloatN X)
- -- Function: _FloatNx nextdownfNx (_FloatNx X)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     The `nextdown' function returns the next representable neighbor of
-     X in the direction of negative infinity.  If X is the smallest
-     positive subnormal number in the type of X the function returns
-     `+0'.  If X = `0' the function returns the smallest negative
-     subnormal number in the type of X.  If X is NaN, NaN is returned.
-     If X is -oo, -oo is returned.  `nextdown' is from TS 18661-1:2014
-     and TS 18661-3:2015.  `nextdown' never raises an exception except
-     for signaling NaNs.
-
- -- Function: double nan (const char *TAGP)
- -- Function: float nanf (const char *TAGP)
- -- Function: long double nanl (const char *TAGP)
- -- Function: _FloatN nanfN (const char *TAGP)
- -- Function: _FloatNx nanfNx (const char *TAGP)
-     Preliminary: | MT-Safe locale | AS-Safe | AC-Safe | *Note POSIX
-     Safety Concepts::.
-
-     The `nan' function returns a representation of NaN, provided that
-     NaN is supported by the target platform.  `nan
-     ("N-CHAR-SEQUENCE")' is equivalent to `strtod
-     ("NAN(N-CHAR-SEQUENCE)")'.
-
-     The argument TAGP is used in an unspecified manner.  On IEEE 754
-     systems, there are many representations of NaN, and TAGP selects
-     one.  On other systems it may do nothing.
-
- -- Function: int canonicalize (double *CX, const double *X)
- -- Function: int canonicalizef (float *CX, const float *X)
- -- Function: int canonicalizel (long double *CX, const long double *X)
- -- Function: int canonicalizefN (_FloatN *CX, const _FloatN *X)
- -- Function: int canonicalizefNx (_FloatNx *CX, const _FloatNx *X)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     In some floating-point formats, some values have canonical
-     (preferred) and noncanonical encodings (for IEEE interchange
-     binary formats, all encodings are canonical).  These functions,
-     defined by TS 18661-1:2014 and TS 18661-3:2015, attempt to produce
-     a canonical version of the floating-point value pointed to by X;
-     if that value is a signaling NaN, they raise the invalid exception
-     and produce a quiet NaN.  If a canonical value is produced, it is
-     stored in the object pointed to by CX, and these functions return
-     zero.  Otherwise (if a canonical value could not be produced
-     because the object pointed to by X is not a valid representation
-     of any floating-point value), the object pointed to by CX is
-     unchanged and a nonzero value is returned.
-
-     Note that some formats have multiple encodings of a value which are
-     all equally canonical; when such an encoding is used as an input to
-     this function, any such encoding of the same value (or of the
-     corresponding quiet NaN, if that value is a signaling NaN) may be
-     produced as output.
-
- -- Function: double getpayload (const double *X)
- -- Function: float getpayloadf (const float *X)
- -- Function: long double getpayloadl (const long double *X)
- -- Function: _FloatN getpayloadfN (const _FloatN *X)
- -- Function: _FloatNx getpayloadfNx (const _FloatNx *X)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     IEEE 754 defines the "payload" of a NaN to be an integer value
-     encoded in the representation of the NaN.  Payloads are typically
-     propagated from NaN inputs to the result of a floating-point
-     operation.  These functions, defined by TS 18661-1:2014 and TS
-     18661-3:2015, return the payload of the NaN pointed to by X
-     (returned as a positive integer, or positive zero, represented as a
-     floating-point number); if X is not a NaN, they return an
-     unspecified value.  They raise no floating-point exceptions even
-     for signaling NaNs.
-
- -- Function: int setpayload (double *X, double PAYLOAD)
- -- Function: int setpayloadf (float *X, float PAYLOAD)
- -- Function: int setpayloadl (long double *X, long double PAYLOAD)
- -- Function: int setpayloadfN (_FloatN *X, _FloatN PAYLOAD)
- -- Function: int setpayloadfNx (_FloatNx *X, _FloatNx PAYLOAD)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     These functions, defined by TS 18661-1:2014 and TS 18661-3:2015,
-     set the object pointed to by X to a quiet NaN with payload PAYLOAD
-     and a zero sign bit and return zero.  If PAYLOAD is not a
-     positive-signed integer that is a valid payload for a quiet NaN of
-     the given type, the object pointed to by X is set to positive zero
-     and a nonzero value is returned.  They raise no floating-point
-     exceptions.
-
- -- Function: int setpayloadsig (double *X, double PAYLOAD)
- -- Function: int setpayloadsigf (float *X, float PAYLOAD)
- -- Function: int setpayloadsigl (long double *X, long double PAYLOAD)
- -- Function: int setpayloadsigfN (_FloatN *X, _FloatN PAYLOAD)
- -- Function: int setpayloadsigfNx (_FloatNx *X, _FloatNx PAYLOAD)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     These functions, defined by TS 18661-1:2014 and TS 18661-3:2015,
-     set the object pointed to by X to a signaling NaN with payload
-     PAYLOAD and a zero sign bit and return zero.  If PAYLOAD is not a
-     positive-signed integer that is a valid payload for a signaling
-     NaN of the given type, the object pointed to by X is set to
-     positive zero and a nonzero value is returned.  They raise no
-     floating-point exceptions.
 

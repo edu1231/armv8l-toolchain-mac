@@ -39,7 +39,6 @@ START-INFO-DIR-ENTRY
 * CS8: (libc)Control Modes.
 * CSIZE: (libc)Control Modes.
 * CSTOPB: (libc)Control Modes.
-* DES_FAILED: (libc)DES Encryption.
 * DTTOIF: (libc)Directory Entries.
 * E2BIG: (libc)Error Codes.
 * EACCES: (libc)Error Codes.
@@ -309,6 +308,7 @@ START-INFO-DIR-ENTRY
 * O_READ: (libc)Access Modes.
 * O_SHLOCK: (libc)Open-time Flags.
 * O_SYNC: (libc)Operating Modes.
+* O_TMPFILE: (libc)Open-time Flags.
 * O_TRUNC: (libc)Open-time Flags.
 * O_WRITE: (libc)Access Modes.
 * O_WRONLY: (libc)Access Modes.
@@ -472,6 +472,7 @@ START-INFO-DIR-ENTRY
 * __ppc_set_ppr_med_low: (libc)PowerPC.
 * __ppc_set_ppr_very_low: (libc)PowerPC.
 * __ppc_yield: (libc)PowerPC.
+* __riscv_flush_icache: (libc)RISC-V.
 * __va_copy: (libc)Argument Macros.
 * _exit: (libc)Termination Internals.
 * _flushlbf: (libc)Flushing Buffers.
@@ -598,6 +599,7 @@ START-INFO-DIR-ENTRY
 * cacoshfNx: (libc)Hyperbolic Functions.
 * cacoshl: (libc)Hyperbolic Functions.
 * cacosl: (libc)Inverse Trig Functions.
+* call_once: (libc)Call Once.
 * calloc: (libc)Allocating Cleared Space.
 * canonicalize: (libc)FP Bit Twiddling.
 * canonicalize_file_name: (libc)Symbolic Links.
@@ -633,7 +635,6 @@ START-INFO-DIR-ENTRY
 * catclose: (libc)The catgets Functions.
 * catgets: (libc)The catgets Functions.
 * catopen: (libc)The catgets Functions.
-* cbc_crypt: (libc)DES Encryption.
 * cbrt: (libc)Exponents and Logarithms.
 * cbrtf: (libc)Exponents and Logarithms.
 * cbrtfN: (libc)Exponents and Logarithms.
@@ -690,6 +691,12 @@ START-INFO-DIR-ENTRY
 * close: (libc)Opening and Closing Files.
 * closedir: (libc)Reading/Closing Directory.
 * closelog: (libc)closelog.
+* cnd_broadcast: (libc)ISO C Condition Variables.
+* cnd_destroy: (libc)ISO C Condition Variables.
+* cnd_init: (libc)ISO C Condition Variables.
+* cnd_signal: (libc)ISO C Condition Variables.
+* cnd_timedwait: (libc)ISO C Condition Variables.
+* cnd_wait: (libc)ISO C Condition Variables.
 * confstr: (libc)String Parameters.
 * conj: (libc)Operations on Complex.
 * conjf: (libc)Operations on Complex.
@@ -697,6 +704,7 @@ START-INFO-DIR-ENTRY
 * conjfNx: (libc)Operations on Complex.
 * conjl: (libc)Operations on Complex.
 * connect: (libc)Connecting.
+* copy_file_range: (libc)Copying File Data.
 * copysign: (libc)FP Bit Twiddling.
 * copysignf: (libc)FP Bit Twiddling.
 * copysignfN: (libc)FP Bit Twiddling.
@@ -729,8 +737,8 @@ START-INFO-DIR-ENTRY
 * creall: (libc)Operations on Complex.
 * creat64: (libc)Opening and Closing Files.
 * creat: (libc)Opening and Closing Files.
-* crypt: (libc)crypt.
-* crypt_r: (libc)crypt.
+* crypt: (libc)Passphrase Storage.
+* crypt_r: (libc)Passphrase Storage.
 * csin: (libc)Trig Functions.
 * csinf: (libc)Trig Functions.
 * csinfN: (libc)Trig Functions.
@@ -760,27 +768,27 @@ START-INFO-DIR-ENTRY
 * ctime: (libc)Formatting Calendar Time.
 * ctime_r: (libc)Formatting Calendar Time.
 * cuserid: (libc)Who Logged In.
+* daddl: (libc)Misc FP Arithmetic.
 * dcgettext: (libc)Translation with gettext.
 * dcngettext: (libc)Advanced gettext functions.
-* des_setparity: (libc)DES Encryption.
+* ddivl: (libc)Misc FP Arithmetic.
 * dgettext: (libc)Translation with gettext.
 * difftime: (libc)Elapsed Time.
 * dirfd: (libc)Opening a Directory.
 * dirname: (libc)Finding Tokens in a String.
 * div: (libc)Integer Division.
+* dmull: (libc)Misc FP Arithmetic.
 * dngettext: (libc)Advanced gettext functions.
 * drand48: (libc)SVID Random.
 * drand48_r: (libc)SVID Random.
 * drem: (libc)Remainder Functions.
 * dremf: (libc)Remainder Functions.
 * dreml: (libc)Remainder Functions.
+* dsubl: (libc)Misc FP Arithmetic.
 * dup2: (libc)Duplicating Descriptors.
 * dup: (libc)Duplicating Descriptors.
-* ecb_crypt: (libc)DES Encryption.
 * ecvt: (libc)System V Number Conversion.
 * ecvt_r: (libc)System V Number Conversion.
-* encrypt: (libc)DES Encryption.
-* encrypt_r: (libc)DES Encryption.
 * endfsent: (libc)fstab.
 * endgrent: (libc)Scanning All Groups.
 * endhostent: (libc)Host Names.
@@ -843,11 +851,29 @@ START-INFO-DIR-ENTRY
 * expm1fN: (libc)Exponents and Logarithms.
 * expm1fNx: (libc)Exponents and Logarithms.
 * expm1l: (libc)Exponents and Logarithms.
+* fMaddfN: (libc)Misc FP Arithmetic.
+* fMaddfNx: (libc)Misc FP Arithmetic.
+* fMdivfN: (libc)Misc FP Arithmetic.
+* fMdivfNx: (libc)Misc FP Arithmetic.
+* fMmulfN: (libc)Misc FP Arithmetic.
+* fMmulfNx: (libc)Misc FP Arithmetic.
+* fMsubfN: (libc)Misc FP Arithmetic.
+* fMsubfNx: (libc)Misc FP Arithmetic.
+* fMxaddfN: (libc)Misc FP Arithmetic.
+* fMxaddfNx: (libc)Misc FP Arithmetic.
+* fMxdivfN: (libc)Misc FP Arithmetic.
+* fMxdivfNx: (libc)Misc FP Arithmetic.
+* fMxmulfN: (libc)Misc FP Arithmetic.
+* fMxmulfNx: (libc)Misc FP Arithmetic.
+* fMxsubfN: (libc)Misc FP Arithmetic.
+* fMxsubfNx: (libc)Misc FP Arithmetic.
 * fabs: (libc)Absolute Value.
 * fabsf: (libc)Absolute Value.
 * fabsfN: (libc)Absolute Value.
 * fabsfNx: (libc)Absolute Value.
 * fabsl: (libc)Absolute Value.
+* fadd: (libc)Misc FP Arithmetic.
+* faddl: (libc)Misc FP Arithmetic.
 * fchdir: (libc)Working Directory.
 * fchmod: (libc)Setting Permissions.
 * fchown: (libc)File Owner.
@@ -862,6 +888,8 @@ START-INFO-DIR-ENTRY
 * fdimfN: (libc)Misc FP Arithmetic.
 * fdimfNx: (libc)Misc FP Arithmetic.
 * fdiml: (libc)Misc FP Arithmetic.
+* fdiv: (libc)Misc FP Arithmetic.
+* fdivl: (libc)Misc FP Arithmetic.
 * fdopen: (libc)Descriptors and Streams.
 * fdopendir: (libc)Opening a Directory.
 * feclearexcept: (libc)Status bit operations.
@@ -945,6 +973,8 @@ START-INFO-DIR-ENTRY
 * fmodfNx: (libc)Remainder Functions.
 * fmodl: (libc)Remainder Functions.
 * fmtmsg: (libc)Printing Formatted Messages.
+* fmul: (libc)Misc FP Arithmetic.
+* fmull: (libc)Misc FP Arithmetic.
 * fnmatch: (libc)Wildcard Matching.
 * fopen64: (libc)Opening Streams.
 * fopen: (libc)Opening Streams.
@@ -990,6 +1020,8 @@ START-INFO-DIR-ENTRY
 * fsetpos: (libc)Portable Positioning.
 * fstat64: (libc)Reading Attributes.
 * fstat: (libc)Reading Attributes.
+* fsub: (libc)Misc FP Arithmetic.
+* fsubl: (libc)Misc FP Arithmetic.
 * fsync: (libc)Synchronizing I/O.
 * ftell: (libc)File Positioning.
 * ftello64: (libc)File Positioning.
@@ -1263,6 +1295,7 @@ START-INFO-DIR-ENTRY
 * lgammal: (libc)Special Functions.
 * lgammal_r: (libc)Special Functions.
 * link: (libc)Hard Links.
+* linkat: (libc)Hard Links.
 * lio_listio64: (libc)Asynchronous Reads/Writes.
 * lio_listio: (libc)Asynchronous Reads/Writes.
 * listen: (libc)Listening.
@@ -1353,7 +1386,8 @@ START-INFO-DIR-ENTRY
 * memchr: (libc)Search Functions.
 * memcmp: (libc)String/Array Comparison.
 * memcpy: (libc)Copying Strings and Arrays.
-* memfrob: (libc)Trivial Encryption.
+* memfd_create: (libc)Memory-mapped I/O.
+* memfrob: (libc)Obfuscating Data.
 * memmem: (libc)Search Functions.
 * memmove: (libc)Copying Strings and Arrays.
 * mempcpy: (libc)Copying Strings and Arrays.
@@ -1366,6 +1400,7 @@ START-INFO-DIR-ENTRY
 * mkstemp: (libc)Temporary Files.
 * mktemp: (libc)Temporary Files.
 * mktime: (libc)Broken-down Time.
+* mlock2: (libc)Page Lock Functions.
 * mlock: (libc)Page Lock Functions.
 * mlockall: (libc)Page Lock Functions.
 * mmap64: (libc)Memory-mapped I/O.
@@ -1377,11 +1412,18 @@ START-INFO-DIR-ENTRY
 * modfl: (libc)Rounding Functions.
 * mount: (libc)Mount-Unmount-Remount.
 * mprobe: (libc)Heap Consistency Checking.
+* mprotect: (libc)Memory Protection.
 * mrand48: (libc)SVID Random.
 * mrand48_r: (libc)SVID Random.
 * mremap: (libc)Memory-mapped I/O.
 * msync: (libc)Memory-mapped I/O.
 * mtrace: (libc)Tracing malloc.
+* mtx_destroy: (libc)ISO C Mutexes.
+* mtx_init: (libc)ISO C Mutexes.
+* mtx_lock: (libc)ISO C Mutexes.
+* mtx_timedlock: (libc)ISO C Mutexes.
+* mtx_trylock: (libc)ISO C Mutexes.
+* mtx_unlock: (libc)ISO C Mutexes.
 * munlock: (libc)Page Lock Functions.
 * munlockall: (libc)Page Lock Functions.
 * munmap: (libc)Memory-mapped I/O.
@@ -1465,13 +1507,15 @@ START-INFO-DIR-ENTRY
 * pclose: (libc)Pipe to a Subprocess.
 * perror: (libc)Error Messages.
 * pipe: (libc)Creating a Pipe.
+* pkey_alloc: (libc)Memory Protection.
+* pkey_free: (libc)Memory Protection.
+* pkey_get: (libc)Memory Protection.
+* pkey_mprotect: (libc)Memory Protection.
+* pkey_set: (libc)Memory Protection.
 * popen: (libc)Pipe to a Subprocess.
 * posix_fallocate64: (libc)Storage Allocation.
 * posix_fallocate: (libc)Storage Allocation.
 * posix_memalign: (libc)Aligned Memory Blocks.
-* pow10: (libc)Exponents and Logarithms.
-* pow10f: (libc)Exponents and Logarithms.
-* pow10l: (libc)Exponents and Logarithms.
 * pow: (libc)Exponents and Logarithms.
 * powf: (libc)Exponents and Logarithms.
 * powfN: (libc)Exponents and Logarithms.
@@ -1479,10 +1523,10 @@ START-INFO-DIR-ENTRY
 * powl: (libc)Exponents and Logarithms.
 * pread64: (libc)I/O Primitives.
 * pread: (libc)I/O Primitives.
-* preadv2: (libc)I/O Primitives.
-* preadv64: (libc)I/O Primitives.
-* preadv64v2: (libc)I/O Primitives.
-* preadv: (libc)I/O Primitives.
+* preadv2: (libc)Scatter-Gather.
+* preadv64: (libc)Scatter-Gather.
+* preadv64v2: (libc)Scatter-Gather.
+* preadv: (libc)Scatter-Gather.
 * printf: (libc)Formatted Output Functions.
 * printf_size: (libc)Predefined Printf Handlers.
 * printf_size_info: (libc)Predefined Printf Handlers.
@@ -1511,10 +1555,10 @@ START-INFO-DIR-ENTRY
 * putwchar_unlocked: (libc)Simple Output.
 * pwrite64: (libc)I/O Primitives.
 * pwrite: (libc)I/O Primitives.
-* pwritev2: (libc)I/O Primitives.
-* pwritev64: (libc)I/O Primitives.
-* pwritev64v2: (libc)I/O Primitives.
-* pwritev: (libc)I/O Primitives.
+* pwritev2: (libc)Scatter-Gather.
+* pwritev64: (libc)Scatter-Gather.
+* pwritev64v2: (libc)Scatter-Gather.
+* pwritev: (libc)Scatter-Gather.
 * qecvt: (libc)System V Number Conversion.
 * qecvt_r: (libc)System V Number Conversion.
 * qfcvt: (libc)System V Number Conversion.
@@ -1637,8 +1681,6 @@ START-INFO-DIR-ENTRY
 * sethostname: (libc)Host Identification.
 * setitimer: (libc)Setting an Alarm.
 * setjmp: (libc)Non-Local Details.
-* setkey: (libc)DES Encryption.
-* setkey_r: (libc)DES Encryption.
 * setlinebuf: (libc)Controlling Buffering.
 * setlocale: (libc)Setting the Locale.
 * setlogmask: (libc)setlogmask.
@@ -1756,7 +1798,7 @@ START-INFO-DIR-ENTRY
 * strfromfN: (libc)Printing of Floats.
 * strfromfNx: (libc)Printing of Floats.
 * strfroml: (libc)Printing of Floats.
-* strfry: (libc)strfry.
+* strfry: (libc)Shuffling Bytes.
 * strftime: (libc)Formatting Calendar Time.
 * strlen: (libc)String Length.
 * strncasecmp: (libc)String/Array Comparison.
@@ -1832,6 +1874,14 @@ START-INFO-DIR-ENTRY
 * tgammafN: (libc)Special Functions.
 * tgammafNx: (libc)Special Functions.
 * tgammal: (libc)Special Functions.
+* thrd_create: (libc)ISO C Thread Management.
+* thrd_current: (libc)ISO C Thread Management.
+* thrd_detach: (libc)ISO C Thread Management.
+* thrd_equal: (libc)ISO C Thread Management.
+* thrd_exit: (libc)ISO C Thread Management.
+* thrd_join: (libc)ISO C Thread Management.
+* thrd_sleep: (libc)ISO C Thread Management.
+* thrd_yield: (libc)ISO C Thread Management.
 * time: (libc)Simple Calendar Time.
 * timegm: (libc)Broken-down Time.
 * timelocal: (libc)Broken-down Time.
@@ -1864,6 +1914,10 @@ START-INFO-DIR-ENTRY
 * truncfNx: (libc)Rounding Functions.
 * truncl: (libc)Rounding Functions.
 * tsearch: (libc)Tree Search Function.
+* tss_create: (libc)ISO C Thread-local Storage.
+* tss_delete: (libc)ISO C Thread-local Storage.
+* tss_get: (libc)ISO C Thread-local Storage.
+* tss_set: (libc)ISO C Thread-local Storage.
 * ttyname: (libc)Is It a Terminal.
 * ttyname_r: (libc)Is It a Terminal.
 * twalk: (libc)Tree Search Function.
@@ -2005,10 +2059,10 @@ END-INFO-DIR-ENTRY
 
    This file documents the GNU C Library.
 
-   This is `The GNU C Library Reference Manual', for version 2.26
-(crosstool-NG 1.23.0.420-201f).
+   This is `The GNU C Library Reference Manual', for version 2.28
+(crosstool-NG 1.23.0.513-84e6).
 
-   Copyright (C) 1993-2017 Free Software Foundation, Inc.
+   Copyright (C) 1993-2018 Free Software Foundation, Inc.
 
    Permission is granted to copy, distribute and/or modify this document
 under the terms of the GNU Free Documentation License, Version
@@ -2022,6 +2076,1073 @@ Free Documentation License".
    (a) The FSF's Back-Cover Text is: "You have the freedom to copy and
 modify this GNU manual.  Buying copies from the FSF supports it in
 developing GNU and promoting software freedom."
+
+
+File: libc.info,  Node: Terminal Access Functions,  Prev: Process Group Functions,  Up: Functions for Job Control
+
+28.7.3 Functions for Controlling Terminal Access
+------------------------------------------------
+
+These are the functions for reading or setting the foreground process
+group of a terminal.  You should include the header files `sys/types.h'
+and `unistd.h' in your application to use these functions.  
+
+   Although these functions take a file descriptor argument to specify
+the terminal device, the foreground job is associated with the terminal
+file itself and not a particular open file descriptor.
+
+ -- Function: pid_t tcgetpgrp (int FILEDES)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This function returns the process group ID of the foreground
+     process group associated with the terminal open on descriptor
+     FILEDES.
+
+     If there is no foreground process group, the return value is a
+     number greater than `1' that does not match the process group ID
+     of any existing process group.  This can happen if all of the
+     processes in the job that was formerly the foreground job have
+     terminated, and no other job has yet been moved into the
+     foreground.
+
+     In case of an error, a value of `-1' is returned.  The following
+     `errno' error conditions are defined for this function:
+
+    `EBADF'
+          The FILEDES argument is not a valid file descriptor.
+
+    `ENOSYS'
+          The system doesn't support job control.
+
+    `ENOTTY'
+          The terminal file associated with the FILEDES argument isn't
+          the controlling terminal of the calling process.
+
+ -- Function: int tcsetpgrp (int FILEDES, pid_t PGID)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This function is used to set a terminal's foreground process group
+     ID.  The argument FILEDES is a descriptor which specifies the
+     terminal; PGID specifies the process group.  The calling process
+     must be a member of the same session as PGID and must have the same
+     controlling terminal.
+
+     For terminal access purposes, this function is treated as output.
+     If it is called from a background process on its controlling
+     terminal, normally all processes in the process group are sent a
+     `SIGTTOU' signal.  The exception is if the calling process itself
+     is ignoring or blocking `SIGTTOU' signals, in which case the
+     operation is performed and no signal is sent.
+
+     If successful, `tcsetpgrp' returns `0'.  A return value of `-1'
+     indicates an error.  The following `errno' error conditions are
+     defined for this function:
+
+    `EBADF'
+          The FILEDES argument is not a valid file descriptor.
+
+    `EINVAL'
+          The PGID argument is not valid.
+
+    `ENOSYS'
+          The system doesn't support job control.
+
+    `ENOTTY'
+          The FILEDES isn't the controlling terminal of the calling
+          process.
+
+    `EPERM'
+          The PGID isn't a process group in the same session as the
+          calling process.
+
+ -- Function: pid_t tcgetsid (int FILDES)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This function is used to obtain the process group ID of the session
+     for which the terminal specified by FILDES is the controlling
+     terminal.  If the call is successful the group ID is returned.
+     Otherwise the return value is `(pid_t) -1' and the global variable
+     ERRNO is set to the following value:
+    `EBADF'
+          The FILEDES argument is not a valid file descriptor.
+
+    `ENOTTY'
+          The calling process does not have a controlling terminal, or
+          the file is not the controlling terminal.
+
+
+File: libc.info,  Node: Name Service Switch,  Next: Users and Groups,  Prev: Job Control,  Up: Top
+
+29 System Databases and Name Service Switch
+*******************************************
+
+Various functions in the C Library need to be configured to work
+correctly in the local environment.  Traditionally, this was done by
+using files (e.g., `/etc/passwd'), but other nameservices (like the
+Network Information Service (NIS) and the Domain Name Service (DNS))
+became popular, and were hacked into the C library, usually with a fixed
+search order.
+
+   The GNU C Library contains a cleaner solution to this problem.  It is
+designed after a method used by Sun Microsystems in the C library of
+Solaris 2.  The GNU C Library follows their name and calls this scheme
+"Name Service Switch" (NSS).
+
+   Though the interface might be similar to Sun's version there is no
+common code.  We never saw any source code of Sun's implementation and
+so the internal interface is incompatible.  This also manifests in the
+file names we use as we will see later.
+
+* Menu:
+
+* NSS Basics::                  What is this NSS good for.
+* NSS Configuration File::      Configuring NSS.
+* NSS Module Internals::        How does it work internally.
+* Extending NSS::               What to do to add services or databases.
+
+
+File: libc.info,  Node: NSS Basics,  Next: NSS Configuration File,  Prev: Name Service Switch,  Up: Name Service Switch
+
+29.1 NSS Basics
+===============
+
+The basic idea is to put the implementation of the different services
+offered to access the databases in separate modules.  This has some
+advantages:
+
+  1. Contributors can add new services without adding them to the GNU C
+     Library.
+
+  2. The modules can be updated separately.
+
+  3. The C library image is smaller.
+
+   To fulfill the first goal above, the ABI of the modules will be
+described below.  For getting the implementation of a new service right
+it is important to understand how the functions in the modules get
+called.  They are in no way designed to be used by the programmer
+directly.  Instead the programmer should only use the documented and
+standardized functions to access the databases.
+
+The databases available in the NSS are
+
+`aliases'
+     Mail aliases
+
+`ethers'
+     Ethernet numbers,
+
+`group'
+     Groups of users, *note Group Database::.
+
+`hosts'
+     Host names and numbers, *note Host Names::.
+
+`netgroup'
+     Network wide list of host and users, *note Netgroup Database::.
+
+`networks'
+     Network names and numbers, *note Networks Database::.
+
+`protocols'
+     Network protocols, *note Protocols Database::.
+
+`passwd'
+     User identities, *note User Database::.
+
+`rpc'
+     Remote procedure call names and numbers.
+
+`services'
+     Network services, *note Services Database::.
+
+`shadow'
+     User passphrase hashes and related information.
+
+There will be some more added later (`automount', `bootparams',
+`netmasks', and `publickey').
+
+
+File: libc.info,  Node: NSS Configuration File,  Next: NSS Module Internals,  Prev: NSS Basics,  Up: Name Service Switch
+
+29.2 The NSS Configuration File
+===============================
+
+Somehow the NSS code must be told about the wishes of the user.  For
+this reason there is the file `/etc/nsswitch.conf'.  For each database,
+this file contains a specification of how the lookup process should
+work.  The file could look like this:
+
+     # /etc/nsswitch.conf
+     #
+     # Name Service Switch configuration file.
+     #
+
+     passwd:     db files nis
+     shadow:     files
+     group:      db files nis
+
+     hosts:      files nisplus nis dns
+     networks:   nisplus [NOTFOUND=return] files
+
+     ethers:     nisplus [NOTFOUND=return] db files
+     protocols:  nisplus [NOTFOUND=return] db files
+     rpc:        nisplus [NOTFOUND=return] db files
+     services:   nisplus [NOTFOUND=return] db files
+
+   The first column is the database as you can guess from the table
+above.  The rest of the line specifies how the lookup process works.
+Please note that you specify the way it works for each database
+individually.  This cannot be done with the old way of a monolithic
+implementation.
+
+   The configuration specification for each database can contain two
+different items:
+
+   * the service specification like `files', `db', or `nis'.
+
+   * the reaction on lookup result like `[NOTFOUND=return]'.
+
+* Menu:
+
+* Services in the NSS configuration::  Service names in the NSS configuration.
+* Actions in the NSS configuration::  React appropriately to the lookup result.
+* Notes on NSS Configuration File::  Things to take care about while
+                                     configuring NSS.
+
+
+File: libc.info,  Node: Services in the NSS configuration,  Next: Actions in the NSS configuration,  Prev: NSS Configuration File,  Up: NSS Configuration File
+
+29.2.1 Services in the NSS configuration File
+---------------------------------------------
+
+The above example file mentions five different services: `files', `db',
+`dns', `nis', and `nisplus'.  This does not mean these services are
+available on all sites and neither does it mean these are all the
+services which will ever be available.
+
+   In fact, these names are simply strings which the NSS code uses to
+find the implicitly addressed functions.  The internal interface will be
+described later.  Visible to the user are the modules which implement an
+individual service.
+
+   Assume the service NAME shall be used for a lookup.  The code for
+this service is implemented in a module called `libnss_NAME'.  On a
+system supporting shared libraries this is in fact a shared library
+with the name (for example) `libnss_NAME.so.2'.  The number at the end
+is the currently used version of the interface which will not change
+frequently.  Normally the user should not have to be cognizant of these
+files since they should be placed in a directory where they are found
+automatically.  Only the names of all available services are important.
+
+
+File: libc.info,  Node: Actions in the NSS configuration,  Next: Notes on NSS Configuration File,  Prev: Services in the NSS configuration,  Up: NSS Configuration File
+
+29.2.2 Actions in the NSS configuration
+---------------------------------------
+
+The second item in the specification gives the user much finer control
+on the lookup process.  Action items are placed between two service
+names and are written within brackets.  The general form is
+
+     `[' ( `!'? STATUS `=' ACTION )+ `]'
+
+where
+
+     STATUS => success | notfound | unavail | tryagain
+     ACTION => return | continue
+
+   The case of the keywords is insignificant.  The STATUS values are
+the results of a call to a lookup function of a specific service.  They
+mean:
+
+`success'
+     No error occurred and the wanted entry is returned.  The default
+     action for this is `return'.
+
+`notfound'
+     The lookup process works ok but the needed value was not found.
+     The default action is `continue'.
+
+`unavail'
+     The service is permanently unavailable.  This can either mean the
+     needed file is not available, or, for DNS, the server is not
+     available or does not allow queries.  The default action is
+     `continue'.
+
+`tryagain'
+     The service is temporarily unavailable.  This could mean a file is
+     locked or a server currently cannot accept more connections.  The
+     default action is `continue'.
+
+The ACTION values mean:
+
+`return'
+     If the status matches, stop the lookup process at this service
+     specification.  If an entry is available, provide it to the
+     application.  If an error occurred, report it to the application.
+     In case of a prior `merge' action, the data is combined with
+     previous lookup results, as explained below.
+
+`continue'
+     If the status matches, proceed with the lookup process at the next
+     entry, discarding the result of the current lookup (and any merged
+     data).  An exception is the `initgroups' database and the
+     `success' status, where `continue' acts like `merge' below.
+
+`merge'
+     Proceed with the lookup process, retaining the current lookup
+     result.  This action is useful only with the `success' status.  If
+     a subsequent service lookup succeeds and has a matching `return'
+     specification, the results are merged, the lookup process ends,
+     and the merged results are returned to the application.  If the
+     following service has a matching `merge' action, the lookup
+     process continues, retaining the combined data from this and any
+     previous lookups.
+
+     After a `merge' action, errors from subsequent lookups are ignored,
+     and the data gathered so far will be returned.
+
+     The `merge' only applies to the `success' status.  It is currently
+     implemented for the `group' database and its group members field,
+     `gr_mem'.  If specified for other databases, it causes the lookup
+     to fail (if the STATUS matches).
+
+     When processing `merge' for `group' membership, the group GID and
+     name must be identical for both entries.  If only one or the other
+     is a match, the behavior is undefined.
+
+
+If we have a line like
+
+     ethers: nisplus [NOTFOUND=return] db files
+
+this is equivalent to
+
+     ethers: nisplus [SUCCESS=return NOTFOUND=return UNAVAIL=continue
+                      TRYAGAIN=continue]
+             db      [SUCCESS=return NOTFOUND=continue UNAVAIL=continue
+                      TRYAGAIN=continue]
+             files
+
+(except that it would have to be written on one line).  The default
+value for the actions are normally what you want, and only need to be
+changed in exceptional cases.
+
+   If the optional `!' is placed before the STATUS this means the
+following action is used for all statuses but STATUS itself.  I.e., `!'
+is negation as in the C language (and others).
+
+   Before we explain the exception which makes this action item
+necessary one more remark: obviously it makes no sense to add another
+action item after the `files' service.  Since there is no other service
+following the action _always_ is `return'.
+
+   Now, why is this `[NOTFOUND=return]' action useful?  To understand
+this we should know that the `nisplus' service is often complete; i.e.,
+if an entry is not available in the NIS+ tables it is not available
+anywhere else.  This is what is expressed by this action item: it is
+useless to examine further services since they will not give us a
+result.
+
+   The situation would be different if the NIS+ service is not available
+because the machine is booting.  In this case the return value of the
+lookup function is not `notfound' but instead `unavail'.  And as you
+can see in the complete form above: in this situation the `db' and
+`files' services are used.  Neat, isn't it?  The system administrator
+need not pay special care for the time the system is not completely
+ready to work (while booting or shutdown or network problems).
+
+
+File: libc.info,  Node: Notes on NSS Configuration File,  Prev: Actions in the NSS configuration,  Up: NSS Configuration File
+
+29.2.3 Notes on the NSS Configuration File
+------------------------------------------
+
+Finally a few more hints.  The NSS implementation is not completely
+helpless if `/etc/nsswitch.conf' does not exist.  For all supported
+databases there is a default value so it should normally be possible to
+get the system running even if the file is corrupted or missing.
+
+   For the `hosts' and `networks' databases the default value is `dns
+[!UNAVAIL=return] files'.  I.e., the system is prepared for the DNS
+service not to be available but if it is available the answer it
+returns is definitive.
+
+   The `passwd', `group', and `shadow' databases are traditionally
+handled in a special way.  The appropriate files in the `/etc'
+directory are read but if an entry with a name starting with a `+'
+character is found NIS is used.  This kind of lookup remains possible
+if the GNU C Library was configured with the `--enable-obsolete-nsl'
+option and the special lookup service `compat' is used.  If the GNU C
+Library was configured with the `--enable-obsolete-nsl' option the
+default value for the three databases above is `compat
+[NOTFOUND=return] files'.  If the `--enable-obsolete-nsl' option was
+not used the default value for the services is `files'.
+
+   For all other databases the default value is `files' unless the GNU
+C Library was configured with `--enable-obsolete-rpc' option, in which
+case it the default value is `nis [NOTFOUND=return] files'.
+
+   A second point is that the user should try to optimize the lookup
+process.  The different service have different response times.  A
+simple file look up on a local file could be fast, but if the file is
+long and the needed entry is near the end of the file this may take
+quite some time.  In this case it might be better to use the `db'
+service which allows fast local access to large data sets.
+
+   Often the situation is that some global information like NIS must be
+used.  So it is unavoidable to use service entries like `nis' etc.  But
+one should avoid slow services like this if possible.
+
+
+File: libc.info,  Node: NSS Module Internals,  Next: Extending NSS,  Prev: NSS Configuration File,  Up: Name Service Switch
+
+29.3 NSS Module Internals
+=========================
+
+Now it is time to describe what the modules look like.  The functions
+contained in a module are identified by their names.  I.e., there is no
+jump table or the like.  How this is done is of no interest here; those
+interested in this topic should read about Dynamic Linking.
+
+* Menu:
+
+* NSS Module Names::            Construction of the interface function of
+                                the NSS modules.
+* NSS Modules Interface::       Programming interface in the NSS module
+                                functions.
+
+
+File: libc.info,  Node: NSS Module Names,  Next: NSS Modules Interface,  Prev: NSS Module Internals,  Up: NSS Module Internals
+
+29.3.1 The Naming Scheme of the NSS Modules
+-------------------------------------------
+
+The name of each function consists of various parts:
+
+            _nss_SERVICE_FUNCTION
+
+   SERVICE of course corresponds to the name of the module this
+function is found in.(1)  The FUNCTION part is derived from the
+interface function in the C library itself.  If the user calls the
+function `gethostbyname' and the service used is `files' the function
+
+            _nss_files_gethostbyname_r
+
+in the module
+
+            libnss_files.so.2
+
+is used.  You see, what is explained above in not the whole truth.  In
+fact the NSS modules only contain reentrant versions of the lookup
+functions.  I.e., if the user would call the `gethostbyname_r' function
+this also would end in the above function.  For all user interface
+functions the C library maps this call to a call to the reentrant
+function.  For reentrant functions this is trivial since the interface
+is (nearly) the same.  For the non-reentrant version the library keeps
+internal buffers which are used to replace the user supplied buffer.
+
+   I.e., the reentrant functions _can_ have counterparts.  No service
+module is forced to have functions for all databases and all kinds to
+access them.  If a function is not available it is simply treated as if
+the function would return `unavail' (*note Actions in the NSS
+configuration::).
+
+   The file name `libnss_files.so.2' would be on a Solaris 2 system
+`nss_files.so.2'.  This is the difference mentioned above.  Sun's NSS
+modules are usable as modules which get indirectly loaded only.
+
+   The NSS modules in the GNU C Library are prepared to be used as
+normal libraries themselves.  This is _not_ true at the moment, though.
+However,  the organization of the name space in the modules does not
+make it impossible like it is for Solaris.  Now you can see why the
+modules are still libraries.(2)
+
+   ---------- Footnotes ----------
+
+   (1) Now you might ask why this information is duplicated.  The
+answer is that we want to make it possible to link directly with these
+shared objects.
+
+   (2) There is a second explanation: we were too lazy to change the
+Makefiles to allow the generation of shared objects not starting with
+`lib' but don't tell this to anybody.
+
+
+File: libc.info,  Node: NSS Modules Interface,  Prev: NSS Module Names,  Up: NSS Module Internals
+
+29.3.2 The Interface of the Function in NSS Modules
+---------------------------------------------------
+
+Now we know about the functions contained in the modules.  It is now
+time to describe the types.  When we mentioned the reentrant versions of
+the functions above, this means there are some additional arguments
+(compared with the standard, non-reentrant versions).  The prototypes
+for the non-reentrant and reentrant versions of our function above are:
+
+     struct hostent *gethostbyname (const char *name)
+
+     int gethostbyname_r (const char *name, struct hostent *result_buf,
+                          char *buf, size_t buflen, struct hostent **result,
+                          int *h_errnop)
+
+The actual prototype of the function in the NSS modules in this case is
+
+     enum nss_status _nss_files_gethostbyname_r (const char *name,
+                                                 struct hostent *result_buf,
+                                                 char *buf, size_t buflen,
+                                                 int *errnop, int *h_errnop)
+
+   I.e., the interface function is in fact the reentrant function with
+the change of the return value, the omission of the RESULT parameter,
+and the addition of the ERRNOP parameter.  While the user-level
+function returns a pointer to the result the reentrant function return
+an `enum nss_status' value:
+
+`NSS_STATUS_TRYAGAIN'
+     numeric value `-2'
+
+`NSS_STATUS_UNAVAIL'
+     numeric value `-1'
+
+`NSS_STATUS_NOTFOUND'
+     numeric value `0'
+
+`NSS_STATUS_SUCCESS'
+     numeric value `1'
+
+Now you see where the action items of the `/etc/nsswitch.conf' file are
+used.
+
+   If you study the source code you will find there is a fifth value:
+`NSS_STATUS_RETURN'.  This is an internal use only value, used by a few
+functions in places where none of the above value can be used.  If
+necessary the source code should be examined to learn about the details.
+
+   In case the interface function has to return an error it is important
+that the correct error code is stored in `*ERRNOP'.  Some return status
+values have only one associated error code, others have more.
+
+`NSS_STATUS_TRYAGAIN'   `EAGAIN'      One of the functions used ran
+                                      temporarily out of resources or a
+                                      service is currently not available.
+                       `ERANGE'       The provided buffer is not large
+                                      enough.  The function should be
+                                      called again with a larger buffer.
+`NSS_STATUS_UNAVAIL'    `ENOENT'      A necessary input file cannot be
+                                      found.
+`NSS_STATUS_NOTFOUND'   `ENOENT'      The requested entry is not
+                                      available.
+`NSS_STATUS_NOTFOUND'   	`SUCCESS'    There are no entries.  Use this to
+                                      avoid returning errors for inactive
+                                      services which may be enabled at a
+                                      later time. This is not the same as
+                                      the service being temporarily
+                                      unavailable.
+
+   These are proposed values.  There can be other error codes and the
+described error codes can have different meaning.  *With one
+exception:* when returning `NSS_STATUS_TRYAGAIN' the error code
+`ERANGE' _must_ mean that the user provided buffer is too small.
+Everything else is non-critical.
+
+   In statically linked programs, the main application and NSS modules
+do not share the same thread-local variable `errno', which is the
+reason why there is an explicit ERRNOP function argument.
+
+   The above function has something special which is missing for almost
+all the other module functions.  There is an argument H_ERRNOP.  This
+points to a variable which will be filled with the error code in case
+the execution of the function fails for some reason.  (In statically
+linked programs, the thread-local variable `h_errno' is not shared with
+the main application.)
+
+   The `getXXXbyYYY' functions are the most important functions in the
+NSS modules.  But there are others which implement the other ways to
+access system databases (say for the user database, there are
+`setpwent', `getpwent', and `endpwent').  These will be described in
+more detail later.  Here we give a general way to determine the
+signature of the module function:
+
+   * the return value is `enum nss_status';
+
+   * the name (*note NSS Module Names::);
+
+   * the first arguments are identical to the arguments of the
+     non-reentrant function;
+
+   * the next four arguments are:
+
+    `STRUCT_TYPE *result_buf'
+          pointer to buffer where the result is stored.  `STRUCT_TYPE'
+          is normally a struct which corresponds to the database.
+
+    `char *buffer'
+          pointer to a buffer where the function can store additional
+          data for the result etc.
+
+    `size_t buflen'
+          length of the buffer pointed to by BUFFER.
+
+    `int *errnop'
+          the low-level error code to return to the application.  If
+          the return value is not `NSS_STATUS_SUCCESS', `*ERRNOP' needs
+          to be set to a non-zero value.  An NSS module should never set
+          `*ERRNOP' to zero.  The value `ERANGE' is special, as
+          described above.
+
+   * possibly a last argument H_ERRNOP, for the host name and network
+     name lookup functions.  If the return value is not
+     `NSS_STATUS_SUCCESS', `*H_ERRNOP' needs to be set to a non-zero
+     value.  A generic error code is `NETDB_INTERNAL', which instructs
+     the caller to examine `*ERRNOP' for further details.  (This
+     includes the `ERANGE' special case.)
+
+This table is correct for all functions but the `set...ent' and
+`end...ent' functions.
+
+
+File: libc.info,  Node: Extending NSS,  Prev: NSS Module Internals,  Up: Name Service Switch
+
+29.4 Extending NSS
+==================
+
+One of the advantages of NSS mentioned above is that it can be extended
+quite easily.  There are two ways in which the extension can happen:
+adding another database or adding another service.  The former is
+normally done only by the C library developers.  It is here only
+important to remember that adding another database is independent from
+adding another service because a service need not support all databases
+or lookup functions.
+
+   A designer/implementer of a new service is therefore free to choose
+the databases s/he is interested in and leave the rest for later (or
+completely aside).
+
+* Menu:
+
+* Adding another Service to NSS::  What is to do to add a new service.
+* NSS Module Function Internals::  Guidelines for writing new NSS
+                                        service functions.
+
+
+File: libc.info,  Node: Adding another Service to NSS,  Next: NSS Module Function Internals,  Prev: Extending NSS,  Up: Extending NSS
+
+29.4.1 Adding another Service to NSS
+------------------------------------
+
+The sources for a new service need not (and should not) be part of the
+GNU C Library itself.  The developer retains complete control over the
+sources and its development.  The links between the C library and the
+new service module consists solely of the interface functions.
+
+   Each module is designed following a specific interface specification.
+For now the version is 2 (the interface in version 1 was not adequate)
+and this manifests in the version number of the shared library object of
+the NSS modules: they have the extension `.2'.  If the interface
+changes again in an incompatible way, this number will be increased.
+Modules using the old interface will still be usable.
+
+   Developers of a new service will have to make sure that their module
+is created using the correct interface number.  This means the file
+itself must have the correct name and on ELF systems the "soname"
+(Shared Object Name) must also have this number.  Building a module
+from a bunch of object files on an ELF system using GNU CC could be
+done like this:
+
+     gcc -shared -o libnss_NAME.so.2 -Wl,-soname,libnss_NAME.so.2 OBJECTS
+
+*Note Options for Linking: (gcc)Link Options, to learn more about this
+command line.
+
+   To use the new module the library must be able to find it.  This can
+be achieved by using options for the dynamic linker so that it will
+search the directory where the binary is placed.  For an ELF system
+this could be done by adding the wanted directory to the value of
+`LD_LIBRARY_PATH'.
+
+   But this is not always possible since some programs (those which run
+under IDs which do not belong to the user) ignore this variable.
+Therefore the stable version of the module should be placed into a
+directory which is searched by the dynamic linker.  Normally this should
+be the directory `$prefix/lib', where `$prefix' corresponds to the
+value given to configure using the `--prefix' option.  But be careful:
+this should only be done if it is clear the module does not cause any
+harm.  System administrators should be careful.
+
+
+File: libc.info,  Node: NSS Module Function Internals,  Prev: Adding another Service to NSS,  Up: Extending NSS
+
+29.4.2 Internals of the NSS Module Functions
+--------------------------------------------
+
+Until now we only provided the syntactic interface for the functions in
+the NSS module.  In fact there is not much more we can say since the
+implementation obviously is different for each function.  But a few
+general rules must be followed by all functions.
+
+   In fact there are four kinds of different functions which may appear
+in the interface.  All derive from the traditional ones for system
+databases.  DB in the following table is normally an abbreviation for
+the database (e.g., it is `pw' for the user database).
+
+`enum nss_status _nss_DATABASE_setDBent (void)'
+     This function prepares the service for following operations.  For a
+     simple file based lookup this means files could be opened, for
+     other services this function simply is a noop.
+
+     One special case for this function is that it takes an additional
+     argument for some DATABASEs (i.e., the interface is `int setDBent
+     (int)').  *Note Host Names::, which describes the `sethostent'
+     function.
+
+     The return value should be NSS_STATUS_SUCCESS or according to the
+     table above in case of an error (*note NSS Modules Interface::).
+
+`enum nss_status _nss_DATABASE_endDBent (void)'
+     This function simply closes all files which are still open or
+     removes buffer caches.  If there are no files or buffers to remove
+     this is again a simple noop.
+
+     There normally is no return value other than NSS_STATUS_SUCCESS.
+
+`enum nss_status _nss_DATABASE_getDBent_r (STRUCTURE *result, char *buffer, size_t buflen, int *errnop)'
+     Since this function will be called several times in a row to
+     retrieve one entry after the other it must keep some kind of
+     state.  But this also means the functions are not really
+     reentrant.  They are reentrant only in that simultaneous calls to
+     this function will not try to write the retrieved data in the same
+     place (as it would be the case for the non-reentrant functions);
+     instead, it writes to the structure pointed to by the RESULT
+     parameter.  But the calls share a common state and in the case of
+     a file access this means they return neighboring entries in the
+     file.
+
+     The buffer of length BUFLEN pointed to by BUFFER can be used for
+     storing some additional data for the result.  It is _not_
+     guaranteed that the same buffer will be passed for the next call
+     of this function.  Therefore one must not misuse this buffer to
+     save some state information from one call to another.
+
+     Before the function returns with a failure code, the implementation
+     should store the value of the local ERRNO variable in the variable
+     pointed to be ERRNOP.  This is important to guarantee the module
+     working in statically linked programs.  The stored value must not
+     be zero.
+
+     As explained above this function could also have an additional last
+     argument.  This depends on the database used; it happens only for
+     `host' and `networks'.
+
+     The function shall return `NSS_STATUS_SUCCESS' as long as there are
+     more entries.  When the last entry was read it should return
+     `NSS_STATUS_NOTFOUND'.  When the buffer given as an argument is too
+     small for the data to be returned `NSS_STATUS_TRYAGAIN' should be
+     returned.  When the service was not formerly initialized by a call
+     to `_nss_DATABASE_setDBent' all return values allowed for this
+     function can also be returned here.
+
+`enum nss_status _nss_DATABASE_getDBbyXX_r (PARAMS, STRUCTURE *result, char *buffer, size_t buflen, int *errnop)'
+     This function shall return the entry from the database which is
+     addressed by the PARAMS.  The type and number of these arguments
+     vary.  It must be individually determined by looking to the
+     user-level interface functions.  All arguments given to the
+     non-reentrant version are here described by PARAMS.
+
+     The result must be stored in the structure pointed to by RESULT.
+     If there are additional data to return (say strings, where the
+     RESULT structure only contains pointers) the function must use the
+     BUFFER of length BUFLEN.  There must not be any references to
+     non-constant global data.
+
+     The implementation of this function should honor the STAYOPEN flag
+     set by the `setDBent' function whenever this makes sense.
+
+     Before the function returns, the implementation should store the
+     value of the local ERRNO variable in the variable pointed to by
+     ERRNOP.  This is important to guarantee the module works in
+     statically linked programs.
+
+     Again, this function takes an additional last argument for the
+     `host' and `networks' database.
+
+     The return value should as always follow the rules given above
+     (*note NSS Modules Interface::).
+
+
+
+File: libc.info,  Node: Users and Groups,  Next: System Management,  Prev: Name Service Switch,  Up: Top
+
+30 Users and Groups
+*******************
+
+Every user who can log in on the system is identified by a unique number
+called the "user ID".  Each process has an effective user ID which says
+which user's access permissions it has.
+
+   Users are classified into "groups" for access control purposes.  Each
+process has one or more "group ID values" which say which groups the
+process can use for access to files.
+
+   The effective user and group IDs of a process collectively form its
+"persona".  This determines which files the process can access.
+Normally, a process inherits its persona from the parent process, but
+under special circumstances a process can change its persona and thus
+change its access permissions.
+
+   Each file in the system also has a user ID and a group ID.  Access
+control works by comparing the user and group IDs of the file with those
+of the running process.
+
+   The system keeps a database of all the registered users, and another
+database of all the defined groups.  There are library functions you
+can use to examine these databases.
+
+* Menu:
+
+* User and Group IDs::          Each user has a unique numeric ID;
+				 likewise for groups.
+* Process Persona::             The user IDs and group IDs of a process.
+* Why Change Persona::          Why a program might need to change
+				 its user and/or group IDs.
+* How Change Persona::          Changing the user and group IDs.
+* Reading Persona::             How to examine the user and group IDs.
+
+* Setting User ID::             Functions for setting the user ID.
+* Setting Groups::              Functions for setting the group IDs.
+
+* Enable/Disable Setuid::       Turning setuid access on and off.
+* Setuid Program Example::      The pertinent parts of one sample program.
+* Tips for Setuid::             How to avoid granting unlimited access.
+
+* Who Logged In::               Getting the name of the user who logged in,
+				 or of the real user ID of the current process.
+
+* User Accounting Database::    Keeping information about users and various
+                                 actions in databases.
+
+* User Database::               Functions and data structures for
+                        	 accessing the user database.
+* Group Database::              Functions and data structures for
+                        	 accessing the group database.
+* Database Example::            Example program showing the use of database
+				 inquiry functions.
+* Netgroup Database::           Functions for accessing the netgroup database.
+
+
+File: libc.info,  Node: User and Group IDs,  Next: Process Persona,  Up: Users and Groups
+
+30.1 User and Group IDs
+=======================
+
+Each user account on a computer system is identified by a "user name"
+(or "login name") and "user ID".  Normally, each user name has a unique
+user ID, but it is possible for several login names to have the same
+user ID.  The user names and corresponding user IDs are stored in a
+data base which you can access as described in *Note User Database::.
+
+   Users are classified in "groups".  Each user name belongs to one
+"default group" and may also belong to any number of "supplementary
+groups".  Users who are members of the same group can share resources
+(such as files) that are not accessible to users who are not a member
+of that group.  Each group has a "group name" and "group ID".  *Note
+Group Database::, for how to find information about a group ID or group
+name.
+
+
+File: libc.info,  Node: Process Persona,  Next: Why Change Persona,  Prev: User and Group IDs,  Up: Users and Groups
+
+30.2 The Persona of a Process
+=============================
+
+At any time, each process has an "effective user ID", a "effective
+group ID", and a set of "supplementary group IDs".  These IDs determine
+the privileges of the process.  They are collectively called the
+"persona" of the process, because they determine "who it is" for
+purposes of access control.
+
+   Your login shell starts out with a persona which consists of your
+user ID, your default group ID, and your supplementary group IDs (if
+you are in more than one group).  In normal circumstances, all your
+other processes inherit these values.
+
+   A process also has a "real user ID" which identifies the user who
+created the process, and a "real group ID" which identifies that user's
+default group.  These values do not play a role in access control, so
+we do not consider them part of the persona.  But they are also
+important.
+
+   Both the real and effective user ID can be changed during the
+lifetime of a process.  *Note Why Change Persona::.
+
+   For details on how a process's effective user ID and group IDs affect
+its permission to access files, see *Note Access Permission::.
+
+   The effective user ID of a process also controls permissions for
+sending signals using the `kill' function.  *Note Signaling Another
+Process::.
+
+   Finally, there are many operations which can only be performed by a
+process whose effective user ID is zero.  A process with this user ID is
+a "privileged process".  Commonly the user name `root' is associated
+with user ID 0, but there may be other user names with this ID.
+
+
+File: libc.info,  Node: Why Change Persona,  Next: How Change Persona,  Prev: Process Persona,  Up: Users and Groups
+
+30.3 Why Change the Persona of a Process?
+=========================================
+
+The most obvious situation where it is necessary for a process to change
+its user and/or group IDs is the `login' program.  When `login' starts
+running, its user ID is `root'.  Its job is to start a shell whose user
+and group IDs are those of the user who is logging in.  (To accomplish
+this fully, `login' must set the real user and group IDs as well as its
+persona.  But this is a special case.)
+
+   The more common case of changing persona is when an ordinary user
+program needs access to a resource that wouldn't ordinarily be
+accessible to the user actually running it.
+
+   For example, you may have a file that is controlled by your program
+but that shouldn't be read or modified directly by other users, either
+because it implements some kind of locking protocol, or because you want
+to preserve the integrity or privacy of the information it contains.
+This kind of restricted access can be implemented by having the program
+change its effective user or group ID to match that of the resource.
+
+   Thus, imagine a game program that saves scores in a file.  The game
+program itself needs to be able to update this file no matter who is
+running it, but if users can write the file without going through the
+game, they can give themselves any scores they like.  Some people
+consider this undesirable, or even reprehensible.  It can be prevented
+by creating a new user ID and login name (say, `games') to own the
+scores file, and make the file writable only by this user.  Then, when
+the game program wants to update this file, it can change its effective
+user ID to be that for `games'.  In effect, the program must adopt the
+persona of `games' so it can write to the scores file.
+
+
+File: libc.info,  Node: How Change Persona,  Next: Reading Persona,  Prev: Why Change Persona,  Up: Users and Groups
+
+30.4 How an Application Can Change Persona
+==========================================
+
+The ability to change the persona of a process can be a source of
+unintentional privacy violations, or even intentional abuse.  Because of
+the potential for problems, changing persona is restricted to special
+circumstances.
+
+   You can't arbitrarily set your user ID or group ID to anything you
+want; only privileged processes can do that.  Instead, the normal way
+for a program to change its persona is that it has been set up in
+advance to change to a particular user or group.  This is the function
+of the setuid and setgid bits of a file's access mode.  *Note
+Permission Bits::.
+
+   When the setuid bit of an executable file is on, executing that file
+gives the process a third user ID: the "file user ID".  This ID is set
+to the owner ID of the file.  The system then changes the effective
+user ID to the file user ID.  The real user ID remains as it was.
+Likewise, if the setgid bit is on, the process is given a "file group
+ID" equal to the group ID of the file, and its effective group ID is
+changed to the file group ID.
+
+   If a process has a file ID (user or group), then it can at any time
+change its effective ID to its real ID and back to its file ID.
+Programs use this feature to relinquish their special privileges except
+when they actually need them.  This makes it less likely that they can
+be tricked into doing something inappropriate with their privileges.
+
+   *Portability Note:* Older systems do not have file IDs.  To
+determine if a system has this feature, you can test the compiler
+define `_POSIX_SAVED_IDS'.  (In the POSIX standard, file IDs are known
+as saved IDs.)
+
+   *Note File Attributes::, for a more general discussion of file modes
+and accessibility.
+
+
+File: libc.info,  Node: Reading Persona,  Next: Setting User ID,  Prev: How Change Persona,  Up: Users and Groups
+
+30.5 Reading the Persona of a Process
+=====================================
+
+Here are detailed descriptions of the functions for reading the user and
+group IDs of a process, both real and effective.  To use these
+facilities, you must include the header files `sys/types.h' and
+`unistd.h'.  
+
+ -- Data Type: uid_t
+     This is an integer data type used to represent user IDs.  In the
+     GNU C Library, this is an alias for `unsigned int'.
+
+ -- Data Type: gid_t
+     This is an integer data type used to represent group IDs.  In the
+     GNU C Library, this is an alias for `unsigned int'.
+
+ -- Function: uid_t getuid (void)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     The `getuid' function returns the real user ID of the process.
+
+ -- Function: gid_t getgid (void)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     The `getgid' function returns the real group ID of the process.
+
+ -- Function: uid_t geteuid (void)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     The `geteuid' function returns the effective user ID of the
+     process.
+
+ -- Function: gid_t getegid (void)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     The `getegid' function returns the effective group ID of the
+     process.
+
+ -- Function: int getgroups (int COUNT, gid_t *GROUPS)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     The `getgroups' function is used to inquire about the supplementary
+     group IDs of the process.  Up to COUNT of these group IDs are
+     stored in the array GROUPS; the return value from the function is
+     the number of group IDs actually stored.  If COUNT is smaller than
+     the total number of supplementary group IDs, then `getgroups'
+     returns a value of `-1' and `errno' is set to `EINVAL'.
+
+     If COUNT is zero, then `getgroups' just returns the total number
+     of supplementary group IDs.  On systems that do not support
+     supplementary groups, this will always be zero.
+
+     Here's how to use `getgroups' to read all the supplementary group
+     IDs:
+
+          gid_t *
+          read_all_groups (void)
+          {
+            int ngroups = getgroups (0, NULL);
+            gid_t *groups
+              = (gid_t *) xmalloc (ngroups * sizeof (gid_t));
+            int val = getgroups (ngroups, groups);
+            if (val < 0)
+              {
+                free (groups);
+                return NULL;
+              }
+            return groups;
+          }
 
 
 File: libc.info,  Node: Setting User ID,  Next: Setting Groups,  Prev: Reading Persona,  Up: Users and Groups
@@ -3123,6 +4244,16 @@ users.  The database itself is kept in the file `/etc/passwd' on most
 systems, but on some systems a special network server gives access to
 it.
 
+   Historically, this database included one-way hashes of user
+passphrases (*note Passphrase Storage::) as well as public information
+about each user (such as their user ID and full name).  Many of the
+functions and data structures associated with this database, and the
+filename `/etc/passwd' itself, reflect this history.  However, the
+information in this database is available to all users, and it is no
+longer considered safe to make passphrase hashes available to all
+users, so they have been moved to a "shadow" database that can only be
+accessed with special privileges.
+
 * Menu:
 
 * User Data Structure::         What each user record contains.
@@ -3147,8 +4278,11 @@ are declared in the header file `pwd.h'.
     `char *pw_name'
           The user's login name.
 
-    `char *pw_passwd.'
-          The encrypted password string.
+    `char *pw_passwd'
+          Historically, this field would hold the one-way hash of the
+          user's passphrase.  Nowadays, it will almost always be the
+          single character `x', indicating that the hash is in the
+          shadow database.
 
     `uid_t pw_uid'
           The user ID number.
@@ -3261,7 +4395,7 @@ particular file.
      contents of the structure if you wish to save the information.
 
      The stream must correspond to a file in the same format as the
-     standard password database file.
+     standard user database file.
 
  -- Function: int fgetpwent_r (FILE *STREAM, struct passwd *RESULT_BUF,
           char *BUFFER, size_t BUFLEN, struct passwd **RESULT)
@@ -3276,7 +4410,7 @@ particular file.
      the elements of the result structure.
 
      The stream must correspond to a file in the same format as the
-     standard password database file.
+     standard user database file.
 
      If the function returns zero RESULT points to the structure with
      the wanted data (normally this is in RESULT_BUF).  If errors
@@ -5527,6 +6661,65 @@ enumeration type values).
      Inquire about the number of functions which can be registered as
      termination functions for `atexit'; *note Cleanups on Exit::.
 
+`_SC_LEVEL1_ICACHE_SIZE'
+     Inquire about the size of the Level 1 instruction cache.
+
+`_SC_LEVEL1_ICACHE_ASSOC'
+     Inquire about the associativity of the Level 1 instruction cache.
+
+`_SC_LEVEL1_ICACHE_LINESIZE'
+     Inquire about the line length of the Level 1 instruction cache.
+
+     On aarch64, the cache line size returned is the minimum
+     instruction cache line size observable by userspace.  This is
+     typically the same as the L1 icache size but on some cores it may
+     not be so.  However, it is specified in the architecture that
+     operations such as cache line invalidation are consistent with the
+     size reported with this variable.
+
+`_SC_LEVEL1_DCACHE_SIZE'
+     Inquire about the size of the Level 1 data cache.
+
+`_SC_LEVEL1_DCACHE_ASSOC'
+     Inquire about the associativity of the Level 1 data cache.
+
+`_SC_LEVEL1_DCACHE_LINESIZE'
+     Inquire about the line length of the Level 1 data cache.
+
+     On aarch64, the cache line size returned is the minimum data cache
+     line size observable by userspace.  This is typically the same as
+     the L1 dcache size but on some cores it may not be so.  However,
+     it is specified in the architecture that operations such as cache
+     line invalidation are consistent with the size reported with this
+     variable.
+
+`_SC_LEVEL2_CACHE_SIZE'
+     Inquire about the size of the Level 2 cache.
+
+`_SC_LEVEL2_CACHE_ASSOC'
+     Inquire about the associativity of the Level 2 cache.
+
+`_SC_LEVEL2_CACHE_LINESIZE'
+     Inquire about the line length of the Level 2 cache.
+
+`_SC_LEVEL3_CACHE_SIZE'
+     Inquire about the size of the Level 3 cache.
+
+`_SC_LEVEL3_CACHE_ASSOC'
+     Inquire about the associativity of the Level 3 cache.
+
+`_SC_LEVEL3_CACHE_LINESIZE'
+     Inquire about the line length of the Level 3 cache.
+
+`_SC_LEVEL4_CACHE_SIZE'
+     Inquire about the size of the Level 4 cache.
+
+`_SC_LEVEL4_CACHE_ASSOC'
+     Inquire about the associativity of the Level 4 cache.
+
+`_SC_LEVEL4_CACHE_LINESIZE'
+     Inquire about the line length of the Level 4 cache.
+
 `_SC_XOPEN_VERSION'
      Inquire about the parameter corresponding to `_XOPEN_VERSION'.
 
@@ -5547,7 +6740,9 @@ enumeration type values).
      Inquire about the parameter corresponding to `_XOPEN_LEGACY'.
 
 `_SC_XOPEN_CRYPT'
-     Inquire about the parameter corresponding to `_XOPEN_CRYPT'.
+     Inquire about the parameter corresponding to `_XOPEN_CRYPT'.  The
+     GNU C Library no longer implements the `_XOPEN_CRYPT' extensions,
+     so `sysconf (_SC_XOPEN_CRYPT)' always returns `-1'.
 
 `_SC_XOPEN_ENH_I18N'
      Inquire about the parameter corresponding to `_XOPEN_ENH_I18N'.
@@ -5597,7 +6792,7 @@ enumeration type values).
      Inquire about the value used to internally represent the zero
      priority level for the process execution.
 
-`SC_SSIZE_MAX'
+`_SC_SSIZE_MAX'
      Inquire about the maximum value which can be stored in a variable
      of type `ssize_t'.
 
@@ -6264,250 +7459,220 @@ like this:
 
 File: libc.info,  Node: Cryptographic Functions,  Next: Debugging Support,  Prev: System Configuration,  Up: Top
 
-33 DES Encryption and Password Handling
-***************************************
+33 Cryptographic Functions
+**************************
 
-On many systems, it is unnecessary to have any kind of user
-authentication; for instance, a workstation which is not connected to a
-network probably does not need any user authentication, because to use
-the machine an intruder must have physical access.
+The GNU C Library includes only a few special-purpose cryptographic
+functions: one-way hash functions for passphrase storage, and access to
+a cryptographic randomness source, if one is provided by the operating
+system.  Programs that need general-purpose cryptography should use a
+dedicated cryptography library, such as libgcrypt.
 
-   Sometimes, however, it is necessary to be sure that a user is
-authorized to use some service a machine provides--for instance, to log
-in as a particular user id (*note Users and Groups::).  One traditional
-way of doing this is for each user to choose a secret "password"; then,
-the system can ask someone claiming to be a user what the user's
-password is, and if the person gives the correct password then the
-system can grant the appropriate privileges.
-
-   If all the passwords are just stored in a file somewhere, then this
-file has to be very carefully protected.  To avoid this, passwords are
-run through a "one-way function", a function which makes it difficult to
-work out what its input was by looking at its output, before storing in
-the file.
-
-   The GNU C Library provides a one-way function that is compatible with
-the behavior of the `crypt' function introduced in FreeBSD 2.0.  It
-supports two one-way algorithms: one based on the MD5 message-digest
-algorithm that is compatible with modern BSD systems, and the other
-based on the Data Encryption Standard (DES) that is compatible with
-Unix systems.
-
-   It also provides support for Secure RPC, and some library functions
-that can be used to perform normal DES encryption.  The `AUTH_DES'
-authentication flavor in Secure RPC, as provided by the GNU C Library,
-uses DES and does not comply with FIPS 140-2 nor does any other use of
-DES within the GNU C Library.  It is recommended that Secure RPC should
-not be used for systems that need to comply with FIPS 140-2 since all
-flavors of encrypted authentication use normal DES.
+   Many countries place legal restrictions on the import, export,
+possession, or use of cryptographic software.  We deplore these
+restrictions, but we must still warn you that the GNU C Library may be
+subject to them, even if you do not use the functions in this chapter
+yourself.  The restrictions vary from place to place and are changed
+often, so we cannot give any more specific advice than this warning.
 
 * Menu:
 
-* Legal Problems::              This software can get you locked up, or worse.
-* getpass::                     Prompting the user for a password.
-* crypt::                       A one-way function for passwords.
-* DES Encryption::              Routines for DES encryption.
-* Unpredictable Bytes::         Randomness for cryptography purposes.
+* Passphrase Storage::          One-way hashing for passphrases.
+* Unpredictable Bytes::         Randomness for cryptographic purposes.
 
 
-File: libc.info,  Node: Legal Problems,  Next: getpass,  Up: Cryptographic Functions
+File: libc.info,  Node: Passphrase Storage,  Next: Unpredictable Bytes,  Up: Cryptographic Functions
 
-33.1 Legal Problems
-===================
+33.1 Passphrase Storage
+=======================
 
-Because of the continuously changing state of the law, it's not possible
-to provide a definitive survey of the laws affecting cryptography.
-Instead, this section warns you of some of the known trouble spots; this
-may help you when you try to find out what the laws of your country are.
+Sometimes it is necessary to be sure that a user is authorized to use
+some service a machine provides--for instance, to log in as a
+particular user id (*note Users and Groups::).  One traditional way of
+doing this is for each user to choose a secret "passphrase"; then, the
+system can ask someone claiming to be a user what the user's passphrase
+is, and if the person gives the correct passphrase then the system can
+grant the appropriate privileges.  (Traditionally, these were called
+"passwords," but nowadays a single word is too easy to guess.)
 
-   Some countries require that you have a license to use, possess, or
-import cryptography.  These countries are believed to include
-Byelorussia, Burma, India, Indonesia, Israel, Kazakhstan, Pakistan,
-Russia, and Saudi Arabia.
+   Programs that handle passphrases must take special care not to reveal
+them to anyone, no matter what.  It is not enough to keep them in a
+file that is only accessible with special privileges.  The file might
+be "leaked" via a bug or misconfiguration, and system administrators
+shouldn't learn everyone's passphrase even if they have to edit that
+file for some reason.  To avoid this, passphrases should also be
+converted into "one-way hashes", using a "one-way function", before
+they are stored.
 
-   Some countries restrict the transmission of encrypted messages by
-radio; some telecommunications carriers restrict the transmission of
-encrypted messages over their network.
+   A one-way function is easy to compute, but there is no known way to
+compute its inverse.  This means the system can easily check
+passphrases, by hashing them and comparing the result with the stored
+hash.  But an attacker who discovers someone's passphrase hash can only
+discover the passphrase it corresponds to by guessing and checking.
+The one-way functions are designed to make this process impractically
+slow, for all but the most obvious guesses.  (Do not use a word from
+the dictionary as your passphrase.)
 
-   Many countries have some form of export control for encryption
-software.  The Wassenaar Arrangement is a multilateral agreement
-between 33 countries (Argentina, Australia, Austria, Belgium, Bulgaria,
-Canada, the Czech Republic, Denmark, Finland, France, Germany, Greece,
-Hungary, Ireland, Italy, Japan, Luxembourg, the Netherlands, New
-Zealand, Norway, Poland, Portugal, the Republic of Korea, Romania, the
-Russian Federation, the Slovak Republic, Spain, Sweden, Switzerland,
-Turkey, Ukraine, the United Kingdom and the United States) which
-restricts some kinds of encryption exports.  Different countries apply
-the arrangement in different ways; some do not allow the exception for
-certain kinds of "public domain" software (which would include this
-library), some only restrict the export of software in tangible form,
-and others impose significant additional restrictions.
+   The GNU C Library provides an interface to four one-way functions,
+based on the SHA-2-512, SHA-2-256, MD5, and DES cryptographic
+primitives.  New passphrases should be hashed with either of the
+SHA-based functions.  The others are too weak for newly set
+passphrases, but we continue to support them for verifying old
+passphrases.  The DES-based hash is especially weak, because it ignores
+all but the first eight characters of its input.
 
-   The United States has additional rules.  This software would
-generally be exportable under 15 CFR 740.13(e), which permits exports of
-"encryption source code" which is "publicly available" and which is
-"not subject to an express agreement for the payment of a licensing fee
-or royalty for commercial production or sale of any product developed
-with the source code" to most countries.
-
-   The rules in this area are continuously changing.  If you know of any
-information in this manual that is out-of-date, please report it to the
-bug database.  *Note Reporting Bugs::.
-
-
-File: libc.info,  Node: getpass,  Next: crypt,  Prev: Legal Problems,  Up: Cryptographic Functions
-
-33.2 Reading Passwords
-======================
-
-When reading in a password, it is desirable to avoid displaying it on
-the screen, to help keep it secret.  The following function handles this
-in a convenient way.
-
- -- Function: char * getpass (const char *PROMPT)
-     Preliminary: | MT-Unsafe term | AS-Unsafe heap lock corrupt |
-     AC-Unsafe term lock corrupt | *Note POSIX Safety Concepts::.
-
-     `getpass' outputs PROMPT, then reads a string in from the terminal
-     without echoing it.  It tries to connect to the real terminal,
-     `/dev/tty', if possible, to encourage users not to put plaintext
-     passwords in files; otherwise, it uses `stdin' and `stderr'.
-     `getpass' also disables the INTR, QUIT, and SUSP characters on the
-     terminal using the `ISIG' terminal attribute (*note Local Modes::).
-     The terminal is flushed before and after `getpass', so that
-     characters of a mistyped password are not accidentally visible.
-
-     In other C libraries, `getpass' may only return the first
-     `PASS_MAX' bytes of a password.  The GNU C Library has no limit, so
-     `PASS_MAX' is undefined.
-
-     The prototype for this function is in `unistd.h'.  `PASS_MAX'
-     would be defined in `limits.h'.
-
-   This precise set of operations may not suit all possible situations.
-In this case, it is recommended that users write their own `getpass'
-substitute.  For instance, a very simple substitute is as follows:
-
-
-     #include <termios.h>
-     #include <stdio.h>
-
-     ssize_t
-     my_getpass (char **lineptr, size_t *n, FILE *stream)
-     {
-       struct termios old, new;
-       int nread;
-
-       /* Turn echoing off and fail if we can't. */
-       if (tcgetattr (fileno (stream), &old) != 0)
-         return -1;
-       new = old;
-       new.c_lflag &= ~ECHO;
-       if (tcsetattr (fileno (stream), TCSAFLUSH, &new) != 0)
-         return -1;
-
-       /* Read the password. */
-       nread = getline (lineptr, n, stream);
-
-       /* Restore terminal. */
-       (void) tcsetattr (fileno (stream), TCSAFLUSH, &old);
-
-       return nread;
-     }
-
-   The substitute takes the same parameters as `getline' (*note Line
-Input::); the user must print any prompt desired.
-
-
-File: libc.info,  Node: crypt,  Next: DES Encryption,  Prev: getpass,  Up: Cryptographic Functions
-
-33.3 Encrypting Passwords
-=========================
-
- -- Function: char * crypt (const char *KEY, const char *SALT)
+ -- Function: char * crypt (const char *PHRASE, const char *SALT)
      Preliminary: | MT-Unsafe race:crypt | AS-Unsafe corrupt lock heap
      dlopen | AC-Unsafe lock mem | *Note POSIX Safety Concepts::.
 
-     The `crypt' function takes a password, KEY, as a string, and a
-     SALT character array which is described below, and returns a
-     printable ASCII string which starts with another salt.  It is
-     believed that, given the output of the function, the best way to
-     find a KEY that will produce that output is to guess values of KEY
-     until the original value of KEY is found.
+     The function `crypt' converts a passphrase string, PHRASE, into a
+     one-way hash suitable for storage in the user database.  The
+     string that it returns will consist entirely of printable ASCII
+     characters.  It will not contain whitespace, nor any of the
+     characters `:', `;', `*', `!', or `\'.
 
-     The SALT parameter does two things.  Firstly, it selects which
-     algorithm is used, the MD5-based one or the DES-based one.
-     Secondly, it makes life harder for someone trying to guess
-     passwords against a file containing many passwords; without a
-     SALT, an intruder can make a guess, run `crypt' on it once, and
-     compare the result with all the passwords.  With a SALT, the
-     intruder must run `crypt' once for each different salt.
+     The SALT parameter controls which one-way function is used, and it
+     also ensures that the output of the one-way function is different
+     for every user, even if they have the same passphrase.  This makes
+     it harder to guess passphrases from a large user database.
+     Without salt, the attacker could make a guess, run `crypt' on it
+     once, and compare the result with all the hashes.  Salt forces the
+     attacker to make separate calls to `crypt' for each user.
 
-     For the MD5-based algorithm, the SALT should consist of the string
-     `$1$', followed by up to 8 characters, terminated by either
-     another `$' or the end of the string.  The result of `crypt' will
-     be the SALT, followed by a `$' if the salt didn't end with one,
-     followed by 22 characters from the alphabet `./0-9A-Za-z', up to
-     34 characters total.  Every character in the KEY is significant.
+     To verify a passphrase, pass the previously hashed passphrase as
+     the SALT.  To hash a new passphrase for storage, set SALT to a
+     string consisting of a prefix plus a sequence of randomly chosen
+     characters, according to this table:
 
-     For the DES-based algorithm, the SALT should consist of two
-     characters from the alphabet `./0-9A-Za-z', and the result of
-     `crypt' will be those two characters followed by 11 more from the
-     same alphabet, 13 in total.  Only the first 8 characters in the
-     KEY are significant.
+     One-way       Prefix  Random sequence
+     function              
+     ------------------------------------------- 
+     SHA-2-512     `$6$'   16 characters
+     SHA-2-256     `$5$'   16 characters
+     MD5           `$1$'   8 characters
+     DES           `'      2 characters
 
-     The MD5-based algorithm has no limit on the useful length of the
-     password used, and is slightly more secure.  It is therefore
-     preferred over the DES-based algorithm.
+     In all cases, the random characters should be chosen from the
+     alphabet `./0-9A-Za-z'.
 
-     When the user enters their password for the first time, the SALT
-     should be set to a new string which is reasonably random.  To
-     verify a password against the result of a previous call to
-     `crypt', pass the result of the previous call as the SALT.
+     With all of the hash functions _except_ DES, PHRASE can be
+     arbitrarily long, and all eight bits of each byte are significant.
+     With DES, only the first eight characters of PHRASE affect the
+     output, and the eighth bit of each byte is also ignored.
 
-   The following short program is an example of how to use `crypt' the
-first time a password is entered.  Note that the SALT generation is
-just barely acceptable; in particular, it is not unique between
-machines, and in many applications it would not be acceptable to let an
-attacker know what time the user's password was last set.
+     `crypt' can fail.  Some implementations return `NULL' on failure,
+     and others return an _invalid_ hashed passphrase, which will begin
+     with a `*' and will not be the same as SALT.  In either case,
+     `errno' will be set to indicate the problem.  Some of the possible
+     error codes are:
+
+    `EINVAL'
+          SALT is invalid; neither a previously hashed passphrase, nor a
+          well-formed new salt for any of the supported hash functions.
+
+    `EPERM'
+          The system configuration forbids use of the hash function
+          selected by SALT.
+
+    `ENOMEM'
+          Failed to allocate internal scratch storage.
+
+    `ENOSYS'
+    `EOPNOTSUPP'
+          Hashing passphrases is not supported at all, or the hash
+          function selected by SALT is not supported.  The GNU C
+          Library does not use these error codes, but they may be
+          encountered on other operating systems.
+
+     `crypt' uses static storage for both internal scratchwork and the
+     string it returns.  It is not safe to call `crypt' from multiple
+     threads simultaneously, and the string it returns will be
+     overwritten by any subsequent call to `crypt'.
+
+     `crypt' is specified in the X/Open Portability Guide and is
+     present on nearly all historical Unix systems.  However, the XPG
+     does not specify any one-way functions.
+
+     `crypt' is declared in `unistd.h'.  The GNU C Library also
+     declares this function in `crypt.h'.
+
+ -- Function: char * crypt_r (const char *PHRASE, const char *SALT,
+          struct crypt_data *DATA)
+     Preliminary: | MT-Safe | AS-Unsafe corrupt lock heap dlopen |
+     AC-Unsafe lock mem | *Note POSIX Safety Concepts::.
+
+     The function `crypt_r' is a thread-safe version of `crypt'.
+     Instead of static storage, it uses the memory pointed to by its
+     DATA argument for both scratchwork and the string it returns.  It
+     can safely be used from multiple threads, as long as different
+     DATA objects are used in each thread.  The string it returns will
+     still be overwritten by another call with the same DATA.
+
+     DATA must point to a `struct crypt_data' object allocated by the
+     caller.  All of the fields of `struct crypt_data' are private, but
+     before one of these objects is used for the first time, it must be
+     initialized to all zeroes, using `memset' or similar.  After that,
+     it can be reused for many calls to `crypt_r' without erasing it
+     again.  `struct crypt_data' is very large, so it is best to
+     allocate it with `malloc' rather than as a local variable.  *Note
+     Memory Allocation::.
+
+     `crypt_r' is a GNU extension.  It is declared in `crypt.h', as is
+     `struct crypt_data'.
+
+   The following program shows how to use `crypt' the first time a
+passphrase is entered.  It uses `getentropy' to make the salt as
+unpredictable as possible; *note Unpredictable Bytes::.
 
 
      #include <stdio.h>
-     #include <time.h>
      #include <unistd.h>
      #include <crypt.h>
 
      int
      main(void)
      {
-       unsigned long seed[2];
-       char salt[] = "$1$........";
-       const char *const seedchars =
+       unsigned char ubytes[16];
+       char salt[20];
+       const char *const saltchars =
          "./0123456789ABCDEFGHIJKLMNOPQRST"
          "UVWXYZabcdefghijklmnopqrstuvwxyz";
-       char *password;
+       char *hash;
        int i;
 
-       /* Generate a (not very) random seed.
-          You should do it better than this... */
-       seed[0] = time(NULL);
-       seed[1] = getpid() ^ (seed[0] >> 14 & 0x30000);
+       /* Retrieve 16 unpredictable bytes from the operating system. */
+       if (getentropy (ubytes, sizeof ubytes))
+         {
+           perror ("getentropy");
+           return 1;
+         }
 
-       /* Turn it into printable characters from `seedchars'. */
-       for (i = 0; i < 8; i++)
-         salt[3+i] = seedchars[(seed[i/5] >> (i%5)*6) & 0x3f];
+       /* Use them to fill in the salt string. */
+       salt[0] = '$';
+       salt[1] = '5'; /* SHA-256 */
+       salt[2] = '$';
+       for (i = 0; i < 16; i++)
+         salt[3+i] = saltchars[ubytes[i] & 0x3f];
+       salt[3+i] = '\0';
 
-       /* Read in the user's password and encrypt it. */
-       password = crypt(getpass("Password:"), salt);
+       /* Read in the user's passphrase and hash it. */
+       hash = crypt (getpass ("Enter new passphrase: "), salt);
+       if (!hash || hash[0] == '*')
+         {
+           perror ("crypt");
+           return 1;
+         }
 
        /* Print the results. */
-       puts(password);
+       puts (hash);
        return 0;
      }
 
-   The next program shows how to verify a password.  It prompts the user
-for a password and prints "Access granted." if the user types `GNU libc
-manual'.
+   The next program demonstrates how to verify a passphrase.  It checks
+a hash hardcoded into the program, because looking up real users' hashed
+passphrases may require special privileges (*note User Database::).  It
+also shows that different one-way functions produce different hashes
+for the same passphrase.
 
 
      #include <stdio.h>
@@ -6515,296 +7680,159 @@ manual'.
      #include <unistd.h>
      #include <crypt.h>
 
+     /* `GNU's Not Unix' hashed using SHA-256, MD5, and DES. */
+     static const char hash_sha[] =
+       "$5$DQ2z5NHf1jNJnChB$kV3ZTR0aUaosujPhLzR84Llo3BsspNSe4/tsp7VoEn6";
+     static const char hash_md5[] = "$1$A3TxDv41$rtXVTUXl2LkeSV0UU5xxs1";
+     static const char hash_des[] = "FgkTuF98w5DaI";
+
      int
      main(void)
      {
-       /* Hashed form of "GNU libc manual". */
-       const char *const pass = "$1$/iSaq7rB$EoUw5jJPPvAPECNaaWzMK/";
+       char *phrase;
+       int status = 0;
 
-       char *result;
-       int ok;
+       /* Prompt for a passphrase. */
+       phrase = getpass ("Enter passphrase: ");
 
-       /* Read in the user's password and encrypt it,
-          passing the expected password in as the salt. */
-       result = crypt(getpass("Password:"), pass);
+       /* Compare against the stored hashes.  Any input that begins with
+          `GNU's No' will match the DES hash, but the other two will
+          only match `GNU's Not Unix'. */
 
-       /* Test the result. */
-       ok = strcmp (result, pass) == 0;
+       if (strcmp (crypt (phrase, hash_sha), hash_sha))
+         {
+           puts ("SHA: not ok");
+           status = 1;
+         }
+       else
+         puts ("SHA: ok");
 
-       puts(ok ? "Access granted." : "Access denied.");
-       return ok ? 0 : 1;
+       if (strcmp (crypt (phrase, hash_md5), hash_md5))
+         {
+           puts ("MD5: not ok");
+           status = 1;
+         }
+       else
+         puts ("MD5: ok");
+
+       if (strcmp (crypt (phrase, hash_des), hash_des))
+         {
+           puts ("DES: not ok");
+           status = 1;
+         }
+       else
+         puts ("DES: ok");
+
+       return status;
      }
 
- -- Function: char * crypt_r (const char *KEY, const char *SALT, struct
-          crypt_data * DATA)
-     Preliminary: | MT-Safe | AS-Unsafe corrupt lock heap dlopen |
-     AC-Unsafe lock mem | *Note POSIX Safety Concepts::.
-
-     The `crypt_r' function does the same thing as `crypt', but takes
-     an extra parameter which includes space for its result (among
-     other things), so it can be reentrant.  `data->initialized' must be
-     cleared to zero before the first time `crypt_r' is called.
-
-     The `crypt_r' function is a GNU extension.
-
-   The `crypt' and `crypt_r' functions are prototyped in the header
-`crypt.h'.
-
 
-File: libc.info,  Node: DES Encryption,  Next: Unpredictable Bytes,  Prev: crypt,  Up: Cryptographic Functions
+File: libc.info,  Node: Unpredictable Bytes,  Prev: Passphrase Storage,  Up: Cryptographic Functions
 
-33.4 DES Encryption
-===================
-
-The Data Encryption Standard is described in the US Government Federal
-Information Processing Standards (FIPS) 46-3 published by the National
-Institute of Standards and Technology.  The DES has been very thoroughly
-analyzed since it was developed in the late 1970s, and no new
-significant flaws have been found.
-
-   However, the DES uses only a 56-bit key (plus 8 parity bits), and a
-machine has been built in 1998 which can search through all possible
-keys in about 6 days, which cost about US$200000; faster searches would
-be possible with more money.  This makes simple DES insecure for most
-purposes, and NIST no longer permits new US government systems to use
-simple DES.
-
-   For serious encryption functionality, it is recommended that one of
-the many free encryption libraries be used instead of these routines.
-
-   The DES is a reversible operation which takes a 64-bit block and a
-64-bit key, and produces another 64-bit block.  Usually the bits are
-numbered so that the most-significant bit, the first bit, of each block
-is numbered 1.
-
-   Under that numbering, every 8th bit of the key (the 8th, 16th, and so
-on) is not used by the encryption algorithm itself.  But the key must
-have odd parity; that is, out of bits 1 through 8, and 9 through 16, and
-so on, there must be an odd number of `1' bits, and this completely
-specifies the unused bits.
-
- -- Function: void setkey (const char *KEY)
-     Preliminary: | MT-Unsafe race:crypt | AS-Unsafe corrupt lock |
-     AC-Unsafe lock | *Note POSIX Safety Concepts::.
-
-     The `setkey' function sets an internal data structure to be an
-     expanded form of KEY.  KEY is specified as an array of 64 bits
-     each stored in a `char', the first bit is `key[0]' and the 64th
-     bit is `key[63]'.  The KEY should have the correct parity.
-
- -- Function: void encrypt (char *BLOCK, int EDFLAG)
-     Preliminary: | MT-Unsafe race:crypt | AS-Unsafe corrupt lock |
-     AC-Unsafe lock | *Note POSIX Safety Concepts::.
-
-     The `encrypt' function encrypts BLOCK if EDFLAG is 0, otherwise it
-     decrypts BLOCK, using a key previously set by `setkey'.  The
-     result is placed in BLOCK.
-
-     Like `setkey', BLOCK is specified as an array of 64 bits each
-     stored in a `char', but there are no parity bits in BLOCK.
-
- -- Function: void setkey_r (const char *KEY, struct crypt_data * DATA)
- -- Function: void encrypt_r (char *BLOCK, int EDFLAG, struct
-          crypt_data * DATA)
-     Preliminary: | MT-Safe | AS-Unsafe corrupt lock | AC-Unsafe lock |
-     *Note POSIX Safety Concepts::.
-
-     These are reentrant versions of `setkey' and `encrypt'.  The only
-     difference is the extra parameter, which stores the expanded
-     version of KEY.  Before calling `setkey_r' the first time,
-     `data->initialized' must be cleared to zero.
-
-   The `setkey_r' and `encrypt_r' functions are GNU extensions.
-`setkey', `encrypt', `setkey_r', and `encrypt_r' are defined in
-`crypt.h'.
-
- -- Function: int ecb_crypt (char *KEY, char *BLOCKS, unsigned int LEN,
-          unsigned int MODE)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     The function `ecb_crypt' encrypts or decrypts one or more blocks
-     using DES.  Each block is encrypted independently.
-
-     The BLOCKS and the KEY are stored packed in 8-bit bytes, so that
-     the first bit of the key is the most-significant bit of `key[0]'
-     and the 63rd bit of the key is stored as the least-significant bit
-     of `key[7]'.  The KEY should have the correct parity.
-
-     LEN is the number of bytes in BLOCKS.  It should be a multiple of
-     8 (so that there are a whole number of blocks to encrypt).  LEN is
-     limited to a maximum of `DES_MAXDATA' bytes.
-
-     The result of the encryption replaces the input in BLOCKS.
-
-     The MODE parameter is the bitwise OR of two of the following:
-
-    `DES_ENCRYPT'
-          This constant, used in the MODE parameter, specifies that
-          BLOCKS is to be encrypted.
-
-    `DES_DECRYPT'
-          This constant, used in the MODE parameter, specifies that
-          BLOCKS is to be decrypted.
-
-    `DES_HW'
-          This constant, used in the MODE parameter, asks to use a
-          hardware device.  If no hardware device is available,
-          encryption happens anyway, but in software.
-
-    `DES_SW'
-          This constant, used in the MODE parameter, specifies that no
-          hardware device is to be used.
-
-     The result of the function will be one of these values:
-
-    `DESERR_NONE'
-          The encryption succeeded.
-
-    `DESERR_NOHWDEVICE'
-          The encryption succeeded, but there was no hardware device
-          available.
-
-    `DESERR_HWERROR'
-          The encryption failed because of a hardware problem.
-
-    `DESERR_BADPARAM'
-          The encryption failed because of a bad parameter, for
-          instance LEN is not a multiple of 8 or LEN is larger than
-          `DES_MAXDATA'.
-
- -- Function: int DES_FAILED (int ERR)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     This macro returns 1 if ERR is a `success' result code from
-     `ecb_crypt' or `cbc_crypt', and 0 otherwise.
-
- -- Function: int cbc_crypt (char *KEY, char *BLOCKS, unsigned int LEN,
-          unsigned int MODE, char *IVEC)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     The function `cbc_crypt' encrypts or decrypts one or more blocks
-     using DES in Cipher Block Chaining mode.
-
-     For encryption in CBC mode, each block is exclusive-ored with IVEC
-     before being encrypted, then IVEC is replaced with the result of
-     the encryption, then the next block is processed.  Decryption is
-     the reverse of this process.
-
-     This has the advantage that blocks which are the same before being
-     encrypted are very unlikely to be the same after being encrypted,
-     making it much harder to detect patterns in the data.
-
-     Usually, IVEC is set to 8 random bytes before encryption starts.
-     Then the 8 random bytes are transmitted along with the encrypted
-     data (without themselves being encrypted), and passed back in as
-     IVEC for decryption.  Another possibility is to set IVEC to 8
-     zeroes initially, and have the first block encrypted consist of 8
-     random bytes.
-
-     Otherwise, all the parameters are similar to those for `ecb_crypt'.
-
- -- Function: void des_setparity (char *KEY)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     The function `des_setparity' changes the 64-bit KEY, stored packed
-     in 8-bit bytes, to have odd parity by altering the low bits of
-     each byte.
-
-   The `ecb_crypt', `cbc_crypt', and `des_setparity' functions and
-their accompanying macros are all defined in the header
-`rpc/des_crypt.h'.
-
-
-File: libc.info,  Node: Unpredictable Bytes,  Prev: DES Encryption,  Up: Cryptographic Functions
-
-33.5 Generating Unpredictable Bytes
+33.2 Generating Unpredictable Bytes
 ===================================
 
-Some cryptographic applications (such as session key generation) need
-unpredictable bytes.
+Cryptographic applications often need some random data that will be as
+difficult as possible for a hostile eavesdropper to guess.  For
+instance, encryption keys should be chosen at random, and the "salt"
+strings used by `crypt' (*note Passphrase Storage::) should also be
+chosen at random.
 
-   In general, application code should use a deterministic random bit
-generator, which could call the `getentropy' function described below
-internally to obtain randomness to seed the generator.  The `getrandom'
-function is intended for low-level applications which need additional
-control over the blocking behavior.
+   Some pseudo-random number generators do not provide
+unpredictable-enough output for cryptographic applications; *note
+Pseudo-Random Numbers::.  Such applications need to use a
+"cryptographic random number generator" (CRNG), also sometimes called a
+"cryptographically strong pseudo-random number generator" (CSPRNG) or
+"deterministic random bit generator" (DRBG).
+
+   Currently, the GNU C Library does not provide a cryptographic random
+number generator, but it does provide functions that read random data
+from a "randomness source" supplied by the operating system.  The
+randomness source is a CRNG at heart, but it also continually
+"re-seeds" itself from physical sources of randomness, such as
+electronic noise and clock jitter.  This means applications do not need
+to do anything to ensure that the random numbers it produces are
+different on each run.
+
+   The catch, however, is that these functions will only produce
+relatively short random strings in any one call.  Often this is not a
+problem, but applications that need more than a few kilobytes of
+cryptographically strong random data should call these functions once
+and use their output to seed a CRNG.
+
+   Most applications should use `getentropy'.  The `getrandom' function
+is intended for low-level applications which need additional control
+over blocking behavior.
 
  -- Function: int getentropy (void *BUFFER, size_t LENGTH)
      | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety Concepts::.
 
-     This function writes LENGTH bytes of random data to the array
-     starting at BUFFER, which must be at most 256 bytes long.  The
-     function returns zero on success.  On failure, it returns `-1' and
-     `errno' is updated accordingly.
-
-     The `getentropy' function is declared in the header file
-     `sys/random.h'.  It is derived from OpenBSD.
-
-     The `getentropy' function is not a cancellation point.  A call to
-     `getentropy' can block if the system has just booted and the kernel
-     entropy pool has not yet been initialized.  In this case, the
-     function will keep blocking even if a signal arrives, and return
-     only after the entropy pool has been initialized.
-
-     The `getentropy' function can fail with several errors, some of
-     which are listed below.
+     This function writes exactly LENGTH bytes of random data to the
+     array starting at BUFFER.  LENGTH can be no more than 256.  On
+     success, it returns zero.  On failure, it returns -1, and `errno'
+     is set to indicate the problem.  Some of the possible errors are
+     listed below.
 
     `ENOSYS'
-          The kernel does not implement the required system call.
+          The operating system does not implement a randomness source,
+          or does not support this way of accessing it.  (For instance,
+          the system call used by this function was added to the Linux
+          kernel in version 3.17.)
 
     `EFAULT'
           The combination of BUFFER and LENGTH arguments specifies an
           invalid memory range.
 
     `EIO'
-          More than 256 bytes of randomness have been requested, or the
-          buffer could not be overwritten with random data for an
-          unspecified reason.
+          LENGTH is larger than 256, or the kernel entropy pool has
+          suffered a catastrophic failure.
 
+     A call to `getentropy' can only block when the system has just
+     booted and the randomness source has not yet been initialized.
+     However, if it does block, it cannot be interrupted by signals or
+     thread cancellation.  Programs intended to run in very early
+     stages of the boot process may need to use `getrandom' in
+     non-blocking mode instead, and be prepared to cope with random
+     data not being available at all.
 
+     The `getentropy' function is declared in the header file
+     `sys/random.h'.  It is derived from OpenBSD.
 
  -- Function: ssize_t getrandom (void *BUFFER, size_t LENGTH, unsigned
           int FLAGS)
      | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety Concepts::.
 
-     This function writes LENGTH bytes of random data to the array
-     starting at BUFFER.  On success, this function returns the number
-     of bytes which have been written to the buffer (which can be less
-     than LENGTH).  On error, `-1' is returned, and `errno' is updated
-     accordingly.
-
-     The `getrandom' function is declared in the header file
-     `sys/random.h'.  It is a GNU extension.
-
-     The following flags are defined for the FLAGS argument:
+     This function writes up to LENGTH bytes of random data to the
+     array starting at BUFFER.  The FLAGS argument should be either
+     zero, or the bitwise OR of some of the following flags:
 
     `GRND_RANDOM'
-          Use the `/dev/random' (blocking) pool instead of the
-          `/dev/urandom' (non-blocking) pool to obtain randomness.  If
-          the `GRND_RANDOM' flag is specified, the `getrandom' function
-          can block even after the randomness source has been
-          initialized.
+          Use the `/dev/random' (blocking) source instead of the
+          `/dev/urandom' (non-blocking) source to obtain randomness.
+
+          If this flag is specified, the call may block, potentially
+          for quite some time, even after the randomness source has
+          been initialized.  If it is not specified, the call can only
+          block when the system has just booted and the randomness
+          source has not yet been initialized.
 
     `GRND_NONBLOCK'
           Instead of blocking, return to the caller immediately if no
           data is available.
 
-     The `getrandom' function is a cancellation point.
+     Unlike `getentropy', the `getrandom' function is a cancellation
+     point, and if it blocks, it can be interrupted by signals.
 
-     Obtaining randomness from the `/dev/urandom' pool (i.e., a call
-     without the `GRND_RANDOM' flag) can block if the system has just
-     booted and the pool has not yet been initialized.
-
-     The `getrandom' function can fail with several errors, some of
-     which are listed below.  In addition, the function may not fill the
-     buffer completely and return a value less than LENGTH.
+     On success, `getrandom' returns the number of bytes which have
+     been written to the buffer, which may be less than LENGTH.  On
+     error, it returns -1, and `errno' is set to indicate the problem.
+     Some of the possible errors are:
 
     `ENOSYS'
-          The kernel does not implement the `getrandom' system call.
+          The operating system does not implement a randomness source,
+          or does not support this way of accessing it.  (For instance,
+          the system call used by this function was added to the Linux
+          kernel in version 3.17.)
 
     `EAGAIN'
           No random data was available and `GRND_NONBLOCK' was
@@ -6822,9 +7850,12 @@ control over the blocking behavior.
     `EINVAL'
           The FLAGS argument contains an invalid combination of flags.
 
+     The `getrandom' function is declared in the header file
+     `sys/random.h'.  It is a GNU extension.
+
 
 
-File: libc.info,  Node: Debugging Support,  Next: POSIX Threads,  Prev: Cryptographic Functions,  Up: Top
+File: libc.info,  Node: Debugging Support,  Next: Threads,  Prev: Cryptographic Functions,  Up: Top
 
 34 Debugging support
 ********************
@@ -6972,12 +8003,524 @@ entries probably all programs should be covered.
      }
 
 
-File: libc.info,  Node: POSIX Threads,  Next: Internal Probes,  Prev: Debugging Support,  Up: Top
+File: libc.info,  Node: Threads,  Next: Internal Probes,  Prev: Debugging Support,  Up: Top
 
-35 POSIX Threads
-****************
+35 Threads
+**********
 
-This chapter describes the GNU C Library POSIX Threads implementation.
+This chapter describes functions used for managing threads.  The GNU C
+Library provides two threading implementations: ISO C threads and POSIX
+threads.
+
+* Menu:
+
+* ISO C Threads::	Threads based on the ISO C specification.
+* POSIX Threads::	Threads based on the POSIX specification.
+
+
+File: libc.info,  Node: ISO C Threads,  Next: POSIX Threads,  Up: Threads
+
+35.1 ISO C Threads
+==================
+
+This section describes the GNU C Library ISO C threads implementation.
+To have a deeper understanding of this API, it is strongly recommended
+to read ISO/IEC 9899:2011, section 7.26, in which ISO C threads were
+originally specified.  All types and function prototypes are declared
+in the header file `threads.h'.
+
+* Menu:
+
+* ISO C Threads Return Values:: Symbolic constants that represent a
+				function's return value.
+* ISO C Thread Management::	Support for basic threading.
+* Call Once::			Single-call functions and macros.
+* ISO C Mutexes::		A low-level mechanism for mutual exclusion.
+* ISO C Condition Variables::	High-level objects for thread synchronization.
+* ISO C Thread-local Storage::	Functions to support thread-local storage.
+
+
+File: libc.info,  Node: ISO C Threads Return Values,  Next: ISO C Thread Management,  Up: ISO C Threads
+
+35.1.1 Return Values
+--------------------
+
+The ISO C thread specification provides the following enumeration
+constants for return values from functions in the API:
+
+`thrd_timedout'
+     A specified time was reached without acquiring the requested
+     resource, usually a mutex or condition variable.
+
+`thrd_success'
+     The requested operation succeeded.
+
+`thrd_busy'
+     The requested operation failed because a requested resource is
+     already in use.
+
+`thrd_error'
+     The requested operation failed.
+
+`thrd_nomem'
+     The requested operation failed because it was unable to allocate
+     enough memory.
+
+
+File: libc.info,  Node: ISO C Thread Management,  Next: Call Once,  Prev: ISO C Threads Return Values,  Up: ISO C Threads
+
+35.1.2 Creation and Control
+---------------------------
+
+The GNU C Library implements a set of functions that allow the user to
+easily create and use threads.  Additional functionality is provided to
+control the behavior of threads.
+
+   The following data types are defined for managing threads:
+
+ -- Data Type: thrd_t
+     A unique object that identifies a thread.
+
+ -- Data Type: thrd_start_t
+     This data type is an `int (*) (void *)' typedef that is passed to
+     `thrd_create' when creating a new thread.  It should point to the
+     first function that thread will run.
+
+   The following functions are used for working with threads:
+
+ -- Function: int thrd_create (thrd_t *THR, thrd_start_t FUNC, void
+          *ARG)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     `thrd_create' creates a new thread that will execute the function
+     FUNC.  The object pointed to by ARG will be used as the argument
+     to FUNC.  If successful, THR is set to the new thread identifier.
+
+     This function may return `thrd_success', `thrd_nomem', or
+     `thrd_error'.
+
+ -- Function: thrd_t thrd_current (void)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     This function returns the identifier of the calling thread.
+
+ -- Function: int thrd_equal (thrd_t LHS, thrd_t RHS)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     `thrd_equal' checks whether LHS and RHS refer to the same thread.
+     If LHS and RHS are different threads, this function returns 0;
+     otherwise, the return value is non-zero.
+
+ -- Function: int thrd_sleep (const struct timespec *TIME_POINT, struct
+          timespec *REMAINING)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     `thrd_sleep' blocks the execution of the current thread for at
+     least until the elapsed time pointed to by TIME_POINT has been
+     reached.  This function does not take an absolute time, but a
+     duration that the thread is required to be blocked.  *Note Time
+     Basics::, and *Note Elapsed Time::.
+
+     The thread may wake early if a signal that is not ignored is
+     received.  In such a case, if `remaining' is not NULL, the
+     remaining time duration is stored in the object pointed to by
+     REMAINING.
+
+     `thrd_sleep' returns 0 if it blocked for at least the amount of
+     time in `time_point', -1 if it was interrupted by a signal, or a
+     negative number on failure.
+
+ -- Function: void thrd_yield (void)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     `thrd_yield' provides a hint to the implementation to reschedule
+     the execution of the current thread, allowing other threads to run.
+
+ -- Function: _Noreturn void thrd_exit (int RES)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     `thrd_exit' terminates execution of the calling thread and sets
+     its result code to RES.
+
+     If this function is called from a single-threaded process, the
+     call is equivalent to calling `exit' with `EXIT_SUCCESS' (*note
+     Normal Termination::).  Also note that returning from a function
+     that started a thread is equivalent to calling `thrd_exit'.
+
+ -- Function: int thrd_detach (thrd_t THR)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     `thrd_detach' detaches the thread identified by `thr' from the
+     current control thread.  The resources held by the detached thread
+     will be freed automatically once the thread exits.  The parent
+     thread will never be notified by any THR signal.
+
+     Calling `thrd_detach' on a thread that was previously detached or
+     joined by another thread results in undefined behavior.
+
+     This function returns either `thrd_success' or `thrd_error'.
+
+ -- Function: int thrd_join (thrd_t THR, int *RES)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     `thrd_join' blocks the current thread until the thread identified
+     by `thr' finishes execution.  If `res' is not NULL, the result
+     code of the thread is put into the location pointed to by RES.
+     The termination of the thread "synchronizes-with" the completion
+     of this function, meaning both threads have arrived at a common
+     point in their execution.
+
+     Calling `thrd_join' on a thread that was previously detached or
+     joined by another thread results in undefined behavior.
+
+     This function returns either `thrd_success' or `thrd_error'.
+
+
+File: libc.info,  Node: Call Once,  Next: ISO C Mutexes,  Prev: ISO C Thread Management,  Up: ISO C Threads
+
+35.1.3 Call Once
+----------------
+
+In order to guarantee single access to a function, the GNU C Library
+implements a "call once function" to ensure a function is only called
+once in the presence of multiple, potentially calling threads.
+
+ -- Data Type: once_flag
+     A complete object type capable of holding a flag used by
+     `call_once'.
+
+ -- Macro: ONCE_FLAG_INIT
+     This value is used to initialize an object of type `once_flag'.
+
+ -- Function: void call_once (once_flag *FLAG, void (*FUNC) (void))
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     `call_once' calls function FUNC exactly once, even if invoked from
+     several threads.  The completion of the function FUNC
+     synchronizes-with all previous or subsequent calls to `call_once'
+     with the same `flag' variable.
+
+
+File: libc.info,  Node: ISO C Mutexes,  Next: ISO C Condition Variables,  Prev: Call Once,  Up: ISO C Threads
+
+35.1.4 Mutexes
+--------------
+
+To have better control of resources and how threads access them, the
+GNU C Library implements a "mutex" object, which can help avoid race
+conditions and other concurrency issues.  The term "mutex" refers to
+mutual exclusion.
+
+   The fundamental data type for a mutex is the `mtx_t':
+
+ -- Data Type: mtx_t
+     The `mtx_t' data type uniquely identifies a mutex object.
+
+   The ISO C standard defines several types of mutexes.  They are
+represented by the following symbolic constants:
+
+`mtx_plain'
+     A mutex that does not support timeout, or test and return.
+
+`mtx_recursive'
+     A mutex that supports recursive locking, which means that the
+     owning thread can lock it more than once without causing deadlock.
+
+`mtx_timed'
+     A mutex that supports timeout.
+
+   The following functions are used for working with mutexes:
+
+ -- Function: int mtx_init (mtx_t *MUTEX, int TYPE)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     `mtx_init' creates a new mutex object with type TYPE.  The object
+     pointed to by MUTEX is set to the identifier of the newly created
+     mutex.
+
+     Not all combinations of mutex types are valid for the `type'
+     argument.  Valid uses of mutex types for the `type' argument are:
+
+    `mtx_plain'
+          A non-recursive mutex that does not support timeout.
+
+    `mtx_timed'
+          A non-recursive mutex that does support timeout.
+
+    `mtx_plain | mtx_recursive'
+          A recursive mutex that does not support timeout.
+
+    `mtx_timed | mtx_recursive'
+          A recursive mutex that does support timeout.
+
+     This function returns either `thrd_success' or `thrd_error'.
+
+ -- Function: int mtx_lock (mtx_t *MUTEX)
+     Preliminary: | MT-Safe | AS-Unsafe lock | AC-Unsafe lock | *Note
+     POSIX Safety Concepts::.
+
+     `mtx_lock' blocks the current thread until the mutex pointed to by
+     MUTEX is locked.  The behavior is undefined if the current thread
+     has already locked the mutex and the mutex is not recursive.
+
+     Prior calls to `mtx_unlock' on the same mutex synchronize-with
+     this operation (if this operation succeeds), and all lock/unlock
+     operations on any given mutex form a single total order (similar to
+     the modification order of an atomic).
+
+     This function returns either `thrd_success' or `thrd_error'.
+
+ -- Function: int mtx_timedlock (mtx_t *restrict MUTEX, const struct
+          timespec *restrict TIME_POINT)
+     Preliminary: | MT-Safe | AS-Unsafe lock | AC-Unsafe lock | *Note
+     POSIX Safety Concepts::.
+
+     `mtx_timedlock' blocks the current thread until the mutex pointed
+     to by MUTEX is locked or until the calendar time pointed to by
+     TIME_POINT has been reached.  Since this function takes an
+     absolute time, if a duration is required, the calendar time must be
+     calculated manually.  *Note Time Basics::, and *Note Calendar
+     Time::.
+
+     If the current thread has already locked the mutex and the mutex is
+     not recursive, or if the mutex does not support timeout, the
+     behavior of this function is undefined.
+
+     Prior calls to `mtx_unlock' on the same mutex synchronize-with
+     this operation (if this operation succeeds), and all lock/unlock
+     operations on any given mutex form a single total order (similar to
+     the modification order of an atomic).
+
+     This function returns either `thrd_success' or `thrd_error'.
+
+ -- Function: int mtx_trylock (mtx_t *MUTEX)
+     Preliminary: | MT-Safe | AS-Unsafe lock | AC-Unsafe lock | *Note
+     POSIX Safety Concepts::.
+
+     `mtx_trylock' tries to lock the mutex pointed to by MUTEX without
+     blocking.  It returns immediately if the mutex is already locked.
+
+     Prior calls to `mtx_unlock' on the same mutex synchronize-with
+     this operation (if this operation succeeds), and all lock/unlock
+     operations on any given mutex form a single total order (similar to
+     the modification order of an atomic).
+
+     This function returns `thrd_success' if the lock was obtained,
+     `thrd_busy' if the mutex is already locked, and `thrd_error' on
+     failure.
+
+ -- Function: int mtx_unlock (mtx_t *MUTEX)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     `mtx_unlock' unlocks the mutex pointed to by MUTEX.  The behavior
+     is undefined if the mutex is not locked by the calling thread.
+
+     This function synchronizes-with subsequent `mtx_lock',
+     `mtx_trylock', and `mtx_timedlock' calls on the same mutex.  All
+     lock/unlock operations on any given mutex form a single total
+     order (similar to the modification order of an atomic).
+
+     This function returns either `thrd_success' or `thrd_error'.
+
+ -- Function: void mtx_destroy (mtx_t *MUTEX)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     `mtx_destroy' destroys the mutex pointed to by MUTEX.  If there
+     are any threads waiting on the mutex, the behavior is undefined.
+
+
+File: libc.info,  Node: ISO C Condition Variables,  Next: ISO C Thread-local Storage,  Prev: ISO C Mutexes,  Up: ISO C Threads
+
+35.1.5 Condition Variables
+--------------------------
+
+Mutexes are not the only synchronization mechanisms available.  For
+some more complex tasks, the GNU C Library also implements "condition
+variables", which allow the programmer to think at a higher level when
+solving complex synchronization problems.  They are used to synchronize
+threads waiting on a certain condition to happen.
+
+   The fundamental data type for condition variables is the `cnd_t':
+
+ -- Data Type: cnd_t
+     The `cnd_t' uniquely identifies a condition variable object.
+
+   The following functions are used for working with condition
+variables:
+
+ -- Function: int cnd_init (cnd_t *COND)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     `cnd_init' initializes a new condition variable, identified by
+     COND.
+
+     This function may return `thrd_success', `thrd_nomem', or
+     `thrd_error'.
+
+ -- Function: int cnd_signal (cnd_t *COND)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     `cnd_signal' unblocks one thread that is currently waiting on the
+     condition variable pointed to by COND.  If a thread is
+     successfully unblocked, this function returns `thrd_success'.  If
+     no threads are blocked, this function does nothing and returns
+     `thrd_success'.  Otherwise, this function returns `thrd_error'.
+
+ -- Function: int cnd_broadcast (cnd_t *COND)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     `cnd_broadcast' unblocks all the threads that are currently
+     waiting on the condition variable pointed to by COND.  This
+     function returns `thrd_success' on success.  If no threads are
+     blocked, this function does nothing and returns `thrd_success'.
+     Otherwise, this function returns `thrd_error'.
+
+ -- Function: int cnd_wait (cnd_t *COND, mtx_t *MUTEX)
+     Preliminary: | MT-Safe | AS-Unsafe lock | AC-Unsafe lock | *Note
+     POSIX Safety Concepts::.
+
+     `cnd_wait' atomically unlocks the mutex pointed to by MUTEX and
+     blocks on the condition variable pointed to by COND until the
+     thread is signaled by `cnd_signal' or `cnd_broadcast'.  The mutex
+     is locked again before the function returns.
+
+     This function returns either `thrd_success' or `thrd_error'.
+
+ -- Function: int cnd_timedwait (cnd_t *restrict COND, mtx_t *restrict
+          MUTEX, const struct timespec *restrict TIME_POINT)
+     Preliminary: | MT-Safe | AS-Unsafe lock | AC-Unsafe lock | *Note
+     POSIX Safety Concepts::.
+
+     `cnd_timedwait' atomically unlocks the mutex pointed to by MUTEX
+     and blocks on the condition variable pointed to by COND until the
+     thread is signaled by `cnd_signal' or `cnd_broadcast', or until
+     the calendar time pointed to by TIME_POINT has been reached.  The
+     mutex is locked again before the function returns.
+
+     As for `mtx_timedlock', since this function takes an absolute
+     time, if a duration is required, the calendar time must be
+     calculated manually.  *Note Time Basics::, and *Note Calendar
+     Time::.
+
+     This function may return `thrd_success', `thrd_nomem', or
+     `thrd_error'.
+
+ -- Function: void cnd_destroy (cnd_t *COND)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     `cnd_destroy' destroys the condition variable pointed to by COND.
+     If there are threads waiting on COND, the behavior is undefined.
+
+
+File: libc.info,  Node: ISO C Thread-local Storage,  Prev: ISO C Condition Variables,  Up: ISO C Threads
+
+35.1.6 Thread-local Storage
+---------------------------
+
+The GNU C Library implements functions to provide "thread-local
+storage", a mechanism by which variables can be defined to have unique
+per-thread storage, lifetimes that match the thread lifetime, and
+destructors that cleanup the unique per-thread storage.
+
+   Several data types and macros exist for working with thread-local
+storage:
+
+ -- Data Type: tss_t
+     The `tss_t' data type identifies a thread-specific storage object.
+     Even if shared, every thread will have its own instance of the
+     variable, with different values.
+
+ -- Data Type: tss_dtor_t
+     The `tss_dtor_t' is a function pointer of type `void (*) (void
+     *)', to be used as a thread-specific storage destructor.  The
+     function will be called when the current thread calls `thrd_exit'
+     (but never when calling `tss_delete' or `exit').
+
+ -- Macro: thread_local
+     `thread_local' is used to mark a variable with thread storage
+     duration, which means it is created when the thread starts and
+     cleaned up when the thread ends.
+
+     _Note:_ For C++, C++11 or later is required to use the
+     `thread_local' keyword.
+
+ -- Macro: TSS_DTOR_ITERATIONS
+     `TSS_DTOR_ITERATIONS' is an integer constant expression
+     representing the maximum number of iterations over all thread-local
+     destructors at the time of thread termination.  This value
+     provides a bounded limit to the destruction of thread-local
+     storage; e.g., consider a destructor that creates more
+     thread-local storage.
+
+   The following functions are used to manage thread-local storage:
+
+ -- Function: int tss_create (tss_t *TSS_KEY, tss_dtor_t DESTRUCTOR)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     `tss_create' creates a new thread-specific storage key and stores
+     it in the object pointed to by TSS_KEY.  Although the same key
+     value may be used by different threads, the values bound to the
+     key by `tss_set' are maintained on a per-thread basis and persist
+     for the life of the calling thread.
+
+     If `destructor' is not NULL, a destructor function will be set,
+     and called when the thread finishes its execution by calling
+     `thrd_exit'.
+
+     This function returns `thrd_success' if `tss_key' is successfully
+     set to a unique value for the thread; otherwise, `thrd_error' is
+     returned and the value of `tss_key' is undefined.
+
+ -- Function: int tss_set (tss_t TSS_KEY, void *VAL)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     `tss_set' sets the value of the thread-specific storage identified
+     by TSS_KEY for the current thread to VAL.  Different threads may
+     set different values to the same key.
+
+     This function returns either `thrd_success' or `thrd_error'.
+
+ -- Function: void * tss_get (tss_t TSS_KEY)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     `tss_get' returns the value identified by TSS_KEY held in
+     thread-specific storage for the current thread.  Different threads
+     may get different values identified by the same key.  On failure,
+     `tss_get' returns zero.
+
+ -- Function: void tss_delete (tss_t TSS_KEY)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     `tss_delete' destroys the thread-specific storage identified by
+     TSS_KEY.
+
+
+File: libc.info,  Node: POSIX Threads,  Prev: ISO C Threads,  Up: Threads
+
+35.2 POSIX Threads
+==================
+
+This section describes the GNU C Library POSIX Threads implementation.
 
 * Menu:
 
@@ -6989,8 +8532,8 @@ This chapter describes the GNU C Library POSIX Threads implementation.
 
 File: libc.info,  Node: Thread-specific Data,  Next: Non-POSIX Extensions,  Up: POSIX Threads
 
-35.1 Thread-specific Data
-=========================
+35.2.1 Thread-specific Data
+---------------------------
 
 The GNU C Library implements functions to allow users to create and
 manage data specific to a thread.  Such data may be destroyed at thread
@@ -7035,8 +8578,8 @@ exit, if a destructor is provided.  The following functions are defined:
 
 File: libc.info,  Node: Non-POSIX Extensions,  Prev: Thread-specific Data,  Up: POSIX Threads
 
-35.2 Non-POSIX Extensions
-=========================
+35.2.2 Non-POSIX Extensions
+---------------------------
 
 In addition to implementing the POSIX API for threads, the GNU C
 Library provides additional functions and interfaces to provide
@@ -7050,8 +8593,8 @@ functionality not specified in the standard.
 
 File: libc.info,  Node: Default Thread Attributes,  Up: Non-POSIX Extensions
 
-35.2.1 Setting Process-wide defaults for thread attributes
-----------------------------------------------------------
+35.2.2.1 Setting Process-wide defaults for thread attributes
+............................................................
 
 The GNU C Library provides non-standard API functions to set and get
 the default attributes used in the creation of threads in a process.
@@ -7080,7 +8623,7 @@ the default attributes used in the creation of threads in a process.
           The system does not have sufficient memory.
 
 
-File: libc.info,  Node: Internal Probes,  Next: Tunables,  Prev: POSIX Threads,  Up: Top
+File: libc.info,  Node: Internal Probes,  Next: Tunables,  Prev: Threads,  Up: Top
 
 36 Internal probes
 ******************
@@ -7264,12 +8807,6 @@ the virtual memory subsystem of the GNU C Library.
      `malloc' parameter, and $ARG3 is nonzero if dynamic threshold
      adjustment was already disabled.
 
- -- Probe: memory_mallopt_check_action (int $ARG1, int $ARG2)
-     This probe is triggered shortly after the `memory_mallopt' probe,
-     when the parameter to be changed is `M_CHECK_ACTION'.  Argument
-     $ARG1 is the requested value, and $ARG2 is the previous value of
-     this `malloc' parameter.
-
  -- Probe: memory_mallopt_perturb (int $ARG1, int $ARG2)
      This probe is triggered shortly after the `memory_mallopt' probe,
      when the parameter to be changed is `M_PERTURB'.  Argument $ARG1
@@ -7329,48 +8866,6 @@ with inputs that may result in multiple-precision arithmetic.
 bits of precision in the mantissa of the multiple precision number.
 Hence, a precision level of 32 implies 768 bits of precision in the
 mantissa.
-
- -- Probe: slowexp_p6 (double $ARG1, double $ARG2)
-     This probe is triggered when the `exp' function is called with an
-     input that results in multiple precision computation with precision
-     6.  Argument $ARG1 is the input value and $ARG2 is the computed
-     output.
-
- -- Probe: slowexp_p32 (double $ARG1, double $ARG2)
-     This probe is triggered when the `exp' function is called with an
-     input that results in multiple precision computation with precision
-     32.  Argument $ARG1 is the input value and $ARG2 is the computed
-     output.
-
- -- Probe: slowpow_p10 (double $ARG1, double $ARG2, double $ARG3,
-          double $ARG4)
-     This probe is triggered when the `pow' function is called with
-     inputs that result in multiple precision computation with precision
-     10.  Arguments $ARG1 and $ARG2 are the input values, `$arg3' is
-     the value computed in the fast phase of the algorithm and `$arg4'
-     is the final accurate value.
-
- -- Probe: slowpow_p32 (double $ARG1, double $ARG2, double $ARG3,
-          double $ARG4)
-     This probe is triggered when the `pow' function is called with an
-     input that results in multiple precision computation with precision
-     32.  Arguments $ARG1 and $ARG2 are the input values, `$arg3' is
-     the value computed in the fast phase of the algorithm and `$arg4'
-     is the final accurate value.
-
- -- Probe: slowlog (int $ARG1, double $ARG2, double $ARG3)
-     This probe is triggered when the `log' function is called with an
-     input that results in multiple precision computation.  Argument
-     $ARG1 is the precision with which the computation succeeded.
-     Argument $ARG2 is the input and $ARG3 is the computed output.
-
- -- Probe: slowlog_inexact (int $ARG1, double $ARG2, double $ARG3)
-     This probe is triggered when the `log' function is called with an
-     input that results in multiple precision computation and none of
-     the multiple precision computations result in an accurate result.
-     Argument $ARG1 is the maximum precision with which computations
-     were performed.  Argument $ARG2 is the input and $ARG3 is the
-     computed output.
 
  -- Probe: slowatan2 (int $ARG1, double $ARG2, double $ARG3, double
           $ARG4)
@@ -7518,6 +9013,7 @@ own tunables under their own namespace.
 
 * Tunable names::  The structure of a tunable name
 * Memory Allocation Tunables::  Tunables in the memory allocation subsystem
+* Elision Tunables::  Tunables in elision subsystem
 * Hardware Capability Tunables::  Tunables that modify the hardware
 				  capabilities seen by the GNU C Library
 
@@ -7544,7 +9040,7 @@ identification of tunables by their full name, i.e. with the top
 namespace, tunable namespace and tunable name, separated by periods.
 
 
-File: libc.info,  Node: Memory Allocation Tunables,  Next: Hardware Capability Tunables,  Prev: Tunable names,  Up: Tunables
+File: libc.info,  Node: Memory Allocation Tunables,  Next: Elision Tunables,  Prev: Tunable names,  Up: Tunables
 
 37.2 Memory Allocation Tunables
 ===============================
@@ -7557,30 +9053,14 @@ File: libc.info,  Node: Memory Allocation Tunables,  Next: Hardware Capability T
      This tunable supersedes the `MALLOC_CHECK_' environment variable
      and is identical in features.
 
-     Setting this tunable enables a special (less efficient) memory
-     allocator for the malloc family of functions that is designed to
-     be tolerant against simple errors such as double calls of free
-     with the same argument, or overruns of a single byte (off-by-one
-     bugs). Not all such errors can be protected against, however, and
-     memory leaks can result.  The following list describes the values
-     that this tunable can take and the effect they have on malloc
-     functionality:
-
-        * `0' Ignore all errors.  The default allocator continues to be
-          in use, but all errors are silently ignored.
-
-        * `1' Report errors.  The alternate allocator is selected and
-          heap corruption, if detected, is reported as diagnostic
-          messages to `stderr' and the program continues execution.
-
-        * `2' Abort on errors.  The alternate allocator is selected and
-          if heap corruption is detected, the program is ended
-          immediately by calling `abort'.
-
-        * `3' Fully enabled.  The alternate allocator is selected and
-          is fully functional.  That is, if heap corruption is
-          detected, a verbose diagnostic message is printed to `stderr'
-          and the program is ended by calling `abort'.
+     Setting this tunable to a non-zero value enables a special (less
+     efficient) memory allocator for the malloc family of functions
+     that is designed to be tolerant against simple errors such as
+     double calls of free with the same argument, or overruns of a
+     single byte (off-by-one bugs). Not all such errors can be
+     protected against, however, and memory leaks can result.  Any
+     detected heap corruption results in immediate termination of the
+     process.
 
      Like `MALLOC_CHECK_', `glibc.malloc.check' has a problem in that it
      diverges from normal program behavior by writing to `stderr',
@@ -7709,9 +9189,74 @@ File: libc.info,  Node: Memory Allocation Tunables,  Next: Hardware Capability T
      when set to zero, is no limit.
 
 
-File: libc.info,  Node: Hardware Capability Tunables,  Prev: Memory Allocation Tunables,  Up: Tunables
+File: libc.info,  Node: Elision Tunables,  Next: Hardware Capability Tunables,  Prev: Memory Allocation Tunables,  Up: Tunables
 
-37.3 Hardware Capability Tunables
+37.3 Elision Tunables
+=====================
+
+ -- Tunable namespace: glibc.elision
+     Contended locks are usually slow and can lead to performance and
+     scalability issues in multithread code. Lock elision will use
+     memory transactions to under certain conditions, to elide locks
+     and improve performance.  Elision behavior can be modified by
+     setting the following tunables in the `elision' namespace:
+
+ -- Tunable: glibc.elision.enable
+     The `glibc.elision.enable' tunable enables lock elision if the
+     feature is supported by the hardware.  If elision is not supported
+     by the hardware this tunable has no effect.
+
+     Elision tunables are supported for 64-bit Intel, IBM POWER, and z
+     System architectures.
+
+ -- Tunable: glibc.elision.skip_lock_busy
+     The `glibc.elision.skip_lock_busy' tunable sets how many times to
+     use a non-transactional lock after a transactional failure has
+     occurred because the lock is already acquired.  Expressed in
+     number of lock acquisition attempts.
+
+     The default value of this tunable is `3'.
+
+ -- Tunable: glibc.elision.skip_lock_internal_abort
+     The `glibc.elision.skip_lock_internal_abort' tunable sets how many
+     times the thread should avoid using elision if a transaction
+     aborted for any reason other than a different thread's memory
+     accesses.  Expressed in number of lock acquisition attempts.
+
+     The default value of this tunable is `3'.
+
+ -- Tunable: glibc.elision.skip_lock_after_retries
+     The `glibc.elision.skip_lock_after_retries' tunable sets how many
+     times to try to elide a lock with transactions, that only failed
+     due to a different thread's memory accesses, before falling back
+     to regular lock.  Expressed in number of lock elision attempts.
+
+     This tunable is supported only on IBM POWER, and z System
+     architectures.
+
+     The default value of this tunable is `3'.
+
+ -- Tunable: glibc.elision.tries
+     The `glibc.elision.tries' sets how many times to retry elision if
+     there is chance for the transaction to finish execution e.g., it
+     wasn't aborted due to the lock being already acquired.  If elision
+     is not supported by the hardware this tunable is set to `0' to
+     avoid retries.
+
+     The default value of this tunable is `3'.
+
+ -- Tunable: glibc.elision.skip_trylock_internal_abort
+     The `glibc.elision.skip_trylock_internal_abort' tunable sets how
+     many times the thread should avoid trying the lock if a
+     transaction aborted due to reasons other than a different thread's
+     memory accesses.  Expressed in number of try lock attempts.
+
+     The default value of this tunable is `3'.
+
+
+File: libc.info,  Node: Hardware Capability Tunables,  Prev: Elision Tunables,  Up: Tunables
+
+37.4 Hardware Capability Tunables
 =================================
 
  -- Tunable namespace: glibc.tune
@@ -7723,7 +9268,7 @@ File: libc.info,  Node: Hardware Capability Tunables,  Prev: Memory Allocation T
      This tunable supersedes the `LD_HWCAP_MASK' environment variable
      and is identical in features.
 
-     The `AT_HWCAP' key in the Auxilliary Vector specifies instruction
+     The `AT_HWCAP' key in the Auxiliary Vector specifies instruction
      set extensions available in the processor at runtime for some
      architectures.  The `glibc.tune.hwcap_mask' tunable allows the
      user to mask out those capabilities at runtime, thus disabling use
@@ -7737,10 +9282,20 @@ File: libc.info,  Node: Hardware Capability Tunables,  Prev: Memory Allocation T
 
      This tunable is specific to i386 and x86-64.
 
+ -- Tunable: glibc.tune.cached_memopt
+     The `glibc.tune.cached_memopt=[0|1]' tunable allows the user to
+     enable optimizations recommended for cacheable memory.  If set to
+     `1', the GNU C Library assumes that the process memory image
+     consists of cacheable (non-device) memory only.  The default, `0',
+     indicates that the process may use device memory.
+
+     This tunable is specific to powerpc, powerpc64 and powerpc64le.
+
  -- Tunable: glibc.tune.cpu
      The `glibc.tune.cpu=xxx' tunable allows the user to tell the GNU C
      Library to assume that the CPU is `xxx' where xxx may have one of
-     these values: `generic', `thunderxt88'.
+     these values: `generic', `falkor', `thunderxt88', `thunderx2t99',
+     `thunderx2t99p1'.
 
      This tunable is specific to aarch64.
 
@@ -7758,6 +9313,32 @@ File: libc.info,  Node: Hardware Capability Tunables,  Prev: Memory Allocation T
  -- Tunable: glibc.tune.x86_non_temporal_threshold
      The `glibc.tune.x86_non_temporal_threshold' tunable allows the user
      to set threshold in bytes for non temporal store.
+
+     This tunable is specific to i386 and x86-64.
+
+ -- Tunable: glibc.tune.x86_ibt
+     The `glibc.tune.x86_ibt' tunable allows the user to control how
+     indirect branch tracking (IBT) should be enabled.  Accepted values
+     are `on', `off', and `permissive'.  `on' always turns on IBT
+     regardless of whether IBT is enabled in the executable and its
+     dependent shared libraries.  `off' always turns off IBT regardless
+     of whether IBT is enabled in the executable and its dependent
+     shared libraries.  `permissive' is the same as the default which
+     disables IBT on non-CET executables and shared libraries.
+
+     This tunable is specific to i386 and x86-64.
+
+ -- Tunable: glibc.tune.x86_shstk
+     The `glibc.tune.x86_shstk' tunable allows the user to control how
+     the shadow stack (SHSTK) should be enabled.  Accepted values are
+     `on', `off', and `permissive'.  `on' always turns on SHSTK
+     regardless of whether SHSTK is enabled in the executable and its
+     dependent shared libraries.  `off' always turns off SHSTK
+     regardless of whether SHSTK is enabled in the executable and its
+     dependent shared libraries.  `permissive' changes how dlopen works
+     on non-CET shared libraries.  By default, when SHSTK is enabled,
+     dlopening a non-CET shared library returns an error.  With
+     `permissive', it turns off SHSTK instead.
 
      This tunable is specific to i386 and x86-64.
 
@@ -7782,1095 +9363,4 @@ features has been written, we are publishing it here.
 * Null Pointer Constant::       The macro `NULL'.
 * Important Data Types::        Data types for object sizes.
 * Data Type Measurements::      Parameters of data type representations.
-
-
-File: libc.info,  Node: Consistency Checking,  Next: Variadic Functions,  Up: Language Features
-
-A.1 Explicitly Checking Internal Consistency
-============================================
-
-When you're writing a program, it's often a good idea to put in checks
-at strategic places for "impossible" errors or violations of basic
-assumptions.  These kinds of checks are helpful in debugging problems
-with the interfaces between different parts of the program, for example.
-
-   The `assert' macro, defined in the header file `assert.h', provides
-a convenient way to abort the program while printing a message about
-where in the program the error was detected.
-
-   Once you think your program is debugged, you can disable the error
-checks performed by the `assert' macro by recompiling with the macro
-`NDEBUG' defined.  This means you don't actually have to change the
-program source code to disable these checks.
-
-   But disabling these consistency checks is undesirable unless they
-make the program significantly slower.  All else being equal, more error
-checking is good no matter who is running the program.  A wise user
-would rather have a program crash, visibly, than have it return nonsense
-without indicating anything might be wrong.
-
- -- Macro: void assert (int EXPRESSION)
-     Preliminary: | MT-Safe | AS-Unsafe heap corrupt | AC-Unsafe mem
-     lock corrupt | *Note POSIX Safety Concepts::.
-
-     Verify the programmer's belief that EXPRESSION is nonzero at this
-     point in the program.
-
-     If `NDEBUG' is not defined, `assert' tests the value of
-     EXPRESSION.  If it is false (zero), `assert' aborts the program
-     (*note Aborting a Program::) after printing a message of the form:
-
-          `FILE':LINENUM: FUNCTION: Assertion `EXPRESSION' failed.
-
-     on the standard error stream `stderr' (*note Standard Streams::).
-     The filename and line number are taken from the C preprocessor
-     macros `__FILE__' and `__LINE__' and specify where the call to
-     `assert' was made.  When using the GNU C compiler, the name of the
-     function which calls `assert' is taken from the built-in variable
-     `__PRETTY_FUNCTION__'; with older compilers, the function name and
-     following colon are omitted.
-
-     If the preprocessor macro `NDEBUG' is defined before `assert.h' is
-     included, the `assert' macro is defined to do absolutely nothing.
-
-     *Warning:* Even the argument expression EXPRESSION is not
-     evaluated if `NDEBUG' is in effect.  So never use `assert' with
-     arguments that involve side effects.  For example, `assert (++i >
-     0);' is a bad idea, because `i' will not be incremented if
-     `NDEBUG' is defined.
-
-   Sometimes the "impossible" condition you want to check for is an
-error return from an operating system function.  Then it is useful to
-display not only where the program crashes, but also what error was
-returned.  The `assert_perror' macro makes this easy.
-
- -- Macro: void assert_perror (int ERRNUM)
-     Preliminary: | MT-Safe | AS-Unsafe heap corrupt | AC-Unsafe mem
-     lock corrupt | *Note POSIX Safety Concepts::.
-
-     Similar to `assert', but verifies that ERRNUM is zero.
-
-     If `NDEBUG' is not defined, `assert_perror' tests the value of
-     ERRNUM.  If it is nonzero, `assert_perror' aborts the program
-     after printing a message of the form:
-
-          `FILE':LINENUM: FUNCTION: ERROR TEXT
-
-     on the standard error stream.  The file name, line number, and
-     function name are as for `assert'.  The error text is the result of
-     `strerror (ERRNUM)'.  *Note Error Messages::.
-
-     Like `assert', if `NDEBUG' is defined before `assert.h' is
-     included, the `assert_perror' macro does absolutely nothing.  It
-     does not evaluate the argument, so ERRNUM should not have any side
-     effects.  It is best for ERRNUM to be just a simple variable
-     reference; often it will be `errno'.
-
-     This macro is a GNU extension.
-
-   *Usage note:* The `assert' facility is designed for detecting
-_internal inconsistency_; it is not suitable for reporting invalid
-input or improper usage by the _user_ of the program.
-
-   The information in the diagnostic messages printed by the `assert'
-and `assert_perror' macro is intended to help you, the programmer,
-track down the cause of a bug, but is not really useful for telling a
-user of your program why his or her input was invalid or why a command
-could not be carried out.  What's more, your program should not abort
-when given invalid input, as `assert' would do--it should exit with
-nonzero status (*note Exit Status::) after printing its error messages,
-or perhaps read another command or move on to the next input file.
-
-   *Note Error Messages::, for information on printing error messages
-for problems that _do not_ represent bugs in the program.
-
-
-File: libc.info,  Node: Variadic Functions,  Next: Null Pointer Constant,  Prev: Consistency Checking,  Up: Language Features
-
-A.2 Variadic Functions
-======================
-
-ISO C defines a syntax for declaring a function to take a variable
-number or type of arguments.  (Such functions are referred to as
-"varargs functions" or "variadic functions".)  However, the language
-itself provides no mechanism for such functions to access their
-non-required arguments; instead, you use the variable arguments macros
-defined in `stdarg.h'.
-
-   This section describes how to declare variadic functions, how to
-write them, and how to call them properly.
-
-   *Compatibility Note:* Many older C dialects provide a similar, but
-incompatible, mechanism for defining functions with variable numbers of
-arguments, using `varargs.h'.
-
-* Menu:
-
-* Why Variadic::                Reasons for making functions take
-                                 variable arguments.
-* How Variadic::                How to define and call variadic functions.
-* Variadic Example::            A complete example.
-
-
-File: libc.info,  Node: Why Variadic,  Next: How Variadic,  Up: Variadic Functions
-
-A.2.1 Why Variadic Functions are Used
--------------------------------------
-
-Ordinary C functions take a fixed number of arguments.  When you define
-a function, you specify the data type for each argument.  Every call to
-the function should supply the expected number of arguments, with types
-that can be converted to the specified ones.  Thus, if the function
-`foo' is declared with `int foo (int, char *);' then you must call it
-with two arguments, a number (any kind will do) and a string pointer.
-
-   But some functions perform operations that can meaningfully accept an
-unlimited number of arguments.
-
-   In some cases a function can handle any number of values by
-operating on all of them as a block.  For example, consider a function
-that allocates a one-dimensional array with `malloc' to hold a
-specified set of values.  This operation makes sense for any number of
-values, as long as the length of the array corresponds to that number.
-Without facilities for variable arguments, you would have to define a
-separate function for each possible array size.
-
-   The library function `printf' (*note Formatted Output::) is an
-example of another class of function where variable arguments are
-useful.  This function prints its arguments (which can vary in type as
-well as number) under the control of a format template string.
-
-   These are good reasons to define a "variadic" function which can
-handle as many arguments as the caller chooses to pass.
-
-   Some functions such as `open' take a fixed set of arguments, but
-occasionally ignore the last few.  Strict adherence to ISO C requires
-these functions to be defined as variadic; in practice, however, the GNU
-C compiler and most other C compilers let you define such a function to
-take a fixed set of arguments--the most it can ever use--and then only
-_declare_ the function as variadic (or not declare its arguments at
-all!).
-
-
-File: libc.info,  Node: How Variadic,  Next: Variadic Example,  Prev: Why Variadic,  Up: Variadic Functions
-
-A.2.2 How Variadic Functions are Defined and Used
--------------------------------------------------
-
-Defining and using a variadic function involves three steps:
-
-   * _Define_ the function as variadic, using an ellipsis (`...') in
-     the argument list, and using special macros to access the variable
-     arguments.  *Note Receiving Arguments::.
-
-   * _Declare_ the function as variadic, using a prototype with an
-     ellipsis (`...'), in all the files which call it.  *Note Variadic
-     Prototypes::.
-
-   * _Call_ the function by writing the fixed arguments followed by the
-     additional variable arguments.  *Note Calling Variadics::.
-
-* Menu:
-
-* Variadic Prototypes::  How to make a prototype for a function
-			  with variable arguments.
-* Receiving Arguments::  Steps you must follow to access the
-			  optional argument values.
-* How Many Arguments::   How to decide whether there are more arguments.
-* Calling Variadics::    Things you need to know about calling
-			  variable arguments functions.
-* Argument Macros::      Detailed specification of the macros
-        		  for accessing variable arguments.
-
-
-File: libc.info,  Node: Variadic Prototypes,  Next: Receiving Arguments,  Up: How Variadic
-
-A.2.2.1 Syntax for Variable Arguments
-.....................................
-
-A function that accepts a variable number of arguments must be declared
-with a prototype that says so.   You write the fixed arguments as usual,
-and then tack on `...' to indicate the possibility of additional
-arguments.  The syntax of ISO C requires at least one fixed argument
-before the `...'.  For example,
-
-     int
-     func (const char *a, int b, ...)
-     {
-       ...
-     }
-
-defines a function `func' which returns an `int' and takes two required
-arguments, a `const char *' and an `int'.  These are followed by any
-number of anonymous arguments.
-
-   *Portability note:* For some C compilers, the last required argument
-must not be declared `register' in the function definition.
-Furthermore, this argument's type must be "self-promoting": that is,
-the default promotions must not change its type.  This rules out array
-and function types, as well as `float', `char' (whether signed or not)
-and `short int' (whether signed or not).  This is actually an ISO C
-requirement.
-
-
-File: libc.info,  Node: Receiving Arguments,  Next: How Many Arguments,  Prev: Variadic Prototypes,  Up: How Variadic
-
-A.2.2.2 Receiving the Argument Values
-.....................................
-
-Ordinary fixed arguments have individual names, and you can use these
-names to access their values.  But optional arguments have no
-names--nothing but `...'.  How can you access them?
-
-   The only way to access them is sequentially, in the order they were
-written, and you must use special macros from `stdarg.h' in the
-following three step process:
-
-  1. You initialize an argument pointer variable of type `va_list' using
-     `va_start'.  The argument pointer when initialized points to the
-     first optional argument.
-
-  2. You access the optional arguments by successive calls to `va_arg'.
-     The first call to `va_arg' gives you the first optional argument,
-     the next call gives you the second, and so on.
-
-     You can stop at any time if you wish to ignore any remaining
-     optional arguments.  It is perfectly all right for a function to
-     access fewer arguments than were supplied in the call, but you
-     will get garbage values if you try to access too many arguments.
-
-  3. You indicate that you are finished with the argument pointer
-     variable by calling `va_end'.
-
-     (In practice, with most C compilers, calling `va_end' does nothing.
-     This is always true in the GNU C compiler.  But you might as well
-     call `va_end' just in case your program is someday compiled with a
-     peculiar compiler.)
-
-   *Note Argument Macros::, for the full definitions of `va_start',
-`va_arg' and `va_end'.
-
-   Steps 1 and 3 must be performed in the function that accepts the
-optional arguments.  However, you can pass the `va_list' variable as an
-argument to another function and perform all or part of step 2 there.
-
-   You can perform the entire sequence of three steps multiple times
-within a single function invocation.  If you want to ignore the optional
-arguments, you can do these steps zero times.
-
-   You can have more than one argument pointer variable if you like.
-You can initialize each variable with `va_start' when you wish, and
-then you can fetch arguments with each argument pointer as you wish.
-Each argument pointer variable will sequence through the same set of
-argument values, but at its own pace.
-
-   *Portability note:* With some compilers, once you pass an argument
-pointer value to a subroutine, you must not keep using the same
-argument pointer value after that subroutine returns.  For full
-portability, you should just pass it to `va_end'.  This is actually an
-ISO C requirement, but most ANSI C compilers work happily regardless.
-
-
-File: libc.info,  Node: How Many Arguments,  Next: Calling Variadics,  Prev: Receiving Arguments,  Up: How Variadic
-
-A.2.2.3 How Many Arguments Were Supplied
-........................................
-
-There is no general way for a function to determine the number and type
-of the optional arguments it was called with.  So whoever designs the
-function typically designs a convention for the caller to specify the
-number and type of arguments.  It is up to you to define an appropriate
-calling convention for each variadic function, and write all calls
-accordingly.
-
-   One kind of calling convention is to pass the number of optional
-arguments as one of the fixed arguments.  This convention works provided
-all of the optional arguments are of the same type.
-
-   A similar alternative is to have one of the required arguments be a
-bit mask, with a bit for each possible purpose for which an optional
-argument might be supplied.  You would test the bits in a predefined
-sequence; if the bit is set, fetch the value of the next argument,
-otherwise use a default value.
-
-   A required argument can be used as a pattern to specify both the
-number and types of the optional arguments.  The format string argument
-to `printf' is one example of this (*note Formatted Output Functions::).
-
-   Another possibility is to pass an "end marker" value as the last
-optional argument.  For example, for a function that manipulates an
-arbitrary number of pointer arguments, a null pointer might indicate the
-end of the argument list.  (This assumes that a null pointer isn't
-otherwise meaningful to the function.)  The `execl' function works in
-just this way; see *Note Executing a File::.
-
-
-File: libc.info,  Node: Calling Variadics,  Next: Argument Macros,  Prev: How Many Arguments,  Up: How Variadic
-
-A.2.2.4 Calling Variadic Functions
-..................................
-
-You don't have to do anything special to call a variadic function.
-Just put the arguments (required arguments, followed by optional ones)
-inside parentheses, separated by commas, as usual.  But you must declare
-the function with a prototype and know how the argument values are
-converted.
-
-   In principle, functions that are _defined_ to be variadic must also
-be _declared_ to be variadic using a function prototype whenever you
-call them.  (*Note Variadic Prototypes::, for how.)  This is because
-some C compilers use a different calling convention to pass the same set
-of argument values to a function depending on whether that function
-takes variable arguments or fixed arguments.
-
-   In practice, the GNU C compiler always passes a given set of argument
-types in the same way regardless of whether they are optional or
-required.  So, as long as the argument types are self-promoting, you can
-safely omit declaring them.  Usually it is a good idea to declare the
-argument types for variadic functions, and indeed for all functions.
-But there are a few functions which it is extremely convenient not to
-have to declare as variadic--for example, `open' and `printf'.
-
-   Since the prototype doesn't specify types for optional arguments, in
-a call to a variadic function the "default argument promotions" are
-performed on the optional argument values.  This means the objects of
-type `char' or `short int' (whether signed or not) are promoted to
-either `int' or `unsigned int', as appropriate; and that objects of
-type `float' are promoted to type `double'.  So, if the caller passes a
-`char' as an optional argument, it is promoted to an `int', and the
-function can access it with `va_arg (AP, int)'.
-
-   Conversion of the required arguments is controlled by the function
-prototype in the usual way: the argument expression is converted to the
-declared argument type as if it were being assigned to a variable of
-that type.
-
-
-File: libc.info,  Node: Argument Macros,  Prev: Calling Variadics,  Up: How Variadic
-
-A.2.2.5 Argument Access Macros
-..............................
-
-Here are descriptions of the macros used to retrieve variable arguments.
-These macros are defined in the header file `stdarg.h'.  
-
- -- Data Type: va_list
-     The type `va_list' is used for argument pointer variables.
-
- -- Macro: void va_start (va_list AP, LAST-REQUIRED)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     This macro initializes the argument pointer variable AP to point
-     to the first of the optional arguments of the current function;
-     LAST-REQUIRED must be the last required argument to the function.
-
- -- Macro: TYPE va_arg (va_list AP, TYPE)
-     Preliminary: | MT-Safe race:ap | AS-Safe | AC-Unsafe corrupt |
-     *Note POSIX Safety Concepts::.
-
-     The `va_arg' macro returns the value of the next optional argument,
-     and modifies the value of AP to point to the subsequent argument.
-     Thus, successive uses of `va_arg' return successive optional
-     arguments.
-
-     The type of the value returned by `va_arg' is TYPE as specified in
-     the call.  TYPE must be a self-promoting type (not `char' or
-     `short int' or `float') that matches the type of the actual
-     argument.
-
- -- Macro: void va_end (va_list AP)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     This ends the use of AP.  After a `va_end' call, further `va_arg'
-     calls with the same AP may not work.  You should invoke `va_end'
-     before returning from the function in which `va_start' was invoked
-     with the same AP argument.
-
-     In the GNU C Library, `va_end' does nothing, and you need not ever
-     use it except for reasons of portability.
-
-
-   Sometimes it is necessary to parse the list of parameters more than
-once or one wants to remember a certain position in the parameter list.
-To do this, one will have to make a copy of the current value of the
-argument.  But `va_list' is an opaque type and one cannot necessarily
-assign the value of one variable of type `va_list' to another variable
-of the same type.
-
- -- Macro: void va_copy (va_list DEST, va_list SRC)
- -- Macro: void __va_copy (va_list DEST, va_list SRC)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     The `va_copy' macro allows copying of objects of type `va_list'
-     even if this is not an integral type.  The argument pointer in
-     DEST is initialized to point to the same argument as the pointer
-     in SRC.
-
-     This macro was added in ISO C99.  When building for strict
-     conformance to ISO C90 (`gcc -ansi'), it is not available.  The
-     macro `__va_copy' is available as a GNU extension in any standards
-     mode; before GCC 3.0, it was the only macro for this functionality.
-
-   If you want to use `va_copy' and be portable to pre-C99 systems, you
-should always be prepared for the possibility that this macro will not
-be available.  On architectures where a simple assignment is invalid,
-hopefully `va_copy' _will_ be available, so one should always write
-something like this if concerned about pre-C99 portability:
-
-     {
-       va_list ap, save;
-       ...
-     #ifdef va_copy
-       va_copy (save, ap);
-     #else
-       save = ap;
-     #endif
-       ...
-     }
-
-
-File: libc.info,  Node: Variadic Example,  Prev: How Variadic,  Up: Variadic Functions
-
-A.2.3 Example of a Variadic Function
-------------------------------------
-
-Here is a complete sample function that accepts a variable number of
-arguments.  The first argument to the function is the count of remaining
-arguments, which are added up and the result returned.  While trivial,
-this function is sufficient to illustrate how to use the variable
-arguments facility.
-
-
-     #include <stdarg.h>
-     #include <stdio.h>
-
-     int
-     add_em_up (int count,...)
-     {
-       va_list ap;
-       int i, sum;
-
-       va_start (ap, count);         /* Initialize the argument list. */
-
-       sum = 0;
-       for (i = 0; i < count; i++)
-         sum += va_arg (ap, int);    /* Get the next argument value. */
-
-       va_end (ap);                  /* Clean up. */
-       return sum;
-     }
-
-     int
-     main (void)
-     {
-       /* This call prints 16. */
-       printf ("%d\n", add_em_up (3, 5, 5, 6));
-
-       /* This call prints 55. */
-       printf ("%d\n", add_em_up (10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
-
-       return 0;
-     }
-
-
-File: libc.info,  Node: Null Pointer Constant,  Next: Important Data Types,  Prev: Variadic Functions,  Up: Language Features
-
-A.3 Null Pointer Constant
-=========================
-
-The null pointer constant is guaranteed not to point to any real object.
-You can assign it to any pointer variable since it has type `void *'.
-The preferred way to write a null pointer constant is with `NULL'.
-
- -- Macro: void * NULL
-     This is a null pointer constant.
-
-   You can also use `0' or `(void *)0' as a null pointer constant, but
-using `NULL' is cleaner because it makes the purpose of the constant
-more evident.
-
-   If you use the null pointer constant as a function argument, then for
-complete portability you should make sure that the function has a
-prototype declaration.  Otherwise, if the target machine has two
-different pointer representations, the compiler won't know which
-representation to use for that argument.  You can avoid the problem by
-explicitly casting the constant to the proper pointer type, but we
-recommend instead adding a prototype for the function you are calling.
-
-
-File: libc.info,  Node: Important Data Types,  Next: Data Type Measurements,  Prev: Null Pointer Constant,  Up: Language Features
-
-A.4 Important Data Types
-========================
-
-The result of subtracting two pointers in C is always an integer, but
-the precise data type varies from C compiler to C compiler.  Likewise,
-the data type of the result of `sizeof' also varies between compilers.
-ISO C defines standard aliases for these two types, so you can refer to
-them in a portable fashion.  They are defined in the header file
-`stddef.h'.  
-
- -- Data Type: ptrdiff_t
-     This is the signed integer type of the result of subtracting two
-     pointers.  For example, with the declaration `char *p1, *p2;', the
-     expression `p2 - p1' is of type `ptrdiff_t'.  This will probably
-     be one of the standard signed integer types (`short int', `int' or
-     `long int'), but might be a nonstandard type that exists only for
-     this purpose.
-
- -- Data Type: size_t
-     This is an unsigned integer type used to represent the sizes of
-     objects.  The result of the `sizeof' operator is of this type, and
-     functions such as `malloc' (*note Unconstrained Allocation::) and
-     `memcpy' (*note Copying Strings and Arrays::) accept arguments of
-     this type to specify object sizes.  On systems using the GNU C
-     Library, this will be `unsigned int' or `unsigned long int'.
-
-     *Usage Note:* `size_t' is the preferred way to declare any
-     arguments or variables that hold the size of an object.
-
-   *Compatibility Note:* Implementations of C before the advent of
-ISO C generally used `unsigned int' for representing object sizes and
-`int' for pointer subtraction results.  They did not necessarily define
-either `size_t' or `ptrdiff_t'.  Unix systems did define `size_t', in
-`sys/types.h', but the definition was usually a signed type.
-
-
-File: libc.info,  Node: Data Type Measurements,  Prev: Important Data Types,  Up: Language Features
-
-A.5 Data Type Measurements
-==========================
-
-Most of the time, if you choose the proper C data type for each object
-in your program, you need not be concerned with just how it is
-represented or how many bits it uses.  When you do need such
-information, the C language itself does not provide a way to get it.
-The header files `limits.h' and `float.h' contain macros which give you
-this information in full detail.
-
-* Menu:
-
-* Width of Type::           How many bits does an integer type hold?
-* Range of Type::           What are the largest and smallest values
-			     that an integer type can hold?
-* Floating Type Macros::    Parameters that measure the floating point types.
-* Structure Measurement::   Getting measurements on structure types.
-
-
-File: libc.info,  Node: Width of Type,  Next: Range of Type,  Up: Data Type Measurements
-
-A.5.1 Computing the Width of an Integer Data Type
--------------------------------------------------
-
-The most common reason that a program needs to know how many bits are in
-an integer type is for using an array of `long int' as a bit vector.
-You can access the bit at index N with
-
-     vector[N / LONGBITS] & (1 << (N % LONGBITS))
-
-provided you define `LONGBITS' as the number of bits in a `long int'.
-
-   There is no operator in the C language that can give you the number
-of bits in an integer data type.  But you can compute it from the macro
-`CHAR_BIT', defined in the header file `limits.h'.
-
- -- Macro: int CHAR_BIT
-     This is the number of bits in a `char'.  POSIX.1-2001 requires
-     this to be 8.
-
-     You can compute the number of bits in any data type TYPE like this:
-
-          sizeof (TYPE) * CHAR_BIT
-
-   That expression includes padding bits as well as value and sign bits.
-On all systems supported by the GNU C Library, standard integer types
-other than `_Bool' do not have any padding bits.  TS 18661-1:2014
-defines additional macros for the width of integer types (the number of
-value and sign bits); these macros can also be used in `#if'
-preprocessor directives, whereas `sizeof' cannot.  The following macros
-are defined in `limits.h'.
-
-`CHAR_WIDTH'
-`SCHAR_WIDTH'
-`UCHAR_WIDTH'
-`SHRT_WIDTH'
-`USHRT_WIDTH'
-`INT_WIDTH'
-`UINT_WIDTH'
-`LONG_WIDTH'
-`ULONG_WIDTH'
-`LLONG_WIDTH'
-`ULLONG_WIDTH'
-     These are the widths of the types `char', `signed char', `unsigned
-     char', `short int', `unsigned short int', `int', `unsigned int',
-     `long int', `unsigned long int', `long long int' and `unsigned
-     long long int', respectively.
-
-   Further such macros are defined in `stdint.h'.  Apart from those for
-types specified by width (*note Integers::), the following are defined.
-
-`INTPTR_WIDTH'
-`UINTPTR_WIDTH'
-`PTRDIFF_WIDTH'
-`SIG_ATOMIC_WIDTH'
-`SIZE_WIDTH'
-`WCHAR_WIDTH'
-`WINT_WIDTH'
-     These are the widths of the types `intptr_t', `uintptr_t',
-     `ptrdiff_t', `sig_atomic_t', `size_t', `wchar_t' and `wint_t',
-     respectively.
-
-
-File: libc.info,  Node: Range of Type,  Next: Floating Type Macros,  Prev: Width of Type,  Up: Data Type Measurements
-
-A.5.2 Range of an Integer Type
-------------------------------
-
-Suppose you need to store an integer value which can range from zero to
-one million.  Which is the smallest type you can use?  There is no
-general rule; it depends on the C compiler and target machine.  You can
-use the `MIN' and `MAX' macros in `limits.h' to determine which type
-will work.
-
-   Each signed integer type has a pair of macros which give the smallest
-and largest values that it can hold.  Each unsigned integer type has one
-such macro, for the maximum value; the minimum value is, of course,
-zero.
-
-   The values of these macros are all integer constant expressions.  The
-`MAX' and `MIN' macros for `char' and `short int' types have values of
-type `int'.  The `MAX' and `MIN' macros for the other types have values
-of the same type described by the macro--thus, `ULONG_MAX' has type
-`unsigned long int'.
-
-`SCHAR_MIN'
-     This is the minimum value that can be represented by a
-     `signed char'.
-
-`SCHAR_MAX'
-`UCHAR_MAX'
-     These are the maximum values that can be represented by a
-     `signed char' and `unsigned char', respectively.
-
-`CHAR_MIN'
-     This is the minimum value that can be represented by a `char'.
-     It's equal to `SCHAR_MIN' if `char' is signed, or zero otherwise.
-
-`CHAR_MAX'
-     This is the maximum value that can be represented by a `char'.
-     It's equal to `SCHAR_MAX' if `char' is signed, or `UCHAR_MAX'
-     otherwise.
-
-`SHRT_MIN'
-     This is the minimum value that can be represented by a
-     `signed short int'.  On most machines that the GNU C Library runs
-     on, `short' integers are 16-bit quantities.
-
-`SHRT_MAX'
-`USHRT_MAX'
-     These are the maximum values that can be represented by a
-     `signed short int' and `unsigned short int', respectively.
-
-`INT_MIN'
-     This is the minimum value that can be represented by a
-     `signed int'.  On most machines that the GNU C Library runs on, an
-     `int' is a 32-bit quantity.
-
-`INT_MAX'
-`UINT_MAX'
-     These are the maximum values that can be represented by,
-     respectively, the type `signed int' and the type `unsigned int'.
-
-`LONG_MIN'
-     This is the minimum value that can be represented by a
-     `signed long int'.  On most machines that the GNU C Library runs
-     on, `long' integers are 32-bit quantities, the same size as `int'.
-
-`LONG_MAX'
-`ULONG_MAX'
-     These are the maximum values that can be represented by a
-     `signed long int' and `unsigned long int', respectively.
-
-`LLONG_MIN'
-     This is the minimum value that can be represented by a
-     `signed long long int'.  On most machines that the GNU C Library
-     runs on, `long long' integers are 64-bit quantities.
-
-`LLONG_MAX'
-`ULLONG_MAX'
-     These are the maximum values that can be represented by a `signed
-     long long int' and `unsigned long long int', respectively.
-
-`LONG_LONG_MIN'
-`LONG_LONG_MAX'
-`ULONG_LONG_MAX'
-     These are obsolete names for `LLONG_MIN', `LLONG_MAX', and
-     `ULLONG_MAX'.  They are only available if `_GNU_SOURCE' is defined
-     (*note Feature Test Macros::).  In GCC versions prior to 3.0,
-     these were the only names available.
-
-`WCHAR_MAX'
-     This is the maximum value that can be represented by a `wchar_t'.
-     *Note Extended Char Intro::.
-
-   The header file `limits.h' also defines some additional constants
-that parameterize various operating system and file system limits.
-These constants are described in *Note System Configuration::.
-
-
-File: libc.info,  Node: Floating Type Macros,  Next: Structure Measurement,  Prev: Range of Type,  Up: Data Type Measurements
-
-A.5.3 Floating Type Macros
---------------------------
-
-The specific representation of floating point numbers varies from
-machine to machine.  Because floating point numbers are represented
-internally as approximate quantities, algorithms for manipulating
-floating point data often need to take account of the precise details of
-the machine's floating point representation.
-
-   Some of the functions in the C library itself need this information;
-for example, the algorithms for printing and reading floating point
-numbers (*note I/O on Streams::) and for calculating trigonometric and
-irrational functions (*note Mathematics::) use it to avoid round-off
-error and loss of accuracy.  User programs that implement numerical
-analysis techniques also often need this information in order to
-minimize or compute error bounds.
-
-   The header file `float.h' describes the format used by your machine.
-
-* Menu:
-
-* Floating Point Concepts::     Definitions of terminology.
-* Floating Point Parameters::   Details of specific macros.
-* IEEE Floating Point::         The measurements for one common
-                                 representation.
-
-
-File: libc.info,  Node: Floating Point Concepts,  Next: Floating Point Parameters,  Up: Floating Type Macros
-
-A.5.3.1 Floating Point Representation Concepts
-..............................................
-
-This section introduces the terminology for describing floating point
-representations.
-
-   You are probably already familiar with most of these concepts in
-terms of scientific or exponential notation for floating point numbers.
-For example, the number `123456.0' could be expressed in exponential
-notation as `1.23456e+05', a shorthand notation indicating that the
-mantissa `1.23456' is multiplied by the base `10' raised to power `5'.
-
-   More formally, the internal representation of a floating point number
-can be characterized in terms of the following parameters:
-
-   * The "sign" is either `-1' or `1'.
-
-   * The "base" or "radix" for exponentiation, an integer greater than
-     `1'.  This is a constant for a particular representation.
-
-   * The "exponent" to which the base is raised.  The upper and lower
-     bounds of the exponent value are constants for a particular
-     representation.
-
-     Sometimes, in the actual bits representing the floating point
-     number, the exponent is "biased" by adding a constant to it, to
-     make it always be represented as an unsigned quantity.  This is
-     only important if you have some reason to pick apart the bit
-     fields making up the floating point number by hand, which is
-     something for which the GNU C Library provides no support.  So
-     this is ignored in the discussion that follows.
-
-   * The "mantissa" or "significand" is an unsigned integer which is a
-     part of each floating point number.
-
-   * The "precision" of the mantissa.  If the base of the representation
-     is B, then the precision is the number of base-B digits in the
-     mantissa.  This is a constant for a particular representation.
-
-     Many floating point representations have an implicit "hidden bit"
-     in the mantissa.  This is a bit which is present virtually in the
-     mantissa, but not stored in memory because its value is always 1
-     in a normalized number.  The precision figure (see above) includes
-     any hidden bits.
-
-     Again, the GNU C Library provides no facilities for dealing with
-     such low-level aspects of the representation.
-
-   The mantissa of a floating point number represents an implicit
-fraction whose denominator is the base raised to the power of the
-precision.  Since the largest representable mantissa is one less than
-this denominator, the value of the fraction is always strictly less
-than `1'.  The mathematical value of a floating point number is then
-the product of this fraction, the sign, and the base raised to the
-exponent.
-
-   We say that the floating point number is "normalized" if the
-fraction is at least `1/B', where B is the base.  In other words, the
-mantissa would be too large to fit if it were multiplied by the base.
-Non-normalized numbers are sometimes called "denormal"; they contain
-less precision than the representation normally can hold.
-
-   If the number is not normalized, then you can subtract `1' from the
-exponent while multiplying the mantissa by the base, and get another
-floating point number with the same value.  "Normalization" consists of
-doing this repeatedly until the number is normalized.  Two distinct
-normalized floating point numbers cannot be equal in value.
-
-   (There is an exception to this rule: if the mantissa is zero, it is
-considered normalized.  Another exception happens on certain machines
-where the exponent is as small as the representation can hold.  Then it
-is impossible to subtract `1' from the exponent, so a number may be
-normalized even if its fraction is less than `1/B'.)
-
-
-File: libc.info,  Node: Floating Point Parameters,  Next: IEEE Floating Point,  Prev: Floating Point Concepts,  Up: Floating Type Macros
-
-A.5.3.2 Floating Point Parameters
-.................................
-
-These macro definitions can be accessed by including the header file
-`float.h' in your program.
-
-   Macro names starting with `FLT_' refer to the `float' type, while
-names beginning with `DBL_' refer to the `double' type and names
-beginning with `LDBL_' refer to the `long double' type.  (If GCC does
-not support `long double' as a distinct data type on a target machine
-then the values for the `LDBL_' constants are equal to the
-corresponding constants for the `double' type.)
-
-   Of these macros, only `FLT_RADIX' is guaranteed to be a constant
-expression.  The other macros listed here cannot be reliably used in
-places that require constant expressions, such as `#if' preprocessing
-directives or in the dimensions of static arrays.
-
-   Although the ISO C standard specifies minimum and maximum values for
-most of these parameters, the GNU C implementation uses whatever values
-describe the floating point representation of the target machine.  So in
-principle GNU C actually satisfies the ISO C requirements only if the
-target machine is suitable.  In practice, all the machines currently
-supported are suitable.
-
-`FLT_ROUNDS'
-     This value characterizes the rounding mode for floating point
-     addition.  The following values indicate standard rounding modes:
-
-    `-1'
-          The mode is indeterminable.
-
-    `0'
-          Rounding is towards zero.
-
-    `1'
-          Rounding is to the nearest number.
-
-    `2'
-          Rounding is towards positive infinity.
-
-    `3'
-          Rounding is towards negative infinity.
-
-     Any other value represents a machine-dependent nonstandard rounding
-     mode.
-
-     On most machines, the value is `1', in accordance with the IEEE
-     standard for floating point.
-
-     Here is a table showing how certain values round for each possible
-     value of `FLT_ROUNDS', if the other aspects of the representation
-     match the IEEE single-precision standard.
-
-                          0      1             2             3
-           1.00000003    1.0    1.0           1.00000012    1.0
-           1.00000007    1.0    1.00000012    1.00000012    1.0
-          -1.00000003   -1.0   -1.0          -1.0          -1.00000012
-          -1.00000007   -1.0   -1.00000012   -1.0          -1.00000012
-
-`FLT_RADIX'
-     This is the value of the base, or radix, of the exponent
-     representation.  This is guaranteed to be a constant expression,
-     unlike the other macros described in this section.  The value is 2
-     on all machines we know of except the IBM 360 and derivatives.
-
-`FLT_MANT_DIG'
-     This is the number of base-`FLT_RADIX' digits in the floating point
-     mantissa for the `float' data type.  The following expression
-     yields `1.0' (even though mathematically it should not) due to the
-     limited number of mantissa digits:
-
-          float radix = FLT_RADIX;
-
-          1.0f + 1.0f / radix / radix / ... / radix
-
-     where `radix' appears `FLT_MANT_DIG' times.
-
-`DBL_MANT_DIG'
-`LDBL_MANT_DIG'
-     This is the number of base-`FLT_RADIX' digits in the floating point
-     mantissa for the data types `double' and `long double',
-     respectively.
-
-`FLT_DIG'
-     This is the number of decimal digits of precision for the `float'
-     data type.  Technically, if P and B are the precision and base
-     (respectively) for the representation, then the decimal precision
-     Q is the maximum number of decimal digits such that any floating
-     point number with Q base 10 digits can be rounded to a floating
-     point number with P base B digits and back again, without change
-     to the Q decimal digits.
-
-     The value of this macro is supposed to be at least `6', to satisfy
-     ISO C.
-
-`DBL_DIG'
-`LDBL_DIG'
-     These are similar to `FLT_DIG', but for the data types `double'
-     and `long double', respectively.  The values of these macros are
-     supposed to be at least `10'.
-
-`FLT_MIN_EXP'
-     This is the smallest possible exponent value for type `float'.
-     More precisely, it is the minimum negative integer such that the
-     value `FLT_RADIX' raised to this power minus 1 can be represented
-     as a normalized floating point number of type `float'.
-
-`DBL_MIN_EXP'
-`LDBL_MIN_EXP'
-     These are similar to `FLT_MIN_EXP', but for the data types
-     `double' and `long double', respectively.
-
-`FLT_MIN_10_EXP'
-     This is the minimum negative integer such that `10' raised to this
-     power minus 1 can be represented as a normalized floating point
-     number of type `float'.  This is supposed to be `-37' or even less.
-
-`DBL_MIN_10_EXP'
-`LDBL_MIN_10_EXP'
-     These are similar to `FLT_MIN_10_EXP', but for the data types
-     `double' and `long double', respectively.
-
-`FLT_MAX_EXP'
-     This is the largest possible exponent value for type `float'.  More
-     precisely, this is the maximum positive integer such that value
-     `FLT_RADIX' raised to this power minus 1 can be represented as a
-     floating point number of type `float'.
-
-`DBL_MAX_EXP'
-`LDBL_MAX_EXP'
-     These are similar to `FLT_MAX_EXP', but for the data types
-     `double' and `long double', respectively.
-
-`FLT_MAX_10_EXP'
-     This is the maximum positive integer such that `10' raised to this
-     power minus 1 can be represented as a normalized floating point
-     number of type `float'.  This is supposed to be at least `37'.
-
-`DBL_MAX_10_EXP'
-`LDBL_MAX_10_EXP'
-     These are similar to `FLT_MAX_10_EXP', but for the data types
-     `double' and `long double', respectively.
-
-`FLT_MAX'
-     The value of this macro is the maximum number representable in type
-     `float'.  It is supposed to be at least `1E+37'.  The value has
-     type `float'.
-
-     The smallest representable number is `- FLT_MAX'.
-
-`DBL_MAX'
-`LDBL_MAX'
-     These are similar to `FLT_MAX', but for the data types `double'
-     and `long double', respectively.  The type of the macro's value is
-     the same as the type it describes.
-
-`FLT_MIN'
-     The value of this macro is the minimum normalized positive floating
-     point number that is representable in type `float'.  It is supposed
-     to be no more than `1E-37'.
-
-`DBL_MIN'
-`LDBL_MIN'
-     These are similar to `FLT_MIN', but for the data types `double'
-     and `long double', respectively.  The type of the macro's value is
-     the same as the type it describes.
-
-`FLT_EPSILON'
-     This is the difference between 1 and the smallest floating point
-     number of type `float' that is greater than 1.  It's supposed to
-     be no greater than `1E-5'.
-
-`DBL_EPSILON'
-`LDBL_EPSILON'
-     These are similar to `FLT_EPSILON', but for the data types
-     `double' and `long double', respectively.  The type of the macro's
-     value is the same as the type it describes.  The values are not
-     supposed to be greater than `1E-9'.
-
-
-File: libc.info,  Node: IEEE Floating Point,  Prev: Floating Point Parameters,  Up: Floating Type Macros
-
-A.5.3.3 IEEE Floating Point
-...........................
-
-Here is an example showing how the floating type measurements come out
-for the most common floating point representation, specified by the
-`IEEE Standard for Binary Floating Point Arithmetic (ANSI/IEEE Std
-754-1985)'.  Nearly all computers designed since the 1980s use this
-format.
-
-   The IEEE single-precision float representation uses a base of 2.
-There is a sign bit, a mantissa with 23 bits plus one hidden bit (so
-the total precision is 24 base-2 digits), and an 8-bit exponent that
-can represent values in the range -125 to 128, inclusive.
-
-   So, for an implementation that uses this representation for the
-`float' data type, appropriate values for the corresponding parameters
-are:
-
-     FLT_RADIX                             2
-     FLT_MANT_DIG                         24
-     FLT_DIG                               6
-     FLT_MIN_EXP                        -125
-     FLT_MIN_10_EXP                      -37
-     FLT_MAX_EXP                         128
-     FLT_MAX_10_EXP                      +38
-     FLT_MIN                 1.17549435E-38F
-     FLT_MAX                 3.40282347E+38F
-     FLT_EPSILON             1.19209290E-07F
-
-   Here are the values for the `double' data type:
-
-     DBL_MANT_DIG                         53
-     DBL_DIG                              15
-     DBL_MIN_EXP                       -1021
-     DBL_MIN_10_EXP                     -307
-     DBL_MAX_EXP                        1024
-     DBL_MAX_10_EXP                      308
-     DBL_MAX         1.7976931348623157E+308
-     DBL_MIN         2.2250738585072014E-308
-     DBL_EPSILON     2.2204460492503131E-016
-
-
-File: libc.info,  Node: Structure Measurement,  Prev: Floating Type Macros,  Up: Data Type Measurements
-
-A.5.4 Structure Field Offset Measurement
-----------------------------------------
-
-You can use `offsetof' to measure the location within a structure type
-of a particular structure member.
-
- -- Macro: size_t offsetof (TYPE, MEMBER)
-     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
-     Concepts::.
-
-     This expands to an integer constant expression that is the offset
-     of the structure member named MEMBER in the structure type TYPE.
-     For example, `offsetof (struct s, elem)' is the offset, in bytes,
-     of the member `elem' in a `struct s'.
-
-     This macro won't work if MEMBER is a bit field; you get an error
-     from the C compiler in that case.
 

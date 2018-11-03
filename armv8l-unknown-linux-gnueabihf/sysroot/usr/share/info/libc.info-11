@@ -39,7 +39,6 @@ START-INFO-DIR-ENTRY
 * CS8: (libc)Control Modes.
 * CSIZE: (libc)Control Modes.
 * CSTOPB: (libc)Control Modes.
-* DES_FAILED: (libc)DES Encryption.
 * DTTOIF: (libc)Directory Entries.
 * E2BIG: (libc)Error Codes.
 * EACCES: (libc)Error Codes.
@@ -309,6 +308,7 @@ START-INFO-DIR-ENTRY
 * O_READ: (libc)Access Modes.
 * O_SHLOCK: (libc)Open-time Flags.
 * O_SYNC: (libc)Operating Modes.
+* O_TMPFILE: (libc)Open-time Flags.
 * O_TRUNC: (libc)Open-time Flags.
 * O_WRITE: (libc)Access Modes.
 * O_WRONLY: (libc)Access Modes.
@@ -472,6 +472,7 @@ START-INFO-DIR-ENTRY
 * __ppc_set_ppr_med_low: (libc)PowerPC.
 * __ppc_set_ppr_very_low: (libc)PowerPC.
 * __ppc_yield: (libc)PowerPC.
+* __riscv_flush_icache: (libc)RISC-V.
 * __va_copy: (libc)Argument Macros.
 * _exit: (libc)Termination Internals.
 * _flushlbf: (libc)Flushing Buffers.
@@ -598,6 +599,7 @@ START-INFO-DIR-ENTRY
 * cacoshfNx: (libc)Hyperbolic Functions.
 * cacoshl: (libc)Hyperbolic Functions.
 * cacosl: (libc)Inverse Trig Functions.
+* call_once: (libc)Call Once.
 * calloc: (libc)Allocating Cleared Space.
 * canonicalize: (libc)FP Bit Twiddling.
 * canonicalize_file_name: (libc)Symbolic Links.
@@ -633,7 +635,6 @@ START-INFO-DIR-ENTRY
 * catclose: (libc)The catgets Functions.
 * catgets: (libc)The catgets Functions.
 * catopen: (libc)The catgets Functions.
-* cbc_crypt: (libc)DES Encryption.
 * cbrt: (libc)Exponents and Logarithms.
 * cbrtf: (libc)Exponents and Logarithms.
 * cbrtfN: (libc)Exponents and Logarithms.
@@ -690,6 +691,12 @@ START-INFO-DIR-ENTRY
 * close: (libc)Opening and Closing Files.
 * closedir: (libc)Reading/Closing Directory.
 * closelog: (libc)closelog.
+* cnd_broadcast: (libc)ISO C Condition Variables.
+* cnd_destroy: (libc)ISO C Condition Variables.
+* cnd_init: (libc)ISO C Condition Variables.
+* cnd_signal: (libc)ISO C Condition Variables.
+* cnd_timedwait: (libc)ISO C Condition Variables.
+* cnd_wait: (libc)ISO C Condition Variables.
 * confstr: (libc)String Parameters.
 * conj: (libc)Operations on Complex.
 * conjf: (libc)Operations on Complex.
@@ -697,6 +704,7 @@ START-INFO-DIR-ENTRY
 * conjfNx: (libc)Operations on Complex.
 * conjl: (libc)Operations on Complex.
 * connect: (libc)Connecting.
+* copy_file_range: (libc)Copying File Data.
 * copysign: (libc)FP Bit Twiddling.
 * copysignf: (libc)FP Bit Twiddling.
 * copysignfN: (libc)FP Bit Twiddling.
@@ -729,8 +737,8 @@ START-INFO-DIR-ENTRY
 * creall: (libc)Operations on Complex.
 * creat64: (libc)Opening and Closing Files.
 * creat: (libc)Opening and Closing Files.
-* crypt: (libc)crypt.
-* crypt_r: (libc)crypt.
+* crypt: (libc)Passphrase Storage.
+* crypt_r: (libc)Passphrase Storage.
 * csin: (libc)Trig Functions.
 * csinf: (libc)Trig Functions.
 * csinfN: (libc)Trig Functions.
@@ -760,27 +768,27 @@ START-INFO-DIR-ENTRY
 * ctime: (libc)Formatting Calendar Time.
 * ctime_r: (libc)Formatting Calendar Time.
 * cuserid: (libc)Who Logged In.
+* daddl: (libc)Misc FP Arithmetic.
 * dcgettext: (libc)Translation with gettext.
 * dcngettext: (libc)Advanced gettext functions.
-* des_setparity: (libc)DES Encryption.
+* ddivl: (libc)Misc FP Arithmetic.
 * dgettext: (libc)Translation with gettext.
 * difftime: (libc)Elapsed Time.
 * dirfd: (libc)Opening a Directory.
 * dirname: (libc)Finding Tokens in a String.
 * div: (libc)Integer Division.
+* dmull: (libc)Misc FP Arithmetic.
 * dngettext: (libc)Advanced gettext functions.
 * drand48: (libc)SVID Random.
 * drand48_r: (libc)SVID Random.
 * drem: (libc)Remainder Functions.
 * dremf: (libc)Remainder Functions.
 * dreml: (libc)Remainder Functions.
+* dsubl: (libc)Misc FP Arithmetic.
 * dup2: (libc)Duplicating Descriptors.
 * dup: (libc)Duplicating Descriptors.
-* ecb_crypt: (libc)DES Encryption.
 * ecvt: (libc)System V Number Conversion.
 * ecvt_r: (libc)System V Number Conversion.
-* encrypt: (libc)DES Encryption.
-* encrypt_r: (libc)DES Encryption.
 * endfsent: (libc)fstab.
 * endgrent: (libc)Scanning All Groups.
 * endhostent: (libc)Host Names.
@@ -843,11 +851,29 @@ START-INFO-DIR-ENTRY
 * expm1fN: (libc)Exponents and Logarithms.
 * expm1fNx: (libc)Exponents and Logarithms.
 * expm1l: (libc)Exponents and Logarithms.
+* fMaddfN: (libc)Misc FP Arithmetic.
+* fMaddfNx: (libc)Misc FP Arithmetic.
+* fMdivfN: (libc)Misc FP Arithmetic.
+* fMdivfNx: (libc)Misc FP Arithmetic.
+* fMmulfN: (libc)Misc FP Arithmetic.
+* fMmulfNx: (libc)Misc FP Arithmetic.
+* fMsubfN: (libc)Misc FP Arithmetic.
+* fMsubfNx: (libc)Misc FP Arithmetic.
+* fMxaddfN: (libc)Misc FP Arithmetic.
+* fMxaddfNx: (libc)Misc FP Arithmetic.
+* fMxdivfN: (libc)Misc FP Arithmetic.
+* fMxdivfNx: (libc)Misc FP Arithmetic.
+* fMxmulfN: (libc)Misc FP Arithmetic.
+* fMxmulfNx: (libc)Misc FP Arithmetic.
+* fMxsubfN: (libc)Misc FP Arithmetic.
+* fMxsubfNx: (libc)Misc FP Arithmetic.
 * fabs: (libc)Absolute Value.
 * fabsf: (libc)Absolute Value.
 * fabsfN: (libc)Absolute Value.
 * fabsfNx: (libc)Absolute Value.
 * fabsl: (libc)Absolute Value.
+* fadd: (libc)Misc FP Arithmetic.
+* faddl: (libc)Misc FP Arithmetic.
 * fchdir: (libc)Working Directory.
 * fchmod: (libc)Setting Permissions.
 * fchown: (libc)File Owner.
@@ -862,6 +888,8 @@ START-INFO-DIR-ENTRY
 * fdimfN: (libc)Misc FP Arithmetic.
 * fdimfNx: (libc)Misc FP Arithmetic.
 * fdiml: (libc)Misc FP Arithmetic.
+* fdiv: (libc)Misc FP Arithmetic.
+* fdivl: (libc)Misc FP Arithmetic.
 * fdopen: (libc)Descriptors and Streams.
 * fdopendir: (libc)Opening a Directory.
 * feclearexcept: (libc)Status bit operations.
@@ -945,6 +973,8 @@ START-INFO-DIR-ENTRY
 * fmodfNx: (libc)Remainder Functions.
 * fmodl: (libc)Remainder Functions.
 * fmtmsg: (libc)Printing Formatted Messages.
+* fmul: (libc)Misc FP Arithmetic.
+* fmull: (libc)Misc FP Arithmetic.
 * fnmatch: (libc)Wildcard Matching.
 * fopen64: (libc)Opening Streams.
 * fopen: (libc)Opening Streams.
@@ -990,6 +1020,8 @@ START-INFO-DIR-ENTRY
 * fsetpos: (libc)Portable Positioning.
 * fstat64: (libc)Reading Attributes.
 * fstat: (libc)Reading Attributes.
+* fsub: (libc)Misc FP Arithmetic.
+* fsubl: (libc)Misc FP Arithmetic.
 * fsync: (libc)Synchronizing I/O.
 * ftell: (libc)File Positioning.
 * ftello64: (libc)File Positioning.
@@ -1263,6 +1295,7 @@ START-INFO-DIR-ENTRY
 * lgammal: (libc)Special Functions.
 * lgammal_r: (libc)Special Functions.
 * link: (libc)Hard Links.
+* linkat: (libc)Hard Links.
 * lio_listio64: (libc)Asynchronous Reads/Writes.
 * lio_listio: (libc)Asynchronous Reads/Writes.
 * listen: (libc)Listening.
@@ -1353,7 +1386,8 @@ START-INFO-DIR-ENTRY
 * memchr: (libc)Search Functions.
 * memcmp: (libc)String/Array Comparison.
 * memcpy: (libc)Copying Strings and Arrays.
-* memfrob: (libc)Trivial Encryption.
+* memfd_create: (libc)Memory-mapped I/O.
+* memfrob: (libc)Obfuscating Data.
 * memmem: (libc)Search Functions.
 * memmove: (libc)Copying Strings and Arrays.
 * mempcpy: (libc)Copying Strings and Arrays.
@@ -1366,6 +1400,7 @@ START-INFO-DIR-ENTRY
 * mkstemp: (libc)Temporary Files.
 * mktemp: (libc)Temporary Files.
 * mktime: (libc)Broken-down Time.
+* mlock2: (libc)Page Lock Functions.
 * mlock: (libc)Page Lock Functions.
 * mlockall: (libc)Page Lock Functions.
 * mmap64: (libc)Memory-mapped I/O.
@@ -1377,11 +1412,18 @@ START-INFO-DIR-ENTRY
 * modfl: (libc)Rounding Functions.
 * mount: (libc)Mount-Unmount-Remount.
 * mprobe: (libc)Heap Consistency Checking.
+* mprotect: (libc)Memory Protection.
 * mrand48: (libc)SVID Random.
 * mrand48_r: (libc)SVID Random.
 * mremap: (libc)Memory-mapped I/O.
 * msync: (libc)Memory-mapped I/O.
 * mtrace: (libc)Tracing malloc.
+* mtx_destroy: (libc)ISO C Mutexes.
+* mtx_init: (libc)ISO C Mutexes.
+* mtx_lock: (libc)ISO C Mutexes.
+* mtx_timedlock: (libc)ISO C Mutexes.
+* mtx_trylock: (libc)ISO C Mutexes.
+* mtx_unlock: (libc)ISO C Mutexes.
 * munlock: (libc)Page Lock Functions.
 * munlockall: (libc)Page Lock Functions.
 * munmap: (libc)Memory-mapped I/O.
@@ -1465,13 +1507,15 @@ START-INFO-DIR-ENTRY
 * pclose: (libc)Pipe to a Subprocess.
 * perror: (libc)Error Messages.
 * pipe: (libc)Creating a Pipe.
+* pkey_alloc: (libc)Memory Protection.
+* pkey_free: (libc)Memory Protection.
+* pkey_get: (libc)Memory Protection.
+* pkey_mprotect: (libc)Memory Protection.
+* pkey_set: (libc)Memory Protection.
 * popen: (libc)Pipe to a Subprocess.
 * posix_fallocate64: (libc)Storage Allocation.
 * posix_fallocate: (libc)Storage Allocation.
 * posix_memalign: (libc)Aligned Memory Blocks.
-* pow10: (libc)Exponents and Logarithms.
-* pow10f: (libc)Exponents and Logarithms.
-* pow10l: (libc)Exponents and Logarithms.
 * pow: (libc)Exponents and Logarithms.
 * powf: (libc)Exponents and Logarithms.
 * powfN: (libc)Exponents and Logarithms.
@@ -1479,10 +1523,10 @@ START-INFO-DIR-ENTRY
 * powl: (libc)Exponents and Logarithms.
 * pread64: (libc)I/O Primitives.
 * pread: (libc)I/O Primitives.
-* preadv2: (libc)I/O Primitives.
-* preadv64: (libc)I/O Primitives.
-* preadv64v2: (libc)I/O Primitives.
-* preadv: (libc)I/O Primitives.
+* preadv2: (libc)Scatter-Gather.
+* preadv64: (libc)Scatter-Gather.
+* preadv64v2: (libc)Scatter-Gather.
+* preadv: (libc)Scatter-Gather.
 * printf: (libc)Formatted Output Functions.
 * printf_size: (libc)Predefined Printf Handlers.
 * printf_size_info: (libc)Predefined Printf Handlers.
@@ -1511,10 +1555,10 @@ START-INFO-DIR-ENTRY
 * putwchar_unlocked: (libc)Simple Output.
 * pwrite64: (libc)I/O Primitives.
 * pwrite: (libc)I/O Primitives.
-* pwritev2: (libc)I/O Primitives.
-* pwritev64: (libc)I/O Primitives.
-* pwritev64v2: (libc)I/O Primitives.
-* pwritev: (libc)I/O Primitives.
+* pwritev2: (libc)Scatter-Gather.
+* pwritev64: (libc)Scatter-Gather.
+* pwritev64v2: (libc)Scatter-Gather.
+* pwritev: (libc)Scatter-Gather.
 * qecvt: (libc)System V Number Conversion.
 * qecvt_r: (libc)System V Number Conversion.
 * qfcvt: (libc)System V Number Conversion.
@@ -1637,8 +1681,6 @@ START-INFO-DIR-ENTRY
 * sethostname: (libc)Host Identification.
 * setitimer: (libc)Setting an Alarm.
 * setjmp: (libc)Non-Local Details.
-* setkey: (libc)DES Encryption.
-* setkey_r: (libc)DES Encryption.
 * setlinebuf: (libc)Controlling Buffering.
 * setlocale: (libc)Setting the Locale.
 * setlogmask: (libc)setlogmask.
@@ -1756,7 +1798,7 @@ START-INFO-DIR-ENTRY
 * strfromfN: (libc)Printing of Floats.
 * strfromfNx: (libc)Printing of Floats.
 * strfroml: (libc)Printing of Floats.
-* strfry: (libc)strfry.
+* strfry: (libc)Shuffling Bytes.
 * strftime: (libc)Formatting Calendar Time.
 * strlen: (libc)String Length.
 * strncasecmp: (libc)String/Array Comparison.
@@ -1832,6 +1874,14 @@ START-INFO-DIR-ENTRY
 * tgammafN: (libc)Special Functions.
 * tgammafNx: (libc)Special Functions.
 * tgammal: (libc)Special Functions.
+* thrd_create: (libc)ISO C Thread Management.
+* thrd_current: (libc)ISO C Thread Management.
+* thrd_detach: (libc)ISO C Thread Management.
+* thrd_equal: (libc)ISO C Thread Management.
+* thrd_exit: (libc)ISO C Thread Management.
+* thrd_join: (libc)ISO C Thread Management.
+* thrd_sleep: (libc)ISO C Thread Management.
+* thrd_yield: (libc)ISO C Thread Management.
 * time: (libc)Simple Calendar Time.
 * timegm: (libc)Broken-down Time.
 * timelocal: (libc)Broken-down Time.
@@ -1864,6 +1914,10 @@ START-INFO-DIR-ENTRY
 * truncfNx: (libc)Rounding Functions.
 * truncl: (libc)Rounding Functions.
 * tsearch: (libc)Tree Search Function.
+* tss_create: (libc)ISO C Thread-local Storage.
+* tss_delete: (libc)ISO C Thread-local Storage.
+* tss_get: (libc)ISO C Thread-local Storage.
+* tss_set: (libc)ISO C Thread-local Storage.
 * ttyname: (libc)Is It a Terminal.
 * ttyname_r: (libc)Is It a Terminal.
 * twalk: (libc)Tree Search Function.
@@ -2005,10 +2059,10 @@ END-INFO-DIR-ENTRY
 
    This file documents the GNU C Library.
 
-   This is `The GNU C Library Reference Manual', for version 2.26
-(crosstool-NG 1.23.0.420-201f).
+   This is `The GNU C Library Reference Manual', for version 2.28
+(crosstool-NG 1.23.0.513-84e6).
 
-   Copyright (C) 1993-2017 Free Software Foundation, Inc.
+   Copyright (C) 1993-2018 Free Software Foundation, Inc.
 
    Permission is granted to copy, distribute and/or modify this document
 under the terms of the GNU Free Documentation License, Version
@@ -2022,6 +2076,1271 @@ Free Documentation License".
    (a) The FSF's Back-Cover Text is: "You have the freedom to copy and
 modify this GNU manual.  Buying copies from the FSF supports it in
 developing GNU and promoting software freedom."
+
+
+File: libc.info,  Node: Configuring and compiling,  Next: Running make install,  Up: Installation
+
+C.1 Configuring and compiling the GNU C Library
+===============================================
+
+The GNU C Library cannot be compiled in the source directory.  You must
+build it in a separate build directory.  For example, if you have
+unpacked the GNU C Library sources in `/src/gnu/glibc-VERSION', create
+a directory `/src/gnu/glibc-build' to put the object files in.  This
+allows removing the whole build directory in case an error occurs,
+which is the safest way to get a fresh start and should always be done.
+
+   From your object directory, run the shell script `configure' located
+at the top level of the source tree.  In the scenario above, you'd type
+
+     $ ../glibc-VERSION/configure ARGS...
+
+   Please note that even though you're building in a separate build
+directory, the compilation may need to create or modify files and
+directories in the source directory.
+
+`configure' takes many options, but the only one that is usually
+mandatory is `--prefix'.  This option tells `configure' where you want
+the GNU C Library installed.  This defaults to `/usr/local', but the
+normal setting to install as the standard system library is
+`--prefix=/usr' for GNU/Linux systems and `--prefix=' (an empty prefix)
+for GNU/Hurd systems.
+
+   It may also be useful to pass `CC=COMPILER' and `CFLAGS=FLAGS'
+arguments to `configure'.  `CC' selects the C compiler that will be
+used, and `CFLAGS' sets optimization options for the compiler.  Any
+compiler options required for all compilations, such as options
+selecting an ABI or a processor for which to generate code, should be
+included in `CC'.  Options that may be overridden by the GNU C Library
+build system for particular files, such as for optimization and
+debugging, should go in `CFLAGS'.  The default value of `CFLAGS' is `-g
+-O2', and the GNU C Library cannot be compiled without optimization, so
+if `CFLAGS' is specified it must enable optimization.  For example:
+
+     $ ../glibc-VERSION/configure CC="gcc -m32" CFLAGS="-O3"
+
+   The following list describes all of the available options for
+`configure':
+
+`--prefix=DIRECTORY'
+     Install machine-independent data files in subdirectories of
+     `DIRECTORY'.  The default is to install in `/usr/local'.
+
+`--exec-prefix=DIRECTORY'
+     Install the library and other machine-dependent files in
+     subdirectories of `DIRECTORY'.  The default is to the `--prefix'
+     directory if that option is specified, or `/usr/local' otherwise.
+
+`--with-headers=DIRECTORY'
+     Look for kernel header files in DIRECTORY, not `/usr/include'.
+     The GNU C Library needs information from the kernel's header files
+     describing the interface to the kernel.  The GNU C Library will
+     normally look in `/usr/include' for them, but if you specify this
+     option, it will look in DIRECTORY instead.
+
+     This option is primarily of use on a system where the headers in
+     `/usr/include' come from an older version of the GNU C Library.
+     Conflicts can occasionally happen in this case.  You can also use
+     this option if you want to compile the GNU C Library with a newer
+     set of kernel headers than the ones found in `/usr/include'.
+
+`--enable-kernel=VERSION'
+     This option is currently only useful on GNU/Linux systems.  The
+     VERSION parameter should have the form X.Y.Z and describes the
+     smallest version of the Linux kernel the generated library is
+     expected to support.  The higher the VERSION number is, the less
+     compatibility code is added, and the faster the code gets.
+
+`--with-binutils=DIRECTORY'
+     Use the binutils (assembler and linker) in `DIRECTORY', not the
+     ones the C compiler would default to.  You can use this option if
+     the default binutils on your system cannot deal with all the
+     constructs in the GNU C Library.  In that case, `configure' will
+     detect the problem and suppress these constructs, so that the
+     library will still be usable, but functionality may be lost--for
+     example, you can't build a shared libc with old binutils.
+
+`--disable-shared'
+     Don't build shared libraries even if it is possible.  Not all
+     systems support shared libraries; you need ELF support and
+     (currently) the GNU linker.
+
+`--enable-static-pie'
+     Enable static position independent executable (static PIE) support.
+     Static PIE is similar to static executable, but can be loaded at
+     any address without help from a dynamic linker.  All static
+     programs as well as static tests are built as static PIE, except
+     for those marked with no-pie.  The resulting glibc can be used
+     with the GCC option, -static-pie, which is available with GCC 8 or
+     above, to create static PIE.  This option also implies that glibc
+     programs and tests are created as dynamic position independent
+     executables (PIE) by default.
+
+`--enable-cet'
+     Enable Intel Control-flow Enforcement Technology (CET) support.
+     When the GNU C Library is built with `--enable-cet', the resulting
+     library is protected with indirect branch tracking (IBT) and
+     shadow stack (SHSTK).  When CET is enabled, the GNU C Library is
+     compatible with all existing executables and shared libraries.
+     This feature is currently supported on i386, x86_64 and x32 with
+     GCC 8 and binutils 2.29 or later.  Note that when CET is enabled,
+     the GNU C Library requires CPUs capable of multi-byte NOPs, like
+     x86-64 processors as well as Intel Pentium Pro or newer.
+
+     NOTE: `--enable-cet' has been tested for i686, x86_64 and x32 on
+     non-CET processors.  `--enable-cet' has been tested for x86_64 and
+     x32 on CET SDVs, but Intel CET support hasn't been validated for
+     i686.
+
+`--disable-profile'
+     Don't build libraries with profiling information.  You may want to
+     use this option if you don't plan to do profiling.
+
+`--enable-static-nss'
+     Compile static versions of the NSS (Name Service Switch) libraries.
+     This is not recommended because it defeats the purpose of NSS; a
+     program linked statically with the NSS libraries cannot be
+     dynamically reconfigured to use a different name database.
+
+`--enable-hardcoded-path-in-tests'
+     By default, dynamic tests are linked to run with the installed C
+     library.  This option hardcodes the newly built C library path in
+     dynamic tests so that they can be invoked directly.
+
+`--disable-timezone-tools'
+     By default, timezone related utilities (`zic', `zdump', and
+     `tzselect') are installed with the GNU C Library.  If you are
+     building these independently (e.g. by using the `tzcode' package),
+     then this option will allow disabling the install of these.
+
+     Note that you need to make sure the external tools are kept in
+     sync with the versions that the GNU C Library expects as the data
+     formats may change over time.  Consult the `timezone' subdirectory
+     for more details.
+
+`--enable-stack-protector'
+`--enable-stack-protector=strong'
+`--enable-stack-protector=all'
+     Compile the C library and all other parts of the glibc package
+     (including the threading and math libraries, NSS modules, and
+     transliteration modules) using the GCC `-fstack-protector',
+     `-fstack-protector-strong' or `-fstack-protector-all' options to
+     detect stack overruns.  Only the dynamic linker and a small number
+     of routines called directly from assembler are excluded from this
+     protection.
+
+`--enable-bind-now'
+     Disable lazy binding for installed shared objects.  This provides
+     additional security hardening because it enables full RELRO and a
+     read-only global offset table (GOT), at the cost of slightly
+     increased program load times.
+
+`--enable-pt_chown'
+     The file `pt_chown' is a helper binary for `grantpt' (*note
+     Pseudo-Terminals: Allocation.) that is installed setuid root to
+     fix up pseudo-terminal ownership.  It is not built by default
+     because systems using the Linux kernel are commonly built with the
+     `devpts' filesystem enabled and mounted at `/dev/pts', which
+     manages pseudo-terminal ownership automatically.  By using
+     `--enable-pt_chown', you may build `pt_chown' and install it
+     setuid and owned by `root'.  The use of `pt_chown' introduces
+     additional security risks to the system and you should enable it
+     only if you understand and accept those risks.
+
+`--disable-werror'
+     By default, the GNU C Library is built with `-Werror'.  If you wish
+     to build without this option (for example, if building with a newer
+     version of GCC than this version of the GNU C Library was tested
+     with, so new warnings cause the build with `-Werror' to fail), you
+     can configure with `--disable-werror'.
+
+`--disable-mathvec'
+     By default for x86_64, the GNU C Library is built with the vector
+     math library.  Use this option to disable the vector math library.
+
+`--enable-tunables'
+     Tunables support allows additional library parameters to be
+     customized at runtime.  This feature is enabled by default.  This
+     option can take the following values:
+
+    `yes'
+          This is the default if no option is passed to configure. This
+          enables tunables and selects the default frontend (currently
+          `valstring').
+
+    `no'
+          This option disables tunables.
+
+    `valstring'
+          This enables tunables and selects the `valstring' frontend
+          for tunables.  This frontend allows users to specify tunables
+          as a colon-separated list in a single environment variable
+          `GLIBC_TUNABLES'.
+
+`--enable-obsolete-nsl'
+     By default, libnsl is only built as shared library for backward
+     compatibility and the NSS modules libnss_compat, libnss_nis and
+     libnss_nisplus are not built at all.  Use this option to enable
+     libnsl with all depending NSS modules and header files.
+
+`--disable-crypt'
+     Do not install the passphrase-hashing library `libcrypt' or the
+     header file `crypt.h'.  `unistd.h' will still declare the function
+     `crypt'.  Using this option does not change the set of programs
+     that may need to be linked with `-lcrypt'; it only means that the
+     GNU C Library will not provide that library.
+
+     This option is for hackers and distributions experimenting with
+     independently-maintained implementations of libcrypt.  It may
+     become the default in a future release.
+
+`--disable-experimental-malloc'
+     By default, a per-thread cache is enabled in `malloc'.  While this
+     cache can be disabled on a per-application basis using tunables
+     (set glibc.malloc.tcache_count to zero), this option can be used to
+     remove it from the build completely.
+
+`--build=BUILD-SYSTEM'
+`--host=HOST-SYSTEM'
+     These options are for cross-compiling.  If you specify both
+     options and BUILD-SYSTEM is different from HOST-SYSTEM, `configure'
+     will prepare to cross-compile the GNU C Library from BUILD-SYSTEM
+     to be used on HOST-SYSTEM.  You'll probably need the
+     `--with-headers' option too, and you may have to override
+     CONFIGURE's selection of the compiler and/or binutils.
+
+     If you only specify `--host', `configure' will prepare for a
+     native compile but use what you specify instead of guessing what
+     your system is.  This is most useful to change the CPU submodel.
+     For example, if `configure' guesses your machine as
+     `i686-pc-linux-gnu' but you want to compile a library for 586es,
+     give `--host=i586-pc-linux-gnu' or just `--host=i586-linux' and add
+     the appropriate compiler flags (`-mcpu=i586' will do the trick) to
+     `CC'.
+
+     If you specify just `--build', `configure' will get confused.
+
+`--with-pkgversion=VERSION'
+     Specify a description, possibly including a build number or build
+     date, of the binaries being built, to be included in `--version'
+     output from programs installed with the GNU C Library.  For
+     example, `--with-pkgversion='FooBar GNU/Linux glibc build 123''.
+     The default value is `GNU libc'.
+
+`--with-bugurl=URL'
+     Specify the URL that users should visit if they wish to report a
+     bug, to be included in `--help' output from programs installed with
+     the GNU C Library.  The default value refers to the main
+     bug-reporting information for the GNU C Library.
+
+   To build the library and related programs, type `make'.  This will
+produce a lot of output, some of which may look like errors from `make'
+but aren't.  Look for error messages from `make' containing `***'.
+Those indicate that something is seriously wrong.
+
+   The compilation process can take a long time, depending on the
+configuration and the speed of your machine.  Some complex modules may
+take a very long time to compile, as much as several minutes on slower
+machines.  Do not panic if the compiler appears to hang.
+
+   If you want to run a parallel make, simply pass the `-j' option with
+an appropriate numeric parameter to `make'.  You need a recent GNU
+`make' version, though.
+
+   To build and run test programs which exercise some of the library
+facilities, type `make check'.  If it does not complete successfully,
+do not use the built library, and report a bug after verifying that the
+problem is not already known.  *Note Reporting Bugs::, for instructions
+on reporting bugs.  Note that some of the tests assume they are not
+being run by `root'.  We recommend you compile and test the GNU C
+Library as an unprivileged user.
+
+   Before reporting bugs make sure there is no problem with your system.
+The tests (and later installation) use some pre-existing files of the
+system such as `/etc/passwd', `/etc/nsswitch.conf' and others.  These
+files must all contain correct and sensible content.
+
+   Normally, `make check' will run all the tests before reporting all
+problems found and exiting with error status if any problems occurred.
+You can specify `stop-on-test-failure=y' when running `make check' to
+make the test run stop and exit with an error status immediately when a
+failure occurs.
+
+   The GNU C Library pretty printers come with their own set of scripts
+for testing, which run together with the rest of the testsuite through
+`make check'.  These scripts require the following tools to run
+successfully:
+
+   * Python 2.7/3.4 or later
+
+     Python is required for running the printers' test scripts. As of
+     release time, Python 3.6 is the newest verified to work to test
+     the pretty printers.
+
+   * PExpect 4.0
+
+     The printer tests drive GDB through test programs and compare its
+     output to the printers'.  PExpect is used to capture the output of
+     GDB, and should be compatible with the Python version in your
+     system. As of release time PExpect 4.3 is the newest verified to
+     work to test the pretty printers.
+
+   * GDB 7.8 or later with support for Python 2.7/3.4 or later
+
+     GDB itself needs to be configured with Python support in order to
+     use the pretty printers.  Notice that your system having Python
+     available doesn't imply that GDB supports it, nor that your
+     system's Python and GDB's have the same version. As of release
+     time GNU `debugger' 8.0.1 is the newest verified to work to test
+     the pretty printers.
+
+If these tools are absent, the printer tests will report themselves as
+`UNSUPPORTED'.  Notice that some of the printer tests require the GNU C
+Library to be compiled with debugging symbols.
+
+   To format the `GNU C Library Reference Manual' for printing, type
+`make dvi'.  You need a working TeX installation to do this.  The
+distribution builds the on-line formatted version of the manual, as
+Info files, as part of the build process.  You can build them manually
+with `make info'.
+
+   The library has a number of special-purpose configuration parameters
+which you can find in `Makeconfig'.  These can be overwritten with the
+file `configparms'.  To change them, create a `configparms' in your
+build directory and add values as appropriate for your system.  The
+file is included and parsed by `make' and has to follow the conventions
+for makefiles.
+
+   It is easy to configure the GNU C Library for cross-compilation by
+setting a few variables in `configparms'.  Set `CC' to the
+cross-compiler for the target you configured the library for; it is
+important to use this same `CC' value when running `configure', like
+this: `configure TARGET CC=TARGET-gcc'.  Set `BUILD_CC' to the compiler
+to use for programs run on the build system as part of compiling the
+library.  You may need to set `AR' to cross-compiling versions of `ar'
+if the native tools are not configured to work with object files for
+the target you configured for.  When cross-compiling the GNU C Library,
+it may be tested using `make check
+test-wrapper="SRCDIR/scripts/cross-test-ssh.sh HOSTNAME"', where SRCDIR
+is the absolute directory name for the main source directory and
+HOSTNAME is the host name of a system that can run the newly built
+binaries of the GNU C Library.  The source and build directories must
+be visible at the same locations on both the build system and HOSTNAME.
+
+   In general, when testing the GNU C Library, `test-wrapper' may be set
+to the name and arguments of any program to run newly built binaries.
+This program must preserve the arguments to the binary being run, its
+working directory and the standard input, output and error file
+descriptors.  If `TEST-WRAPPER env' will not work to run a program with
+environment variables set, then `test-wrapper-env' must be set to a
+program that runs a newly built program with environment variable
+assignments in effect, those assignments being specified as `VAR=VALUE'
+before the name of the program to be run.  If multiple assignments to
+the same variable are specified, the last assignment specified must
+take precedence.  Similarly, if `TEST-WRAPPER env -i' will not work to
+run a program with an environment completely empty of variables except
+those directly assigned, then `test-wrapper-env-only' must be set; its
+use has the same syntax as `test-wrapper-env', the only difference in
+its semantics being starting with an empty set of environment variables
+rather than the ambient set.
+
+
+File: libc.info,  Node: Running make install,  Next: Tools for Compilation,  Prev: Configuring and compiling,  Up: Installation
+
+C.2 Installing the C Library
+============================
+
+To install the library and its header files, and the Info files of the
+manual, type `make install'.  This will build things, if necessary,
+before installing them; however, you should still compile everything
+first.  If you are installing the GNU C Library as your primary C
+library, we recommend that you shut the system down to single-user mode
+first, and reboot afterward.  This minimizes the risk of breaking
+things when the library changes out from underneath.
+
+   `make install' will do the entire job of upgrading from a previous
+installation of the GNU C Library version 2.x.  There may sometimes be
+headers left behind from the previous installation, but those are
+generally harmless.  If you want to avoid leaving headers behind you
+can do things in the following order.
+
+   You must first build the library (`make'), optionally check it
+(`make check'), switch the include directories and then install (`make
+install').  The steps must be done in this order.  Not moving the
+directory before install will result in an unusable mixture of header
+files from both libraries, but configuring, building, and checking the
+library requires the ability to compile and run programs against the old
+library.  The new `/usr/include', after switching the include
+directories and before installing the library should contain the Linux
+headers, but nothing else.  If you do this, you will need to restore
+any headers from libraries other than the GNU C Library yourself after
+installing the library.
+
+   You can install the GNU C Library somewhere other than where you
+configured it to go by setting the `DESTDIR' GNU standard make variable
+on the command line for `make install'.  The value of this variable is
+prepended to all the paths for installation.  This is useful when
+setting up a chroot environment or preparing a binary distribution.
+The directory should be specified with an absolute file name. Installing
+with the `prefix' and `exec_prefix' GNU standard make variables set is
+not supported.
+
+   The GNU C Library includes a daemon called `nscd', which you may or
+may not want to run.  `nscd' caches name service lookups; it can
+dramatically improve performance with NIS+, and may help with DNS as
+well.
+
+   One auxiliary program, `/usr/libexec/pt_chown', is installed setuid
+`root' if the `--enable-pt_chown' configuration option is used.  This
+program is invoked by the `grantpt' function; it sets the permissions
+on a pseudoterminal so it can be used by the calling process.  If you
+are using a Linux kernel with the `devpts' filesystem enabled and
+mounted at `/dev/pts', you don't need this program.
+
+   After installation you might want to configure the timezone and
+locale installation of your system.  The GNU C Library comes with a
+locale database which gets configured with `localedef'.  For example, to
+set up a German locale with name `de_DE', simply issue the command
+`localedef -i de_DE -f ISO-8859-1 de_DE'.  To configure all locales
+that are supported by the GNU C Library, you can issue from your build
+directory the command `make localedata/install-locales'.
+
+   To configure the locally used timezone, set the `TZ' environment
+variable.  The script `tzselect' helps you to select the right value.
+As an example, for Germany, `tzselect' would tell you to use
+`TZ='Europe/Berlin''.  For a system wide installation (the given paths
+are for an installation with `--prefix=/usr'), link the timezone file
+which is in `/usr/share/zoneinfo' to the file `/etc/localtime'.  For
+Germany, you might execute `ln -s /usr/share/zoneinfo/Europe/Berlin
+/etc/localtime'.
+
+
+File: libc.info,  Node: Tools for Compilation,  Next: Linux,  Prev: Running make install,  Up: Installation
+
+C.3 Recommended Tools for Compilation
+=====================================
+
+We recommend installing the following GNU tools before attempting to
+build the GNU C Library:
+
+   * GNU `make' 4.0 or newer
+
+     As of relase time, GNU `make' 4.2.1 is the newest verified to work
+     to build the GNU C Library.
+
+   * GCC 4.9 or newer
+
+     GCC 4.9 or higher is required.  In general it is recommended to use
+     the newest version of the compiler that is known to work for
+     building the GNU C Library, as newer compilers usually produce
+     better code.  As of release time, GCC 8.1.1 is the newest compiler
+     verified to work to build the GNU C Library.
+
+     For PowerPC 64-bits little-endian (powerpc64le), GCC 6.2 or higher
+     is required.  This compiler version is the first to provide the
+     features required for building the GNU C Library with support for
+     `_Float128'.
+
+     For multi-arch support it is recommended to use a GCC which has
+     been built with support for GNU indirect functions.  This ensures
+     that correct debugging information is generated for functions
+     selected by IFUNC resolvers.  This support can either be enabled
+     by configuring GCC with `--enable-gnu-indirect-function', or by
+     enabling it by default by setting `default_gnu_indirect_function'
+     variable for a particular architecture in the GCC source file
+     `gcc/config.gcc'.
+
+     You can use whatever compiler you like to compile programs that use
+     the GNU C Library.
+
+     Check the FAQ for any special compiler issues on particular
+     platforms.
+
+   * GNU `binutils' 2.25 or later
+
+     You must use GNU `binutils' (as and ld) to build the GNU C Library.
+     No other assembler or linker has the necessary functionality at the
+     moment. As of release time, GNU `binutils' 2.31.1 is the newest
+     verified to work to build the GNU C Library.
+
+   * GNU `texinfo' 4.7 or later
+
+     To correctly translate and install the Texinfo documentation you
+     need this version of the `texinfo' package.  Earlier versions do
+     not understand all the tags used in the document, and the
+     installation mechanism for the info files is not present or works
+     differently.  As of release time, `texinfo' 6.5 is the newest
+     verified to work to build the GNU C Library.
+
+   * GNU `awk' 3.1.2, or higher
+
+     `awk' is used in several places to generate files.  Some `gawk'
+     extensions are used, including the `asorti' function, which was
+     introduced in version 3.1.2 of `gawk'.  As of release time, `gawk'
+     version 4.2.1 is the newest verified to work to build the GNU C
+     Library.
+
+   * GNU `bison' 2.7 or later
+
+     `bison' is used to generate the `yacc' parser code in the `intl'
+     subdirectory.  As of release time, `bison' version 3.0.4 is the
+     newest verified to work to build the GNU C Library.
+
+   * Perl 5
+
+     Perl is not required, but it is used if present to test the
+     installation.  We may decide to use it elsewhere in the future. As
+     of release time `perl' version 5.28.0 is the newest verified to
+     work to build the GNU C Library.
+
+   * GNU `sed' 3.02 or newer
+
+     `Sed' is used in several places to generate files.  Most scripts
+     work with any version of `sed'.  As of release time, `sed' version
+     4.5 is the newest verified to work to build the GNU C Library.
+
+
+If you change any of the `configure.ac' files you will also need
+
+   * GNU `autoconf' 2.69 (exactly)
+
+and if you change any of the message translation files you will need
+
+   * GNU `gettext' 0.10.36 or later
+
+     As of release time, GNU `gettext' version 0.19.8.1 is the newest
+     version verified to work to build the GNU C Library.
+
+You may also need these packages if you upgrade your source tree using
+patches, although we try to avoid this.
+
+
+File: libc.info,  Node: Linux,  Next: Reporting Bugs,  Prev: Tools for Compilation,  Up: Installation
+
+C.4 Specific advice for GNU/Linux systems
+=========================================
+
+If you are installing the GNU C Library on GNU/Linux systems, you need
+to have the header files from a 3.2 or newer kernel around for
+reference.  (For the ia64 architecture, you need version 3.2.18 or
+newer because this is the first version with support for the `accept4'
+system call.)  These headers must be installed using `make
+headers_install'; the headers present in the kernel source directory
+are not suitable for direct use by the GNU C Library.  You do not need
+to use that kernel, just have its headers installed where the GNU C
+Library can access them, referred to here as INSTALL-DIRECTORY.  The
+easiest way to do this is to unpack it in a directory such as
+`/usr/src/linux-VERSION'.  In that directory, run `make headers_install
+INSTALL_HDR_PATH=INSTALL-DIRECTORY'.  Finally, configure the GNU C
+Library with the option `--with-headers=INSTALL-DIRECTORY/include'.
+Use the most recent kernel you can get your hands on.  (If you are
+cross-compiling the GNU C Library, you need to specify
+`ARCH=ARCHITECTURE' in the `make headers_install' command, where
+ARCHITECTURE is the architecture name used by the Linux kernel, such as
+`x86' or `powerpc'.)
+
+   After installing the GNU C Library, you may need to remove or rename
+directories such as `/usr/include/linux' and `/usr/include/asm', and
+replace them with copies of directories such as `linux' and `asm' from
+`INSTALL-DIRECTORY/include'.  All directories present in
+`INSTALL-DIRECTORY/include' should be copied, except that the GNU C
+Library provides its own version of `/usr/include/scsi'; the files
+provided by the kernel should be copied without replacing those
+provided by the GNU C Library.  The `linux', `asm' and `asm-generic'
+directories are required to compile programs using the GNU C Library;
+the other directories describe interfaces to the kernel but are not
+required if not compiling programs using those interfaces.  You do not
+need to copy kernel headers if you did not specify an alternate kernel
+header source using `--with-headers'.
+
+   The Filesystem Hierarchy Standard for GNU/Linux systems expects some
+components of the GNU C Library installation to be in `/lib' and some
+in `/usr/lib'.  This is handled automatically if you configure the GNU
+C Library with `--prefix=/usr'.  If you set some other prefix or allow
+it to default to `/usr/local', then all the components are installed
+there.
+
+
+File: libc.info,  Node: Reporting Bugs,  Prev: Linux,  Up: Installation
+
+C.5 Reporting Bugs
+==================
+
+There are probably bugs in the GNU C Library.  There are certainly
+errors and omissions in this manual.  If you report them, they will get
+fixed.  If you don't, no one will ever know about them and they will
+remain unfixed for all eternity, if not longer.
+
+   It is a good idea to verify that the problem has not already been
+reported.  Bugs are documented in two places: The file `BUGS' describes
+a number of well known bugs and the central GNU C Library bug tracking
+system has a WWW interface at `https://sourceware.org/bugzilla/'.  The
+WWW interface gives you access to open and closed reports.  A closed
+report normally includes a patch or a hint on solving the problem.
+
+   To report a bug, first you must find it.  With any luck, this will
+be the hard part.  Once you've found a bug, make sure it's really a
+bug.  A good way to do this is to see if the GNU C Library behaves the
+same way some other C library does.  If so, probably you are wrong and
+the libraries are right (but not necessarily).  If not, one of the
+libraries is probably wrong.  It might not be the GNU C Library.  Many
+historical Unix C libraries permit things that we don't, such as
+closing a file twice.
+
+   If you think you have found some way in which the GNU C Library does
+not conform to the ISO and POSIX standards (*note Standards and
+Portability::), that is definitely a bug.  Report it!
+
+   Once you're sure you've found a bug, try to narrow it down to the
+smallest test case that reproduces the problem.  In the case of a C
+library, you really only need to narrow it down to one library function
+call, if possible.  This should not be too difficult.
+
+   The final step when you have a simple test case is to report the bug.
+Do this at `http://www.gnu.org/software/libc/bugs.html'.
+
+   If you are not sure how a function should behave, and this manual
+doesn't tell you, that's a bug in the manual.  Report that too!  If the
+function's behavior disagrees with the manual, then either the library
+or the manual has a bug, so report the disagreement.  If you find any
+errors or omissions in this manual, please report them to the bug
+database.  If you refer to specific sections of the manual, please
+include the section names for easier identification.
+
+
+File: libc.info,  Node: Maintenance,  Next: Platform,  Prev: Installation,  Up: Top
+
+Appendix D Library Maintenance
+******************************
+
+* Menu:
+
+* Source Layout::         How to add new functions or header files
+                             to the GNU C Library.
+* Porting::               How to port the GNU C Library to
+                             a new machine or operating system.
+
+
+File: libc.info,  Node: Source Layout,  Next: Porting,  Up: Maintenance
+
+D.1 Adding New Functions
+========================
+
+The process of building the library is driven by the makefiles, which
+make heavy use of special features of GNU `make'.  The makefiles are
+very complex, and you probably don't want to try to understand them.
+But what they do is fairly straightforward, and only requires that you
+define a few variables in the right places.
+
+   The library sources are divided into subdirectories, grouped by
+topic.
+
+   The `string' subdirectory has all the string-manipulation functions,
+`math' has all the mathematical functions, etc.
+
+   Each subdirectory contains a simple makefile, called `Makefile',
+which defines a few `make' variables and then includes the global
+makefile `Rules' with a line like:
+
+     include ../Rules
+
+The basic variables that a subdirectory makefile defines are:
+
+`subdir'
+     The name of the subdirectory, for example `stdio'.  This variable
+     *must* be defined.
+
+`headers'
+     The names of the header files in this section of the library, such
+     as `stdio.h'.
+
+`routines'
+`aux'
+     The names of the modules (source files) in this section of the
+     library.  These should be simple names, such as `strlen' (rather
+     than complete file names, such as `strlen.c').  Use `routines' for
+     modules that define functions in the library, and `aux' for
+     auxiliary modules containing things like data definitions.  But the
+     values of `routines' and `aux' are just concatenated, so there
+     really is no practical difference.
+
+`tests'
+     The names of test programs for this section of the library.  These
+     should be simple names, such as `tester' (rather than complete file
+     names, such as `tester.c').  `make tests' will build and run all
+     the test programs.  If a test program needs input, put the test
+     data in a file called `TEST-PROGRAM.input'; it will be given to
+     the test program on its standard input.  If a test program wants
+     to be run with arguments, put the arguments (all on a single line)
+     in a file called `TEST-PROGRAM.args'.  Test programs should exit
+     with zero status when the test passes, and nonzero status when the
+     test indicates a bug in the library or error in building.
+
+`others'
+     The names of "other" programs associated with this section of the
+     library.  These are programs which are not tests per se, but are
+     other small programs included with the library.  They are built by
+     `make others'.
+
+`install-lib'
+`install-data'
+`install'
+     Files to be installed by `make install'.  Files listed in
+     `install-lib' are installed in the directory specified by `libdir'
+     in `configparms' or `Makeconfig' (*note Installation::).  Files
+     listed in `install-data' are installed in the directory specified
+     by `datadir' in `configparms' or `Makeconfig'.  Files listed in
+     `install' are installed in the directory specified by `bindir' in
+     `configparms' or `Makeconfig'.
+
+`distribute'
+     Other files from this subdirectory which should be put into a
+     distribution tar file.  You need not list here the makefile itself
+     or the source and header files listed in the other standard
+     variables.  Only define `distribute' if there are files used in an
+     unusual way that should go into the distribution.
+
+`generated'
+     Files which are generated by `Makefile' in this subdirectory.
+     These files will be removed by `make clean', and they will never
+     go into a distribution.
+
+`extra-objs'
+     Extra object files which are built by `Makefile' in this
+     subdirectory.  This should be a list of file names like `foo.o';
+     the files will actually be found in whatever directory object
+     files are being built in.  These files will be removed by
+     `make clean'.  This variable is used for secondary object files
+     needed to build `others' or `tests'.
+
+* Menu:
+
+* Platform: Adding Platform-specific.             Adding platform-specific
+                                         features.
+
+
+File: libc.info,  Node: Adding Platform-specific,  Up: Source Layout
+
+D.1.1 Platform-specific types, macros and functions
+---------------------------------------------------
+
+It's sometimes necessary to provide nonstandard, platform-specific
+features to developers.  The C library is traditionally the lowest
+library layer, so it makes sense for it to provide these low-level
+features.  However, including these features in the C library may be a
+disadvantage if another package provides them as well as there will be
+two conflicting versions of them.  Also, the features won't be
+available to projects that do not use the GNU C Library but use other
+GNU tools, like GCC.
+
+   The current guidelines are:
+   * If the header file provides features that only make sense on a
+     particular machine architecture and have nothing to do with an
+     operating system, then the features should ultimately be provided
+     as GCC built-in functions.  Until then, the GNU C Library may
+     provide them in the header file.  When the GCC built-in functions
+     become available, those provided in the header file should be made
+     conditionally available prior to the GCC version in which the
+     built-in function was made available.
+
+   * If the header file provides features that are specific to an
+     operating system, both GCC and the GNU C Library could provide it,
+     but the GNU C Library is preferred as it already has a lot of
+     information about the operating system.
+
+   * If the header file provides features that are specific to an
+     operating system but used by the GNU C Library, then the GNU C
+     Library should provide them.
+
+   The general solution for providing low-level features is to export
+them as follows:
+
+   * A nonstandard, low-level header file that defines macros and inline
+     functions should be called `sys/platform/NAME.h'.
+
+   * Each header file's name should include the platform name, to avoid
+     users thinking there is anything in common between the different
+     header files for different platforms.  For example, a
+     `sys/platform/ARCH.h' name such as `sys/platform/ppc.h' is better
+     than `sys/platform.h'.
+
+   * A platform-specific header file provided by the GNU C Library
+     should coordinate with GCC such that compiler built-in versions of
+     the functions and macros are preferred if available.  This means
+     that user programs will only ever need to include
+     `sys/platform/ARCH.h', keeping the same names of types, macros,
+     and functions for convenience and portability.
+
+   * Each included symbol must have the prefix `__ARCH_', such as
+     `__ppc_get_timebase'.
+
+   The easiest way to provide a header file is to add it to the
+`sysdep_headers' variable.  For example, the combination of
+Linux-specific header files on PowerPC could be provided like this:
+
+     sysdep_headers += sys/platform/ppc.h
+
+   Then ensure that you have added a `sys/platform/ppc.h' header file
+in the machine-specific directory, e.g.,
+`sysdeps/powerpc/sys/platform/ppc.h'.
+
+
+File: libc.info,  Node: Porting,  Prev: Source Layout,  Up: Maintenance
+
+D.2 Porting the GNU C Library
+=============================
+
+The GNU C Library is written to be easily portable to a variety of
+machines and operating systems.  Machine- and operating system-dependent
+functions are well separated to make it easy to add implementations for
+new machines or operating systems.  This section describes the layout of
+the library source tree and explains the mechanisms used to select
+machine-dependent code to use.
+
+   All the machine-dependent and operating system-dependent files in the
+library are in the subdirectory `sysdeps' under the top-level library
+source directory.  This directory contains a hierarchy of
+subdirectories (*note Hierarchy Conventions::).
+
+   Each subdirectory of `sysdeps' contains source files for a
+particular machine or operating system, or for a class of machine or
+operating system (for example, systems by a particular vendor, or all
+machines that use IEEE 754 floating-point format).  A configuration
+specifies an ordered list of these subdirectories.  Each subdirectory
+implicitly appends its parent directory to the list.  For example,
+specifying the list `unix/bsd/vax' is equivalent to specifying the list
+`unix/bsd/vax unix/bsd unix'.  A subdirectory can also specify that it
+implies other subdirectories which are not directly above it in the
+directory hierarchy.  If the file `Implies' exists in a subdirectory,
+it lists other subdirectories of `sysdeps' which are appended to the
+list, appearing after the subdirectory containing the `Implies' file.
+Lines in an `Implies' file that begin with a `#' character are ignored
+as comments.  For example, `unix/bsd/Implies' contains:
+     # BSD has Internet-related things.
+     unix/inet
+   and `unix/Implies' contains:
+     posix
+
+So the final list is `unix/bsd/vax unix/bsd unix/inet unix posix'.
+
+   `sysdeps' has a "special" subdirectory called `generic'.  It is
+always implicitly appended to the list of subdirectories, so you
+needn't put it in an `Implies' file, and you should not create any
+subdirectories under it intended to be new specific categories.
+`generic' serves two purposes.  First, the makefiles do not bother to
+look for a system-dependent version of a file that's not in `generic'.
+This means that any system-dependent source file must have an analogue
+in `generic', even if the routines defined by that file are not
+implemented on other platforms.  Second, the `generic' version of a
+system-dependent file is used if the makefiles do not find a version
+specific to the system you're compiling for.
+
+   If it is possible to implement the routines in a `generic' file in
+machine-independent C, using only other machine-independent functions in
+the C library, then you should do so.  Otherwise, make them stubs.  A
+"stub" function is a function which cannot be implemented on a
+particular machine or operating system.  Stub functions always return an
+error, and set `errno' to `ENOSYS' (Function not implemented).  *Note
+Error Reporting::.  If you define a stub function, you must place the
+statement `stub_warning(FUNCTION)', where FUNCTION is the name of your
+function, after its definition.  This causes the function to be listed
+in the installed `<gnu/stubs.h>', and makes GNU ld warn when the
+function is used.
+
+   Some rare functions are only useful on specific systems and aren't
+defined at all on others; these do not appear anywhere in the
+system-independent source code or makefiles (including the `generic'
+directory), only in the system-dependent `Makefile' in the specific
+system's subdirectory.
+
+   If you come across a file that is in one of the main source
+directories (`string', `stdio', etc.), and you want to write a machine-
+or operating system-dependent version of it, move the file into
+`sysdeps/generic' and write your new implementation in the appropriate
+system-specific subdirectory.  Note that if a file is to be
+system-dependent, it *must not* appear in one of the main source
+directories.
+
+   There are a few special files that may exist in each subdirectory of
+`sysdeps':
+
+`Makefile'
+     A makefile for this machine or operating system, or class of
+     machine or operating system.  This file is included by the library
+     makefile `Makerules', which is used by the top-level makefile and
+     the subdirectory makefiles.  It can change the variables set in the
+     including makefile or add new rules.  It can use GNU `make'
+     conditional directives based on the variable `subdir' (see above)
+     to select different sets of variables and rules for different
+     sections of the library.  It can also set the `make' variable
+     `sysdep-routines', to specify extra modules to be included in the
+     library.  You should use `sysdep-routines' rather than adding
+     modules to `routines' because the latter is used in determining
+     what to distribute for each subdirectory of the main source tree.
+
+     Each makefile in a subdirectory in the ordered list of
+     subdirectories to be searched is included in order.  Since several
+     system-dependent makefiles may be included, each should append to
+     `sysdep-routines' rather than simply setting it:
+
+          sysdep-routines := $(sysdep-routines) foo bar
+
+`Subdirs'
+     This file contains the names of new whole subdirectories under the
+     top-level library source tree that should be included for this
+     system.  These subdirectories are treated just like the
+     system-independent subdirectories in the library source tree, such
+     as `stdio' and `math'.
+
+     Use this when there are completely new sets of functions and header
+     files that should go into the library for the system this
+     subdirectory of `sysdeps' implements.  For example,
+     `sysdeps/unix/inet/Subdirs' contains `inet'; the `inet' directory
+     contains various network-oriented operations which only make sense
+     to put in the library on systems that support the Internet.
+
+`configure'
+     This file is a shell script fragment to be run at configuration
+     time.  The top-level `configure' script uses the shell `.' command
+     to read the `configure' file in each system-dependent directory
+     chosen, in order.  The `configure' files are often generated from
+     `configure.ac' files using Autoconf.
+
+     A system-dependent `configure' script will usually add things to
+     the shell variables `DEFS' and `config_vars'; see the top-level
+     `configure' script for details.  The script can check for
+     `--with-PACKAGE' options that were passed to the top-level
+     `configure'.  For an option `--with-PACKAGE=VALUE' `configure'
+     sets the shell variable `with_PACKAGE' (with any dashes in PACKAGE
+     converted to underscores) to VALUE; if the option is just
+     `--with-PACKAGE' (no argument), then it sets `with_PACKAGE' to
+     `yes'.
+
+`configure.ac'
+     This file is an Autoconf input fragment to be processed into the
+     file `configure' in this subdirectory.  *Note Introduction:
+     (autoconf.info)Introduction, for a description of Autoconf.  You
+     should write either `configure' or `configure.ac', but not both.
+     The first line of `configure.ac' should invoke the `m4' macro
+     `GLIBC_PROVIDES'.  This macro does several `AC_PROVIDE' calls for
+     Autoconf macros which are used by the top-level `configure'
+     script; without this, those macros might be invoked again
+     unnecessarily by Autoconf.
+
+   That is the general system for how system-dependencies are isolated.
+
+* Menu:
+
+* Hierarchy Conventions::       The layout of the `sysdeps' hierarchy.
+* Porting to Unix::             Porting the library to an average
+                                   Unix-like system.
+
+
+File: libc.info,  Node: Hierarchy Conventions,  Next: Porting to Unix,  Up: Porting
+
+D.2.1 Layout of the `sysdeps' Directory Hierarchy
+-------------------------------------------------
+
+A GNU configuration name has three parts: the CPU type, the
+manufacturer's name, and the operating system.  `configure' uses these
+to pick the list of system-dependent directories to look for.  If the
+`--nfp' option is _not_ passed to `configure', the directory
+`MACHINE/fpu' is also used.  The operating system often has a "base
+operating system"; for example, if the operating system is `Linux', the
+base operating system is `unix/sysv'.  The algorithm used to pick the
+list of directories is simple: `configure' makes a list of the base
+operating system, manufacturer, CPU type, and operating system, in that
+order.  It then concatenates all these together with slashes in
+between, to produce a directory name; for example, the configuration
+`i686-linux-gnu' results in `unix/sysv/linux/i386/i686'.  `configure'
+then tries removing each element of the list in turn, so
+`unix/sysv/linux' and `unix/sysv' are also tried, among others.  Since
+the precise version number of the operating system is often not
+important, and it would be very inconvenient, for example, to have
+identical `irix6.2' and `irix6.3' directories, `configure' tries
+successively less specific operating system names by removing trailing
+suffixes starting with a period.
+
+   As an example, here is the complete list of directories that would be
+tried for the configuration `i686-linux-gnu':
+
+     sysdeps/i386/elf
+     sysdeps/unix/sysv/linux/i386
+     sysdeps/unix/sysv/linux
+     sysdeps/gnu
+     sysdeps/unix/common
+     sysdeps/unix/mman
+     sysdeps/unix/inet
+     sysdeps/unix/sysv/i386/i686
+     sysdeps/unix/sysv/i386
+     sysdeps/unix/sysv
+     sysdeps/unix/i386
+     sysdeps/unix
+     sysdeps/posix
+     sysdeps/i386/i686
+     sysdeps/i386/i486
+     sysdeps/libm-i387/i686
+     sysdeps/i386/fpu
+     sysdeps/libm-i387
+     sysdeps/i386
+     sysdeps/wordsize-32
+     sysdeps/ieee754
+     sysdeps/libm-ieee754
+     sysdeps/generic
+
+   Different machine architectures are conventionally subdirectories at
+the top level of the `sysdeps' directory tree.  For example,
+`sysdeps/sparc' and `sysdeps/m68k'.  These contain files specific to
+those machine architectures, but not specific to any particular
+operating system.  There might be subdirectories for specializations of
+those architectures, such as `sysdeps/m68k/68020'.  Code which is
+specific to the floating-point coprocessor used with a particular
+machine should go in `sysdeps/MACHINE/fpu'.
+
+   There are a few directories at the top level of the `sysdeps'
+hierarchy that are not for particular machine architectures.
+
+`generic'
+     As described above (*note Porting::), this is the subdirectory
+     that every configuration implicitly uses after all others.
+
+`ieee754'
+     This directory is for code using the IEEE 754 floating-point
+     format, where the C type `float' is IEEE 754 single-precision
+     format, and `double' is IEEE 754 double-precision format.  Usually
+     this directory is referred to in the `Implies' file in a machine
+     architecture-specific directory, such as `m68k/Implies'.
+
+`libm-ieee754'
+     This directory contains an implementation of a mathematical library
+     usable on platforms which use IEEE 754 conformant floating-point
+     arithmetic.
+
+`libm-i387'
+     This is a special case.  Ideally the code should be in
+     `sysdeps/i386/fpu' but for various reasons it is kept aside.
+
+`posix'
+     This directory contains implementations of things in the library in
+     terms of POSIX.1 functions.  This includes some of the POSIX.1
+     functions themselves.  Of course, POSIX.1 cannot be completely
+     implemented in terms of itself, so a configuration using just
+     `posix' cannot be complete.
+
+`unix'
+     This is the directory for Unix-like things.  *Note Porting to
+     Unix::.  `unix' implies `posix'.  There are some special-purpose
+     subdirectories of `unix':
+
+    `unix/common'
+          This directory is for things common to both BSD and System V
+          release 4.  Both `unix/bsd' and `unix/sysv/sysv4' imply
+          `unix/common'.
+
+    `unix/inet'
+          This directory is for `socket' and related functions on Unix
+          systems.  `unix/inet/Subdirs' enables the `inet' top-level
+          subdirectory.  `unix/common' implies `unix/inet'.
+
+`mach'
+     This is the directory for things based on the Mach microkernel
+     from CMU (including GNU/Hurd systems).  Other basic operating
+     systems (VMS, for example) would have their own directories at the
+     top level of the `sysdeps' hierarchy, parallel to `unix' and
+     `mach'.
+
+
+File: libc.info,  Node: Porting to Unix,  Prev: Hierarchy Conventions,  Up: Porting
+
+D.2.2 Porting the GNU C Library to Unix Systems
+-----------------------------------------------
+
+Most Unix systems are fundamentally very similar.  There are variations
+between different machines, and variations in what facilities are
+provided by the kernel.  But the interface to the operating system
+facilities is, for the most part, pretty uniform and simple.
+
+   The code for Unix systems is in the directory `unix', at the top
+level of the `sysdeps' hierarchy.  This directory contains
+subdirectories (and subdirectory trees) for various Unix variants.
+
+   The functions which are system calls in most Unix systems are
+implemented in assembly code, which is generated automatically from
+specifications in files named `syscalls.list'.  There are several such
+files, one in `sysdeps/unix' and others in its subdirectories.  Some
+special system calls are implemented in files that are named with a
+suffix of `.S'; for example, `_exit.S'.  Files ending in `.S' are run
+through the C preprocessor before being fed to the assembler.
+
+   These files all use a set of macros that should be defined in
+`sysdep.h'.  The `sysdep.h' file in `sysdeps/unix' partially defines
+them; a `sysdep.h' file in another directory must finish defining them
+for the particular machine and operating system variant.  See
+`sysdeps/unix/sysdep.h' and the machine-specific `sysdep.h'
+implementations to see what these macros are and what they should do.
+
+   The system-specific makefile for the `unix' directory
+(`sysdeps/unix/Makefile') gives rules to generate several files from
+the Unix system you are building the library on (which is assumed to be
+the target system you are building the library _for_).  All the
+generated files are put in the directory where the object files are
+kept; they should not affect the source tree itself.  The files
+generated are `ioctls.h', `errnos.h', `sys/param.h', and `errlist.c'
+(for the `stdio' section of the library).
+
+
+File: libc.info,  Node: Platform,  Next: Contributors,  Prev: Maintenance,  Up: Top
+
+Appendix E Platform-specific facilities
+***************************************
+
+The GNU C Library can provide machine-specific functionality.
+
+* Menu:
+
+* PowerPC::           Facilities Specific to the PowerPC Architecture
+* RISC-V::            Facilities Specific to the RISC-V Architecture
+
+
+File: libc.info,  Node: PowerPC,  Next: RISC-V,  Up: Platform
+
+E.1 PowerPC-specific Facilities
+===============================
+
+Facilities specific to PowerPC that are not specific to a particular
+operating system are declared in `sys/platform/ppc.h'.
+
+ -- Function: uint64_t __ppc_get_timebase (void)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     Read the current value of the Time Base Register.
+
+     The "Time Base Register" is a 64-bit register that stores a
+     monotonically incremented value updated at a system-dependent
+     frequency that may be different from the processor frequency.
+     More information is available in `Power ISA 2.06b - Book II -
+     Section 5.2'.
+
+     `__ppc_get_timebase' uses the processor's time base facility
+     directly without requiring assistance from the operating system,
+     so it is very efficient.
+
+ -- Function: uint64_t __ppc_get_timebase_freq (void)
+     Preliminary: | MT-Unsafe init | AS-Unsafe corrupt:init | AC-Unsafe
+     corrupt:init | *Note POSIX Safety Concepts::.
+
+     Read the current frequency at which the Time Base Register is
+     updated.
+
+     This frequency is not related to the processor clock or the bus
+     clock.  It is also possible that this frequency is not constant.
+     More information is available in `Power ISA 2.06b - Book II -
+     Section 5.2'.
+
+   The following functions provide hints about the usage of resources
+that are shared with other processors.  They can be used, for example,
+if a program waiting on a lock intends to divert the shared resources
+to be used by other processors.  More information is available in
+`Power ISA 2.06b - Book II - Section 3.2'.
+
+ -- Function: void __ppc_yield (void)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     Provide a hint that performance will probably be improved if
+     shared resources dedicated to the executing processor are released
+     for use by other processors.
+
+ -- Function: void __ppc_mdoio (void)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     Provide a hint that performance will probably be improved if
+     shared resources dedicated to the executing processor are released
+     until all outstanding storage accesses to caching-inhibited
+     storage have been completed.
+
+ -- Function: void __ppc_mdoom (void)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     Provide a hint that performance will probably be improved if
+     shared resources dedicated to the executing processor are released
+     until all outstanding storage accesses to cacheable storage for
+     which the data is not in the cache have been completed.
+
+ -- Function: void __ppc_set_ppr_med (void)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     Set the Program Priority Register to medium value (default).
+
+     The "Program Priority Register" (PPR) is a 64-bit register that
+     controls the program's priority.  By adjusting the PPR value the
+     programmer may improve system throughput by causing the system
+     resources to be used more efficiently, especially in contention
+     situations.  The three unprivileged states available are covered
+     by the functions `__ppc_set_ppr_med' (medium - default),
+     `__ppc_set_ppc_low' (low) and `__ppc_set_ppc_med_low' (medium
+     low).  More information available in `Power ISA 2.06b - Book II -
+     Section 3.1'.
+
+ -- Function: void __ppc_set_ppr_low (void)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     Set the Program Priority Register to low value.
+
+ -- Function: void __ppc_set_ppr_med_low (void)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     Set the Program Priority Register to medium low value.
+
+   Power ISA 2.07 extends the priorities that can be set to the Program
+Priority Register (PPR).  The following functions implement the new
+priority levels: very low and medium high.
+
+ -- Function: void __ppc_set_ppr_very_low (void)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     Set the Program Priority Register to very low value.
+
+ -- Function: void __ppc_set_ppr_med_high (void)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     Set the Program Priority Register to medium high value.  The
+     medium high priority is privileged and may only be set during
+     certain time intervals by problem-state programs.  If the program
+     priority is medium high when the time interval expires or if an
+     attempt is made to set the priority to medium high when it is not
+     allowed, the priority is set to medium.
+
+
+File: libc.info,  Node: RISC-V,  Prev: PowerPC,  Up: Platform
+
+E.2 RISC-V-specific Facilities
+==============================
+
+Cache management facilities specific to RISC-V systems that implement
+the Linux ABI are declared in `sys/cachectl.h'.
+
+ -- Function: void __riscv_flush_icache (void *START, void *END,
+          unsigned long int FLAGS)
+     Preliminary: | MT-Safe | AS-Safe | AC-Safe | *Note POSIX Safety
+     Concepts::.
+
+     Enforce ordering between stores and instruction cache fetches.
+     The range of addresses over which ordering is enforced is
+     specified by START and END.  The FLAGS argument controls the
+     extent of this ordering, with the default behavior (a FLAGS value
+     of 0) being to enforce the fence on all threads in the current
+     process.  Setting the `SYS_RISCV_FLUSH_ICACHE_LOCAL' bit allows
+     users to indicate that enforcing ordering on only the current
+     thread is necessary.  All other flag bits are reserved.
 
 
 File: libc.info,  Node: Contributors,  Next: Free Manuals,  Prev: Platform,  Up: Top
@@ -2073,7 +3392,13 @@ order.
 
    * Thomas Bushnell for his contributions to Hurd.
 
-   * DJ Delorie for various fixes.
+   * Rogerio Alves Cardoso for various fixes to PowerPC.
+
+   * Paul Clarke for optimized functions on PowerPC.
+
+   * Palmer Dabbelt for contributing the port to Linux/RISC-V.
+
+   * DJ Delorie for maintenance of Linux/RISC-V, and various fixes.
 
    * Wilco Dijkstra for various fixes.
 
@@ -2082,6 +3407,8 @@ order.
 
    * Ulrich Drepper for his many contributions in almost all parts of
      the GNU C Library, including:
+        * writing most of the POSIX Threads Library originally.
+
         * internationalization support, including the `locale' and
           `localedef' utilities.
 
@@ -2119,7 +3446,9 @@ order.
 
    * Steve Ellcey for various fixes.
 
-   *  Mike FABIAN for various fixes to locales.
+   * Mike FABIAN for automating Unicode updates, for updating the
+     locale data for ISO 14651, for updating the library Unicode
+     support, and for various locale updates and fixes.
 
    * Tulio Magno Quites Machado Filho for adding a new class of
      installed headers for low-level platform-specific functionality
@@ -2132,11 +3461,14 @@ order.
      and adding an initial set of pretty printers for structures in the
      POSIX Threads library.
 
-   * Michael Glad for the DES encryption function `crypt' and related
-     functions.
+   * Michael Glad for the passphrase-hashing function `crypt' and
+     related functions.
 
    * Wolfram Gloger for contributing the memory allocation functions
      functions `malloc', `realloc' and `free' and related code.
+
+   * Gabriel F. T. Gomes for his improvements for Linux on PowerPC and
+     for implementing the IEEE 128-bit floating point type for PowerPC.
 
    * Torbjo"rn Granlund for fast implementations of many of the string
      functions (`memcpy', `strlen', etc.).
@@ -2148,7 +3480,7 @@ order.
      implementations.
 
    * Richard Henderson for the port to Linux on Alpha
-     (`alpha-ANYTHING-linux').
+     (`alpha-ANYTHING-linux') and software floating-point support.
 
    * David Holsgrove for the port to Linux on MicroBlaze.
 
@@ -2165,8 +3497,11 @@ order.
    * Rical Jasan for contributing various fixes in the GNU C Library
      manual.
 
-   * Jakub Jelinek for implementing a number of checking functions and
-     for his direction as part of the GNU C Library steering committee.
+   * Jakub Jelinek for implementing a number of checking functions,
+     software floating-point support and for his direction as part of
+     the GNU C Library steering committee.
+
+   * Simon Josefsson for the `libidn' add-on.
 
    * Geoffrey Keating for the port to Linux on PowerPC
      (`powerpc-ANYTHING-linux').
@@ -2206,9 +3541,11 @@ order.
    * Hongjiu Lu for providing the support for a Linux 32-bit runtime
      environment under x86-64 (x32), for porting to Linux on IA64, for
      improved string functions, a framework for testing IFUNC
-     implementations, and many bug fixes.
+     implementations, for implementing Intel Control-Flow Enforcement
+     Technology, and many bug fixes.
 
-   * Rafal Luzynski for various fixes to locales.
+   * Rafal Luzynski for contributing support for two grammatical forms
+     of month names, and for various fixes to locales.
 
    * Luis Machado for optimized functions on PowerPC.
 
@@ -2228,7 +3565,8 @@ order.
      version 3 (`i386-sequent-bsd').
 
    * Chris Metcalf for the port to Linux/Tile (`tilegx-ANYTHING-linux'
-     and `tilepro-ANYTHING-linux').
+     and `tilepro-ANYTHING-linux') and support for the generic Linux
+     kernel syscall interface used by several newer ports.
 
    * David Miller for contributing the port to Linux/Sparc
      (`sparc*-ANYTHING-linux').
@@ -2247,14 +3585,15 @@ order.
      (`powerpc64-ANYTHING-linux') and for adding optimized
      implementations for PowerPC.
 
-   * Paul E. Murphy for various fixes on PowerPC.
+   * Paul E. Murphy for various fixes on PowerPC and for implementing
+     the IEEE 128-bit floating point type for PowerPC.
 
    * Joseph S. Myers for numerous bug fixes for the libm functions, for
-     his maintainership of the ARM and MIPS architectures, improving
-     cross-compilation and cross-testing of the GNU C Library, expanded
-     coverage of conformtest, merging the ports/ subdirectory into the
-     GNU C Library main repository and his direction as FSF Project
-     Steward for the GNU C Library.
+     his maintainership of the ARM and MIPS architectures and the math
+     component, improving cross-compilation and cross-testing of the
+     GNU C Library, expanded coverage of conformtest, merging the ports/
+     subdirectory into the GNU C Library main repository and his
+     direction as FSF Project Steward for the GNU C Library.
 
    * Marko Myllynen for various fixes.
 
@@ -2289,7 +3628,8 @@ order.
    * Torvald Riegel for the implementation of new algorithms for
      semaphores, pthread_rwlock and condition variables.
 
-   * Maciej W. Rozycki for various fixes.
+   * Maciej W. Rozycki for MIPS fixes, support for ABSOLUTE symbols,
+     and various fixes.
 
    * Pravin Satpute for writing sorting rules for some Indian languages.
 
@@ -2298,9 +3638,9 @@ order.
 
    * Will Schmidt for optimized string functions on PowerPC.
 
-   * Andreas Schwab for the port to Linux/m68k (`m68k-ANYTHING-linux')
-     and for his direction as part of the GNU C Library steering
-     committee.
+   * Andreas Schwab for the port to Linux/m68k (`m68k-ANYTHING-linux'),
+     for his direction as part of the GNU C Library steering committee,
+     and for various bug fixes.
 
    * Martin Schwidefsky for porting to Linux on s390
      (`s390-ANYTHING-linux') and s390x (`s390x-ANYTHING-linux').
@@ -2313,6 +3653,8 @@ order.
 
    * Carlos Eduardo Seo for optimized functions on PowerPC.
 
+   * Arjun Shankar for testing and bug fixing.
+
    * Marcus Shawcroft for contributing the AArch64 port.
 
    * Franz Sirl for various fixes.
@@ -2320,7 +3662,8 @@ order.
    * Jes Sorensen for porting to Linux on IA64 (`ia64-ANYTHING-linux').
 
    * Rajalakshmi Srinivasaraghavan for various fixes and optimizations
-     on PowerPC.
+     on PowerPC and for implementing the IEEE 128-bit floating point
+     type for PowerPC.
 
    * Richard Stallman for his contribution to the `getopt' function.
 
@@ -2338,14 +3681,17 @@ order.
    * Tim Waugh for the implementation of the POSIX.2 `wordexp' function
      family.
 
+   * Florian Weimer for his maintainership of the network component,
+     for handling of security issues, and for various fixes.
+
    * Zack Weinberg for the `explicit_bzero' implementation and for
      various fixes.
 
    * Eric Youngdale for implementing versioning of objects on the
      symbol level.
 
-   * Adhemerval Zanella for optimized functions on PowerPC and various
-     fixes.
+   * Adhemerval Zanella for optimized functions on PowerPC, ISO C
+     threads support and various fixes.
 
 
    Some code in the GNU C Library comes from other projects and might
@@ -2377,7 +3723,7 @@ be under a different license:
      were written by Craig Metz; see the file `LICENSES' for details on
      their licensing.
 
-   * The DNS resolver code is taken directly from BIND 4.9.5, which
+   * The DNS resolver code is taken directly from BIND 8.2.3-T5B, which
      includes copyrighted code from UC Berkeley and from Digital
      Equipment Corporation.  See the file `LICENSES' for the text of
      the DEC license.
@@ -3517,7 +4863,7 @@ Concept Index
 
 * !posix:                                Other Safety Remarks.
                                                               (line 135)
-* .lib section in a.out corrupted:       Error Codes.         (line 618)
+* .lib section in a.out corrupted:       Error Codes.         (line 624)
 * /condition:                            Other Safety Remarks.
                                                               (line 168)
 * /etc/hostname:                         Host Identification. (line  94)
@@ -3545,7 +4891,7 @@ Concept Index
                                                               (line   6)
 * access permission for a file:          Access Permission.   (line   6)
 * access, testing for:                   Testing File Access. (line   6)
-* Accessing a corrupted shared library:  Error Codes.         (line 615)
+* Accessing a corrupted shared library:  Error Codes.         (line 621)
 * accessing directories:                 Accessing Directories.
                                                               (line   6)
 * Address already in use:                Error Codes.         (line 284)
@@ -3553,7 +4899,7 @@ Concept Index
 * address of socket:                     Socket Addresses.    (line   6)
 * address space <1>:                     Memory Subsystem.    (line   6)
 * address space:                         Program Basics.      (line   6)
-* Advertise error:                       Error Codes.         (line 591)
+* Advertise error:                       Error Codes.         (line 597)
 * alarm signal:                          Alarm Signals.       (line  19)
 * alarms, setting:                       Setting an Alarm.    (line  10)
 * alignment (in obstacks):               Obstacks Data Alignment.
@@ -3628,7 +4974,7 @@ Concept Index
 * Async-Signal-Unsafe:                   POSIX Safety Concepts.
                                                               (line  68)
 * Attempting to link in too many shared libraries: Error Codes.
-                                                              (line 621)
+                                                              (line 627)
 * attributes of a file:                  Attribute Meanings.  (line   6)
 * Authentication error:                  Error Codes.         (line 430)
 * automatic freeing:                     Variable Size Automatic.
@@ -3649,7 +4995,7 @@ Concept Index
 * backtrace_symbols:                     Backtraces.          (line   6)
 * Bad address:                           Error Codes.         (line  81)
 * Bad file descriptor:                   Error Codes.         (line  56)
-* Bad font file format:                  Error Codes.         (line 582)
+* Bad font file format:                  Error Codes.         (line 588)
 * Bad message:                           Error Codes.         (line 492)
 * base (of floating point number):       Floating Point Concepts.
                                                               (line  20)
@@ -3685,8 +5031,8 @@ Concept Index
 * Broken pipe:                           Error Codes.         (line 172)
 * broken pipe signal:                    Operation Error Signals.
                                                               (line  13)
-* broken-down time <1>:                  Broken-down Time.    (line   6)
-* broken-down time:                      Calendar Time.       (line  26)
+* broken-down time <1>:                  Calendar Time.       (line  26)
+* broken-down time:                      Broken-down Time.    (line   6)
 * BSD Unix:                              Berkeley Unix.       (line   6)
 * buffering of streams:                  Stream Buffering.    (line   6)
 * buffering, controlling:                Controlling Buffering.
@@ -3697,15 +5043,17 @@ Concept Index
 * butterfly:                             Misc FP Arithmetic.  (line  86)
 * byte order conversion, for socket:     Byte Order.          (line   6)
 * byte stream:                           Socket Concepts.     (line  12)
+* C threads:                             ISO C Threads.       (line   6)
 * C++ streams:                           Streams and I18N.    (line  30)
 * calendar time:                         Time Basics.         (line  13)
 * calendar time and broken-down time:    Broken-down Time.    (line   6)
 * calendar, Gregorian:                   Calendar Time.       (line  26)
+* call once:                             Call Once.           (line   6)
 * calling variadic functions:            Calling Variadics.   (line   6)
-* Can not access a needed shared library: Error Codes.        (line 612)
+* Can not access a needed shared library: Error Codes.        (line 618)
 * Cannot allocate memory:                Error Codes.         (line  73)
 * Cannot assign requested address:       Error Codes.         (line 288)
-* Cannot exec a shared library directly: Error Codes.         (line 624)
+* Cannot exec a shared library directly: Error Codes.         (line 630)
 * Cannot send after transport endpoint shutdown: Error Codes. (line 337)
 * canonical input processing:            Canonical or Not.    (line   9)
 * capacity limits, POSIX:                General Limits.      (line   6)
@@ -3717,7 +5065,7 @@ Concept Index
 * changing the locale:                   Setting the Locale.  (line  18)
 * changing the size of a block (malloc): Changing Block Size. (line   6)
 * changing the size of a block (obstacks): Growing Objects.   (line   6)
-* Channel number out of range:           Error Codes.         (line 537)
+* Channel number out of range:           Error Codes.         (line 543)
 * channels:                              Stream/Descriptor Precautions.
                                                               (line   6)
 * character case conversion:             Case Conversion.     (line   6)
@@ -3729,8 +5077,8 @@ Concept Index
                                                               (line   6)
 * child process <1>:                     Process Creation Concepts.
                                                               (line  15)
-* child process <2>:                     Processor Time.      (line  31)
-* child process:                         Processes.           (line  13)
+* child process <2>:                     Processes.           (line  13)
+* child process:                         Processor Time.      (line  31)
 * child process signal:                  Job Control Signals. (line  14)
 * chunks:                                Obstack Chunks.      (line   6)
 * classes, floating-point:               Floating Point Classes.
@@ -3755,7 +5103,7 @@ Concept Index
                                                               (line   6)
 * command line arguments:                Program Arguments.   (line   6)
 * command substitution:                  Expansion Stages.    (line  18)
-* Communication error on send:           Error Codes.         (line 597)
+* Communication error on send:           Error Codes.         (line 603)
 * communication style (of a socket):     Socket Concepts.     (line   6)
 * comparing strings and arrays:          String/Array Comparison.
                                                               (line   6)
@@ -3764,17 +5112,21 @@ Concept Index
 * compiling:                             Configuring and compiling.
                                                               (line   6)
 * complex exponentiation functions:      Exponents and Logarithms.
-                                                              (line 252)
+                                                              (line 247)
 * complex logarithm functions:           Exponents and Logarithms.
-                                                              (line 252)
+                                                              (line 247)
 * complex numbers:                       Complex Numbers.     (line   6)
 * complex trigonometric functions:       Trig Functions.      (line  78)
 * Computer bought the farm:              Error Codes.         (line 485)
-* concatenating strings <1>:             Concatenating Strings.
-                                                              (line   6)
-* concatenating strings:                 Copying Strings and Arrays.
+* concatenating strings <1>:             Copying Strings and Arrays.
                                                               (line   9)
+* concatenating strings:                 Concatenating Strings.
+                                                              (line   6)
+* condition variables:                   ISO C Condition Variables.
+                                                              (line   6)
 * Conditionally Safe Features:           Conditionally Safe Features.
+                                                              (line   6)
+* condvar:                               ISO C Condition Variables.
                                                               (line   6)
 * configuring:                           Configuring and compiling.
                                                               (line   6)
@@ -3795,10 +5147,10 @@ Concept Index
                                                               (line   6)
 * constants:                             Memory Concepts.     (line  67)
 * continue signal:                       Job Control Signals. (line  28)
-* control character <1>:                 Classification of Characters.
-                                                              (line 132)
-* control character:                     Classification of Wide Characters.
+* control character <1>:                 Classification of Wide Characters.
                                                               (line 107)
+* control character:                     Classification of Characters.
+                                                              (line 132)
 * control operations on files:           Control Operations.  (line   6)
 * controlling process:                   Controlling Terminal.
                                                               (line  13)
@@ -3808,7 +5160,7 @@ Concept Index
                                                               (line   6)
 * controlling terminal, determining:     Identifying the Terminal.
                                                               (line   6)
-* controlling terminal, setting:         Open-time Flags.     (line  54)
+* controlling terminal, setting:         Open-time Flags.     (line  80)
 * conversion specifications (printf):    Formatted Output Basics.
                                                               (line  14)
 * conversion specifications (scanf):     Formatted Input Basics.
@@ -3835,14 +5187,15 @@ Concept Index
 * cookie, for custom stream:             Streams and Cookies. (line   6)
 * copy-on-write page fault:              Locked Memory Details.
                                                               (line  40)
+* copying files:                         Copying File Data.   (line   6)
 * copying strings and arrays:            Copying Strings and Arrays.
                                                               (line   9)
 * corrupt:                               Unsafe Features.     (line  26)
 * cpu priority:                          Priority.            (line   6)
-* CPU time <1>:                          Time Basics.         (line  37)
-* CPU time <2>:                          Processor Time.      (line   9)
-* CPU time:                              Processor And CPU Time.
+* CPU time <1>:                          Processor Time.      (line   9)
+* CPU time <2>:                          Processor And CPU Time.
                                                               (line  19)
+* CPU time:                              Time Basics.         (line  37)
 * create on open (file status flag):     Open-time Flags.     (line  22)
 * creating a directory:                  Creating Directories.
                                                               (line   6)
@@ -3856,8 +5209,11 @@ Concept Index
 * creating a socket pair:                Socket Pairs.        (line   6)
 * creating special files:                Making Special Files.
                                                               (line   6)
+* CRNG:                                  Unpredictable Bytes. (line   6)
+* cryptographic random number generator: Unpredictable Bytes. (line   6)
+* CSPRNG:                                Unpredictable Bytes. (line   6)
 * cube root function:                    Exponents and Logarithms.
-                                                              (line 202)
+                                                              (line 197)
 * currency symbols:                      Currency Symbol.     (line   6)
 * current limit:                         Limits on Resources. (line  17)
 * current working directory:             Working Directory.   (line   6)
@@ -3896,12 +5252,13 @@ Concept Index
 * descriptors and streams:               Stream/Descriptor Precautions.
                                                               (line   6)
 * Destination address required:          Error Codes.         (line 331)
+* deterministic random bit generator:    Unpredictable Bytes. (line   6)
 * Device not a stream:                   Error Codes.         (line 513)
 * Device or resource busy:               Error Codes.         (line  91)
-* digit character <1>:                   Classification of Characters.
-                                                              (line  54)
-* digit character:                       Classification of Wide Characters.
+* digit character <1>:                   Classification of Wide Characters.
                                                               (line 120)
+* digit character:                       Classification of Characters.
+                                                              (line  54)
 * directories, accessing:                Accessing Directories.
                                                               (line   6)
 * directories, creating:                 Creating Directories.
@@ -3930,6 +5287,7 @@ Concept Index
 * Domain Name System:                    Host Identification. (line  18)
 * dot notation, for Internet addresses:  Abstract Host Addresses.
                                                               (line  48)
+* DRBG:                                  Unpredictable Bytes. (line   6)
 * DSUSP character:                       Signal Characters.   (line  53)
 * duplicating file descriptors:          Duplicating Descriptors.
                                                               (line   6)
@@ -3945,7 +5303,7 @@ Concept Index
                                                               (line  46)
 * elapsed time <1>:                      Time Basics.         (line  24)
 * elapsed time:                          Elapsed Time.        (line   6)
-* encryption:                            Trivial Encryption.  (line   6)
+* elision tunables:                      Elision Tunables.    (line   6)
 * end of file, on a stream:              EOF and Errors.      (line   6)
 * end-of-file, on a file descriptor:     I/O Primitives.      (line  24)
 * env:                                   Other Safety Remarks.
@@ -3978,10 +5336,10 @@ Concept Index
 * EUC:                                   Extended Char Intro. (line 188)
 * EUC-JP:                                glibc iconv Implementation.
                                                               (line  53)
-* exception <1>:                         Program Error Signals.
+* exception <1>:                         FP Exceptions.       (line   6)
+* exception:                             Program Error Signals.
                                                               (line  48)
-* exception:                             FP Exceptions.       (line   6)
-* Exchange full:                         Error Codes.         (line 567)
+* Exchange full:                         Error Codes.         (line 573)
 * exclusive lock:                        File Locks.          (line  15)
 * Exec format error:                     Error Codes.         (line  51)
 * exec functions:                        Executing a File.    (line   6)
@@ -4012,15 +5370,16 @@ Concept Index
 * file allocation:                       Storage Allocation.  (line   6)
 * file attribute modification time:      File Times.          (line   6)
 * file attributes:                       Attribute Meanings.  (line   6)
+* file copy:                             Copying File Data.   (line   6)
 * file creation mask:                    Setting Permissions. (line   6)
 * file descriptor flags:                 Descriptor Flags.    (line   6)
-* File descriptor in bad state:          Error Codes.         (line 606)
+* File descriptor in bad state:          Error Codes.         (line 612)
 * file descriptor sets, for select:      Waiting for I/O.     (line  30)
 * file descriptors, standard:            Descriptors and Streams.
                                                               (line  58)
 * File exists:                           Error Codes.         (line  96)
 * file fragmentation:                    Storage Allocation.  (line   6)
-* File locking deadlock error:           Error Codes.         (line 579)
+* File locking deadlock error:           Error Codes.         (line 585)
 * file locks:                            File Locks.          (line   6)
 * file modification time:                File Times.          (line   6)
 * file name:                             File Names.          (line  14)
@@ -4044,9 +5403,6 @@ Concept Index
 * files, sparse:                         Storage Allocation.  (line   6)
 * filtering i/o through subprocess:      Pipe to a Subprocess.
                                                               (line   6)
-* FIPS 140-2:                            Cryptographic Functions.
-                                                              (line  32)
-* FIPS 46-3:                             DES Encryption.      (line   6)
 * flag character (printf):               Output Conversion Syntax.
                                                               (line  60)
 * flag character (scanf):                Input Conversion Syntax.
@@ -4117,6 +5473,7 @@ Concept Index
 * hard link:                             Hard Links.          (line   6)
 * hardware capability tunables:          Hardware Capability Tunables.
                                                               (line   6)
+* hashing, passphrase:                   Passphrase Storage.  (line   6)
 * header files:                          Header Files.        (line   6)
 * heap:                                  Unsafe Features.     (line  41)
 * heap consistency checking:             Heap Consistency Checking.
@@ -4157,7 +5514,7 @@ Concept Index
 * hwcaps tunables:                       Hardware Capability Tunables.
                                                               (line   6)
 * hyperbolic functions:                  Hyperbolic Functions.
-                                                              (line   6)
+                                                              (line  45)
 * i18n:                                  Unsafe Features.     (line  79)
 * iconv:                                 Unsafe Features.     (line  67)
 * Identifier removed:                    Error Codes.         (line 495)
@@ -4219,7 +5576,7 @@ Concept Index
 * interrupt signal:                      Termination Signals. (line  30)
 * interrupt-driven input:                Interrupt Input.     (line   6)
 * Interrupted system call:               Error Codes.         (line  25)
-* Interrupted system call should be restarted: Error Codes.   (line 534)
+* Interrupted system call should be restarted: Error Codes.   (line 540)
 * interrupting primitives:               Interrupted Primitives.
                                                               (line  46)
 * interval:                              Time Basics.         (line  20)
@@ -4228,12 +5585,12 @@ Concept Index
 * Invalid argument:                      Error Codes.         (line 118)
 * Invalid cross-device link:             Error Codes.         (line 100)
 * invalid exception:                     FP Exceptions.       (line   6)
-* Invalid exchange:                      Error Codes.         (line 561)
+* Invalid exchange:                      Error Codes.         (line 567)
 * Invalid or incomplete multibyte or wide character: Error Codes.
                                                               (line 458)
-* Invalid request code:                  Error Codes.         (line 573)
-* Invalid request descriptor:            Error Codes.         (line 564)
-* Invalid slot:                          Error Codes.         (line 576)
+* Invalid request code:                  Error Codes.         (line 579)
+* Invalid request descriptor:            Error Codes.         (line 570)
+* Invalid slot:                          Error Codes.         (line 582)
 * inverse complex hyperbolic functions:  Hyperbolic Functions.
                                                               (line 117)
 * inverse complex trigonometric functions: Inverse Trig Functions.
@@ -4247,11 +5604,12 @@ Concept Index
 * ipc:                                   Inter-Process Communication.
                                                               (line   6)
 * Is a directory:                        Error Codes.         (line 114)
-* Is a named type file:                  Error Codes.         (line 639)
+* Is a named type file:                  Error Codes.         (line 645)
 * ISO 10646:                             Extended Char Intro. (line  37)
 * ISO 2022:                              Extended Char Intro. (line 179)
 * ISO 6937:                              Extended Char Intro. (line 202)
 * ISO C:                                 ISO C.               (line   6)
+* ISO C threads:                         ISO C Threads.       (line   6)
 * ISO-2022-JP:                           glibc iconv Implementation.
                                                               (line  53)
 * ISO/IEC 9945-1:                        POSIX.               (line   6)
@@ -4264,13 +5622,13 @@ Concept Index
                                                               (line   6)
 * job control signals:                   Job Control Signals. (line   6)
 * job control, enabling:                 Initializing the Shell.
-                                                              (line   6)
+                                                              (line  24)
 * Kermit the frog:                       Search/Sort Example. (line 107)
 * kernel call:                           System Calls.        (line  16)
 * kernel header files:                   Linux.               (line   6)
-* Key has been revoked:                  Error Codes.         (line 657)
-* Key has expired:                       Error Codes.         (line 654)
-* Key was rejected by service:           Error Codes.         (line 660)
+* Key has been revoked:                  Error Codes.         (line 663)
+* Key has expired:                       Error Codes.         (line 660)
+* Key was rejected by service:           Error Codes.         (line 666)
 * KILL character:                        Editing Characters.  (line  85)
 * kill signal:                           Termination Signals. (line  70)
 * killing a process:                     Signaling Another Process.
@@ -4289,10 +5647,10 @@ Concept Index
                                                               (line  80)
 * LC_CTYPE environment variable:         Standard Environment.
                                                               (line  83)
-* LC_MESSAGES environment variable <1>:  Standard Environment.
-                                                              (line  87)
-* LC_MESSAGES environment variable:      The catgets Functions.
+* LC_MESSAGES environment variable <1>:  The catgets Functions.
                                                               (line 100)
+* LC_MESSAGES environment variable:      Standard Environment.
+                                                              (line  87)
 * LC_MONETARY environment variable:      Standard Environment.
                                                               (line  91)
 * LC_NUMERIC environment variable:       Standard Environment.
@@ -4303,10 +5661,10 @@ Concept Index
 * leap second:                           Broken-down Time.    (line  28)
 * length of string:                      Representation of Strings.
                                                               (line  61)
-* Level 2 halted:                        Error Codes.         (line 558)
-* Level 2 not synchronized:              Error Codes.         (line 540)
-* Level 3 halted:                        Error Codes.         (line 543)
-* Level 3 reset:                         Error Codes.         (line 546)
+* Level 2 halted:                        Error Codes.         (line 564)
+* Level 2 not synchronized:              Error Codes.         (line 546)
+* Level 3 halted:                        Error Codes.         (line 549)
+* Level 3 reset:                         Error Codes.         (line 552)
 * level, for socket options:             Socket Options.      (line   9)
 * library:                               Introduction.        (line   9)
 * limit:                                 Limits on Resources. (line  12)
@@ -4329,7 +5687,7 @@ Concept Index
 * lines (in a text file):                Binary Streams.      (line  25)
 * link:                                  Directories.         (line   9)
 * Link has been severed:                 Error Codes.         (line 504)
-* Link number out of range:              Error Codes.         (line 549)
+* Link number out of range:              Error Codes.         (line 555)
 * link, hard:                            Hard Links.          (line   6)
 * link, soft:                            Symbolic Links.      (line   6)
 * link, symbolic:                        Symbolic Links.      (line   6)
@@ -4363,11 +5721,11 @@ Concept Index
 * loss of data on sockets:               Socket Concepts.     (line  17)
 * lost resource signal:                  Operation Error Signals.
                                                               (line  27)
-* lower-case character <1>:              Classification of Characters.
-                                                              (line  27)
-* lower-case character:                  Classification of Wide Characters.
+* lower-case character <1>:              Classification of Wide Characters.
                                                               (line 157)
-* Machine is not on the network:         Error Codes.         (line 585)
+* lower-case character:                  Classification of Characters.
+                                                              (line  27)
+* Machine is not on the network:         Error Codes.         (line 591)
 * macros:                                Obstack Functions.   (line   6)
 * main function:                         Program Arguments.   (line   6)
 * malloc debugger:                       Allocation Debugging.
@@ -4402,6 +5760,8 @@ Concept Index
 * memory mapped I/O:                     Memory Concepts.     (line  83)
 * memory page:                           Memory Subsystem.    (line  33)
 * Memory page has hardware error:        Error Codes.         (line 672)
+* memory protection:                     Memory Protection.   (line   6)
+* memory protection key:                 Memory Protection.   (line 119)
 * merging of signals:                    Merged Signals.      (line   6)
 * Message too long:                      Error Codes.         (line 245)
 * MIN termios slot:                      Noncanonical Input.  (line  26)
@@ -4415,29 +5775,32 @@ Concept Index
 * modem status lines:                    Control Modes.       (line  21)
 * monetary value formatting:             The Lame Way to Locale Data.
                                                               (line  13)
+* MPK:                                   Memory Protection.   (line 119)
 * MT-Safe:                               POSIX Safety Concepts.
                                                               (line  16)
 * MT-Unsafe:                             POSIX Safety Concepts.
                                                               (line  68)
 * multi-threaded application:            Streams and Threads. (line   6)
-* multibyte character <1>:               Extended Char Intro. (line 156)
-* multibyte character:                   Representation of Strings.
+* multibyte character <1>:               Representation of Strings.
                                                               (line  22)
+* multibyte character:                   Extended Char Intro. (line 156)
 * multibyte string:                      Representation of Strings.
                                                               (line  71)
 * Multihop attempted:                    Error Codes.         (line 498)
 * multiple names for one file:           Hard Links.          (line   6)
 * multiplexing input:                    Waiting for I/O.     (line   6)
 * multiply-add:                          Misc FP Arithmetic.  (line   6)
-* Name not unique on network:            Error Codes.         (line 603)
+* mutex:                                 ISO C Mutexes.       (line   6)
+* mutual exclusion:                      ISO C Mutexes.       (line   6)
+* Name not unique on network:            Error Codes.         (line 609)
 * name of running program:               Error Messages.      (line  77)
 * name of socket:                        Socket Addresses.    (line   6)
 * Name Service Switch:                   Name Service Switch. (line   6)
 * name space:                            Reserved Names.      (line   6)
 * names of signals:                      Standard Signals.    (line   6)
 * namespace (of socket):                 Socket Concepts.     (line  33)
-* NaN <1>:                               FP Bit Twiddling.    (line 104)
-* NaN:                                   Infinity and NaN.    (line   6)
+* NaN <1>:                               Infinity and NaN.    (line   6)
+* NaN:                                   FP Bit Twiddling.    (line 104)
 * Need authenticator:                    Error Codes.         (line 433)
 * Netgroup:                              Netgroup Data.       (line   6)
 * netgroup:                              NSS Basics.          (line  26)
@@ -4451,7 +5814,7 @@ Concept Index
 * networks:                              NSS Basics.          (line  26)
 * networks database:                     Networks Database.   (line   6)
 * NIS:                                   Host Identification. (line  39)
-* NIS domain name:                       Host Identification. (line 110)
+* NIS domain name:                       Host Identification. (line 122)
 * nisplus, and booting:                  Actions in the NSS configuration.
                                                               (line 110)
 * nisplus, and completeness:             Actions in the NSS configuration.
@@ -4460,13 +5823,13 @@ Concept Index
                                                               (line 100)
 * NLSPATH environment variable:          The catgets Functions.
                                                               (line  32)
-* No anode:                              Error Codes.         (line 570)
+* No anode:                              Error Codes.         (line 576)
 * No buffer space available:             Error Codes.         (line 314)
 * No child processes:                    Error Codes.         (line  61)
-* No CSI structure available:            Error Codes.         (line 555)
+* No CSI structure available:            Error Codes.         (line 561)
 * No data available:                     Error Codes.         (line 501)
 * No locks available:                    Error Codes.         (line 417)
-* No medium found:                       Error Codes.         (line 645)
+* No medium found:                       Error Codes.         (line 651)
 * No message of desired type:            Error Codes.         (line 507)
 * No route to host:                      Error Codes.         (line 367)
 * No space left on device:               Error Codes.         (line 155)
@@ -4474,8 +5837,8 @@ Concept Index
 * No such device or address:             Error Codes.         (line  38)
 * No such file or directory:             Error Codes.         (line  17)
 * No such process:                       Error Codes.         (line  22)
-* No XENIX semaphores available:         Error Codes.         (line 636)
-* non-blocking open:                     Open-time Flags.     (line  30)
+* No XENIX semaphores available:         Error Codes.         (line 642)
+* non-blocking open:                     Open-time Flags.     (line  56)
 * non-local exit, from signal handler:   Longjmp in Handler.  (line   6)
 * non-local exits:                       Non-Local Exits.     (line   6)
 * non_temporal_threshold tunables:       Hardware Capability Tunables.
@@ -4487,7 +5850,7 @@ Concept Index
                                                               (line  59)
 * Not a directory:                       Error Codes.         (line 110)
 * not a number:                          Infinity and NaN.    (line   6)
-* Not a XENIX named type file:           Error Codes.         (line 633)
+* Not a XENIX named type file:           Error Codes.         (line 639)
 * Not supported:                         Error Codes.         (line 444)
 * NSS <1>:                               Unsafe Features.     (line  66)
 * NSS:                                   Name Service Switch. (line   6)
@@ -4509,6 +5872,7 @@ Concept Index
 * obstack status:                        Status of an Obstack.
                                                               (line   6)
 * obstacks:                              Obstacks.            (line   6)
+* one-way hashing:                       Passphrase Storage.  (line   6)
 * open-time action flags:                Open-time Flags.     (line  17)
 * opening a file:                        I/O Concepts.        (line   9)
 * opening a file descriptor:             Opening and Closing Files.
@@ -4529,7 +5893,7 @@ Concept Index
 * Optimization:                          FP Function Optimizations.
                                                               (line   6)
 * optimizing NSS:                        Notes on NSS Configuration File.
-                                                              (line  27)
+                                                              (line  31)
 * option parsing with argp:              Argp.                (line   6)
 * optional arguments:                    Variadic Functions.  (line   6)
 * optional POSIX features:               System Options.      (line   6)
@@ -4546,9 +5910,9 @@ Concept Index
 * output possible signal:                Asynchronous I/O Signals.
                                                               (line  13)
 * overflow exception:                    FP Exceptions.       (line   6)
-* Owner died:                            Error Codes.         (line 663)
+* Owner died:                            Error Codes.         (line 531)
 * owner of a file:                       File Owner.          (line   6)
-* Package not installed:                 Error Codes.         (line 588)
+* Package not installed:                 Error Codes.         (line 594)
 * packet:                                Socket Concepts.     (line  12)
 * page boundary:                         Aligned Memory Blocks.
                                                               (line   6)
@@ -4556,10 +5920,11 @@ Concept Index
 * page fault, copy-on-write:             Locked Memory Details.
                                                               (line  40)
 * page frame:                            Memory Concepts.     (line  18)
+* page protection:                       Memory Protection.   (line   6)
 * page, memory:                          Memory Subsystem.    (line  33)
 * page, virtual memory:                  Memory Concepts.     (line  18)
-* paging <1>:                            Memory Concepts.     (line  45)
-* paging:                                Locking Pages.       (line   6)
+* paging <1>:                            Locking Pages.       (line   6)
+* paging:                                Memory Concepts.     (line  45)
 * parameter promotion:                   String/Array Conventions.
                                                               (line  41)
 * parent directory:                      File Name Resolution.
@@ -4575,6 +5940,7 @@ Concept Index
                                                               (line   6)
 * parsing tokens from a string:          Finding Tokens in a String.
                                                               (line   6)
+* passphrase hashing:                    Passphrase Storage.  (line   6)
 * passwd:                                NSS Basics.          (line  26)
 * password database:                     User Database.       (line   6)
 * PATH environment variable:             Standard Environment.
@@ -4634,8 +6000,8 @@ Concept Index
                                                               (line 170)
 * priority of a process:                 Priority.            (line   6)
 * priority, absolute:                    Absolute Priority.   (line   6)
-* process <1>:                           Program Basics.      (line   6)
-* process:                               Processes.           (line   6)
+* process <1>:                           Processes.           (line   6)
+* process:                               Program Basics.      (line   6)
 * process completion:                    Process Completion.  (line   6)
 * process group functions:               Functions for Job Control.
                                                               (line   6)
@@ -4651,8 +6017,8 @@ Concept Index
 * process priority:                      Priority.            (line   6)
 * process signal mask:                   Process Signal Mask. (line   6)
 * process termination:                   Program Termination. (line   6)
-* processor time <1>:                    Processor Time.      (line   9)
-* processor time:                        Time Basics.         (line  44)
+* processor time <1>:                    Time Basics.         (line  44)
+* processor time:                        Processor Time.      (line   9)
 * profiling alarm signal:                Alarm Signals.       (line  30)
 * profiling timer:                       Setting an Alarm.    (line  22)
 * program:                               Program Basics.      (line   6)
@@ -4669,8 +6035,10 @@ Concept Index
 * programming your own streams:          Custom Streams.      (line   6)
 * project complex numbers:               Operations on Complex.
                                                               (line   6)
+* protection flags:                      Memory Protection.   (line   6)
+* protection key:                        Memory Protection.   (line 119)
 * protocol (of socket):                  Socket Concepts.     (line  42)
-* Protocol driver not attached:          Error Codes.         (line 552)
+* Protocol driver not attached:          Error Codes.         (line 558)
 * Protocol error:                        Error Codes.         (line 519)
 * protocol family:                       Socket Concepts.     (line  42)
 * Protocol family not supported:         Error Codes.         (line 275)
@@ -4682,6 +6050,7 @@ Concept Index
 * prototypes for variadic functions:     Variadic Prototypes. (line   6)
 * pseudo-random numbers:                 Pseudo-Random Numbers.
                                                               (line   6)
+* pseudo-random numbers, cryptographic:  Unpredictable Bytes. (line   6)
 * pseudo-terminals:                      Pseudo-Terminals.    (line   6)
 * pthreads:                              POSIX Threads.       (line   6)
 * punctuation character <1>:             Classification of Wide Characters.
@@ -4702,7 +6071,9 @@ Concept Index
 * raising signals:                       Generating Signals.  (line   6)
 * random numbers:                        Pseudo-Random Numbers.
                                                               (line   6)
+* random numbers, cryptographic:         Unpredictable Bytes. (line   6)
 * random-access files:                   File Position.       (line  23)
+* randomness source:                     Unpredictable Bytes. (line   6)
 * range error:                           Math Error Reporting.
                                                               (line   6)
 * range of integer type:                 Range of Type.       (line   6)
@@ -4730,8 +6101,8 @@ Concept Index
 * reentrant NSS functions:               NSS Module Names.    (line  21)
 * relative file name:                    File Name Resolution.
                                                               (line  24)
-* Remote address changed:                Error Codes.         (line 609)
-* Remote I/O error:                      Error Codes.         (line 642)
+* Remote address changed:                Error Codes.         (line 615)
+* Remote I/O error:                      Error Codes.         (line 648)
 * removal of quotes:                     Expansion Stages.    (line  32)
 * removing a file:                       Deleting Files.      (line   6)
 * removing macros that shadow functions: Macro Definitions.   (line   6)
@@ -4740,7 +6111,7 @@ Concept Index
 * reporting bugs:                        Reporting Bugs.      (line   6)
 * reporting errors:                      Error Reporting.     (line   6)
 * REPRINT character:                     Editing Characters.  (line  96)
-* Required key not available:            Error Codes.         (line 651)
+* Required key not available:            Error Codes.         (line 657)
 * reserved names:                        Reserved Names.      (line   6)
 * Resource deadlock avoided:             Error Codes.         (line  66)
 * resource limits:                       Limits on Resources. (line   6)
@@ -4748,10 +6119,10 @@ Concept Index
 * restarting interrupted primitives:     Interrupted Primitives.
                                                               (line  46)
 * restrictions on signal handler functions: Nonreentrancy.    (line   6)
-* RFS specific error:                    Error Codes.         (line 600)
+* RFS specific error:                    Error Codes.         (line 606)
 * root directory:                        File Name Resolution.
                                                               (line  19)
-* Rot13:                                 Trivial Encryption.  (line  11)
+* Rot13:                                 Obfuscating Data.    (line   6)
 * rpc:                                   NSS Basics.          (line  26)
 * RPC bad procedure for program:         Error Codes.         (line 414)
 * RPC program not available:             Error Codes.         (line 408)
@@ -4791,10 +6162,10 @@ Concept Index
 * setting an alarm:                      Setting an Alarm.    (line  10)
 * setuid programs:                       How Change Persona.  (line   6)
 * setuid programs and file access:       Testing File Access. (line   6)
-* severity class <1>:                    Printing Formatted Messages.
-                                                              (line  96)
-* severity class:                        Adding Severity Classes.
+* severity class <1>:                    Adding Severity Classes.
                                                               (line   6)
+* severity class:                        Printing Formatted Messages.
+                                                              (line  96)
 * sgettext:                              GUI program problems.
                                                               (line  58)
 * shadow:                                NSS Basics.          (line  26)
@@ -4844,6 +6215,7 @@ Concept Index
 * simple time:                           Calendar Time.       (line  13)
 * single-byte string:                    Representation of Strings.
                                                               (line  71)
+* single-call functions:                 Call Once.           (line   6)
 * size of string:                        Representation of Strings.
                                                               (line  61)
 * SJIS:                                  Extended Char Intro. (line 188)
@@ -4871,17 +6243,17 @@ Concept Index
 * soft link:                             Symbolic Links.      (line   6)
 * Software caused connection abort:      Error Codes.         (line 305)
 * sort function (for arrays):            Array Sort Function. (line   6)
-* sparse files <1>:                      File Position Primitive.
+* sparse files <1>:                      Storage Allocation.  (line   6)
+* sparse files:                          File Position Primitive.
                                                               (line  63)
-* sparse files:                          Storage Allocation.  (line   6)
 * special files:                         Making Special Files.
                                                               (line   6)
 * special functions:                     Special Functions.   (line   6)
 * specified action (for a signal):       Delivery of Signal.  (line  13)
 * speed of execution:                    Why Lock Pages.      (line  14)
 * square root function:                  Exponents and Logarithms.
-                                                              (line 189)
-* Srmount error:                         Error Codes.         (line 594)
+                                                              (line 184)
+* Srmount error:                         Error Codes.         (line 600)
 * stable sorting:                        Array Sort Function. (line  24)
 * Stale file handle:                     Error Codes.         (line 388)
 * standard dot notation, for Internet addresses: Abstract Host Addresses.
@@ -4905,16 +6277,16 @@ Concept Index
 * START character:                       Start/Stop Characters.
                                                               (line  11)
 * startup of program:                    Program Arguments.   (line   6)
-* State not recoverable:                 Error Codes.         (line 666)
-* stateful <1>:                          Converting a Character.
-                                                              (line  91)
-* stateful <2>:                          iconv Examples.      (line  96)
-* stateful <3>:                          glibc iconv Implementation.
+* State not recoverable:                 Error Codes.         (line 534)
+* stateful <1>:                          iconv Examples.      (line  96)
+* stateful <2>:                          glibc iconv Implementation.
                                                               (line 594)
-* stateful <4>:                          Keeping the state.   (line   6)
-* stateful <5>:                          Generic Conversion Interface.
+* stateful <3>:                          Generic Conversion Interface.
                                                               (line 119)
-* stateful:                              Converting Strings.  (line  69)
+* stateful <4>:                          Converting Strings.  (line  69)
+* stateful <5>:                          Converting a Character.
+                                                              (line  91)
+* stateful:                              Keeping the state.   (line   6)
 * static memory allocation:              Memory Allocation and C.
                                                               (line  13)
 * static storage class:                  Memory Allocation and C.
@@ -4942,7 +6314,7 @@ Concept Index
 * stream, for I/O to a string:           String Streams.      (line   6)
 * streams and descriptors:               Stream/Descriptor Precautions.
                                                               (line   6)
-* Streams pipe error:                    Error Codes.         (line 627)
+* Streams pipe error:                    Error Codes.         (line 633)
 * streams, and file descriptors:         Descriptors and Streams.
                                                               (line   6)
 * streams, C++:                          Streams and I18N.    (line  30)
@@ -4971,7 +6343,7 @@ Concept Index
                                                               (line   6)
 * string, representation of:             Representation of Strings.
                                                               (line   6)
-* Structure needs cleaning:              Error Codes.         (line 630)
+* Structure needs cleaning:              Error Codes.         (line 636)
 * style of communication (of a socket):  Socket Concepts.     (line   6)
 * subshell:                              Initializing the Shell.
                                                               (line   6)
@@ -4985,7 +6357,7 @@ Concept Index
 * SVID:                                  SVID.                (line   6)
 * swap space:                            Memory Concepts.     (line  18)
 * symbolic link:                         Symbolic Links.      (line   6)
-* symbolic link, opening:                Open-time Flags.     (line  68)
+* symbolic link, opening:                Open-time Flags.     (line  94)
 * synchronizing <1>:                     Synchronizing AIO Operations.
                                                               (line  17)
 * synchronizing:                         Synchronizing I/O.   (line   6)
@@ -4995,10 +6367,7 @@ Concept Index
 * syntax, for reading numbers:           Parsing of Numbers.  (line   6)
 * sysconf <1>:                           Query Memory Parameters.
                                                               (line  52)
-* sysconf <2>:                           Processor Resources. (line  19)
-* sysconf <3>:                           Query Memory Parameters.
-                                                              (line  46)
-* sysconf:                               Processor Resources. (line  13)
+* sysconf:                               Processor Resources. (line  19)
 * system call:                           System Calls.        (line   6)
 * system call number:                    System Calls.        (line  45)
 * System V Unix:                         SVID.                (line   6)
@@ -5030,12 +6399,21 @@ Concept Index
 * Text file busy:                        Error Codes.         (line 143)
 * text stream:                           Binary Streams.      (line  13)
 * thrashing:                             Memory Subsystem.    (line  31)
+* thread control:                        ISO C Thread Management.
+                                                              (line   6)
+* thread creation:                       ISO C Thread Management.
+                                                              (line   6)
+* thread management:                     ISO C Thread Management.
+                                                              (line   6)
 * thread of control:                     Program Basics.      (line   6)
+* thread-local storage:                  ISO C Thread-local Storage.
+                                                              (line   6)
 * Thread-Safe:                           POSIX Safety Concepts.
                                                               (line  16)
 * Thread-Unsafe:                         POSIX Safety Concepts.
                                                               (line  68)
-* threads:                               Streams and Threads. (line   6)
+* threads <1>:                           Streams and Threads. (line   6)
+* threads:                               Threads.             (line   6)
 * ticks, clock:                          Processor And CPU Time.
                                                               (line  19)
 * tilde expansion:                       Expansion Stages.    (line   9)
@@ -5082,6 +6460,7 @@ Concept Index
 * tunables:                              Tunables.            (line   6)
 * tunables, data_cache_size:             Hardware Capability Tunables.
                                                               (line   6)
+* tunables, elision:                     Elision Tunables.    (line   6)
 * tunables, hwcap:                       Hardware Capability Tunables.
                                                               (line   6)
 * tunables, hwcaps:                      Hardware Capability Tunables.
@@ -5141,7 +6520,7 @@ Concept Index
 * usual file name errors:                File Name Errors.    (line   6)
 * UTF-16:                                Extended Char Intro. (line  49)
 * UTF-7:                                 Extended Char Intro. (line 222)
-* UTF-8:                                 Extended Char Intro. (line 215)
+* UTF-8:                                 Extended Char Intro. (line  49)
 * va_copy:                               Concatenating Strings.
                                                               (line  70)
 * Value too large for defined data type: Error Codes.         (line 516)
@@ -5162,10 +6541,10 @@ Concept Index
                                                               (line   6)
 * waiting for input or output:           Waiting for I/O.     (line   6)
 * WERASE character:                      Editing Characters.  (line  61)
-* whitespace character <1>:              Classification of Characters.
-                                                              (line  83)
-* whitespace character:                  Classification of Wide Characters.
+* whitespace character <1>:              Classification of Wide Characters.
                                                               (line 196)
+* whitespace character:                  Classification of Characters.
+                                                              (line  83)
 * wide character:                        Extended Char Intro. (line  31)
 * wide string:                           Representation of Strings.
                                                               (line  86)
@@ -5181,7 +6560,7 @@ Concept Index
 * writing to a stream, by blocks:        Block Input/Output.  (line   9)
 * writing to a stream, by characters:    Simple Output.       (line   6)
 * writing to a stream, formatted:        Formatted Output.    (line   6)
-* Wrong medium type:                     Error Codes.         (line 648)
+* Wrong medium type:                     Error Codes.         (line 654)
 * You really blew it this time:          Error Codes.         (line 482)
 * YP:                                    Host Identification. (line  39)
 * YP domain name:                        Host Identification. (line 122)
@@ -5208,6 +6587,8 @@ Type Index
 * blkcnt_t:                              Attribute Meanings.  (line 218)
 * cc_t:                                  Mode Data Types.     (line  47)
 * clock_t:                               CPU Time.            (line  39)
+* cnd_t:                                 ISO C Condition Variables.
+                                                              (line  15)
 * comparison_fn_t:                       Comparison Functions.
                                                               (line  32)
 * cookie_close_function_t:               Hook Functions.      (line  60)
@@ -5228,44 +6609,58 @@ Type Index
 * fpos_t:                                Portable Positioning.
                                                               (line  53)
 * gid_t:                                 Reading Persona.     (line  16)
+* glibc.elision:                         Elision Tunables.    (line   7)
+* glibc.elision.enable:                  Elision Tunables.    (line  14)
+* glibc.elision.skip_lock_after_retries: Elision Tunables.    (line  38)
+* glibc.elision.skip_lock_busy:          Elision Tunables.    (line  22)
+* glibc.elision.skip_lock_internal_abort: Elision Tunables.   (line  30)
+* glibc.elision.skip_trylock_internal_abort: Elision Tunables.
+                                                              (line  58)
+* glibc.elision.tries:                   Elision Tunables.    (line  49)
 * glibc.malloc:                          Memory Allocation Tunables.
                                                               (line   7)
 * glibc.malloc.arena_max:                Memory Allocation Tunables.
-                                                              (line 123)
+                                                              (line 107)
 * glibc.malloc.arena_test:               Memory Allocation Tunables.
-                                                              (line 111)
+                                                              (line  95)
 * glibc.malloc.check:                    Memory Allocation Tunables.
                                                               (line  11)
 * glibc.malloc.mmap_max:                 Memory Allocation Tunables.
-                                                              (line 102)
+                                                              (line  86)
 * glibc.malloc.mmap_threshold:           Memory Allocation Tunables.
-                                                              (line  74)
+                                                              (line  58)
 * glibc.malloc.perturb:                  Memory Allocation Tunables.
-                                                              (line  60)
+                                                              (line  44)
 * glibc.malloc.tcache_count:             Memory Allocation Tunables.
-                                                              (line 141)
+                                                              (line 125)
 * glibc.malloc.tcache_max:               Memory Allocation Tunables.
-                                                              (line 136)
+                                                              (line 120)
 * glibc.malloc.tcache_unsorted_limit:    Memory Allocation Tunables.
-                                                              (line 152)
+                                                              (line 136)
 * glibc.malloc.top_pad:                  Memory Allocation Tunables.
-                                                              (line  48)
+                                                              (line  32)
 * glibc.malloc.trim_threshold:           Memory Allocation Tunables.
-                                                              (line  89)
+                                                              (line  73)
 * glibc.tune:                            Hardware Capability Tunables.
                                                               (line   7)
-* glibc.tune.cpu:                        Hardware Capability Tunables.
+* glibc.tune.cached_memopt:              Hardware Capability Tunables.
                                                               (line  30)
+* glibc.tune.cpu:                        Hardware Capability Tunables.
+                                                              (line  39)
 * glibc.tune.hwcap_mask:                 Hardware Capability Tunables.
                                                               (line  12)
 * glibc.tune.hwcaps:                     Hardware Capability Tunables.
                                                               (line  22)
 * glibc.tune.x86_data_cache_size:        Hardware Capability Tunables.
-                                                              (line  37)
+                                                              (line  47)
+* glibc.tune.x86_ibt:                    Hardware Capability Tunables.
+                                                              (line  64)
 * glibc.tune.x86_non_temporal_threshold: Hardware Capability Tunables.
-                                                              (line  48)
+                                                              (line  58)
 * glibc.tune.x86_shared_cache_size:      Hardware Capability Tunables.
-                                                              (line  43)
+                                                              (line  53)
+* glibc.tune.x86_shstk:                  Hardware Capability Tunables.
+                                                              (line  76)
 * glob64_t:                              Calling Glob.        (line 156)
 * glob_t:                                Calling Glob.        (line  12)
 * iconv_t:                               Generic Conversion Interface.
@@ -5306,13 +6701,11 @@ Type Index
 * memory_mallopt:                        Memory Allocation Probes.
                                                               (line 120)
 * memory_mallopt_arena_max:              Memory Allocation Probes.
-                                                              (line 182)
+                                                              (line 176)
 * memory_mallopt_arena_test:             Memory Allocation Probes.
-                                                              (line 175)
-* memory_mallopt_check_action:           Memory Allocation Probes.
-                                                              (line 163)
+                                                              (line 169)
 * memory_mallopt_free_dyn_thresholds:    Memory Allocation Probes.
-                                                              (line 189)
+                                                              (line 183)
 * memory_mallopt_mmap_max:               Memory Allocation Probes.
                                                               (line 156)
 * memory_mallopt_mmap_threshold:         Memory Allocation Probes.
@@ -5320,7 +6713,7 @@ Type Index
 * memory_mallopt_mxfast:                 Memory Allocation Probes.
                                                               (line 126)
 * memory_mallopt_perturb:                Memory Allocation Probes.
-                                                              (line 169)
+                                                              (line 163)
 * memory_mallopt_top_pad:                Memory Allocation Probes.
                                                               (line 140)
 * memory_mallopt_trim_threshold:         Memory Allocation Probes.
@@ -5334,17 +6727,19 @@ Type Index
 * memory_sbrk_more:                      Memory Allocation Probes.
                                                               (line  10)
 * memory_tunable_tcache_count:           Memory Allocation Probes.
-                                                              (line 199)
+                                                              (line 193)
 * memory_tunable_tcache_max_bytes:       Memory Allocation Probes.
-                                                              (line 194)
+                                                              (line 188)
 * memory_tunable_tcache_unsorted_limit:  Memory Allocation Probes.
-                                                              (line 204)
+                                                              (line 198)
 * mode_t:                                Attribute Meanings.  (line 188)
+* mtx_t:                                 ISO C Mutexes.       (line  14)
 * nlink_t:                               Attribute Meanings.  (line 215)
 * off64_t:                               File Position Primitive.
                                                               (line 161)
 * off_t:                                 File Position Primitive.
                                                               (line 154)
+* once_flag:                             Call Once.           (line  11)
 * pid_t:                                 Process Identification.
                                                               (line  13)
 * printf_arginfo_function:               Defining the Output Handler.
@@ -5370,39 +6765,27 @@ Type Index
 * size_t:                                Important Data Types.
                                                               (line  22)
 * slowacos:                              Mathematical Function Probes.
-                                                              (line 106)
+                                                              (line  64)
 * slowasin:                              Mathematical Function Probes.
-                                                              (line 100)
+                                                              (line  58)
 * slowatan:                              Mathematical Function Probes.
-                                                              (line  79)
+                                                              (line  37)
 * slowatan2:                             Mathematical Function Probes.
-                                                              (line  63)
+                                                              (line  21)
 * slowatan2_inexact:                     Mathematical Function Probes.
-                                                              (line  71)
+                                                              (line  29)
 * slowatan_inexact:                      Mathematical Function Probes.
-                                                              (line  86)
+                                                              (line  44)
 * slowcos:                               Mathematical Function Probes.
-                                                              (line 118)
+                                                              (line  76)
 * slowcos_dx:                            Mathematical Function Probes.
-                                                              (line 130)
-* slowexp_p32:                           Mathematical Function Probes.
-                                                              (line  26)
-* slowexp_p6:                            Mathematical Function Probes.
-                                                              (line  20)
-* slowlog:                               Mathematical Function Probes.
-                                                              (line  48)
-* slowlog_inexact:                       Mathematical Function Probes.
-                                                              (line  54)
-* slowpow_p10:                           Mathematical Function Probes.
-                                                              (line  33)
-* slowpow_p32:                           Mathematical Function Probes.
-                                                              (line  41)
+                                                              (line  88)
 * slowsin:                               Mathematical Function Probes.
-                                                              (line 112)
+                                                              (line  70)
 * slowsin_dx:                            Mathematical Function Probes.
-                                                              (line 124)
+                                                              (line  82)
 * slowtan:                               Mathematical Function Probes.
-                                                              (line  94)
+                                                              (line  52)
 * speed_t:                               Line Speed.          (line  72)
 * ssize_t:                               I/O Primitives.      (line  11)
 * stack_t:                               Signal Stack.        (line  27)
@@ -5418,6 +6801,7 @@ Type Index
 * struct argp_child:                     Argp Children.       (line  18)
 * struct argp_option:                    Argp Option Vectors. (line  14)
 * struct argp_state:                     Argp Parsing State.  (line  11)
+* struct crypt_data:                     Passphrase Storage.  (line 121)
 * struct dirent:                         Directory Entries.   (line  11)
 * struct ENTRY:                          Hash Search Function.
                                                               (line  69)
@@ -5487,8 +6871,16 @@ Type Index
 * struct utsname:                        Platform Type.       (line  16)
 * struct vtimes:                         Resource Usage.      (line 120)
 * tcflag_t:                              Mode Data Types.     (line  43)
+* thrd_start_t:                          ISO C Thread Management.
+                                                              (line  16)
+* thrd_t:                                ISO C Thread Management.
+                                                              (line  13)
 * time_t:                                Simple Calendar Time.
                                                               (line  11)
+* tss_dtor_t:                            ISO C Thread-local Storage.
+                                                              (line  20)
+* tss_t:                                 ISO C Thread-local Storage.
+                                                              (line  15)
 * ucontext_t:                            System V contexts.   (line  24)
 * uid_t:                                 Reading Persona.     (line  12)
 * va_list:                               Argument Macros.     (line  10)
